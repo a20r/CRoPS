@@ -1,0 +1,16 @@
+<map id="boid.Boid.update" name="boid.Boid.update">
+<area shape="rect" id="node3" href="$classboid_1_1Boid.html#a19392045cdd5e9b46136369028be3c52" title="Checks if a piont is in the current goal." alt="" coords="468,163,585,192"/>
+<area shape="rect" id="node5" href="$classboid_1_1Boid.html#aa7ef63f7cc5adfdeb565c56f359b07cd" title="Gets the heading vectors of the neighbours." alt="" coords="175,85,383,115"/>
+<area shape="rect" id="node13" href="$classboid_1_1Boid.html#a353fbe920fabe58a43affaf183cfcd03" title="Gets the potential vectors to a boid due to the repulsive boid field." alt="" coords="188,215,369,244"/>
+<area shape="rect" id="node24" href="$classboid_1_1Boid.html#a2c496bdcc16d7db82cc0f730ce3d5264" title="Gets the potential vectors to a boid due to the repulsive obstacle field." alt="" coords="175,321,383,351"/>
+<area shape="rect" id="node31" href="$classboid_1_1Boid.html#a47c28705553bd3d729212944880161d3" title="Gets the potential vectors to a boid due to the attractive goal field." alt="" coords="197,268,360,297"/>
+<area shape="rect" id="node35" href="$classboid_1_1Boid.html#a9223cd4c67780cbdbe60a4efb2ee441e" title="Special sort of reduce that sums components in a list of vectors and divides each final component wit..." alt="" coords="208,375,349,404"/>
+<area shape="rect" id="node37" href="$namespaceboid.html#a9986e7e6ff357ff3f6ea5f526b99f2a7" title="Gamma function used to give a probability distribution of the flock in order to choose an appropriate..." alt="" coords="213,428,344,457"/>
+<area shape="rect" id="node7" href="$classboid_1_1Boid.html#a576c57d100aa5743d610de30bf1a2b2c" title="Gets the distance between two points." alt="" coords="669,267,779,296"/>
+<area shape="rect" id="node9" href="$classboid_1_1Boid.html#a3467de3698a644a484ff63a3e86f7adc" title="Gets the n maximum values from a list." alt="" coords="464,59,589,88"/>
+<area shape="rect" id="node11" href="$classboid_1_1Boid.html#ab232028bea08b512bbdaab5be7dfd08f" title="Gets multiple variables from a list with one call." alt="" coords="468,5,585,35"/>
+<area shape="rect" id="node17" href="$classboid_1_1Boid.html#a492a0ad33a962b15ed94789d59f3b08a" title="Defines a sigmoidal curve used for goal attractself._sumDivide = lambda lt, s: map(lambda p: p / s..." alt="" coords="449,267,604,296"/>
+<area shape="rect" id="node20" href="$classboid_1_1Boid.html#a8aa203db69671a064a623a88dfc6b3b7" title="Gets a scaled direction vector from an unscaled vector." alt="" coords="433,320,620,349"/>
+<area shape="rect" id="node22" href="$classboid_1_1Boid.html#a5324650d399f5c850ec7b7bda10eeae7" title="Gets the magnitude of a vector." alt="" coords="672,320,776,349"/>
+<area shape="rect" id="node27" href="$classboid_1_1Boid.html#ab330aef12ad0a338a51a7661c736e971" title="Defines the potential between a boid and an obstacle." alt="" coords="448,373,605,403"/>
+</map>

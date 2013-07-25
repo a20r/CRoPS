@@ -1,0 +1,4 @@
+<map id="boid.Boid.sumDivide" name="boid.Boid.sumDivide">
+<area shape="rect" id="node3" href="$classboid_1_1Boid.html#a2d4f1cded412a333857bb1b8b17d3dd0" title="Works in cohesion with sumDivide." alt="" coords="197,5,397,35"/>
+<area shape="rect" id="node5" href="$classboid_1_1Boid.html#a8a354e4b7d58ced69771f3bb5f52d257" title="Updates the boid&#39;s heading and position due to the potential fields." alt="" coords="239,59,356,88"/>
+</map>

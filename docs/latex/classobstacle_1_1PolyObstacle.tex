@@ -1,0 +1,492 @@
+\hypertarget{classobstacle_1_1PolyObstacle}{\section{obstacle.\-Poly\-Obstacle Class Reference}
+\label{classobstacle_1_1PolyObstacle}\index{obstacle.\-Poly\-Obstacle@{obstacle.\-Poly\-Obstacle}}
+}
+
+
+Object that represents the an obstacle represented by a series of points (in the node list) which make up a set of lines.  
+
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{classobstacle_1_1PolyObstacle_aa92e181aa910e2cd8c110047fe10dc83}{\-\_\-\-\_\-init\-\_\-\-\_\-}
+\begin{DoxyCompactList}\small\item\em Creates a \hyperlink{classobstacle_1_1PolyObstacle}{Poly\-Obstacle} instance and initializes certain global variables. \end{DoxyCompactList}\item 
+def \hyperlink{classobstacle_1_1PolyObstacle_a3392ccb4d22e752b0f150af354b16862}{norm}
+\begin{DoxyCompactList}\small\item\em Gets the Eulidean distance between p1 and p2. \end{DoxyCompactList}\item 
+def \hyperlink{classobstacle_1_1PolyObstacle_ab2833da8e0c16a191ae373af40a75b46}{estimate\-Poly}
+\begin{DoxyCompactList}\small\item\em Tries to estimate the polygon as a circle (very useful for environments with many obstacles i.\-e. \end{DoxyCompactList}\item 
+def \hyperlink{classobstacle_1_1PolyObstacle_a2a3283cffb3239c8777b85a83af5ee8c}{detect\-Collision}
+\begin{DoxyCompactList}\small\item\em Detects a if there is a collision with the obstacle and the line $<$p\-Start, p\-End$>$ \end{DoxyCompactList}\item 
+def \hyperlink{classobstacle_1_1PolyObstacle_a43adce887280997dfb49067e741f54db}{get\-Closest\-Point}
+\begin{DoxyCompactList}\small\item\em Gets the closest point on line $<$a, b$>$ to point p. \end{DoxyCompactList}\item 
+def \hyperlink{classobstacle_1_1PolyObstacle_a646f5fc4ba3e67c98c2313f4493b6a08}{rayintersectseg}
+\begin{DoxyCompactList}\small\item\em Determines if a ray from point p intersects with an edge, edge. \end{DoxyCompactList}\item 
+def \hyperlink{classobstacle_1_1PolyObstacle_a4647d9efa8fb20d7b464ee5faa8fd7f4}{point\-In\-Poly}
+\begin{DoxyCompactList}\small\item\em Determines if a point p is inside the polygon represented by this \hyperlink{classobstacle_1_1PolyObstacle}{Poly\-Obstacle} object. \end{DoxyCompactList}\item 
+def \hyperlink{classobstacle_1_1PolyObstacle_af71f01fca50193a5e5372c2507661ada}{point\-Allowed}
+\begin{DoxyCompactList}\small\item\em Checks if a point is allowed, meaning no collisions occur. \end{DoxyCompactList}\item 
+def \hyperlink{classobstacle_1_1PolyObstacle_af866b6f101194b8a8731f2394fdc247e}{get\-Point}
+\begin{DoxyCompactList}\small\item\em Gets the closest point from the polygon to p. \end{DoxyCompactList}\item 
+def \hyperlink{classobstacle_1_1PolyObstacle_a205face22efbad01fd4c96fbe73321fd}{get\-Radius}
+\begin{DoxyCompactList}\small\item\em Gets the 'radius' of the checking point. \end{DoxyCompactList}\item 
+def \hyperlink{classobstacle_1_1PolyObstacle_a9b5b53a6b8ee6233de2ee394871ebe6e}{draw}
+\begin{DoxyCompactList}\small\item\em Draws the polygon on the Py\-Game screen. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classobstacle_1_1PolyObstacle_a125762f0b4a3c9ef8d75c81bc5bc608e}{nodes}
+\begin{DoxyCompactList}\small\item\em A list of nodes used to represent the vertices. \end{DoxyCompactList}\item 
+\hyperlink{classobstacle_1_1PolyObstacle_a73ce2986866adb38653645c5b84ec0ce}{colors}
+\begin{DoxyCompactList}\small\item\em A dictionary of colors defined in pygame. \end{DoxyCompactList}\item 
+\hyperlink{classobstacle_1_1PolyObstacle_ad65d210c167b0638ef317ef24670501c}{screen}
+\begin{DoxyCompactList}\small\item\em The Py\-Game screen that is used to draw the obstacle. \end{DoxyCompactList}\item 
+\hyperlink{classobstacle_1_1PolyObstacle_ae426e9296754e1ba96abcee3b86b3591}{avg\-Point}
+\begin{DoxyCompactList}\small\item\em The average point in the polygon. \end{DoxyCompactList}\item 
+\hyperlink{classobstacle_1_1PolyObstacle_a14e97b3f09f9ff21f36efc7a58759e5c}{max\-Dist}
+\begin{DoxyCompactList}\small\item\em The maximum distance from any vertex and the average point. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Object that represents the an obstacle represented by a series of points (in the node list) which make up a set of lines. 
+
+These lines represent the exterior of an obstacle 
+
+Definition at line 15 of file obstacle.\-py.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classobstacle_1_1PolyObstacle_aa92e181aa910e2cd8c110047fe10dc83}{\index{obstacle\-::\-Poly\-Obstacle@{obstacle\-::\-Poly\-Obstacle}!\-\_\-\-\_\-init\-\_\-\-\_\-@{\-\_\-\-\_\-init\-\_\-\-\_\-}}
+\index{\-\_\-\-\_\-init\-\_\-\-\_\-@{\-\_\-\-\_\-init\-\_\-\-\_\-}!obstacle::PolyObstacle@{obstacle\-::\-Poly\-Obstacle}}
+\subsubsection[{\-\_\-\-\_\-init\-\_\-\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}def obstacle.\-Poly\-Obstacle.\-\_\-\-\_\-init\-\_\-\-\_\- (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{\-\_\-nodes, }
+\item[{}]{\-\_\-screen}
+\end{DoxyParamCaption}
+)}}\label{classobstacle_1_1PolyObstacle_aa92e181aa910e2cd8c110047fe10dc83}
+
+
+Creates a \hyperlink{classobstacle_1_1PolyObstacle}{Poly\-Obstacle} instance and initializes certain global variables. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \-\_\-nodes} & A list of nodes used to represent the vertices of the polygon \\
+\hline
+{\em \-\_\-screen} & The Py\-Game screen that is used to draw the obstacle \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 23 of file obstacle.\-py.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classobstacle_1_1PolyObstacle_a2a3283cffb3239c8777b85a83af5ee8c}{\index{obstacle\-::\-Poly\-Obstacle@{obstacle\-::\-Poly\-Obstacle}!detect\-Collision@{detect\-Collision}}
+\index{detect\-Collision@{detect\-Collision}!obstacle::PolyObstacle@{obstacle\-::\-Poly\-Obstacle}}
+\subsubsection[{detect\-Collision}]{\setlength{\rightskip}{0pt plus 5cm}def obstacle.\-Poly\-Obstacle.\-detect\-Collision (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{p\-Start, }
+\item[{}]{p\-End}
+\end{DoxyParamCaption}
+)}}\label{classobstacle_1_1PolyObstacle_a2a3283cffb3239c8777b85a83af5ee8c}
+
+
+Detects a if there is a collision with the obstacle and the line $<$p\-Start, p\-End$>$ 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\-Start} & The starting point of the line \\
+\hline
+{\em p\-End} & The ending point of the line \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A boolean value representing if a collision occurred 
+\end{DoxyReturn}
+
+
+Definition at line 68 of file obstacle.\-py.
+
+\hypertarget{classobstacle_1_1PolyObstacle_a9b5b53a6b8ee6233de2ee394871ebe6e}{\index{obstacle\-::\-Poly\-Obstacle@{obstacle\-::\-Poly\-Obstacle}!draw@{draw}}
+\index{draw@{draw}!obstacle::PolyObstacle@{obstacle\-::\-Poly\-Obstacle}}
+\subsubsection[{draw}]{\setlength{\rightskip}{0pt plus 5cm}def obstacle.\-Poly\-Obstacle.\-draw (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}}\label{classobstacle_1_1PolyObstacle_a9b5b53a6b8ee6233de2ee394871ebe6e}
+
+
+Draws the polygon on the Py\-Game screen. 
+
+
+
+Definition at line 200 of file obstacle.\-py.
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classobstacle_1_1PolyObstacle_a9b5b53a6b8ee6233de2ee394871ebe6e_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classobstacle_1_1PolyObstacle_ab2833da8e0c16a191ae373af40a75b46}{\index{obstacle\-::\-Poly\-Obstacle@{obstacle\-::\-Poly\-Obstacle}!estimate\-Poly@{estimate\-Poly}}
+\index{estimate\-Poly@{estimate\-Poly}!obstacle::PolyObstacle@{obstacle\-::\-Poly\-Obstacle}}
+\subsubsection[{estimate\-Poly}]{\setlength{\rightskip}{0pt plus 5cm}def obstacle.\-Poly\-Obstacle.\-estimate\-Poly (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}}\label{classobstacle_1_1PolyObstacle_ab2833da8e0c16a191ae373af40a75b46}
+
+
+Tries to estimate the polygon as a circle (very useful for environments with many obstacles i.\-e. 
+
+a random field of obstacles) 
+
+Definition at line 51 of file obstacle.\-py.
+
+\hypertarget{classobstacle_1_1PolyObstacle_a43adce887280997dfb49067e741f54db}{\index{obstacle\-::\-Poly\-Obstacle@{obstacle\-::\-Poly\-Obstacle}!get\-Closest\-Point@{get\-Closest\-Point}}
+\index{get\-Closest\-Point@{get\-Closest\-Point}!obstacle::PolyObstacle@{obstacle\-::\-Poly\-Obstacle}}
+\subsubsection[{get\-Closest\-Point}]{\setlength{\rightskip}{0pt plus 5cm}def obstacle.\-Poly\-Obstacle.\-get\-Closest\-Point (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{a, }
+\item[{}]{b, }
+\item[{}]{p}
+\end{DoxyParamCaption}
+)}}\label{classobstacle_1_1PolyObstacle_a43adce887280997dfb49067e741f54db}
+
+
+Gets the closest point on line $<$a, b$>$ to point p. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & The starting point on the line \\
+\hline
+{\em b} & The ending point of the line \\
+\hline
+{\em p} & The point in which the closest distance will be checked \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The closest point on line $<$a, b$>$ to point p 
+\end{DoxyReturn}
+
+
+Definition at line 84 of file obstacle.\-py.
+
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classobstacle_1_1PolyObstacle_a43adce887280997dfb49067e741f54db_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classobstacle_1_1PolyObstacle_a43adce887280997dfb49067e741f54db_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classobstacle_1_1PolyObstacle_af866b6f101194b8a8731f2394fdc247e}{\index{obstacle\-::\-Poly\-Obstacle@{obstacle\-::\-Poly\-Obstacle}!get\-Point@{get\-Point}}
+\index{get\-Point@{get\-Point}!obstacle::PolyObstacle@{obstacle\-::\-Poly\-Obstacle}}
+\subsubsection[{get\-Point}]{\setlength{\rightskip}{0pt plus 5cm}def obstacle.\-Poly\-Obstacle.\-get\-Point (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{p}
+\end{DoxyParamCaption}
+)}}\label{classobstacle_1_1PolyObstacle_af866b6f101194b8a8731f2394fdc247e}
+
+
+Gets the closest point from the polygon to p. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & The point to be checked \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The closest point that lies on the polygon exterior to p 
+\end{DoxyReturn}
+
+
+Definition at line 178 of file obstacle.\-py.
+
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classobstacle_1_1PolyObstacle_af866b6f101194b8a8731f2394fdc247e_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classobstacle_1_1PolyObstacle_af866b6f101194b8a8731f2394fdc247e_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classobstacle_1_1PolyObstacle_a205face22efbad01fd4c96fbe73321fd}{\index{obstacle\-::\-Poly\-Obstacle@{obstacle\-::\-Poly\-Obstacle}!get\-Radius@{get\-Radius}}
+\index{get\-Radius@{get\-Radius}!obstacle::PolyObstacle@{obstacle\-::\-Poly\-Obstacle}}
+\subsubsection[{get\-Radius}]{\setlength{\rightskip}{0pt plus 5cm}def obstacle.\-Poly\-Obstacle.\-get\-Radius (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}}\label{classobstacle_1_1PolyObstacle_a205face22efbad01fd4c96fbe73321fd}
+
+
+Gets the 'radius' of the checking point. 
+
+Only used for conformity with circle obstacles that have not been included in this repository \begin{DoxyReturn}{Returns}
+1 
+\end{DoxyReturn}
+
+
+Definition at line 193 of file obstacle.\-py.
+
+\hypertarget{classobstacle_1_1PolyObstacle_a3392ccb4d22e752b0f150af354b16862}{\index{obstacle\-::\-Poly\-Obstacle@{obstacle\-::\-Poly\-Obstacle}!norm@{norm}}
+\index{norm@{norm}!obstacle::PolyObstacle@{obstacle\-::\-Poly\-Obstacle}}
+\subsubsection[{norm}]{\setlength{\rightskip}{0pt plus 5cm}def obstacle.\-Poly\-Obstacle.\-norm (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{p1, }
+\item[{}]{p2}
+\end{DoxyParamCaption}
+)}}\label{classobstacle_1_1PolyObstacle_a3392ccb4d22e752b0f150af354b16862}
+
+
+Gets the Eulidean distance between p1 and p2. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p1,p2} & Points in space \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The distance between p1 and p2 
+\end{DoxyReturn}
+
+
+Definition at line 43 of file obstacle.\-py.
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classobstacle_1_1PolyObstacle_a3392ccb4d22e752b0f150af354b16862_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classobstacle_1_1PolyObstacle_af71f01fca50193a5e5372c2507661ada}{\index{obstacle\-::\-Poly\-Obstacle@{obstacle\-::\-Poly\-Obstacle}!point\-Allowed@{point\-Allowed}}
+\index{point\-Allowed@{point\-Allowed}!obstacle::PolyObstacle@{obstacle\-::\-Poly\-Obstacle}}
+\subsubsection[{point\-Allowed}]{\setlength{\rightskip}{0pt plus 5cm}def obstacle.\-Poly\-Obstacle.\-point\-Allowed (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{b, }
+\item[{}]{p}
+\end{DoxyParamCaption}
+)}}\label{classobstacle_1_1PolyObstacle_af71f01fca50193a5e5372c2507661ada}
+
+
+Checks if a point is allowed, meaning no collisions occur. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em b} & The boid object that will be checked \\
+\hline
+{\em p} & The point that will be checked \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if allowed, false otherwise 
+\end{DoxyReturn}
+
+
+Definition at line 168 of file obstacle.\-py.
+
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classobstacle_1_1PolyObstacle_af71f01fca50193a5e5372c2507661ada_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classobstacle_1_1PolyObstacle_a4647d9efa8fb20d7b464ee5faa8fd7f4}{\index{obstacle\-::\-Poly\-Obstacle@{obstacle\-::\-Poly\-Obstacle}!point\-In\-Poly@{point\-In\-Poly}}
+\index{point\-In\-Poly@{point\-In\-Poly}!obstacle::PolyObstacle@{obstacle\-::\-Poly\-Obstacle}}
+\subsubsection[{point\-In\-Poly}]{\setlength{\rightskip}{0pt plus 5cm}def obstacle.\-Poly\-Obstacle.\-point\-In\-Poly (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{p}
+\end{DoxyParamCaption}
+)}}\label{classobstacle_1_1PolyObstacle_a4647d9efa8fb20d7b464ee5faa8fd7f4}
+
+
+Determines if a point p is inside the polygon represented by this \hyperlink{classobstacle_1_1PolyObstacle}{Poly\-Obstacle} object. 
+
+It does this by checking the number ray intersections that occur is odd or even. If the number is odd, the point is inside the polygon, otherwise it is not. 
+\begin{DoxyParams}{Parameters}
+{\em p} & The point to be checked \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the point is in the polygon and false otherwise 
+\end{DoxyReturn}
+
+
+Definition at line 155 of file obstacle.\-py.
+
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classobstacle_1_1PolyObstacle_a4647d9efa8fb20d7b464ee5faa8fd7f4_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classobstacle_1_1PolyObstacle_a4647d9efa8fb20d7b464ee5faa8fd7f4_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classobstacle_1_1PolyObstacle_a646f5fc4ba3e67c98c2313f4493b6a08}{\index{obstacle\-::\-Poly\-Obstacle@{obstacle\-::\-Poly\-Obstacle}!rayintersectseg@{rayintersectseg}}
+\index{rayintersectseg@{rayintersectseg}!obstacle::PolyObstacle@{obstacle\-::\-Poly\-Obstacle}}
+\subsubsection[{rayintersectseg}]{\setlength{\rightskip}{0pt plus 5cm}def obstacle.\-Poly\-Obstacle.\-rayintersectseg (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{p, }
+\item[{}]{edge}
+\end{DoxyParamCaption}
+)}}\label{classobstacle_1_1PolyObstacle_a646f5fc4ba3e67c98c2313f4493b6a08}
+
+
+Determines if a ray from point p intersects with an edge, edge. 
+
+\begin{DoxyVerb}     Used to determine if a point p in inside the polygon
+\end{DoxyVerb}
+ 
+\begin{DoxyParams}{Parameters}
+{\em p} & The point to be checked \\
+\hline
+{\em edge} & The edge that will be checked \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if a ray from point p intersects with edge and false otherwise 
+\end{DoxyReturn}
+
+
+Definition at line 107 of file obstacle.\-py.
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classobstacle_1_1PolyObstacle_a646f5fc4ba3e67c98c2313f4493b6a08_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classobstacle_1_1PolyObstacle_ae426e9296754e1ba96abcee3b86b3591}{\index{obstacle\-::\-Poly\-Obstacle@{obstacle\-::\-Poly\-Obstacle}!avg\-Point@{avg\-Point}}
+\index{avg\-Point@{avg\-Point}!obstacle::PolyObstacle@{obstacle\-::\-Poly\-Obstacle}}
+\subsubsection[{avg\-Point}]{\setlength{\rightskip}{0pt plus 5cm}obstacle.\-Poly\-Obstacle.\-avg\-Point}}\label{classobstacle_1_1PolyObstacle_ae426e9296754e1ba96abcee3b86b3591}
+
+
+The average point in the polygon. 
+
+Represents the center of the enclosing circle 
+
+Definition at line 55 of file obstacle.\-py.
+
+\hypertarget{classobstacle_1_1PolyObstacle_a73ce2986866adb38653645c5b84ec0ce}{\index{obstacle\-::\-Poly\-Obstacle@{obstacle\-::\-Poly\-Obstacle}!colors@{colors}}
+\index{colors@{colors}!obstacle::PolyObstacle@{obstacle\-::\-Poly\-Obstacle}}
+\subsubsection[{colors}]{\setlength{\rightskip}{0pt plus 5cm}obstacle.\-Poly\-Obstacle.\-colors}}\label{classobstacle_1_1PolyObstacle_a73ce2986866adb38653645c5b84ec0ce}
+
+
+A dictionary of colors defined in pygame. 
+
+
+
+Definition at line 29 of file obstacle.\-py.
+
+\hypertarget{classobstacle_1_1PolyObstacle_a14e97b3f09f9ff21f36efc7a58759e5c}{\index{obstacle\-::\-Poly\-Obstacle@{obstacle\-::\-Poly\-Obstacle}!max\-Dist@{max\-Dist}}
+\index{max\-Dist@{max\-Dist}!obstacle::PolyObstacle@{obstacle\-::\-Poly\-Obstacle}}
+\subsubsection[{max\-Dist}]{\setlength{\rightskip}{0pt plus 5cm}obstacle.\-Poly\-Obstacle.\-max\-Dist}}\label{classobstacle_1_1PolyObstacle_a14e97b3f09f9ff21f36efc7a58759e5c}
+
+
+The maximum distance from any vertex and the average point. 
+
+
+
+Definition at line 58 of file obstacle.\-py.
+
+\hypertarget{classobstacle_1_1PolyObstacle_a125762f0b4a3c9ef8d75c81bc5bc608e}{\index{obstacle\-::\-Poly\-Obstacle@{obstacle\-::\-Poly\-Obstacle}!nodes@{nodes}}
+\index{nodes@{nodes}!obstacle::PolyObstacle@{obstacle\-::\-Poly\-Obstacle}}
+\subsubsection[{nodes}]{\setlength{\rightskip}{0pt plus 5cm}obstacle.\-Poly\-Obstacle.\-nodes}}\label{classobstacle_1_1PolyObstacle_a125762f0b4a3c9ef8d75c81bc5bc608e}
+
+
+A list of nodes used to represent the vertices. 
+
+
+
+Definition at line 26 of file obstacle.\-py.
+
+\hypertarget{classobstacle_1_1PolyObstacle_ad65d210c167b0638ef317ef24670501c}{\index{obstacle\-::\-Poly\-Obstacle@{obstacle\-::\-Poly\-Obstacle}!screen@{screen}}
+\index{screen@{screen}!obstacle::PolyObstacle@{obstacle\-::\-Poly\-Obstacle}}
+\subsubsection[{screen}]{\setlength{\rightskip}{0pt plus 5cm}obstacle.\-Poly\-Obstacle.\-screen}}\label{classobstacle_1_1PolyObstacle_ad65d210c167b0638ef317ef24670501c}
+
+
+The Py\-Game screen that is used to draw the obstacle. 
+
+
+
+Definition at line 32 of file obstacle.\-py.
+
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+code/\hyperlink{obstacle_8py}{obstacle.\-py (\-Concurrent Versions System (\-C\-V\-S) 1.\-12.\-13-\/\-Mir\-Debian-\/9 (client/server))}\end{DoxyCompactItemize}

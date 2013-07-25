@@ -1,0 +1,163 @@
+\hypertarget{classconfiguration_1_1PolyFileConfiguration}{\section{configuration.\-Poly\-File\-Configuration Class Reference}
+\label{classconfiguration_1_1PolyFileConfiguration}\index{configuration.\-Poly\-File\-Configuration@{configuration.\-Poly\-File\-Configuration}}
+}
+
+
+Extends the \hyperlink{classconfiguration_1_1Configuration}{Configuration} class.  
+
+
+
+
+Inheritance diagram for configuration.\-Poly\-File\-Configuration\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=248pt]{classconfiguration_1_1PolyFileConfiguration__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for configuration.\-Poly\-File\-Configuration\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=269pt]{classconfiguration_1_1PolyFileConfiguration__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{classconfiguration_1_1PolyFileConfiguration_ad68553a7fd263204c69800782fdd03a8}{init\-Vars}
+\begin{DoxyCompactList}\small\item\em Parses the file to get the obstacle list. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classconfiguration_1_1PolyFileConfiguration_a4ea5eea95680f3bfdad4adce0578a0f0}{obstacle\-List}
+\begin{DoxyCompactList}\small\item\em List of obstacles. \end{DoxyCompactList}\item 
+\hyperlink{classconfiguration_1_1PolyFileConfiguration_ae5c780baacd4b800d1646a29a8608cbf}{start\-Point}
+\begin{DoxyCompactList}\small\item\em Starting point. \end{DoxyCompactList}\item 
+\hyperlink{classconfiguration_1_1PolyFileConfiguration_acb9da93ddecef1bb34bbce601473f0f1}{end\-Point}
+\begin{DoxyCompactList}\small\item\em Ending point. \end{DoxyCompactList}\item 
+\hyperlink{classconfiguration_1_1PolyFileConfiguration_a075aa5177145a1041468f24e4829e8e8}{prm\-Gen}
+\begin{DoxyCompactList}\small\item\em Object containing variables and mehtods for the global planner. \end{DoxyCompactList}\item 
+\hyperlink{classconfiguration_1_1PolyFileConfiguration_a2fd4dfe65bb97105e3ff146d125849df}{goal\-List}
+\begin{DoxyCompactList}\small\item\em List of intermediate goals derived by the global planner. \end{DoxyCompactList}\item 
+\hyperlink{classconfiguration_1_1PolyFileConfiguration_a34104bbe3eb34147465a4d9e05d6c6b6}{boid\-List}
+\begin{DoxyCompactList}\small\item\em List of boids in the flock. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Extends the \hyperlink{classconfiguration_1_1Configuration}{Configuration} class. 
+
+This configuration gets the obstacles from .map files that have been created. 
+
+Definition at line 44 of file configuration.\-py.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classconfiguration_1_1PolyFileConfiguration_ad68553a7fd263204c69800782fdd03a8}{\index{configuration\-::\-Poly\-File\-Configuration@{configuration\-::\-Poly\-File\-Configuration}!init\-Vars@{init\-Vars}}
+\index{init\-Vars@{init\-Vars}!configuration::PolyFileConfiguration@{configuration\-::\-Poly\-File\-Configuration}}
+\subsubsection[{init\-Vars}]{\setlength{\rightskip}{0pt plus 5cm}def configuration.\-Poly\-File\-Configuration.\-init\-Vars (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{start\-Point, }
+\item[{}]{end\-Point, }
+\item[{}]{flock\-Size, }
+\item[{}]{filename = {\ttfamily \char`\"{}maps/m1.map\char`\"{}}}
+\end{DoxyParamCaption}
+)}}\label{classconfiguration_1_1PolyFileConfiguration_ad68553a7fd263204c69800782fdd03a8}
+
+
+Parses the file to get the obstacle list. 
+
+Creates a P\-R\-M generator to create a global map of the environment. Gets the list of intermediate goals. Also, creates the list of boids used in the simulation 
+\begin{DoxyParams}{Parameters}
+{\em start\-Point} & The starting point for the boids \\
+\hline
+{\em end\-Point} & The ending point for the boids \\
+\hline
+{\em flock\-Size} & The size of the flock (number of boids) \\
+\hline
+{\em filename} & The name of the file that contains the environment map \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 55 of file configuration.\-py.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classconfiguration_1_1PolyFileConfiguration_a34104bbe3eb34147465a4d9e05d6c6b6}{\index{configuration\-::\-Poly\-File\-Configuration@{configuration\-::\-Poly\-File\-Configuration}!boid\-List@{boid\-List}}
+\index{boid\-List@{boid\-List}!configuration::PolyFileConfiguration@{configuration\-::\-Poly\-File\-Configuration}}
+\subsubsection[{boid\-List}]{\setlength{\rightskip}{0pt plus 5cm}configuration.\-Poly\-File\-Configuration.\-boid\-List}}\label{classconfiguration_1_1PolyFileConfiguration_a34104bbe3eb34147465a4d9e05d6c6b6}
+
+
+List of boids in the flock. 
+
+
+
+Definition at line 73 of file configuration.\-py.
+
+\hypertarget{classconfiguration_1_1PolyFileConfiguration_acb9da93ddecef1bb34bbce601473f0f1}{\index{configuration\-::\-Poly\-File\-Configuration@{configuration\-::\-Poly\-File\-Configuration}!end\-Point@{end\-Point}}
+\index{end\-Point@{end\-Point}!configuration::PolyFileConfiguration@{configuration\-::\-Poly\-File\-Configuration}}
+\subsubsection[{end\-Point}]{\setlength{\rightskip}{0pt plus 5cm}configuration.\-Poly\-File\-Configuration.\-end\-Point}}\label{classconfiguration_1_1PolyFileConfiguration_acb9da93ddecef1bb34bbce601473f0f1}
+
+
+Ending point. 
+
+
+
+Definition at line 64 of file configuration.\-py.
+
+\hypertarget{classconfiguration_1_1PolyFileConfiguration_a2fd4dfe65bb97105e3ff146d125849df}{\index{configuration\-::\-Poly\-File\-Configuration@{configuration\-::\-Poly\-File\-Configuration}!goal\-List@{goal\-List}}
+\index{goal\-List@{goal\-List}!configuration::PolyFileConfiguration@{configuration\-::\-Poly\-File\-Configuration}}
+\subsubsection[{goal\-List}]{\setlength{\rightskip}{0pt plus 5cm}configuration.\-Poly\-File\-Configuration.\-goal\-List}}\label{classconfiguration_1_1PolyFileConfiguration_a2fd4dfe65bb97105e3ff146d125849df}
+
+
+List of intermediate goals derived by the global planner. 
+
+
+
+Definition at line 70 of file configuration.\-py.
+
+\hypertarget{classconfiguration_1_1PolyFileConfiguration_a4ea5eea95680f3bfdad4adce0578a0f0}{\index{configuration\-::\-Poly\-File\-Configuration@{configuration\-::\-Poly\-File\-Configuration}!obstacle\-List@{obstacle\-List}}
+\index{obstacle\-List@{obstacle\-List}!configuration::PolyFileConfiguration@{configuration\-::\-Poly\-File\-Configuration}}
+\subsubsection[{obstacle\-List}]{\setlength{\rightskip}{0pt plus 5cm}configuration.\-Poly\-File\-Configuration.\-obstacle\-List}}\label{classconfiguration_1_1PolyFileConfiguration_a4ea5eea95680f3bfdad4adce0578a0f0}
+
+
+List of obstacles. 
+
+
+
+Definition at line 58 of file configuration.\-py.
+
+\hypertarget{classconfiguration_1_1PolyFileConfiguration_a075aa5177145a1041468f24e4829e8e8}{\index{configuration\-::\-Poly\-File\-Configuration@{configuration\-::\-Poly\-File\-Configuration}!prm\-Gen@{prm\-Gen}}
+\index{prm\-Gen@{prm\-Gen}!configuration::PolyFileConfiguration@{configuration\-::\-Poly\-File\-Configuration}}
+\subsubsection[{prm\-Gen}]{\setlength{\rightskip}{0pt plus 5cm}configuration.\-Poly\-File\-Configuration.\-prm\-Gen}}\label{classconfiguration_1_1PolyFileConfiguration_a075aa5177145a1041468f24e4829e8e8}
+
+
+Object containing variables and mehtods for the global planner. 
+
+
+
+Definition at line 67 of file configuration.\-py.
+
+\hypertarget{classconfiguration_1_1PolyFileConfiguration_ae5c780baacd4b800d1646a29a8608cbf}{\index{configuration\-::\-Poly\-File\-Configuration@{configuration\-::\-Poly\-File\-Configuration}!start\-Point@{start\-Point}}
+\index{start\-Point@{start\-Point}!configuration::PolyFileConfiguration@{configuration\-::\-Poly\-File\-Configuration}}
+\subsubsection[{start\-Point}]{\setlength{\rightskip}{0pt plus 5cm}configuration.\-Poly\-File\-Configuration.\-start\-Point}}\label{classconfiguration_1_1PolyFileConfiguration_ae5c780baacd4b800d1646a29a8608cbf}
+
+
+Starting point. 
+
+
+
+Definition at line 61 of file configuration.\-py.
+
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+code/\hyperlink{configuration_8py}{configuration.\-py (\-Concurrent Versions System (\-C\-V\-S) 1.\-12.\-13-\/\-Mir\-Debian-\/9 (client/server))}\end{DoxyCompactItemize}

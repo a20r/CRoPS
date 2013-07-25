@@ -3,6 +3,9 @@
 # C extensions
 *.so
 
+#Mac is dumb
+.DS_Store
+
 # Packages
 *.egg
 *.egg-info

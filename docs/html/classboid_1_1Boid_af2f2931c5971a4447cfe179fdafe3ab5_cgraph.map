@@ -1,0 +1,4 @@
+<map id="boid.Boid.setNewGoal" name="boid.Boid.setNewGoal">
+<area shape="rect" id="node3" href="$classboid_1_1Boid.html#a492a0ad33a962b15ed94789d59f3b08a" title="Defines a sigmoidal curve used for goal attractself._sumDivide = lambda lt, s: map(lambda p: p / s..." alt="" coords="205,5,360,35"/>
+<area shape="rect" id="node5" href="$classboid_1_1Boid.html#a576c57d100aa5743d610de30bf1a2b2c" title="Gets the distance between two points." alt="" coords="408,5,517,35"/>
+</map>

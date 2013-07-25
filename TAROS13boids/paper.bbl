@@ -1,0 +1,155 @@
+\begin{thebibliography}{10}
+
+\bibitem{reynolds1987flocks}
+Reynolds, C.W.:
+\newblock Flocks, herds and schools: A distributed behavioral model.
+\newblock In: ACM SIGGRAPH Computer Graphics. Volume~21. (1987)  25--34
+
+\bibitem{swarm}
+\c{S}ahin, E.:
+\newblock Swarm robotics: from sources of inspiration to domains of
+  application.
+\newblock In: International Conference on Swarm Robotics. (2004)  10--20
+
+\bibitem{swarmReview12}
+Brambilla, M., Ferrante, E., Birattari, M., Dorigo, M.:
+\newblock Swarm robotics: a review from the swarm engineering perspective.
+\newblock Swarm Intelligence (2012)  1--41
+
+\bibitem{Rei79}
+Reif, J.:
+\newblock Complexity of the mover's problem and generalizations.
+\newblock In: IEEE Symposium on Foundations of Computer Science. (1979)
+  421--427
+
+\bibitem{Can88}
+Canny, J.:
+\newblock The Complexity of Robot Motion Planning.
+\newblock MIT Press, Cambridge, MA (1988)
+
+\bibitem{SchSha88}
+Schwartz, J.T., Sharir, M.:
+\newblock A survey of motion planning and related geometric algorithms.
+\newblock Artificial Intelligence \textbf{37} (1988)  157 -- 169
+
+\bibitem{Khatib86}
+Khatib, O.:
+\newblock Real time obstacle avoidance for manipulators and mobile robots.
+\newblock International Journal of Robotics Research \textbf{5}(1) (1986)
+  90--99
+
+\bibitem{reif1999social}
+Reif, J.H., Wang, H.:
+\newblock Social potential fields: A distributed behavioral control for
+  autonomous robots.
+\newblock Robotics and Autonomous Systems \textbf{27}(3) (1999)  171--194
+
+\bibitem{book:SwarmsAPFs}
+Spears, W.M., Spears, D.F.:
+\newblock Physicomimetics: Physics-based swarm intelligence.
+\newblock Springer (2012)
+
+\bibitem{tanner2005formation}
+Tanner, H.G., Kumar, A.:
+\newblock Formation stabilization of multiple agents using decentralized
+  navigation functions.
+\newblock In: Robotics: Science and Systems. (2005)  49--56
+
+\bibitem{RK92}
+Rimon, E., Koditschek, D.:
+\newblock Exact robot navigation using artificial potential functions.
+\newblock IEEE Tr. on Rob. and Autom. \textbf{8} (1992)  501--518
+
+\bibitem{PRM}
+Kavraki, L.E., \v{S}vestka, P., Latombe, J.C., Overmars, M.H.:
+\newblock Probabilistic roadmaps for path planning in high-dimensional
+  configuration spaces.
+\newblock IEEE Transactions on Robotics and Automation \textbf{12}(4) (1996)
+  566--580
+
+\bibitem{TogglePRM}
+Denny, J., Amato, N.M.:
+\newblock Toggle {PRM}: A coordinated mapping of {C}-free and {C}-obstacle in
+  arbitrary dimension.
+\newblock Volume~86 of Springer Tracts in Advanced Robotics. (2013)  297--312
+
+\bibitem{UOBPRM}
+Yeh, H.Y., Thomas, S., Eppstein, D., Amato, N.M.:
+\newblock {UOBPRM}: A uniformly distributed obstacle-based {PRM}.
+\newblock In: IEEE/RSJ International Conference on Intelligent Robots and
+  Systems. (2012)  2655--2662
+
+\bibitem{PlakuTRO05}
+Plaku, E., Bekris, K.E., Chen, B.Y., Ladd, A.M., Kavraki, L.E.:
+\newblock Sampling-based roadmap of trees for parallel motion planning.
+\newblock IEEE Transactions on Robotics \textbf{21}(4) (2005)  587--608
+
+\bibitem{HSUBridge}
+Sun, Z., Hsu, D., Jiang, T., Kurniawati, H., Reif, J.:
+\newblock Narrow passage sampling for probabilistic roadmap planners.
+\newblock IEEE Transactions on Robotics \textbf{21}(6) (2005)  1105--1115
+
+\bibitem{GaussianPRM}
+Boor, V., Overmars, M.H., van~der Stappen, A.F.:
+\newblock The {G}aussian sampling strategy for probabilistic roadmap planners.
+\newblock In: IEEE International Conference on Robotics and Automation. (1999)
+  1018--1023
+
+\bibitem{manocha12}
+Pan, J., Chitta, S., Manocha, D.:
+\newblock Faster sample-based motion planning using instance-based learning.
+\newblock Volume~68 of Springer Tracts in Advanced Robotics. (2013)  381--396
+
+\bibitem{PRMapf1}
+Aarno, D., Kragic, D., Christensen, H.I.:
+\newblock Artificial potential biased probabilistic roadmap method.
+\newblock In: IEEE International Conference on Robotics and Automation. (2004)
+  461--466
+
+\bibitem{PRMapf2}
+Katz, R., Hutchinson, S.:
+\newblock Efficiently biasing prms with passage potentials.
+\newblock In: IEEE International Conference on Robotics and Automation. (2006)
+  889--894
+
+\bibitem{LienSwarming}
+Bayaz{\i}t, O.B., Lien, J.M., Amato, N.M.:
+\newblock Swarming behavior using probabilistic roadmap techniques.
+\newblock In: Swarm Robotics.
+\newblock Springer (2005)  112--125
+
+\bibitem{LienSwarmingRules}
+Bayaz{\i}t, O.B., Lien, J.M., Amato, N.M.:
+\newblock Better group behaviors using rule-based roadmaps.
+\newblock In: International Workshop on Algorithmic Foundations of Robotics.
+\newblock (2004)  95--112
+
+\bibitem{LienShepherding}
+Harrison, J.F., Vo, C., Lien, J.M.:
+\newblock Scalable and robust shepherding via deformable shapes.
+\newblock In: Motion in Games.
+\newblock Springer (2010)  218--229
+
+\bibitem{KostasSwarm}
+Krontiris, A., Louis, S., Bekris, K.E.:
+\newblock Multi-level formation roadmaps for collision-free dynamic shape
+  changes with non-holonomic teams.
+\newblock In: IEEE International Conference on Robotics and Automation. (2012)
+
+\bibitem{book:MP}
+Choset, H., Lynch, K.M., Hutchinson, S., Kantor, G., Burgard, W., Kavraki,
+  L.E., Thrun, S.:
+\newblock Principles of Robot Motion: Theory, Algorithms, and Implementations.
+\newblock {MIT} Press (2005)
+
+\bibitem{book:LaValle}
+LaValle, S.M.:
+\newblock Planning Algorithms.
+\newblock Cambridge University Press, Cambridge, MA (2006)
+
+\bibitem{CodeBoids}
+Wallar, A., Plaku, E.:
+\newblock Source code for {CRoPS}: Combined roadmaps and potentials for swarm
+  path planning (2013) http://faculty.cua.edu/plaku/CRoPS.zip.
+
+\end{thebibliography}

@@ -1,0 +1,145 @@
+\hypertarget{namespacedijkstra}{\section{dijkstra Namespace Reference}
+\label{namespacedijkstra}\index{dijkstra@{dijkstra}}
+}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{namespacedijkstra_abb1e685c821d7000ea0f6a867070443d}{Dijkstra}
+\begin{DoxyCompactList}\small\item\em Find shortest paths from the start vertex to all vertices nearer than or equal to the end. \end{DoxyCompactList}\item 
+def \hyperlink{namespacedijkstra_a20424eb142377bdf202ef03812875d83}{shortest\-Path}
+\begin{DoxyCompactList}\small\item\em Find a single shortest path from the given start vertex to the given end vertex. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{namespacedijkstra_abb1e685c821d7000ea0f6a867070443d}{\index{dijkstra@{dijkstra}!Dijkstra@{Dijkstra}}
+\index{Dijkstra@{Dijkstra}!dijkstra@{dijkstra}}
+\subsubsection[{Dijkstra}]{\setlength{\rightskip}{0pt plus 5cm}def dijkstra.\-Dijkstra (
+\begin{DoxyParamCaption}
+\item[{}]{G, }
+\item[{}]{start, }
+\item[{}]{end = {\ttfamily None}}
+\end{DoxyParamCaption}
+)}}\label{namespacedijkstra_abb1e685c821d7000ea0f6a867070443d}
+
+
+Find shortest paths from the start vertex to all vertices nearer than or equal to the end. 
+
+\begin{DoxyVerb} The input graph G is assumed to have the following
+ representation: A vertex can be any object that can
+ be used as an index into a dictionary.  G is a
+ dictionary, indexed by vertices.  For any vertex v,
+ G[v] is itself a dictionary, indexed by the neighbors
+ of v.  For any edge v->w, G[v][w] is the length of
+ the edge.  This is related to the representation in
+ <http://www.python.org/doc/essays/graphs.html>
+ where Guido van Rossum suggests representing graphs
+ as dictionaries mapping vertices to lists of neighbors,
+ however dictionaries of edges have many advantages
+ over lists: they can store extra information (here,
+ the lengths), they support fast existence tests,
+ and they allow easy modification of the graph by edge
+ insertion and removal.  Such modifications are not
+ needed here but are important in other graph algorithms.
+ Since dictionaries obey iterator protocol, a graph
+ represented as described here could be handed without
+ modification to an algorithm using Guido's representation.
+
+ Of course, G and G[v] need not be Python dict objects;
+ they can be any other object that obeys dict protocol,
+ for instance a wrapper in which vertices are URLs
+ and a call to G[v] loads the web page and finds its links.
+
+ The output is a pair (D,P) where D[v] is the distance
+ from start to v and P[v] is the predecessor of v along
+ the shortest path from s to v.
+
+ Dijkstra's algorithm is only guaranteed to work correctly
+ when all edge lengths are positive. This code does not
+ verify this property for all edges (only the edges seen
+ before the end vertex is reached), but will correctly
+ compute shortest paths even for some graphs with negative
+ edges, and will raise an exception if it discovers that
+ a negative edge has caused it to make a mistake.
+\end{DoxyVerb}
+ 
+\begin{DoxyParams}{Parameters}
+{\em G} & The graph dictionary to be searched \\
+\hline
+{\em start} & Starting node \\
+\hline
+{\em end} & End node \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Something important 
+\end{DoxyReturn}
+
+
+Definition at line 53 of file dijkstra.\-py.
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacedijkstra_abb1e685c821d7000ea0f6a867070443d_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{namespacedijkstra_a20424eb142377bdf202ef03812875d83}{\index{dijkstra@{dijkstra}!shortest\-Path@{shortest\-Path}}
+\index{shortest\-Path@{shortest\-Path}!dijkstra@{dijkstra}}
+\subsubsection[{shortest\-Path}]{\setlength{\rightskip}{0pt plus 5cm}def dijkstra.\-shortest\-Path (
+\begin{DoxyParamCaption}
+\item[{}]{G, }
+\item[{}]{start, }
+\item[{}]{end}
+\end{DoxyParamCaption}
+)}}\label{namespacedijkstra_a20424eb142377bdf202ef03812875d83}
+
+
+Find a single shortest path from the given start vertex to the given end vertex. 
+
+\begin{DoxyVerb} The input has the same conventions as Dijkstra().
+ The output is a list of the vertices in order along
+ the shortest path.
+\end{DoxyVerb}
+ 
+\begin{DoxyParams}{Parameters}
+{\em G} & The graph dictionary to be searched \\
+\hline
+{\em start} & The starting node \\
+\hline
+{\em end} & The ending node \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A list of the nodes that lie on the shortest path from start to end in G 
+\end{DoxyReturn}
+
+
+Definition at line 89 of file dijkstra.\-py.
+
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=310pt]{namespacedijkstra_a20424eb142377bdf202ef03812875d83_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacedijkstra_a20424eb142377bdf202ef03812875d83_icgraph}
+\end{center}
+\end{figure}
+
+

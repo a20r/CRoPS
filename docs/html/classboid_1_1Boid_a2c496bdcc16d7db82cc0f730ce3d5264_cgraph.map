@@ -1,0 +1,6 @@
+<map id="boid.Boid.getObstacleVectorList" name="boid.Boid.getObstacleVectorList">
+<area shape="rect" id="node3" href="$classboid_1_1Boid.html#a576c57d100aa5743d610de30bf1a2b2c" title="Gets the distance between two points." alt="" coords="501,5,611,35"/>
+<area shape="rect" id="node5" href="$classboid_1_1Boid.html#ab330aef12ad0a338a51a7661c736e971" title="Defines the potential between a boid and an obstacle." alt="" coords="280,31,437,60"/>
+<area shape="rect" id="node8" href="$classboid_1_1Boid.html#a8aa203db69671a064a623a88dfc6b3b7" title="Gets a scaled direction vector from an unscaled vector." alt="" coords="265,84,452,113"/>
+<area shape="rect" id="node10" href="$classboid_1_1Boid.html#a5324650d399f5c850ec7b7bda10eeae7" title="Gets the magnitude of a vector." alt="" coords="504,84,608,113"/>
+</map>

@@ -1,0 +1,4 @@
+<map id="obstacle.PolyObstacle.rayintersectseg" name="obstacle.PolyObstacle.rayintersectseg">
+<area shape="rect" id="node3" href="$classobstacle_1_1PolyObstacle.html#a4647d9efa8fb20d7b464ee5faa8fd7f4" title="Determines if a point p is inside the polygon represented by this PolyObstacle object." alt="" coords="303,5,487,51"/>
+<area shape="rect" id="node5" href="$classobstacle_1_1PolyObstacle.html#af71f01fca50193a5e5372c2507661ada" title="Checks if a point is allowed, meaning no collisions occur." alt="" coords="537,5,721,51"/>
+</map>

@@ -1,0 +1,1417 @@
+\hypertarget{classboid_1_1Boid}{\section{boid.\-Boid Class Reference}
+\label{classboid_1_1Boid}\index{boid.\-Boid@{boid.\-Boid}}
+}
+
+
+Class which represents one boid.  
+
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{classboid_1_1Boid_adc09d58160fc982be36e29effa580536}{\-\_\-\-\_\-init\-\_\-\-\_\-}
+\begin{DoxyCompactList}\small\item\em Initializes all of the variables given as input to the constructor used by the boid. \end{DoxyCompactList}\item 
+def \hyperlink{classboid_1_1Boid_a9223cd4c67780cbdbe60a4efb2ee441e}{sum\-Divide}
+\begin{DoxyCompactList}\small\item\em Special sort of reduce that sums components in a list of vectors and divides each final component with a certain number. \end{DoxyCompactList}\item 
+def \hyperlink{classboid_1_1Boid_a576c57d100aa5743d610de30bf1a2b2c}{norm}
+\begin{DoxyCompactList}\small\item\em Gets the distance between two points. \end{DoxyCompactList}\item 
+def \hyperlink{classboid_1_1Boid_ab232028bea08b512bbdaab5be7dfd08f}{get\-Var}
+\begin{DoxyCompactList}\small\item\em Gets multiple variables from a list with one call. \end{DoxyCompactList}\item 
+def \hyperlink{classboid_1_1Boid_ab330aef12ad0a338a51a7661c736e971}{obstacle\-Func}
+\begin{DoxyCompactList}\small\item\em Defines the potential between a boid and an obstacle. \end{DoxyCompactList}\item 
+def \hyperlink{classboid_1_1Boid_a5324650d399f5c850ec7b7bda10eeae7}{mag}
+\begin{DoxyCompactList}\small\item\em Gets the magnitude of a vector. \end{DoxyCompactList}\item 
+def \hyperlink{classboid_1_1Boid_a492a0ad33a962b15ed94789d59f3b08a}{sigmoid\-Func}
+\begin{DoxyCompactList}\small\item\em Defines a sigmoidal curve used for goal attractself.\-\_\-sum\-Divide = lambda lt, s\-: map(lambda p\-: p / s, reduce(lambda p1, p2\-: (p1\mbox{[}0\mbox{]} + p2\mbox{[}0\mbox{]}, p1\mbox{[}1\mbox{]} + p2\mbox{[}1\mbox{]}), lt))ion and for boid repulsion. \end{DoxyCompactList}\item 
+def \hyperlink{classboid_1_1Boid_a19392045cdd5e9b46136369028be3c52}{in\-Goal}
+\begin{DoxyCompactList}\small\item\em Checks if a piont is in the current goal. \end{DoxyCompactList}\item 
+def \hyperlink{classboid_1_1Boid_a321e7b1d2c37c96503e11e00ee87b96f}{in\-World}
+\begin{DoxyCompactList}\small\item\em Checks if a point is in the world. \end{DoxyCompactList}\item 
+def \hyperlink{classboid_1_1Boid_ae4afdcafb2e1c89390dc0648dae4c6fe}{point\-Allowed}
+\begin{DoxyCompactList}\small\item\em Checks if a point is inside or collides with any of the obstacles. \end{DoxyCompactList}\item 
+def \hyperlink{classboid_1_1Boid_a0df699bd295042ed4b088d94bc158f17}{init\-Function\-Parameters}
+\item 
+def \hyperlink{classboid_1_1Boid_ad7296706ec7c12098d3beda40c3fb283}{set\-Boid\-List}
+\begin{DoxyCompactList}\small\item\em Setter method used to set the list of boids. \end{DoxyCompactList}\item 
+def \hyperlink{classboid_1_1Boid_a0eb922b53c2f4e30dc0d042d1649fd2c}{update\-Position\-Buffer}
+\begin{DoxyCompactList}\small\item\em Updates the position buffer. \end{DoxyCompactList}\item 
+def \hyperlink{classboid_1_1Boid_a3467de3698a644a484ff63a3e86f7adc}{find\-Max}
+\begin{DoxyCompactList}\small\item\em Gets the n maximum values from a list. \end{DoxyCompactList}\item 
+def \hyperlink{classboid_1_1Boid_a2d4f1cded412a333857bb1b8b17d3dd0}{reduce\-Weight\-Values}
+\begin{DoxyCompactList}\small\item\em Works in cohesion with sum\-Divide. \end{DoxyCompactList}\item 
+def \hyperlink{classboid_1_1Boid_a8aa203db69671a064a623a88dfc6b3b7}{get\-Direction\-Vector}
+\begin{DoxyCompactList}\small\item\em Gets a scaled direction vector from an unscaled vector. \end{DoxyCompactList}\item 
+def \hyperlink{classboid_1_1Boid_a2c496bdcc16d7db82cc0f730ce3d5264}{get\-Obstacle\-Vector\-List}
+\begin{DoxyCompactList}\small\item\em Gets the potential vectors to a boid due to the repulsive obstacle field. \end{DoxyCompactList}\item 
+def \hyperlink{classboid_1_1Boid_a47c28705553bd3d729212944880161d3}{get\-Goal\-Vector}
+\begin{DoxyCompactList}\small\item\em Gets the potential vectors to a boid due to the attractive goal field. \end{DoxyCompactList}\item 
+def \hyperlink{classboid_1_1Boid_a353fbe920fabe58a43affaf183cfcd03}{get\-Boid\-Vector\-List}
+\begin{DoxyCompactList}\small\item\em Gets the potential vectors to a boid due to the repulsive boid field. \end{DoxyCompactList}\item 
+def \hyperlink{classboid_1_1Boid_aa7ef63f7cc5adfdeb565c56f359b07cd}{get\-Neighbor\-Vector\-List}
+\begin{DoxyCompactList}\small\item\em Gets the heading vectors of the neighbours. \end{DoxyCompactList}\item 
+def \hyperlink{classboid_1_1Boid_af2f2931c5971a4447cfe179fdafe3ab5}{set\-New\-Goal}
+\begin{DoxyCompactList}\small\item\em Sets the new goal. \end{DoxyCompactList}\item 
+def \hyperlink{classboid_1_1Boid_ae658dd15bb05b6addce51fba0907709b}{determine\-Random\-Walk}
+\begin{DoxyCompactList}\small\item\em Increments the random walk counter, changes the current goal if necessary. \end{DoxyCompactList}\item 
+def \hyperlink{classboid_1_1Boid_a8a354e4b7d58ced69771f3bb5f52d257}{update}
+\begin{DoxyCompactList}\small\item\em Updates the boid's heading and position due to the potential fields. \end{DoxyCompactList}\item 
+def \hyperlink{classboid_1_1Boid_a289cbbc12cc9c3e7445a5f37b2d88124}{draw}
+\begin{DoxyCompactList}\small\item\em Draws the boid as a pygame circle in the pygame screen. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classboid_1_1Boid_abce5218cbba7b3d9f12dc78bbb9dab5e}{gamma\-Func}
+\begin{DoxyCompactList}\small\item\em Function used to choose a neighbour. \end{DoxyCompactList}\item 
+\hyperlink{classboid_1_1Boid_ac7d14690dde12ebc05f8f5ea80e29869}{prm\-Gen}
+\begin{DoxyCompactList}\small\item\em Class which holds the details about the global path planner. \end{DoxyCompactList}\item 
+\hyperlink{classboid_1_1Boid_aa230e5710394a620995a3943fc9faa8d}{screen}
+\begin{DoxyCompactList}\small\item\em Py\-Game screen. \end{DoxyCompactList}\item 
+\hyperlink{classboid_1_1Boid_a1bff2843c74b712aba274831d0a715d4}{radius}
+\begin{DoxyCompactList}\small\item\em Radius of the boid. \end{DoxyCompactList}\item 
+\hyperlink{classboid_1_1Boid_afc4b725b80313dc3604ac36015f84156}{heading}
+\begin{DoxyCompactList}\small\item\em Initial random heading. \end{DoxyCompactList}\item 
+\hyperlink{classboid_1_1Boid_a88a68e23e37b82bfe9862d7cd79542ad}{dim}
+\begin{DoxyCompactList}\small\item\em Dimensions of the screen. \end{DoxyCompactList}\item 
+\hyperlink{classboid_1_1Boid_a09f8fe6b2deb64fd65cfd64fc01470b9}{y\-Size}
+\item 
+\hyperlink{classboid_1_1Boid_a4af115e678f7716a2eb87c573e71073c}{neighbor\-Size}
+\begin{DoxyCompactList}\small\item\em Number of neighbours that will influence the boid. \end{DoxyCompactList}\item 
+\hyperlink{classboid_1_1Boid_a6a2ca3d501e4b2b0d531d4d968487907}{color}
+\begin{DoxyCompactList}\small\item\em Unique color used to distinguish the boid (only used in debugging and visualization) \end{DoxyCompactList}\item 
+\hyperlink{classboid_1_1Boid_a4cf2a59e0efad2d71d8fee93fdd6538b}{speed}
+\begin{DoxyCompactList}\small\item\em Maximum speed of the boid. \end{DoxyCompactList}\item 
+\hyperlink{classboid_1_1Boid_a9db9b88d02af40d3773b034560959694}{obstacle\-List}
+\begin{DoxyCompactList}\small\item\em List of obstacles that were parsed by mapparser. \end{DoxyCompactList}\item 
+\hyperlink{classboid_1_1Boid_a7a3492977220ee1f7623aa9643a2fea4}{goal\-List}
+\begin{DoxyCompactList}\small\item\em Goals used by the boid. \end{DoxyCompactList}\item 
+\hyperlink{classboid_1_1Boid_a8a871af6fc4d19477ce4881eb9ddc629}{goal\-Counter}
+\begin{DoxyCompactList}\small\item\em Used to store what goal the boid is currently looking at. \end{DoxyCompactList}\item 
+\hyperlink{classboid_1_1Boid_afe8350d9d4c1eeb15a5df7337328e1c7}{goal}
+\begin{DoxyCompactList}\small\item\em Initializes the current goal. \end{DoxyCompactList}\item 
+\hyperlink{classboid_1_1Boid_a099882fd7d72bfd06c15ec20b0425905}{stuck}
+\begin{DoxyCompactList}\small\item\em Defines if the boid is stuck. \end{DoxyCompactList}\item 
+\hyperlink{classboid_1_1Boid_a92bf79dcfff9e21d33611cfc89f8823c}{s\-Pos}
+\begin{DoxyCompactList}\small\item\em Starting position of the boid. \end{DoxyCompactList}\item 
+\hyperlink{classboid_1_1Boid_a15b3d73058c73aed19d2e9fb0266805d}{e\-Pos}
+\begin{DoxyCompactList}\small\item\em Position of the boids. \end{DoxyCompactList}\item 
+\hyperlink{classboid_1_1Boid_a483cb30093bc500a6123d5a801247ad5}{position}
+\begin{DoxyCompactList}\small\item\em Sets the position of the boid. \end{DoxyCompactList}\item 
+\hyperlink{classboid_1_1Boid_ab6c778a50dd384fabc6aa48be04c0988}{position\-Buffer}
+\begin{DoxyCompactList}\small\item\em Used to tell if the boid is stuck or not. \end{DoxyCompactList}\item 
+\hyperlink{classboid_1_1Boid_abc5327f9ad46170e5f57d89c2c6e18e9}{ob\-Influence\-R}
+\begin{DoxyCompactList}\small\item\em The radius of influence used when filtering the number of obstacles it needs to check. \end{DoxyCompactList}\item 
+\hyperlink{classboid_1_1Boid_ae1a1d62fdc0e9014df5fcb1a49d37342}{b\-Influence\-R}
+\begin{DoxyCompactList}\small\item\em The radius of influence used when filtering the number of boids it needs to check. \end{DoxyCompactList}\item 
+\hyperlink{classboid_1_1Boid_a222ad56335a1e1ea39dd6da9e21797c5}{ob\-Beta}
+\begin{DoxyCompactList}\small\item\em Priori constant for obstacle repulsion (increasing it gives more priority to the repulsive obstacle field) \end{DoxyCompactList}\item 
+\hyperlink{classboid_1_1Boid_a5090639a7e3a489c8dc83bd12b6d1653}{g\-Alpha}
+\begin{DoxyCompactList}\small\item\em Scales the value returned by the sigmoid function for goal attraction. \end{DoxyCompactList}\item 
+\hyperlink{classboid_1_1Boid_a2c33a265be5079b7b916be49933eccaf}{g\-Beta}
+\begin{DoxyCompactList}\small\item\em Helps scale the value returned by the sigmoid function for goal attraction. \end{DoxyCompactList}\item 
+\hyperlink{classboid_1_1Boid_a17cd80cfac0fb27106c12e45929f9a9f}{g\-Delta}
+\begin{DoxyCompactList}\small\item\em Constant that is used in the sigmoidal curve for goal attraction. \end{DoxyCompactList}\item 
+\hyperlink{classboid_1_1Boid_a71d768a5bc70ecfcaec719cfd0c310ef}{g\-Const}
+\begin{DoxyCompactList}\small\item\em Priori constant for goal attraction (increasing it gives more priority to the attractive goal field) \end{DoxyCompactList}\item 
+\hyperlink{classboid_1_1Boid_abc7224afe02b42ee1c32ecd15d1b0a22}{b\-Alpha}
+\begin{DoxyCompactList}\small\item\em Scales the value returned by the sigmoid function for boid repulsion. \end{DoxyCompactList}\item 
+\hyperlink{classboid_1_1Boid_a1a48be012c505eea2e1b9f110d9bd5f3}{b\-Beta}
+\begin{DoxyCompactList}\small\item\em Helps scale the value returned by the sigmoid function for boid repulsion. \end{DoxyCompactList}\item 
+\hyperlink{classboid_1_1Boid_afebd87123c129406ee9e8c99f85f66a7}{b\-Delta}
+\begin{DoxyCompactList}\small\item\em Constant that is used in the sigmoid curve for boid repulsion. \end{DoxyCompactList}\item 
+\hyperlink{classboid_1_1Boid_a868b1d8e6fadd2b1beedc1a9f23edde5}{b\-Const}
+\begin{DoxyCompactList}\small\item\em Priroi constant for boid repulsion (increasing it gives more priority to the repulsive boid field) \end{DoxyCompactList}\item 
+\hyperlink{classboid_1_1Boid_abbcf546137204a45278b6caa95c4378b}{stuck\-Const}
+\begin{DoxyCompactList}\small\item\em Amount of movement in the position buffer needs to be less that this value for a boid to be considered stuck. \end{DoxyCompactList}\item 
+\hyperlink{classboid_1_1Boid_a663164af1a20323f49e002d7576914f7}{stuck\-D\-Avg}
+\begin{DoxyCompactList}\small\item\em The average distance from a neighbour when a boid is stuck. \end{DoxyCompactList}\item 
+\hyperlink{classboid_1_1Boid_a03960faefd59c4a651442eb373aa5c15}{stuck\-D\-Sigma}
+\begin{DoxyCompactList}\small\item\em The standard deviation for a neighbour probability distribution Helps boid pick closer neighbours when it is stuck. \end{DoxyCompactList}\item 
+\hyperlink{classboid_1_1Boid_acdfca1dc9b177a512502c6af681bfa9e}{n\-Stuck\-D\-Avg}
+\begin{DoxyCompactList}\small\item\em The average distance from a neighbour when a boid is not stuck. \end{DoxyCompactList}\item 
+\hyperlink{classboid_1_1Boid_add42a1be4f79d1ae8990065fa7e5d4de}{n\-Stuck\-D\-Sigma}
+\begin{DoxyCompactList}\small\item\em The standard deviation in a neighbour distance distribution when the boid is not stuck. \end{DoxyCompactList}\item 
+\hyperlink{classboid_1_1Boid_a996d92e215eb56d98a811c86c7118637}{random\-Walk\-X}
+\begin{DoxyCompactList}\small\item\em Maximum x random walk. \end{DoxyCompactList}\item 
+\hyperlink{classboid_1_1Boid_a1bf0149b7eadf9e6a0f08c93d95bac73}{random\-Walk\-Y}
+\begin{DoxyCompactList}\small\item\em Maximum y random walk. \end{DoxyCompactList}\item 
+\hyperlink{classboid_1_1Boid_af0bd96c51b17bc6c3f6fec2891b58a3d}{rand\-Walk\-Count}
+\begin{DoxyCompactList}\small\item\em Stores the number of times a random walk has occurred. \end{DoxyCompactList}\item 
+\hyperlink{classboid_1_1Boid_a4b192d2b077b52005a82df5d98748190}{head\-Weight\-List}
+\begin{DoxyCompactList}\small\item\em Weights how much the previous heading affects the new heading. \end{DoxyCompactList}\item 
+\hyperlink{classboid_1_1Boid_a6d3a16e56bd3cc7efabf9ac7cae4ae16}{boid\-List}
+\item 
+\hyperlink{classboid_1_1Boid_a811abb81b81e3b3e8e08e77a908ddb58}{comp\-Weight\-List}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Class which represents one boid. 
+
+Definition at line 27 of file boid.\-py.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classboid_1_1Boid_adc09d58160fc982be36e29effa580536}{\index{boid\-::\-Boid@{boid\-::\-Boid}!\-\_\-\-\_\-init\-\_\-\-\_\-@{\-\_\-\-\_\-init\-\_\-\-\_\-}}
+\index{\-\_\-\-\_\-init\-\_\-\-\_\-@{\-\_\-\-\_\-init\-\_\-\-\_\-}!boid::Boid@{boid\-::\-Boid}}
+\subsubsection[{\-\_\-\-\_\-init\-\_\-\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}def boid.\-Boid.\-\_\-\-\_\-init\-\_\-\-\_\- (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{\-\_\-s\-Pos, }
+\item[{}]{\-\_\-e\-Pos, }
+\item[{}]{\-\_\-speed, }
+\item[{}]{\-\_\-x\-Size, }
+\item[{}]{\-\_\-y\-Size, }
+\item[{}]{\-\_\-neighbor\-Size, }
+\item[{}]{\-\_\-gamma\-Func, }
+\item[{}]{\-\_\-obstacle\-List, }
+\item[{}]{\-\_\-goal\-List, }
+\item[{}]{\-\_\-prm\-Gen, }
+\item[{}]{\-\_\-screen, }
+\item[{}]{\-\_\-color}
+\end{DoxyParamCaption}
+)}}\label{classboid_1_1Boid_adc09d58160fc982be36e29effa580536}
+
+
+Initializes all of the variables given as input to the constructor used by the boid. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em self} & The object pointer \\
+\hline
+{\em \-\_\-s\-Pos} & The starting position of the boid (some noise added when initializing the flock) \\
+\hline
+{\em \-\_\-e\-Pos} & The ending position of the flock \\
+\hline
+{\em \-\_\-x\-Size} & The size of the x axis of the pygame screen \\
+\hline
+{\em \-\_\-neighbour\-Size} & The number of neighbours that will influence the boid's heading \\
+\hline
+{\em \-\_\-obstacle\-List} & List of obstacles generated by mapparser \\
+\hline
+{\em \-\_\-goal\-List} & List of goals used by the boid \\
+\hline
+{\em \-\_\-prm\-Gen} & Object that stores all of the data about the global planner \\
+\hline
+{\em \-\_\-screen} & Py\-Game screen \\
+\hline
+{\em \-\_\-color} & Unique color used for debugging purposes \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An instance of a boid 
+\end{DoxyReturn}
+
+
+Definition at line 43 of file boid.\-py.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classboid_1_1Boid_ae658dd15bb05b6addce51fba0907709b}{\index{boid\-::\-Boid@{boid\-::\-Boid}!determine\-Random\-Walk@{determine\-Random\-Walk}}
+\index{determine\-Random\-Walk@{determine\-Random\-Walk}!boid::Boid@{boid\-::\-Boid}}
+\subsubsection[{determine\-Random\-Walk}]{\setlength{\rightskip}{0pt plus 5cm}def boid.\-Boid.\-determine\-Random\-Walk (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}}\label{classboid_1_1Boid_ae658dd15bb05b6addce51fba0907709b}
+
+
+Increments the random walk counter, changes the current goal if necessary. 
+
+\begin{DoxyReturn}{Returns}
+New random walk vectors where the maximum component value is determeined by the random\-Walk fields 
+\end{DoxyReturn}
+
+
+Definition at line 394 of file boid.\-py.
+
+\hypertarget{classboid_1_1Boid_a289cbbc12cc9c3e7445a5f37b2d88124}{\index{boid\-::\-Boid@{boid\-::\-Boid}!draw@{draw}}
+\index{draw@{draw}!boid::Boid@{boid\-::\-Boid}}
+\subsubsection[{draw}]{\setlength{\rightskip}{0pt plus 5cm}def boid.\-Boid.\-draw (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}}\label{classboid_1_1Boid_a289cbbc12cc9c3e7445a5f37b2d88124}
+
+
+Draws the boid as a pygame circle in the pygame screen. 
+
+
+
+Definition at line 454 of file boid.\-py.
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=340pt]{classboid_1_1Boid_a289cbbc12cc9c3e7445a5f37b2d88124_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classboid_1_1Boid_a3467de3698a644a484ff63a3e86f7adc}{\index{boid\-::\-Boid@{boid\-::\-Boid}!find\-Max@{find\-Max}}
+\index{find\-Max@{find\-Max}!boid::Boid@{boid\-::\-Boid}}
+\subsubsection[{find\-Max}]{\setlength{\rightskip}{0pt plus 5cm}def boid.\-Boid.\-find\-Max (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{search\-Through, }
+\item[{}]{counter}
+\end{DoxyParamCaption}
+)}}\label{classboid_1_1Boid_a3467de3698a644a484ff63a3e86f7adc}
+
+
+Gets the n maximum values from a list. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em search\-Through} & The list that the maximums will be extracted from \\
+\hline
+{\em counter} & The number of values to be extracted \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A list of the counter maximum values from search\-Through 
+\end{DoxyReturn}
+
+
+Definition at line 297 of file boid.\-py.
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classboid_1_1Boid_a3467de3698a644a484ff63a3e86f7adc_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classboid_1_1Boid_a353fbe920fabe58a43affaf183cfcd03}{\index{boid\-::\-Boid@{boid\-::\-Boid}!get\-Boid\-Vector\-List@{get\-Boid\-Vector\-List}}
+\index{get\-Boid\-Vector\-List@{get\-Boid\-Vector\-List}!boid::Boid@{boid\-::\-Boid}}
+\subsubsection[{get\-Boid\-Vector\-List}]{\setlength{\rightskip}{0pt plus 5cm}def boid.\-Boid.\-get\-Boid\-Vector\-List (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}}\label{classboid_1_1Boid_a353fbe920fabe58a43affaf183cfcd03}
+
+
+Gets the potential vectors to a boid due to the repulsive boid field. 
+
+\begin{DoxyReturn}{Returns}
+A list of scaled vectors that will be used to determine the influence of the boids on the heading. A\-Lso returns the sum of the potential 
+\end{DoxyReturn}
+
+
+Definition at line 359 of file boid.\-py.
+
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classboid_1_1Boid_a353fbe920fabe58a43affaf183cfcd03_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=344pt]{classboid_1_1Boid_a353fbe920fabe58a43affaf183cfcd03_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classboid_1_1Boid_a8aa203db69671a064a623a88dfc6b3b7}{\index{boid\-::\-Boid@{boid\-::\-Boid}!get\-Direction\-Vector@{get\-Direction\-Vector}}
+\index{get\-Direction\-Vector@{get\-Direction\-Vector}!boid::Boid@{boid\-::\-Boid}}
+\subsubsection[{get\-Direction\-Vector}]{\setlength{\rightskip}{0pt plus 5cm}def boid.\-Boid.\-get\-Direction\-Vector (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{vector}
+\end{DoxyParamCaption}
+)}}\label{classboid_1_1Boid_a8aa203db69671a064a623a88dfc6b3b7}
+
+
+Gets a scaled direction vector from an unscaled vector. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em vector} & Vector to be scaled \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A vector whose maximum magnitude is less than the specified maximum speed 
+\end{DoxyReturn}
+
+
+Definition at line 324 of file boid.\-py.
+
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=338pt]{classboid_1_1Boid_a8aa203db69671a064a623a88dfc6b3b7_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classboid_1_1Boid_a8aa203db69671a064a623a88dfc6b3b7_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classboid_1_1Boid_a47c28705553bd3d729212944880161d3}{\index{boid\-::\-Boid@{boid\-::\-Boid}!get\-Goal\-Vector@{get\-Goal\-Vector}}
+\index{get\-Goal\-Vector@{get\-Goal\-Vector}!boid::Boid@{boid\-::\-Boid}}
+\subsubsection[{get\-Goal\-Vector}]{\setlength{\rightskip}{0pt plus 5cm}def boid.\-Boid.\-get\-Goal\-Vector (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}}\label{classboid_1_1Boid_a47c28705553bd3d729212944880161d3}
+
+
+Gets the potential vectors to a boid due to the attractive goal field. 
+
+\begin{DoxyReturn}{Returns}
+A list of scaled vectors that will be used to determine the influence of the goal on the heading. Also returns the sum of the potential values 
+\end{DoxyReturn}
+
+
+Definition at line 348 of file boid.\-py.
+
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classboid_1_1Boid_a47c28705553bd3d729212944880161d3_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=328pt]{classboid_1_1Boid_a47c28705553bd3d729212944880161d3_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classboid_1_1Boid_aa7ef63f7cc5adfdeb565c56f359b07cd}{\index{boid\-::\-Boid@{boid\-::\-Boid}!get\-Neighbor\-Vector\-List@{get\-Neighbor\-Vector\-List}}
+\index{get\-Neighbor\-Vector\-List@{get\-Neighbor\-Vector\-List}!boid::Boid@{boid\-::\-Boid}}
+\subsubsection[{get\-Neighbor\-Vector\-List}]{\setlength{\rightskip}{0pt plus 5cm}def boid.\-Boid.\-get\-Neighbor\-Vector\-List (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}}\label{classboid_1_1Boid_aa7ef63f7cc5adfdeb565c56f359b07cd}
+
+
+Gets the heading vectors of the neighbours. 
+
+\begin{DoxyReturn}{Returns}
+A list of scaled vectors that represent the neighbour headings. Also returns the indicies in the boid list in which the neighbours are stored 
+\end{DoxyReturn}
+
+
+Definition at line 373 of file boid.\-py.
+
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classboid_1_1Boid_aa7ef63f7cc5adfdeb565c56f359b07cd_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classboid_1_1Boid_aa7ef63f7cc5adfdeb565c56f359b07cd_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classboid_1_1Boid_a2c496bdcc16d7db82cc0f730ce3d5264}{\index{boid\-::\-Boid@{boid\-::\-Boid}!get\-Obstacle\-Vector\-List@{get\-Obstacle\-Vector\-List}}
+\index{get\-Obstacle\-Vector\-List@{get\-Obstacle\-Vector\-List}!boid::Boid@{boid\-::\-Boid}}
+\subsubsection[{get\-Obstacle\-Vector\-List}]{\setlength{\rightskip}{0pt plus 5cm}def boid.\-Boid.\-get\-Obstacle\-Vector\-List (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}}\label{classboid_1_1Boid_a2c496bdcc16d7db82cc0f730ce3d5264}
+
+
+Gets the potential vectors to a boid due to the repulsive obstacle field. 
+
+\begin{DoxyReturn}{Returns}
+A list of scaled vectors that will be used to determine the influence of obstacles on the heading. Also returns the sum of the potential values 
+\end{DoxyReturn}
+
+
+Definition at line 334 of file boid.\-py.
+
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classboid_1_1Boid_a2c496bdcc16d7db82cc0f730ce3d5264_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classboid_1_1Boid_a2c496bdcc16d7db82cc0f730ce3d5264_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classboid_1_1Boid_ab232028bea08b512bbdaab5be7dfd08f}{\index{boid\-::\-Boid@{boid\-::\-Boid}!get\-Var@{get\-Var}}
+\index{get\-Var@{get\-Var}!boid::Boid@{boid\-::\-Boid}}
+\subsubsection[{get\-Var}]{\setlength{\rightskip}{0pt plus 5cm}def boid.\-Boid.\-get\-Var (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{search\-List, }
+\item[{}]{ind}
+\end{DoxyParamCaption}
+)}}\label{classboid_1_1Boid_ab232028bea08b512bbdaab5be7dfd08f}
+
+
+Gets multiple variables from a list with one call. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em search\-List} & The list that the values will be taken from \\
+\hline
+{\em ind} & the indicies that will be queried \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A list of values from search list 
+\end{DoxyReturn}
+
+
+Definition at line 132 of file boid.\-py.
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classboid_1_1Boid_ab232028bea08b512bbdaab5be7dfd08f_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classboid_1_1Boid_a19392045cdd5e9b46136369028be3c52}{\index{boid\-::\-Boid@{boid\-::\-Boid}!in\-Goal@{in\-Goal}}
+\index{in\-Goal@{in\-Goal}!boid::Boid@{boid\-::\-Boid}}
+\subsubsection[{in\-Goal}]{\setlength{\rightskip}{0pt plus 5cm}def boid.\-Boid.\-in\-Goal (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{p}
+\end{DoxyParamCaption}
+)}}\label{classboid_1_1Boid_a19392045cdd5e9b46136369028be3c52}
+
+
+Checks if a piont is in the current goal. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & The point that is going to be checked \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A boolean value representing if the point is in the current goal 
+\end{DoxyReturn}
+
+
+Definition at line 171 of file boid.\-py.
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classboid_1_1Boid_a19392045cdd5e9b46136369028be3c52_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classboid_1_1Boid_a0df699bd295042ed4b088d94bc158f17}{\index{boid\-::\-Boid@{boid\-::\-Boid}!init\-Function\-Parameters@{init\-Function\-Parameters}}
+\index{init\-Function\-Parameters@{init\-Function\-Parameters}!boid::Boid@{boid\-::\-Boid}}
+\subsubsection[{init\-Function\-Parameters}]{\setlength{\rightskip}{0pt plus 5cm}def boid.\-Boid.\-init\-Function\-Parameters (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}}\label{classboid_1_1Boid_a0df699bd295042ed4b088d94bc158f17}
+
+
+Definition at line 191 of file boid.\-py.
+
+\hypertarget{classboid_1_1Boid_a321e7b1d2c37c96503e11e00ee87b96f}{\index{boid\-::\-Boid@{boid\-::\-Boid}!in\-World@{in\-World}}
+\index{in\-World@{in\-World}!boid::Boid@{boid\-::\-Boid}}
+\subsubsection[{in\-World}]{\setlength{\rightskip}{0pt plus 5cm}def boid.\-Boid.\-in\-World (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{p}
+\end{DoxyParamCaption}
+)}}\label{classboid_1_1Boid_a321e7b1d2c37c96503e11e00ee87b96f}
+
+
+Checks if a point is in the world. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & The point that is going to be checked \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A boolean value representing if the point is in the world 
+\end{DoxyReturn}
+
+
+Definition at line 180 of file boid.\-py.
+
+\hypertarget{classboid_1_1Boid_a5324650d399f5c850ec7b7bda10eeae7}{\index{boid\-::\-Boid@{boid\-::\-Boid}!mag@{mag}}
+\index{mag@{mag}!boid::Boid@{boid\-::\-Boid}}
+\subsubsection[{mag}]{\setlength{\rightskip}{0pt plus 5cm}def boid.\-Boid.\-mag (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{vec}
+\end{DoxyParamCaption}
+)}}\label{classboid_1_1Boid_a5324650d399f5c850ec7b7bda10eeae7}
+
+
+Gets the magnitude of a vector. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em vec} & A vector represented as a list \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The magnitude of the vector 
+\end{DoxyReturn}
+
+
+Definition at line 152 of file boid.\-py.
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classboid_1_1Boid_a5324650d399f5c850ec7b7bda10eeae7_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classboid_1_1Boid_a576c57d100aa5743d610de30bf1a2b2c}{\index{boid\-::\-Boid@{boid\-::\-Boid}!norm@{norm}}
+\index{norm@{norm}!boid::Boid@{boid\-::\-Boid}}
+\subsubsection[{norm}]{\setlength{\rightskip}{0pt plus 5cm}def boid.\-Boid.\-norm (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{p1, }
+\item[{}]{p2}
+\end{DoxyParamCaption}
+)}}\label{classboid_1_1Boid_a576c57d100aa5743d610de30bf1a2b2c}
+
+
+Gets the distance between two points. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p1,p2} & points whose distance will be returned \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The Euclidean distance between p1 and p2 
+\end{DoxyReturn}
+
+
+Definition at line 122 of file boid.\-py.
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classboid_1_1Boid_a576c57d100aa5743d610de30bf1a2b2c_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classboid_1_1Boid_ab330aef12ad0a338a51a7661c736e971}{\index{boid\-::\-Boid@{boid\-::\-Boid}!obstacle\-Func@{obstacle\-Func}}
+\index{obstacle\-Func@{obstacle\-Func}!boid::Boid@{boid\-::\-Boid}}
+\subsubsection[{obstacle\-Func}]{\setlength{\rightskip}{0pt plus 5cm}def boid.\-Boid.\-obstacle\-Func (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{beta, }
+\item[{}]{b, }
+\item[{}]{o}
+\end{DoxyParamCaption}
+)}}\label{classboid_1_1Boid_ab330aef12ad0a338a51a7661c736e971}
+
+
+Defines the potential between a boid and an obstacle. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em beta} & Constant used to increase the weight of the function \\
+\hline
+{\em b} & The boid that is being comapred \\
+\hline
+{\em o} & The obstacle that is being compared \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A value representing the potential between b and o 
+\end{DoxyReturn}
+
+
+Definition at line 143 of file boid.\-py.
+
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=318pt]{classboid_1_1Boid_ab330aef12ad0a338a51a7661c736e971_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classboid_1_1Boid_ab330aef12ad0a338a51a7661c736e971_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classboid_1_1Boid_ae4afdcafb2e1c89390dc0648dae4c6fe}{\index{boid\-::\-Boid@{boid\-::\-Boid}!point\-Allowed@{point\-Allowed}}
+\index{point\-Allowed@{point\-Allowed}!boid::Boid@{boid\-::\-Boid}}
+\subsubsection[{point\-Allowed}]{\setlength{\rightskip}{0pt plus 5cm}def boid.\-Boid.\-point\-Allowed (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{p}
+\end{DoxyParamCaption}
+)}}\label{classboid_1_1Boid_ae4afdcafb2e1c89390dc0648dae4c6fe}
+
+
+Checks if a point is inside or collides with any of the obstacles. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & The point that will be checked \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 188 of file boid.\-py.
+
+\hypertarget{classboid_1_1Boid_a2d4f1cded412a333857bb1b8b17d3dd0}{\index{boid\-::\-Boid@{boid\-::\-Boid}!reduce\-Weight\-Values@{reduce\-Weight\-Values}}
+\index{reduce\-Weight\-Values@{reduce\-Weight\-Values}!boid::Boid@{boid\-::\-Boid}}
+\subsubsection[{reduce\-Weight\-Values}]{\setlength{\rightskip}{0pt plus 5cm}def boid.\-Boid.\-reduce\-Weight\-Values (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{w\-List, }
+\item[{}]{v\-List}
+\end{DoxyParamCaption}
+)}}\label{classboid_1_1Boid_a2d4f1cded412a333857bb1b8b17d3dd0}
+
+
+Works in cohesion with sum\-Divide. 
+
+Weights values in a list and divides by the sum of those weights 
+\begin{DoxyParams}{Parameters}
+{\em w\-List} & List of Weights \\
+\hline
+{\em $\ast$v\-List} & Values that will be weighted \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An average vector that represents the average heading due to the potential fields 
+\end{DoxyReturn}
+
+
+Definition at line 315 of file boid.\-py.
+
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classboid_1_1Boid_a2d4f1cded412a333857bb1b8b17d3dd0_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classboid_1_1Boid_ad7296706ec7c12098d3beda40c3fb283}{\index{boid\-::\-Boid@{boid\-::\-Boid}!set\-Boid\-List@{set\-Boid\-List}}
+\index{set\-Boid\-List@{set\-Boid\-List}!boid::Boid@{boid\-::\-Boid}}
+\subsubsection[{set\-Boid\-List}]{\setlength{\rightskip}{0pt plus 5cm}def boid.\-Boid.\-set\-Boid\-List (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{\-\_\-boid\-List}
+\end{DoxyParamCaption}
+)}}\label{classboid_1_1Boid_ad7296706ec7c12098d3beda40c3fb283}
+
+
+Setter method used to set the list of boids. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \-\_\-boid\-List} & The list of boids in the flock \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 275 of file boid.\-py.
+
+\hypertarget{classboid_1_1Boid_af2f2931c5971a4447cfe179fdafe3ab5}{\index{boid\-::\-Boid@{boid\-::\-Boid}!set\-New\-Goal@{set\-New\-Goal}}
+\index{set\-New\-Goal@{set\-New\-Goal}!boid::Boid@{boid\-::\-Boid}}
+\subsubsection[{set\-New\-Goal}]{\setlength{\rightskip}{0pt plus 5cm}def boid.\-Boid.\-set\-New\-Goal (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}}\label{classboid_1_1Boid_af2f2931c5971a4447cfe179fdafe3ab5}
+
+
+Sets the new goal. 
+
+
+
+Definition at line 383 of file boid.\-py.
+
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classboid_1_1Boid_af2f2931c5971a4447cfe179fdafe3ab5_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classboid_1_1Boid_a492a0ad33a962b15ed94789d59f3b08a}{\index{boid\-::\-Boid@{boid\-::\-Boid}!sigmoid\-Func@{sigmoid\-Func}}
+\index{sigmoid\-Func@{sigmoid\-Func}!boid::Boid@{boid\-::\-Boid}}
+\subsubsection[{sigmoid\-Func}]{\setlength{\rightskip}{0pt plus 5cm}def boid.\-Boid.\-sigmoid\-Func (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{alpha, }
+\item[{}]{beta, }
+\item[{}]{delta, }
+\item[{}]{const, }
+\item[{}]{b\-\_\-r, }
+\item[{}]{g\-\_\-r, }
+\item[{}]{b\-\_\-pos, }
+\item[{}]{g\-\_\-pos}
+\end{DoxyParamCaption}
+)}}\label{classboid_1_1Boid_a492a0ad33a962b15ed94789d59f3b08a}
+
+
+Defines a sigmoidal curve used for goal attractself.\-\_\-sum\-Divide = lambda lt, s\-: map(lambda p\-: p / s, reduce(lambda p1, p2\-: (p1\mbox{[}0\mbox{]} + p2\mbox{[}0\mbox{]}, p1\mbox{[}1\mbox{]} + p2\mbox{[}1\mbox{]}), lt))ion and for boid repulsion. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em alpha,beta,delta,const} & Constants that are used to modify the shape of the curve \\
+\hline
+{\em b\-\_\-r,b\-\_\-pos} & The radius and position of the boid \\
+\hline
+{\em g\-\_\-r,g\-\_\-pos} & The radius and position of a goal / boid \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 162 of file boid.\-py.
+
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=314pt]{classboid_1_1Boid_a492a0ad33a962b15ed94789d59f3b08a_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classboid_1_1Boid_a492a0ad33a962b15ed94789d59f3b08a_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classboid_1_1Boid_a9223cd4c67780cbdbe60a4efb2ee441e}{\index{boid\-::\-Boid@{boid\-::\-Boid}!sum\-Divide@{sum\-Divide}}
+\index{sum\-Divide@{sum\-Divide}!boid::Boid@{boid\-::\-Boid}}
+\subsubsection[{sum\-Divide}]{\setlength{\rightskip}{0pt plus 5cm}def boid.\-Boid.\-sum\-Divide (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{lt, }
+\item[{}]{s}
+\end{DoxyParamCaption}
+)}}\label{classboid_1_1Boid_a9223cd4c67780cbdbe60a4efb2ee441e}
+
+
+Special sort of reduce that sums components in a list of vectors and divides each final component with a certain number. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em self} & The object pointer \\
+\hline
+{\em lt} & List of vectors that will be summed over and divided \\
+\hline
+{\em s} & Number that will divide each component by at the end \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 109 of file boid.\-py.
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classboid_1_1Boid_a9223cd4c67780cbdbe60a4efb2ee441e_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classboid_1_1Boid_a8a354e4b7d58ced69771f3bb5f52d257}{\index{boid\-::\-Boid@{boid\-::\-Boid}!update@{update}}
+\index{update@{update}!boid::Boid@{boid\-::\-Boid}}
+\subsubsection[{update}]{\setlength{\rightskip}{0pt plus 5cm}def boid.\-Boid.\-update (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}}\label{classboid_1_1Boid_a8a354e4b7d58ced69771f3bb5f52d257}
+
+
+Updates the boid's heading and position due to the potential fields. 
+
+
+
+Definition at line 411 of file boid.\-py.
+
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classboid_1_1Boid_a8a354e4b7d58ced69771f3bb5f52d257_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classboid_1_1Boid_a0eb922b53c2f4e30dc0d042d1649fd2c}{\index{boid\-::\-Boid@{boid\-::\-Boid}!update\-Position\-Buffer@{update\-Position\-Buffer}}
+\index{update\-Position\-Buffer@{update\-Position\-Buffer}!boid::Boid@{boid\-::\-Boid}}
+\subsubsection[{update\-Position\-Buffer}]{\setlength{\rightskip}{0pt plus 5cm}def boid.\-Boid.\-update\-Position\-Buffer (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}}\label{classboid_1_1Boid_a0eb922b53c2f4e30dc0d042d1649fd2c}
+
+
+Updates the position buffer. 
+
+\begin{DoxyReturn}{Returns}
+The displacement of a boid over a certain number of frames 
+\end{DoxyReturn}
+
+
+Definition at line 283 of file boid.\-py.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classboid_1_1Boid_abc7224afe02b42ee1c32ecd15d1b0a22}{\index{boid\-::\-Boid@{boid\-::\-Boid}!b\-Alpha@{b\-Alpha}}
+\index{b\-Alpha@{b\-Alpha}!boid::Boid@{boid\-::\-Boid}}
+\subsubsection[{b\-Alpha}]{\setlength{\rightskip}{0pt plus 5cm}boid.\-Boid.\-b\-Alpha}}\label{classboid_1_1Boid_abc7224afe02b42ee1c32ecd15d1b0a22}
+
+
+Scales the value returned by the sigmoid function for boid repulsion. 
+
+
+
+Definition at line 224 of file boid.\-py.
+
+\hypertarget{classboid_1_1Boid_a1a48be012c505eea2e1b9f110d9bd5f3}{\index{boid\-::\-Boid@{boid\-::\-Boid}!b\-Beta@{b\-Beta}}
+\index{b\-Beta@{b\-Beta}!boid::Boid@{boid\-::\-Boid}}
+\subsubsection[{b\-Beta}]{\setlength{\rightskip}{0pt plus 5cm}boid.\-Boid.\-b\-Beta}}\label{classboid_1_1Boid_a1a48be012c505eea2e1b9f110d9bd5f3}
+
+
+Helps scale the value returned by the sigmoid function for boid repulsion. 
+
+
+
+Definition at line 228 of file boid.\-py.
+
+\hypertarget{classboid_1_1Boid_a868b1d8e6fadd2b1beedc1a9f23edde5}{\index{boid\-::\-Boid@{boid\-::\-Boid}!b\-Const@{b\-Const}}
+\index{b\-Const@{b\-Const}!boid::Boid@{boid\-::\-Boid}}
+\subsubsection[{b\-Const}]{\setlength{\rightskip}{0pt plus 5cm}boid.\-Boid.\-b\-Const}}\label{classboid_1_1Boid_a868b1d8e6fadd2b1beedc1a9f23edde5}
+
+
+Priroi constant for boid repulsion (increasing it gives more priority to the repulsive boid field) 
+
+
+
+Definition at line 236 of file boid.\-py.
+
+\hypertarget{classboid_1_1Boid_afebd87123c129406ee9e8c99f85f66a7}{\index{boid\-::\-Boid@{boid\-::\-Boid}!b\-Delta@{b\-Delta}}
+\index{b\-Delta@{b\-Delta}!boid::Boid@{boid\-::\-Boid}}
+\subsubsection[{b\-Delta}]{\setlength{\rightskip}{0pt plus 5cm}boid.\-Boid.\-b\-Delta}}\label{classboid_1_1Boid_afebd87123c129406ee9e8c99f85f66a7}
+
+
+Constant that is used in the sigmoid curve for boid repulsion. 
+
+
+
+Definition at line 232 of file boid.\-py.
+
+\hypertarget{classboid_1_1Boid_ae1a1d62fdc0e9014df5fcb1a49d37342}{\index{boid\-::\-Boid@{boid\-::\-Boid}!b\-Influence\-R@{b\-Influence\-R}}
+\index{b\-Influence\-R@{b\-Influence\-R}!boid::Boid@{boid\-::\-Boid}}
+\subsubsection[{b\-Influence\-R}]{\setlength{\rightskip}{0pt plus 5cm}boid.\-Boid.\-b\-Influence\-R}}\label{classboid_1_1Boid_ae1a1d62fdc0e9014df5fcb1a49d37342}
+
+
+The radius of influence used when filtering the number of boids it needs to check. 
+
+
+
+Definition at line 200 of file boid.\-py.
+
+\hypertarget{classboid_1_1Boid_a6d3a16e56bd3cc7efabf9ac7cae4ae16}{\index{boid\-::\-Boid@{boid\-::\-Boid}!boid\-List@{boid\-List}}
+\index{boid\-List@{boid\-List}!boid::Boid@{boid\-::\-Boid}}
+\subsubsection[{boid\-List}]{\setlength{\rightskip}{0pt plus 5cm}boid.\-Boid.\-boid\-List}}\label{classboid_1_1Boid_a6d3a16e56bd3cc7efabf9ac7cae4ae16}
+
+
+Definition at line 276 of file boid.\-py.
+
+\hypertarget{classboid_1_1Boid_a6a2ca3d501e4b2b0d531d4d968487907}{\index{boid\-::\-Boid@{boid\-::\-Boid}!color@{color}}
+\index{color@{color}!boid::Boid@{boid\-::\-Boid}}
+\subsubsection[{color}]{\setlength{\rightskip}{0pt plus 5cm}boid.\-Boid.\-color}}\label{classboid_1_1Boid_a6a2ca3d501e4b2b0d531d4d968487907}
+
+
+Unique color used to distinguish the boid (only used in debugging and visualization) 
+
+
+
+Definition at line 67 of file boid.\-py.
+
+\hypertarget{classboid_1_1Boid_a811abb81b81e3b3e8e08e77a908ddb58}{\index{boid\-::\-Boid@{boid\-::\-Boid}!comp\-Weight\-List@{comp\-Weight\-List}}
+\index{comp\-Weight\-List@{comp\-Weight\-List}!boid::Boid@{boid\-::\-Boid}}
+\subsubsection[{comp\-Weight\-List}]{\setlength{\rightskip}{0pt plus 5cm}boid.\-Boid.\-comp\-Weight\-List}}\label{classboid_1_1Boid_a811abb81b81e3b3e8e08e77a908ddb58}
+
+
+Definition at line 428 of file boid.\-py.
+
+\hypertarget{classboid_1_1Boid_a88a68e23e37b82bfe9862d7cd79542ad}{\index{boid\-::\-Boid@{boid\-::\-Boid}!dim@{dim}}
+\index{dim@{dim}!boid::Boid@{boid\-::\-Boid}}
+\subsubsection[{dim}]{\setlength{\rightskip}{0pt plus 5cm}boid.\-Boid.\-dim}}\label{classboid_1_1Boid_a88a68e23e37b82bfe9862d7cd79542ad}
+
+
+Dimensions of the screen. 
+
+
+
+Definition at line 61 of file boid.\-py.
+
+\hypertarget{classboid_1_1Boid_a15b3d73058c73aed19d2e9fb0266805d}{\index{boid\-::\-Boid@{boid\-::\-Boid}!e\-Pos@{e\-Pos}}
+\index{e\-Pos@{e\-Pos}!boid::Boid@{boid\-::\-Boid}}
+\subsubsection[{e\-Pos}]{\setlength{\rightskip}{0pt plus 5cm}boid.\-Boid.\-e\-Pos}}\label{classboid_1_1Boid_a15b3d73058c73aed19d2e9fb0266805d}
+
+
+Position of the boids. 
+
+
+
+Definition at line 91 of file boid.\-py.
+
+\hypertarget{classboid_1_1Boid_a5090639a7e3a489c8dc83bd12b6d1653}{\index{boid\-::\-Boid@{boid\-::\-Boid}!g\-Alpha@{g\-Alpha}}
+\index{g\-Alpha@{g\-Alpha}!boid::Boid@{boid\-::\-Boid}}
+\subsubsection[{g\-Alpha}]{\setlength{\rightskip}{0pt plus 5cm}boid.\-Boid.\-g\-Alpha}}\label{classboid_1_1Boid_a5090639a7e3a489c8dc83bd12b6d1653}
+
+
+Scales the value returned by the sigmoid function for goal attraction. 
+
+
+
+Definition at line 208 of file boid.\-py.
+
+\hypertarget{classboid_1_1Boid_abce5218cbba7b3d9f12dc78bbb9dab5e}{\index{boid\-::\-Boid@{boid\-::\-Boid}!gamma\-Func@{gamma\-Func}}
+\index{gamma\-Func@{gamma\-Func}!boid::Boid@{boid\-::\-Boid}}
+\subsubsection[{gamma\-Func}]{\setlength{\rightskip}{0pt plus 5cm}boid.\-Boid.\-gamma\-Func}}\label{classboid_1_1Boid_abce5218cbba7b3d9f12dc78bbb9dab5e}
+
+
+Function used to choose a neighbour. 
+
+
+
+Definition at line 46 of file boid.\-py.
+
+\hypertarget{classboid_1_1Boid_a2c33a265be5079b7b916be49933eccaf}{\index{boid\-::\-Boid@{boid\-::\-Boid}!g\-Beta@{g\-Beta}}
+\index{g\-Beta@{g\-Beta}!boid::Boid@{boid\-::\-Boid}}
+\subsubsection[{g\-Beta}]{\setlength{\rightskip}{0pt plus 5cm}boid.\-Boid.\-g\-Beta}}\label{classboid_1_1Boid_a2c33a265be5079b7b916be49933eccaf}
+
+
+Helps scale the value returned by the sigmoid function for goal attraction. 
+
+
+
+Definition at line 212 of file boid.\-py.
+
+\hypertarget{classboid_1_1Boid_a71d768a5bc70ecfcaec719cfd0c310ef}{\index{boid\-::\-Boid@{boid\-::\-Boid}!g\-Const@{g\-Const}}
+\index{g\-Const@{g\-Const}!boid::Boid@{boid\-::\-Boid}}
+\subsubsection[{g\-Const}]{\setlength{\rightskip}{0pt plus 5cm}boid.\-Boid.\-g\-Const}}\label{classboid_1_1Boid_a71d768a5bc70ecfcaec719cfd0c310ef}
+
+
+Priori constant for goal attraction (increasing it gives more priority to the attractive goal field) 
+
+
+
+Definition at line 220 of file boid.\-py.
+
+\hypertarget{classboid_1_1Boid_a17cd80cfac0fb27106c12e45929f9a9f}{\index{boid\-::\-Boid@{boid\-::\-Boid}!g\-Delta@{g\-Delta}}
+\index{g\-Delta@{g\-Delta}!boid::Boid@{boid\-::\-Boid}}
+\subsubsection[{g\-Delta}]{\setlength{\rightskip}{0pt plus 5cm}boid.\-Boid.\-g\-Delta}}\label{classboid_1_1Boid_a17cd80cfac0fb27106c12e45929f9a9f}
+
+
+Constant that is used in the sigmoidal curve for goal attraction. 
+
+
+
+Definition at line 216 of file boid.\-py.
+
+\hypertarget{classboid_1_1Boid_afe8350d9d4c1eeb15a5df7337328e1c7}{\index{boid\-::\-Boid@{boid\-::\-Boid}!goal@{goal}}
+\index{goal@{goal}!boid::Boid@{boid\-::\-Boid}}
+\subsubsection[{goal}]{\setlength{\rightskip}{0pt plus 5cm}boid.\-Boid.\-goal}}\label{classboid_1_1Boid_afe8350d9d4c1eeb15a5df7337328e1c7}
+
+
+Initializes the current goal. 
+
+
+
+Definition at line 82 of file boid.\-py.
+
+\hypertarget{classboid_1_1Boid_a8a871af6fc4d19477ce4881eb9ddc629}{\index{boid\-::\-Boid@{boid\-::\-Boid}!goal\-Counter@{goal\-Counter}}
+\index{goal\-Counter@{goal\-Counter}!boid::Boid@{boid\-::\-Boid}}
+\subsubsection[{goal\-Counter}]{\setlength{\rightskip}{0pt plus 5cm}boid.\-Boid.\-goal\-Counter}}\label{classboid_1_1Boid_a8a871af6fc4d19477ce4881eb9ddc629}
+
+
+Used to store what goal the boid is currently looking at. 
+
+
+
+Definition at line 79 of file boid.\-py.
+
+\hypertarget{classboid_1_1Boid_a7a3492977220ee1f7623aa9643a2fea4}{\index{boid\-::\-Boid@{boid\-::\-Boid}!goal\-List@{goal\-List}}
+\index{goal\-List@{goal\-List}!boid::Boid@{boid\-::\-Boid}}
+\subsubsection[{goal\-List}]{\setlength{\rightskip}{0pt plus 5cm}boid.\-Boid.\-goal\-List}}\label{classboid_1_1Boid_a7a3492977220ee1f7623aa9643a2fea4}
+
+
+Goals used by the boid. 
+
+
+
+Definition at line 76 of file boid.\-py.
+
+\hypertarget{classboid_1_1Boid_afc4b725b80313dc3604ac36015f84156}{\index{boid\-::\-Boid@{boid\-::\-Boid}!heading@{heading}}
+\index{heading@{heading}!boid::Boid@{boid\-::\-Boid}}
+\subsubsection[{heading}]{\setlength{\rightskip}{0pt plus 5cm}boid.\-Boid.\-heading}}\label{classboid_1_1Boid_afc4b725b80313dc3604ac36015f84156}
+
+
+Initial random heading. 
+
+
+
+Definition at line 58 of file boid.\-py.
+
+\hypertarget{classboid_1_1Boid_a4b192d2b077b52005a82df5d98748190}{\index{boid\-::\-Boid@{boid\-::\-Boid}!head\-Weight\-List@{head\-Weight\-List}}
+\index{head\-Weight\-List@{head\-Weight\-List}!boid::Boid@{boid\-::\-Boid}}
+\subsubsection[{head\-Weight\-List}]{\setlength{\rightskip}{0pt plus 5cm}boid.\-Boid.\-head\-Weight\-List}}\label{classboid_1_1Boid_a4b192d2b077b52005a82df5d98748190}
+
+
+Weights how much the previous heading affects the new heading. 
+
+
+
+Definition at line 268 of file boid.\-py.
+
+\hypertarget{classboid_1_1Boid_a4af115e678f7716a2eb87c573e71073c}{\index{boid\-::\-Boid@{boid\-::\-Boid}!neighbor\-Size@{neighbor\-Size}}
+\index{neighbor\-Size@{neighbor\-Size}!boid::Boid@{boid\-::\-Boid}}
+\subsubsection[{neighbor\-Size}]{\setlength{\rightskip}{0pt plus 5cm}boid.\-Boid.\-neighbor\-Size}}\label{classboid_1_1Boid_a4af115e678f7716a2eb87c573e71073c}
+
+
+Number of neighbours that will influence the boid. 
+
+
+
+Definition at line 64 of file boid.\-py.
+
+\hypertarget{classboid_1_1Boid_acdfca1dc9b177a512502c6af681bfa9e}{\index{boid\-::\-Boid@{boid\-::\-Boid}!n\-Stuck\-D\-Avg@{n\-Stuck\-D\-Avg}}
+\index{n\-Stuck\-D\-Avg@{n\-Stuck\-D\-Avg}!boid::Boid@{boid\-::\-Boid}}
+\subsubsection[{n\-Stuck\-D\-Avg}]{\setlength{\rightskip}{0pt plus 5cm}boid.\-Boid.\-n\-Stuck\-D\-Avg}}\label{classboid_1_1Boid_acdfca1dc9b177a512502c6af681bfa9e}
+
+
+The average distance from a neighbour when a boid is not stuck. 
+
+
+
+Definition at line 252 of file boid.\-py.
+
+\hypertarget{classboid_1_1Boid_add42a1be4f79d1ae8990065fa7e5d4de}{\index{boid\-::\-Boid@{boid\-::\-Boid}!n\-Stuck\-D\-Sigma@{n\-Stuck\-D\-Sigma}}
+\index{n\-Stuck\-D\-Sigma@{n\-Stuck\-D\-Sigma}!boid::Boid@{boid\-::\-Boid}}
+\subsubsection[{n\-Stuck\-D\-Sigma}]{\setlength{\rightskip}{0pt plus 5cm}boid.\-Boid.\-n\-Stuck\-D\-Sigma}}\label{classboid_1_1Boid_add42a1be4f79d1ae8990065fa7e5d4de}
+
+
+The standard deviation in a neighbour distance distribution when the boid is not stuck. 
+
+
+
+Definition at line 256 of file boid.\-py.
+
+\hypertarget{classboid_1_1Boid_a222ad56335a1e1ea39dd6da9e21797c5}{\index{boid\-::\-Boid@{boid\-::\-Boid}!ob\-Beta@{ob\-Beta}}
+\index{ob\-Beta@{ob\-Beta}!boid::Boid@{boid\-::\-Boid}}
+\subsubsection[{ob\-Beta}]{\setlength{\rightskip}{0pt plus 5cm}boid.\-Boid.\-ob\-Beta}}\label{classboid_1_1Boid_a222ad56335a1e1ea39dd6da9e21797c5}
+
+
+Priori constant for obstacle repulsion (increasing it gives more priority to the repulsive obstacle field) 
+
+
+
+Definition at line 204 of file boid.\-py.
+
+\hypertarget{classboid_1_1Boid_abc5327f9ad46170e5f57d89c2c6e18e9}{\index{boid\-::\-Boid@{boid\-::\-Boid}!ob\-Influence\-R@{ob\-Influence\-R}}
+\index{ob\-Influence\-R@{ob\-Influence\-R}!boid::Boid@{boid\-::\-Boid}}
+\subsubsection[{ob\-Influence\-R}]{\setlength{\rightskip}{0pt plus 5cm}boid.\-Boid.\-ob\-Influence\-R}}\label{classboid_1_1Boid_abc5327f9ad46170e5f57d89c2c6e18e9}
+
+
+The radius of influence used when filtering the number of obstacles it needs to check. 
+
+
+
+Definition at line 196 of file boid.\-py.
+
+\hypertarget{classboid_1_1Boid_a9db9b88d02af40d3773b034560959694}{\index{boid\-::\-Boid@{boid\-::\-Boid}!obstacle\-List@{obstacle\-List}}
+\index{obstacle\-List@{obstacle\-List}!boid::Boid@{boid\-::\-Boid}}
+\subsubsection[{obstacle\-List}]{\setlength{\rightskip}{0pt plus 5cm}boid.\-Boid.\-obstacle\-List}}\label{classboid_1_1Boid_a9db9b88d02af40d3773b034560959694}
+
+
+List of obstacles that were parsed by mapparser. 
+
+
+
+Definition at line 73 of file boid.\-py.
+
+\hypertarget{classboid_1_1Boid_a483cb30093bc500a6123d5a801247ad5}{\index{boid\-::\-Boid@{boid\-::\-Boid}!position@{position}}
+\index{position@{position}!boid::Boid@{boid\-::\-Boid}}
+\subsubsection[{position}]{\setlength{\rightskip}{0pt plus 5cm}boid.\-Boid.\-position}}\label{classboid_1_1Boid_a483cb30093bc500a6123d5a801247ad5}
+
+
+Sets the position of the boid. 
+
+
+
+Definition at line 94 of file boid.\-py.
+
+\hypertarget{classboid_1_1Boid_ab6c778a50dd384fabc6aa48be04c0988}{\index{boid\-::\-Boid@{boid\-::\-Boid}!position\-Buffer@{position\-Buffer}}
+\index{position\-Buffer@{position\-Buffer}!boid::Boid@{boid\-::\-Boid}}
+\subsubsection[{position\-Buffer}]{\setlength{\rightskip}{0pt plus 5cm}boid.\-Boid.\-position\-Buffer}}\label{classboid_1_1Boid_ab6c778a50dd384fabc6aa48be04c0988}
+
+
+Used to tell if the boid is stuck or not. 
+
+
+
+Definition at line 97 of file boid.\-py.
+
+\hypertarget{classboid_1_1Boid_ac7d14690dde12ebc05f8f5ea80e29869}{\index{boid\-::\-Boid@{boid\-::\-Boid}!prm\-Gen@{prm\-Gen}}
+\index{prm\-Gen@{prm\-Gen}!boid::Boid@{boid\-::\-Boid}}
+\subsubsection[{prm\-Gen}]{\setlength{\rightskip}{0pt plus 5cm}boid.\-Boid.\-prm\-Gen}}\label{classboid_1_1Boid_ac7d14690dde12ebc05f8f5ea80e29869}
+
+
+Class which holds the details about the global path planner. 
+
+
+
+Definition at line 49 of file boid.\-py.
+
+\hypertarget{classboid_1_1Boid_a1bff2843c74b712aba274831d0a715d4}{\index{boid\-::\-Boid@{boid\-::\-Boid}!radius@{radius}}
+\index{radius@{radius}!boid::Boid@{boid\-::\-Boid}}
+\subsubsection[{radius}]{\setlength{\rightskip}{0pt plus 5cm}boid.\-Boid.\-radius}}\label{classboid_1_1Boid_a1bff2843c74b712aba274831d0a715d4}
+
+
+Radius of the boid. 
+
+
+
+Definition at line 55 of file boid.\-py.
+
+\hypertarget{classboid_1_1Boid_a996d92e215eb56d98a811c86c7118637}{\index{boid\-::\-Boid@{boid\-::\-Boid}!random\-Walk\-X@{random\-Walk\-X}}
+\index{random\-Walk\-X@{random\-Walk\-X}!boid::Boid@{boid\-::\-Boid}}
+\subsubsection[{random\-Walk\-X}]{\setlength{\rightskip}{0pt plus 5cm}boid.\-Boid.\-random\-Walk\-X}}\label{classboid_1_1Boid_a996d92e215eb56d98a811c86c7118637}
+
+
+Maximum x random walk. 
+
+
+
+Definition at line 259 of file boid.\-py.
+
+\hypertarget{classboid_1_1Boid_a1bf0149b7eadf9e6a0f08c93d95bac73}{\index{boid\-::\-Boid@{boid\-::\-Boid}!random\-Walk\-Y@{random\-Walk\-Y}}
+\index{random\-Walk\-Y@{random\-Walk\-Y}!boid::Boid@{boid\-::\-Boid}}
+\subsubsection[{random\-Walk\-Y}]{\setlength{\rightskip}{0pt plus 5cm}boid.\-Boid.\-random\-Walk\-Y}}\label{classboid_1_1Boid_a1bf0149b7eadf9e6a0f08c93d95bac73}
+
+
+Maximum y random walk. 
+
+
+
+Definition at line 262 of file boid.\-py.
+
+\hypertarget{classboid_1_1Boid_af0bd96c51b17bc6c3f6fec2891b58a3d}{\index{boid\-::\-Boid@{boid\-::\-Boid}!rand\-Walk\-Count@{rand\-Walk\-Count}}
+\index{rand\-Walk\-Count@{rand\-Walk\-Count}!boid::Boid@{boid\-::\-Boid}}
+\subsubsection[{rand\-Walk\-Count}]{\setlength{\rightskip}{0pt plus 5cm}boid.\-Boid.\-rand\-Walk\-Count}}\label{classboid_1_1Boid_af0bd96c51b17bc6c3f6fec2891b58a3d}
+
+
+Stores the number of times a random walk has occurred. 
+
+
+
+Definition at line 265 of file boid.\-py.
+
+\hypertarget{classboid_1_1Boid_aa230e5710394a620995a3943fc9faa8d}{\index{boid\-::\-Boid@{boid\-::\-Boid}!screen@{screen}}
+\index{screen@{screen}!boid::Boid@{boid\-::\-Boid}}
+\subsubsection[{screen}]{\setlength{\rightskip}{0pt plus 5cm}boid.\-Boid.\-screen}}\label{classboid_1_1Boid_aa230e5710394a620995a3943fc9faa8d}
+
+
+Py\-Game screen. 
+
+
+
+Definition at line 52 of file boid.\-py.
+
+\hypertarget{classboid_1_1Boid_a4cf2a59e0efad2d71d8fee93fdd6538b}{\index{boid\-::\-Boid@{boid\-::\-Boid}!speed@{speed}}
+\index{speed@{speed}!boid::Boid@{boid\-::\-Boid}}
+\subsubsection[{speed}]{\setlength{\rightskip}{0pt plus 5cm}boid.\-Boid.\-speed}}\label{classboid_1_1Boid_a4cf2a59e0efad2d71d8fee93fdd6538b}
+
+
+Maximum speed of the boid. 
+
+
+
+Definition at line 70 of file boid.\-py.
+
+\hypertarget{classboid_1_1Boid_a92bf79dcfff9e21d33611cfc89f8823c}{\index{boid\-::\-Boid@{boid\-::\-Boid}!s\-Pos@{s\-Pos}}
+\index{s\-Pos@{s\-Pos}!boid::Boid@{boid\-::\-Boid}}
+\subsubsection[{s\-Pos}]{\setlength{\rightskip}{0pt plus 5cm}boid.\-Boid.\-s\-Pos}}\label{classboid_1_1Boid_a92bf79dcfff9e21d33611cfc89f8823c}
+
+
+Starting position of the boid. 
+
+
+
+Definition at line 88 of file boid.\-py.
+
+\hypertarget{classboid_1_1Boid_a099882fd7d72bfd06c15ec20b0425905}{\index{boid\-::\-Boid@{boid\-::\-Boid}!stuck@{stuck}}
+\index{stuck@{stuck}!boid::Boid@{boid\-::\-Boid}}
+\subsubsection[{stuck}]{\setlength{\rightskip}{0pt plus 5cm}boid.\-Boid.\-stuck}}\label{classboid_1_1Boid_a099882fd7d72bfd06c15ec20b0425905}
+
+
+Defines if the boid is stuck. 
+
+
+
+Definition at line 85 of file boid.\-py.
+
+\hypertarget{classboid_1_1Boid_abbcf546137204a45278b6caa95c4378b}{\index{boid\-::\-Boid@{boid\-::\-Boid}!stuck\-Const@{stuck\-Const}}
+\index{stuck\-Const@{stuck\-Const}!boid::Boid@{boid\-::\-Boid}}
+\subsubsection[{stuck\-Const}]{\setlength{\rightskip}{0pt plus 5cm}boid.\-Boid.\-stuck\-Const}}\label{classboid_1_1Boid_abbcf546137204a45278b6caa95c4378b}
+
+
+Amount of movement in the position buffer needs to be less that this value for a boid to be considered stuck. 
+
+
+
+Definition at line 240 of file boid.\-py.
+
+\hypertarget{classboid_1_1Boid_a663164af1a20323f49e002d7576914f7}{\index{boid\-::\-Boid@{boid\-::\-Boid}!stuck\-D\-Avg@{stuck\-D\-Avg}}
+\index{stuck\-D\-Avg@{stuck\-D\-Avg}!boid::Boid@{boid\-::\-Boid}}
+\subsubsection[{stuck\-D\-Avg}]{\setlength{\rightskip}{0pt plus 5cm}boid.\-Boid.\-stuck\-D\-Avg}}\label{classboid_1_1Boid_a663164af1a20323f49e002d7576914f7}
+
+
+The average distance from a neighbour when a boid is stuck. 
+
+Used to pick closer neighbours when stuck to help get out of the situation 
+
+Definition at line 245 of file boid.\-py.
+
+\hypertarget{classboid_1_1Boid_a03960faefd59c4a651442eb373aa5c15}{\index{boid\-::\-Boid@{boid\-::\-Boid}!stuck\-D\-Sigma@{stuck\-D\-Sigma}}
+\index{stuck\-D\-Sigma@{stuck\-D\-Sigma}!boid::Boid@{boid\-::\-Boid}}
+\subsubsection[{stuck\-D\-Sigma}]{\setlength{\rightskip}{0pt plus 5cm}boid.\-Boid.\-stuck\-D\-Sigma}}\label{classboid_1_1Boid_a03960faefd59c4a651442eb373aa5c15}
+
+
+The standard deviation for a neighbour probability distribution Helps boid pick closer neighbours when it is stuck. 
+
+
+
+Definition at line 249 of file boid.\-py.
+
+\hypertarget{classboid_1_1Boid_a09f8fe6b2deb64fd65cfd64fc01470b9}{\index{boid\-::\-Boid@{boid\-::\-Boid}!y\-Size@{y\-Size}}
+\index{y\-Size@{y\-Size}!boid::Boid@{boid\-::\-Boid}}
+\subsubsection[{y\-Size}]{\setlength{\rightskip}{0pt plus 5cm}boid.\-Boid.\-y\-Size}}\label{classboid_1_1Boid_a09f8fe6b2deb64fd65cfd64fc01470b9}
+
+
+Definition at line 61 of file boid.\-py.
+
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+code/\hyperlink{boid_8py}{boid.\-py (\-Concurrent Versions System (\-C\-V\-S) 1.\-12.\-13-\/\-Mir\-Debian-\/9 (client/server))}\end{DoxyCompactItemize}

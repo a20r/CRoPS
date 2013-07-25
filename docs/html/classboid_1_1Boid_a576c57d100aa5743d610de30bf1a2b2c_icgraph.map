@@ -1,0 +1,17 @@
+<map id="boid.Boid.norm" name="boid.Boid.norm">
+<area shape="rect" id="node3" href="$classboid_1_1Boid.html#ab330aef12ad0a338a51a7661c736e971" title="Defines the potential between a boid and an obstacle." alt="" coords="193,5,351,35"/>
+<area shape="rect" id="node5" href="$classboid_1_1Boid.html#a2c496bdcc16d7db82cc0f730ce3d5264" title="Gets the potential vectors to a boid due to the repulsive obstacle field." alt="" coords="431,5,639,35"/>
+<area shape="rect" id="node9" href="$classboid_1_1Boid.html#a492a0ad33a962b15ed94789d59f3b08a" title="Defines a sigmoidal curve used for goal attractself._sumDivide = lambda lt, s: map(lambda p: p / s..." alt="" coords="195,112,349,141"/>
+<area shape="rect" id="node14" href="$classboid_1_1Boid.html#a353fbe920fabe58a43affaf183cfcd03" title="Gets the potential vectors to a boid due to the repulsive boid field." alt="" coords="444,165,625,195"/>
+<area shape="rect" id="node21" href="$classboid_1_1Boid.html#aa7ef63f7cc5adfdeb565c56f359b07cd" title="Gets the heading vectors of the neighbours." alt="" coords="431,219,639,248"/>
+<area shape="rect" id="node24" href="$classobstacle_1_1PolyObstacle.html#a43adce887280997dfb49067e741f54db" title="Gets the closest point on line &lt;a, b&gt; to point p." alt="" coords="185,266,359,313"/>
+<area shape="rect" id="node26" href="$classobstacle_1_1PolyObstacle.html#af866b6f101194b8a8731f2394fdc247e" title="Gets the closest point from the polygon to p." alt="" coords="448,317,621,363"/>
+<area shape="rect" id="node28" href="$classobstacle_1_1PolyObstacle.html#af71f01fca50193a5e5372c2507661ada" title="Checks if a point is allowed, meaning no collisions occur." alt="" coords="689,346,873,393"/>
+<area shape="rect" id="node32" href="$classprm_1_1PRMGenerator.html#aaa44a7e209bb06af27c4120b78d70cfb" title="Initiates the omega function which holds the node weights." alt="" coords="173,437,371,467"/>
+<area shape="rect" id="node34" href="$classprm_1_1PRMGenerator.html#aabedd114ea5948bb92f477be30b41619" title="Generates a series of random points that will become the roadmap and connects them and weights them i..." alt="" coords="440,516,629,545"/>
+<area shape="rect" id="node36" href="$classprm_1_1PRMGenerator.html#a95608c8cfd4364e3b2a9d20709161365" title="Filters out sample points that are inside of obstacles or otherwise inadequate." alt="" coords="165,541,379,571"/>
+<area shape="rect" id="node39" href="$classprm_1_1PRMGenerator.html#a2acf210887cb331b20c5378da634b4eb" title="Finds suitable neighbours for a sample point." alt="" coords="163,595,381,624"/>
+<area shape="rect" id="node7" href="$classboid_1_1Boid.html#a8a354e4b7d58ced69771f3bb5f52d257" title="Updates the boid&#39;s heading and position due to the potential fields." alt="" coords="723,112,840,141"/>
+<area shape="rect" id="node11" href="$classboid_1_1Boid.html#a47c28705553bd3d729212944880161d3" title="Gets the potential vectors to a boid due to the attractive goal field." alt="" coords="453,59,616,88"/>
+<area shape="rect" id="node17" href="$classboid_1_1Boid.html#af2f2931c5971a4447cfe179fdafe3ab5" title="Sets the new goal." alt="" coords="459,112,611,141"/>
+</map>

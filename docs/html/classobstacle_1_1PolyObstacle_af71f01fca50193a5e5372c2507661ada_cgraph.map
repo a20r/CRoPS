@@ -1,0 +1,9 @@
+<map id="obstacle.PolyObstacle.pointAllowed" name="obstacle.PolyObstacle.pointAllowed">
+<area shape="rect" id="node3" href="$classboid_1_1Boid.html#a576c57d100aa5743d610de30bf1a2b2c" title="Gets the distance between two points." alt="" coords="809,125,919,155"/>
+<area shape="rect" id="node5" href="$classobstacle_1_1PolyObstacle.html#a3392ccb4d22e752b0f150af354b16862" title="Gets the Eulidean distance between p1 and p2." alt="" coords="771,5,957,35"/>
+<area shape="rect" id="node7" href="$classobstacle_1_1PolyObstacle.html#af866b6f101194b8a8731f2394fdc247e" title="Gets the closest point from the polygon to p." alt="" coords="247,82,420,129"/>
+<area shape="rect" id="node15" href="$classobstacle_1_1PolyObstacle.html#a4647d9efa8fb20d7b464ee5faa8fd7f4" title="Determines if a point p is inside the polygon represented by this PolyObstacle object." alt="" coords="241,227,425,274"/>
+<area shape="rect" id="node9" href="$classobstacle_1_1PolyObstacle.html#a43adce887280997dfb49067e741f54db" title="Gets the closest point on line &lt;a, b&gt; to point p." alt="" coords="512,57,685,103"/>
+<area shape="rect" id="node17" href="$classobstacle_1_1PolyObstacle.html#a8b8aafe403fc9f242a176887e558723a" title="Determines if an integer, x, is odd." alt="" coords="507,285,691,315"/>
+<area shape="rect" id="node19" href="$classobstacle_1_1PolyObstacle.html#a646f5fc4ba3e67c98c2313f4493b6a08" title="Determines if a ray from point p intersects with an edge, edge." alt="" coords="476,232,721,261"/>
+</map>

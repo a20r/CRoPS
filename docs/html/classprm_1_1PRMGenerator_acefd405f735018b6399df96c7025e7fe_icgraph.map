@@ -1,0 +1,4 @@
+<map id="prm.PRMGenerator.getRandom" name="prm.PRMGenerator.getRandom">
+<area shape="rect" id="node3" href="$classprm_1_1PRMGenerator.html#ad5ffd82c9245496759767b2791d3a2fa" title="Generates the random positions for the sample points." alt="" coords="261,5,451,51"/>
+<area shape="rect" id="node5" href="$classprm_1_1PRMGenerator.html#aabedd114ea5948bb92f477be30b41619" title="Generates a series of random points that will become the roadmap and connects them and weights them i..." alt="" coords="499,13,688,43"/>
+</map>

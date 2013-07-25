@@ -1,0 +1,585 @@
+\hypertarget{classprm_1_1PRMGenerator}{\section{prm.\-P\-R\-M\-Generator Class Reference}
+\label{classprm_1_1PRMGenerator}\index{prm.\-P\-R\-M\-Generator@{prm.\-P\-R\-M\-Generator}}
+}
+
+
+Class used to hold methods and variables that are important for the global path planning problem.  
+
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{classprm_1_1PRMGenerator_ac4b13e231e5e29be30e993100bfffdec}{\-\_\-\-\_\-init\-\_\-\-\_\-}
+\begin{DoxyCompactList}\small\item\em Creates a new instance of the \hyperlink{classprm_1_1PRMGenerator}{P\-R\-M\-Generator}. \end{DoxyCompactList}\item 
+def \hyperlink{classprm_1_1PRMGenerator_a652b3c0fa11645f351c23635d7e62dda}{norm}
+\begin{DoxyCompactList}\small\item\em Gets the distance between p1 and p2. \end{DoxyCompactList}\item 
+def \hyperlink{classprm_1_1PRMGenerator_ad5ffd82c9245496759767b2791d3a2fa}{generate\-Position\-List}
+\begin{DoxyCompactList}\small\item\em Generates the random positions for the sample points. \end{DoxyCompactList}\item 
+def \hyperlink{classprm_1_1PRMGenerator_aaa44a7e209bb06af27c4120b78d70cfb}{init\-Omega}
+\begin{DoxyCompactList}\small\item\em Initiates the omega function which holds the node weights. \end{DoxyCompactList}\item 
+def \hyperlink{classprm_1_1PRMGenerator_a95608c8cfd4364e3b2a9d20709161365}{filter\-Sub\-Goal}
+\begin{DoxyCompactList}\small\item\em Filters out sample points that are inside of obstacles or otherwise inadequate. \end{DoxyCompactList}\item 
+def \hyperlink{classprm_1_1PRMGenerator_a2acf210887cb331b20c5378da634b4eb}{find\-Neighbors}
+\begin{DoxyCompactList}\small\item\em Finds suitable neighbours for a sample point. \end{DoxyCompactList}\item 
+def \hyperlink{classprm_1_1PRMGenerator_acefd405f735018b6399df96c7025e7fe}{get\-Random}
+\begin{DoxyCompactList}\small\item\em Gets a random number and cathes the Value\-Error if the two numbers are the same. \end{DoxyCompactList}\item 
+def \hyperlink{classprm_1_1PRMGenerator_aabedd114ea5948bb92f477be30b41619}{generate}
+\begin{DoxyCompactList}\small\item\em Generates a series of random points that will become the roadmap and connects them and weights them into a graph. \end{DoxyCompactList}\item 
+def \hyperlink{classprm_1_1PRMGenerator_a2673d3d75416b4376244a24bf2504435}{draw}
+\begin{DoxyCompactList}\small\item\em Draws the graph. \end{DoxyCompactList}\item 
+def \hyperlink{classprm_1_1PRMGenerator_ab001351e371b3d9963b08bc91b5ddab9}{draw\-Path}
+\begin{DoxyCompactList}\small\item\em Draws the selected shortest path. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classprm_1_1PRMGenerator_a86b5b9254eb1e5f2c79fc32775c003e2}{obstacle\-List}
+\begin{DoxyCompactList}\small\item\em List of obstacles. \end{DoxyCompactList}\item 
+\hyperlink{classprm_1_1PRMGenerator_a784ce423bc47ebc7a09632948eb903eb}{start\-Pos}
+\begin{DoxyCompactList}\small\item\em Position of the first goal. \end{DoxyCompactList}\item 
+\hyperlink{classprm_1_1PRMGenerator_a8925b6d51130804d23bb82d3b8602d74}{end\-Pos}
+\begin{DoxyCompactList}\small\item\em Position of the last goal. \end{DoxyCompactList}\item 
+\hyperlink{classprm_1_1PRMGenerator_ab7fc7e3fa902029c3c3432ec0444be93}{screen}
+\begin{DoxyCompactList}\small\item\em Py\-Game screen that is will be drawn on. \end{DoxyCompactList}\item 
+\hyperlink{classprm_1_1PRMGenerator_a0cf38de489be01fc5ed01c1a59da8f0b}{x\-Size}
+\begin{DoxyCompactList}\small\item\em Horizontal size of the Py\-Game screen. \end{DoxyCompactList}\item 
+\hyperlink{classprm_1_1PRMGenerator_aaa5cf5ecddd099bf8c294cad0b33be92}{y\-Size}
+\begin{DoxyCompactList}\small\item\em Vertical size of the Py\-Game screen. \end{DoxyCompactList}\item 
+\hyperlink{classprm_1_1PRMGenerator_aa56ad4365534ffed0b4311c5accce577}{adjacent\-Thresh}
+\begin{DoxyCompactList}\small\item\em Distance that the P\-R\-M is willing to check when connecting sample points. \end{DoxyCompactList}\item 
+\hyperlink{classprm_1_1PRMGenerator_a84795d8a1191caae0612ac645d8853b9}{num\-Next}
+\begin{DoxyCompactList}\small\item\em Maximum number of sample points that can be connected. \end{DoxyCompactList}\item 
+\hyperlink{classprm_1_1PRMGenerator_af8d162e83184c5493019e868e53fcefd}{sub\-Goal\-Number}
+\begin{DoxyCompactList}\small\item\em Number of initial sample points. \end{DoxyCompactList}\item 
+\hyperlink{classprm_1_1PRMGenerator_a6c5a8c95cfb4636e37404d2f2dce78f8}{sub\-Goal\-Position\-List}
+\begin{DoxyCompactList}\small\item\em Initial positions of the sample points. \end{DoxyCompactList}\item 
+\hyperlink{classprm_1_1PRMGenerator_a7fa851696426c3e1bbd7ff737cf33538}{roadmap}
+\begin{DoxyCompactList}\small\item\em The global roadmap. \end{DoxyCompactList}\item 
+\hyperlink{classprm_1_1PRMGenerator_a164c6ae962a75ed31d58eff1db95f141}{g\-Pos\-List}
+\begin{DoxyCompactList}\small\item\em Holds the positions of the intermediate goals that were selected by the global path planner. \end{DoxyCompactList}\item 
+\hyperlink{classprm_1_1PRMGenerator_ad56b6bb5da1e474ab8a8099863207de3}{omega\-Dict}
+\begin{DoxyCompactList}\small\item\em Dictionary (for easy access) that holds the weights for the nodes. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Class used to hold methods and variables that are important for the global path planning problem. 
+
+This class generates the roadmap and finds the shortest path to the the goals by determining intermediate goals for the boids to be attracted to 
+
+Definition at line 15 of file prm.\-py.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classprm_1_1PRMGenerator_ac4b13e231e5e29be30e993100bfffdec}{\index{prm\-::\-P\-R\-M\-Generator@{prm\-::\-P\-R\-M\-Generator}!\-\_\-\-\_\-init\-\_\-\-\_\-@{\-\_\-\-\_\-init\-\_\-\-\_\-}}
+\index{\-\_\-\-\_\-init\-\_\-\-\_\-@{\-\_\-\-\_\-init\-\_\-\-\_\-}!prm::PRMGenerator@{prm\-::\-P\-R\-M\-Generator}}
+\subsubsection[{\-\_\-\-\_\-init\-\_\-\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}def prm.\-P\-R\-M\-Generator.\-\_\-\-\_\-init\-\_\-\-\_\- (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{\-\_\-start\-Pos, }
+\item[{}]{\-\_\-end\-Pos, }
+\item[{}]{\-\_\-obstacle\-List, }
+\item[{}]{\-\_\-x\-Size, }
+\item[{}]{\-\_\-y\-Size, }
+\item[{}]{\-\_\-sub\-Goal\-Number, }
+\item[{}]{\-\_\-screen}
+\end{DoxyParamCaption}
+)}}\label{classprm_1_1PRMGenerator_ac4b13e231e5e29be30e993100bfffdec}
+
+
+Creates a new instance of the \hyperlink{classprm_1_1PRMGenerator}{P\-R\-M\-Generator}. 
+
+Intializes key variables used in the generation of the global planner. 
+\begin{DoxyParams}{Parameters}
+{\em \-\_\-start\-Pos} & The starting position of the boids \\
+\hline
+{\em \-\_\-end\-Pos} & The final goal position of the boids \\
+\hline
+{\em \-\_\-obstacle\-List} & The list of obstacles that the global planner needs to avoid \\
+\hline
+{\em \-\_\-x\-Size} & The size of the x component of the screen \\
+\hline
+{\em \-\_\-y\-Size} & The size of the y component of the screen \\
+\hline
+{\em \-\_\-sub\-Goal\-Number} & The initial number of sample points for the global planner \\
+\hline
+{\em \-\_\-screen} & The Py\-Game screen that the \hyperlink{classprm_1_1PRMGenerator}{P\-R\-M\-Generator} will draw to \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 28 of file prm.\-py.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classprm_1_1PRMGenerator_a2673d3d75416b4376244a24bf2504435}{\index{prm\-::\-P\-R\-M\-Generator@{prm\-::\-P\-R\-M\-Generator}!draw@{draw}}
+\index{draw@{draw}!prm::PRMGenerator@{prm\-::\-P\-R\-M\-Generator}}
+\subsubsection[{draw}]{\setlength{\rightskip}{0pt plus 5cm}def prm.\-P\-R\-M\-Generator.\-draw (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}}\label{classprm_1_1PRMGenerator_a2673d3d75416b4376244a24bf2504435}
+
+
+Draws the graph. 
+
+
+
+Definition at line 199 of file prm.\-py.
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classprm_1_1PRMGenerator_a2673d3d75416b4376244a24bf2504435_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classprm_1_1PRMGenerator_ab001351e371b3d9963b08bc91b5ddab9}{\index{prm\-::\-P\-R\-M\-Generator@{prm\-::\-P\-R\-M\-Generator}!draw\-Path@{draw\-Path}}
+\index{draw\-Path@{draw\-Path}!prm::PRMGenerator@{prm\-::\-P\-R\-M\-Generator}}
+\subsubsection[{draw\-Path}]{\setlength{\rightskip}{0pt plus 5cm}def prm.\-P\-R\-M\-Generator.\-draw\-Path (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}}\label{classprm_1_1PRMGenerator_ab001351e371b3d9963b08bc91b5ddab9}
+
+
+Draws the selected shortest path. 
+
+
+
+Definition at line 209 of file prm.\-py.
+
+\hypertarget{classprm_1_1PRMGenerator_a95608c8cfd4364e3b2a9d20709161365}{\index{prm\-::\-P\-R\-M\-Generator@{prm\-::\-P\-R\-M\-Generator}!filter\-Sub\-Goal@{filter\-Sub\-Goal}}
+\index{filter\-Sub\-Goal@{filter\-Sub\-Goal}!prm::PRMGenerator@{prm\-::\-P\-R\-M\-Generator}}
+\subsubsection[{filter\-Sub\-Goal}]{\setlength{\rightskip}{0pt plus 5cm}def prm.\-P\-R\-M\-Generator.\-filter\-Sub\-Goal (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}}\label{classprm_1_1PRMGenerator_a95608c8cfd4364e3b2a9d20709161365}
+
+
+Filters out sample points that are inside of obstacles or otherwise inadequate. 
+
+
+
+Definition at line 108 of file prm.\-py.
+
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classprm_1_1PRMGenerator_a95608c8cfd4364e3b2a9d20709161365_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classprm_1_1PRMGenerator_a95608c8cfd4364e3b2a9d20709161365_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classprm_1_1PRMGenerator_a2acf210887cb331b20c5378da634b4eb}{\index{prm\-::\-P\-R\-M\-Generator@{prm\-::\-P\-R\-M\-Generator}!find\-Neighbors@{find\-Neighbors}}
+\index{find\-Neighbors@{find\-Neighbors}!prm::PRMGenerator@{prm\-::\-P\-R\-M\-Generator}}
+\subsubsection[{find\-Neighbors}]{\setlength{\rightskip}{0pt plus 5cm}def prm.\-P\-R\-M\-Generator.\-find\-Neighbors (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{point}
+\end{DoxyParamCaption}
+)}}\label{classprm_1_1PRMGenerator_a2acf210887cb331b20c5378da634b4eb}
+
+
+Finds suitable neighbours for a sample point. 
+
+
+
+Definition at line 120 of file prm.\-py.
+
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classprm_1_1PRMGenerator_a2acf210887cb331b20c5378da634b4eb_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classprm_1_1PRMGenerator_a2acf210887cb331b20c5378da634b4eb_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classprm_1_1PRMGenerator_aabedd114ea5948bb92f477be30b41619}{\index{prm\-::\-P\-R\-M\-Generator@{prm\-::\-P\-R\-M\-Generator}!generate@{generate}}
+\index{generate@{generate}!prm::PRMGenerator@{prm\-::\-P\-R\-M\-Generator}}
+\subsubsection[{generate}]{\setlength{\rightskip}{0pt plus 5cm}def prm.\-P\-R\-M\-Generator.\-generate (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{sub\-Goal\-Radius}
+\end{DoxyParamCaption}
+)}}\label{classprm_1_1PRMGenerator_aabedd114ea5948bb92f477be30b41619}
+
+
+Generates a series of random points that will become the roadmap and connects them and weights them into a graph. 
+
+\begin{DoxyVerb}    If the goal and the starting point are not connected, more
+    points are added. The roadmap is then searched for the shortest
+    weighted distance which become the intermediate goals.
+\end{DoxyVerb}
+ 
+\begin{DoxyParams}{Parameters}
+{\em sub\-Goal\-Radius} & The radius of the intermediate goals \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A list of sub goals from the roadmap connecting the starting point and the end goal 
+\end{DoxyReturn}
+
+
+Definition at line 163 of file prm.\-py.
+
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classprm_1_1PRMGenerator_aabedd114ea5948bb92f477be30b41619_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classprm_1_1PRMGenerator_ad5ffd82c9245496759767b2791d3a2fa}{\index{prm\-::\-P\-R\-M\-Generator@{prm\-::\-P\-R\-M\-Generator}!generate\-Position\-List@{generate\-Position\-List}}
+\index{generate\-Position\-List@{generate\-Position\-List}!prm::PRMGenerator@{prm\-::\-P\-R\-M\-Generator}}
+\subsubsection[{generate\-Position\-List}]{\setlength{\rightskip}{0pt plus 5cm}def prm.\-P\-R\-M\-Generator.\-generate\-Position\-List (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{num}
+\end{DoxyParamCaption}
+)}}\label{classprm_1_1PRMGenerator_ad5ffd82c9245496759767b2791d3a2fa}
+
+
+Generates the random positions for the sample points. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em num} & The number of points to generate \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A list of random subgoals (sample points) 
+\end{DoxyReturn}
+
+
+Definition at line 90 of file prm.\-py.
+
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classprm_1_1PRMGenerator_ad5ffd82c9245496759767b2791d3a2fa_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classprm_1_1PRMGenerator_ad5ffd82c9245496759767b2791d3a2fa_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classprm_1_1PRMGenerator_acefd405f735018b6399df96c7025e7fe}{\index{prm\-::\-P\-R\-M\-Generator@{prm\-::\-P\-R\-M\-Generator}!get\-Random@{get\-Random}}
+\index{get\-Random@{get\-Random}!prm::PRMGenerator@{prm\-::\-P\-R\-M\-Generator}}
+\subsubsection[{get\-Random}]{\setlength{\rightskip}{0pt plus 5cm}def prm.\-P\-R\-M\-Generator.\-get\-Random (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{p, }
+\item[{}]{q}
+\end{DoxyParamCaption}
+)}}\label{classprm_1_1PRMGenerator_acefd405f735018b6399df96c7025e7fe}
+
+
+Gets a random number and cathes the Value\-Error if the two numbers are the same. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & Lower bound for the random number \\
+\hline
+{\em q} & upper bound for the random number \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A random number 
+\end{DoxyReturn}
+
+
+Definition at line 146 of file prm.\-py.
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classprm_1_1PRMGenerator_acefd405f735018b6399df96c7025e7fe_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classprm_1_1PRMGenerator_aaa44a7e209bb06af27c4120b78d70cfb}{\index{prm\-::\-P\-R\-M\-Generator@{prm\-::\-P\-R\-M\-Generator}!init\-Omega@{init\-Omega}}
+\index{init\-Omega@{init\-Omega}!prm::PRMGenerator@{prm\-::\-P\-R\-M\-Generator}}
+\subsubsection[{init\-Omega}]{\setlength{\rightskip}{0pt plus 5cm}def prm.\-P\-R\-M\-Generator.\-init\-Omega (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{pos\-List}
+\end{DoxyParamCaption}
+)}}\label{classprm_1_1PRMGenerator_aaa44a7e209bb06af27c4120b78d70cfb}
+
+
+Initiates the omega function which holds the node weights. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pos\-List} & The list of positions for the sample points \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 98 of file prm.\-py.
+
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classprm_1_1PRMGenerator_aaa44a7e209bb06af27c4120b78d70cfb_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classprm_1_1PRMGenerator_aaa44a7e209bb06af27c4120b78d70cfb_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classprm_1_1PRMGenerator_a652b3c0fa11645f351c23635d7e62dda}{\index{prm\-::\-P\-R\-M\-Generator@{prm\-::\-P\-R\-M\-Generator}!norm@{norm}}
+\index{norm@{norm}!prm::PRMGenerator@{prm\-::\-P\-R\-M\-Generator}}
+\subsubsection[{norm}]{\setlength{\rightskip}{0pt plus 5cm}def prm.\-P\-R\-M\-Generator.\-norm (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{p1, }
+\item[{}]{p2}
+\end{DoxyParamCaption}
+)}}\label{classprm_1_1PRMGenerator_a652b3c0fa11645f351c23635d7e62dda}
+
+
+Gets the distance between p1 and p2. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p1} & The first point \\
+\hline
+{\em p2} & The second point \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The Eulidean distance from p1 to p2 
+\end{DoxyReturn}
+
+
+Definition at line 81 of file prm.\-py.
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classprm_1_1PRMGenerator_a652b3c0fa11645f351c23635d7e62dda_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classprm_1_1PRMGenerator_aa56ad4365534ffed0b4311c5accce577}{\index{prm\-::\-P\-R\-M\-Generator@{prm\-::\-P\-R\-M\-Generator}!adjacent\-Thresh@{adjacent\-Thresh}}
+\index{adjacent\-Thresh@{adjacent\-Thresh}!prm::PRMGenerator@{prm\-::\-P\-R\-M\-Generator}}
+\subsubsection[{adjacent\-Thresh}]{\setlength{\rightskip}{0pt plus 5cm}prm.\-P\-R\-M\-Generator.\-adjacent\-Thresh}}\label{classprm_1_1PRMGenerator_aa56ad4365534ffed0b4311c5accce577}
+
+
+Distance that the P\-R\-M is willing to check when connecting sample points. 
+
+
+
+Definition at line 50 of file prm.\-py.
+
+\hypertarget{classprm_1_1PRMGenerator_a8925b6d51130804d23bb82d3b8602d74}{\index{prm\-::\-P\-R\-M\-Generator@{prm\-::\-P\-R\-M\-Generator}!end\-Pos@{end\-Pos}}
+\index{end\-Pos@{end\-Pos}!prm::PRMGenerator@{prm\-::\-P\-R\-M\-Generator}}
+\subsubsection[{end\-Pos}]{\setlength{\rightskip}{0pt plus 5cm}prm.\-P\-R\-M\-Generator.\-end\-Pos}}\label{classprm_1_1PRMGenerator_a8925b6d51130804d23bb82d3b8602d74}
+
+
+Position of the last goal. 
+
+
+
+Definition at line 37 of file prm.\-py.
+
+\hypertarget{classprm_1_1PRMGenerator_a164c6ae962a75ed31d58eff1db95f141}{\index{prm\-::\-P\-R\-M\-Generator@{prm\-::\-P\-R\-M\-Generator}!g\-Pos\-List@{g\-Pos\-List}}
+\index{g\-Pos\-List@{g\-Pos\-List}!prm::PRMGenerator@{prm\-::\-P\-R\-M\-Generator}}
+\subsubsection[{g\-Pos\-List}]{\setlength{\rightskip}{0pt plus 5cm}prm.\-P\-R\-M\-Generator.\-g\-Pos\-List}}\label{classprm_1_1PRMGenerator_a164c6ae962a75ed31d58eff1db95f141}
+
+
+Holds the positions of the intermediate goals that were selected by the global path planner. 
+
+
+
+Definition at line 67 of file prm.\-py.
+
+\hypertarget{classprm_1_1PRMGenerator_a84795d8a1191caae0612ac645d8853b9}{\index{prm\-::\-P\-R\-M\-Generator@{prm\-::\-P\-R\-M\-Generator}!num\-Next@{num\-Next}}
+\index{num\-Next@{num\-Next}!prm::PRMGenerator@{prm\-::\-P\-R\-M\-Generator}}
+\subsubsection[{num\-Next}]{\setlength{\rightskip}{0pt plus 5cm}prm.\-P\-R\-M\-Generator.\-num\-Next}}\label{classprm_1_1PRMGenerator_a84795d8a1191caae0612ac645d8853b9}
+
+
+Maximum number of sample points that can be connected. 
+
+
+
+Definition at line 53 of file prm.\-py.
+
+\hypertarget{classprm_1_1PRMGenerator_a86b5b9254eb1e5f2c79fc32775c003e2}{\index{prm\-::\-P\-R\-M\-Generator@{prm\-::\-P\-R\-M\-Generator}!obstacle\-List@{obstacle\-List}}
+\index{obstacle\-List@{obstacle\-List}!prm::PRMGenerator@{prm\-::\-P\-R\-M\-Generator}}
+\subsubsection[{obstacle\-List}]{\setlength{\rightskip}{0pt plus 5cm}prm.\-P\-R\-M\-Generator.\-obstacle\-List}}\label{classprm_1_1PRMGenerator_a86b5b9254eb1e5f2c79fc32775c003e2}
+
+
+List of obstacles. 
+
+
+
+Definition at line 31 of file prm.\-py.
+
+\hypertarget{classprm_1_1PRMGenerator_ad56b6bb5da1e474ab8a8099863207de3}{\index{prm\-::\-P\-R\-M\-Generator@{prm\-::\-P\-R\-M\-Generator}!omega\-Dict@{omega\-Dict}}
+\index{omega\-Dict@{omega\-Dict}!prm::PRMGenerator@{prm\-::\-P\-R\-M\-Generator}}
+\subsubsection[{omega\-Dict}]{\setlength{\rightskip}{0pt plus 5cm}prm.\-P\-R\-M\-Generator.\-omega\-Dict}}\label{classprm_1_1PRMGenerator_ad56b6bb5da1e474ab8a8099863207de3}
+
+
+Dictionary (for easy access) that holds the weights for the nodes. 
+
+
+
+Definition at line 69 of file prm.\-py.
+
+\hypertarget{classprm_1_1PRMGenerator_a7fa851696426c3e1bbd7ff737cf33538}{\index{prm\-::\-P\-R\-M\-Generator@{prm\-::\-P\-R\-M\-Generator}!roadmap@{roadmap}}
+\index{roadmap@{roadmap}!prm::PRMGenerator@{prm\-::\-P\-R\-M\-Generator}}
+\subsubsection[{roadmap}]{\setlength{\rightskip}{0pt plus 5cm}prm.\-P\-R\-M\-Generator.\-roadmap}}\label{classprm_1_1PRMGenerator_a7fa851696426c3e1bbd7ff737cf33538}
+
+
+The global roadmap. 
+
+It will be a graph represented as a dictionary 
+
+Definition at line 63 of file prm.\-py.
+
+\hypertarget{classprm_1_1PRMGenerator_ab7fc7e3fa902029c3c3432ec0444be93}{\index{prm\-::\-P\-R\-M\-Generator@{prm\-::\-P\-R\-M\-Generator}!screen@{screen}}
+\index{screen@{screen}!prm::PRMGenerator@{prm\-::\-P\-R\-M\-Generator}}
+\subsubsection[{screen}]{\setlength{\rightskip}{0pt plus 5cm}prm.\-P\-R\-M\-Generator.\-screen}}\label{classprm_1_1PRMGenerator_ab7fc7e3fa902029c3c3432ec0444be93}
+
+
+Py\-Game screen that is will be drawn on. 
+
+
+
+Definition at line 40 of file prm.\-py.
+
+\hypertarget{classprm_1_1PRMGenerator_a784ce423bc47ebc7a09632948eb903eb}{\index{prm\-::\-P\-R\-M\-Generator@{prm\-::\-P\-R\-M\-Generator}!start\-Pos@{start\-Pos}}
+\index{start\-Pos@{start\-Pos}!prm::PRMGenerator@{prm\-::\-P\-R\-M\-Generator}}
+\subsubsection[{start\-Pos}]{\setlength{\rightskip}{0pt plus 5cm}prm.\-P\-R\-M\-Generator.\-start\-Pos}}\label{classprm_1_1PRMGenerator_a784ce423bc47ebc7a09632948eb903eb}
+
+
+Position of the first goal. 
+
+
+
+Definition at line 34 of file prm.\-py.
+
+\hypertarget{classprm_1_1PRMGenerator_af8d162e83184c5493019e868e53fcefd}{\index{prm\-::\-P\-R\-M\-Generator@{prm\-::\-P\-R\-M\-Generator}!sub\-Goal\-Number@{sub\-Goal\-Number}}
+\index{sub\-Goal\-Number@{sub\-Goal\-Number}!prm::PRMGenerator@{prm\-::\-P\-R\-M\-Generator}}
+\subsubsection[{sub\-Goal\-Number}]{\setlength{\rightskip}{0pt plus 5cm}prm.\-P\-R\-M\-Generator.\-sub\-Goal\-Number}}\label{classprm_1_1PRMGenerator_af8d162e83184c5493019e868e53fcefd}
+
+
+Number of initial sample points. 
+
+
+
+Definition at line 56 of file prm.\-py.
+
+\hypertarget{classprm_1_1PRMGenerator_a6c5a8c95cfb4636e37404d2f2dce78f8}{\index{prm\-::\-P\-R\-M\-Generator@{prm\-::\-P\-R\-M\-Generator}!sub\-Goal\-Position\-List@{sub\-Goal\-Position\-List}}
+\index{sub\-Goal\-Position\-List@{sub\-Goal\-Position\-List}!prm::PRMGenerator@{prm\-::\-P\-R\-M\-Generator}}
+\subsubsection[{sub\-Goal\-Position\-List}]{\setlength{\rightskip}{0pt plus 5cm}prm.\-P\-R\-M\-Generator.\-sub\-Goal\-Position\-List}}\label{classprm_1_1PRMGenerator_a6c5a8c95cfb4636e37404d2f2dce78f8}
+
+
+Initial positions of the sample points. 
+
+
+
+Definition at line 59 of file prm.\-py.
+
+\hypertarget{classprm_1_1PRMGenerator_a0cf38de489be01fc5ed01c1a59da8f0b}{\index{prm\-::\-P\-R\-M\-Generator@{prm\-::\-P\-R\-M\-Generator}!x\-Size@{x\-Size}}
+\index{x\-Size@{x\-Size}!prm::PRMGenerator@{prm\-::\-P\-R\-M\-Generator}}
+\subsubsection[{x\-Size}]{\setlength{\rightskip}{0pt plus 5cm}prm.\-P\-R\-M\-Generator.\-x\-Size}}\label{classprm_1_1PRMGenerator_a0cf38de489be01fc5ed01c1a59da8f0b}
+
+
+Horizontal size of the Py\-Game screen. 
+
+
+
+Definition at line 43 of file prm.\-py.
+
+\hypertarget{classprm_1_1PRMGenerator_aaa5cf5ecddd099bf8c294cad0b33be92}{\index{prm\-::\-P\-R\-M\-Generator@{prm\-::\-P\-R\-M\-Generator}!y\-Size@{y\-Size}}
+\index{y\-Size@{y\-Size}!prm::PRMGenerator@{prm\-::\-P\-R\-M\-Generator}}
+\subsubsection[{y\-Size}]{\setlength{\rightskip}{0pt plus 5cm}prm.\-P\-R\-M\-Generator.\-y\-Size}}\label{classprm_1_1PRMGenerator_aaa5cf5ecddd099bf8c294cad0b33be92}
+
+
+Vertical size of the Py\-Game screen. 
+
+
+
+Definition at line 46 of file prm.\-py.
+
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+code/\hyperlink{prm_8py}{prm.\-py (\-Concurrent Versions System (\-C\-V\-S) 1.\-12.\-13-\/\-Mir\-Debian-\/9 (client/server))}\end{DoxyCompactItemize}

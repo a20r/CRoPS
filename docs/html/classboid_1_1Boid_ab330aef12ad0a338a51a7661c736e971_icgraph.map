@@ -1,0 +1,4 @@
+<map id="boid.Boid.obstacleFunc" name="boid.Boid.obstacleFunc">
+<area shape="rect" id="node3" href="$classboid_1_1Boid.html#a2c496bdcc16d7db82cc0f730ce3d5264" title="Gets the potential vectors to a boid due to the repulsive obstacle field." alt="" coords="215,5,423,35"/>
+<area shape="rect" id="node5" href="$classboid_1_1Boid.html#a8a354e4b7d58ced69771f3bb5f52d257" title="Updates the boid&#39;s heading and position due to the potential fields." alt="" coords="473,5,591,35"/>
+</map>

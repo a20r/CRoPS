@@ -1,0 +1,518 @@
+\hypertarget{classboidsimulation_1_1FlockSim}{\section{boidsimulation.\-Flock\-Sim Class Reference}
+\label{classboidsimulation_1_1FlockSim}\index{boidsimulation.\-Flock\-Sim@{boidsimulation.\-Flock\-Sim}}
+}
+
+
+Main class for that is used for the simulation and display of the flock.  
+
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{classboidsimulation_1_1FlockSim_a7221a17466a06ad9018024d80b6bbff8}{\-\_\-\-\_\-init\-\_\-\-\_\-}
+\begin{DoxyCompactList}\small\item\em Initializes the flock and the display mechanism (Py\-Game) \end{DoxyCompactList}\item 
+def \hyperlink{classboidsimulation_1_1FlockSim_ad69cb572160cb83e3c868fc9de4a9e75}{avg}
+\begin{DoxyCompactList}\small\item\em Gets the average of a list. \end{DoxyCompactList}\item 
+def \hyperlink{classboidsimulation_1_1FlockSim_ae638beb355d9d953fe51e087ff1e6e94}{get\-Stats}
+\begin{DoxyCompactList}\small\item\em Gets runtime statistics about the simulation and writes it to a file. \end{DoxyCompactList}\item 
+def \hyperlink{classboidsimulation_1_1FlockSim_a57c1ef2f27ac7157afdabae4eefcc370}{get\-Boid\-Data}
+\begin{DoxyCompactList}\small\item\em Writes all of the boid positions to a file. \end{DoxyCompactList}\item 
+def \hyperlink{classboidsimulation_1_1FlockSim_a4fb29f4acff12a3d9b9a88280501320d}{animate}
+\begin{DoxyCompactList}\small\item\em Renders and then allows interactive playback of the swarm simulation data. \end{DoxyCompactList}\item 
+def \hyperlink{classboidsimulation_1_1FlockSim_a86097d942af27dc5df9f7190befd363c}{init\-\_\-prm}
+\begin{DoxyCompactList}\small\item\em Initializes the P\-R\-M generator used for the global planner. \end{DoxyCompactList}\item 
+def \hyperlink{classboidsimulation_1_1FlockSim_a3c456990ff58b2a5dfae2dd2b5b6d294}{render}
+\begin{DoxyCompactList}\small\item\em Renders the scene. \end{DoxyCompactList}\item 
+def \hyperlink{classboidsimulation_1_1FlockSim_a50ded4dc206f7ae1011347ef234a0091}{play}
+\begin{DoxyCompactList}\small\item\em Plays the scene after it has rendered. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classboidsimulation_1_1FlockSim_a970e9fcbc5d69b3987f226af5249038a}{done}
+\begin{DoxyCompactList}\small\item\em Tells if the flock has reached the end goal (used again to see if the escape or space bar were hit to stop the rendering) \end{DoxyCompactList}\item 
+\hyperlink{classboidsimulation_1_1FlockSim_ac9c61aa93f3db94b9a340b8555d90adf}{B\-L\-A\-C\-K}
+\begin{DoxyCompactList}\small\item\em Defines the color black. \end{DoxyCompactList}\item 
+\hyperlink{classboidsimulation_1_1FlockSim_afe8d83a914aeae9d188cdf61053de56c}{W\-H\-I\-T\-E}
+\begin{DoxyCompactList}\small\item\em Defines the color white. \end{DoxyCompactList}\item 
+\hyperlink{classboidsimulation_1_1FlockSim_aa5993f8033dcbbb0383c204877d1dd20}{font}
+\begin{DoxyCompactList}\small\item\em The font that is used for displaying the frame number. \end{DoxyCompactList}\item 
+\hyperlink{classboidsimulation_1_1FlockSim_a2ba5ffd4d4ef009af8735d838eaf59d3}{dim}
+\begin{DoxyCompactList}\small\item\em The dimensions of the Py\-Game screen. \end{DoxyCompactList}\item 
+\hyperlink{classboidsimulation_1_1FlockSim_abf487d6e84851334a79656b5df3c8492}{config}
+\begin{DoxyCompactList}\small\item\em The configuration object (in this case the configuration is defined by an exterior file) \end{DoxyCompactList}\item 
+\hyperlink{classboidsimulation_1_1FlockSim_a1658c675990b8bdb3955cae1b7292b38}{s\-Pos}
+\begin{DoxyCompactList}\small\item\em The starting point of the flock. \end{DoxyCompactList}\item 
+\hyperlink{classboidsimulation_1_1FlockSim_acb064f74364917a97ca9d3accdf96f45}{e\-Pos}
+\begin{DoxyCompactList}\small\item\em The position of the last goal for the flock. \end{DoxyCompactList}\item 
+\hyperlink{classboidsimulation_1_1FlockSim_a60f47dc6f8186030cd22f3ca3b37c4e6}{surface\-List}
+\begin{DoxyCompactList}\small\item\em Variable used to store the list of surfaces for simulation playback. \end{DoxyCompactList}\item 
+\hyperlink{classboidsimulation_1_1FlockSim_a1febd4cacbdcffb5b9d096d4716af78f}{iterations}
+\begin{DoxyCompactList}\small\item\em Maximum number of iterations. \end{DoxyCompactList}\item 
+\hyperlink{classboidsimulation_1_1FlockSim_a7daba8b4e771dcd6f6a7357bda59c56a}{frame\-Counter}
+\begin{DoxyCompactList}\small\item\em Counts which frame the user is on for the playback (don't know why it it is set to -\/2, it just works) \end{DoxyCompactList}\item 
+\hyperlink{classboidsimulation_1_1FlockSim_af378fd310919691dec50f5d312931726}{counter}
+\begin{DoxyCompactList}\small\item\em Global counter used for the rendering and the playback. \end{DoxyCompactList}\item 
+\hyperlink{classboidsimulation_1_1FlockSim_a125fa6c2909527f18c768f09606ab442}{flock\-Size}
+\begin{DoxyCompactList}\small\item\em The size of the flock (number of boids) \end{DoxyCompactList}\item 
+\hyperlink{classboidsimulation_1_1FlockSim_a50b375f7caa0e33d87141d2cde14526f}{map\-File}
+\begin{DoxyCompactList}\small\item\em The file that contains the data about the obstacles. \end{DoxyCompactList}\item 
+\hyperlink{classboidsimulation_1_1FlockSim_a96885e067ac2333f807eaa9580a2ece4}{data\-File}
+\begin{DoxyCompactList}\small\item\em The file that the statistics data will be written to. \end{DoxyCompactList}\item 
+\hyperlink{classboidsimulation_1_1FlockSim_aea78473e0e592e48b6047f49f8254cc1}{start\-Time}
+\item 
+\hyperlink{classboidsimulation_1_1FlockSim_ae60982002b6c8c922b3822dbdec4bd41}{num\-In\-Goal}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Main class for that is used for the simulation and display of the flock. 
+
+It also is used to gather statistics about the flock and present them in a useful manner. 
+
+Definition at line 20 of file boidsimulation.\-py.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classboidsimulation_1_1FlockSim_a7221a17466a06ad9018024d80b6bbff8}{\index{boidsimulation\-::\-Flock\-Sim@{boidsimulation\-::\-Flock\-Sim}!\-\_\-\-\_\-init\-\_\-\-\_\-@{\-\_\-\-\_\-init\-\_\-\-\_\-}}
+\index{\-\_\-\-\_\-init\-\_\-\-\_\-@{\-\_\-\-\_\-init\-\_\-\-\_\-}!boidsimulation::FlockSim@{boidsimulation\-::\-Flock\-Sim}}
+\subsubsection[{\-\_\-\-\_\-init\-\_\-\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}def boidsimulation.\-Flock\-Sim.\-\_\-\-\_\-init\-\_\-\-\_\- (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{flock\-Size, }
+\item[{}]{start\-Point, }
+\item[{}]{end\-Point, }
+\item[{}]{\-\_\-map\-File = {\ttfamily None}, }
+\item[{}]{\-\_\-data\-File = {\ttfamily None}}
+\end{DoxyParamCaption}
+)}}\label{classboidsimulation_1_1FlockSim_a7221a17466a06ad9018024d80b6bbff8}
+
+
+Initializes the flock and the display mechanism (Py\-Game) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em flock\-Size} & The size of the flock (number of boids) \\
+\hline
+{\em start\-Point} & The macro starting position of the flock \\
+\hline
+{\em end\-Point} & The last goal point for the flock \\
+\hline
+{\em \-\_\-map\-File} & The file containing details about the obstacles \\
+\hline
+{\em \-\_\-data\-File} & The file that the data will be exported to \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 30 of file boidsimulation.\-py.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classboidsimulation_1_1FlockSim_a4fb29f4acff12a3d9b9a88280501320d}{\index{boidsimulation\-::\-Flock\-Sim@{boidsimulation\-::\-Flock\-Sim}!animate@{animate}}
+\index{animate@{animate}!boidsimulation::FlockSim@{boidsimulation\-::\-Flock\-Sim}}
+\subsubsection[{animate}]{\setlength{\rightskip}{0pt plus 5cm}def boidsimulation.\-Flock\-Sim.\-animate (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}}\label{classboidsimulation_1_1FlockSim_a4fb29f4acff12a3d9b9a88280501320d}
+
+
+Renders and then allows interactive playback of the swarm simulation data. 
+
+
+
+Definition at line 137 of file boidsimulation.\-py.
+
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classboidsimulation_1_1FlockSim_a4fb29f4acff12a3d9b9a88280501320d_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classboidsimulation_1_1FlockSim_a4fb29f4acff12a3d9b9a88280501320d_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classboidsimulation_1_1FlockSim_ad69cb572160cb83e3c868fc9de4a9e75}{\index{boidsimulation\-::\-Flock\-Sim@{boidsimulation\-::\-Flock\-Sim}!avg@{avg}}
+\index{avg@{avg}!boidsimulation::FlockSim@{boidsimulation\-::\-Flock\-Sim}}
+\subsubsection[{avg}]{\setlength{\rightskip}{0pt plus 5cm}def boidsimulation.\-Flock\-Sim.\-avg (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{l}
+\end{DoxyParamCaption}
+)}}\label{classboidsimulation_1_1FlockSim_ad69cb572160cb83e3c868fc9de4a9e75}
+
+
+Gets the average of a list. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em l} & The list to be averaged \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+l The average value in list l 
+\end{DoxyReturn}
+
+
+Definition at line 87 of file boidsimulation.\-py.
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classboidsimulation_1_1FlockSim_ad69cb572160cb83e3c868fc9de4a9e75_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classboidsimulation_1_1FlockSim_a57c1ef2f27ac7157afdabae4eefcc370}{\index{boidsimulation\-::\-Flock\-Sim@{boidsimulation\-::\-Flock\-Sim}!get\-Boid\-Data@{get\-Boid\-Data}}
+\index{get\-Boid\-Data@{get\-Boid\-Data}!boidsimulation::FlockSim@{boidsimulation\-::\-Flock\-Sim}}
+\subsubsection[{get\-Boid\-Data}]{\setlength{\rightskip}{0pt plus 5cm}def boidsimulation.\-Flock\-Sim.\-get\-Boid\-Data (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}}\label{classboidsimulation_1_1FlockSim_a57c1ef2f27ac7157afdabae4eefcc370}
+
+
+Writes all of the boid positions to a file. 
+
+
+
+Definition at line 126 of file boidsimulation.\-py.
+
+\hypertarget{classboidsimulation_1_1FlockSim_ae638beb355d9d953fe51e087ff1e6e94}{\index{boidsimulation\-::\-Flock\-Sim@{boidsimulation\-::\-Flock\-Sim}!get\-Stats@{get\-Stats}}
+\index{get\-Stats@{get\-Stats}!boidsimulation::FlockSim@{boidsimulation\-::\-Flock\-Sim}}
+\subsubsection[{get\-Stats}]{\setlength{\rightskip}{0pt plus 5cm}def boidsimulation.\-Flock\-Sim.\-get\-Stats (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}}\label{classboidsimulation_1_1FlockSim_ae638beb355d9d953fe51e087ff1e6e94}
+
+
+Gets runtime statistics about the simulation and writes it to a file. 
+
+Currently, the statistics being gathered are the current time that has passed, the average distance between the boids, the average minimum distance between the boids, and the number of boids that have finished 
+
+Definition at line 100 of file boidsimulation.\-py.
+
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classboidsimulation_1_1FlockSim_ae638beb355d9d953fe51e087ff1e6e94_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classboidsimulation_1_1FlockSim_a86097d942af27dc5df9f7190befd363c}{\index{boidsimulation\-::\-Flock\-Sim@{boidsimulation\-::\-Flock\-Sim}!init\-\_\-prm@{init\-\_\-prm}}
+\index{init\-\_\-prm@{init\-\_\-prm}!boidsimulation::FlockSim@{boidsimulation\-::\-Flock\-Sim}}
+\subsubsection[{init\-\_\-prm}]{\setlength{\rightskip}{0pt plus 5cm}def boidsimulation.\-Flock\-Sim.\-init\-\_\-prm (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}}\label{classboidsimulation_1_1FlockSim_a86097d942af27dc5df9f7190befd363c}
+
+
+Initializes the P\-R\-M generator used for the global planner. 
+
+Also sets the boid list for the rest of the flock 
+
+Definition at line 146 of file boidsimulation.\-py.
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classboidsimulation_1_1FlockSim_a86097d942af27dc5df9f7190befd363c_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classboidsimulation_1_1FlockSim_a50ded4dc206f7ae1011347ef234a0091}{\index{boidsimulation\-::\-Flock\-Sim@{boidsimulation\-::\-Flock\-Sim}!play@{play}}
+\index{play@{play}!boidsimulation::FlockSim@{boidsimulation\-::\-Flock\-Sim}}
+\subsubsection[{play}]{\setlength{\rightskip}{0pt plus 5cm}def boidsimulation.\-Flock\-Sim.\-play (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}}\label{classboidsimulation_1_1FlockSim_a50ded4dc206f7ae1011347ef234a0091}
+
+
+Plays the scene after it has rendered. 
+
+Iterates through surfaces that have been stored in surface\-List and blits the new surface on the screen 
+
+Definition at line 212 of file boidsimulation.\-py.
+
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classboidsimulation_1_1FlockSim_a50ded4dc206f7ae1011347ef234a0091_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classboidsimulation_1_1FlockSim_a50ded4dc206f7ae1011347ef234a0091_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classboidsimulation_1_1FlockSim_a3c456990ff58b2a5dfae2dd2b5b6d294}{\index{boidsimulation\-::\-Flock\-Sim@{boidsimulation\-::\-Flock\-Sim}!render@{render}}
+\index{render@{render}!boidsimulation::FlockSim@{boidsimulation\-::\-Flock\-Sim}}
+\subsubsection[{render}]{\setlength{\rightskip}{0pt plus 5cm}def boidsimulation.\-Flock\-Sim.\-render (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{for\-Play = {\ttfamily False}}
+\end{DoxyParamCaption}
+)}}\label{classboidsimulation_1_1FlockSim_a3c456990ff58b2a5dfae2dd2b5b6d294}
+
+
+Renders the scene. 
+
+This means that the time taken for the boids to reach the goal in this function is that actual amount of computational time needed. 
+\begin{DoxyParams}{Parameters}
+{\em for\-Play} & Specifies if the surface data should be recorded for animation \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 167 of file boidsimulation.\-py.
+
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classboidsimulation_1_1FlockSim_a3c456990ff58b2a5dfae2dd2b5b6d294_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classboidsimulation_1_1FlockSim_a3c456990ff58b2a5dfae2dd2b5b6d294_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classboidsimulation_1_1FlockSim_ac9c61aa93f3db94b9a340b8555d90adf}{\index{boidsimulation\-::\-Flock\-Sim@{boidsimulation\-::\-Flock\-Sim}!B\-L\-A\-C\-K@{B\-L\-A\-C\-K}}
+\index{B\-L\-A\-C\-K@{B\-L\-A\-C\-K}!boidsimulation::FlockSim@{boidsimulation\-::\-Flock\-Sim}}
+\subsubsection[{B\-L\-A\-C\-K}]{\setlength{\rightskip}{0pt plus 5cm}boidsimulation.\-Flock\-Sim.\-B\-L\-A\-C\-K}}\label{classboidsimulation_1_1FlockSim_ac9c61aa93f3db94b9a340b8555d90adf}
+
+
+Defines the color black. 
+
+
+
+Definition at line 38 of file boidsimulation.\-py.
+
+\hypertarget{classboidsimulation_1_1FlockSim_abf487d6e84851334a79656b5df3c8492}{\index{boidsimulation\-::\-Flock\-Sim@{boidsimulation\-::\-Flock\-Sim}!config@{config}}
+\index{config@{config}!boidsimulation::FlockSim@{boidsimulation\-::\-Flock\-Sim}}
+\subsubsection[{config}]{\setlength{\rightskip}{0pt plus 5cm}boidsimulation.\-Flock\-Sim.\-config}}\label{classboidsimulation_1_1FlockSim_abf487d6e84851334a79656b5df3c8492}
+
+
+The configuration object (in this case the configuration is defined by an exterior file) 
+
+
+
+Definition at line 51 of file boidsimulation.\-py.
+
+\hypertarget{classboidsimulation_1_1FlockSim_af378fd310919691dec50f5d312931726}{\index{boidsimulation\-::\-Flock\-Sim@{boidsimulation\-::\-Flock\-Sim}!counter@{counter}}
+\index{counter@{counter}!boidsimulation::FlockSim@{boidsimulation\-::\-Flock\-Sim}}
+\subsubsection[{counter}]{\setlength{\rightskip}{0pt plus 5cm}boidsimulation.\-Flock\-Sim.\-counter}}\label{classboidsimulation_1_1FlockSim_af378fd310919691dec50f5d312931726}
+
+
+Global counter used for the rendering and the playback. 
+
+
+
+Definition at line 70 of file boidsimulation.\-py.
+
+\hypertarget{classboidsimulation_1_1FlockSim_a96885e067ac2333f807eaa9580a2ece4}{\index{boidsimulation\-::\-Flock\-Sim@{boidsimulation\-::\-Flock\-Sim}!data\-File@{data\-File}}
+\index{data\-File@{data\-File}!boidsimulation::FlockSim@{boidsimulation\-::\-Flock\-Sim}}
+\subsubsection[{data\-File}]{\setlength{\rightskip}{0pt plus 5cm}boidsimulation.\-Flock\-Sim.\-data\-File}}\label{classboidsimulation_1_1FlockSim_a96885e067ac2333f807eaa9580a2ece4}
+
+
+The file that the statistics data will be written to. 
+
+
+
+Definition at line 79 of file boidsimulation.\-py.
+
+\hypertarget{classboidsimulation_1_1FlockSim_a2ba5ffd4d4ef009af8735d838eaf59d3}{\index{boidsimulation\-::\-Flock\-Sim@{boidsimulation\-::\-Flock\-Sim}!dim@{dim}}
+\index{dim@{dim}!boidsimulation::FlockSim@{boidsimulation\-::\-Flock\-Sim}}
+\subsubsection[{dim}]{\setlength{\rightskip}{0pt plus 5cm}boidsimulation.\-Flock\-Sim.\-dim}}\label{classboidsimulation_1_1FlockSim_a2ba5ffd4d4ef009af8735d838eaf59d3}
+
+
+The dimensions of the Py\-Game screen. 
+
+
+
+Definition at line 47 of file boidsimulation.\-py.
+
+\hypertarget{classboidsimulation_1_1FlockSim_a970e9fcbc5d69b3987f226af5249038a}{\index{boidsimulation\-::\-Flock\-Sim@{boidsimulation\-::\-Flock\-Sim}!done@{done}}
+\index{done@{done}!boidsimulation::FlockSim@{boidsimulation\-::\-Flock\-Sim}}
+\subsubsection[{done}]{\setlength{\rightskip}{0pt plus 5cm}boidsimulation.\-Flock\-Sim.\-done}}\label{classboidsimulation_1_1FlockSim_a970e9fcbc5d69b3987f226af5249038a}
+
+
+Tells if the flock has reached the end goal (used again to see if the escape or space bar were hit to stop the rendering) 
+
+
+
+Definition at line 35 of file boidsimulation.\-py.
+
+\hypertarget{classboidsimulation_1_1FlockSim_acb064f74364917a97ca9d3accdf96f45}{\index{boidsimulation\-::\-Flock\-Sim@{boidsimulation\-::\-Flock\-Sim}!e\-Pos@{e\-Pos}}
+\index{e\-Pos@{e\-Pos}!boidsimulation::FlockSim@{boidsimulation\-::\-Flock\-Sim}}
+\subsubsection[{e\-Pos}]{\setlength{\rightskip}{0pt plus 5cm}boidsimulation.\-Flock\-Sim.\-e\-Pos}}\label{classboidsimulation_1_1FlockSim_acb064f74364917a97ca9d3accdf96f45}
+
+
+The position of the last goal for the flock. 
+
+
+
+Definition at line 57 of file boidsimulation.\-py.
+
+\hypertarget{classboidsimulation_1_1FlockSim_a125fa6c2909527f18c768f09606ab442}{\index{boidsimulation\-::\-Flock\-Sim@{boidsimulation\-::\-Flock\-Sim}!flock\-Size@{flock\-Size}}
+\index{flock\-Size@{flock\-Size}!boidsimulation::FlockSim@{boidsimulation\-::\-Flock\-Sim}}
+\subsubsection[{flock\-Size}]{\setlength{\rightskip}{0pt plus 5cm}boidsimulation.\-Flock\-Sim.\-flock\-Size}}\label{classboidsimulation_1_1FlockSim_a125fa6c2909527f18c768f09606ab442}
+
+
+The size of the flock (number of boids) 
+
+
+
+Definition at line 73 of file boidsimulation.\-py.
+
+\hypertarget{classboidsimulation_1_1FlockSim_aa5993f8033dcbbb0383c204877d1dd20}{\index{boidsimulation\-::\-Flock\-Sim@{boidsimulation\-::\-Flock\-Sim}!font@{font}}
+\index{font@{font}!boidsimulation::FlockSim@{boidsimulation\-::\-Flock\-Sim}}
+\subsubsection[{font}]{\setlength{\rightskip}{0pt plus 5cm}boidsimulation.\-Flock\-Sim.\-font}}\label{classboidsimulation_1_1FlockSim_aa5993f8033dcbbb0383c204877d1dd20}
+
+
+The font that is used for displaying the frame number. 
+
+
+
+Definition at line 44 of file boidsimulation.\-py.
+
+\hypertarget{classboidsimulation_1_1FlockSim_a7daba8b4e771dcd6f6a7357bda59c56a}{\index{boidsimulation\-::\-Flock\-Sim@{boidsimulation\-::\-Flock\-Sim}!frame\-Counter@{frame\-Counter}}
+\index{frame\-Counter@{frame\-Counter}!boidsimulation::FlockSim@{boidsimulation\-::\-Flock\-Sim}}
+\subsubsection[{frame\-Counter}]{\setlength{\rightskip}{0pt plus 5cm}boidsimulation.\-Flock\-Sim.\-frame\-Counter}}\label{classboidsimulation_1_1FlockSim_a7daba8b4e771dcd6f6a7357bda59c56a}
+
+
+Counts which frame the user is on for the playback (don't know why it it is set to -\/2, it just works) 
+
+
+
+Definition at line 67 of file boidsimulation.\-py.
+
+\hypertarget{classboidsimulation_1_1FlockSim_a1febd4cacbdcffb5b9d096d4716af78f}{\index{boidsimulation\-::\-Flock\-Sim@{boidsimulation\-::\-Flock\-Sim}!iterations@{iterations}}
+\index{iterations@{iterations}!boidsimulation::FlockSim@{boidsimulation\-::\-Flock\-Sim}}
+\subsubsection[{iterations}]{\setlength{\rightskip}{0pt plus 5cm}boidsimulation.\-Flock\-Sim.\-iterations}}\label{classboidsimulation_1_1FlockSim_a1febd4cacbdcffb5b9d096d4716af78f}
+
+
+Maximum number of iterations. 
+
+
+
+Definition at line 63 of file boidsimulation.\-py.
+
+\hypertarget{classboidsimulation_1_1FlockSim_a50b375f7caa0e33d87141d2cde14526f}{\index{boidsimulation\-::\-Flock\-Sim@{boidsimulation\-::\-Flock\-Sim}!map\-File@{map\-File}}
+\index{map\-File@{map\-File}!boidsimulation::FlockSim@{boidsimulation\-::\-Flock\-Sim}}
+\subsubsection[{map\-File}]{\setlength{\rightskip}{0pt plus 5cm}boidsimulation.\-Flock\-Sim.\-map\-File}}\label{classboidsimulation_1_1FlockSim_a50b375f7caa0e33d87141d2cde14526f}
+
+
+The file that contains the data about the obstacles. 
+
+
+
+Definition at line 76 of file boidsimulation.\-py.
+
+\hypertarget{classboidsimulation_1_1FlockSim_ae60982002b6c8c922b3822dbdec4bd41}{\index{boidsimulation\-::\-Flock\-Sim@{boidsimulation\-::\-Flock\-Sim}!num\-In\-Goal@{num\-In\-Goal}}
+\index{num\-In\-Goal@{num\-In\-Goal}!boidsimulation::FlockSim@{boidsimulation\-::\-Flock\-Sim}}
+\subsubsection[{num\-In\-Goal}]{\setlength{\rightskip}{0pt plus 5cm}boidsimulation.\-Flock\-Sim.\-num\-In\-Goal}}\label{classboidsimulation_1_1FlockSim_ae60982002b6c8c922b3822dbdec4bd41}
+
+
+Definition at line 181 of file boidsimulation.\-py.
+
+\hypertarget{classboidsimulation_1_1FlockSim_a1658c675990b8bdb3955cae1b7292b38}{\index{boidsimulation\-::\-Flock\-Sim@{boidsimulation\-::\-Flock\-Sim}!s\-Pos@{s\-Pos}}
+\index{s\-Pos@{s\-Pos}!boidsimulation::FlockSim@{boidsimulation\-::\-Flock\-Sim}}
+\subsubsection[{s\-Pos}]{\setlength{\rightskip}{0pt plus 5cm}boidsimulation.\-Flock\-Sim.\-s\-Pos}}\label{classboidsimulation_1_1FlockSim_a1658c675990b8bdb3955cae1b7292b38}
+
+
+The starting point of the flock. 
+
+
+
+Definition at line 54 of file boidsimulation.\-py.
+
+\hypertarget{classboidsimulation_1_1FlockSim_aea78473e0e592e48b6047f49f8254cc1}{\index{boidsimulation\-::\-Flock\-Sim@{boidsimulation\-::\-Flock\-Sim}!start\-Time@{start\-Time}}
+\index{start\-Time@{start\-Time}!boidsimulation::FlockSim@{boidsimulation\-::\-Flock\-Sim}}
+\subsubsection[{start\-Time}]{\setlength{\rightskip}{0pt plus 5cm}boidsimulation.\-Flock\-Sim.\-start\-Time}}\label{classboidsimulation_1_1FlockSim_aea78473e0e592e48b6047f49f8254cc1}
+
+
+Definition at line 171 of file boidsimulation.\-py.
+
+\hypertarget{classboidsimulation_1_1FlockSim_a60f47dc6f8186030cd22f3ca3b37c4e6}{\index{boidsimulation\-::\-Flock\-Sim@{boidsimulation\-::\-Flock\-Sim}!surface\-List@{surface\-List}}
+\index{surface\-List@{surface\-List}!boidsimulation::FlockSim@{boidsimulation\-::\-Flock\-Sim}}
+\subsubsection[{surface\-List}]{\setlength{\rightskip}{0pt plus 5cm}boidsimulation.\-Flock\-Sim.\-surface\-List}}\label{classboidsimulation_1_1FlockSim_a60f47dc6f8186030cd22f3ca3b37c4e6}
+
+
+Variable used to store the list of surfaces for simulation playback. 
+
+
+
+Definition at line 60 of file boidsimulation.\-py.
+
+\hypertarget{classboidsimulation_1_1FlockSim_afe8d83a914aeae9d188cdf61053de56c}{\index{boidsimulation\-::\-Flock\-Sim@{boidsimulation\-::\-Flock\-Sim}!W\-H\-I\-T\-E@{W\-H\-I\-T\-E}}
+\index{W\-H\-I\-T\-E@{W\-H\-I\-T\-E}!boidsimulation::FlockSim@{boidsimulation\-::\-Flock\-Sim}}
+\subsubsection[{W\-H\-I\-T\-E}]{\setlength{\rightskip}{0pt plus 5cm}boidsimulation.\-Flock\-Sim.\-W\-H\-I\-T\-E}}\label{classboidsimulation_1_1FlockSim_afe8d83a914aeae9d188cdf61053de56c}
+
+
+Defines the color white. 
+
+
+
+Definition at line 41 of file boidsimulation.\-py.
+
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+code/\hyperlink{boidsimulation_8py}{boidsimulation.\-py (\-Concurrent Versions System (\-C\-V\-S) 1.\-12.\-13-\/\-Mir\-Debian-\/9 (client/server))}\end{DoxyCompactItemize}

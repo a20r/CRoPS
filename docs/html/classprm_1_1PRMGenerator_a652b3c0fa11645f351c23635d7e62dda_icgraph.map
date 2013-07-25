@@ -1,0 +1,6 @@
+<map id="prm.PRMGenerator.norm" name="prm.PRMGenerator.norm">
+<area shape="rect" id="node3" href="$classprm_1_1PRMGenerator.html#aaa44a7e209bb06af27c4120b78d70cfb" title="Initiates the omega function which holds the node weights." alt="" coords="232,5,429,35"/>
+<area shape="rect" id="node5" href="$classprm_1_1PRMGenerator.html#aabedd114ea5948bb92f477be30b41619" title="Generates a series of random points that will become the roadmap and connects them and weights them i..." alt="" coords="488,84,677,113"/>
+<area shape="rect" id="node7" href="$classprm_1_1PRMGenerator.html#a95608c8cfd4364e3b2a9d20709161365" title="Filters out sample points that are inside of obstacles or otherwise inadequate." alt="" coords="224,109,437,139"/>
+<area shape="rect" id="node10" href="$classprm_1_1PRMGenerator.html#a2acf210887cb331b20c5378da634b4eb" title="Finds suitable neighbours for a sample point." alt="" coords="221,163,440,192"/>
+</map>

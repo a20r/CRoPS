@@ -1,0 +1,4 @@
+<map id="boid.Boid.inGoal" name="boid.Boid.inGoal">
+<area shape="rect" id="node3" href="$classboid_1_1Boid.html#a353fbe920fabe58a43affaf183cfcd03" title="Gets the potential vectors to a boid due to the repulsive boid field." alt="" coords="172,5,353,35"/>
+<area shape="rect" id="node5" href="$classboid_1_1Boid.html#a8a354e4b7d58ced69771f3bb5f52d257" title="Updates the boid&#39;s heading and position due to the potential fields." alt="" coords="404,32,521,61"/>
+</map>

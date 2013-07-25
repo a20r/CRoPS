@@ -1,0 +1,4 @@
+<map id="obstacle.PolyObstacle.getClosestPoint" name="obstacle.PolyObstacle.getClosestPoint">
+<area shape="rect" id="node3" href="$classobstacle_1_1PolyObstacle.html#af866b6f101194b8a8731f2394fdc247e" title="Gets the closest point from the polygon to p." alt="" coords="231,5,404,51"/>
+<area shape="rect" id="node5" href="$classobstacle_1_1PolyObstacle.html#af71f01fca50193a5e5372c2507661ada" title="Checks if a point is allowed, meaning no collisions occur." alt="" coords="455,5,639,51"/>
+</map>

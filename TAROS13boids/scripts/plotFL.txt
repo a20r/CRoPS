@@ -1,0 +1,42 @@
+
+gnuplot << EOF
+clear
+set terminal postscript  "Helvetica" 28
+set termoption enhanced
+set output "kot.ps"
+set xlabel "nr. of robots"
+set ylabel "time last - time first [s]" offset 1.7
+set pointsize 3
+set style data linespoints
+set yrange [0:6.45]
+set ytics 0, 1, 6
+set xrange [2.5:52.5]
+set xtics 0,5,50
+set mytics 2
+set mxtics 1
+set style line 1 lt 1 lw 3 pt 5 linecolor rgb "red"
+set style line 2 lt 1 lw 3 pt 7 linecolor rgb "black"
+set style line 3 lt 1 lw 3 pt 9 linecolor rgb "blue"
+set style line 4 lt 1 lw 3 pt 13 linecolor rgb "green"
+set key at 25.0,5.85
+set key width 0.05
+set key height 0.05
+set size 1.25,1
+set lmargin 6.0
+set rmargin 0.1
+set tmargin 0.02
+set bmargin 2.94
+set boxwidth 1.2 absolute
+set style fill solid
+
+plot "m7_fl.txt" using (column(1)-1.25):2:3 with boxerror fill pattern 7 ls 1 title "scene1",\
+     "scene1_fl.txt" using 1:2:3 with boxerror fill pattern 2 ls 2 title "scene2",\
+     "scene2_fl.txt" using (column(1)+1.25):2:3 with boxerror fill pattern 6 ls 3 title "scene3"
+
+#
+#plot "$nameFile" using 1:2 with lines ls 4 title "max",\    
+#     "$nameFile" using 1:2:3 with errorbars ls 1 title "avg",\
+#     "$nameFile" using 1:2 with lines ls 1 notitle,\
+#     "$nameFile" using 1:4 with lines ls 2 title "min"
+     
+EOF

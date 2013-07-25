@@ -1,0 +1,6 @@
+<map id="boid.Boid.getGoalVector" name="boid.Boid.getGoalVector">
+<area shape="rect" id="node3" href="$classboid_1_1Boid.html#a492a0ad33a962b15ed94789d59f3b08a" title="Defines a sigmoidal curve used for goal attractself._sumDivide = lambda lt, s: map(lambda p: p / s..." alt="" coords="233,5,388,35"/>
+<area shape="rect" id="node7" href="$classboid_1_1Boid.html#a8aa203db69671a064a623a88dfc6b3b7" title="Gets a scaled direction vector from an unscaled vector." alt="" coords="217,59,404,88"/>
+<area shape="rect" id="node5" href="$classboid_1_1Boid.html#a576c57d100aa5743d610de30bf1a2b2c" title="Gets the distance between two points." alt="" coords="453,5,563,35"/>
+<area shape="rect" id="node9" href="$classboid_1_1Boid.html#a5324650d399f5c850ec7b7bda10eeae7" title="Gets the magnitude of a vector." alt="" coords="456,59,560,88"/>
+</map>

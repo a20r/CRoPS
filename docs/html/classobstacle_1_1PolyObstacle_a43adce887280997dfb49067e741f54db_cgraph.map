@@ -1,0 +1,4 @@
+<map id="obstacle.PolyObstacle.getClosestPoint" name="obstacle.PolyObstacle.getClosestPoint">
+<area shape="rect" id="node3" href="$classboid_1_1Boid.html#a576c57d100aa5743d610de30bf1a2b2c" title="Gets the distance between two points." alt="" coords="268,5,377,35"/>
+<area shape="rect" id="node5" href="$classobstacle_1_1PolyObstacle.html#a3392ccb4d22e752b0f150af354b16862" title="Gets the Eulidean distance between p1 and p2." alt="" coords="229,59,416,88"/>
+</map>

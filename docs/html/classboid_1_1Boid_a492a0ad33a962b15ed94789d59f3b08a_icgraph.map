@@ -1,0 +1,6 @@
+<map id="boid.Boid.sigmoidFunc" name="boid.Boid.sigmoidFunc">
+<area shape="rect" id="node3" href="$classboid_1_1Boid.html#a47c28705553bd3d729212944880161d3" title="Gets the potential vectors to a boid due to the attractive goal field." alt="" coords="219,5,381,35"/>
+<area shape="rect" id="node7" href="$classboid_1_1Boid.html#a353fbe920fabe58a43affaf183cfcd03" title="Gets the potential vectors to a boid due to the repulsive boid field." alt="" coords="209,59,391,88"/>
+<area shape="rect" id="node10" href="$classboid_1_1Boid.html#af2f2931c5971a4447cfe179fdafe3ab5" title="Sets the new goal." alt="" coords="224,112,376,141"/>
+<area shape="rect" id="node5" href="$classboid_1_1Boid.html#a8a354e4b7d58ced69771f3bb5f52d257" title="Updates the boid&#39;s heading and position due to the potential fields." alt="" coords="441,32,559,61"/>
+</map>

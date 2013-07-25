@@ -1,0 +1,153 @@
+\hypertarget{classpriodict_1_1priorityDictionary}{\section{priodict.\-priority\-Dictionary Class Reference}
+\label{classpriodict_1_1priorityDictionary}\index{priodict.\-priority\-Dictionary@{priodict.\-priority\-Dictionary}}
+}
+
+
+Inheritance diagram for priodict.\-priority\-Dictionary\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=204pt]{classpriodict_1_1priorityDictionary__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for priodict.\-priority\-Dictionary\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=204pt]{classpriodict_1_1priorityDictionary__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{classpriodict_1_1priorityDictionary_a0b614c3f902b4ca714c9a8173c4ec3e3}{\-\_\-\-\_\-init\-\_\-\-\_\-}
+\begin{DoxyCompactList}\small\item\em Initialize \hyperlink{classpriodict_1_1priorityDictionary}{priority\-Dictionary} by creating binary heap of pairs (value,key). \end{DoxyCompactList}\item 
+def \hyperlink{classpriodict_1_1priorityDictionary_addbfef62eca26714c932482d2df9f14a}{smallest}
+\begin{DoxyCompactList}\small\item\em Find smallest item after removing deleted items from heap. \end{DoxyCompactList}\item 
+def \hyperlink{classpriodict_1_1priorityDictionary_ae2386d1d220c9be0c3193adf425423dd}{\-\_\-\-\_\-iter\-\_\-\-\_\-}
+\begin{DoxyCompactList}\small\item\em Create destructive sorted iterator of \hyperlink{classpriodict_1_1priorityDictionary}{priority\-Dictionary}. \end{DoxyCompactList}\item 
+def \hyperlink{classpriodict_1_1priorityDictionary_a862dc448352bd602da86d957a4752167}{\-\_\-\-\_\-setitem\-\_\-\-\_\-}
+\begin{DoxyCompactList}\small\item\em Change value stored in dictionary and add corresponding pair to heap. \end{DoxyCompactList}\item 
+def \hyperlink{classpriodict_1_1priorityDictionary_aaba46b716d256d1d0b79ec44a2195c19}{setdefault}
+\begin{DoxyCompactList}\small\item\em Reimplement setdefault to call our customized {\bfseries setitem}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 6 of file priodict.\-py.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classpriodict_1_1priorityDictionary_a0b614c3f902b4ca714c9a8173c4ec3e3}{\index{priodict\-::priority\-Dictionary@{priodict\-::priority\-Dictionary}!\-\_\-\-\_\-init\-\_\-\-\_\-@{\-\_\-\-\_\-init\-\_\-\-\_\-}}
+\index{\-\_\-\-\_\-init\-\_\-\-\_\-@{\-\_\-\-\_\-init\-\_\-\-\_\-}!priodict::priorityDictionary@{priodict\-::priority\-Dictionary}}
+\subsubsection[{\-\_\-\-\_\-init\-\_\-\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}def priodict.\-priority\-Dictionary.\-\_\-\-\_\-init\-\_\-\-\_\- (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}}\label{classpriodict_1_1priorityDictionary_a0b614c3f902b4ca714c9a8173c4ec3e3}
+
+
+Initialize \hyperlink{classpriodict_1_1priorityDictionary}{priority\-Dictionary} by creating binary heap of pairs (value,key). 
+
+Note that changing or removing a dict entry will not remove the old pair from the heap until it is found by \hyperlink{classpriodict_1_1priorityDictionary_addbfef62eca26714c932482d2df9f14a}{smallest()} or until the heap is rebuilt. 
+
+Definition at line 12 of file priodict.\-py.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classpriodict_1_1priorityDictionary_ae2386d1d220c9be0c3193adf425423dd}{\index{priodict\-::priority\-Dictionary@{priodict\-::priority\-Dictionary}!\-\_\-\-\_\-iter\-\_\-\-\_\-@{\-\_\-\-\_\-iter\-\_\-\-\_\-}}
+\index{\-\_\-\-\_\-iter\-\_\-\-\_\-@{\-\_\-\-\_\-iter\-\_\-\-\_\-}!priodict::priorityDictionary@{priodict\-::priority\-Dictionary}}
+\subsubsection[{\-\_\-\-\_\-iter\-\_\-\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}def priodict.\-priority\-Dictionary.\-\_\-\-\_\-iter\-\_\-\-\_\- (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}}\label{classpriodict_1_1priorityDictionary_ae2386d1d220c9be0c3193adf425423dd}
+
+
+Create destructive sorted iterator of \hyperlink{classpriodict_1_1priorityDictionary}{priority\-Dictionary}. 
+
+
+
+Definition at line 39 of file priodict.\-py.
+
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classpriodict_1_1priorityDictionary_ae2386d1d220c9be0c3193adf425423dd_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classpriodict_1_1priorityDictionary_a862dc448352bd602da86d957a4752167}{\index{priodict\-::priority\-Dictionary@{priodict\-::priority\-Dictionary}!\-\_\-\-\_\-setitem\-\_\-\-\_\-@{\-\_\-\-\_\-setitem\-\_\-\-\_\-}}
+\index{\-\_\-\-\_\-setitem\-\_\-\-\_\-@{\-\_\-\-\_\-setitem\-\_\-\-\_\-}!priodict::priorityDictionary@{priodict\-::priority\-Dictionary}}
+\subsubsection[{\-\_\-\-\_\-setitem\-\_\-\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}def priodict.\-priority\-Dictionary.\-\_\-\-\_\-setitem\-\_\-\-\_\- (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{key, }
+\item[{}]{val}
+\end{DoxyParamCaption}
+)}}\label{classpriodict_1_1priorityDictionary_a862dc448352bd602da86d957a4752167}
+
+
+Change value stored in dictionary and add corresponding pair to heap. 
+
+Rebuilds the heap if the number of deleted items grows too large, to avoid memory leakage. 
+
+Definition at line 51 of file priodict.\-py.
+
+\hypertarget{classpriodict_1_1priorityDictionary_aaba46b716d256d1d0b79ec44a2195c19}{\index{priodict\-::priority\-Dictionary@{priodict\-::priority\-Dictionary}!setdefault@{setdefault}}
+\index{setdefault@{setdefault}!priodict::priorityDictionary@{priodict\-::priority\-Dictionary}}
+\subsubsection[{setdefault}]{\setlength{\rightskip}{0pt plus 5cm}def priodict.\-priority\-Dictionary.\-setdefault (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{key, }
+\item[{}]{val}
+\end{DoxyParamCaption}
+)}}\label{classpriodict_1_1priorityDictionary_aaba46b716d256d1d0b79ec44a2195c19}
+
+
+Reimplement setdefault to call our customized {\bfseries setitem}. 
+
+
+
+Definition at line 69 of file priodict.\-py.
+
+\hypertarget{classpriodict_1_1priorityDictionary_addbfef62eca26714c932482d2df9f14a}{\index{priodict\-::priority\-Dictionary@{priodict\-::priority\-Dictionary}!smallest@{smallest}}
+\index{smallest@{smallest}!priodict::priorityDictionary@{priodict\-::priority\-Dictionary}}
+\subsubsection[{smallest}]{\setlength{\rightskip}{0pt plus 5cm}def priodict.\-priority\-Dictionary.\-smallest (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}}\label{classpriodict_1_1priorityDictionary_addbfef62eca26714c932482d2df9f14a}
+
+
+Find smallest item after removing deleted items from heap. 
+
+
+
+Definition at line 18 of file priodict.\-py.
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classpriodict_1_1priorityDictionary_addbfef62eca26714c932482d2df9f14a_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+code/\hyperlink{priodict_8py}{priodict.\-py (\-Concurrent Versions System (\-C\-V\-S) 1.\-12.\-13-\/\-Mir\-Debian-\/9 (client/server))}\end{DoxyCompactItemize}
