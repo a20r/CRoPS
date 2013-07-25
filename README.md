@@ -8,3 +8,7 @@ Combined Roadmaps and Potentials for Swarm planning
 
 ###Prerequistes:
 * PyGame
+
+###Notes
+* This project will be published by the Towards Autonomous Robotic Systems conference in Oxford in August.
+* The website for the project is: http://aw204.host.cs.st-andrews.ac.uk/CRoPS/
