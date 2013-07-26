@@ -17,13 +17,20 @@ def guassianFunc(dX, dAvg = 10, dSigma = 1):
     @param dAvg Dynamic variable used to define the average prospective Distance
     @param dSigma Standard deviation of the average distances
     """
-    return np.exp(-0.5*((dX - dAvg)/dSigma)**2)/(2.5066282746310002*dSigma)
+    return np.exp(
+        -0.5 * ((dX - dAvg) / dSigma) ** 2
+    ) / (2.5066282746310002*dSigma)
 
 class Boid:
     """
     Class which represents one boid
     """
-    def __init__(self, _sPos, _ePos, _speed, _xSize, _ySize, _neighborSize, _gammaFunc, _obstacleList, _goalList, _prmGen, _screen, _color):
+    def __init__(
+        self, _sPos, _ePos, 
+        _speed, _xSize, _ySize, 
+        _neighborSize, _gammaFunc, 
+        _obstacleList, _goalList, 
+        _prmGen, _screen, _color):
         """
         Initializes all of the variables given as input to the constructor used by the boid
         @param self The object pointer
@@ -52,7 +59,14 @@ class Boid:
         self.radius = 4
 
         ## Initial random heading
-        self.heading = (random.randint(int(-_speed), int(_speed)), random.randint(int(-_speed), int(_speed)))
+        self.heading = (
+            random.randint(
+                int(-_speed), int(_speed)
+            ), 
+            random.randint(
+                int(-_speed), int(_speed)
+            )
+        )
 
         ## Dimensions of the screen
         self.dim = self.xSize, self.ySize = _xSize, _ySize
@@ -60,7 +74,8 @@ class Boid:
         ## Number of neighbours that will influence the boid
         self.neighborSize = _neighborSize
 
-        ## Unique color used to distinguish the boid (only used in debugging and visualization)
+        ## Unique color used to distinguish the boid 
+        ## (only used in debugging and visualization)
         self.color = _color
 
         ## Maximum speed of the boid
@@ -88,10 +103,23 @@ class Boid:
         self.ePos = _ePos
 
         ## Sets the position of the boid
-        self.position = [random.randint(_sPos[0] - 10, _sPos[0] + 10), random.randint(_sPos[1] - 10, _sPos[1] + 10)]
+        self.position = [
+            random.randint(
+                _sPos[0] - 10, _sPos[0] + 10
+            ), 
+            random.randint(
+                _sPos[1] - 10, 
+                _sPos[1] + 10
+            )
+        ]
 
         ## Used to tell if the boid is stuck or not
-        self.positionBuffer = [(self.position[0] + 5*i, self.position[1] + 5*i) for i in range(20)]
+        self.positionBuffer = [
+            (
+                self.position[0] + 5 * i, 
+                self.position[1] + 5 * i
+            ) for i in range(20)
+        ]
 
         self.initFunctionParameters()
 
@@ -103,7 +131,15 @@ class Boid:
         @param lt List of vectors that will be summed over and divided
         @param s Number that will divide each component by at the end
         """
-        _sumDivide = lambda lt, s: map(lambda p: p / s, reduce(lambda p1, p2: (p1[0] + p2[0], p1[1] + p2[1]), lt))
+        _sumDivide = lambda lt, s: map(
+            lambda p: p / s, 
+            reduce(
+                lambda p1, p2: (
+                    p1[0] + p2[0], 
+                    p1[1] + p2[1]
+                ), lt
+            )
+        )
         try:
             return _sumDivide(lt, s)
         except (TypeError, ZeroDivisionError):
@@ -115,7 +151,16 @@ class Boid:
         @param p1, p2 points whose distance will be returned
         @return The Euclidean distance between p1 and p2
         """
-        return np.sqrt(pow(p1[0] - p2[0], 2) + pow(p1[1] - p2[1], 2))
+        return np.sqrt(
+            pow(
+                p1[0] - p2[0], 
+                2
+            ) + 
+            pow(
+                p1[1] - p2[1], 
+                2
+            )
+        )
 
     def getVar(self, searchList, ind):
         """
@@ -134,7 +179,15 @@ class Boid:
         @param o The obstacle that is being compared
         @return A value representing the potential between b and o
         """
-        return b.radius*o.getRadius()*beta/pow(self.norm(b.position, o.getPoint(b.position)) - o.getRadius() - b.radius , 2)
+        return (
+            b.radius * o.getRadius() * beta / 
+            pow(
+                self.norm(
+                    b.position, 
+                    o.getPoint(b.position)
+                ) - o.getRadius() - b.radius, 2
+            )
+        )
 
     def mag(self, vec):
         """
@@ -144,14 +197,27 @@ class Boid:
         """
         return np.sqrt(vec[0]**2 + vec[1]**2)
 
-    def sigmoidFunc(self, alpha, beta, delta, const, b_r, g_r, b_pos, g_pos):
+    def sigmoidFunc(
+        self, alpha, beta, 
+        delta, const, b_r, 
+        g_r, b_pos, g_pos):
         """
-        Defines a sigmoidal curve used for goal attractself._sumDivide   = lambda lt, s: map(lambda p: p / s, reduce(lambda p1, p2: (p1[0] + p2[0], p1[1] + p2[1]), lt))ion and for boid repulsion
+        Defines a sigmoidal curve used for goal attraction and for boid repulsion
         @param alpha, beta, delta, const Constants that are used to modify the shape of the curve
         @param b_r, b_pos The radius and position of the boid
         @param g_r, g_pos The radius and position of a goal / boid
         """
-        return b_r*g_r*alpha / (1 + beta*np.exp(delta*self.norm(b_pos, g_pos))) + const
+        return (
+            b_r * g_r * alpha / 
+            (
+                1 + beta * np.exp(
+                    delta * self.norm(
+                        b_pos, 
+                        g_pos
+                    )
+                )
+            ) + const
+        )
 
     def inGoal(self, p):
         """
@@ -159,7 +225,13 @@ class Boid:
         @param p The point that is going to be checked
         @return A boolean value representing if the point is in the current goal
         """
-        return all(map(lambda q, r: abs(q - r) < self.goal.radius, p, self.goal.position))
+        return all(
+            map(
+                lambda q, r: abs(q - r) < self.goal.radius, 
+                p, 
+                self.goal.position
+            )
+        )
 
     def inWorld(self, p):
         """
@@ -167,14 +239,24 @@ class Boid:
         @param p The point that is going to be checked
         @return A boolean value representing if the point is in the world
         """
-        return p[0] > -100 and p[0] < self.xSize + 100 and p[1] > -100 and p[1] < self.ySize + 100
+        return (
+            p[0] > -100 and 
+            p[0] < self.xSize + 100 and 
+            p[1] > -100 and 
+            p[1] < self.ySize + 100
+        )
 
     def pointAllowed(self, p):
         """
         Checks if a point is inside or collides with any of the obstacles
         @param p The point that will be checked
         """
-        return all(map(lambda ob: ob.pointAllowed(self, p), self.obstacleList))
+        return all(
+            map(
+                lambda ob: ob.pointAllowed(self, p), 
+                self.obstacleList
+            )
+        )
 
     def initFunctionParameters(self):
         # function parameters
@@ -284,7 +366,9 @@ class Boid:
         searchList = list()
         searchList.extend(searchThrough)
         for _ in range(counter):
-            maxPos   = [i for i,j in enumerate(searchList) if j == max(searchList)][0]
+            maxPos = [
+                i for i,j in enumerate(searchList) if j == max(searchList)
+            ][0]
             maxList += [maxPos]
             searchList[maxPos] = 0
         return maxList
@@ -297,7 +381,11 @@ class Boid:
         @param *vList Values that will be weighted
         @return An average vector that represents the average heading due to the potential fields
         """
-        return self.sumDivide([(w*v1, w*v2) for (v1, v2), w in zip(vList, wList)], sum(wList))
+        return self.sumDivide(
+            [
+                (w * v1, w * v2) for (v1, v2), w in zip(vList, wList)
+            ], sum(wList)
+        )
 
     def getDirectionVector(self, vector):
         """
@@ -305,7 +393,10 @@ class Boid:
         @param vector Vector to be scaled
         @return A vector whose maximum magnitude is less than the specified maximum speed
         """
-        return map(lambda comp: comp * self.speed / self.mag(vector), vector)
+        return map(
+            lambda comp: comp * self.speed / self.mag(vector), 
+            vector
+        )
 
     def getObstacleVectorList(self):
         """
@@ -314,11 +405,39 @@ class Boid:
         the influence of obstacles on the heading. Also returns the sum of the 
         potential values
         """
-        influenceOb = filter(lambda o: self.norm(o.getPoint(self.position), self.position) < self.obInfluenceR, self.obstacleList)
-        magnitudeList = map(lambda o: self.obstacleFunc(self.obBeta if not self.stuck else self.obBeta/10, self, o), influenceOb)
-        vectorList    = map(self.getDirectionVector, map(lambda o: [self.position[0] - o.getPoint(self.position)[0], \
-            self.position[1] - o.getPoint(self.position)[1]], influenceOb))
-        return map(lambda c, p: [c * p[0], c * p[1]], magnitudeList, vectorList), sum(magnitudeList)
+        influenceOb = filter(
+            lambda o: self.norm(
+                o.getPoint(self.position), 
+                self.position
+            ) < self.obInfluenceR, 
+            self.obstacleList
+        )
+        magnitudeList = map(
+            lambda o: self.obstacleFunc(
+                self.obBeta if not self.stuck else self.obBeta/10, 
+                self, 
+                o
+            ), 
+            influenceOb
+        )
+        vectorList = map(
+            self.getDirectionVector, 
+            map(
+                lambda o: [
+                    self.position[0] - o.getPoint(self.position)[0], 
+                    self.position[1] - o.getPoint(self.position)[1]
+                ], 
+                influenceOb
+            )
+        )
+        return (
+            map(
+                lambda c, p: [c * p[0], c * p[1]], 
+                magnitudeList, 
+                vectorList
+            ), 
+            sum(magnitudeList)
+        )
 
     def getGoalVector(self):
         """
@@ -327,9 +446,29 @@ class Boid:
         influence of the goal on the heading. Also returns the sum of the potential
         values
         """
-        magnitude = self.sigmoidFunc(self.gAlpha, self.gBeta, self.gDelta, self.gConst, self.radius, self.goal.radius, self.position, self.goal.position)
-        gVector   = self.getDirectionVector([self.goal.position[0] - self.position[0], self.goal.position[1] - self.position[1]])
-        return [magnitude * gVector[0], magnitude * gVector[1]], magnitude
+        magnitude = self.sigmoidFunc(
+            self.gAlpha, 
+            self.gBeta, 
+            self.gDelta, 
+            self.gConst, 
+            self.radius, 
+            self.goal.radius, 
+            self.position, 
+            self.goal.position
+        )
+        gVector = self.getDirectionVector(
+            [
+                self.goal.position[0] - self.position[0], 
+                self.goal.position[1] - self.position[1]
+            ]
+        )
+        return (
+            [
+                magnitude * gVector[0], 
+                magnitude * gVector[1]
+            ], 
+            magnitude
+        )
 
     def getBoidVectorList(self):
         """
@@ -337,11 +476,52 @@ class Boid:
         @return A list of scaled vectors that will be used to determine the 
         influence of the boids on the heading. ALso returns the sum of the potential
         """
-        influenceBo   = filter(lambda b: self.norm(self.position, b.position) < self.bInfluenceR and self.norm(self.position, b.position) > 0 and not self.inGoal(b.position), self.boidList)
-        magnitudeList = map(lambda bo: self.sigmoidFunc(self.bAlpha, self.bBeta, self.bDelta, self.bConst, self.radius, self.radius, self.position, bo.position), influenceBo)
-        vectorList    = map(self.getDirectionVector, map(lambda bo: [self.position[0] - bo.position[0], \
-            self.position[1] - bo.position[1]], influenceBo))
-        return map(lambda c, p: [c * p[0], c * p[1]], magnitudeList, vectorList), sum(magnitudeList)
+        influenceBo = filter(
+            lambda b: self.norm(
+                self.position, 
+                b.position
+            ) < self.bInfluenceR and 
+             self.norm(
+                self.position, 
+                b.position
+            ) > 0 and 
+             not self.inGoal(b.position), 
+             self.boidList
+        )
+        magnitudeList = map(
+            lambda bo: self.sigmoidFunc(
+                self.bAlpha, 
+                self.bBeta, 
+                self.bDelta, 
+                self.bConst, 
+                self.radius, 
+                self.radius, 
+                self.position, 
+                bo.position
+            ), 
+            influenceBo
+        )
+        vectorList = map(
+            self.getDirectionVector, 
+            map(
+                lambda bo: [
+                    self.position[0] - bo.position[0], 
+                    self.position[1] - bo.position[1]
+                ], 
+                influenceBo
+            )
+        )
+        return (
+            map(
+                lambda c, p: [
+                    c * p[0], 
+                    c * p[1]
+                ], 
+                magnitudeList, 
+                vectorList
+            ), 
+            sum(magnitudeList)
+        )
 
     # determines the neighbors and their velocities
     def getNeighborVectorList(self):
@@ -350,18 +530,47 @@ class Boid:
         @return A list of scaled vectors that represent the neighbour headings.
         Also returns the indicies in the boid list in which the neighbours are stored
         """
-        distList         = [self.norm(b.position, self.position) for b in self.boidList]
-        flockProbability = map(lambda prob, b: 0 if b.stuck or b.goal.position == self.goal.position else prob, map(self.gammaFunc, distList), self.boidList)
-        nIndexes         = self.findMax(flockProbability, self.neighborSize)
-        return self.getVar(map(lambda b: b.heading, self.boidList), nIndexes), nIndexes
+        distList = [
+            self.norm(
+                b.position, 
+                self.position
+            ) for b in self.boidList
+        ]
+        flockProbability = map(
+            lambda prob, b: 0 if b.stuck or b.goal.position == self.goal.position else prob, 
+            map(self.gammaFunc, distList), 
+            self.boidList
+        )
+        nIndexes = self.findMax(
+            flockProbability, 
+            self.neighborSize
+        )
+        return (
+            self.getVar(
+                map(
+                    lambda b: b.heading, 
+                    self.boidList
+                ), 
+                nIndexes
+            ), nIndexes
+        )
 
     def setNewGoal(self):
         """
         Sets the new goal
         """
         self.goalCounter += 1
-        self.goal         = self.goalList[self.goalCounter]
-        self.gConst       = self.sigmoidFunc(self.gAlpha, self.gBeta, self.gDelta, self.gConst, self.radius, self.goal.radius, self.position, self.goal.position)
+        self.goal = self.goalList[self.goalCounter]
+        self.gConst = self.sigmoidFunc(
+            self.gAlpha, 
+            self.gBeta, 
+            self.gDelta, 
+            self.gConst, 
+            self.radius, 
+            self.goal.radius, 
+            self.position, 
+            self.goal.position
+        )
 
     def determineRandomWalk(self):
         """
@@ -379,7 +588,16 @@ class Boid:
 
         self.goal = self.goalList[self.goalCounter]
 
-        return (random.randint(-self.randomWalkX, self.randomWalkX), random.randint(-self.randomWalkY, self.randomWalkY))
+        return (
+            random.randint(
+                -self.randomWalkX, 
+                self.randomWalkX
+            ), 
+            random.randint(
+                -self.randomWalkY, 
+                self.randomWalkY
+            )
+        )
 
     def update(self):
         """
@@ -387,34 +605,96 @@ class Boid:
         """
         if not self.inGoal(self.position):
             neighborVectorList, nIndexes = self.getNeighborVectorList()
-            bVectorList, bMagSum         = self.getBoidVectorList()
+            bVectorList, bMagSum = self.getBoidVectorList()
             obstacleVectorList, obMagSum = self.getObstacleVectorList()
-            gVector, gMagSum             = self.getGoalVector()
+            gVector, gMagSum = self.getGoalVector()
 
-            obVecSum = self.sumDivide(obstacleVectorList, obMagSum)
-            boVecSum = self.sumDivide(bVectorList, bMagSum)
-            goVecSum = self.sumDivide([gVector], gMagSum)
+            obVecSum = self.sumDivide(
+                obstacleVectorList, 
+                obMagSum
+            )
+            boVecSum = self.sumDivide(
+                bVectorList, 
+                bMagSum
+            )
+            goVecSum = self.sumDivide(
+                [gVector], 
+                gMagSum
+            )
 
             #self.stuck = False
 
             if not self.stuck:
                 self.randWalkCount = 0
-                self.gammaFunc = lambda dX: guassianFunc(dX, dAvg = self.nStuckDAvg, dSigma = self.nStuckDSigma)
-                neVecSum       = self.sumDivide(neighborVectorList, self.neighborSize)
-                self.compWeightList = [50 * self.neighborSize, bMagSum, gMagSum, obMagSum]
-                nHeading       = self.reduceWeightValues(self.compWeightList, neVecSum, boVecSum, goVecSum, obVecSum)
-                self.heading   = self.reduceWeightValues(self.headWeightList, self.heading, nHeading)
-                newPos         = (self.position[0] + self.heading[0], self.position[1] + self.heading[1])
+                self.gammaFunc = lambda dX: guassianFunc(
+                    dX, 
+                    dAvg = self.nStuckDAvg, 
+                    dSigma = self.nStuckDSigma
+                )
+                neVecSum = self.sumDivide(
+                    neighborVectorList, 
+                    self.neighborSize
+                )
+                self.compWeightList = [
+                    50 * self.neighborSize, 
+                    bMagSum, 
+                    gMagSum, 
+                    obMagSum
+                ]
+                nHeading = self.reduceWeightValues(
+                    self.compWeightList, 
+                    neVecSum, 
+                    boVecSum, 
+                    goVecSum, 
+                    obVecSum
+                )
+                self.heading = self.reduceWeightValues(
+                    self.headWeightList, 
+                    self.heading, 
+                    nHeading
+                )
+                newPos = (
+                    self.position[0] + self.heading[0], 
+                    self.position[1] + self.heading[1]
+                )
                 if self.inWorld(newPos) and self.pointAllowed(newPos):
                     self.position = newPos
             else:
-                self.gammaFunc = lambda dX: guassianFunc(dX, dAvg = self.stuckDAvg, dSigma = self.stuckDSigma)
-                rX, rY         = self.determineRandomWalk()
-                neVecSum       = self.sumDivide(neighborVectorList, self.neighborSize)
-                self.compWeightList = [5 * self.neighborSize, bMagSum, gMagSum, obMagSum]
-                nHeading       = self.reduceWeightValues(self.compWeightList, neVecSum, boVecSum, goVecSum, obVecSum)
-                self.heading   = self.reduceWeightValues(map(lambda v: -1 * v, self.headWeightList), self.heading, nHeading)
-                newPos         = (self.position[0] + self.heading[0] + rX, self.position[1] + self.heading[1] + rY)
+                self.gammaFunc = lambda dX: guassianFunc(
+                    dX, 
+                    dAvg = self.stuckDAvg, 
+                    dSigma = self.stuckDSigma
+                )
+                rX, rY = self.determineRandomWalk()
+                neVecSum = self.sumDivide(
+                    neighborVectorList, 
+                    self.neighborSize
+                )
+                self.compWeightList = [
+                    5 * self.neighborSize, 
+                    bMagSum, 
+                    gMagSum, 
+                    obMagSum
+                ]
+                nHeading = self.reduceWeightValues(
+                    self.compWeightList, 
+                    neVecSum, 
+                    boVecSum, 
+                    goVecSum, 
+                    obVecSum
+                )
+                self.heading = self.reduceWeightValues(
+                    map(
+                        lambda v: -1 * v, 
+                        self.headWeightList
+                    ), 
+                    self.heading, 
+                    nHeading
+                )
+                newPos = (
+                    self.position[0] + self.heading[0] + rX, 
+                    self.position[1] + self.heading[1] + rY
+                )
                 if self.inWorld(newPos) and self.pointAllowed(newPos):
                     self.position = newPos
 
@@ -427,4 +707,14 @@ class Boid:
         """
         Draws the boid as a pygame circle in the pygame screen 
         """
-        pygame.draw.circle(self.screen, (0, 255, 100) if self.stuck else (0,0,255), map(int, self.position), self.radius)
+        pygame.draw.circle(
+            self.screen, 
+            (0, 255, 100) if self.stuck else (0,0,255),
+            map(
+                int, 
+                self.position
+            ), 
+            self.radius
+        )
+
+
