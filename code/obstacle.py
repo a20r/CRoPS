@@ -21,7 +21,7 @@ class PolyObstacle:
         """
 
         ## A list of nodes used to represent the vertices
-        self.nodes  = _nodes
+        self.nodes = _nodes
 
         ## A dictionary of colors defined in pygame
         self.colors = pygame.color.THECOLORS
@@ -38,7 +38,10 @@ class PolyObstacle:
         @param p1, p2 Points in space 
         @return The distance between p1 and p2
         """
-        return np.sqrt(pow(p1[0] - p2[0], 2) + pow(p1[1] - p2[1], 2))
+        return np.sqrt(
+            pow(p1[0] - p2[0], 2) + 
+            pow(p1[1] - p2[1], 2)
+        )
 
     def estimatePoly(self):
         """
@@ -48,10 +51,26 @@ class PolyObstacle:
 
         ## The average point in the polygon. Represents the 
         ## center of the enclosing circle
-        self.avgPoint = map(lambda p: p / len(self.nodes), reduce(lambda p1, p2: (p1[0] + p2[0], p1[1] + p2[1]), self.nodes))
+        self.avgPoint = map(
+            lambda p: p / len(self.nodes), 
+            reduce(
+                lambda p1, p2: (
+                    p1[0] + p2[0], 
+                    p1[1] + p2[1]
+                ), 
+                self.nodes
+            )
+        )
 
         ## The maximum distance from any vertex and the average point
-        self.maxDist = max([self.norm(p, self.avgPoint) for p in self.nodes])
+        self.maxDist = max(
+            [
+                self.norm(
+                    p, 
+                    self.avgPoint
+                ) for p in self.nodes
+            ]
+        )
 
     def detectCollision(self, pStart, pEnd):
         """
@@ -61,12 +80,53 @@ class PolyObstacle:
         @param pEnd The ending point of the line
         @return A boolean value representing if a collision occurred
         """
-        interCross = lambda p1, p2, q1, q2: ((p1[0] - p2[0])*(q1[1] - p1[1]) - (p1[1] - p2[1])*(q1[0] - p1[0])) * ((p1[0] - p2[0])*(q2[1] - p1[1]) - (p1[1] - p2[1])*(q2[0] - p1[0])) < 0
-        interCheck = lambda p1, p2, q1, q2: max(p1[0], p2[0]) >= min(q1[0], q2[0]) and max(q1[0], q2[0]) >= min(p1[0], p2[0]) and max(p1[1], p2[1]) >= min(q1[1], q2[1]) and max(q1[1], q2[1]) >= min(p1[1], p2[1])
+        interCross = lambda p1, p2, q1, q2: (
+            (
+                (p1[0] - p2[0]) * 
+                (q1[1] - p1[1]) - 
+                (p1[1] - p2[1]) * 
+                (q1[0] - p1[0])
+            ) * 
+            (
+                (p1[0] - p2[0]) * 
+                (q2[1] - p1[1]) - 
+                (p1[1] - p2[1]) * 
+                (q2[0] - p1[0])
+            )
+        ) < 0
+        interCheck = lambda p1, p2, q1, q2: (
+            max(p1[0], p2[0]) >= min(q1[0], q2[0]) and 
+            max(q1[0], q2[0]) >= min(p1[0], p2[0]) and 
+            max(p1[1], p2[1]) >= min(q1[1], q2[1]) and 
+            max(q1[1], q2[1]) >= min(p1[1], p2[1])
+        )
         vecList = [[self.nodes[0],self.nodes[-1]]]
         for k in range(len(self.nodes) - 1):
-            vecList += [[self.nodes[k], self.nodes[k+1]]]
-        return any(map(lambda p: interCross(p[0], p[1], pStart, pEnd) and interCheck(p[0], p[1], pStart, pEnd), vecList))
+            vecList += [
+                [
+                    self.nodes[k], 
+                    self.nodes[k+1]
+                ]
+            ]
+        return any(
+            map(
+                lambda p: (
+                    interCross(
+                        p[0], 
+                        p[1], 
+                        pStart, 
+                        pEnd
+                    ) and 
+                    interCheck(
+                        p[0], 
+                        p[1], 
+                        pStart, 
+                        pEnd
+                    )
+                ), 
+                vecList
+            )
+        )
 
     def getClosestPoint(self, a, b, p):
         """
@@ -76,19 +136,34 @@ class PolyObstacle:
         @param p The point in which the closest distance will be checked
         @return The closest point on line <a, b> to point p
         """
-        if (p[0] >= max(a[0], b[0]) or p[0] <= min(a[0], b[0])) and (p[1] >= max(a[1], b[1]) or p[1] <= min(a[1], b[1])):
+        if (
+            p[0] >= max(a[0], b[0]) or \
+            p[0] <= min(a[0], b[0])) and \
+            (
+                p[1] >= max(a[1], b[1]) or 
+                p[1] <= min(a[1], b[1]
+            )
+        ):
             if self.norm(a, p) < self.norm(b, p):
                 return a
             else:
                 return b
         else:
-            a_to_p = [float(p[0] - a[0]), float(p[1] - a[1])]
-            a_to_b = [float(b[0] - a[0]), float(b[1] - a[1])]
-            atb2 = a_to_b[0]**2 + a_to_b[1]**2
-            atp_dot_atb = a_to_p[0]*a_to_b[0] + a_to_p[1]*a_to_b[1]
+            a_to_p = [
+                float(p[0] - a[0]), 
+                float(p[1] - a[1])
+            ]
+            a_to_b = [
+                float(b[0] - a[0]), 
+                float(b[1] - a[1])
+            ]
+            atb2 = a_to_b[0] ** 2 + a_to_b[1] ** 2
+            atp_dot_atb = a_to_p[0] * a_to_b[0] + a_to_p[1] * a_to_b[1]
             t = float(atp_dot_atb) / float(atb2)
-            #pygame.draw.circle(self.screen, (255, 255, 255), map(int, (float(a[0]) + a_to_b[0]*t, float(a[1]) + a_to_b[1]*t)), 3)
-            return (float(a[0]) + a_to_b[0]*t, float(a[1]) + a_to_b[1]*t)
+            return (
+                float(a[0]) + a_to_b[0] * t, 
+                float(a[1]) + a_to_b[1] * t
+            )
 
     def rayintersectseg(self, p, edge):
         """
@@ -147,7 +222,11 @@ class PolyObstacle:
         vecList = [[self.nodes[0],self.nodes[-1]]]
         for k in range(len(self.nodes) - 1):
             vecList += [[self.nodes[k], self.nodes[k+1]]]
-        return self._odd(sum(self.rayintersectseg(p, edge) for edge in vecList))
+        return self._odd(
+            sum(
+                self.rayintersectseg(p, edge) for edge in vecList
+            )
+        )
 
     def pointAllowed(self, b, p):
         """
@@ -156,7 +235,17 @@ class PolyObstacle:
         @param p The point that will be checked
         @return True if allowed, false otherwise
         """
-        return (self.norm(self.getPoint(p), p) > b.radius) and (not self.pointInPoly(p))
+        return (
+            (
+                self.norm(
+                    self.getPoint(p), 
+                    p
+                ) > b.radius
+            ) and 
+            (
+                not self.pointInPoly(p)
+            )
+        )
 
     def getPoint(self, p):
         """
@@ -168,9 +257,17 @@ class PolyObstacle:
         vecList = list() #[[self.nodes[0],self.nodes[-1]]]
         for k in range(-1, len(self.nodes) -1):
             vecList += [[self.nodes[k], self.nodes[k+1]]]
-        cpList = map(lambda v: self.getClosestPoint(v[0], v[1], p), vecList)
-        dList  = map(lambda pv: self.norm(p, pv), cpList)
-        return [cpList[i] for i,j in enumerate(dList) if j == min(dList)][0]
+        cpList = map(
+            lambda v: self.getClosestPoint(v[0], v[1], p), 
+            vecList
+        )
+        dList = map(
+            lambda pv: self.norm(p, pv), 
+            cpList
+        )
+        return [
+            cpList[i] for i,j in enumerate(dList) if j == min(dList)
+        ][0]
 
     def getRadius(self):
         """
@@ -185,4 +282,10 @@ class PolyObstacle:
         """
         Draws the polygon on the PyGame screen
         """
-        pygame.draw.polygon(self.screen, self.colors["red"], self.nodes)
+        pygame.draw.polygon(
+            self.screen, 
+            self.colors["red"], 
+            self.nodes
+        )
+
+

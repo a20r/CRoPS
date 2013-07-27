@@ -17,7 +17,9 @@ class FlockSim:
     It also is used to gather statistics about the flock and present them
     in a useful manner.
     """
-    def __init__(self, flockSize, startPoint, endPoint, _mapFile = None, _dataFile = None):
+    def __init__(
+        self, flockSize, startPoint, 
+        endPoint, _mapFile = None, _dataFile = None):
         """
         Initializes the flock and the display mechanism (PyGame)
         @param flockSize The size of the flock (number of boids)
@@ -112,16 +114,33 @@ class FlockSim:
         avgDistVal = self.avg(avgList)
 
         # writes data to the file
-        self.dataFile.write("current_time: " + str(endTime - self.startTime) + ", average_distance: " + str(avgDistVal) + \
-            ", average_min_distance: " + str(avgMinVal) + ", number_finished: " + str(self.numInGoal) + "\n")
+        self.dataFile.write(
+            "current_time: " + str(endTime - self.startTime) + 
+            ", average_distance: " + str(avgDistVal) + 
+            ", average_min_distance: " + str(avgMinVal) + 
+            ", number_finished: " + str(self.numInGoal) + "\n"
+        )
 
     def getBoidData(self):
         """
         Writes all of the boid positions to a file
         """
-        self.dataFile.write(str(self.flockSize) + "\n")
+        self.dataFile.write(
+            str(self.flockSize) + 
+            "\n"
+        )
         for b_num, b in enumerate(self.config.boidList):
-            self.dataFile.write("boid_" + str(b_num) + " : " + str(tuple(map(int, b.position))) + " | ")
+            self.dataFile.write(
+                "boid_" + str(b_num) + " : " + 
+                str(
+                    tuple(
+                        map(
+                            int, 
+                            b.position
+                        )
+                    )
+                ) + " | "
+            )
         self.dataFile.write("\n")
 
     def animate(self):
@@ -139,17 +158,37 @@ class FlockSim:
         """
         if self.mapFile == None or self.dataFile == None:
             if len(sys.argv) <= 1:
-                self.config.initVars(self.sPos, self.ePos, self.flockSize)
+                self.config.initVars(
+                    self.sPos, 
+                    self.ePos, 
+                    self.flockSize
+                )
             else:
-                self.config.initVars(self.sPos, self.ePos, self.flockSize, sys.argv[1])
+                self.config.initVars(
+                    self.sPos, 
+                    self.ePos, 
+                    self.flockSize, 
+                    sys.argv[1]
+                )
                 if len(sys.argv) == 3:
-                    self.dataFile = open(sys.argv[2], "w")
+                    self.dataFile = open(
+                        sys.argv[2], 
+                        "w"
+                    )
                     self.dataFile.truncate()
         else:
-            self.config.initVars(self.sPos, self.ePos, self.flockSize, self.mapFile)
+            self.config.initVars(
+                self.sPos, 
+                self.ePos, 
+                self.flockSize, 
+                self.mapFile
+            )
             self.dataFile.truncate()
 
-        map(lambda b: b.setBoidList(self.config.boidList), self.config.boidList)
+        map(
+            lambda b: b.setBoidList(self.config.boidList), 
+            self.config.boidList
+        )
 
     def render(self, forPlay = False):
         """
@@ -163,14 +202,28 @@ class FlockSim:
         self.startTime = time.time()
         while not self.done and self.counter < self.iterations:
             self.frameCounter += 1 
-            frame = pygame.Surface((self.config.xSize, self.config.ySize))
+            frame = pygame.Surface(
+                (
+                    self.config.xSize, 
+                    self.config.ySize
+                )
+            )
             self.config.screen.fill(self.BLACK)
-            boidPosList = [b.position for b in self.config.boidList]
-            boidHeadingList = [b.heading for b in self.config.boidList]
+            boidPosList = [
+                b.position for b in self.config.boidList
+            ]
+            boidHeadingList = [
+                b.heading for b in self.config.boidList
+            ]
             
             # updates the boids and gathers the statistics
             map(lambda b: b.update(), self.config.boidList)
-            self.numInGoal = len(filter(lambda b: b.goalCounter == len(b.goalList) - 1, self.config.boidList))
+            self.numInGoal = len(
+                filter(
+                    lambda b: b.goalCounter == len(b.goalList) - 1, 
+                    self.config.boidList
+                )
+            )
             if self.dataFile != None:
                 self.getBoidData()
                 #self.getStats()
@@ -221,8 +274,15 @@ class FlockSim:
                 self.counter = len(self.surfaceList)-1
             elif self.counter < 0:
                 self.counter = 0
-            self.config.screen.blit(self.surfaceList[self.counter], (0,0)) 
-            text = self.font.render('Frame: ' + str(self.counter), 0, self.WHITE)
+            self.config.screen.blit(
+                self.surfaceList[self.counter], 
+                (0, 0)
+            ) 
+            text = self.font.render(
+                'Frame: ' + str(self.counter), 
+                0,
+                self.WHITE
+            )
             self.config.screen.blit(text, (0,0))
             pygame.display.flip() 
             for e in pygame.event.get(): 
@@ -230,4 +290,8 @@ class FlockSim:
                     exit()
                 
 if __name__ == '__main__':
-    FlockSim(30, (356, 42), (852, 450)).animate()
+    FlockSim(
+        30, 
+        (356, 42), 
+        (852, 450)
+    ).animate()

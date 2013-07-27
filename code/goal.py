@@ -33,4 +33,10 @@ class CircleGoal:
     	"""
     	Draws the circle onto the pygame screen
     	"""
-        pygame.draw.circle(self.screen, self.colors["green"], self.position, self.radius, 5)
+        pygame.draw.circle(
+            self.screen, 
+            self.colors["green"], 
+            self.position, 
+            self.radius, 
+            5
+        )

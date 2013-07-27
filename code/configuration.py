@@ -33,14 +33,19 @@ class Configuration:
 	screen = pygame.display.set_mode(dim)
 
 	## The list of colors (used for debugging purposes)
-	colorList = map(lambda k: color.THECOLORS[k], color.THECOLORS.keys())
+	colorList = map(
+		lambda k: color.THECOLORS[k], 
+		color.THECOLORS.keys()
+	)
 
 class PolyFileConfiguration(Configuration):
 	"""
 	Extends the Configuration class. This configuration gets the 
 	obstacles from .map files that have been created. 
 	"""
-	def initVars(self, startPoint, endPoint, flockSize, filename = "maps/m1.map"):
+	def initVars(
+		self, startPoint, endPoint, 
+		flockSize, filename = "maps/m1.map"):
 		"""
 		Parses the file to get the obstacle list. Creates a PRM generator
 		to create a global map of the environment. Gets the list of intermediate goals.
@@ -55,16 +60,39 @@ class PolyFileConfiguration(Configuration):
 		self.obstacleList = mp.mparse(filename)
 
 		## Starting point
-		self.startPoint   = startPoint
+		self.startPoint = startPoint
 
 		## Ending point
-		self.endPoint     = endPoint
+		self.endPoint = endPoint
 
 		## Object containing variables and mehtods for the global planner
-		self.prmGen       = PRMGenerator(startPoint, endPoint, self.obstacleList, Configuration.xSize, Configuration.ySize, Configuration.numSamplePoints, Configuration.screen)
+		self.prmGen = PRMGenerator(
+			startPoint, 
+			endPoint, 
+			self.obstacleList, 
+			Configuration.xSize, 
+			Configuration.ySize, 
+			Configuration.numSamplePoints, 
+			Configuration.screen
+		)
 		
 		## List of intermediate goals derived by the global planner
-		self.goalList     = self.prmGen.generate(Configuration.goalRadius)
+		self.goalList = self.prmGen.generate(Configuration.goalRadius)
 
 		## List of boids in the flock
-		self.boidList     = [boid.Boid(startPoint, endPoint, Configuration.boidSpeed, Configuration.xSize, Configuration.ySize, Configuration.numNeighbours, boid.guassianFunc, self.obstacleList, self.goalList, self.prmGen, Configuration.screen, Configuration.colorList[i]) for i in range(flockSize)] 
+		self.boidList = [
+			boid.Boid(
+				startPoint, 
+				endPoint, 
+				Configuration.boidSpeed, 
+				Configuration.xSize, 
+				Configuration.ySize, 
+				Configuration.numNeighbours, 
+				boid.guassianFunc, 
+				self.obstacleList, 
+				self.goalList, 
+				self.prmGen, 
+				Configuration.screen, 
+				Configuration.colorList[i]
+			) for i in range(flockSize)
+		] 

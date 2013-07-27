@@ -12,7 +12,12 @@ def mapVal(x, in_min, in_max, out_min, out_max):
 	@param out_max The maximum value that the output value could be
 	@return A scaled value based on a given input
 	"""
-	return int((x - in_min) * (out_max - out_min) / (in_max - in_min) + out_min)
+	return int(
+		(x - in_min) * 
+		(out_max - out_min) / 
+		(in_max - in_min) + 
+		out_min
+	)
 
 def mparse(filename):
 	"""
@@ -24,8 +29,40 @@ def mparse(filename):
 		numberOfPolys = int(f.readline())
 		polyList = list()
 		for _ in range(numberOfPolys):
-			line = filter(lambda s: s != "\n", f.readline().split(" "))[1:]
-			intList = map(lambda s: int(float(s)), line)
-			polyList += [[(mapVal(intList[2*i], -29, 29, 0, con.Configuration.xSize), con.Configuration.ySize - mapVal(intList[2*i + 1], -29, 29, 0, con.Configuration.ySize)) for i in range(len(intList) / 2)]]
+			line = filter(
+				lambda s: s != "\n", 
+				f.readline().split(" ")
+			)[1:]
+			intList = map(
+				lambda s: int(float(s)), 
+				line
+			)
+			polyList += [
+				[
+					(
+						mapVal(
+							intList[2*i], 
+							-29, 
+							29, 
+							0, 
+							con.Configuration.xSize
+						), 
+						con.Configuration.ySize - mapVal(
+							intList[2*i + 1], 
+							-29, 
+							29, 
+							0, 
+							con.Configuration.ySize
+						)
+					) for i in range(len(intList) / 2)
+				]
+			]
 
-	return [obstacle.PolyObstacle(pList, con.Configuration.screen) for pList in polyList]
+	return [
+		obstacle.PolyObstacle(
+			pList, 
+			con.Configuration.screen
+		) for pList in polyList
+	]
+
+

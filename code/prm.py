@@ -12,7 +12,10 @@ class PRMGenerator:
 	the roadmap and finds the shortest path to the the goals by 
 	determining intermediate goals for the boids to be attracted to
 	"""
-	def __init__(self, _startPos, _endPos, _obstacleList, _xSize, _ySize, _subGoalNumber, _screen):
+	def __init__(
+		self, _startPos, _endPos, 
+		_obstacleList, _xSize, 
+		_ySize, _subGoalNumber, _screen):
 		"""
 		Creates a new instance of the PRMGenerator. Intializes key variables used in the 
 		generation of the global planner.
@@ -26,35 +29,37 @@ class PRMGenerator:
 		"""
 
 		## List of obstacles
-		self.obstacleList 	= _obstacleList
+		self.obstacleList = _obstacleList
 
 		## Position of the first goal
-		self.startPos 		= _startPos
+		self.startPos = _startPos
 
 		## Position of the last goal
-		self.endPos   		= _endPos
+		self.endPos = _endPos
 
 		## PyGame screen that is will be drawn on
-		self.screen   		= _screen
+		self.screen = _screen
 
 		## Horizontal size of the PyGame screen
-		self.xSize 			= _xSize
+		self.xSize = _xSize
 
 		## Vertical size of the PyGame screen
-		self.ySize 			= _ySize
+		self.ySize = _ySize
 
 		## Distance that the PRM is willing to check when 
 		## connecting sample points
 		self.adjacentThresh = 80
 
 		## Maximum number of sample points that can be connected
-		self.numNext		= 20
+		self.numNext = 20
 
 		## Number of initial sample points
-		self.subGoalNumber  = _subGoalNumber
+		self.subGoalNumber = _subGoalNumber
 
 		## Initial positions of the sample points
-		self.subGoalPositionList = [self.startPos] + self.generatePositionList(self.subGoalNumber) + [self.endPos]
+		self.subGoalPositionList = [self.startPos] + \
+			self.generatePositionList(self.subGoalNumber) + \
+			[self.endPos]
 
 		## The global roadmap. It will be a graph
 		## represented as a dictionary
@@ -68,6 +73,7 @@ class PRMGenerator:
 		self.filterSubGoal()
 
 		self.initOmega(self.subGoalPositionList)
+		self.dontDraw = list()
 
 	def norm(self, p1, p2):
 		"""
@@ -76,7 +82,10 @@ class PRMGenerator:
 		@param p2 The second point
 		@return The Eulidean distance from p1 to p2
 		"""
-		return np.sqrt(pow(p1[0] - p2[0], 2) + pow(p1[1] - p2[1], 2))
+		return np.sqrt(
+			pow(p1[0] - p2[0], 2) + 
+			pow(p1[1] - p2[1], 2)
+		)
 
 	def generatePositionList(self, num):
 		"""
@@ -84,14 +93,26 @@ class PRMGenerator:
 		@param num The number of points to generate
 		@return A list of random subgoals (sample points)
 		"""
-		return [(self.getRandom(0, self.xSize), self.getRandom(0, self.ySize)) for _ in range(num)]
+		return [
+			(
+				self.getRandom(0, self.xSize), 
+				self.getRandom(0, self.ySize)
+			) for _ in range(num)
+		]
 
 	def initOmega(self, posList):
 		"""
 		Initiates the omega function which holds the node weights
 		@param posList The list of positions for the sample points
 		"""
-		omega = lambda p: (sum(map(lambda ob: self.norm(p, ob.getPoint(p)), self.obstacleList))) ** 3
+		omega = lambda p: (
+			sum(
+				map(
+					lambda ob: self.norm(p, ob.getPoint(p)), 
+					self.obstacleList
+				)
+			)
+		) ** 3
 		for p in posList:
 			self.omegaDict[p] = omega(p)
 
@@ -103,25 +124,56 @@ class PRMGenerator:
 		delList = list()
 		for i in range(len(self.subGoalPositionList)):
 			for obst in self.obstacleList:
-				if self.norm(obst.getPoint(self.subGoalPositionList[i]), self.subGoalPositionList[i]) < 10:
+				if (
+					self.norm(
+						obst.getPoint(self.subGoalPositionList[i]), 
+						self.subGoalPositionList[i]
+					) < 10
+				):
 					delList += [i]
-		self.subGoalPositionList = [self.subGoalPositionList[j] for j in range(len(self.subGoalPositionList)) if not j in delList]
+		self.subGoalPositionList = [
+			self.subGoalPositionList[j] for j in range(
+				len(self.subGoalPositionList)
+			) if not j in delList
+		]
 
 	def findNeighbors(self, point):
 		"""
 		Finds suitable neighbours for a sample point
 		"""
 		minList    = list()
-		obList 	   = filter(lambda ob: self.norm(point, ob.avgPoint) < self.adjacentThresh + ob.maxDist, self.obstacleList)
-		sGoalList  = filter(lambda g: self.norm(point, g[1]) < self.adjacentThresh, enumerate(self.subGoalPositionList))
-		searchList = filter(lambda p: not any(filter(lambda ob: ob.detectCollision(point, p[1]), obList)), sGoalList)
-		normList   = dict()
-		maxVal 	   = self.xSize * self.ySize
+		obList 	   = filter(
+			lambda ob: self.norm(
+				point, 
+				ob.avgPoint
+			) < self.adjacentThresh + ob.maxDist, 
+			self.obstacleList
+		)
+		sGoalList  = filter(
+			lambda g: self.norm(point, g[1]) < self.adjacentThresh,
+			enumerate(self.subGoalPositionList)
+		)
+		searchList = filter(
+			lambda p: not any(
+				filter(
+					lambda ob: ob.detectCollision(
+						point, 
+						p[1]
+					), 
+					obList
+				)
+			), 
+			sGoalList
+		)
+		normList = dict()
+		maxVal = self.xSize * self.ySize
 		for i, j in searchList:
 			normList[i] = self.norm(point, j)
 		for _ in range(self.numNext):
 			try:
-				minPos   = [(i,j) for i,j in searchList if normList[i] == min(normList.values())][0]
+				minPos   = [
+					(i,j) for i,j in searchList if normList[i] == min(normList.values())
+				][0]
 				minList += [minPos]
 				normList[minPos[0]] = maxVal
 			except IndexError:
@@ -162,38 +214,87 @@ class PRMGenerator:
 				if i >= currentPos:
 					self.roadmap[i] = dict()
 					for p, q in self.findNeighbors(j):
-						self.roadmap[i][p] = 1000 * self.norm(j, q) / min(self.omegaDict[j], self.omegaDict[q])
+						self.roadmap[i][p] = (
+							1000 * self.norm(j, q) / 
+							min(
+								self.omegaDict[j], 
+								self.omegaDict[q]
+							)
+						)
 						try:
 							self.roadmap[p][i] = self.roadmap[i][p]
 						except KeyError:
 							pass
-					self.screen.fill((0,0,0))
+
+					self.screen.fill(
+						(0,0,0)
+					)
 					self.draw()
-					map(lambda o: o.draw(), self.obstacleList)
+					map(
+						lambda o: o.draw(), 
+						self.obstacleList
+					)
 					pygame.display.flip()
 					for e in pygame.event.get(): 
 						if e.type is pygame.QUIT:
 							exit()
-			self.gPosList = map(lambda k: self.subGoalPositionList[k], dijkstra.shortestPath(self.roadmap, 0, len(self.subGoalPositionList) - 1))
+			self.gPosList = map(
+				lambda k: self.subGoalPositionList[k], 
+				dijkstra.shortestPath(
+					self.roadmap, 
+					0, 
+					len(self.subGoalPositionList) - 1
+				)
+			)
 			if len(self.gPosList) == 1:
 				currentPos = len(self.subGoalPositionList) - 1
-				newPosList = self.generatePositionList(int(self.subGoalNumber / 2) + 1) 
+				newPosList = self.generatePositionList(
+					int(self.subGoalNumber / 2) + 1
+				)
+				self.dontDraw += [currentPos + 1]
 				self.initOmega(newPosList)
 				self.subGoalPositionList[1:-1] += newPosList
 				self.filterSubGoal()
-		return map(lambda p: goal.CircleGoal(subGoalRadius, p, self.screen), self.gPosList)
+		return map(
+			lambda p: goal.CircleGoal(
+				subGoalRadius, 
+				p, 
+				self.screen
+			), 
+			self.gPosList
+		)
 
 	def draw(self):
 		"""
 		Draws the graph
 		"""
-		map(lambda circ: pygame.draw.circle(self.screen, (255,255,0), circ, 5), self.subGoalPositionList)
-		for k in self.roadmap.keys():
-			for p in self.roadmap[k].keys():
-				pygame.draw.line(self.screen, (255, 0, 255), self.subGoalPositionList[k], self.subGoalPositionList[p])
+		map(
+			lambda circ: pygame.draw.circle(
+				self.screen, 
+				(255, 255, 0), 
+				circ, 
+				5
+			), 
+			self.subGoalPositionList
+		)
+		for i, k in enumerate(self.roadmap.keys()):
+			for j, p in enumerate(self.roadmap[k].keys()):
+				if not i in self.dontDraw and not j in self.dontDraw:
+					pygame.draw.line(
+						self.screen, 
+						(255, 0, 255), 
+						self.subGoalPositionList[k], 
+						self.subGoalPositionList[p]
+					)
 
 	def drawPath(self):
 		"""
 		Draws the selected shortest path
 		"""
-		pygame.draw.lines(self.screen, (255, 0, 255), False, self.gPosList)
+		pygame.draw.lines(
+			self.screen, 
+			(255, 0, 255), 
+			False, 
+			self.gPosList
+		)
+
