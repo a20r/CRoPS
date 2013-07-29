@@ -21,7 +21,7 @@ if __name__ == "__main__":
     	}
     }
     fs = bs.FlockSim(
-    	100, 
+    	30, 
     	mapDict[sys.argv[1]]["startPoint"], 
     	mapDict[sys.argv[1]]["endPoint"]
     )
