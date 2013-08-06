@@ -8,7 +8,8 @@ Static class that holds important global variables.
 
 
 
-Inheritance diagram for configuration.\-Configuration\-:\nopagebreak
+Inheritance diagram for configuration.\-Configuration\-:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -39,7 +40,7 @@ int \hyperlink{classconfiguration_1_1Configuration_a7eef6f8f2eb6d4a8fa4a45ddf9f6
 \begin{DoxyCompactList}\small\item\em Number of neighbours the boids will influence a boid's heading. \end{DoxyCompactList}\item 
 tuple \hyperlink{classconfiguration_1_1Configuration_a04b8c98906296ee65625d1472e037a75}{screen} = pygame.\-display.\-set\-\_\-mode(\hyperlink{classconfiguration_1_1Configuration_af63a65a65716f36cb11afd4d0e7f318f}{dim})
 \begin{DoxyCompactList}\small\item\em The screen used to draw the simluation. \end{DoxyCompactList}\item 
-tuple \hyperlink{classconfiguration_1_1Configuration_a2140643801852e373bfddf9945cf26f8}{color\-List} = map(lambda k\-: color.\-T\-H\-E\-C\-O\-L\-O\-R\-S\mbox{[}k\mbox{]}, color.\-T\-H\-E\-C\-O\-L\-O\-R\-S.\-keys())
+tuple \hyperlink{classconfiguration_1_1Configuration_a2140643801852e373bfddf9945cf26f8}{color\-List}
 \begin{DoxyCompactList}\small\item\em The list of colors (used for debugging purposes) \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
@@ -64,7 +65,14 @@ Definition at line 27 of file configuration.\-py.
 
 \hypertarget{classconfiguration_1_1Configuration_a2140643801852e373bfddf9945cf26f8}{\index{configuration\-::\-Configuration@{configuration\-::\-Configuration}!color\-List@{color\-List}}
 \index{color\-List@{color\-List}!configuration::Configuration@{configuration\-::\-Configuration}}
-\subsubsection[{color\-List}]{\setlength{\rightskip}{0pt plus 5cm}tuple configuration.\-Configuration.\-color\-List = map(lambda k\-: color.\-T\-H\-E\-C\-O\-L\-O\-R\-S\mbox{[}k\mbox{]}, color.\-T\-H\-E\-C\-O\-L\-O\-R\-S.\-keys())\hspace{0.3cm}{\ttfamily [static]}}}\label{classconfiguration_1_1Configuration_a2140643801852e373bfddf9945cf26f8}
+\subsubsection[{color\-List}]{\setlength{\rightskip}{0pt plus 5cm}tuple configuration.\-Configuration.\-color\-List\hspace{0.3cm}{\ttfamily [static]}}}\label{classconfiguration_1_1Configuration_a2140643801852e373bfddf9945cf26f8}
+{\bfseries Initial value\-:}
+\begin{DoxyCode}
+1 = map(
+2         \textcolor{keyword}{lambda} k: color.THECOLORS[k], 
+3         color.THECOLORS.keys()
+4     )
+\end{DoxyCode}
 
 
 The list of colors (used for debugging purposes) 
@@ -132,4 +140,4 @@ Definition at line 34 of file configuration.\-py.
 
 The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
 \item 
-code/\hyperlink{configuration_8py}{configuration.\-py (\-Concurrent Versions System (\-C\-V\-S) 1.\-12.\-13-\/\-Mir\-Debian-\/9 (client/server))}\end{DoxyCompactItemize}
+code/\hyperlink{configuration_8py}{configuration.\-py}\end{DoxyCompactItemize}

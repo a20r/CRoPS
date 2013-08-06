@@ -11,6 +11,7 @@ var classprm_1_1PRMGenerator =
     [ "initOmega", "classprm_1_1PRMGenerator.html#aaa44a7e209bb06af27c4120b78d70cfb", null ],
     [ "norm", "classprm_1_1PRMGenerator.html#a652b3c0fa11645f351c23635d7e62dda", null ],
     [ "adjacentThresh", "classprm_1_1PRMGenerator.html#aa56ad4365534ffed0b4311c5accce577", null ],
+    [ "dontDraw", "classprm_1_1PRMGenerator.html#a6a92750aa0e081cc87c64e157b0ecb53", null ],
     [ "endPos", "classprm_1_1PRMGenerator.html#a8925b6d51130804d23bb82d3b8602d74", null ],
     [ "gPosList", "classprm_1_1PRMGenerator.html#a164c6ae962a75ed31d58eff1db95f141", null ],
     [ "numNext", "classprm_1_1PRMGenerator.html#a84795d8a1191caae0612ac645d8853b9", null ],

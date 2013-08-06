@@ -1,0 +1,13 @@
+digraph "boid.Boid.getDirectionVector"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="boid.Boid.getDirectionVector",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="boid.Boid.mag",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classboid_1_1Boid.html#a5324650d399f5c850ec7b7bda10eeae7",tooltip="Gets the magnitude of a vector. "];
+  Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid"];
+  Node3 [label="boid.Boid.sigmoidFunc",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classboid_1_1Boid.html#a492a0ad33a962b15ed94789d59f3b08a",tooltip="Defines a sigmoidal curve used for goal attraction and for boid repulsion. "];
+  Node3 -> Node4 [color="midnightblue",fontsize="10",style="solid"];
+  Node4 [label="boid.Boid.norm",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classboid_1_1Boid.html#a576c57d100aa5743d610de30bf1a2b2c",tooltip="Gets the distance between two points. "];
+}

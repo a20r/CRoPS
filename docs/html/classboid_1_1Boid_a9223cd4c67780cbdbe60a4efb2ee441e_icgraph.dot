@@ -1,0 +1,11 @@
+digraph "boid.Boid.sumDivide"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="boid.Boid.sumDivide",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="boid.Boid.reduceWeightValues",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classboid_1_1Boid.html#a2d4f1cded412a333857bb1b8b17d3dd0",tooltip="Works in cohesion with sumDivide. "];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="boid.Boid.update",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classboid_1_1Boid.html#a8a354e4b7d58ced69771f3bb5f52d257",tooltip="Updates the boid&#39;s heading and position due to the potential fields. "];
+}
