@@ -1,0 +1,588 @@
+\documentclass[10pt,t]{beamer}
+
+\input{style}
+
+\author{Alex Wallar \& Erion Plaku} 
+
+\newcommand{\LTLNext}{\bigcirc}
+\newcommand{\LTLEventually}{\Diamond}
+\newcommand{\LTLAlways}{\Box}
+\newcommand{\LTLUntil}{\cup}
+\newcommand{\LTLRelease}{\Symbol{R}}
+
+\title{{\large Path Planning for Swarms by Combining Probabilistic Roadmaps and Potential Fields}}
+%\subtitle{Motion Planning with Kinematics and Dynamics}
+\institute{Dept. of Electrical Engineering and Computer Science\\
+  Catholic University of America\\\vspace*{15mm}
+  \textcolor{blue}{\textbf{http://faculty.cua.edu/plaku}}}
+
+\date{}
+
+
+\begin{document}
+
+
+%\AtBeginSection[]{%
+%  \begin{frame}<beamer>
+%    \frametitle{Outline}
+%    \tableofcontents[currentsection]
+%  \end{frame}
+%  \addtocounter{framenumber}{-1}% If you don't want them to affect the slide number
+%}
+
+
+%\AtBeginSection[] {
+%  \begin{frame}
+%    \frametitle{Overview}
+%    \tableofcontents[currentsection]
+%  \end{frame}
+%  \addtocounter{framenumber}{-1}
+%}
+
+\tikzstyle{every picture}+=[remember picture]
+\tikzstyle{na} = [baseline=-.5ex]
+
+\begin{frame}[plain]
+  \titlepage
+\end{frame}
+
+
+%\begin{frame}
+%\frametitle{Coupling of the Discrete and the Continuous}
+%Discrete Logic
+%\begin{itemize}
+%\item Tasks often involve abstractions into discrete logical actions
+%\item Discrete logic determines transitions from one action to another
+%\item Each discrete action requires substantial continuous motion planning
+%\end{itemize}
+
+%\vspace*{10mm}
+%Motion Planning
+%\begin{itemize}
+%\item Robot must avoid collisions
+%\item Robot motion obeys physical constraints
+%\item Underlying motion dynamics are often nonlinear
+%\end{itemize}
+
+%\pause
+
+%\vspace*{10mm}
+
+%\hfill{\textcolor{mathrgb}{the discrete and the continuous have
+%    generally been treated separately}}
+
+%\end{frame}
+
+\begin{frame}
+\frametitle{Motion Planning}
+
+
+\textcolor{blue}{Proposed approach automatically plans the necessary
+  motions that enable the robot to reach a desired destination while
+  avoiding collisions with obstacles}
+
+\vspace*{2mm}
+
+\movie{\includegraphics[width=\textwidth]{figScenePolys}}{bumpy.wmv}
+
+\vspace*{-2mm}
+\href{run:bumpy.wmv}{\footnotesize{\hfill{[movie]}}}
+ 
+\begin{columns}
+
+\column{0.45\textwidth}
+Motivated by applications in
+\begin{itemize}
+\item Navigation
+\item Exploration
+\item Search-and-Rescue
+\end{itemize}
+
+\column{0.45\textwidth}
+
+
+\end{columns}
+
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Computational Challenges}
+
+\textcolor{blue}{Motion planning requires searching a vast high-dimensional state space
+for \emph{dynamically-feasible motions} that avoid collisions}
+
+
+\vspace*{4mm}
+
+\textcolor{red}{Taking motion dynamics into account  is essential to ensure that
+  the planned motions can be followed in the physical world}
+ 
+\begin{itemize}
+\item Motion dynamics can be complex 
+\item Often involve non-linear ODEs
+\end{itemize}
+
+
+\end{frame}
+
+
+
+\begin{frame}
+\frametitle{Computational Challenges}
+
+\movie{\includegraphics[width=0.9\textwidth]{figs/figSnake}}{strailer3.wmv}
+\href{run:strailer3.wmv}{\footnotesize{[movie]}}
+
+\begin{itemize}
+\item Snake-like robot model consists of several links attached to
+  each other
+\item[] Continuous state consists of
+\textcolor{blue}{
+$
+s = (x, y, \theta_0, v, \psi, \theta_1, \theta_2, \ldots, \theta_N)
+$}
+
+\vspace*{1mm}
+
+\item Motion dynamics modeled as a car pulling trailers
+
+\item[] The differential
+    equations of motions are
+\textcolor{blue}{
+\begin{tabular}{lllll}
+$\dot{x} = v \cos(\theta_0)$  & 
+$\dot{y} = v \sin(\theta_0)$ &
+$\dot{\theta_0} = v\tan(\psi)$ &
+$\dot{v} = a$  & 
+$\dot{\psi} = \omega$  \\
+\multicolumn{5}{c}{$\dot{\theta_i} = \frac{v}{d} \left(\prod_{j=1}^{i-1}\cos(\theta_{j-1}
+- \theta_j)\right) (\sin(\theta_{i-1}) - \sin(\theta))$} 
+\end{tabular}}
+
+\vspace*{1mm}
+
+\item[] Robot controls: \textcolor{mathrgb}{$a$} (acceleration); \hspace{2mm}
+  \textcolor{mathrgb}{$\omega$} (rotational velocity  of steering wheel)
+
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Related Work}
+
+\begin{columns}[c]
+
+\column{0.50\textwidth}
+
+\only<1>{\includegraphics[width=2.5in]{figs/figTreeExp0}}
+\only<2>{\includegraphics[width=2.5in]{figs/figTreeExp1}}
+\only<3>{\includegraphics[width=2.5in]{figs/figTreeExp2}}
+\only<4>{\includegraphics[width=2.5in]{figs/figTreeExp3}}
+\only<5->{\includegraphics[width=2.5in]{figs/figTreeExp}}
+
+
+\includegraphics[width=2.5in]{figs/figDynSim}
+
+\column{0.50\textwidth}
+
+\textcolor{blue}{Sampling-Based Motion Planning}
+\vspace*{2mm}
+
+Expand a tree $\Symbol{T}$ of collision-free and dynamically-feasible
+motions
+
+\vspace*{2mm}
+
+\begin{itemize}
+\item select a state $s$ from which to expand the tree
+
+\vspace*{2mm}
+
+\item sample control input $u$
+
+\vspace*{2mm}
+
+\item generate new trajectory by applying $u$ to $s$
+\end{itemize}
+
+\hspace*{3mm}
+\textcolor{blue}{Successful Motion Planners}
+{\footnotesize{
+\begin{itemize}
+\item RRT [LaValle, Kuffner: IJRR 2001]
+\item EST [Hsu et al: IJRR 2002]
+\item PDST [Ladd, Kavraki: RSS 2005]
+\item SYCLOP [Plaku, Kavraki, Vardi: IEEE TRO 2010]
+\end{itemize}
+}}
+
+\end{columns}
+\end{frame}
+
+\begin{frame}
+\frametitle{Related Work}
+
+\textcolor{blue}{On difficult kinodynamic motion-planning problems it
+  has been noted that}
+
+
+\begin{itemize}
+\item Exploration frequently gets stuck
+\item Progress slows down
+\end{itemize}
+
+
+\vspace*{5mm}
+\begin{itemize}
+\item Exploration guided by limited information, such as distance   metrics and nearest neighbors
+\item Lack of global sense of direction toward goal
+\item Difficult to discover new promising directions toward goal
+\end{itemize}
+
+\vspace*{3mm}
+
+{\footnotesize{
+[Donald et al., ‘93; Kim et al., ‘05; Plaku et al., ‘05; Yershova et
+al., ‘05; Ladd, Kavraki  ‘05; Choset et al., ‘05; LaValle ‘06; Hsu et
+al., ‘06; Burns, Brock ‘07; Plaku et al. '10;
+Sucan, Kavraki '11]}}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{{\large {New Approach}}}
+
+\begin{itemize}
+\item {Treats motion planning with dynamics as a search problem in a \emph{hybrid} state space composed of continuous and discrete components}
+
+\vspace*{4mm}
+
+\item  {Couples sampling-based motion planning with discrete search}
+\end{itemize}
+
+
+\vspace*{4mm}
+
+\begin{beamercolorbox}[ht=2.5ex,dp=1.125ex,center]{mybox2}
+{\textcolor{blue}{discrete layer}}: guide motion planning
+\end{beamercolorbox}
+
+\begin{beamercolorbox}[ht=2.5ex,dp=1.125ex,center]{mybox2}
+{\textcolor{blue}{continuous layer}}: expand tree of feasible motions
+\end{beamercolorbox}
+
+\begin{beamercolorbox}[ht=2.5ex,dp=1.125ex,center]{mybox2}
+{\textcolor{blue}{interplay}}: update guide to reflect motion-planning progress
+\end{beamercolorbox}
+
+\vspace*{2mm}
+
+\centerline{\includegraphics[width =
+    0.5\textwidth]{figs/figInterplay}}
+
+\vspace*{2mm}
+
+\begin{itemize}
+\item  Significantly improves computational efficiency over related work
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Workspace Decomposition}
+
+
+\begin{columns}[c]
+
+
+\column{0.50\textwidth}
+\includegraphics[width=\textwidth]{figs/fig1}
+
+\column{0.48\textwidth}
+  Workspace decomposition provides discrete layer 
+  as adjacency graph 
+
+{\centerline{\textcolor{blue}{$G = (R, E)$}}}
+
+\begin{itemize}
+\item $R$ denotes the regions of the decomposition
+\item $E = \{(r_i, r_j) : r_i, r_j \in R$ are
+  physically adjacent$\}$
+\end{itemize}
+\end{columns}
+
+\vspace*{25mm}
+{\hfill{\includegraphics[width=1.5in]{figs/figInterplayDecomp}}}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Backward Discrete Search to Estimate Region Costs}
+
+ 
+\begin{columns}[c]
+
+\column{0.50\textwidth}
+\includegraphics[width=\textwidth]{figs/fig1}
+
+\column{0.48\textwidth}
+  Workspace decomposition provides discrete layer 
+  as adjacency graph 
+
+{\centerline{\textcolor{blue}{$G = (R, E)$}}}
+
+\begin{itemize}
+\item $R$ denotes the regions of the decomposition
+\item $E = \{(r_i, r_j) : r_i, r_j \in R$ are
+  physically adjacent$\}$
+\end{itemize}
+\end{columns}
+
+\vspace*{3mm}
+
+\textcolor{blue}{cost(r)} estimates the difficulty of reaching the goal region from $r$
+
+\hfill{defined as length of shortest path in $G=(R, E)$ from $r$ to goal} 
+
+\vspace*{3mm}
+\textcolor{blue}{$[cost(r_1), cost(r_2), \ldots, cost(r_n)]$} 
+
+\hfill{computed by running once A* shortest-path algorithm backwards from goal}
+
+
+\vspace*{2.7mm}
+{\hfill{\includegraphics[width=1.5in]{figs/figInterplayCosts}}}
+
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Region Selection based on Cost Estimates}
+
+\hspace*{-2mm}
+At each iteration, a region $r_\Var{from}$ is selected from which to expand the search
+tree $T$ \hspace*{-3mm}
+ 
+\begin{columns}[c]
+
+
+\column{0.45\textwidth}
+\includegraphics[width=\textwidth]{figs/fig2}
+
+\includegraphics[width=\textwidth]{figs/fig3}
+
+
+\column{0.53\textwidth}
+
+Tree vertices are grouped according to the regions that have been reached
+
+\vspace*{1mm}
+
+{\centerline{\textcolor{blue}{
+$
+\Var{vertices}(T, r) = \{ v : v \in T \wedge \Var{region}(v) = r\}
+$}}}
+
+\vspace*{2mm}
+
+{\centerline{\textcolor{blue}{
+$
+\Gamma = \{r : r \in R \wedge |\Var{vertices}(T, r)| > 0\}
+$}}}
+
+\vspace*{4mm}
+
+\textcolor{blue}{$r_\Var{from}$} is selected from
+\textcolor{blue}{$\Gamma$} according to the probability distribution
+
+\vspace*{-5mm}
+
+\textcolor{blue}{
+$$
+prob(r) = \frac{1}{1 + cost^2(r)}  / \sum_{r' \in R}  \frac{1}{1 + cost^2(r')}
+$$}
+
+\vspace*{-2mm}
+
+selection scheme balances greedy with methodical
+
+\vspace*{9mm}
+
+\end{columns}
+
+
+\vspace*{-9mm}
+{\hfill{\includegraphics[width=1.5in]{figs/figInterplaySelect}}}
+
+
+
+\end{frame}
+
+
+
+\begin{frame}
+\frametitle{Forward Discrete Search to Compute Discrete Plans}
+
+\begin{columns}[c]
+
+
+\column{0.50\textwidth}
+\includegraphics[width=\textwidth]{figs/fig4}
+
+
+\column{0.48\textwidth}
+
+Discrete plan $\sigma$ consists of a sequence of regions connecting
+$r_\Var{from}$ to goal
+
+\vspace*{3mm}
+
+\textcolor{blue}{Exploitation} (with probability $p$)
+\begin{itemize}
+\item $\sigma$ computed as the shortest-path in $G=(R,E)$ from $r_\Var{from}$ to goal
+\end{itemize}
+
+\vspace*{3mm}
+
+\textcolor{blue}{Exploration} (with probability $1 - p$)
+\begin{itemize}
+\item $\sigma$ computed as a random path in $G=(R,E)$ from $r_\Var{from}$ to goal
+\end{itemize}
+
+\end{columns}
+
+\vspace*{19mm}
+{\hfill{\includegraphics[width=1.5in]{figs/figInterplayPlan}}}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{\hspace*{-4mm} Sampling-based Motion Planning to Expand the Search Tree \hspace*{-4mm}}
+
+\begin{columns}[c]
+
+
+\column{0.50\textwidth}
+
+
+\includegraphics[width=\textwidth]{figs/fig5}
+
+
+\column{0.48\textwidth}
+
+Expand tree of motions using the discrete plan as a guide
+
+\vspace*{2mm}
+
+\begin{itemize}
+\item Select vertices from regions associated with the discrete plan
+
+\item Sample input controls
+
+\includegraphics[width=2in]{figs/figDynSim}
+
+\item Generate new trajectories toward next region in the discrete
+  plan
+
+\item \textcolor{blue}{Allow for deviations from the
+    discrete plan}
+\end{itemize}
+
+\end{columns}
+
+
+\vspace*{2mm}
+{\hfill{\includegraphics[width=1.5in]{figs/figInterplayExpand}}}
+
+\end{frame}
+
+
+\begin{frame}
+\frametitle{{\large{Interplay: Update Discrete Plan to Reflect Motion-Planning
+Progress}}}
+
+
+\vspace*{-2mm}
+\centerline{\includegraphics[width=0.5\textwidth]{figs/figInterplay}}
+
+\vspace*{2mm}
+
+\includegraphics[width=0.333\textwidth]{figs/fig3}
+\includegraphics[width=0.333\textwidth]{figs/fig4}
+\includegraphics[width=0.333\textwidth]{figs/fig5}
+
+\includegraphics[width=0.333\textwidth]{figs/fig6}
+\includegraphics[width=0.333\textwidth]{figs/fig7}
+\includegraphics[width=0.333\textwidth]{figs/fig8}
+
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Experimental Results}
+
+
+\includegraphics[width=1.35in]{figs/figResult1}
+\movie{\includegraphics[width=0.75\textwidth]{figs/figScene1}}{movieResult1.wmv}
+
+\vspace*{-2mm}
+\href{run:movieResult1.wmv}{\footnotesize{\hfill{[movie]}}}
+
+Compare computational efficiency to successful sampling-based motion planners
+\begin{itemize}
+\item RRT [LaValle, Kuffner]
+\item Syclop [Plaku, Kavraki, Vardi]
+\end{itemize}
+running time obtained as average of 30 different
+    runs
+
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Experimental Results (cont.)}
+
+
+\includegraphics[width=1.35in]{figs/figResult2}
+\movie{\includegraphics[width=0.75\textwidth]{figs/figScene2}}{movieResult2.wmv}
+
+\vspace*{-2mm}
+\href{run:movieResult2.wmv}{\footnotesize{\hfill{[movie]}}}
+
+Compare computational efficiency to successful sampling-based motion planners
+\begin{itemize}
+\item RRT [LaValle, Kuffner]
+\item Syclop [Plaku, Kavraki, Vardi]
+\end{itemize}
+running time obtained as average of 30 different
+    runs
+
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Summary}
+
+
+Approach
+\begin{itemize}
+\item Treats motion planning with dynamics as a search problem in a \emph{hybrid} state space composed of continuous and discrete components
+
+\vspace*{4mm}
+
+\item  Couples sampling-based motion planning with forward and backward discrete search over a workspace decomposition
+
+\vspace*{4mm}
+
+\item Obtains significant computational speedups 
+\end{itemize}
+
+\end{frame}
+
+\end{document}
+
+
+
+
