@@ -263,11 +263,11 @@ class Boid:
 
         ## The radius of influence used when filtering
         ## the number of obstacles it needs to check
-        self.obInfluenceR   = 50
+        self.obInfluenceR   = 100
 
         ## The radius of influence used when filtering
         ## the number of boids it needs to check
-        self.bInfluenceR    = 20 + 2 * self.radius
+        self.bInfluenceR    = 40 + 2 * self.radius
 
         ## Priori constant for obstacle repulsion (increasing it
         ## gives more priority to the repulsive obstacle field)

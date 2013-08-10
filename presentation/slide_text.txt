@@ -28,7 +28,7 @@ Motiviation :
 		to get stuck in the local minima
 	--> Probabilistic roadmaps work well for complex 
 		environments but suffer from lack of 
-		scalability and require considerable
+		scalability and require considerablean
 		precomputation. Also, as the number of robots
 		increases, it becomes difficult to sample 
 		collision free configurations.

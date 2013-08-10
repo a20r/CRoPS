@@ -6,6 +6,9 @@
 #Mac is dumb
 .DS_Store
 
+#Erion's Folder
+presentation/sample/*
+
 # Packages
 *.egg
 *.egg-info

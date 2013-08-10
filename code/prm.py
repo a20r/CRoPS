@@ -73,7 +73,6 @@ class PRMGenerator:
 		self.filterSubGoal()
 
 		self.initOmega(self.subGoalPositionList)
-		self.dontDraw = list()
 
 	def norm(self, p1, p2):
 		"""
@@ -206,6 +205,7 @@ class PRMGenerator:
 		"""
 		self.roadmap = dict()
 		currentPos = 0
+		self.dontDraw = list()
 		while len(self.gPosList) <= 1:
 			for i, j in enumerate(self.subGoalPositionList):
 				# adds the neighbours for a certain vertex to the its sub dictionary
@@ -229,7 +229,9 @@ class PRMGenerator:
 					self.screen.fill(
 						(0,0,0)
 					)
+
 					self.draw()
+
 					map(
 						lambda o: o.draw(), 
 						self.obstacleList
@@ -248,12 +250,22 @@ class PRMGenerator:
 			)
 			if len(self.gPosList) == 1:
 				currentPos = len(self.subGoalPositionList) - 1
+
+				self.dontDraw += [
+					currentPos, 
+					currentPos - 1, 
+					currentPos + 1,
+					#currentPos - 2,
+					#currentPos + 2,
+					#currentPos - 3,
+					#currentPos + 3
+				]
+
 				newPosList = self.generatePositionList(
 					int(self.subGoalNumber / 2) + 1
 				)
-				self.dontDraw += [currentPos + 1]
 				self.initOmega(newPosList)
-				self.subGoalPositionList[1:-1] += newPosList
+				self.subGoalPositionList[1 : -1] += newPosList
 				self.filterSubGoal()
 		return map(
 			lambda p: goal.CircleGoal(
@@ -277,9 +289,9 @@ class PRMGenerator:
 			), 
 			self.subGoalPositionList
 		)
-		for i, k in enumerate(self.roadmap.keys()):
-			for j, p in enumerate(self.roadmap[k].keys()):
-				if not i in self.dontDraw and not j in self.dontDraw:
+		for k in self.roadmap.keys():
+			for p in self.roadmap[k].keys():
+				if not k in self.dontDraw and not p in self.dontDraw:
 					pygame.draw.line(
 						self.screen, 
 						(255, 0, 255), 
@@ -293,8 +305,20 @@ class PRMGenerator:
 		"""
 		pygame.draw.lines(
 			self.screen, 
-			(255, 0, 255), 
+			(255, 255, 255), 
 			False, 
-			self.gPosList
+			self.gPosList,
+			2
 		)
+
+		"""
+		for gPos in self.gPosList:
+			pygame.draw.circle(
+				self.screen,
+				(255, 0, 255),
+				gPos,
+				20,
+				2
+			)
+		"""
 
