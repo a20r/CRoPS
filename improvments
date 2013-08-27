@@ -1,0 +1,75 @@
+*** Title slide
+add location to universities, i.e., Washington, DC, USA for CUA
+
+*** Related Works
+remove this slide
+
+*** Potential Fields
+change title to Path Planning for Swarms via Potential Fields
+
+
+*** Potential Fields Shortcomings
+change title to Limitations of Path Planning via Potential Fields
+change "For sufficiently large environments..." to
+"Potential fields often lead robots into local minima especially when dealing
+with complex environments and large swarms"
+
+
+*** Probabilistic Roadmaps (PRMs)
+change title to Path Planning for Swarms via Probabilistic Roadmaps (PRMs)
+move figure a bit down so that you see the word "connectivity" -- as it is, it
+cuts off the "y" and makes it read as "v"
+
+*** PRM Shortcomings
+change title to Limitations of Path Planning via PRMs
+
+
+*** Our Approach
+change title to Proposed Approach
+change "Combined roadmaps and ..." to
+"Combine roadmaps and potentials for swarms (CRoPS) to enable fast path planning for swarms"
+
+remove "We present an..." as it is already covered in the first bullet point
+
+change "Probabilistic roadmaps provide..." to
+"Probabilistic roadmaps provide high-level guidance of how swarm should move towards the goal"
+
+
+*** Swarm Motion
+remove periods at the end of sentences
+
+*** Add a new slide titled "CRoPS: Combined Roadmaps and Potential Fields"
+ o Construct roadmap using PRM
+ o Search roadmap to compute intermediate goals for each boid
+ o Repeat until solved
+ o    assign next goal to boids that have reached current goal
+ o    compute overall potential for each boid
+ o    compute new heading based on overall potential
+ o    update positions
+
+*** Roadmap Construction
+ok
+
+*** Roadmap Weights
+change "In order to bias..." to
+"In order to bias the swarm towards less cluttered areas, nodes further away from obstacles are assigned higher weights"
+
+change "The weight of the edge...." to
+"Edge costs reflect not only the distance among the endpoints, but also their clearance away from obstacles, i.e.,"
+
+change "w(qi, qj)" to "cost(qi, qj)"
+
+
+*** Shortest Path
+change title to "Guiding the Swarm through the Shortest Roadmap Path"
+remove period from end of sentence
+
+change the bullet points as follows:
+
+o Shortest roadmap path serves as high-level guide
+o Computed using Dijkstra's algorithm
+o Guide provides a series of intermediate goals defined as circles centered at the path vertices
+o CRoPS seeks to move the swarm to the final destination by passing each bot through these intermediate goals
+
+*** Potential Fields and all the slides afterwards
+ok
