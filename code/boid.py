@@ -709,7 +709,7 @@ class Boid:
         """
         pygame.draw.circle(
             self.screen, 
-            (0, 255, 100) if self.stuck else (0,0,255),
+            (0, 255, 100) if self.stuck else (255, 255, 255),
             map(
                 int, 
                 self.position

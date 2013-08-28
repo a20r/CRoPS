@@ -16,12 +16,12 @@ if __name__ == "__main__":
     		"endPoint": (852, 450)
     	}, 
     	"maps/scene1.map": {
-    		"startPoint": (50, 600), 
+    		"startPoint": (50, 50), #(50, 600) 
     		"endPoint": (980, 30)
     	}
     }
     fs = bs.FlockSim(
-    	70, 
+    	int(sys.argv[2]), 
     	mapDict[sys.argv[1]]["startPoint"], 
     	mapDict[sys.argv[1]]["endPoint"]
     )
