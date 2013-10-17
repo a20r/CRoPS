@@ -43,6 +43,8 @@ nosetests.xml
 # CMake
 CMakeCache.txt
 CMakeFiles
+code/CodePolygons/CMakeCache.txt
+code/CodePolygons/CMakeFiles
 Makefile
 cmake_install.cmake
 cmake_uninstall.cmake
