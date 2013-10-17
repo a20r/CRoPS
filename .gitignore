@@ -3,7 +3,7 @@
 # C extensions
 *.so
 
-#Mac is dumb
+#Mac is not dumb
 .DS_Store
 
 #Erion's Folder
@@ -39,3 +39,11 @@ nosetests.xml
 .mr.developer.cfg
 .project
 .pydevproject
+
+# CMake
+CMakeCache.txt
+CMakeFiles
+Makefile
+cmake_install.cmake
+cmake_uninstall.cmake
+install_manifest.txt
