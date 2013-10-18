@@ -177,9 +177,9 @@ class FlockSim:
                     self.flockSize,
                     sys.argv[1]
                 )
-                if len(sys.argv) == 3:
+                if len(sys.argv) == 4:
                     self.dataFile = open(
-                        sys.argv[2],
+                        sys.argv[3],
                         "w"
                     )
                     self.dataFile.truncate()
