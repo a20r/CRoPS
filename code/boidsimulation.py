@@ -18,8 +18,12 @@ class FlockSim:
     in a useful manner.
     """
     def __init__(
-        self, flockSize, startPoint,
-        endPoint, _mapFile = None, _dataFile = None):
+        self,
+        flockSize,
+        startPoint,
+        endPoint,
+        **kwargs
+    ):
         """
         Initializes the flock and the display mechanism (PyGame)
         @param flockSize The size of the flock (number of boids)
@@ -73,10 +77,13 @@ class FlockSim:
         self.flockSize = flockSize
 
         ## The file that contains the data about the obstacles
-        self.mapFile = _mapFile
+        self.mapFile = kwargs.get("map_file", None)
 
         ## The file that the statistics data will be written to
-        self.dataFile = _dataFile
+        self.dataFile = kwargs.get("data_file", None)
+
+        ## File containing the obstacles map points
+        self.obstacleFile = kwargs.get("obstacle_file", None)
 
     def avg(self, l):
         """
@@ -93,8 +100,8 @@ class FlockSim:
         """
         Gets runtime statistics about the simulation and writes it to a file.
         Currently, the statistics being gathered are the current time that has
-        passed, the average distance between the boids, the average minimum distance
-        between the boids, and the number of boids that have finished
+        passed, the average distance between the boids, the average minimum
+        distance between the boids, and the number of boids that have finished
         """
         endTime = time.time()
         avgList = list()

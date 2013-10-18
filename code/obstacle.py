@@ -33,13 +33,13 @@ class PolyObstacle:
         self.dynamic = False
 
         ## Acceleration of the obstacle
-        self.acceleration
+        self.acceleration = None
 
         ## Velocity of the obstacle
-        self.velocity
+        self.velocity = None
 
         ## Max distance allowance
-        self.max_dist_allowance
+        self.max_dist_allowance = None
 
         self.estimatePoly()
 
