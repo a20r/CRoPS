@@ -185,12 +185,10 @@ class Boid:
         """
         return (
             b.radius * o.getRadius() * beta /
-            pow(
-                self.norm(
-                    b.position,
-                    o.getPoint(b.position)
-                ) - o.getRadius() - b.radius, 2
-            )
+            np.sqrt(abs(self.norm(
+                b.position,
+                o.getPoint(b.position)
+            ) - o.getRadius() - b.radius))
         )
 
     def mag(self, vec):
@@ -267,7 +265,7 @@ class Boid:
 
         ## The radius of influence used when filtering
         ## the number of obstacles it needs to check
-        self.obInfluenceR   = 100
+        self.obInfluenceR   = 400
 
         ## The radius of influence used when filtering
         ## the number of boids it needs to check
@@ -275,7 +273,7 @@ class Boid:
 
         ## Priori constant for obstacle repulsion (increasing it
         ## gives more priority to the repulsive obstacle field)
-        self.obBeta         = 300
+        self.obBeta         = 100
 
         ## Scales the value returned by the sigmoid function
         ## for goal attraction
@@ -339,7 +337,7 @@ class Boid:
         self.randWalkCount  = 0
 
         ## Weights how much the previous heading affects the new heading
-        self.headWeightList = [3, 1]
+        self.headWeightList = [2, 1]
 
     def setBoidList(self, _boidList):
         """
@@ -645,6 +643,9 @@ class Boid:
                     gMagSum,
                     obMagSum
                 ]
+
+                print self.compWeightList
+
                 nHeading = self.reduceWeightValues(
                     self.compWeightList,
                     neVecSum,

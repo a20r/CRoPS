@@ -24,7 +24,7 @@ if __name__ == "__main__":
     fs = bs.FlockSim(
     	int(sys.argv[2]),  # flocksize
     	mapDict[sys.argv[1]]["startPoint"],
-    	mapDict[sys.argv[1]]["endPoint"],
-        obstacle_file = sys.argv[3]
+    	mapDict[sys.argv[1]]["endPoint"]#,
+        #obstacle_file = sys.argv[3]
     )
     fs.animate()
