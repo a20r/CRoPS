@@ -1,15 +1,12 @@
+#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
 __author__ = "Alex Wallar <aw204@st-andrews.ac.uk>"
 
 import pygame
-import boid
 import configuration
 import time
-import random
-import sys
-import math
-import time
+
 
 class FlockSim:
     """
@@ -39,10 +36,10 @@ class FlockSim:
         self.done = False
 
         ## Defines the color black
-        self.BLACK = (0,0,0)
+        self.BLACK = (0, 0, 0)
 
         ## Defines the color white
-        self.WHITE = (255,255,255)
+        self.WHITE = (255, 255, 255)
 
         ## The font that is used for displaying the frame number
         self.font = pygame.font.Font(None, 50)
@@ -66,7 +63,7 @@ class FlockSim:
         ## Maximum number of iterations
         self.iterations = 800
 
-        ## Counts which frame the user is on for the playback (don't know why it
+        ## Counts which frame the user is on for the playback (don't know why
         ## it is set to -2, it just works)
         self.frameCounter = -2
 
@@ -163,33 +160,16 @@ class FlockSim:
         Initializes the PRM generator used for the global planner. Also sets
         the boid list for the rest of the flock
         """
-        if self.mapFile == None or self.dataFile == None:
-            if len(sys.argv) <= 1:
-                self.config.initVars(
-                    self.sPos,
-                    self.ePos,
-                    self.flockSize
-                )
-            else:
-                self.config.initVars(
-                    self.sPos,
-                    self.ePos,
-                    self.flockSize,
-                    sys.argv[1]
-                )
-                if len(sys.argv) == 4:
-                    self.dataFile = open(
-                        sys.argv[3],
-                        "w"
-                    )
-                    self.dataFile.truncate()
-        else:
-            self.config.initVars(
-                self.sPos,
-                self.ePos,
-                self.flockSize,
-                self.mapFile
-            )
+        self.config.initVars(
+            self.sPos,
+            self.ePos,
+            self.flockSize,
+            map_file=self.mapFile,
+            dynamic_obstacles=self.obstacleFile
+        )
+
+        if self.dataFile:
+            self.dataFile = open(self.dataFile, "w")
             self.dataFile.truncate()
 
         map(
@@ -197,7 +177,7 @@ class FlockSim:
             self.config.boidList
         )
 
-    def render(self, forPlay = False):
+    def render(self, forPlay=False):
         """
         Renders the scene. This means that the time taken for the boids to
         reach the goal in this function is that actual amount of computational
@@ -233,7 +213,7 @@ class FlockSim:
                     self.config.boidList
                 )
             )
-            if self.dataFile != None:
+            if self.dataFile is not None:
                 self.getBoidData()
                 #self.getStats()
 
@@ -242,7 +222,7 @@ class FlockSim:
             #map(lambda g: g.draw(), self.config.goalList)
             self.config.prmGen.drawPath()
 
-            frame.blit(self.config.screen,(0,0))
+            frame.blit(self.config.screen, (0, 0))
             if forPlay:
                 self.surfaceList += [frame]
             key = pygame.key.get_pressed()
@@ -292,7 +272,7 @@ class FlockSim:
                 0,
                 self.WHITE
             )
-            self.config.screen.blit(text, (0,0))
+            self.config.screen.blit(text, (0, 0))
             pygame.display.flip()
             for e in pygame.event.get():
                 if e.type is pygame.QUIT:
