@@ -48,12 +48,12 @@ class PolyFileConfiguration(Configuration):
 		startPoint,
 		endPoint,
 		flockSize,
-		filename = "maps/m1.map"
+		**kwargs
 	):
 		"""
-		Parses the file to get the obstacle list. Creates a PRM generator
-		to create a global map of the environment. Gets the list of intermediate goals.
-		Also, creates the list of boids used in the simulation
+        Parses the file to get the obstacle list. Creates a PRM generator to
+        create a global map of the environment. Gets the list of intermediate
+        goals.  Also, creates the list of boids used in the simulation
 		@param startPoint The starting point for the boids
 		@param endPoint The ending point for the boids
 		@param flockSize The size of the flock (number of boids)
@@ -61,7 +61,7 @@ class PolyFileConfiguration(Configuration):
 		"""
 
 		## List of obstacles
-		self.obstacleList = mp.mparse(filename)
+		self.obstacleList = mp.mparse(kwargs.get("filename", "maps/m1.map"))
 
 		## Starting point
 		self.startPoint = startPoint

@@ -163,34 +163,15 @@ class FlockSim:
         Initializes the PRM generator used for the global planner. Also sets
         the boid list for the rest of the flock
         """
-        # this is why you should use **kwargs ... to avoid the following
-        if self.mapFile == None or self.dataFile == None:
-            if len(sys.argv) <= 1:
-                self.config.initVars(
-                    self.sPos,
-                    self.ePos,
-                    self.flockSize
-                )
-            else:
-                self.config.initVars(
-                    self.sPos,
-                    self.ePos,
-                    self.flockSize,
-                    sys.argv[1]
-                )
-                if len(sys.argv) == 3:
-                    self.dataFile = open(
-                        sys.argv[2],
-                        "w"
-                    )
-                    self.dataFile.truncate()
-        else:
-            self.config.initVars(
-                self.sPos,
-                self.ePos,
-                self.flockSize,
-                self.mapFile
-            )
+        self.config.initVars(
+            self.sPos,
+            self.ePos,
+            self.flockSize,
+            filename = self.mapFile
+        )
+
+        if self.dataFile:
+            self.dataFile = open(self.dataFile, "w")
             self.dataFile.truncate()
 
         map(
