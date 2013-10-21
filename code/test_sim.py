@@ -20,9 +20,26 @@ if __name__ == "__main__":
     		"endPoint": (980, 30)
     	}
     }
-    fs = bs.FlockSim(
-    	int(sys.argv[2]),
-    	mapDict[sys.argv[1]]["startPoint"],
-    	mapDict[sys.argv[1]]["endPoint"]
-    )
-    fs.render()
+
+    if len(sys.argv) <= 2:
+        print("Not enough commandline args!")
+        print("Need at least 2 commands!")
+    else:
+        flockSize = int(sys.argv[2])
+        startPoint = mapDict[sys.argv[1]]["startPoint"]
+        endPoint = mapDict[sys.argv[1]]["endPoint"]
+        mapFilePath = sys.argv[1]
+
+        if len(sys.argv) >= 4:
+            obstacleFilePath = sys.argv[3]
+        else:
+            obstacleFilePath = None
+
+        fs = bs.FlockSim(
+            flockSize,
+            startPoint,
+            endPoint,
+            map_file = mapFilePath,
+            obstacle_file = obstacleFilePath
+        )
+        fs.animate()
