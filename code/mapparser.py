@@ -33,7 +33,6 @@ def mparse(filename):
 				lambda s: s != "\n",
 				f.readline().split(" ")
 			)[1:]
-			print line
 			intList = map(
 				lambda s: int(float(s)),
 				line
@@ -65,5 +64,3 @@ def mparse(filename):
 			con.Configuration.screen
 		) for pList in polyList
 	]
-
-

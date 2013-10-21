@@ -163,6 +163,7 @@ class FlockSim:
         Initializes the PRM generator used for the global planner. Also sets
         the boid list for the rest of the flock
         """
+        # this is why you should use **kwargs ... to avoid the following
         if self.mapFile == None or self.dataFile == None:
             if len(sys.argv) <= 1:
                 self.config.initVars(

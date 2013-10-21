@@ -34,24 +34,28 @@ class Configuration:
 
 	## The list of colors (used for debugging purposes)
 	colorList = map(
-		lambda k: color.THECOLORS[k], 
+		lambda k: color.THECOLORS[k],
 		color.THECOLORS.keys()
 	)
 
 class PolyFileConfiguration(Configuration):
 	"""
-	Extends the Configuration class. This configuration gets the 
-	obstacles from .map files that have been created. 
+	Extends the Configuration class. This configuration gets the
+	obstacles from .map files that have been created.
 	"""
 	def initVars(
-		self, startPoint, endPoint, 
-		flockSize, filename = "maps/m1.map"):
+		self,
+		startPoint,
+		endPoint,
+		flockSize,
+		filename = "maps/m1.map"
+	):
 		"""
 		Parses the file to get the obstacle list. Creates a PRM generator
 		to create a global map of the environment. Gets the list of intermediate goals.
 		Also, creates the list of boids used in the simulation
-		@param startPoint The starting point for the boids 
-		@param endPoint The ending point for the boids 
+		@param startPoint The starting point for the boids
+		@param endPoint The ending point for the boids
 		@param flockSize The size of the flock (number of boids)
 		@param filename The name of the file that contains the environment map
 		"""
@@ -67,32 +71,32 @@ class PolyFileConfiguration(Configuration):
 
 		## Object containing variables and mehtods for the global planner
 		self.prmGen = PRMGenerator(
-			startPoint, 
-			endPoint, 
-			self.obstacleList, 
-			Configuration.xSize, 
-			Configuration.ySize, 
-			Configuration.numSamplePoints, 
+			startPoint,
+			endPoint,
+			self.obstacleList,
+			Configuration.xSize,
+			Configuration.ySize,
+			Configuration.numSamplePoints,
 			Configuration.screen
 		)
-		
+
 		## List of intermediate goals derived by the global planner
 		self.goalList = self.prmGen.generate(Configuration.goalRadius)
 
 		## List of boids in the flock
 		self.boidList = [
 			boid.Boid(
-				startPoint, 
-				endPoint, 
-				Configuration.boidSpeed, 
-				Configuration.xSize, 
-				Configuration.ySize, 
-				Configuration.numNeighbours, 
-				boid.guassianFunc, 
-				self.obstacleList, 
-				self.goalList, 
-				self.prmGen, 
-				Configuration.screen, 
+				startPoint,
+				endPoint,
+				Configuration.boidSpeed,
+				Configuration.xSize,
+				Configuration.ySize,
+				Configuration.numNeighbours,
+				boid.guassianFunc,
+				self.obstacleList,
+				self.goalList,
+				self.prmGen,
+				Configuration.screen,
 				Configuration.colorList[i]
 			) for i in range(flockSize)
-		] 
+		]
