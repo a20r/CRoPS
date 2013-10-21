@@ -1,9 +1,9 @@
+#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
 __author__ = "Alex Wallar <aw204@st-andrews.ac.uk>"
 
 import pygame
-import boid
 import configuration
 import time
 

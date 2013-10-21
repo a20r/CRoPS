@@ -1,12 +1,10 @@
-
-from goal import CircleGoal
-from obstacle import PolyObstacle
+#!/usr/bin/env python
 from prm import PRMGenerator
 import boid
-import random
 import pygame
 import pygame.color as color
 import mapparser as mp
+
 
 class Configuration:
     """

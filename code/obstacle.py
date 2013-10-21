@@ -14,7 +14,7 @@ class PolyObstacle:
     by a series of points (in the node list) which make up a
     set of lines. These lines represent the exterior of an obstacle
     """
-    def __init__(self, _nodes, _screen):
+    def __init__(self, _nodes, _screen, **kwargs):
         """
         Creates a PolyObstacle instance and initializes certain global
         variables
@@ -33,7 +33,7 @@ class PolyObstacle:
         self.screen = _screen
 
         ## Defines wether the obstacle is dynamic or not
-        self.dynamic = False
+        self.dynamic = kwargs.get("dynamic", False)
 
         ## Acceleration of the obstacle
         self.acceleration = None

@@ -33,15 +33,18 @@ def mparse(filename):
     try:
         f = open(filename, "r+")
         numberOfPolys = int(f.readline())
+        file_ext = filename.split(".")[-1]
+
+        # determine if obstacles are dynamic
+        if file_ext == "obstacles":
+            dynamicObstacle = True
+        else:
+            dynamicObstacle = False
+
+        # loop through file and create PolyObstacle objects
         for _ in range(numberOfPolys):
-            line = filter(
-                lambda s: s != "\n",
-                f.readline().split(" ")
-            )[1:]
-            intList = map(
-                lambda s: int(float(s)),
-                line
-            )
+            line = [line for line in f.readline().split()[1:]]
+            intList = map(lambda s: int(float(s)), line)
             polyList += [
                 [
                     (
@@ -62,12 +65,15 @@ def mparse(filename):
                     ) for i in range(len(intList) / 2)
                 ]
             ]
+
             obstacleList += [
                 obstacle.PolyObstacle(
                     pList,
-                    con.Configuration.screen
+                    con.Configuration.screen,
+                    dynamic=dynamicObstacle
                 ) for pList in polyList
             ]
+
     except Exception:
         print "Opps! filename is None!"
     finally:
