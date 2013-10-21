@@ -191,16 +191,15 @@ class PolyObstacle:
         _eps = 0.00001
         _huge = sys.float_info.max
         _tiny = sys.float_info.min
-        a,b = edge
+        a, b = edge
         if a[1] > b[1]:
-            a,b = b,a
+            a, b = b, a
         if p[1] == a[1] or p[1] == b[1]:
             p = (p[0], p[1] + _eps)
 
         intersect = False
 
-        if (p[1] > b[1] or p[1] < a[1]) or (
-            p[0] > max(a[0], b[0])):
+        if (p[1] > b[1] or p[1] < a[1]) or (p[0] > max(a[0], b[0])):
             return False
 
         if p[0] < min(a[0], b[0]):
@@ -223,7 +222,7 @@ class PolyObstacle:
         @param x The integer to be checked
         @return True if x is odd, false otherwise
         """
-        return x%2 == 1
+        return x % 2 == 1
 
     def pointInPoly(self, p):
         """
@@ -234,7 +233,7 @@ class PolyObstacle:
         @param p The point to be checked
         @return True if the point is in the polygon and false otherwise
         """
-        vecList = [[self.nodes[0],self.nodes[-1]]]
+        vecList = [[self.nodes[0], self.nodes[-1]]]
         for k in range(len(self.nodes) - 1):
             vecList += [[self.nodes[k], self.nodes[k+1]]]
         return self._odd(
@@ -269,8 +268,8 @@ class PolyObstacle:
         @return The closest point that lies on the polygon exterior
         to p
         """
-        vecList = list() #[[self.nodes[0],self.nodes[-1]]]
-        for k in range(-1, len(self.nodes) -1):
+        vecList = list()  # [[self.nodes[0],self.nodes[-1]]]
+        for k in range(-1, len(self.nodes) - 1):
             vecList += [[self.nodes[k], self.nodes[k+1]]]
         cpList = map(
             lambda v: self.getClosestPoint(v[0], v[1], p),
@@ -281,7 +280,7 @@ class PolyObstacle:
             cpList
         )
         return [
-            cpList[i] for i,j in enumerate(dList) if j == min(dList)
+            cpList[i] for i, j in enumerate(dList) if j == min(dList)
         ][0]
 
     def getRadius(self):
@@ -312,7 +311,8 @@ class MovingPolyObstacle:
     """
     def __init__(self, _nodes, _screen):
         """
-        Creates a PolyObstacle instance and initializes certain global variables
+        Creates a PolyObstacle instance and initializes certain global
+        variables
         @param _nodes A list of nodes used to represent the vertices
         of the polygon
         @param _screen The PyGame screen that is used to draw the obstacle
@@ -334,7 +334,6 @@ class MovingPolyObstacle:
 
         ## Obstacle's moving acceleration
         self.acceleration
-
 
     def norm(self, p1, p2):
         """
@@ -404,7 +403,7 @@ class MovingPolyObstacle:
             max(p1[1], p2[1]) >= min(q1[1], q2[1]) and
             max(q1[1], q2[1]) >= min(p1[1], p2[1])
         )
-        vecList = [[self.nodes[0],self.nodes[-1]]]
+        vecList = [[self.nodes[0], self.nodes[-1]]]
         for k in range(len(self.nodes) - 1):
             vecList += [
                 [
@@ -475,21 +474,21 @@ class MovingPolyObstacle:
         Used to determine if a point p in inside the polygon
         @param p The point to be checked
         @param edge The edge that will be checked
-        @return True if a ray from point p intersects with edge and false otherwise
+        @return True if a ray from point p intersects with edge and false
+        otherwise
         """
         _eps = 0.00001
         _huge = sys.float_info.max
         _tiny = sys.float_info.min
-        a,b = edge
+        a, b = edge
         if a[1] > b[1]:
-            a,b = b,a
+            a, b = b, a
         if p[1] == a[1] or p[1] == b[1]:
             p = (p[0], p[1] + _eps)
 
         intersect = False
 
-        if (p[1] > b[1] or p[1] < a[1]) or (
-            p[0] > max(a[0], b[0])):
+        if (p[1] > b[1] or p[1] < a[1]) or (p[0] > max(a[0], b[0])):
             return False
 
         if p[0] < min(a[0], b[0]):
@@ -512,7 +511,7 @@ class MovingPolyObstacle:
         @param x The integer to be checked
         @return True if x is odd, false otherwise
         """
-        return x%2 == 1
+        return x % 2 == 1
 
     def pointInPoly(self, p):
         """
@@ -523,7 +522,7 @@ class MovingPolyObstacle:
         @param p The point to be checked
         @return True if the point is in the polygon and false otherwise
         """
-        vecList = [[self.nodes[0],self.nodes[-1]]]
+        vecList = [[self.nodes[0], self.nodes[-1]]]
         for k in range(len(self.nodes) - 1):
             vecList += [[self.nodes[k], self.nodes[k+1]]]
         return self._odd(
@@ -558,8 +557,8 @@ class MovingPolyObstacle:
         @return The closest point that lies on the polygon exterior
         to p
         """
-        vecList = list() #[[self.nodes[0],self.nodes[-1]]]
-        for k in range(-1, len(self.nodes) -1):
+        vecList = list()  # [[self.nodes[0],self.nodes[-1]]]
+        for k in range(-1, len(self.nodes) - 1):
             vecList += [[self.nodes[k], self.nodes[k+1]]]
         cpList = map(
             lambda v: self.getClosestPoint(v[0], v[1], p),
@@ -570,7 +569,7 @@ class MovingPolyObstacle:
             cpList
         )
         return [
-            cpList[i] for i,j in enumerate(dList) if j == min(dList)
+            cpList[i] for i, j in enumerate(dList) if j == min(dList)
         ][0]
 
     def getRadius(self):
@@ -586,8 +585,6 @@ class MovingPolyObstacle:
         """
         Translates the obstacle
         """
-
-
 
     def draw(self):
         """

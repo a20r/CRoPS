@@ -88,10 +88,7 @@ class PRMGenerator:
         @param p2 The second point
         @return The Eulidean distance from p1 to p2
         """
-        return np.sqrt(
-            pow(p1[0] - p2[0], 2) +
-            pow(p1[1] - p2[1], 2)
-        )
+        return np.sqrt(pow(p1[0] - p2[0], 2) + pow(p1[1] - p2[1], 2))
 
     def generatePositionList(self, num):
         """
@@ -128,15 +125,17 @@ class PRMGenerator:
         or otherwise inadequate
         """
         delList = list()
+
         for i in range(len(self.subGoalPositionList)):
             for obst in self.obstacleList:
-                if (
-                    self.norm(
+                if obst.dynamic is False:
+                    dist = self.norm(
                         obst.getPoint(self.subGoalPositionList[i]),
                         self.subGoalPositionList[i]
-                    ) < 10
-                ):
-                    delList += [i]
+                    )
+                    if (dist < 10):
+                        delList += [i]
+
         self.subGoalPositionList = [
             self.subGoalPositionList[j] for j in range(
                 len(self.subGoalPositionList)

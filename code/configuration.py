@@ -60,9 +60,10 @@ class PolyFileConfiguration(Configuration):
         """
 
         ## List of obstacles
-        self.obstacleList = mp.mparse(kwargs.get("filename", "maps/m1.map"))
+        self.obstacleList = mp.mparse(kwargs.get("map_file", "maps/m1.map"))
         if kwargs.get("dynamic_obstacles", None) is not None:
-            self.obstacleList.append(mp.mparse(kwargs["dynamic_obstacles"]))
+            for obstacle in mp.mparse(kwargs["dynamic_obstacles"]):
+                self.obstacleList.append(obstacle)
 
         ## Starting point
         self.startPoint = startPoint

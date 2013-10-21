@@ -37,12 +37,16 @@ def mparse(filename):
 
         # determine if obstacles are dynamic
         if file_ext == "obstacles":
+            print "Parsing DYNAMIC obstacles!"
             dynamicObstacle = True
         else:
+            print "Parsing STATIC obstacles!"
             dynamicObstacle = False
 
         # loop through file and create PolyObstacle objects
+        # TODO: this needs reworked... don't really need this leading for-loop
         for _ in range(numberOfPolys):
+            # parse obstacle details
             line = [line for line in f.readline().split()[1:]]
             intList = map(lambda s: int(float(s)), line)
             polyList += [
@@ -66,6 +70,7 @@ def mparse(filename):
                 ]
             ]
 
+            # create and append PolyObstacle to obstacleList
             obstacleList += [
                 obstacle.PolyObstacle(
                     pList,
@@ -75,6 +80,6 @@ def mparse(filename):
             ]
 
     except Exception:
-        print "Opps! filename is None!"
+        print("Error occured while parsing file [{0}]!".format(filename))
     finally:
         return obstacleList

@@ -164,7 +164,8 @@ class FlockSim:
             self.sPos,
             self.ePos,
             self.flockSize,
-            filename=self.mapFile
+            map_file=self.mapFile,
+            dynamic_obstacles=self.obstacleFile
         )
 
         if self.dataFile:
