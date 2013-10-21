@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
 __author__ = "Alex Wallar <aw204@st-andrews.ac.uk>"
@@ -5,6 +6,7 @@ __author__ = "Alex Wallar <aw204@st-andrews.ac.uk>"
 import pygame
 import math as np
 import sys
+
 
 class PolyObstacle:
     """
@@ -14,7 +16,8 @@ class PolyObstacle:
     """
     def __init__(self, _nodes, _screen):
         """
-        Creates a PolyObstacle instance and initializes certain global variables
+        Creates a PolyObstacle instance and initializes certain global
+        variables
         @param _nodes A list of nodes used to represent the vertices
         of the polygon
         @param _screen The PyGame screen that is used to draw the obstacle
@@ -111,7 +114,7 @@ class PolyObstacle:
             max(p1[1], p2[1]) >= min(q1[1], q2[1]) and
             max(q1[1], q2[1]) >= min(p1[1], p2[1])
         )
-        vecList = [[self.nodes[0],self.nodes[-1]]]
+        vecList = [[self.nodes[0], self.nodes[-1]]]
         for k in range(len(self.nodes) - 1):
             vecList += [
                 [

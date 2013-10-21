@@ -6,10 +6,7 @@ import pygame
 import boid
 import configuration
 import time
-import random
-import sys
-import math
-import time
+
 
 class FlockSim:
     """
@@ -39,10 +36,10 @@ class FlockSim:
         self.done = False
 
         ## Defines the color black
-        self.BLACK = (0,0,0)
+        self.BLACK = (0, 0, 0)
 
         ## Defines the color white
-        self.WHITE = (255,255,255)
+        self.WHITE = (255, 255, 255)
 
         ## The font that is used for displaying the frame number
         self.font = pygame.font.Font(None, 50)
@@ -66,7 +63,7 @@ class FlockSim:
         ## Maximum number of iterations
         self.iterations = 800
 
-        ## Counts which frame the user is on for the playback (don't know why it
+        ## Counts which frame the user is on for the playback (don't know why
         ## it is set to -2, it just works)
         self.frameCounter = -2
 
@@ -167,7 +164,7 @@ class FlockSim:
             self.sPos,
             self.ePos,
             self.flockSize,
-            filename = self.mapFile
+            filename=self.mapFile
         )
 
         if self.dataFile:
@@ -179,7 +176,7 @@ class FlockSim:
             self.config.boidList
         )
 
-    def render(self, forPlay = False):
+    def render(self, forPlay=False):
         """
         Renders the scene. This means that the time taken for the boids to
         reach the goal in this function is that actual amount of computational
@@ -215,7 +212,7 @@ class FlockSim:
                     self.config.boidList
                 )
             )
-            if self.dataFile != None:
+            if self.dataFile is not None:
                 self.getBoidData()
                 #self.getStats()
 
@@ -224,7 +221,7 @@ class FlockSim:
             #map(lambda g: g.draw(), self.config.goalList)
             self.config.prmGen.drawPath()
 
-            frame.blit(self.config.screen,(0,0))
+            frame.blit(self.config.screen, (0, 0))
             if forPlay:
                 self.surfaceList += [frame]
             key = pygame.key.get_pressed()
@@ -274,7 +271,7 @@ class FlockSim:
                 0,
                 self.WHITE
             )
-            self.config.screen.blit(text, (0,0))
+            self.config.screen.blit(text, (0, 0))
             pygame.display.flip()
             for e in pygame.event.get():
                 if e.type is pygame.QUIT:
