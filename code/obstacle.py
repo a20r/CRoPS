@@ -150,19 +150,28 @@ class PolyObstacle:
         @param p The point in which the closest distance will be checked
         @return The closest point on line <a, b> to point p
         """
+
+        #pygame.draw.line(self.screen, self.colors["orange"], a, b, 4)
+        a = map(float, a)
+        b = map(float, b)
+        p = map(float, p)
+        xGreater = lambda r: r[0] >= max(a[0], b[0])
+        xLess = lambda r: r[0] <= min(a[0], b[0])
+
+        yGreater = lambda r: r[1] >= max(a[1], b[1])
+        yLess = lambda r: r[1] <= min(a[1], b[1])
+
         if (
-            p[0] >= max(a[0], b[0]) or \
-            p[0] <= min(a[0], b[0])) and \
-            (
-                p[1] >= max(a[1], b[1]) or
-                p[1] <= min(a[1], b[1]
-            )
+                (xGreater(p) or xLess(p)) and
+                (yGreater(p) or yLess(p))
         ):
+
             if self.norm(a, p) < self.norm(b, p):
                 return a
             else:
                 return b
         else:
+            #"""
             a_to_p = [
                 float(p[0] - a[0]),
                 float(p[1] - a[1])
@@ -174,10 +183,29 @@ class PolyObstacle:
             atb2 = a_to_b[0] ** 2 + a_to_b[1] ** 2
             atp_dot_atb = a_to_p[0] * a_to_b[0] + a_to_p[1] * a_to_b[1]
             t = float(atp_dot_atb) / float(atb2)
-            return (
+            retVal =  (
                 float(a[0]) + a_to_b[0] * t,
                 float(a[1]) + a_to_b[1] * t
             )
+
+            if (
+                    (xGreater(retVal) or xLess(retVal)) and
+                    (yGreater(retVal) or yLess(retVal))
+            ):
+                if self.norm(a, retVal) < self.norm(b, retVal):
+                    return a
+                else:
+                    return b
+
+            return retVal
+            #"""
+
+            #lam = -(a[0] * p[0] + a[1] * p[1]) / (p[0] * (b[0] - a[0]) + p[1] * (b[1] - a[1]))
+
+            #xk = (b[0] - a[0]) * lam + a[0]
+            #yk = (b[1] - a[1]) * lam + a[1]
+
+            #return (xk, yk)
 
     def rayintersectseg(self, p, edge):
         """
@@ -271,6 +299,7 @@ class PolyObstacle:
         vecList = list()  # [[self.nodes[0],self.nodes[-1]]]
         for k in range(-1, len(self.nodes) - 1):
             vecList += [[self.nodes[k], self.nodes[k+1]]]
+        #print vecList
         cpList = map(
             lambda v: self.getClosestPoint(v[0], v[1], p),
             vecList
@@ -279,9 +308,15 @@ class PolyObstacle:
             lambda pv: self.norm(p, pv),
             cpList
         )
-        return [
+
+        retVal = [
             cpList[i] for i, j in enumerate(dList) if j == min(dList)
         ][0]
+
+        #pygame.draw.circle(self.screen, self.colors["green"], map(int, retVal), 5)
+
+        return retVal
+
 
     def getRadius(self):
         """
