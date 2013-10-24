@@ -21,7 +21,7 @@ def mapVal(x, in_min, in_max, out_min, out_max):
     )
 
 
-def mparse(filename):
+def mparse(filename, staticObstacleList=None):
     """
     Parses a map file into a list of obstacles
     @param filename The file name of the map file

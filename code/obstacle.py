@@ -3,9 +3,10 @@
 
 __author__ = "Alex Wallar <aw204@st-andrews.ac.uk>"
 
-import pygame
-import math as np
 import sys
+import random
+import math as np
+import pygame
 
 
 class PolyObstacle:
@@ -32,6 +33,9 @@ class PolyObstacle:
         ## The PyGame screen that is used to draw the obstacle
         self.screen = _screen
 
+        ## Bondaries of the simualation
+        self.boundary = (_screen.get_width(), _screen.get_height())
+
         ## Defines wether the obstacle is dynamic or not
         self.dynamic = kwargs.get("dynamic", False)
 
@@ -43,6 +47,9 @@ class PolyObstacle:
 
         ## Max displacement allowed
         self.max_displacement = 100
+
+        ## List of static obstacles
+        self.static_obstacles = kwargs.get("static_obstacles", None)
 
         self.estimatePoly()
 
@@ -296,14 +303,33 @@ class PolyObstacle:
         """
         Translate obstacle
         """
-        for i in range(self.nodes.__len__()):
+        prev_node = None
+
+        for i in range(len(self.nodes)):
+            curr_node = self.nodes[i]
+
             # tuples are immutable hence convert
-            coord = list(self.nodes[i])
-            orig_coord = list(self.nodes[i])
+            coord = list(curr_node)
+            orig_coord = list(curr_node)
 
             # translate x, y
             coord[0] += self.velocity[0]
             coord[1] += self.velocity[1]
+
+            # reverse direction if max displacement reached
+            if self.displacement >= self.max_displacement:
+                self.change_direction()
+
+            # reverse direction if hit boudnary
+            if coord[0] > self.boundary[0] or coord[0] < 0:
+                self.velocity[0] *= -1
+            if coord[1] > self.boundary[1] or coord[1] < 0:
+                self.velocity[1] *= -1
+
+            # bounce off other static obstacles
+            if i != 0:
+                if self.detectCollision(prev_node, curr_node):
+                    self.change_direction()
 
             # convert back to tuple and replace old node
             self.nodes[i] = tuple(coord)
@@ -314,11 +340,33 @@ class PolyObstacle:
                 coord
             )
 
-        # reverse direction if max displacement reached
-        if self.displacement >= self.max_displacement:
-            self.velocity[0] = self.velocity[0] * -1
-            self.velocity[1] = self.velocity[1] * -1
-            self.displacement = 0
+            prev_node = curr_node
+
+    def change_direction(self, change=False, direction=None):
+        """
+        Change direction
+        """
+        change_direction = change
+
+        # change direction?
+        if random.random() > 0.5:
+            change_direction = True
+
+        if change_direction:
+            # determine direction
+            if direction is None:
+                direction = random.random()
+
+            # up, down, left, right
+            if direction < 0.25:
+                self.velocity = [0, 1]  # up
+            elif direction < 0.5:
+                self.velocity = [0, -1]  # down
+            elif direction < 0.75:
+                self.velocity = [-1, 0]  # left
+            else:
+                self.velocity = [1, 0]  # right
+        self.displacement = 0
 
     def draw(self):
         """
