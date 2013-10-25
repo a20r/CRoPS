@@ -21,7 +21,7 @@ def mapVal(x, in_min, in_max, out_min, out_max):
     )
 
 
-def mparse(filename, staticObstacleList=None):
+def mparse(filename, staticObstacleList=list()):
     """
     Parses a map file into a list of obstacles
     @param filename The file name of the map file
@@ -37,16 +37,14 @@ def mparse(filename, staticObstacleList=None):
 
         # determine if obstacles are dynamic
         if file_ext == "obstacles":
-            print "Parsing DYNAMIC obstacles!"
             dynamicObstacle = True
         else:
-            print "Parsing STATIC obstacles!"
             dynamicObstacle = False
 
         # loop through file and create PolyObstacle objects
-        # TODO: this needs reworked... don't really need this leading for-loop
         for _ in range(numberOfPolys):
             # parse obstacle details
+            polyList = list()
             line = [line for line in f.readline().split()[1:]]
             intList = map(lambda s: int(float(s)), line)
             polyList += [
@@ -75,7 +73,8 @@ def mparse(filename, staticObstacleList=None):
                 obstacle.PolyObstacle(
                     pList,
                     con.Configuration.screen,
-                    dynamic=dynamicObstacle
+                    dynamic=dynamicObstacle,
+                    static_obstacles=staticObstacleList
                 ) for pList in polyList
             ]
 

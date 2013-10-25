@@ -62,10 +62,11 @@ class PolyFileConfiguration(Configuration):
         ## List of obstacles
         # parse static obstalces
         self.obstacleList = mp.mparse(kwargs.get("map_file", "maps/m1.map"))
+        static_obstacles = [obst for obst in self.obstacleList]
         # parse dynamic obstalces
         dynamic_obstacles_fp = kwargs.get("dynamic_obstacles", None)
         if dynamic_obstacles_fp is not None:
-            dyn_obstacles = mp.mparse(dynamic_obstacles_fp, self.obstacleList)
+            dyn_obstacles = mp.mparse(dynamic_obstacles_fp, static_obstacles)
             for obstacle in dyn_obstacles:
                 self.obstacleList.append(obstacle)
 

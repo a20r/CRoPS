@@ -46,11 +46,15 @@ class PolyObstacle:
         self.displacement = 0
 
         ## Max displacement allowed
-        self.max_displacement = 100
+        self.max_displacement = 500
 
         ## List of static obstacles
-        self.static_obstacles = kwargs.get("static_obstacles", None)
-
+        self.static_obstacles = kwargs.get("static_obstacles", list())
+        # print self.static_obstacles
+        # if self.dynamic:
+        #     for obst in self.static_obstacles:
+        #         if id(self) == id(obst):
+        #             print id(self), id(obst)
         self.estimatePoly()
 
     def norm(self, p1, p2):
@@ -157,19 +161,28 @@ class PolyObstacle:
         @param p The point in which the closest distance will be checked
         @return The closest point on line <a, b> to point p
         """
+
+        #pygame.draw.line(self.screen, self.colors["orange"], a, b, 4)
+        a = map(float, a)
+        b = map(float, b)
+        p = map(float, p)
+        xGreater = lambda r: r[0] >= max(a[0], b[0])
+        xLess = lambda r: r[0] <= min(a[0], b[0])
+
+        yGreater = lambda r: r[1] >= max(a[1], b[1])
+        yLess = lambda r: r[1] <= min(a[1], b[1])
+
         if (
-            p[0] >= max(a[0], b[0]) or \
-            p[0] <= min(a[0], b[0])) and \
-            (
-                p[1] >= max(a[1], b[1]) or
-                p[1] <= min(a[1], b[1]
-            )
+                (xGreater(p) or xLess(p)) and
+                (yGreater(p) or yLess(p))
         ):
+
             if self.norm(a, p) < self.norm(b, p):
                 return a
             else:
                 return b
         else:
+            #"""
             a_to_p = [
                 float(p[0] - a[0]),
                 float(p[1] - a[1])
@@ -181,10 +194,29 @@ class PolyObstacle:
             atb2 = a_to_b[0] ** 2 + a_to_b[1] ** 2
             atp_dot_atb = a_to_p[0] * a_to_b[0] + a_to_p[1] * a_to_b[1]
             t = float(atp_dot_atb) / float(atb2)
-            return (
+            retVal =  (
                 float(a[0]) + a_to_b[0] * t,
                 float(a[1]) + a_to_b[1] * t
             )
+
+            if (
+                    (xGreater(retVal) or xLess(retVal)) and
+                    (yGreater(retVal) or yLess(retVal))
+            ):
+                if self.norm(a, retVal) < self.norm(b, retVal):
+                    return a
+                else:
+                    return b
+
+            return retVal
+            #"""
+
+            #lam = -(a[0] * p[0] + a[1] * p[1]) / (p[0] * (b[0] - a[0]) + p[1] * (b[1] - a[1]))
+
+            #xk = (b[0] - a[0]) * lam + a[0]
+            #yk = (b[1] - a[1]) * lam + a[1]
+
+            #return (xk, yk)
 
     def rayintersectseg(self, p, edge):
         """
@@ -278,6 +310,7 @@ class PolyObstacle:
         vecList = list()  # [[self.nodes[0],self.nodes[-1]]]
         for k in range(-1, len(self.nodes) - 1):
             vecList += [[self.nodes[k], self.nodes[k+1]]]
+        #print vecList
         cpList = map(
             lambda v: self.getClosestPoint(v[0], v[1], p),
             vecList
@@ -286,9 +319,14 @@ class PolyObstacle:
             lambda pv: self.norm(p, pv),
             cpList
         )
-        return [
+
+        retVal = [
             cpList[i] for i, j in enumerate(dList) if j == min(dList)
         ][0]
+
+        #pygame.draw.circle(self.screen, self.colors["green"], map(int, retVal), 5)
+
+        return retVal
 
     def getRadius(self):
         """
@@ -299,11 +337,35 @@ class PolyObstacle:
         """
         return 1
 
+    def checkCollisionWithStatic(self, node):
+        """
+        Check to see if there is a collision with a static obstacle
+        """
+        # check for every static obstacle's nodes
+        # print len(self.static_obstacles)
+        for static_obstacle in self.static_obstacles:
+            if static_obstacle.pointInPoly(node):
+                # print static_obstacle
+            # if self.norm(node, static_obstacle.getPoint(node)) <= 0:
+                return True
+        return False
+
     def translate(self):
         """
         Translate obstacle
         """
-        prev_node = None
+        collision = False
+
+        if self.dynamic:
+            for node in self.nodes:
+                if self.checkCollisionWithStatic(node):
+                    collision = True
+                    break
+
+        if collision:
+            self.displacement = 0
+            self.velocity[0] *= -1
+            self.velocity[1] *= -1
 
         for i in range(len(self.nodes)):
             curr_node = self.nodes[i]
@@ -316,7 +378,7 @@ class PolyObstacle:
             coord[0] += self.velocity[0]
             coord[1] += self.velocity[1]
 
-            # reverse direction if max displacement reached
+            # chage direction if max displacement reached
             if self.displacement >= self.max_displacement:
                 self.change_direction()
 
@@ -325,11 +387,6 @@ class PolyObstacle:
                 self.velocity[0] *= -1
             if coord[1] > self.boundary[1] or coord[1] < 0:
                 self.velocity[1] *= -1
-
-            # bounce off other static obstacles
-            if i != 0:
-                if self.detectCollision(prev_node, curr_node):
-                    self.change_direction()
 
             # convert back to tuple and replace old node
             self.nodes[i] = tuple(coord)
@@ -340,19 +397,17 @@ class PolyObstacle:
                 coord
             )
 
-            prev_node = curr_node
-
-    def change_direction(self, change=False, direction=None):
+    def change_direction(self, force_change=False, direction=None):
         """
         Change direction
         """
-        change_direction = change
+        change_direction = False
 
         # change direction?
         if random.random() > 0.5:
             change_direction = True
 
-        if change_direction:
+        if change_direction or force_change:
             # determine direction
             if direction is None:
                 direction = random.random()
