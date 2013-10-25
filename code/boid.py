@@ -267,7 +267,7 @@ class Boid:
 
         ## The radius of influence used when filtering
         ## the number of obstacles it needs to check
-        self.obInfluenceR   = 200
+        self.obInfluenceR   = 100
 
         ## The radius of influence used when filtering
         ## the number of boids it needs to check
@@ -275,7 +275,7 @@ class Boid:
 
         ## Priori constant for obstacle repulsion (increasing it
         ## gives more priority to the repulsive obstacle field)
-        self.obBeta         = 50
+        self.obBeta         = 80
 
         ## Scales the value returned by the sigmoid function
         ## for goal attraction
@@ -409,6 +409,8 @@ class Boid:
         the influence of obstacles on the heading. Also returns the sum of the
         potential values
         """
+
+        """
         for ob in self.obstacleList:
             pygame.draw.circle(
                 self.screen,
@@ -416,6 +418,7 @@ class Boid:
                 map(int, ob.getPoint(self.position)),
                 2
             )
+        """
         influenceOb = filter(
             lambda o: self.norm(
                 o.getPoint(self.position),

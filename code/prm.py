@@ -75,6 +75,9 @@ class PRMGenerator:
         ## Holds the positions of the intermediate goals that were selected
         ## by the global path planner
         self.gPosList = list()
+
+        ## Indexes of the goal positions
+        self.goalNodes = list()
         ## Dictionary (for easy access) that holds the weights for the nodes
         self.omegaDict = dict()
         self.filterSubGoal()
@@ -115,7 +118,7 @@ class PRMGenerator:
                     self.obstacleList
                 )
             )
-        ) ** 3
+        )
         for p in posList:
             self.omegaDict[p] = omega(p)
 
@@ -246,13 +249,14 @@ class PRMGenerator:
                     for e in pygame.event.get():
                         if e.type is pygame.QUIT:
                             exit()
+            self.goalNodes = dijkstra.shortestPath(
+                self.roadmap,
+                0,
+                len(self.subGoalPositionList) - 1
+            )
             self.gPosList = map(
                 lambda k: self.subGoalPositionList[k],
-                dijkstra.shortestPath(
-                    self.roadmap,
-                    0,
-                    len(self.subGoalPositionList) - 1
-                )
+                self.goalNodes
             )
             if len(self.gPosList) == 1:
                 currentPos = len(self.subGoalPositionList) - 1
@@ -273,6 +277,7 @@ class PRMGenerator:
                 self.initOmega(newPosList)
                 self.subGoalPositionList[1: -1] += newPosList
                 self.filterSubGoal()
+        #print self.roadmap
         return map(
             lambda p: goal.CircleGoal(
                 subGoalRadius,
@@ -280,6 +285,13 @@ class PRMGenerator:
                 self.screen
             ),
             self.gPosList
+        )
+
+    def getShortestPath(self, fromNode, toNode):
+        return dijkstra.shortestPath(
+            self.roadmap,
+            fromNode,
+            toNode
         )
 
     def draw(self):

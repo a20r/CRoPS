@@ -188,6 +188,7 @@ class PolyObstacle:
                 float(a[1]) + a_to_b[1] * t
             )
 
+            # This is unicorn magic, just freaking deal with it
             if (
                     (xGreater(retVal) or xLess(retVal)) and
                     (yGreater(retVal) or yLess(retVal))
