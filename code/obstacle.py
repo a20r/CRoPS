@@ -3,9 +3,10 @@
 
 __author__ = "Alex Wallar <aw204@st-andrews.ac.uk>"
 
-import pygame
-import math as np
 import sys
+import random
+import math as np
+import pygame
 
 
 class PolyObstacle:
@@ -32,6 +33,9 @@ class PolyObstacle:
         ## The PyGame screen that is used to draw the obstacle
         self.screen = _screen
 
+        ## Bondaries of the simualation
+        self.boundary = (_screen.get_width(), _screen.get_height())
+
         ## Defines wether the obstacle is dynamic or not
         self.dynamic = kwargs.get("dynamic", False)
 
@@ -42,8 +46,15 @@ class PolyObstacle:
         self.displacement = 0
 
         ## Max displacement allowed
-        self.max_displacement = 100
+        self.max_displacement = 500
 
+        ## List of static obstacles
+        self.static_obstacles = kwargs.get("static_obstacles", list())
+        # print self.static_obstacles
+        # if self.dynamic:
+        #     for obst in self.static_obstacles:
+        #         if id(self) == id(obst):
+        #             print id(self), id(obst)
         self.estimatePoly()
 
     def norm(self, p1, p2):
@@ -318,7 +329,6 @@ class PolyObstacle:
 
         return retVal
 
-
     def getRadius(self):
         """
         Gets the 'radius' of the checking point. Only used for
@@ -328,18 +338,56 @@ class PolyObstacle:
         """
         return 1
 
+    def checkCollisionWithStatic(self, node):
+        """
+        Check to see if there is a collision with a static obstacle
+        """
+        # check for every static obstacle's nodes
+        # print len(self.static_obstacles)
+        for static_obstacle in self.static_obstacles:
+            if static_obstacle.pointInPoly(node):
+                # print static_obstacle
+            # if self.norm(node, static_obstacle.getPoint(node)) <= 0:
+                return True
+        return False
+
     def translate(self):
         """
         Translate obstacle
         """
-        for i in range(self.nodes.__len__()):
+        collision = False
+
+        if self.dynamic:
+            for node in self.nodes:
+                if self.checkCollisionWithStatic(node):
+                    collision = True
+                    break
+
+        if collision:
+            self.displacement = 0
+            self.velocity[0] *= -1
+            self.velocity[1] *= -1
+
+        for i in range(len(self.nodes)):
+            curr_node = self.nodes[i]
+
             # tuples are immutable hence convert
-            coord = list(self.nodes[i])
-            orig_coord = list(self.nodes[i])
+            coord = list(curr_node)
+            orig_coord = list(curr_node)
 
             # translate x, y
             coord[0] += self.velocity[0]
             coord[1] += self.velocity[1]
+
+            # chage direction if max displacement reached
+            if self.displacement >= self.max_displacement:
+                self.change_direction()
+
+            # reverse direction if hit boudnary
+            if coord[0] > self.boundary[0] or coord[0] < 0:
+                self.velocity[0] *= -1
+            if coord[1] > self.boundary[1] or coord[1] < 0:
+                self.velocity[1] *= -1
 
             # convert back to tuple and replace old node
             self.nodes[i] = tuple(coord)
@@ -350,11 +398,31 @@ class PolyObstacle:
                 coord
             )
 
-        # reverse direction if max displacement reached
-        if self.displacement >= self.max_displacement:
-            self.velocity[0] = self.velocity[0] * -1
-            self.velocity[1] = self.velocity[1] * -1
-            self.displacement = 0
+    def change_direction(self, force_change=False, direction=None):
+        """
+        Change direction
+        """
+        change_direction = False
+
+        # change direction?
+        if random.random() > 0.5:
+            change_direction = True
+
+        if change_direction or force_change:
+            # determine direction
+            if direction is None:
+                direction = random.random()
+
+            # up, down, left, right
+            if direction < 0.25:
+                self.velocity = [0, 1]  # up
+            elif direction < 0.5:
+                self.velocity = [0, -1]  # down
+            elif direction < 0.75:
+                self.velocity = [-1, 0]  # left
+            else:
+                self.velocity = [1, 0]  # right
+        self.displacement = 0
 
     def draw(self):
         """
