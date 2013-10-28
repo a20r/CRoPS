@@ -72,7 +72,7 @@ class PolyFileConfiguration(Configuration):
 
         # pass in obstacle list to dynamic obstacles
         for obst in self.obstacleList:
-            obst.static_obstacles = list(self.obstacleList)  # make cpy not ref
+            obst.obstacles = list(self.obstacleList)  # make cpy not ref
             if obst.dynamic:
                 obst.removeSelfFromObstacleList()
 

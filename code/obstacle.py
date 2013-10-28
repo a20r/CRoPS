@@ -49,7 +49,7 @@ class PolyObstacle:
         self.max_displacement = 100
 
         ## List of static obstacles
-        self.static_obstacles = list()
+        self.obstacles = list()
 
         self.estimatePoly()
 
@@ -57,9 +57,9 @@ class PolyObstacle:
         """
         Removes self from obstacle list
         """
-        for obst in self.static_obstacles:
+        for obst in self.obstacles:
             if id(self) == id(obst):
-                self.static_obstacles.remove(obst)
+                self.obstacles.remove(obst)
 
     def norm(self, p1, p2):
         """
@@ -346,27 +346,28 @@ class PolyObstacle:
         Check to see if there is a collision with a static obstacle
         """
         # check for every static obstacle's nodes
-        for static_obstacle in self.static_obstacles:
-            if static_obstacle.pointInPoly(node):
-                return True
-        return False
+        for obstacle in self.obstacles:
+            if obstacle.pointInPoly(node):
+                return obstacle
+            if self.norm(node, obstacle.getPoint(node)) <= 0:
+                return obstacle
 
     def translate(self):
         """
         Translate obstacle
         """
-        collision = False
-
         if self.dynamic:
             for node in self.nodes:
-                if self.checkCollisionWithOtherObstacles(node):
-                    collision = True
-                    break
+                obst = self.checkCollisionWithOtherObstacles(node)
+                if obst:
+                    obst.displacement = 0
+                    obst.velocity[0] *= -1
+                    obst.velocity[1] *= -1
 
-        if collision:
-            self.displacement = 0
-            self.velocity[0] *= -1
-            self.velocity[1] *= -1
+                    self.displacement = 0
+                    self.velocity[0] *= -1
+                    self.velocity[1] *= -1
+                    break
 
         for i in range(len(self.nodes)):
             curr_node = self.nodes[i]
