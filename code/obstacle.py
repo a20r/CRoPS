@@ -49,13 +49,17 @@ class PolyObstacle:
         self.max_displacement = 100
 
         ## List of static obstacles
-        self.static_obstacles = kwargs.get("static_obstacles", list())
-        # print self.static_obstacles
-        # if self.dynamic:
-        #     for obst in self.static_obstacles:
-        #         if id(self) == id(obst):
-        #             print id(self), id(obst)
+        self.static_obstacles = list()
+
         self.estimatePoly()
+
+    def removeSelfFromObstacleList(self):
+        """
+        Removes self from obstacle list
+        """
+        for obst in self.static_obstacles:
+            if id(self) == id(obst):
+                self.static_obstacles.remove(obst)
 
     def norm(self, p1, p2):
         """
@@ -337,16 +341,13 @@ class PolyObstacle:
         """
         return 1
 
-    def checkCollisionWithStatic(self, node):
+    def checkCollisionWithOtherObstacles(self, node):
         """
         Check to see if there is a collision with a static obstacle
         """
         # check for every static obstacle's nodes
-        # print len(self.static_obstacles)
         for static_obstacle in self.static_obstacles:
             if static_obstacle.pointInPoly(node):
-                # print static_obstacle
-            # if self.norm(node, static_obstacle.getPoint(node)) <= 0:
                 return True
         return False
 
@@ -358,7 +359,7 @@ class PolyObstacle:
 
         if self.dynamic:
             for node in self.nodes:
-                if self.checkCollisionWithStatic(node):
+                if self.checkCollisionWithOtherObstacles(node):
                     collision = True
                     break
 
