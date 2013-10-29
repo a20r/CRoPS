@@ -46,16 +46,20 @@ class PolyObstacle:
         self.displacement = 0
 
         ## Max displacement allowed
-        self.max_displacement = 500
+        self.max_displacement = 100
 
         ## List of static obstacles
-        self.static_obstacles = kwargs.get("static_obstacles", list())
-        # print self.static_obstacles
-        # if self.dynamic:
-        #     for obst in self.static_obstacles:
-        #         if id(self) == id(obst):
-        #             print id(self), id(obst)
+        self.obstacles = list()
+
         self.estimatePoly()
+
+    def removeSelfFromObstacleList(self):
+        """
+        Removes self from obstacle list
+        """
+        for obst in self.obstacles:
+            if id(self) == id(obst):
+                self.obstacles.remove(obst)
 
     def norm(self, p1, p2):
         """
@@ -338,35 +342,33 @@ class PolyObstacle:
         """
         return 1
 
-    def checkCollisionWithStatic(self, node):
+    def checkCollisionWithOtherObstacles(self, node):
         """
         Check to see if there is a collision with a static obstacle
         """
         # check for every static obstacle's nodes
-        # print len(self.static_obstacles)
-        for static_obstacle in self.static_obstacles:
-            if static_obstacle.pointInPoly(node):
-                # print static_obstacle
-            # if self.norm(node, static_obstacle.getPoint(node)) <= 0:
-                return True
-        return False
+        for obstacle in self.obstacles:
+            if obstacle.pointInPoly(node):
+                return obstacle
+            if self.norm(node, obstacle.getPoint(node)) <= 0:
+                return obstacle
 
     def translate(self):
         """
         Translate obstacle
         """
-        collision = False
-
         if self.dynamic:
             for node in self.nodes:
-                if self.checkCollisionWithStatic(node):
-                    collision = True
-                    break
+                obst = self.checkCollisionWithOtherObstacles(node)
+                if obst:
+                    obst.displacement = 0
+                    obst.velocity[0] *= -1
+                    obst.velocity[1] *= -1
 
-        if collision:
-            self.displacement = 0
-            self.velocity[0] *= -1
-            self.velocity[1] *= -1
+                    self.displacement = 0
+                    self.velocity[0] *= -1
+                    self.velocity[1] *= -1
+                    break
 
         for i in range(len(self.nodes)):
             curr_node = self.nodes[i]
@@ -398,11 +400,25 @@ class PolyObstacle:
                 coord
             )
 
+    def determine_last_direction(self):
+        velocity = self.velocity
+
+        if velocity == [0, 1]:
+            return "UP"
+        elif velocity == [0, -1]:
+            return "DOWN"
+        elif velocity == [-1, 0]:
+            return "LEFT"
+        elif velocity == [1, 0]:
+            return "RIGHT"
+
     def change_direction(self, force_change=False, direction=None):
         """
         Change direction
         """
         change_direction = False
+        last_direction = self.determine_last_direction()
+        curr_direction = None
 
         # change direction?
         if random.random() > 0.5:
@@ -414,14 +430,29 @@ class PolyObstacle:
                 direction = random.random()
 
             # up, down, left, right
-            if direction < 0.25:
+            if direction <= 0.25:
                 self.velocity = [0, 1]  # up
-            elif direction < 0.5:
+                curr_direction = "UP"
+            elif direction <= 0.5:
                 self.velocity = [0, -1]  # down
-            elif direction < 0.75:
+                curr_direction = "DOWN"
+            elif direction <= 0.75:
                 self.velocity = [-1, 0]  # left
+                curr_direction = "LEFT"
             else:
                 self.velocity = [1, 0]  # right
+                curr_direction = "RIGHT"
+
+        if last_direction == curr_direction:
+            if last_direction == "UP":
+                self.change_direction(True, 1.0)  # right
+            elif last_direction == "DOWN":
+                self.change_direction(True, 0.75)  # left
+            elif last_direction == "LEFT":
+                self.change_direction(True, 0.25)  # up
+            elif last_direction == "RIGHT":
+                self.change_direction(True, 0.5)  # down
+
         self.displacement = 0
 
     def draw(self):

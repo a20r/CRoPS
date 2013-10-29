@@ -73,8 +73,7 @@ def mparse(filename, staticObstacleList=list()):
                 obstacle.PolyObstacle(
                     pList,
                     con.Configuration.screen,
-                    dynamic=dynamicObstacle,
-                    static_obstacles=staticObstacleList
+                    dynamic=dynamicObstacle
                 ) for pList in polyList
             ]
 
