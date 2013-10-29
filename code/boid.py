@@ -267,15 +267,15 @@ class Boid:
 
         ## The radius of influence used when filtering
         ## the number of obstacles it needs to check
-        self.obInfluenceR   = 100
+        self.obInfluenceR   = 40
 
         ## The radius of influence used when filtering
         ## the number of boids it needs to check
-        self.bInfluenceR    = 40 + 2 * self.radius
+        self.bInfluenceR    = 20 + 2 * self.radius
 
         ## Priori constant for obstacle repulsion (increasing it
         ## gives more priority to the repulsive obstacle field)
-        self.obBeta         = 80
+        self.obBeta         = 500
 
         ## Scales the value returned by the sigmoid function
         ## for goal attraction
@@ -339,7 +339,7 @@ class Boid:
         self.randWalkCount  = 0
 
         ## Weights how much the previous heading affects the new heading
-        self.headWeightList = [2, 1]
+        self.headWeightList = [3, 1]
 
     def setBoidList(self, _boidList):
         """
@@ -636,7 +636,7 @@ class Boid:
                 gMagSum
             )
 
-            #self.stuck = False
+            self.stuck = False
 
             if not self.stuck:
                 self.randWalkCount = 0
@@ -650,13 +650,13 @@ class Boid:
                     self.neighborSize
                 )
                 self.compWeightList = [
-                    50 * self.neighborSize,
+                    10 * self.neighborSize,
                     bMagSum,
                     gMagSum,
                     obMagSum
                 ]
 
-                #print self.compWeightList
+                print self.compWeightList
 
                 nHeading = self.reduceWeightValues(
                     self.compWeightList,
@@ -718,7 +718,7 @@ class Boid:
         # if the boid is not at the last goal
         elif self.goalCounter < len(self.goalList) - 1:
             self.setNewGoal()
-        self.stuck = self.updatePositionBuffer() < self.stuckConst
+        #self.stuck = self.updatePositionBuffer() < self.stuckConst
 
     def draw(self):
         """

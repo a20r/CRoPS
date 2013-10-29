@@ -21,7 +21,7 @@ if __name__ == "__main__":
     	},
     	"maps/empty.map": {
     		"startPoint": (50, 50), #(50, 600)
-    		"endPoint": (980, 30)
+    		"endPoint": (980, 600)
     	}
     }
 
