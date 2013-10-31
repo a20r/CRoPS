@@ -351,6 +351,7 @@ class PolyObstacle:
                 return obstacle
             if self.norm(node, obstacle.getPoint(node)) <= 0:
                 return obstacle
+        return None
 
     def translate(self):
         """
@@ -359,7 +360,7 @@ class PolyObstacle:
         if self.dynamic:
             for node in self.nodes:
                 obst = self.checkCollisionWithOtherObstacles(node)
-                if obst:
+                if obst:  # hit with another obstacle?
                     obst.displacement = 0
                     obst.velocity[0] *= -1
                     obst.velocity[1] *= -1
