@@ -82,6 +82,12 @@ class FlockSim:
         ## File containing the obstacles map points
         self.obstacleFile = kwargs.get("obstacle_file", None)
 
+        ## Auto Generate Random obstacles Flag
+        self.auto_gen_obst = kwargs.get("auto_gen_obst", False)
+
+        ## Number of random dynamic obstacles to generate
+        self.auto_gen_number = kwargs.get("auto_gen_number", 0)
+
     def avg(self, l):
         """
         Gets the average of a list
@@ -165,7 +171,9 @@ class FlockSim:
             self.ePos,
             self.flockSize,
             map_file=self.mapFile,
-            dynamic_obstacles=self.obstacleFile
+            dynamic_obstacles=self.obstacleFile,
+            auto_gen_obst=self.auto_gen_obst,
+            auto_gen_number=self.auto_gen_number
         )
 
         if self.dataFile:

@@ -656,7 +656,7 @@ class Boid:
                     obMagSum
                 ]
 
-                print self.compWeightList
+                #print self.compWeightList
 
                 nHeading = self.reduceWeightValues(
                     self.compWeightList,
