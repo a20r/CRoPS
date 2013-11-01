@@ -360,7 +360,7 @@ class PolyObstacle:
         if self.dynamic:
             for node in self.nodes:
                 obst = self.checkCollisionWithOtherObstacles(node)
-                if obst:  # hit with another obstacle?
+                if obst:  # collided with another obstacle?
                     obst.displacement = 0
                     obst.velocity[0] *= -1
                     obst.velocity[1] *= -1
