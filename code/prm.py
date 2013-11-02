@@ -265,10 +265,6 @@ class PRMGenerator:
                     currentPos,
                     currentPos - 1,
                     currentPos + 1,
-                    #currentPos - 2,
-                    #currentPos + 2,
-                    #currentPos - 3,
-                    #currentPos + 3
                 ]
 
                 newPosList = self.generatePositionList(
@@ -287,9 +283,9 @@ class PRMGenerator:
             self.gPosList
         )
 
-    def getShortestPath(self, fromNode, toNode):
+    def getShortestPath(self, roadmap, fromNode, toNode):
         return dijkstra.shortestPath(
-            self.roadmap,
+            roadmap,
             fromNode,
             toNode
         )

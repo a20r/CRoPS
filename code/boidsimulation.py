@@ -125,6 +125,7 @@ class FlockSim:
 
         # writes data to the file
         self.dataFile.write(
+            "current_step: " + str(self.counter) +
             "current_time: " + str(endTime - self.startTime) +
             ", average_distance: " + str(avgDistVal) +
             ", average_min_distance: " + str(avgMinVal) +
@@ -178,6 +179,7 @@ class FlockSim:
 
         if self.dataFile:
             self.dataFile = open(self.dataFile, "w")
+            #print self.dataFile
             self.dataFile.truncate()
 
         map(
@@ -222,8 +224,8 @@ class FlockSim:
                 )
             )
             if self.dataFile is not None:
-                self.getBoidData()
-                #self.getStats()
+                #self.getBoidData()
+                self.getStats()
 
             map(lambda o: o.draw(), self.config.obstacleList)
             map(lambda b: b.draw(), self.config.boidList)

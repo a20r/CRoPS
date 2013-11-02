@@ -125,6 +125,13 @@ class Boid:
             ) for i in range(20)
         ]
 
+        self.goalNodes = list()
+        self.goalNodes.extend(self.prmGen.goalNodes)
+        #print self.goalNodes
+        self.roadmap = self.prmGen.roadmap.copy()
+        self.endIndex = self.goalNodes[-1]
+        #print self.roadmap
+
         self.initFunctionParameters()
 
     def sumDivide(self, lt, s):
@@ -267,15 +274,15 @@ class Boid:
 
         ## The radius of influence used when filtering
         ## the number of obstacles it needs to check
-        self.obInfluenceR   = 40
+        self.obInfluenceR   = 20
 
         ## The radius of influence used when filtering
         ## the number of boids it needs to check
-        self.bInfluenceR    = 20 + 2 * self.radius
+        self.bInfluenceR    = 5 + 2 * self.radius
 
         ## Priori constant for obstacle repulsion (increasing it
         ## gives more priority to the repulsive obstacle field)
-        self.obBeta         = 500
+        self.obBeta         = 800
 
         ## Scales the value returned by the sigmoid function
         ## for goal attraction
@@ -295,7 +302,7 @@ class Boid:
 
         ## Scales the value returned by the sigmoid function for
         ## boid repulsion
-        self.bAlpha         = 1
+        self.bAlpha         = 30
 
         ## Helps scale the value returned by the sigmoid function
         # for boid repulsion
@@ -613,11 +620,54 @@ class Boid:
             )
         )
 
+    def determineNewPath(self):
+        minIndex = 0
+        currentMinDistance = 0
+        for i, k in enumerate(self.prmGen.subGoalPositionList):
+            if i == 0:
+                currentMinDistance = self.norm(k, self.position)
+                continue
+            tempDist = self.norm(k, self.position)
+            if tempDist < currentMinDistance and not i in self.goalNodes:
+                currentMinDistance = tempDist
+                minIndex = i
+
+        for gni in self.goalNodes[self.goalCounter - 1 : self.goalCounter + 2]:
+            for key in self.roadmap[gni].keys():
+                self.roadmap[gni][key] *= 1.5
+
+        self.goalNodes = self.prmGen.getShortestPath(
+            self.roadmap,
+            minIndex,
+            self.endIndex
+        )
+        #print self.goalNodes
+        self.goalList = map(
+            lambda gIndex: goal.CircleGoal(
+                20, # sub goal radius
+                self.prmGen.subGoalPositionList[gIndex],
+                self.screen
+            ), self.goalNodes
+        )
+        self.goalCounter = 0
+        self.goal = self.goalList[self.goalCounter]
+        #print self.goalList
+
     def update(self):
         """
         Updates the boid's heading and position due to the potential fields
         """
         if not self.inGoal(self.position):
+            if self.stuck:
+                self.determineNewPath()
+                self.stuck = False
+                self.positionBuffer = [
+                    (
+                        5 * i,
+                        5 * i
+                    ) for i in range(20)
+                ]
+
             neighborVectorList, nIndexes = self.getNeighborVectorList()
             bVectorList, bMagSum = self.getBoidVectorList()
             obstacleVectorList, obMagSum = self.getObstacleVectorList()
@@ -636,89 +686,49 @@ class Boid:
                 gMagSum
             )
 
-            self.stuck = False
+            #self.stuck = False
+            self.randWalkCount = 0
+            self.gammaFunc = lambda dX: guassianFunc(
+                dX,
+                dAvg = self.nStuckDAvg,
+                dSigma = self.nStuckDSigma
+            )
+            neVecSum = self.sumDivide(
+                neighborVectorList,
+                self.neighborSize
+            )
+            self.compWeightList = [
+                10 * self.neighborSize,
+                bMagSum,
+                gMagSum,
+                obMagSum
+            ]
 
-            if not self.stuck:
-                self.randWalkCount = 0
-                self.gammaFunc = lambda dX: guassianFunc(
-                    dX,
-                    dAvg = self.nStuckDAvg,
-                    dSigma = self.nStuckDSigma
-                )
-                neVecSum = self.sumDivide(
-                    neighborVectorList,
-                    self.neighborSize
-                )
-                self.compWeightList = [
-                    10 * self.neighborSize,
-                    bMagSum,
-                    gMagSum,
-                    obMagSum
-                ]
+            #print self.compWeightList
 
-                #print self.compWeightList
-
-                nHeading = self.reduceWeightValues(
-                    self.compWeightList,
-                    neVecSum,
-                    boVecSum,
-                    goVecSum,
-                    obVecSum
-                )
-                self.heading = self.reduceWeightValues(
-                    self.headWeightList,
-                    self.heading,
-                    nHeading
-                )
-                newPos = (
-                    self.position[0] + self.heading[0],
-                    self.position[1] + self.heading[1]
-                )
-                if self.inWorld(newPos) and self.pointAllowed(newPos):
-                    self.position = newPos
-            else:
-                self.gammaFunc = lambda dX: guassianFunc(
-                    dX,
-                    dAvg = self.stuckDAvg,
-                    dSigma = self.stuckDSigma
-                )
-                rX, rY = self.determineRandomWalk()
-                neVecSum = self.sumDivide(
-                    neighborVectorList,
-                    self.neighborSize
-                )
-                self.compWeightList = [
-                    5 * self.neighborSize,
-                    bMagSum,
-                    gMagSum,
-                    obMagSum
-                ]
-                nHeading = self.reduceWeightValues(
-                    self.compWeightList,
-                    neVecSum,
-                    boVecSum,
-                    goVecSum,
-                    obVecSum
-                )
-                self.heading = self.reduceWeightValues(
-                    map(
-                        lambda v: -1 * v,
-                        self.headWeightList
-                    ),
-                    self.heading,
-                    nHeading
-                )
-                newPos = (
-                    self.position[0] + self.heading[0] + rX,
-                    self.position[1] + self.heading[1] + rY
-                )
-                if self.inWorld(newPos) and self.pointAllowed(newPos):
-                    self.position = newPos
+            nHeading = self.reduceWeightValues(
+                self.compWeightList,
+                neVecSum,
+                boVecSum,
+                goVecSum,
+                obVecSum
+            )
+            self.heading = self.reduceWeightValues(
+                self.headWeightList,
+                self.heading,
+                nHeading
+            )
+            newPos = (
+                self.position[0] + self.heading[0],
+                self.position[1] + self.heading[1]
+            )
+            if self.inWorld(newPos) and self.pointAllowed(newPos):
+                self.position = newPos
 
         # if the boid is not at the last goal
         elif self.goalCounter < len(self.goalList) - 1:
             self.setNewGoal()
-        #self.stuck = self.updatePositionBuffer() < self.stuckConst
+        self.stuck = self.updatePositionBuffer() < self.stuckConst
 
     def draw(self):
         """
