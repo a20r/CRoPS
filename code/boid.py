@@ -632,9 +632,9 @@ class Boid:
                 currentMinDistance = tempDist
                 minIndex = i
 
-        for gni in self.goalNodes[self.goalCounter - 1 : self.goalCounter + 2]:
+        for gni in self.goalNodes[self.goalCounter:self.goalCounter + 4]:
             for key in self.roadmap[gni].keys():
-                self.roadmap[gni][key] *= 1.5
+                self.roadmap[gni][key] *= 3
 
         self.goalNodes = self.prmGen.getShortestPath(
             self.roadmap,
