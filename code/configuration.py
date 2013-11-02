@@ -73,7 +73,7 @@ class PolyFileConfiguration(Configuration):
             res = obst.pointInPoly(node)
             if res:
                 return False  # node is invalid, it is inside an obstacle
-            if obst.norm(node, obst.getPoint(node)) <= 10:
+            if obst.norm(node, obst.getPoint(node)) <= 20:
                 return False
 
         # check against other about-to-be obstacles (i.e. other nodes)
@@ -88,8 +88,8 @@ class PolyFileConfiguration(Configuration):
                 y = n_1[1] - n_2[1]
                 dist = math.sqrt(math.pow(x, 2) + math.pow(y, 2))
 
-                # should be bigger than 20 units away from each other
-                if dist < 20:
+                # should be bigger than 30 units away from each other
+                if dist < 30:
                     return False
 
         return True
@@ -111,8 +111,8 @@ class PolyFileConfiguration(Configuration):
 
         while (obst_generated < self.auto_gen_number):
             # generate vertices at random co-ordinates for dynamic obstacles
-            top_left[0] = random.randint(width, Configuration.xSize - width)
-            top_left[1] = random.randint(height, Configuration.ySize - height)
+            top_left[0] = random.randint(40, Configuration.xSize - 40)
+            top_left[1] = random.randint(40, Configuration.ySize - 40)
             top_right = [top_left[0] + width, top_left[1]]
             bottom_right = [top_right[0], top_right[1] - height]
             bottom_left = [bottom_right[0] - width, bottom_right[1]]
