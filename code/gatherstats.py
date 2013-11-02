@@ -40,11 +40,11 @@ def generateStats(
 ## A list of dictionaries used to store the map files,
 #starting and ending points of the boids
 mapList = [
-	{
-		"filename": "maps/scene2.map",
-		"startPoint": (494, 213),
-		"endPoint": (404, 20)
-	},
+	#{
+	#	"filename": "maps/scene2.map",
+	#	"startPoint": (494, 213),
+	#	"endPoint": (404, 20)
+	#},
 	{
 		"filename": "maps/scene3.map",
 		"startPoint": (356, 42),
@@ -58,7 +58,7 @@ mapList = [
 ]
 
 if __name__ == "__main__":
-	testList = [mapList[2], mapList[2]]
+	testList = mapList
 	for tData in testList:
 		generateStats(
 			tData["filename"],

@@ -126,7 +126,7 @@ class FlockSim:
         # writes data to the file
         self.dataFile.write(
             "current_step: " + str(self.counter) +
-            "current_time: " + str(endTime - self.startTime) +
+            ", current_time: " + str(endTime - self.startTime) +
             ", average_distance: " + str(avgDistVal) +
             ", average_min_distance: " + str(avgMinVal) +
             ", number_finished: " + str(self.numInGoal) + "\n"
