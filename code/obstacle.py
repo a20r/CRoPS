@@ -67,10 +67,7 @@ class PolyObstacle:
         @param p1, p2 Points in space
         @return The distance between p1 and p2
         """
-        return np.sqrt(
-            pow(p1[0] - p2[0], 2) +
-            pow(p1[1] - p2[1], 2)
-        )
+        return np.sqrt(pow(p1[0] - p2[0], 2) + pow(p1[1] - p2[1], 2))
 
     def estimatePoly(self):
         """

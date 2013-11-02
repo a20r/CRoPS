@@ -22,6 +22,14 @@ if __name__ == "__main__":
         "maps/empty.map": {
             "startPoint": (50, 50),  # (50, 600)
             "endPoint": (980, 30)
+        },
+        "maps/s.map": {
+            "startPoint": (50, 50),  # (50, 600)
+            "endPoint": (980, 30)
+        },
+        "maps/maze.map": {
+            "startPoint": (50, 50),  # (50, 600)
+            "endPoint": (980, 30)
         }
     }
 
