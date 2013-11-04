@@ -1,0 +1,2221 @@
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  4 NOV 2013 20:36
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**refman
+(./refman.tex
+LaTeX2e <2011/06/27>
+Babel <3.9f> and hyphenation patterns for 78 languages loaded.
+(/usr/local/texlive/2013/texmf-dist/tex/latex/base/book.cls
+Document Class: book 2007/10/19 v1.4h Standard LaTeX document class
+(/usr/local/texlive/2013/texmf-dist/tex/latex/base/bk10.clo
+File: bk10.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@chapter=\count80
+\c@section=\count81
+\c@subsection=\count82
+\c@subsubsection=\count83
+\c@paragraph=\count84
+\c@subparagraph=\count85
+\c@figure=\count86
+\c@table=\count87
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+(/usr/local/texlive/2013/texmf-dist/tex/latex/tools/calc.sty
+Package: calc 2007/08/22 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count88
+\calc@Bcount=\count89
+\calc@Adimen=\dimen103
+\calc@Bdimen=\dimen104
+\calc@Askip=\skip43
+\calc@Bskip=\skip44
+LaTeX Info: Redefining \setlength on input line 76.
+LaTeX Info: Redefining \addtolength on input line 77.
+\calc@Ccount=\count90
+\calc@Cskip=\skip45
+) (./doxygen.sty
+Package: doxygen 
+
+(/usr/local/texlive/2013/texmf-dist/tex/latex/base/alltt.sty
+Package: alltt 1997/06/16 v2.0g defines alltt environment
+)
+(/usr/local/texlive/2013/texmf-dist/tex/latex/tools/array.sty
+Package: array 2008/09/09 v2.4c Tabular extension package (FMi)
+\col@sep=\dimen105
+\extrarowheight=\dimen106
+\NC@list=\toks14
+\extratabsurround=\skip46
+\backup@length=\skip47
+)
+(/usr/local/texlive/2013/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count91
+\float@exts=\toks15
+\float@box=\box26
+\@float@everytoks=\toks16
+\@floatcapt=\box27
+)
+(/usr/local/texlive/2013/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
+)
+(/usr/local/texlive/2013/texmf-dist/tex/latex/tools/verbatim.sty
+Package: verbatim 2003/08/22 v1.5q LaTeX2e package for verbatim enhancements
+\every@verbatim=\toks17
+\verbatim@line=\toks18
+\verbatim@in@stream=\read1
+)
+(/usr/local/texlive/2013/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2007/01/21 v2.11 LaTeX color extensions (UK)
+
+(/usr/local/texlive/2013/texmf-dist/tex/latex/latexconfig/color.cfg
+File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
+)
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+
+(/usr/local/texlive/2013/texmf-dist/tex/latex/pdftex-def/pdftex.def
+File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
+
+(/usr/local/texlive/2013/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
+)
+(/usr/local/texlive/2013/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
+)
+\Gread@gobject=\count92
+)
+(/usr/local/texlive/2013/texmf-dist/tex/latex/colortbl/colortbl.sty
+Package: colortbl 2012/02/13 v1.0a Color table columns (DPC)
+\everycr=\toks19
+\minrowclearance=\skip48
+)
+\rownum=\count93
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1337.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1341.
+Package xcolor Info: Model `RGB' extended on input line 1353.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1355.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1356.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1357.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1358.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1359.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1360.
+)
+(/usr/local/texlive/2013/texmf-dist/tex/latex/xtab/xtab.sty
+Package: xtab 2011/07/31 v2.3f Extended supertabular package
+\c@tracingst=\count94
+\PWSTcapht=\dimen107
+\ST@wd=\dimen108
+\ST@rightskip=\skip49
+\ST@leftskip=\skip50
+\ST@parfillskip=\skip51
+\c@PWSTtable=\count95
+\PWSTlastpage=\count96
+\PWSTpenultimate=\count97
+\PWSTcurpage=\count98
+\PWSTtempc=\count99
+\PWSTlines=\count100
+\PWST@lastht=\dimen109
+\PWST@generalht=\dimen110
+\PWST@ht=\dimen111
+\ST@pageleft=\dimen112
+\ST@headht=\dimen113
+\ST@tailht=\dimen114
+\ST@pagesofar=\dimen115
+\ST@pboxht=\dimen116
+\ST@lineht=\dimen117
+\ST@stretchht=\dimen118
+\ST@prevht=\dimen119
+\ST@toadd=\dimen120
+\ST@dimen=\dimen121
+\ST@pbox=\box28
+)
+\xrefbox=\box29
+\xreflength=\skip52
+\tmplength=\skip53
+)
+(/usr/local/texlive/2013/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/texlive/2013/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+\KV@toks@=\toks20
+)
+(/usr/local/texlive/2013/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/texlive/2013/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+(/usr/local/texlive/2013/texmf-dist/tex/latex/latexconfig/graphics.cfg
+File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
+)
+Package graphics Info: Driver file: pdftex.def on input line 91.
+)
+\Gin@req@height=\dimen122
+\Gin@req@width=\dimen123
+)
+(/usr/local/texlive/2013/texmf-dist/tex/latex/base/inputenc.sty
+Package: inputenc 2008/03/30 v1.1d Input encoding file
+\inpenc@prehook=\toks21
+\inpenc@posthook=\toks22
+
+(/usr/local/texlive/2013/texmf-dist/tex/latex/base/utf8.def
+File: utf8.def 2008/04/05 v1.1m UTF-8 support for inputenc
+Now handling font encoding OML ...
+... no UTF-8 mapping file for font encoding OML
+Now handling font encoding T1 ...
+... processing UTF-8 mapping file for font encoding T1
+
+(/usr/local/texlive/2013/texmf-dist/tex/latex/base/t1enc.dfu
+File: t1enc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
+   defining Unicode char U+00A1 (decimal 161)
+   defining Unicode char U+00A3 (decimal 163)
+   defining Unicode char U+00AB (decimal 171)
+   defining Unicode char U+00BB (decimal 187)
+   defining Unicode char U+00BF (decimal 191)
+   defining Unicode char U+00C0 (decimal 192)
+   defining Unicode char U+00C1 (decimal 193)
+   defining Unicode char U+00C2 (decimal 194)
+   defining Unicode char U+00C3 (decimal 195)
+   defining Unicode char U+00C4 (decimal 196)
+   defining Unicode char U+00C5 (decimal 197)
+   defining Unicode char U+00C6 (decimal 198)
+   defining Unicode char U+00C7 (decimal 199)
+   defining Unicode char U+00C8 (decimal 200)
+   defining Unicode char U+00C9 (decimal 201)
+   defining Unicode char U+00CA (decimal 202)
+   defining Unicode char U+00CB (decimal 203)
+   defining Unicode char U+00CC (decimal 204)
+   defining Unicode char U+00CD (decimal 205)
+   defining Unicode char U+00CE (decimal 206)
+   defining Unicode char U+00CF (decimal 207)
+   defining Unicode char U+00D0 (decimal 208)
+   defining Unicode char U+00D1 (decimal 209)
+   defining Unicode char U+00D2 (decimal 210)
+   defining Unicode char U+00D3 (decimal 211)
+   defining Unicode char U+00D4 (decimal 212)
+   defining Unicode char U+00D5 (decimal 213)
+   defining Unicode char U+00D6 (decimal 214)
+   defining Unicode char U+00D8 (decimal 216)
+   defining Unicode char U+00D9 (decimal 217)
+   defining Unicode char U+00DA (decimal 218)
+   defining Unicode char U+00DB (decimal 219)
+   defining Unicode char U+00DC (decimal 220)
+   defining Unicode char U+00DD (decimal 221)
+   defining Unicode char U+00DE (decimal 222)
+   defining Unicode char U+00DF (decimal 223)
+   defining Unicode char U+00E0 (decimal 224)
+   defining Unicode char U+00E1 (decimal 225)
+   defining Unicode char U+00E2 (decimal 226)
+   defining Unicode char U+00E3 (decimal 227)
+   defining Unicode char U+00E4 (decimal 228)
+   defining Unicode char U+00E5 (decimal 229)
+   defining Unicode char U+00E6 (decimal 230)
+   defining Unicode char U+00E7 (decimal 231)
+   defining Unicode char U+00E8 (decimal 232)
+   defining Unicode char U+00E9 (decimal 233)
+   defining Unicode char U+00EA (decimal 234)
+   defining Unicode char U+00EB (decimal 235)
+   defining Unicode char U+00EC (decimal 236)
+   defining Unicode char U+00ED (decimal 237)
+   defining Unicode char U+00EE (decimal 238)
+   defining Unicode char U+00EF (decimal 239)
+   defining Unicode char U+00F0 (decimal 240)
+   defining Unicode char U+00F1 (decimal 241)
+   defining Unicode char U+00F2 (decimal 242)
+   defining Unicode char U+00F3 (decimal 243)
+   defining Unicode char U+00F4 (decimal 244)
+   defining Unicode char U+00F5 (decimal 245)
+   defining Unicode char U+00F6 (decimal 246)
+   defining Unicode char U+00F8 (decimal 248)
+   defining Unicode char U+00F9 (decimal 249)
+   defining Unicode char U+00FA (decimal 250)
+   defining Unicode char U+00FB (decimal 251)
+   defining Unicode char U+00FC (decimal 252)
+   defining Unicode char U+00FD (decimal 253)
+   defining Unicode char U+00FE (decimal 254)
+   defining Unicode char U+00FF (decimal 255)
+   defining Unicode char U+0102 (decimal 258)
+   defining Unicode char U+0103 (decimal 259)
+   defining Unicode char U+0104 (decimal 260)
+   defining Unicode char U+0105 (decimal 261)
+   defining Unicode char U+0106 (decimal 262)
+   defining Unicode char U+0107 (decimal 263)
+   defining Unicode char U+010C (decimal 268)
+   defining Unicode char U+010D (decimal 269)
+   defining Unicode char U+010E (decimal 270)
+   defining Unicode char U+010F (decimal 271)
+   defining Unicode char U+0110 (decimal 272)
+   defining Unicode char U+0111 (decimal 273)
+   defining Unicode char U+0118 (decimal 280)
+   defining Unicode char U+0119 (decimal 281)
+   defining Unicode char U+011A (decimal 282)
+   defining Unicode char U+011B (decimal 283)
+   defining Unicode char U+011E (decimal 286)
+   defining Unicode char U+011F (decimal 287)
+   defining Unicode char U+0130 (decimal 304)
+   defining Unicode char U+0131 (decimal 305)
+   defining Unicode char U+0132 (decimal 306)
+   defining Unicode char U+0133 (decimal 307)
+   defining Unicode char U+0139 (decimal 313)
+   defining Unicode char U+013A (decimal 314)
+   defining Unicode char U+013D (decimal 317)
+   defining Unicode char U+013E (decimal 318)
+   defining Unicode char U+0141 (decimal 321)
+   defining Unicode char U+0142 (decimal 322)
+   defining Unicode char U+0143 (decimal 323)
+   defining Unicode char U+0144 (decimal 324)
+   defining Unicode char U+0147 (decimal 327)
+   defining Unicode char U+0148 (decimal 328)
+   defining Unicode char U+014A (decimal 330)
+   defining Unicode char U+014B (decimal 331)
+   defining Unicode char U+0150 (decimal 336)
+   defining Unicode char U+0151 (decimal 337)
+   defining Unicode char U+0152 (decimal 338)
+   defining Unicode char U+0153 (decimal 339)
+   defining Unicode char U+0154 (decimal 340)
+   defining Unicode char U+0155 (decimal 341)
+   defining Unicode char U+0158 (decimal 344)
+   defining Unicode char U+0159 (decimal 345)
+   defining Unicode char U+015A (decimal 346)
+   defining Unicode char U+015B (decimal 347)
+   defining Unicode char U+015E (decimal 350)
+   defining Unicode char U+015F (decimal 351)
+   defining Unicode char U+0160 (decimal 352)
+   defining Unicode char U+0161 (decimal 353)
+   defining Unicode char U+0162 (decimal 354)
+   defining Unicode char U+0163 (decimal 355)
+   defining Unicode char U+0164 (decimal 356)
+   defining Unicode char U+0165 (decimal 357)
+   defining Unicode char U+016E (decimal 366)
+   defining Unicode char U+016F (decimal 367)
+   defining Unicode char U+0170 (decimal 368)
+   defining Unicode char U+0171 (decimal 369)
+   defining Unicode char U+0178 (decimal 376)
+   defining Unicode char U+0179 (decimal 377)
+   defining Unicode char U+017A (decimal 378)
+   defining Unicode char U+017B (decimal 379)
+   defining Unicode char U+017C (decimal 380)
+   defining Unicode char U+017D (decimal 381)
+   defining Unicode char U+017E (decimal 382)
+   defining Unicode char U+200C (decimal 8204)
+   defining Unicode char U+2013 (decimal 8211)
+   defining Unicode char U+2014 (decimal 8212)
+   defining Unicode char U+2018 (decimal 8216)
+   defining Unicode char U+2019 (decimal 8217)
+   defining Unicode char U+201A (decimal 8218)
+   defining Unicode char U+201C (decimal 8220)
+   defining Unicode char U+201D (decimal 8221)
+   defining Unicode char U+201E (decimal 8222)
+   defining Unicode char U+2030 (decimal 8240)
+   defining Unicode char U+2031 (decimal 8241)
+   defining Unicode char U+2039 (decimal 8249)
+   defining Unicode char U+203A (decimal 8250)
+   defining Unicode char U+2423 (decimal 9251)
+)
+Now handling font encoding OT1 ...
+... processing UTF-8 mapping file for font encoding OT1
+
+(/usr/local/texlive/2013/texmf-dist/tex/latex/base/ot1enc.dfu
+File: ot1enc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
+   defining Unicode char U+00A1 (decimal 161)
+   defining Unicode char U+00A3 (decimal 163)
+   defining Unicode char U+00B8 (decimal 184)
+   defining Unicode char U+00BF (decimal 191)
+   defining Unicode char U+00C5 (decimal 197)
+   defining Unicode char U+00C6 (decimal 198)
+   defining Unicode char U+00D8 (decimal 216)
+   defining Unicode char U+00DF (decimal 223)
+   defining Unicode char U+00E6 (decimal 230)
+   defining Unicode char U+00EC (decimal 236)
+   defining Unicode char U+00ED (decimal 237)
+   defining Unicode char U+00EE (decimal 238)
+   defining Unicode char U+00EF (decimal 239)
+   defining Unicode char U+00F8 (decimal 248)
+   defining Unicode char U+0131 (decimal 305)
+   defining Unicode char U+0141 (decimal 321)
+   defining Unicode char U+0142 (decimal 322)
+   defining Unicode char U+0152 (decimal 338)
+   defining Unicode char U+0153 (decimal 339)
+   defining Unicode char U+2013 (decimal 8211)
+   defining Unicode char U+2014 (decimal 8212)
+   defining Unicode char U+2018 (decimal 8216)
+   defining Unicode char U+2019 (decimal 8217)
+   defining Unicode char U+201C (decimal 8220)
+   defining Unicode char U+201D (decimal 8221)
+)
+Now handling font encoding OMS ...
+... processing UTF-8 mapping file for font encoding OMS
+
+(/usr/local/texlive/2013/texmf-dist/tex/latex/base/omsenc.dfu
+File: omsenc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
+   defining Unicode char U+00A7 (decimal 167)
+   defining Unicode char U+00B6 (decimal 182)
+   defining Unicode char U+00B7 (decimal 183)
+   defining Unicode char U+2020 (decimal 8224)
+   defining Unicode char U+2021 (decimal 8225)
+   defining Unicode char U+2022 (decimal 8226)
+)
+Now handling font encoding OMX ...
+... no UTF-8 mapping file for font encoding OMX
+Now handling font encoding U ...
+... no UTF-8 mapping file for font encoding U
+   defining Unicode char U+00A9 (decimal 169)
+   defining Unicode char U+00AA (decimal 170)
+   defining Unicode char U+00AE (decimal 174)
+   defining Unicode char U+00BA (decimal 186)
+   defining Unicode char U+02C6 (decimal 710)
+   defining Unicode char U+02DC (decimal 732)
+   defining Unicode char U+200C (decimal 8204)
+   defining Unicode char U+2026 (decimal 8230)
+   defining Unicode char U+2122 (decimal 8482)
+   defining Unicode char U+2423 (decimal 9251)
+))
+(/usr/local/texlive/2013/texmf-dist/tex/latex/base/makeidx.sty
+Package: makeidx 2000/03/29 v1.0m Standard LaTeX package
+)
+(/usr/local/texlive/2013/texmf-dist/tex/latex/tools/multicol.sty
+Package: multicol 2011/06/27 v1.7a multicolumn formatting (FMi)
+\c@tracingmulticols=\count101
+\mult@box=\box30
+\multicol@leftmargin=\dimen124
+\c@unbalance=\count102
+\c@collectmore=\count103
+\doublecol@number=\count104
+\multicoltolerance=\count105
+\multicolpretolerance=\count106
+\full@width=\dimen125
+\page@free=\dimen126
+\premulticols=\dimen127
+\postmulticols=\dimen128
+\multicolsep=\skip54
+\multicolbaselineskip=\skip55
+\partial@page=\box31
+\last@line=\box32
+\mult@rightbox=\box33
+\mult@grightbox=\box34
+\mult@gfirstbox=\box35
+\mult@firstbox=\box36
+\@tempa=\box37
+\@tempa=\box38
+\@tempa=\box39
+\@tempa=\box40
+\@tempa=\box41
+\@tempa=\box42
+\@tempa=\box43
+\@tempa=\box44
+\@tempa=\box45
+\@tempa=\box46
+\@tempa=\box47
+\@tempa=\box48
+\@tempa=\box49
+\@tempa=\box50
+\@tempa=\box51
+\@tempa=\box52
+\@tempa=\box53
+\c@columnbadness=\count107
+\c@finalcolumnbadness=\count108
+\last@try=\dimen129
+\multicolovershoot=\dimen130
+\multicolundershoot=\dimen131
+\mult@nat@firstbox=\box54
+\colbreak@box=\box55
+\multicol@sort@counter=\count109
+)
+(/usr/local/texlive/2013/texmf-dist/tex/latex/multirow/multirow.sty
+\bigstrutjot=\dimen132
+)
+(/usr/local/texlive/2013/texmf-dist/tex/latex/base/textcomp.sty
+Package: textcomp 2005/09/27 v1.99g Standard LaTeX package
+Package textcomp Info: Sub-encoding information:
+(textcomp)               5 = only ISO-Adobe without \textcurrency
+(textcomp)               4 = 5 + \texteuro
+(textcomp)               3 = 4 + \textohm
+(textcomp)               2 = 3 + \textestimated + \textcurrency
+(textcomp)               1 = TS1 - \textcircled - \t
+(textcomp)               0 = TS1 (full)
+(textcomp)             Font families with sub-encoding setting implement
+(textcomp)             only a restricted character set as indicated.
+(textcomp)             Family '?' is the default used for unknown fonts.
+(textcomp)             See the documentation for details.
+Package textcomp Info: Setting ? sub-encoding to TS1/1 on input line 71.
+
+(/usr/local/texlive/2013/texmf-dist/tex/latex/base/ts1enc.def
+File: ts1enc.def 2001/06/05 v3.0e (jk/car/fm) Standard LaTeX file
+Now handling font encoding TS1 ...
+... processing UTF-8 mapping file for font encoding TS1
+
+(/usr/local/texlive/2013/texmf-dist/tex/latex/base/ts1enc.dfu
+File: ts1enc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
+   defining Unicode char U+00A2 (decimal 162)
+   defining Unicode char U+00A3 (decimal 163)
+   defining Unicode char U+00A4 (decimal 164)
+   defining Unicode char U+00A5 (decimal 165)
+   defining Unicode char U+00A6 (decimal 166)
+   defining Unicode char U+00A7 (decimal 167)
+   defining Unicode char U+00A8 (decimal 168)
+   defining Unicode char U+00A9 (decimal 169)
+   defining Unicode char U+00AA (decimal 170)
+   defining Unicode char U+00AC (decimal 172)
+   defining Unicode char U+00AE (decimal 174)
+   defining Unicode char U+00AF (decimal 175)
+   defining Unicode char U+00B0 (decimal 176)
+   defining Unicode char U+00B1 (decimal 177)
+   defining Unicode char U+00B2 (decimal 178)
+   defining Unicode char U+00B3 (decimal 179)
+   defining Unicode char U+00B4 (decimal 180)
+   defining Unicode char U+00B5 (decimal 181)
+   defining Unicode char U+00B6 (decimal 182)
+   defining Unicode char U+00B7 (decimal 183)
+   defining Unicode char U+00B9 (decimal 185)
+   defining Unicode char U+00BA (decimal 186)
+   defining Unicode char U+00BC (decimal 188)
+   defining Unicode char U+00BD (decimal 189)
+   defining Unicode char U+00BE (decimal 190)
+   defining Unicode char U+00D7 (decimal 215)
+   defining Unicode char U+00F7 (decimal 247)
+   defining Unicode char U+0192 (decimal 402)
+   defining Unicode char U+02C7 (decimal 711)
+   defining Unicode char U+02D8 (decimal 728)
+   defining Unicode char U+02DD (decimal 733)
+   defining Unicode char U+0E3F (decimal 3647)
+   defining Unicode char U+2016 (decimal 8214)
+   defining Unicode char U+2020 (decimal 8224)
+   defining Unicode char U+2021 (decimal 8225)
+   defining Unicode char U+2022 (decimal 8226)
+   defining Unicode char U+2030 (decimal 8240)
+   defining Unicode char U+2031 (decimal 8241)
+   defining Unicode char U+203B (decimal 8251)
+   defining Unicode char U+203D (decimal 8253)
+   defining Unicode char U+2044 (decimal 8260)
+   defining Unicode char U+204E (decimal 8270)
+   defining Unicode char U+2052 (decimal 8274)
+   defining Unicode char U+20A1 (decimal 8353)
+   defining Unicode char U+20A4 (decimal 8356)
+   defining Unicode char U+20A6 (decimal 8358)
+   defining Unicode char U+20A9 (decimal 8361)
+   defining Unicode char U+20AB (decimal 8363)
+   defining Unicode char U+20AC (decimal 8364)
+   defining Unicode char U+20B1 (decimal 8369)
+   defining Unicode char U+2103 (decimal 8451)
+   defining Unicode char U+2116 (decimal 8470)
+   defining Unicode char U+2117 (decimal 8471)
+   defining Unicode char U+211E (decimal 8478)
+   defining Unicode char U+2120 (decimal 8480)
+   defining Unicode char U+2122 (decimal 8482)
+   defining Unicode char U+2126 (decimal 8486)
+   defining Unicode char U+2127 (decimal 8487)
+   defining Unicode char U+212E (decimal 8494)
+   defining Unicode char U+2190 (decimal 8592)
+   defining Unicode char U+2191 (decimal 8593)
+   defining Unicode char U+2192 (decimal 8594)
+   defining Unicode char U+2193 (decimal 8595)
+   defining Unicode char U+2329 (decimal 9001)
+   defining Unicode char U+232A (decimal 9002)
+   defining Unicode char U+2422 (decimal 9250)
+   defining Unicode char U+25E6 (decimal 9702)
+   defining Unicode char U+25EF (decimal 9711)
+   defining Unicode char U+266A (decimal 9834)
+))
+LaTeX Info: Redefining \oldstylenums on input line 266.
+Package textcomp Info: Setting cmr sub-encoding to TS1/0 on input line 281.
+Package textcomp Info: Setting cmss sub-encoding to TS1/0 on input line 282.
+Package textcomp Info: Setting cmtt sub-encoding to TS1/0 on input line 283.
+Package textcomp Info: Setting cmvtt sub-encoding to TS1/0 on input line 284.
+Package textcomp Info: Setting cmbr sub-encoding to TS1/0 on input line 285.
+Package textcomp Info: Setting cmtl sub-encoding to TS1/0 on input line 286.
+Package textcomp Info: Setting ccr sub-encoding to TS1/0 on input line 287.
+Package textcomp Info: Setting ptm sub-encoding to TS1/4 on input line 288.
+Package textcomp Info: Setting pcr sub-encoding to TS1/4 on input line 289.
+Package textcomp Info: Setting phv sub-encoding to TS1/4 on input line 290.
+Package textcomp Info: Setting ppl sub-encoding to TS1/3 on input line 291.
+Package textcomp Info: Setting pag sub-encoding to TS1/4 on input line 292.
+Package textcomp Info: Setting pbk sub-encoding to TS1/4 on input line 293.
+Package textcomp Info: Setting pnc sub-encoding to TS1/4 on input line 294.
+Package textcomp Info: Setting pzc sub-encoding to TS1/4 on input line 295.
+Package textcomp Info: Setting bch sub-encoding to TS1/4 on input line 296.
+Package textcomp Info: Setting put sub-encoding to TS1/5 on input line 297.
+Package textcomp Info: Setting uag sub-encoding to TS1/5 on input line 298.
+Package textcomp Info: Setting ugq sub-encoding to TS1/5 on input line 299.
+Package textcomp Info: Setting ul8 sub-encoding to TS1/4 on input line 300.
+Package textcomp Info: Setting ul9 sub-encoding to TS1/4 on input line 301.
+Package textcomp Info: Setting augie sub-encoding to TS1/5 on input line 302.
+Package textcomp Info: Setting dayrom sub-encoding to TS1/3 on input line 303.
+Package textcomp Info: Setting dayroms sub-encoding to TS1/3 on input line 304.
+
+Package textcomp Info: Setting pxr sub-encoding to TS1/0 on input line 305.
+Package textcomp Info: Setting pxss sub-encoding to TS1/0 on input line 306.
+Package textcomp Info: Setting pxtt sub-encoding to TS1/0 on input line 307.
+Package textcomp Info: Setting txr sub-encoding to TS1/0 on input line 308.
+Package textcomp Info: Setting txss sub-encoding to TS1/0 on input line 309.
+Package textcomp Info: Setting txtt sub-encoding to TS1/0 on input line 310.
+Package textcomp Info: Setting lmr sub-encoding to TS1/0 on input line 311.
+Package textcomp Info: Setting lmdh sub-encoding to TS1/0 on input line 312.
+Package textcomp Info: Setting lmss sub-encoding to TS1/0 on input line 313.
+Package textcomp Info: Setting lmssq sub-encoding to TS1/0 on input line 314.
+Package textcomp Info: Setting lmvtt sub-encoding to TS1/0 on input line 315.
+Package textcomp Info: Setting qhv sub-encoding to TS1/0 on input line 316.
+Package textcomp Info: Setting qag sub-encoding to TS1/0 on input line 317.
+Package textcomp Info: Setting qbk sub-encoding to TS1/0 on input line 318.
+Package textcomp Info: Setting qcr sub-encoding to TS1/0 on input line 319.
+Package textcomp Info: Setting qcs sub-encoding to TS1/0 on input line 320.
+Package textcomp Info: Setting qpl sub-encoding to TS1/0 on input line 321.
+Package textcomp Info: Setting qtm sub-encoding to TS1/0 on input line 322.
+Package textcomp Info: Setting qzc sub-encoding to TS1/0 on input line 323.
+Package textcomp Info: Setting qhvc sub-encoding to TS1/0 on input line 324.
+Package textcomp Info: Setting futs sub-encoding to TS1/4 on input line 325.
+Package textcomp Info: Setting futx sub-encoding to TS1/4 on input line 326.
+Package textcomp Info: Setting futj sub-encoding to TS1/4 on input line 327.
+Package textcomp Info: Setting hlh sub-encoding to TS1/3 on input line 328.
+Package textcomp Info: Setting hls sub-encoding to TS1/3 on input line 329.
+Package textcomp Info: Setting hlst sub-encoding to TS1/3 on input line 330.
+Package textcomp Info: Setting hlct sub-encoding to TS1/5 on input line 331.
+Package textcomp Info: Setting hlx sub-encoding to TS1/5 on input line 332.
+Package textcomp Info: Setting hlce sub-encoding to TS1/5 on input line 333.
+Package textcomp Info: Setting hlcn sub-encoding to TS1/5 on input line 334.
+Package textcomp Info: Setting hlcw sub-encoding to TS1/5 on input line 335.
+Package textcomp Info: Setting hlcf sub-encoding to TS1/5 on input line 336.
+Package textcomp Info: Setting pplx sub-encoding to TS1/3 on input line 337.
+Package textcomp Info: Setting pplj sub-encoding to TS1/3 on input line 338.
+Package textcomp Info: Setting ptmx sub-encoding to TS1/4 on input line 339.
+Package textcomp Info: Setting ptmj sub-encoding to TS1/4 on input line 340.
+)
+(/usr/local/texlive/2013/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
+
+(/usr/local/texlive/2013/texmf-dist/tex/latex/base/t1enc.def
+File: t1enc.def 2005/09/27 v1.99g Standard LaTeX file
+LaTeX Font Info:    Redeclaring font encoding T1 on input line 43.
+))
+(/usr/local/texlive/2013/texmf-dist/tex/latex/psnfss/mathptmx.sty
+Package: mathptmx 2005/04/12 PSNFSS-v9.2a Times w/ Math, improved (SPQR, WaS) 
+LaTeX Font Info:    Redeclaring symbol font `operators' on input line 28.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  OT1/cmr/m/n --> OT1/ztmcm/m/n on input line 28.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/ztmcm/m/n on input line 28.
+LaTeX Font Info:    Redeclaring symbol font `letters' on input line 29.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `normal'
+(Font)                  OML/cmm/m/it --> OML/ztmcm/m/it on input line 29.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `bold'
+(Font)                  OML/cmm/b/it --> OML/ztmcm/m/it on input line 29.
+LaTeX Font Info:    Redeclaring symbol font `symbols' on input line 30.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
+(Font)                  OMS/cmsy/m/n --> OMS/ztmcm/m/n on input line 30.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
+(Font)                  OMS/cmsy/b/n --> OMS/ztmcm/m/n on input line 30.
+LaTeX Font Info:    Redeclaring symbol font `largesymbols' on input line 31.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
+(Font)                  OMX/cmex/m/n --> OMX/ztmcm/m/n on input line 31.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
+(Font)                  OMX/cmex/m/n --> OMX/ztmcm/m/n on input line 31.
+\symbold=\mathgroup4
+\symitalic=\mathgroup5
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 34.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
+(Font)                  OT1/cmr/bx/n --> OT1/ptm/bx/n on input line 34.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/ptm/bx/n on input line 34.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 35.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
+(Font)                  OT1/cmr/m/it --> OT1/ptm/m/it on input line 35.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
+(Font)                  OT1/cmr/bx/it --> OT1/ptm/m/it on input line 35.
+LaTeX Info: Redefining \hbar on input line 50.
+)
+(/usr/local/texlive/2013/texmf-dist/tex/latex/psnfss/helvet.sty
+Package: helvet 2005/04/12 PSNFSS-v9.2a (WaS) 
+)
+(/usr/local/texlive/2013/texmf-dist/tex/latex/psnfss/courier.sty
+Package: courier 2005/04/12 PSNFSS-v9.2a (WaS) 
+)
+(/usr/local/texlive/2013/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+
+(/usr/local/texlive/2013/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\@emptytoks=\toks23
+\symAMSa=\mathgroup6
+\symAMSb=\mathgroup7
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+))
+(/usr/local/texlive/2013/texmf-dist/tex/latex/sectsty/sectsty.sty
+Package: sectsty 2002/02/25 v2.0.2 Commands to change all sectional heading sty
+les
+)
+(/usr/local/texlive/2013/texmf-dist/tex/latex/geometry/geometry.sty
+Package: geometry 2010/09/12 v5.6 Page Geometry
+
+(/usr/local/texlive/2013/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
+Package ifpdf Info: pdfTeX in PDF mode is detected.
+)
+(/usr/local/texlive/2013/texmf-dist/tex/generic/oberdiek/ifvtex.sty
+Package: ifvtex 2010/03/01 v1.5 Detect VTeX and its facilities (HO)
+Package ifvtex Info: VTeX not detected.
+)
+(/usr/local/texlive/2013/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+)
+\Gm@cnth=\count110
+\Gm@cntv=\count111
+\c@Gm@tempcnt=\count112
+\Gm@bindingoffset=\dimen133
+\Gm@wd@mp=\dimen134
+\Gm@odd@mp=\dimen135
+\Gm@even@mp=\dimen136
+\Gm@layoutwidth=\dimen137
+\Gm@layoutheight=\dimen138
+\Gm@layouthoffset=\dimen139
+\Gm@layoutvoffset=\dimen140
+\Gm@dimlist=\toks24
+)
+(/usr/local/texlive/2013/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
+\fancy@headwidth=\skip56
+\f@ncyO@elh=\skip57
+\f@ncyO@erh=\skip58
+\f@ncyO@olh=\skip59
+\f@ncyO@orh=\skip60
+\f@ncyO@elf=\skip61
+\f@ncyO@erf=\skip62
+\f@ncyO@olf=\skip63
+\f@ncyO@orf=\skip64
+)
+(/usr/local/texlive/2013/texmf-dist/tex/latex/natbib/natbib.sty
+Package: natbib 2010/09/13 8.31b (PWD, AO)
+\bibhang=\skip65
+\bibsep=\skip66
+LaTeX Info: Redefining \cite on input line 694.
+\c@NAT@ctr=\count113
+)
+(/usr/local/texlive/2013/texmf-dist/tex/latex/tocloft/tocloft.sty
+Package: tocloft 2013/05/02 v2.3f parameterised ToC, etc., typesetting
+Package tocloft Info: The document has chapter divisions on input line 44.
+\cftparskip=\skip67
+\cftbeforetoctitleskip=\skip68
+\cftaftertoctitleskip=\skip69
+\cftbeforepartskip=\skip70
+\cftpartnumwidth=\skip71
+\cftpartindent=\skip72
+\cftbeforechapskip=\skip73
+\cftchapindent=\skip74
+\cftchapnumwidth=\skip75
+\cftbeforesecskip=\skip76
+\cftsecindent=\skip77
+\cftsecnumwidth=\skip78
+\cftbeforesubsecskip=\skip79
+\cftsubsecindent=\skip80
+\cftsubsecnumwidth=\skip81
+\cftbeforesubsubsecskip=\skip82
+\cftsubsubsecindent=\skip83
+\cftsubsubsecnumwidth=\skip84
+\cftbeforeparaskip=\skip85
+\cftparaindent=\skip86
+\cftparanumwidth=\skip87
+\cftbeforesubparaskip=\skip88
+\cftsubparaindent=\skip89
+\cftsubparanumwidth=\skip90
+\cftbeforeloftitleskip=\skip91
+\cftafterloftitleskip=\skip92
+\cftbeforefigskip=\skip93
+\cftfigindent=\skip94
+\cftfignumwidth=\skip95
+\c@lofdepth=\count114
+\c@lotdepth=\count115
+\cftbeforelottitleskip=\skip96
+\cftafterlottitleskip=\skip97
+\cftbeforetabskip=\skip98
+\cfttabindent=\skip99
+\cfttabnumwidth=\skip100
+)
+\@indexfile=\write3
+\openout3 = `refman.idx'.
+
+
+Writing index file refman.idx
+(/usr/local/texlive/2013/texmf-dist/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2012/11/06 v6.83m Hypertext links for LaTeX
+
+(/usr/local/texlive/2013/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
+Package: hobsub-hyperref 2012/05/28 v1.13 Bundle oberdiek, subset hyperref (HO)
+
+
+(/usr/local/texlive/2013/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty
+Package: hobsub-generic 2012/05/28 v1.13 Bundle oberdiek, subset generic (HO)
+Package: hobsub 2012/05/28 v1.13 Construct package bundles (HO)
+Package hobsub Info: Skipping package `infwarerr' (already loaded).
+Package hobsub Info: Skipping package `ltxcmds' (already loaded).
+Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+Package hobsub Info: Skipping package `ifvtex' (already loaded).
+Package: intcalc 2007/09/27 v1.1 Expandable calculations with integers (HO)
+Package hobsub Info: Skipping package `ifpdf' (already loaded).
+Package: etexcmds 2011/02/16 v1.5 Avoid name clashes with e-TeX commands (HO)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+Package: kvsetkeys 2012/04/25 v1.16 Key value parser (HO)
+Package: kvdefinekeys 2011/04/07 v1.3 Define keys (HO)
+Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+Package: pdfescape 2011/11/25 v1.13 Implements pdfTeX's escape features (HO)
+Package: bigintcalc 2012/04/08 v1.3 Expandable calculations on big integers (HO
+)
+Package: bitset 2011/01/30 v1.1 Handle bit-vector datatype (HO)
+Package: uniquecounter 2011/01/30 v1.2 Provide unlimited unique counter (HO)
+)
+Package hobsub Info: Skipping package `hobsub' (already loaded).
+Package: letltxmacro 2010/09/02 v1.4 Let assignment for LaTeX macros (HO)
+Package: hopatch 2012/05/28 v1.2 Wrapper for package hooks (HO)
+Package: xcolor-patch 2011/01/30 xcolor patch
+Package: atveryend 2011/06/30 v1.8 Hooks at the very end of document (HO)
+Package atveryend Info: \enddocument detected (standard20110627).
+Package: atbegshi 2011/10/05 v1.16 At begin shipout hook (HO)
+Package: refcount 2011/10/16 v3.4 Data extraction from label references (HO)
+Package: hycolor 2011/01/30 v1.7 Color options for hyperref/bookmark (HO)
+)
+(/usr/local/texlive/2013/texmf-dist/tex/latex/oberdiek/auxhook.sty
+Package: auxhook 2011/03/04 v1.3 Hooks for auxiliary files (HO)
+)
+(/usr/local/texlive/2013/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
+)
+\@linkdim=\dimen141
+\Hy@linkcounter=\count116
+\Hy@pagecounter=\count117
+
+(/usr/local/texlive/2013/texmf-dist/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2012/11/06 v6.83m Hyperref: PDFDocEncoding definition (HO)
+Now handling font encoding PD1 ...
+... no UTF-8 mapping file for font encoding PD1
+)
+\Hy@SavedSpaceFactor=\count118
+
+(/usr/local/texlive/2013/texmf-dist/tex/latex/latexconfig/hyperref.cfg
+File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
+)
+Package hyperref Info: Hyper figures OFF on input line 4443.
+Package hyperref Info: Link nesting OFF on input line 4448.
+Package hyperref Info: Hyper index ON on input line 4451.
+Package hyperref Info: Plain pages OFF on input line 4458.
+Package hyperref Info: Backreferencing ON on input line 4461.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4688.
+
+(/usr/local/texlive/2013/texmf-dist/tex/latex/hyperref/backref.sty
+Package: backref 2012/07/25 v1.38 Bibliographical back referencing
+
+(/usr/local/texlive/2013/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
+Package: rerunfilecheck 2011/04/15 v1.7 Rerun checks for auxiliary files (HO)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
+82.
+))
+\c@Hy@tempcnt=\count119
+
+(/usr/local/texlive/2013/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip10
+Package: url 2006/04/12  ver 3.3  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line 5041.
+\XeTeXLinkMargin=\dimen142
+\Fld@menulength=\count120
+\Field@Width=\dimen143
+\Fld@charsize=\dimen144
+Package hyperref Info: Hyper figures OFF on input line 6295.
+Package hyperref Info: Link nesting OFF on input line 6300.
+Package hyperref Info: Hyper index ON on input line 6303.
+Package hyperref Info: backreferencing ON on input line 6308.
+Package hyperref Info: Link coloring OFF on input line 6315.
+Package hyperref Info: Link coloring with OCG OFF on input line 6320.
+Package hyperref Info: PDF/A mode OFF on input line 6325.
+LaTeX Info: Redefining \ref on input line 6365.
+LaTeX Info: Redefining \pageref on input line 6369.
+\Hy@abspage=\count121
+\c@Item=\count122
+\c@Hfootnote=\count123
+)
+
+Package hyperref Message: Driver: hpdftex.
+
+(/usr/local/texlive/2013/texmf-dist/tex/latex/hyperref/hpdftex.def
+File: hpdftex.def 2012/11/06 v6.83m Hyperref driver for pdfTeX
+\Fld@listcount=\count124
+\c@bookmark@seq@number=\count125
+\Hy@SectionHShift=\skip101
+)
+Package hyperref Info: Option `colorlinks' set `true' on input line 101.
+Package hyperref Info: Option `unicode' set `true' on input line 101.
+
+(/usr/local/texlive/2013/texmf-dist/tex/latex/hyperref/puenc.def
+File: puenc.def 2012/11/06 v6.83m Hyperref: PDF Unicode definition (HO)
+Now handling font encoding PU ...
+... no UTF-8 mapping file for font encoding PU
+) (./refman.aux)
+\openout1 = `refman.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 111.
+LaTeX Font Info:    ... okay on input line 111.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 111.
+LaTeX Font Info:    ... okay on input line 111.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 111.
+LaTeX Font Info:    ... okay on input line 111.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 111.
+LaTeX Font Info:    ... okay on input line 111.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 111.
+LaTeX Font Info:    ... okay on input line 111.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 111.
+LaTeX Font Info:    ... okay on input line 111.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 111.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 111.
+
+ (/usr/local/texlive/2013/texmf-dist/tex/latex/base/ts1cmr.fd
+File: ts1cmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    ... okay on input line 111.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 111.
+LaTeX Font Info:    ... okay on input line 111.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 111.
+LaTeX Font Info:    ... okay on input line 111.
+LaTeX Font Info:    Try loading font information for T1+phv on input line 111.
+
+(/usr/local/texlive/2013/texmf-dist/tex/latex/psnfss/t1phv.fd
+File: t1phv.fd 2001/06/04 scalable font definitions for T1/phv.
+)
+LaTeX Font Info:    Font shape `T1/phv/m/n' will be
+(Font)              scaled to size 8.99994pt on input line 111.
+
+(/usr/local/texlive/2013/texmf-dist/tex/context/base/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count126
+\scratchdimen=\dimen145
+\scratchbox=\box56
+\nofMPsegments=\count127
+\nofMParguments=\count128
+\everyMPshowfont=\toks25
+\MPscratchCnt=\count129
+\MPscratchDim=\dimen146
+\MPnumerator=\count130
+\makeMPintoPDFobject=\count131
+\everyMPtoPDFconversion=\toks26
+) (/usr/local/texlive/2013/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
+
+(/usr/local/texlive/2013/texmf-dist/tex/latex/oberdiek/grfext.sty
+Package: grfext 2010/08/19 v1.1 Manage graphics extensions (HO)
+)
+Package grfext Info: Graphics extension search list:
+(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 452.
+
+(/usr/local/texlive/2013/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+\big@size=\dimen147
+
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: twoside 
+* h-part:(L,W,R)=(71.13188pt, 455.24411pt, 71.13188pt)
+* v-part:(T,H,B)=(71.13188pt, 702.78308pt, 71.13188pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=455.24411pt
+* \textheight=702.78308pt
+* \oddsidemargin=-1.1381pt
+* \evensidemargin=-1.1381pt
+* \topmargin=-31.2056pt
+* \headheight=12.0pt
+* \headsep=18.06749pt
+* \topskip=10.0pt
+* \footskip=25.29494pt
+* \marginparwidth=125.0pt
+* \marginparsep=7.0pt
+* \columnsep=10.0pt
+* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidetrue
+* \@mparswitchtrue
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+\AtBeginShipoutBox=\box57
+Package backref Info: ** backref set up for natbib ** on input line 111.
+Package hyperref Info: Link coloring ON on input line 111.
+(/usr/local/texlive/2013/texmf-dist/tex/latex/hyperref/nameref.sty
+Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
+
+(/usr/local/texlive/2013/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
+Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
+)
+\c@section@level=\count132
+)
+LaTeX Info: Redefining \ref on input line 111.
+LaTeX Info: Redefining \pageref on input line 111.
+LaTeX Info: Redefining \nameref on input line 111.
+
+(./refman.out) (./refman.out)
+\@outlinefile=\write4
+\openout4 = `refman.out'.
+
+Package hyperref Info: Option `pageanchor' set `false' on input line 114.
+LaTeX Font Info:    Font shape `T1/phv/m/n' will be
+(Font)              scaled to size 12.9599pt on input line 119.
+LaTeX Font Info:    Font shape `T1/phv/m/n' will be
+(Font)              scaled to size 10.79993pt on input line 121.
+LaTeX Font Info:    Font shape `T1/phv/m/n' will be
+(Font)              scaled to size 8.09995pt on input line 123.
+ [1
+
+
+{/usr/local/texlive/2013/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2
+
+]
+LaTeX Font Info:    Font shape `T1/phv/m/n' will be
+(Font)              scaled to size 22.39185pt on input line 127.
+LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <24.88> not available
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 127.
+LaTeX Font Info:    Font shape `T1/phv/b/n' will be
+(Font)              scaled to size 22.39185pt on input line 127.
+LaTeX Font Info:    Font shape `T1/phv/bc/n' will be
+(Font)              scaled to size 22.39185pt on input line 127.
+ (./refman.toc
+LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <10> not available
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 1.
+LaTeX Font Info:    Font shape `T1/phv/b/n' will be
+(Font)              scaled to size 8.99994pt on input line 1.
+LaTeX Font Info:    Try loading font information for OT1+ztmcm on input line 1.
+
+
+(/usr/local/texlive/2013/texmf-dist/tex/latex/psnfss/ot1ztmcm.fd
+File: ot1ztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OT1/ztmcm.
+)
+LaTeX Font Info:    Try loading font information for OML+ztmcm on input line 1.
+
+
+(/usr/local/texlive/2013/texmf-dist/tex/latex/psnfss/omlztmcm.fd
+File: omlztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OML/ztmcm.
+)
+LaTeX Font Info:    Try loading font information for OMS+ztmcm on input line 1.
+
+
+(/usr/local/texlive/2013/texmf-dist/tex/latex/psnfss/omsztmcm.fd
+File: omsztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMS/ztmcm.
+)
+LaTeX Font Info:    Try loading font information for OMX+ztmcm on input line 1.
+
+
+(/usr/local/texlive/2013/texmf-dist/tex/latex/psnfss/omxztmcm.fd
+File: omxztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMX/ztmcm.
+)
+LaTeX Font Info:    Try loading font information for OT1+ptm on input line 1.
+
+(/usr/local/texlive/2013/texmf-dist/tex/latex/psnfss/ot1ptm.fd
+File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
+)
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7.4> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1.
+ [3
+
+]
+LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <7> not available
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 70.
+LaTeX Font Info:    Font shape `T1/phv/b/n' will be
+(Font)              scaled to size 6.29996pt on input line 70.
+ [4]
+[5] [6] [7] [8] [9]
+LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <12> not available
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 283.
+LaTeX Font Info:    Font shape `T1/phv/b/n' will be
+(Font)              scaled to size 10.79993pt on input line 283.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 283.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 283.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 283.
+)
+\tf@toc=\write5
+\openout5 = `refman.toc'.
+
+ [10]
+Package hyperref Info: Option `pageanchor' set `true' on input line 130.
+
+Chapter 1.
+LaTeX Font Info:    Font shape `T1/phv/m/n' will be
+(Font)              scaled to size 18.66588pt on input line 133.
+LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <20.74> not available
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 133.
+LaTeX Font Info:    Font shape `T1/phv/b/n' will be
+(Font)              scaled to size 18.66588pt on input line 133.
+LaTeX Font Info:    Font shape `T1/phv/bc/n' will be
+(Font)              scaled to size 18.66588pt on input line 133.
+(./namespaces.tex
+LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <14.4> not available
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 1.
+LaTeX Font Info:    Font shape `T1/phv/b/n' will be
+(Font)              scaled to size 12.9599pt on input line 1.
+LaTeX Font Info:    Font shape `T1/phv/bc/n' will be
+(Font)              scaled to size 12.9599pt on input line 1.
+) [1
+
+
+] [2
+
+]
+Chapter 2.
+(./hierarchy.tex) [3] [4
+
+]
+Chapter 3.
+(./annotated.tex) [5] [6
+
+]
+Chapter 4.
+(./files.tex) [7] [8
+
+]
+Chapter 5.
+(./namespaceboid.tex
+LaTeX Font Info:    Font shape `T1/phv/bc/n' will be
+(Font)              scaled to size 10.79993pt on input line 4.
+LaTeX Font Info:    Try loading font information for TS1+phv on input line 7.
+
+(/usr/local/texlive/2013/texmf-dist/tex/latex/psnfss/ts1phv.fd
+File: ts1phv.fd 2001/06/04 scalable font definitions for TS1/phv.
+)
+LaTeX Font Info:    Font shape `TS1/phv/m/n' will be
+(Font)              scaled to size 8.99994pt on input line 7.
+LaTeX Font Info:    Font shape `T1/phv/m/it' in size <9> not available
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 8.
+LaTeX Font Info:    Font shape `T1/phv/m/sl' will be
+(Font)              scaled to size 8.09995pt on input line 8.
+LaTeX Font Info:    Font shape `T1/phv/bc/n' will be
+(Font)              scaled to size 8.99994pt on input line 30.
+LaTeX Font Info:    Font shape `T1/phv/bc/it' in size <10> not available
+(Font)              Font shape `T1/phv/bc/sl' tried instead on input line 30.
+LaTeX Font Info:    Font shape `T1/phv/bc/sl' will be
+(Font)              scaled to size 8.99994pt on input line 30.
+LaTeX Font Info:    Try loading font information for T1+pcr on input line 30.
+
+(/usr/local/texlive/2013/texmf-dist/tex/latex/psnfss/t1pcr.fd
+File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
+)
+
+LaTeX Font Warning: Font shape `T1/pcr/bc/it' undefined
+(Font)              using `T1/pcr/m/n' instead on input line 30.
+
+LaTeX Font Info:    Font shape `T1/phv/m/it' in size <10> not available
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 37.
+LaTeX Font Info:    Font shape `T1/phv/m/sl' will be
+(Font)              scaled to size 8.99994pt on input line 37.
+
+<namespaceboid_a9986e7e6ff357ff3f6ea5f526b99f2a7_icgraph.pdf, id=1603, 305.14pt
+ x 102.3825pt>
+File: namespaceboid_a9986e7e6ff357ff3f6ea5f526b99f2a7_icgraph.pdf Graphic file 
+(type pdf)
+
+<use namespaceboid_a9986e7e6ff357ff3f6ea5f526b99f2a7_icgraph.pdf>
+Package pdftex.def Info: namespaceboid_a9986e7e6ff357ff3f6ea5f526b99f2a7_icgrap
+h.pdf used on input line 54.
+(pdftex.def)             Requested size: 304.0pt x 102.00418pt.
+
+Underfull \vbox (badness 7540) has occurred while \output is active []
+
+ [9])
+(./namespaceboidsimulation.tex) (./namespaceconfiguration.tex)
+(./namespacedijkstra.tex [10 <./namespaceboid_a9986e7e6ff357ff3f6ea5f526b99f2a7
+_icgraph.pdf>]
+LaTeX Font Info:    Font shape `T1/phv/m/n' will be
+(Font)              scaled to size 7.19995pt on input line 27.
+
+Underfull \hbox (badness 10000) detected at line 73
+[][][]
+ []
+
+
+<namespacedijkstra_abb1e685c821d7000ea0f6a867070443d_icgraph.pdf, id=1644, 489.
+83pt x 102.3825pt>
+File: namespacedijkstra_abb1e685c821d7000ea0f6a867070443d_icgraph.pdf Graphic f
+ile (type pdf)
+
+<use namespacedijkstra_abb1e685c821d7000ea0f6a867070443d_icgraph.pdf>
+Package pdftex.def Info: namespacedijkstra_abb1e685c821d7000ea0f6a867070443d_ic
+graph.pdf used on input line 87.
+(pdftex.def)             Requested size: 350.0pt x 73.15762pt.
+
+Underfull \vbox (badness 1107) has occurred while \output is active []
+
+ [11]
+Underfull \hbox (badness 10000) detected at line 118
+[][][]
+ []
+
+
+<namespacedijkstra_a20424eb142377bdf202ef03812875d83_cgraph.pdf, id=1650, 311.1
+625pt x 102.3825pt>
+File: namespacedijkstra_a20424eb142377bdf202ef03812875d83_cgraph.pdf Graphic fi
+le (type pdf)
+
+<use namespacedijkstra_a20424eb142377bdf202ef03812875d83_cgraph.pdf>
+Package pdftex.def Info: namespacedijkstra_a20424eb142377bdf202ef03812875d83_cg
+raph.pdf used on input line 131.
+(pdftex.def)             Requested size: 310.0pt x 102.00105pt.
+
+<namespacedijkstra_a20424eb142377bdf202ef03812875d83_icgraph.pdf, id=1651, 367.
+3725pt x 102.3825pt>
+File: namespacedijkstra_a20424eb142377bdf202ef03812875d83_icgraph.pdf Graphic f
+ile (type pdf)
+
+<use namespacedijkstra_a20424eb142377bdf202ef03812875d83_icgraph.pdf>
+Package pdftex.def Info: namespacedijkstra_a20424eb142377bdf202ef03812875d83_ic
+graph.pdf used on input line 143.
+(pdftex.def)             Requested size: 350.0pt x 97.54713pt.
+)
+(./namespacegatherstats.tex [12 <./namespacedijkstra_abb1e685c821d7000ea0f6a867
+070443d_icgraph.pdf> <./namespacedijkstra_a20424eb142377bdf202ef03812875d83_cgr
+aph.pdf
+
+pdfTeX warning: pdflatex (file ./namespacedijkstra_a20424eb142377bdf202ef038128
+75d83_cgraph.pdf): PDF inclusion: multiple pdfs with page group included in a s
+ingle page
+> <./namespacedijkstra_a20424eb142377bdf202ef03812875d83_icgraph.pdf
+
+pdfTeX warning: pdflatex (file ./namespacedijkstra_a20424eb142377bdf202ef038128
+75d83_icgraph.pdf): PDF inclusion: multiple pdfs with page group included in a 
+single page
+>]) (./namespacegoal.tex) (./namespacemapparser.tex [13]
+Underfull \hbox (badness 10000) detected at line 40
+[][][]
+ []
+
+
+<namespacemapparser_ae6c8103aea02c5ccf436f233de9076ff_icgraph.pdf, id=1692, 313
+.17pt x 102.3825pt>
+File: namespacemapparser_ae6c8103aea02c5ccf436f233de9076ff_icgraph.pdf Graphic 
+file (type pdf)
+
+<use namespacemapparser_ae6c8103aea02c5ccf436f233de9076ff_icgraph.pdf>
+Package pdftex.def Info: namespacemapparser_ae6c8103aea02c5ccf436f233de9076ff_i
+cgraph.pdf used on input line 53.
+(pdftex.def)             Requested size: 312.0pt x 102.00418pt.
+ [14 <./namespacemapparser_ae6c8103aea02c5ccf436f233de9076ff_icgraph.pdf>]
+Underfull \hbox (badness 10000) detected at line 76
+[][][]
+ []
+
+
+<namespacemapparser_a6579236bba8a001573466604b1f7b398_cgraph.pdf, id=1706, 313.
+17pt x 102.3825pt>
+File: namespacemapparser_a6579236bba8a001573466604b1f7b398_cgraph.pdf Graphic f
+ile (type pdf)
+
+<use namespacemapparser_a6579236bba8a001573466604b1f7b398_cgraph.pdf>
+Package pdftex.def Info: namespacemapparser_a6579236bba8a001573466604b1f7b398_c
+graph.pdf used on input line 89.
+(pdftex.def)             Requested size: 312.0pt x 102.00418pt.
+)
+(./namespaceobstacle.tex) (./namespacepriodict.tex) (./namespaceprm.tex)
+(./namespacetest__sim.tex [15 <./namespacemapparser_a6579236bba8a001573466604b1
+f7b398_cgraph.pdf>]
+LaTeX Font Info:    Font shape `T1/phv/m/n' will be
+(Font)              scaled to size 6.29996pt on input line 62.
+ [16]) [17] [18
+
+]
+Chapter 6.
+(./classboid_1_1Boid.tex [19] [20] [21]
+Underfull \hbox (badness 10000) detected at line 209
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 255
+[][][]
+ []
+
+[22]
+Underfull \hbox (badness 10000) detected at line 297
+[][][]
+ []
+
+
+<classboid_1_1Boid_a3467de3698a644a484ff63a3e86f7adc_icgraph.pdf, id=1921, 497.
+86pt x 102.3825pt>
+File: classboid_1_1Boid_a3467de3698a644a484ff63a3e86f7adc_icgraph.pdf Graphic f
+ile (type pdf)
+
+<use classboid_1_1Boid_a3467de3698a644a484ff63a3e86f7adc_icgraph.pdf>
+Package pdftex.def Info: classboid_1_1Boid_a3467de3698a644a484ff63a3e86f7adc_ic
+graph.pdf used on input line 310.
+(pdftex.def)             Requested size: 350.0pt x 71.97658pt.
+
+Underfull \hbox (badness 10000) detected at line 326
+[][][]
+ []
+
+
+<classboid_1_1Boid_a353fbe920fabe58a43affaf183cfcd03_cgraph.pdf, id=1922, 515.9
+275pt x 199.74625pt>
+File: classboid_1_1Boid_a353fbe920fabe58a43affaf183cfcd03_cgraph.pdf Graphic fi
+le (type pdf)
+
+<use classboid_1_1Boid_a353fbe920fabe58a43affaf183cfcd03_cgraph.pdf>
+Package pdftex.def Info: classboid_1_1Boid_a353fbe920fabe58a43affaf183cfcd03_cg
+raph.pdf used on input line 339.
+(pdftex.def)             Requested size: 350.0pt x 135.50867pt.
+
+<classboid_1_1Boid_a353fbe920fabe58a43affaf183cfcd03_icgraph.pdf, id=1923, 345.
+29pt x 102.3825pt>
+File: classboid_1_1Boid_a353fbe920fabe58a43affaf183cfcd03_icgraph.pdf Graphic f
+ile (type pdf)
+
+<use classboid_1_1Boid_a353fbe920fabe58a43affaf183cfcd03_icgraph.pdf>
+Package pdftex.def Info: classboid_1_1Boid_a353fbe920fabe58a43affaf183cfcd03_ic
+graph.pdf used on input line 350.
+(pdftex.def)             Requested size: 344.0pt x 102.00105pt.
+ [23 <./classboid_1_1Boid_a3467de3698a644a484ff63a3e86f7adc_icgraph.pdf> <./cla
+ssboid_1_1Boid_a353fbe920fabe58a43affaf183cfcd03_cgraph.pdf
+
+pdfTeX warning: pdflatex (file ./classboid_1_1Boid_a353fbe920fabe58a43affaf183c
+fcd03_cgraph.pdf): PDF inclusion: multiple pdfs with page group included in a s
+ingle page
+>]
+Underfull \hbox (badness 10000) detected at line 372
+[][][]
+ []
+
+
+<classboid_1_1Boid_a8aa203db69671a064a623a88dfc6b3b7_cgraph.pdf, id=1939, 339.2
+675pt x 102.3825pt>
+File: classboid_1_1Boid_a8aa203db69671a064a623a88dfc6b3b7_cgraph.pdf Graphic fi
+le (type pdf)
+
+<use classboid_1_1Boid_a8aa203db69671a064a623a88dfc6b3b7_cgraph.pdf>
+Package pdftex.def Info: classboid_1_1Boid_a8aa203db69671a064a623a88dfc6b3b7_cg
+raph.pdf used on input line 385.
+(pdftex.def)             Requested size: 338.0pt x 102.00418pt.
+
+<classboid_1_1Boid_a8aa203db69671a064a623a88dfc6b3b7_icgraph.pdf, id=1940, 544.
+0325pt x 182.6825pt>
+File: classboid_1_1Boid_a8aa203db69671a064a623a88dfc6b3b7_icgraph.pdf Graphic f
+ile (type pdf)
+
+<use classboid_1_1Boid_a8aa203db69671a064a623a88dfc6b3b7_icgraph.pdf>
+Package pdftex.def Info: classboid_1_1Boid_a8aa203db69671a064a623a88dfc6b3b7_ic
+graph.pdf used on input line 396.
+(pdftex.def)             Requested size: 350.0pt x 117.53242pt.
+ [24 <./classboid_1_1Boid_a353fbe920fabe58a43affaf183cfcd03_icgraph.pdf> <./cla
+ssboid_1_1Boid_a8aa203db69671a064a623a88dfc6b3b7_cgraph.pdf
+
+pdfTeX warning: pdflatex (file ./classboid_1_1Boid_a8aa203db69671a064a623a88dfc
+6b3b7_cgraph.pdf): PDF inclusion: multiple pdfs with page group included in a s
+ingle page
+> <./classboid_1_1Boid_a8aa203db69671a064a623a88dfc6b3b7_icgraph.pdf
+
+pdfTeX warning: pdflatex (file ./classboid_1_1Boid_a8aa203db69671a064a623a88dfc
+6b3b7_icgraph.pdf): PDF inclusion: multiple pdfs with page group included in a 
+single page
+>]
+Underfull \hbox (badness 10000) detected at line 412
+[][][]
+ []
+
+
+<classboid_1_1Boid_a47c28705553bd3d729212944880161d3_cgraph.pdf, id=1961, 499.8
+675pt x 142.5325pt>
+File: classboid_1_1Boid_a47c28705553bd3d729212944880161d3_cgraph.pdf Graphic fi
+le (type pdf)
+
+<use classboid_1_1Boid_a47c28705553bd3d729212944880161d3_cgraph.pdf>
+Package pdftex.def Info: classboid_1_1Boid_a47c28705553bd3d729212944880161d3_cg
+raph.pdf used on input line 425.
+(pdftex.def)             Requested size: 350.0pt x 99.8025pt.
+
+<classboid_1_1Boid_a47c28705553bd3d729212944880161d3_icgraph.pdf, id=1962, 329.
+23pt x 102.3825pt>
+File: classboid_1_1Boid_a47c28705553bd3d729212944880161d3_icgraph.pdf Graphic f
+ile (type pdf)
+
+<use classboid_1_1Boid_a47c28705553bd3d729212944880161d3_icgraph.pdf>
+Package pdftex.def Info: classboid_1_1Boid_a47c28705553bd3d729212944880161d3_ic
+graph.pdf used on input line 436.
+(pdftex.def)             Requested size: 328.0pt x 102.00262pt.
+
+Underfull \hbox (badness 10000) detected at line 452
+[][][]
+ []
+
+
+<classboid_1_1Boid_aa7ef63f7cc5adfdeb565c56f359b07cd_cgraph.pdf, id=1963, 371.3
+875pt x 182.6825pt>
+File: classboid_1_1Boid_aa7ef63f7cc5adfdeb565c56f359b07cd_cgraph.pdf Graphic fi
+le (type pdf)
+
+<use classboid_1_1Boid_aa7ef63f7cc5adfdeb565c56f359b07cd_cgraph.pdf>
+Package pdftex.def Info: classboid_1_1Boid_aa7ef63f7cc5adfdeb565c56f359b07cd_cg
+raph.pdf used on input line 465.
+(pdftex.def)             Requested size: 350.0pt x 172.16476pt.
+
+Underfull \vbox (badness 7081) has occurred while \output is active []
+
+ [25 <./classboid_1_1Boid_a47c28705553bd3d729212944880161d3_cgraph.pdf> <./clas
+sboid_1_1Boid_a47c28705553bd3d729212944880161d3_icgraph.pdf
+
+pdfTeX warning: pdflatex (file ./classboid_1_1Boid_a47c28705553bd3d729212944880
+161d3_icgraph.pdf): PDF inclusion: multiple pdfs with page group included in a 
+single page
+>]
+<classboid_1_1Boid_aa7ef63f7cc5adfdeb565c56f359b07cd_icgraph.pdf, id=1980, 365.
+365pt x 102.3825pt>
+File: classboid_1_1Boid_aa7ef63f7cc5adfdeb565c56f359b07cd_icgraph.pdf Graphic f
+ile (type pdf)
+
+<use classboid_1_1Boid_aa7ef63f7cc5adfdeb565c56f359b07cd_icgraph.pdf>
+Package pdftex.def Info: classboid_1_1Boid_aa7ef63f7cc5adfdeb565c56f359b07cd_ic
+graph.pdf used on input line 476.
+(pdftex.def)             Requested size: 350.0pt x 98.08142pt.
+
+Underfull \hbox (badness 10000) detected at line 492
+[][][]
+ []
+
+
+<classboid_1_1Boid_a2c496bdcc16d7db82cc0f730ce3d5264_cgraph.pdf, id=1981, 536.0
+025pt x 161.60374pt>
+File: classboid_1_1Boid_a2c496bdcc16d7db82cc0f730ce3d5264_cgraph.pdf Graphic fi
+le (type pdf)
+
+<use classboid_1_1Boid_a2c496bdcc16d7db82cc0f730ce3d5264_cgraph.pdf>
+Package pdftex.def Info: classboid_1_1Boid_a2c496bdcc16d7db82cc0f730ce3d5264_cg
+raph.pdf used on input line 513.
+(pdftex.def)             Requested size: 350.0pt x 105.52449pt.
+ [26 <./classboid_1_1Boid_aa7ef63f7cc5adfdeb565c56f359b07cd_cgraph.pdf> <./clas
+sboid_1_1Boid_aa7ef63f7cc5adfdeb565c56f359b07cd_icgraph.pdf
+
+pdfTeX warning: pdflatex (file ./classboid_1_1Boid_aa7ef63f7cc5adfdeb565c56f359
+b07cd_icgraph.pdf): PDF inclusion: multiple pdfs with page group included in a 
+single page
+>]
+<classboid_1_1Boid_a2c496bdcc16d7db82cc0f730ce3d5264_icgraph.pdf, id=1997, 365.
+365pt x 102.3825pt>
+File: classboid_1_1Boid_a2c496bdcc16d7db82cc0f730ce3d5264_icgraph.pdf Graphic f
+ile (type pdf)
+
+<use classboid_1_1Boid_a2c496bdcc16d7db82cc0f730ce3d5264_icgraph.pdf>
+Package pdftex.def Info: classboid_1_1Boid_a2c496bdcc16d7db82cc0f730ce3d5264_ic
+graph.pdf used on input line 524.
+(pdftex.def)             Requested size: 350.0pt x 98.08142pt.
+
+Underfull \hbox (badness 10000) detected at line 549
+[][][]
+ []
+
+
+<classboid_1_1Boid_ab232028bea08b512bbdaab5be7dfd08f_icgraph.pdf, id=1998, 491.
+8375pt x 102.3825pt>
+File: classboid_1_1Boid_ab232028bea08b512bbdaab5be7dfd08f_icgraph.pdf Graphic f
+ile (type pdf)
+
+<use classboid_1_1Boid_ab232028bea08b512bbdaab5be7dfd08f_icgraph.pdf>
+Package pdftex.def Info: classboid_1_1Boid_ab232028bea08b512bbdaab5be7dfd08f_ic
+graph.pdf used on input line 562.
+(pdftex.def)             Requested size: 350.0pt x 72.85924pt.
+ [27 <./classboid_1_1Boid_a2c496bdcc16d7db82cc0f730ce3d5264_cgraph.pdf> <./clas
+sboid_1_1Boid_a2c496bdcc16d7db82cc0f730ce3d5264_icgraph.pdf
+
+pdfTeX warning: pdflatex (file ./classboid_1_1Boid_a2c496bdcc16d7db82cc0f730ce3
+d5264_icgraph.pdf): PDF inclusion: multiple pdfs with page group included in a 
+single page
+> <./classboid_1_1Boid_ab232028bea08b512bbdaab5be7dfd08f_icgraph.pdf
+
+pdfTeX warning: pdflatex (file ./classboid_1_1Boid_ab232028bea08b512bbdaab5be7d
+fd08f_icgraph.pdf): PDF inclusion: multiple pdfs with page group included in a 
+single page
+>]
+Underfull \hbox (badness 10000) detected at line 584
+[][][]
+ []
+
+
+<classboid_1_1Boid_a19392045cdd5e9b46136369028be3c52_icgraph.pdf, id=2020, 469.
+755pt x 122.4575pt>
+File: classboid_1_1Boid_a19392045cdd5e9b46136369028be3c52_icgraph.pdf Graphic f
+ile (type pdf)
+
+<use classboid_1_1Boid_a19392045cdd5e9b46136369028be3c52_icgraph.pdf>
+Package pdftex.def Info: classboid_1_1Boid_a19392045cdd5e9b46136369028be3c52_ic
+graph.pdf used on input line 597.
+(pdftex.def)             Requested size: 350.0pt x 91.23933pt.
+
+Underfull \hbox (badness 10000) detected at line 630
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 654
+[][][]
+ []
+
+
+<classboid_1_1Boid_a5324650d399f5c850ec7b7bda10eeae7_icgraph.pdf, id=2021, 660.
+4675pt x 182.6825pt>
+File: classboid_1_1Boid_a5324650d399f5c850ec7b7bda10eeae7_icgraph.pdf Graphic f
+ile (type pdf)
+
+<use classboid_1_1Boid_a5324650d399f5c850ec7b7bda10eeae7_icgraph.pdf>
+Package pdftex.def Info: classboid_1_1Boid_a5324650d399f5c850ec7b7bda10eeae7_ic
+graph.pdf used on input line 672.
+(pdftex.def)             Requested size: 350.0pt x 96.8101pt.
+ [28 <./classboid_1_1Boid_a19392045cdd5e9b46136369028be3c52_icgraph.pdf>]
+Underfull \hbox (badness 10000) detected at line 695
+[][][]
+ []
+
+
+<classboid_1_1Boid_a576c57d100aa5743d610de30bf1a2b2c_icgraph.pdf, id=2032, 734.
+745pt x 546.04pt>
+File: classboid_1_1Boid_a576c57d100aa5743d610de30bf1a2b2c_icgraph.pdf Graphic f
+ile (type pdf)
+
+<use classboid_1_1Boid_a576c57d100aa5743d610de30bf1a2b2c_icgraph.pdf>
+Package pdftex.def Info: classboid_1_1Boid_a576c57d100aa5743d610de30bf1a2b2c_ic
+graph.pdf used on input line 709.
+(pdftex.def)             Requested size: 350.0pt x 260.11324pt.
+ [29 <./classboid_1_1Boid_a5324650d399f5c850ec7b7bda10eeae7_icgraph.pdf> <./cla
+ssboid_1_1Boid_a576c57d100aa5743d610de30bf1a2b2c_icgraph.pdf
+
+pdfTeX warning: pdflatex (file ./classboid_1_1Boid_a576c57d100aa5743d610de30bf1
+a2b2c_icgraph.pdf): PDF inclusion: multiple pdfs with page group included in a 
+single page
+>]
+Underfull \hbox (badness 10000) detected at line 737
+[][][]
+ []
+
+
+<classboid_1_1Boid_ab330aef12ad0a338a51a7661c736e971_cgraph.pdf, id=2048, 319.1
+925pt x 102.3825pt>
+File: classboid_1_1Boid_ab330aef12ad0a338a51a7661c736e971_cgraph.pdf Graphic fi
+le (type pdf)
+
+<use classboid_1_1Boid_ab330aef12ad0a338a51a7661c736e971_cgraph.pdf>
+Package pdftex.def Info: classboid_1_1Boid_ab330aef12ad0a338a51a7661c736e971_cg
+raph.pdf used on input line 750.
+(pdftex.def)             Requested size: 318.0pt x 102.00105pt.
+
+<classboid_1_1Boid_ab330aef12ad0a338a51a7661c736e971_icgraph.pdf, id=2049, 521.
+95pt x 102.3825pt>
+File: classboid_1_1Boid_ab330aef12ad0a338a51a7661c736e971_icgraph.pdf Graphic f
+ile (type pdf)
+
+<use classboid_1_1Boid_ab330aef12ad0a338a51a7661c736e971_icgraph.pdf>
+Package pdftex.def Info: classboid_1_1Boid_ab330aef12ad0a338a51a7661c736e971_ic
+graph.pdf used on input line 761.
+(pdftex.def)             Requested size: 350.0pt x 68.65527pt.
+
+Underfull \hbox (badness 10000) detected at line 807
+[][][]
+ []
+
+
+<classboid_1_1Boid_a2d4f1cded412a333857bb1b8b17d3dd0_cgraph.pdf, id=2050, 375.4
+025pt x 102.3825pt>
+File: classboid_1_1Boid_a2d4f1cded412a333857bb1b8b17d3dd0_cgraph.pdf Graphic fi
+le (type pdf)
+
+<use classboid_1_1Boid_a2d4f1cded412a333857bb1b8b17d3dd0_cgraph.pdf>
+Package pdftex.def Info: classboid_1_1Boid_a2d4f1cded412a333857bb1b8b17d3dd0_cg
+raph.pdf used on input line 820.
+(pdftex.def)             Requested size: 350.0pt x 95.46pt.
+ [30 <./classboid_1_1Boid_ab330aef12ad0a338a51a7661c736e971_cgraph.pdf> <./clas
+sboid_1_1Boid_ab330aef12ad0a338a51a7661c736e971_icgraph.pdf
+
+pdfTeX warning: pdflatex (file ./classboid_1_1Boid_ab330aef12ad0a338a51a7661c73
+6e971_icgraph.pdf): PDF inclusion: multiple pdfs with page group included in a 
+single page
+>]
+<classboid_1_1Boid_af2f2931c5971a4447cfe179fdafe3ab5_cgraph.pdf, id=2067, 465.7
+4pt x 102.3825pt>
+File: classboid_1_1Boid_af2f2931c5971a4447cfe179fdafe3ab5_cgraph.pdf Graphic fi
+le (type pdf)
+
+<use classboid_1_1Boid_af2f2931c5971a4447cfe179fdafe3ab5_cgraph.pdf>
+Package pdftex.def Info: classboid_1_1Boid_af2f2931c5971a4447cfe179fdafe3ab5_cg
+raph.pdf used on input line 867.
+(pdftex.def)             Requested size: 350.0pt x 76.9429pt.
+
+Overfull \hbox (12.76839pt too wide) in paragraph at lines 893--893
+ \T1/phv/m/sl/10 pha,beta,delta,const|
+ []
+
+[31 <./classboid_1_1Boid_a2d4f1cded412a333857bb1b8b17d3dd0_cgraph.pdf> <./class
+boid_1_1Boid_af2f2931c5971a4447cfe179fdafe3ab5_cgraph.pdf
+
+pdfTeX warning: pdflatex (file ./classboid_1_1Boid_af2f2931c5971a4447cfe179fdaf
+e3ab5_cgraph.pdf): PDF inclusion: multiple pdfs with page group included in a s
+ingle page
+>]
+<classboid_1_1Boid_a492a0ad33a962b15ed94789d59f3b08a_cgraph.pdf, id=2084, 315.1
+775pt x 102.3825pt>
+File: classboid_1_1Boid_a492a0ad33a962b15ed94789d59f3b08a_cgraph.pdf Graphic fi
+le (type pdf)
+
+<use classboid_1_1Boid_a492a0ad33a962b15ed94789d59f3b08a_cgraph.pdf>
+Package pdftex.def Info: classboid_1_1Boid_a492a0ad33a962b15ed94789d59f3b08a_cg
+raph.pdf used on input line 910.
+(pdftex.def)             Requested size: 314.0pt x 102.00574pt.
+
+<classboid_1_1Boid_a492a0ad33a962b15ed94789d59f3b08a_icgraph.pdf, id=2085, 497.
+86pt x 182.6825pt>
+File: classboid_1_1Boid_a492a0ad33a962b15ed94789d59f3b08a_icgraph.pdf Graphic f
+ile (type pdf)
+
+<use classboid_1_1Boid_a492a0ad33a962b15ed94789d59f3b08a_icgraph.pdf>
+Package pdftex.def Info: classboid_1_1Boid_a492a0ad33a962b15ed94789d59f3b08a_ic
+graph.pdf used on input line 921.
+(pdftex.def)             Requested size: 350.0pt x 128.42879pt.
+
+<classboid_1_1Boid_a9223cd4c67780cbdbe60a4efb2ee441e_icgraph.pdf, id=2086, 375.
+4025pt x 142.5325pt>
+File: classboid_1_1Boid_a9223cd4c67780cbdbe60a4efb2ee441e_icgraph.pdf Graphic f
+ile (type pdf)
+
+<use classboid_1_1Boid_a9223cd4c67780cbdbe60a4efb2ee441e_icgraph.pdf>
+Package pdftex.def Info: classboid_1_1Boid_a9223cd4c67780cbdbe60a4efb2ee441e_ic
+graph.pdf used on input line 958.
+(pdftex.def)             Requested size: 350.0pt x 132.8953pt.
+ [32 <./classboid_1_1Boid_a492a0ad33a962b15ed94789d59f3b08a_cgraph.pdf> <./clas
+sboid_1_1Boid_a492a0ad33a962b15ed94789d59f3b08a_icgraph.pdf
+
+pdfTeX warning: pdflatex (file ./classboid_1_1Boid_a492a0ad33a962b15ed94789d59f
+3b08a_icgraph.pdf): PDF inclusion: multiple pdfs with page group included in a 
+single page
+> <./classboid_1_1Boid_a9223cd4c67780cbdbe60a4efb2ee441e_icgraph.pdf
+
+pdfTeX warning: pdflatex (file ./classboid_1_1Boid_a9223cd4c67780cbdbe60a4efb2e
+e441e_icgraph.pdf): PDF inclusion: multiple pdfs with page group included in a 
+single page
+>]
+<classboid_1_1Boid_a8a354e4b7d58ced69771f3bb5f52d257_cgraph.pdf, id=2107, 662.4
+75pt x 420.57124pt>
+File: classboid_1_1Boid_a8a354e4b7d58ced69771f3bb5f52d257_cgraph.pdf Graphic fi
+le (type pdf)
+
+<use classboid_1_1Boid_a8a354e4b7d58ced69771f3bb5f52d257_cgraph.pdf>
+Package pdftex.def Info: classboid_1_1Boid_a8a354e4b7d58ced69771f3bb5f52d257_cg
+raph.pdf used on input line 985.
+(pdftex.def)             Requested size: 350.0pt x 222.19579pt.
+
+Underfull \hbox (badness 10000) detected at line 1001
+[][][]
+ []
+
+[33 <./classboid_1_1Boid_a8a354e4b7d58ced69771f3bb5f52d257_cgraph.pdf>]
+[34] [35] [36] [37]) (./classgoal_1_1CircleGoal.tex [38])
+(./classconfiguration_1_1Configuration.tex [39]
+<classconfiguration_1_1Configuration__inherit__graph.pdf, id=2163, 248.93pt x 1
+60.6pt>
+File: classconfiguration_1_1Configuration__inherit__graph.pdf Graphic file (typ
+e pdf)
+ <use classconfiguration_1_1Configuration__inherit__graph.pdf>
+Package pdftex.def Info: classconfiguration_1_1Configuration__inherit__graph.pd
+f used on input line 15.
+(pdftex.def)             Requested size: 248.0pt x 160.0041pt.
+
+<classconfiguration_1_1Configuration__coll__graph.pdf, id=2164, 251.94125pt x 2
+26.8475pt>
+File: classconfiguration_1_1Configuration__coll__graph.pdf Graphic file (type p
+df)
+ <use classconfiguration_1_1Configuration__coll__graph.pdf>
+Package pdftex.def Info: classconfiguration_1_1Configuration__coll__graph.pdf u
+sed on input line 24.
+(pdftex.def)             Requested size: 251.0pt x 226.00235pt.
+ [40 <./classconfiguration_1_1Configuration__inherit__graph.pdf> <./classconfig
+uration_1_1Configuration__coll__graph.pdf
+
+pdfTeX warning: pdflatex (file ./classconfiguration_1_1Configuration__coll__gra
+ph.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+
+>]
+
+LaTeX Font Warning: Font shape `T1/pcr/bc/n' undefined
+(Font)              using `T1/pcr/m/n' instead on input line 56.
+
+[41]) (./classdict.tex
+<classdict__inherit__graph.pdf, id=2202, 204.765pt x 160.6pt>
+File: classdict__inherit__graph.pdf Graphic file (type pdf)
+
+<use classdict__inherit__graph.pdf>
+Package pdftex.def Info: classdict__inherit__graph.pdf used on input line 10.
+(pdftex.def)             Requested size: 204.0pt x 160.009pt.
+) (./classboidsimulation_1_1FlockSim.tex
+[42 <./classdict__inherit__graph.pdf>] [43]
+<classboidsimulation_1_1FlockSim_a4fb29f4acff12a3d9b9a88280501320d_cgraph.pdf, 
+id=2276, 632.3625pt x 142.5325pt>
+File: classboidsimulation_1_1FlockSim_a4fb29f4acff12a3d9b9a88280501320d_cgraph.
+pdf Graphic file (type pdf)
+
+<use classboidsimulation_1_1FlockSim_a4fb29f4acff12a3d9b9a88280501320d_cgraph.p
+df>
+Package pdftex.def Info: classboidsimulation_1_1FlockSim_a4fb29f4acff12a3d9b9a8
+8280501320d_cgraph.pdf used on input line 139.
+(pdftex.def)             Requested size: 350.0pt x 78.88898pt.
+
+<classboidsimulation_1_1FlockSim_a4fb29f4acff12a3d9b9a88280501320d_icgraph.pdf,
+ id=2277, 423.5825pt x 102.3825pt>
+File: classboidsimulation_1_1FlockSim_a4fb29f4acff12a3d9b9a88280501320d_icgraph
+.pdf Graphic file (type pdf)
+
+<use classboidsimulation_1_1FlockSim_a4fb29f4acff12a3d9b9a88280501320d_icgraph.
+pdf>
+Package pdftex.def Info: classboidsimulation_1_1FlockSim_a4fb29f4acff12a3d9b9a8
+8280501320d_icgraph.pdf used on input line 150.
+(pdftex.def)             Requested size: 350.0pt x 84.59938pt.
+
+Underfull \hbox (badness 10000) detected at line 172
+[][][]
+ []
+
+
+<classboidsimulation_1_1FlockSim_ad69cb572160cb83e3c868fc9de4a9e75_icgraph.pdf,
+ id=2278, 399.4925pt x 114.4275pt>
+File: classboidsimulation_1_1FlockSim_ad69cb572160cb83e3c868fc9de4a9e75_icgraph
+.pdf Graphic file (type pdf)
+
+<use classboidsimulation_1_1FlockSim_ad69cb572160cb83e3c868fc9de4a9e75_icgraph.
+pdf>
+Package pdftex.def Info: classboidsimulation_1_1FlockSim_ad69cb572160cb83e3c868
+fc9de4a9e75_icgraph.pdf used on input line 185.
+(pdftex.def)             Requested size: 350.0pt x 100.2565pt.
+ [44 <./classboidsimulation_1_1FlockSim_a4fb29f4acff12a3d9b9a88280501320d_cgrap
+h.pdf> <./classboidsimulation_1_1FlockSim_a4fb29f4acff12a3d9b9a88280501320d_icg
+raph.pdf
+
+pdfTeX warning: pdflatex (file ./classboidsimulation_1_1FlockSim_a4fb29f4acff12
+a3d9b9a88280501320d_icgraph.pdf): PDF inclusion: multiple pdfs with page group 
+included in a single page
+>]
+<classboidsimulation_1_1FlockSim_ae638beb355d9d953fe51e087ff1e6e94_cgraph.pdf, 
+id=2294, 399.4925pt x 114.4275pt>
+File: classboidsimulation_1_1FlockSim_ae638beb355d9d953fe51e087ff1e6e94_cgraph.
+pdf Graphic file (type pdf)
+
+<use classboidsimulation_1_1FlockSim_ae638beb355d9d953fe51e087ff1e6e94_cgraph.p
+df>
+Package pdftex.def Info: classboidsimulation_1_1FlockSim_ae638beb355d9d953fe51e
+087ff1e6e94_cgraph.pdf used on input line 226.
+(pdftex.def)             Requested size: 350.0pt x 100.2565pt.
+
+<classboidsimulation_1_1FlockSim_a86097d942af27dc5df9f7190befd363c_icgraph.pdf,
+ id=2295, 813.0375pt x 102.3825pt>
+File: classboidsimulation_1_1FlockSim_a86097d942af27dc5df9f7190befd363c_icgraph
+.pdf Graphic file (type pdf)
+
+<use classboidsimulation_1_1FlockSim_a86097d942af27dc5df9f7190befd363c_icgraph.
+pdf>
+Package pdftex.def Info: classboidsimulation_1_1FlockSim_a86097d942af27dc5df9f7
+190befd363c_icgraph.pdf used on input line 252.
+(pdftex.def)             Requested size: 350.0pt x 44.0736pt.
+
+Underfull \vbox (badness 1377) has occurred while \output is active []
+
+ [45 <./classboidsimulation_1_1FlockSim_ad69cb572160cb83e3c868fc9de4a9e75_icgra
+ph.pdf> <./classboidsimulation_1_1FlockSim_ae638beb355d9d953fe51e087ff1e6e94_cg
+raph.pdf
+
+pdfTeX warning: pdflatex (file ./classboidsimulation_1_1FlockSim_ae638beb355d9d
+953fe51e087ff1e6e94_cgraph.pdf): PDF inclusion: multiple pdfs with page group i
+ncluded in a single page
+>]
+<classboidsimulation_1_1FlockSim_a50ded4dc206f7ae1011347ef234a0091_cgraph.pdf, 
+id=2313, 813.0375pt x 102.3825pt>
+File: classboidsimulation_1_1FlockSim_a50ded4dc206f7ae1011347ef234a0091_cgraph.
+pdf Graphic file (type pdf)
+
+<use classboidsimulation_1_1FlockSim_a50ded4dc206f7ae1011347ef234a0091_cgraph.p
+df>
+Package pdftex.def Info: classboidsimulation_1_1FlockSim_a50ded4dc206f7ae101134
+7ef234a0091_cgraph.pdf used on input line 278.
+(pdftex.def)             Requested size: 350.0pt x 44.0736pt.
+
+<classboidsimulation_1_1FlockSim_a50ded4dc206f7ae1011347ef234a0091_icgraph.pdf,
+ id=2314, 423.5825pt x 102.3825pt>
+File: classboidsimulation_1_1FlockSim_a50ded4dc206f7ae1011347ef234a0091_icgraph
+.pdf Graphic file (type pdf)
+
+<use classboidsimulation_1_1FlockSim_a50ded4dc206f7ae1011347ef234a0091_icgraph.
+pdf>
+Package pdftex.def Info: classboidsimulation_1_1FlockSim_a50ded4dc206f7ae101134
+7ef234a0091_icgraph.pdf used on input line 289.
+(pdftex.def)             Requested size: 350.0pt x 84.59938pt.
+
+<classboidsimulation_1_1FlockSim_a3c456990ff58b2a5dfae2dd2b5b6d294_cgraph.pdf, 
+id=2315, 433.62pt x 102.3825pt>
+File: classboidsimulation_1_1FlockSim_a3c456990ff58b2a5dfae2dd2b5b6d294_cgraph.
+pdf Graphic file (type pdf)
+
+<use classboidsimulation_1_1FlockSim_a3c456990ff58b2a5dfae2dd2b5b6d294_cgraph.p
+df>
+Package pdftex.def Info: classboidsimulation_1_1FlockSim_a3c456990ff58b2a5dfae2
+dd2b5b6d294_cgraph.pdf used on input line 321.
+(pdftex.def)             Requested size: 350.0pt x 82.64348pt.
+
+<classboidsimulation_1_1FlockSim_a3c456990ff58b2a5dfae2dd2b5b6d294_icgraph.pdf,
+ id=2316, 614.295pt x 102.3825pt>
+File: classboidsimulation_1_1FlockSim_a3c456990ff58b2a5dfae2dd2b5b6d294_icgraph
+.pdf Graphic file (type pdf)
+
+<use classboidsimulation_1_1FlockSim_a3c456990ff58b2a5dfae2dd2b5b6d294_icgraph.
+pdf>
+Package pdftex.def Info: classboidsimulation_1_1FlockSim_a3c456990ff58b2a5dfae2
+dd2b5b6d294_icgraph.pdf used on input line 332.
+(pdftex.def)             Requested size: 350.0pt x 58.33363pt.
+ [46 <./classboidsimulation_1_1FlockSim_a86097d942af27dc5df9f7190befd363c_icgra
+ph.pdf> <./classboidsimulation_1_1FlockSim_a50ded4dc206f7ae1011347ef234a0091_cg
+raph.pdf
+
+pdfTeX warning: pdflatex (file ./classboidsimulation_1_1FlockSim_a50ded4dc206f7
+ae1011347ef234a0091_cgraph.pdf): PDF inclusion: multiple pdfs with page group i
+ncluded in a single page
+> <./classboidsimulation_1_1FlockSim_a50ded4dc206f7ae1011347ef234a0091_icgraph.
+pdf
+
+pdfTeX warning: pdflatex (file ./classboidsimulation_1_1FlockSim_a50ded4dc206f7
+ae1011347ef234a0091_icgraph.pdf): PDF inclusion: multiple pdfs with page group 
+included in a single page
+> <./classboidsimulation_1_1FlockSim_a3c456990ff58b2a5dfae2dd2b5b6d294_cgraph.p
+df
+
+pdfTeX warning: pdflatex (file ./classboidsimulation_1_1FlockSim_a3c456990ff58b
+2a5dfae2dd2b5b6d294_cgraph.pdf): PDF inclusion: multiple pdfs with page group i
+ncluded in a single page
+>] [47 <./classboidsimulation_1_1FlockSim_a3c456990ff58b2a5dfae2dd2b5b6d294_icg
+raph.pdf>] [48]) (./classconfiguration_1_1PolyFileConfiguration.tex
+<classconfiguration_1_1PolyFileConfiguration__inherit__graph.pdf, id=2358, 248.
+93pt x 160.6pt>
+File: classconfiguration_1_1PolyFileConfiguration__inherit__graph.pdf Graphic f
+ile (type pdf)
+
+<use classconfiguration_1_1PolyFileConfiguration__inherit__graph.pdf>
+Package pdftex.def Info: classconfiguration_1_1PolyFileConfiguration__inherit__
+graph.pdf used on input line 15.
+(pdftex.def)             Requested size: 248.0pt x 160.0041pt.
+
+<classconfiguration_1_1PolyFileConfiguration__coll__graph.pdf, id=2359, 270.008
+74pt x 287.0725pt>
+File: classconfiguration_1_1PolyFileConfiguration__coll__graph.pdf Graphic file
+ (type pdf)
+
+<use classconfiguration_1_1PolyFileConfiguration__coll__graph.pdf>
+Package pdftex.def Info: classconfiguration_1_1PolyFileConfiguration__coll__gra
+ph.pdf used on input line 24.
+(pdftex.def)             Requested size: 269.0pt x 286.00735pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [49 <./classconfiguration_1_1PolyFileConfiguration__inherit__graph.pdf>] [50 <
+./classconfiguration_1_1PolyFileConfiguration__coll__graph.pdf>] [51])
+(./classobstacle_1_1PolyObstacle.tex
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <5> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 21.
+ [52] [53]
+Underfull \hbox (badness 10000) detected at line 182
+[][][]
+ []
+
+[54]
+Underfull \hbox (badness 10000) detected at line 263
+[][][]
+ []
+
+
+<classobstacle_1_1PolyObstacle_a43adce887280997dfb49067e741f54db_cgraph.pdf, id
+=2486, 389.455pt x 142.5325pt>
+File: classobstacle_1_1PolyObstacle_a43adce887280997dfb49067e741f54db_cgraph.pd
+f Graphic file (type pdf)
+
+<use classobstacle_1_1PolyObstacle_a43adce887280997dfb49067e741f54db_cgraph.pdf
+>
+Package pdftex.def Info: classobstacle_1_1PolyObstacle_a43adce887280997dfb49067
+e741f54db_cgraph.pdf used on input line 276.
+(pdftex.def)             Requested size: 350.0pt x 128.09753pt.
+
+<classobstacle_1_1PolyObstacle_a43adce887280997dfb49067e741f54db_icgraph.pdf, i
+d=2487, 558.085pt x 114.4275pt>
+File: classobstacle_1_1PolyObstacle_a43adce887280997dfb49067e741f54db_icgraph.p
+df Graphic file (type pdf)
+
+<use classobstacle_1_1PolyObstacle_a43adce887280997dfb49067e741f54db_icgraph.pd
+f>
+Package pdftex.def Info: classobstacle_1_1PolyObstacle_a43adce887280997dfb49067
+e741f54db_icgraph.pdf used on input line 287.
+(pdftex.def)             Requested size: 350.0pt x 71.76494pt.
+
+Underfull \vbox (badness 5316) has occurred while \output is active []
+
+ [55 <./classobstacle_1_1PolyObstacle_a43adce887280997dfb49067e741f54db_cgraph.
+pdf>]
+Underfull \hbox (badness 10000) detected at line 309
+[][][]
+ []
+
+
+<classobstacle_1_1PolyObstacle_af866b6f101194b8a8731f2394fdc247e_cgraph.pdf, id
+=2499, 558.085pt x 144.54pt>
+File: classobstacle_1_1PolyObstacle_af866b6f101194b8a8731f2394fdc247e_cgraph.pd
+f Graphic file (type pdf)
+
+<use classobstacle_1_1PolyObstacle_af866b6f101194b8a8731f2394fdc247e_cgraph.pdf
+>
+Package pdftex.def Info: classobstacle_1_1PolyObstacle_af866b6f101194b8a8731f23
+94fdc247e_cgraph.pdf used on input line 322.
+(pdftex.def)             Requested size: 350.0pt x 90.65044pt.
+
+<classobstacle_1_1PolyObstacle_af866b6f101194b8a8731f2394fdc247e_icgraph.pdf, i
+d=2500, 389.455pt x 114.4275pt>
+File: classobstacle_1_1PolyObstacle_af866b6f101194b8a8731f2394fdc247e_icgraph.p
+df Graphic file (type pdf)
+
+<use classobstacle_1_1PolyObstacle_af866b6f101194b8a8731f2394fdc247e_icgraph.pd
+f>
+Package pdftex.def Info: classobstacle_1_1PolyObstacle_af866b6f101194b8a8731f23
+94fdc247e_icgraph.pdf used on input line 333.
+(pdftex.def)             Requested size: 350.0pt x 102.83887pt.
+
+Underfull \hbox (badness 10000) detected at line 349
+[][][]
+ []
+
+[56 <./classobstacle_1_1PolyObstacle_a43adce887280997dfb49067e741f54db_icgraph.
+pdf> <./classobstacle_1_1PolyObstacle_af866b6f101194b8a8731f2394fdc247e_cgraph.
+pdf
+
+pdfTeX warning: pdflatex (file ./classobstacle_1_1PolyObstacle_af866b6f101194b8
+a8731f2394fdc247e_cgraph.pdf): PDF inclusion: multiple pdfs with page group inc
+luded in a single page
+> <./classobstacle_1_1PolyObstacle_af866b6f101194b8a8731f2394fdc247e_icgraph.pd
+f
+
+pdfTeX warning: pdflatex (file ./classobstacle_1_1PolyObstacle_af866b6f101194b8
+a8731f2394fdc247e_icgraph.pdf): PDF inclusion: multiple pdfs with page group in
+cluded in a single page
+>]
+Underfull \hbox (badness 10000) detected at line 374
+[][][]
+ []
+
+
+<classobstacle_1_1PolyObstacle_a3392ccb4d22e752b0f150af354b16862_icgraph.pdf, i
+d=2521, 776.9025pt x 349.305pt>
+File: classobstacle_1_1PolyObstacle_a3392ccb4d22e752b0f150af354b16862_icgraph.p
+df Graphic file (type pdf)
+
+<use classobstacle_1_1PolyObstacle_a3392ccb4d22e752b0f150af354b16862_icgraph.pd
+f>
+Package pdftex.def Info: classobstacle_1_1PolyObstacle_a3392ccb4d22e752b0f150af
+354b16862_icgraph.pdf used on input line 388.
+(pdftex.def)             Requested size: 350.0pt x 157.367pt.
+
+Underfull \hbox (badness 10000) detected at line 413
+[][][]
+ []
+
+
+<classobstacle_1_1PolyObstacle_af71f01fca50193a5e5372c2507661ada_cgraph.pdf, id
+=2522, 796.9775pt x 313.17pt>
+File: classobstacle_1_1PolyObstacle_af71f01fca50193a5e5372c2507661ada_cgraph.pd
+f Graphic file (type pdf)
+
+<use classobstacle_1_1PolyObstacle_af71f01fca50193a5e5372c2507661ada_cgraph.pdf
+>
+Package pdftex.def Info: classobstacle_1_1PolyObstacle_af71f01fca50193a5e5372c2
+507661ada_cgraph.pdf used on input line 426.
+(pdftex.def)             Requested size: 350.0pt x 137.5324pt.
+ [57 <./classobstacle_1_1PolyObstacle_a3392ccb4d22e752b0f150af354b16862_icgraph
+.pdf>]
+Underfull \hbox (badness 10000) detected at line 448
+[][][]
+ []
+
+
+<classobstacle_1_1PolyObstacle_a4647d9efa8fb20d7b464ee5faa8fd7f4_cgraph.pdf, id
+=2535, 443.6575pt x 142.5325pt>
+File: classobstacle_1_1PolyObstacle_a4647d9efa8fb20d7b464ee5faa8fd7f4_cgraph.pd
+f Graphic file (type pdf)
+
+<use classobstacle_1_1PolyObstacle_a4647d9efa8fb20d7b464ee5faa8fd7f4_cgraph.pdf
+>
+Package pdftex.def Info: classobstacle_1_1PolyObstacle_a4647d9efa8fb20d7b464ee5
+faa8fd7f4_cgraph.pdf used on input line 461.
+(pdftex.def)             Requested size: 350.0pt x 112.44283pt.
+
+<classobstacle_1_1PolyObstacle_a4647d9efa8fb20d7b464ee5faa8fd7f4_icgraph.pdf, i
+d=2536, 397.485pt x 114.4275pt>
+File: classobstacle_1_1PolyObstacle_a4647d9efa8fb20d7b464ee5faa8fd7f4_icgraph.p
+df Graphic file (type pdf)
+
+<use classobstacle_1_1PolyObstacle_a4647d9efa8fb20d7b464ee5faa8fd7f4_icgraph.pd
+f>
+Package pdftex.def Info: classobstacle_1_1PolyObstacle_a4647d9efa8fb20d7b464ee5
+faa8fd7f4_icgraph.pdf used on input line 472.
+(pdftex.def)             Requested size: 350.0pt x 100.76111pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [58 <./classobstacle_1_1PolyObstacle_af71f01fca50193a5e5372c2507661ada_cgraph.
+pdf> <./classobstacle_1_1PolyObstacle_a4647d9efa8fb20d7b464ee5faa8fd7f4_cgraph.
+pdf
+
+pdfTeX warning: pdflatex (file ./classobstacle_1_1PolyObstacle_a4647d9efa8fb20d
+7b464ee5faa8fd7f4_cgraph.pdf): PDF inclusion: multiple pdfs with page group inc
+luded in a single page
+>]
+Underfull \hbox (badness 10000) detected at line 499
+[][][]
+ []
+
+
+<classobstacle_1_1PolyObstacle_a646f5fc4ba3e67c98c2313f4493b6a08_icgraph.pdf, i
+d=2552, 620.3175pt x 114.4275pt>
+File: classobstacle_1_1PolyObstacle_a646f5fc4ba3e67c98c2313f4493b6a08_icgraph.p
+df Graphic file (type pdf)
+
+<use classobstacle_1_1PolyObstacle_a646f5fc4ba3e67c98c2313f4493b6a08_icgraph.pd
+f>
+Package pdftex.def Info: classobstacle_1_1PolyObstacle_a646f5fc4ba3e67c98c2313f
+4493b6a08_icgraph.pdf used on input line 512.
+(pdftex.def)             Requested size: 350.0pt x 64.5626pt.
+ [59 <./classobstacle_1_1PolyObstacle_a4647d9efa8fb20d7b464ee5faa8fd7f4_icgraph
+.pdf> <./classobstacle_1_1PolyObstacle_a646f5fc4ba3e67c98c2313f4493b6a08_icgrap
+h.pdf
+
+pdfTeX warning: pdflatex (file ./classobstacle_1_1PolyObstacle_a646f5fc4ba3e67c
+98c2313f4493b6a08_icgraph.pdf): PDF inclusion: multiple pdfs with page group in
+cluded in a single page
+>] [60]) (./classpriodict_1_1priorityDictionary.tex
+<classpriodict_1_1priorityDictionary__inherit__graph.pdf, id=2574, 204.765pt x 
+160.6pt>
+File: classpriodict_1_1priorityDictionary__inherit__graph.pdf Graphic file (typ
+e pdf)
+ <use classpriodict_1_1priorityDictionary__inherit__graph.pdf>
+Package pdftex.def Info: classpriodict_1_1priorityDictionary__inherit__graph.pd
+f used on input line 10.
+(pdftex.def)             Requested size: 204.0pt x 160.009pt.
+
+<classpriodict_1_1priorityDictionary__coll__graph.pdf, id=2575, 204.765pt x 160
+.6pt>
+File: classpriodict_1_1priorityDictionary__coll__graph.pdf Graphic file (type p
+df)
+ <use classpriodict_1_1priorityDictionary__coll__graph.pdf>
+Package pdftex.def Info: classpriodict_1_1priorityDictionary__coll__graph.pdf u
+sed on input line 19.
+(pdftex.def)             Requested size: 204.0pt x 160.009pt.
+ [61 <./classpriodict_1_1priorityDictionary__inherit__graph.pdf> <./classpriodi
+ct_1_1priorityDictionary__coll__graph.pdf
+
+pdfTeX warning: pdflatex (file ./classpriodict_1_1priorityDictionary__coll__gra
+ph.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+
+>]
+LaTeX Font Info:    Font shape `T1/phv/bx/it' in size <9> not available
+(Font)              Font shape `T1/phv/b/it' tried instead on input line 34.
+LaTeX Font Info:    Font shape `T1/phv/b/it' in size <9> not available
+(Font)              Font shape `T1/phv/b/sl' tried instead on input line 34.
+LaTeX Font Info:    Font shape `T1/phv/b/sl' will be
+(Font)              scaled to size 8.09995pt on input line 34.
+
+<classpriodict_1_1priorityDictionary_ae2386d1d220c9be0c3193adf425423dd_cgraph.p
+df, id=2603, 409.53pt x 114.4275pt>
+File: classpriodict_1_1priorityDictionary_ae2386d1d220c9be0c3193adf425423dd_cgr
+aph.pdf Graphic file (type pdf)
+
+<use classpriodict_1_1priorityDictionary_ae2386d1d220c9be0c3193adf425423dd_cgra
+ph.pdf>
+Package pdftex.def Info: classpriodict_1_1priorityDictionary_ae2386d1d220c9be0c
+3193adf425423dd_cgraph.pdf used on input line 84.
+(pdftex.def)             Requested size: 350.0pt x 97.79985pt.
+ [62 <./classpriodict_1_1priorityDictionary_ae2386d1d220c9be0c3193adf425423dd_c
+graph.pdf>]
+<classpriodict_1_1priorityDictionary_addbfef62eca26714c932482d2df9f14a_icgraph.
+pdf, id=2619, 409.53pt x 114.4275pt>
+File: classpriodict_1_1priorityDictionary_addbfef62eca26714c932482d2df9f14a_icg
+raph.pdf Graphic file (type pdf)
+
+<use classpriodict_1_1priorityDictionary_addbfef62eca26714c932482d2df9f14a_icgr
+aph.pdf>
+Package pdftex.def Info: classpriodict_1_1priorityDictionary_addbfef62eca26714c
+932482d2df9f14a_icgraph.pdf used on input line 144.
+(pdftex.def)             Requested size: 350.0pt x 97.79985pt.
+) (./classprm_1_1PRMGenerator.tex [63 <./classpriodict_1_1priorityDictionary_ad
+dbfef62eca26714c932482d2df9f14a_icgraph.pdf>] [64]
+<classprm_1_1PRMGenerator_a95608c8cfd4364e3b2a9d20709161365_cgraph.pdf, id=2694
+, 419.5675pt x 182.6825pt>
+File: classprm_1_1PRMGenerator_a95608c8cfd4364e3b2a9d20709161365_cgraph.pdf Gra
+phic file (type pdf)
+
+<use classprm_1_1PRMGenerator_a95608c8cfd4364e3b2a9d20709161365_cgraph.pdf>
+Package pdftex.def Info: classprm_1_1PRMGenerator_a95608c8cfd4364e3b2a9d2070916
+1365_cgraph.pdf used on input line 172.
+(pdftex.def)             Requested size: 350.0pt x 152.39297pt.
+
+<classprm_1_1PRMGenerator_a2acf210887cb331b20c5378da634b4eb_cgraph.pdf, id=2695
+, 421.575pt x 182.6825pt>
+File: classprm_1_1PRMGenerator_a2acf210887cb331b20c5378da634b4eb_cgraph.pdf Gra
+phic file (type pdf)
+
+<use classprm_1_1PRMGenerator_a2acf210887cb331b20c5378da634b4eb_cgraph.pdf>
+Package pdftex.def Info: classprm_1_1PRMGenerator_a2acf210887cb331b20c5378da634
+b4eb_cgraph.pdf used on input line 199.
+(pdftex.def)             Requested size: 350.0pt x 151.66823pt.
+
+[65 <./classprm_1_1PRMGenerator_a95608c8cfd4364e3b2a9d20709161365_cgraph.pdf>]
+Underfull \hbox (badness 10000) detected at line 225
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 249
+[][][]
+ []
+
+
+<classprm_1_1PRMGenerator_ad5ffd82c9245496759767b2791d3a2fa_cgraph.pdf, id=2706
+, 415.5525pt x 114.4275pt>
+File: classprm_1_1PRMGenerator_ad5ffd82c9245496759767b2791d3a2fa_cgraph.pdf Gra
+phic file (type pdf)
+
+<use classprm_1_1PRMGenerator_ad5ffd82c9245496759767b2791d3a2fa_cgraph.pdf>
+Package pdftex.def Info: classprm_1_1PRMGenerator_ad5ffd82c9245496759767b2791d3
+a2fa_cgraph.pdf used on input line 262.
+(pdftex.def)             Requested size: 350.0pt x 96.38034pt.
+
+Underfull \vbox (badness 1052) has occurred while \output is active []
+
+ [66 <./classprm_1_1PRMGenerator_a2acf210887cb331b20c5378da634b4eb_cgraph.pdf>]
+
+Underfull \hbox (badness 10000) detected at line 287
+[][][]
+ []
+
+
+<classprm_1_1PRMGenerator_acefd405f735018b6399df96c7025e7fe_icgraph.pdf, id=271
+7, 594.22pt x 114.4275pt>
+File: classprm_1_1PRMGenerator_acefd405f735018b6399df96c7025e7fe_icgraph.pdf Gr
+aphic file (type pdf)
+
+<use classprm_1_1PRMGenerator_acefd405f735018b6399df96c7025e7fe_icgraph.pdf>
+Package pdftex.def Info: classprm_1_1PRMGenerator_acefd405f735018b6399df96c7025
+e7fe_icgraph.pdf used on input line 301.
+(pdftex.def)             Requested size: 350.0pt x 67.40163pt.
+
+[67 <./classprm_1_1PRMGenerator_ad5ffd82c9245496759767b2791d3a2fa_cgraph.pdf> <
+./classprm_1_1PRMGenerator_acefd405f735018b6399df96c7025e7fe_icgraph.pdf
+
+pdfTeX warning: pdflatex (file ./classprm_1_1PRMGenerator_acefd405f735018b6399d
+f96c7025e7fe_icgraph.pdf): PDF inclusion: multiple pdfs with page group include
+d in a single page
+>]
+<classprm_1_1PRMGenerator_aaa44a7e209bb06af27c4120b78d70cfb_cgraph.pdf, id=2733
+, 407.5225pt x 182.6825pt>
+File: classprm_1_1PRMGenerator_aaa44a7e209bb06af27c4120b78d70cfb_cgraph.pdf Gra
+phic file (type pdf)
+
+<use classprm_1_1PRMGenerator_aaa44a7e209bb06af27c4120b78d70cfb_cgraph.pdf>
+Package pdftex.def Info: classprm_1_1PRMGenerator_aaa44a7e209bb06af27c4120b78d7
+0cfb_cgraph.pdf used on input line 352.
+(pdftex.def)             Requested size: 350.0pt x 156.90317pt.
+
+Underfull \hbox (badness 10000) detected at line 377
+[][][]
+ []
+
+
+<classprm_1_1PRMGenerator_a652b3c0fa11645f351c23635d7e62dda_icgraph.pdf, id=273
+4, 586.19pt x 220.825pt>
+File: classprm_1_1PRMGenerator_a652b3c0fa11645f351c23635d7e62dda_icgraph.pdf Gr
+aphic file (type pdf)
+
+<use classprm_1_1PRMGenerator_a652b3c0fa11645f351c23635d7e62dda_icgraph.pdf>
+Package pdftex.def Info: classprm_1_1PRMGenerator_a652b3c0fa11645f351c23635d7e6
+2dda_icgraph.pdf used on input line 391.
+(pdftex.def)             Requested size: 350.0pt x 131.84906pt.
+
+[68 <./classprm_1_1PRMGenerator_aaa44a7e209bb06af27c4120b78d70cfb_cgraph.pdf> <
+./classprm_1_1PRMGenerator_a652b3c0fa11645f351c23635d7e62dda_icgraph.pdf
+
+pdfTeX warning: pdflatex (file ./classprm_1_1PRMGenerator_a652b3c0fa11645f351c2
+3635d7e62dda_icgraph.pdf): PDF inclusion: multiple pdfs with page group include
+d in a single page
+>] [69]) [70]
+Chapter 7.
+(./boid_8py.tex) (./boidsimulation_8py.tex [71
+
+]) (./configuration_8py.tex)
+(./dijkstra_8py.tex) (./gatherstats_8py.tex [72]) (./goal_8py.tex)
+(./mapparser_8py.tex [73]) (./obstacle_8py.tex) (./priodict_8py.tex)
+(./prm_8py.tex [74]) (./test__sim_8py.tex) [75] (./refman.ind [76
+
+] [77]
+[78] [79] [80] [81
+
+])
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 183.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 183.
+ (./refman.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 183.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 183.
+Package rerunfilecheck Info: File `refman.out' has not changed.
+(rerunfilecheck)             Checksum: F96AAE3B27F99B3481AEAF375E3E27CE;40396.
+
+
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 183.
+ ) 
+Here is how much of TeX's memory you used:
+ 13766 strings out of 493315
+ 229821 string characters out of 6137904
+ 270775 words of memory out of 5000000
+ 16209 multiletter control sequences out of 15000+600000
+ 90340 words of font info for 125 fonts, out of 8000000 for 9000
+ 957 hyphenation exceptions out of 8191
+ 48i,13n,43p,356b,522s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2013/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
+exlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/te
+xlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/tex
+live/2013/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/201
+3/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/local/texlive/2013/texmf
+-dist/fonts/type1/urw/helvetic/uhvb8ac.pfb></usr/local/texlive/2013/texmf-dist/
+fonts/type1/urw/helvetic/uhvbo8a.pfb></usr/local/texlive/2013/texmf-dist/fonts/
+type1/urw/helvetic/uhvbo8ac.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1
+/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/urw/he
+lvetic/uhvro8a.pfb>
+Output written on refman.pdf (91 pages, 414880 bytes).
+PDF statistics:
+ 3515 PDF objects out of 3580 (max. 8388607)
+ 3256 compressed objects within 33 object streams
+ 670 named destinations out of 1000 (max. 500000)
+ 2575 words of extra memory for PDF output out of 10000 (max. 10000000)
+
