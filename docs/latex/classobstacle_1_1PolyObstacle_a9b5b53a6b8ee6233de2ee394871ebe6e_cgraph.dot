@@ -1,0 +1,22 @@
+digraph "obstacle.PolyObstacle.draw"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="obstacle.PolyObstacle.draw",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="obstacle.PolyObstacle.translate",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classobstacle_1_1PolyObstacle.html#a8d4b0d3a614af138881a2f93d93f028a",tooltip="Translate obstacle. "];
+  Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid"];
+  Node3 [label="obstacle.PolyObstacle.check\lCollisionWithOtherObstacles",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classobstacle_1_1PolyObstacle.html#af4f36a0612aa485298e12cd70a2677cb",tooltip="Check to see if there is a collision with a static obstacle. "];
+  Node3 -> Node4 [color="midnightblue",fontsize="10",style="solid"];
+  Node4 [label="boid.Boid.norm",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classboid_1_1Boid.html#a576c57d100aa5743d610de30bf1a2b2c",tooltip="Gets the distance between two points. "];
+  Node3 -> Node5 [color="midnightblue",fontsize="10",style="solid"];
+  Node5 [label="obstacle.PolyObstacle.norm",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classobstacle_1_1PolyObstacle.html#a3392ccb4d22e752b0f150af354b16862",tooltip="Gets the Eulidean distance between p1 and p2. "];
+  Node2 -> Node6 [color="midnightblue",fontsize="10",style="solid"];
+  Node6 [label="obstacle.PolyObstacle.change\l_direction",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classobstacle_1_1PolyObstacle.html#a9b6945bd67258643ad471c965889d707",tooltip="Change direction. "];
+  Node6 -> Node7 [color="midnightblue",fontsize="10",style="solid"];
+  Node7 [label="obstacle.PolyObstacle.determine\l_last_direction",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classobstacle_1_1PolyObstacle.html#a64c90b17b8ca249e30e0b040930798de"];
+  Node6 -> Node6 [color="midnightblue",fontsize="10",style="solid"];
+  Node2 -> Node4 [color="midnightblue",fontsize="10",style="solid"];
+  Node2 -> Node5 [color="midnightblue",fontsize="10",style="solid"];
+}

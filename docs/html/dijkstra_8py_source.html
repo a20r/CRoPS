@@ -125,11 +125,11 @@ $(document).ready(function(){initNavTree('dijkstra_8py_source.html','');});
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="comment">#     they can be any other object that obeys dict protocol,</span></div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="comment">#     for instance a wrapper in which vertices are URLs</span></div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="comment">#     and a call to G[v] loads the web page and finds its links.</span></div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="comment">#     </span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="comment"># </span></div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="comment">#     The output is a pair (D,P) where D[v] is the distance</span></div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="comment">#     from start to v and P[v] is the predecessor of v along</span></div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="comment">#     the shortest path from s to v.</span></div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="comment">#     </span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="comment"># </span></div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="comment">#     Dijkstra&#39;s algorithm is only guaranteed to work correctly</span></div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="comment">#     when all edge lengths are positive. This code does not</span></div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="comment">#     verify this property for all edges (only the edges seen</span></div>
@@ -148,11 +148,11 @@ $(document).ready(function(){initNavTree('dijkstra_8py_source.html','');});
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    P = {}  <span class="comment"># dictionary of predecessors</span></div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    Q = <a class="code" href="classpriodict_1_1priorityDictionary.html">priorityDictionary</a>()   <span class="comment"># est.dist. of non-final vert.</span></div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    Q[start] = 0</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    </div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keywordflow">for</span> v <span class="keywordflow">in</span> Q:</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        D[v] = Q[v]</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        <span class="keywordflow">if</span> v == end: <span class="keywordflow">break</span></div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        </div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        <span class="keywordflow">for</span> w <span class="keywordflow">in</span> G[v]:</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;            vwLength = D[v] + G[v][w]</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;            <span class="keywordflow">if</span> w <span class="keywordflow">in</span> D:</div>
@@ -162,9 +162,9 @@ $(document).ready(function(){initNavTree('dijkstra_8py_source.html','');});
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;            <span class="keywordflow">elif</span> w <span class="keywordflow">not</span> <span class="keywordflow">in</span> Q <span class="keywordflow">or</span> vwLength &lt; Q[w]:</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;                Q[w] = vwLength</div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;                P[w] = v</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    </div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="keywordflow">return</span> (D,P)</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;            </div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="comment">##</span></div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="comment"># </span></div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="comment">#     Find a single shortest path from the given start vertex</span></div>
@@ -175,11 +175,11 @@ $(document).ready(function(){initNavTree('dijkstra_8py_source.html','');});
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="comment">#     @param G The graph dictionary to be searched</span></div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="comment">#     @param start The starting node</span></div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="comment">#     @param end The ending node</span></div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="comment">#     @return A list of the nodes that lie on the shortest path </span></div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="comment">#     @return A list of the nodes that lie on the shortest path</span></div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="comment">#     from start to end in G</span></div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<span class="comment">#     </span></div>
 <div class="line"><a name="l00089"></a><span class="lineno"><a class="code" href="namespacedijkstra.html#a20424eb142377bdf202ef03812875d83">   89</a></span>&#160;<span class="keyword">def </span><a class="code" href="namespacedijkstra.html#a20424eb142377bdf202ef03812875d83" title="Find a single shortest path from the given start vertex to the given end vertex. ">shortestPath</a>(G,start,end):</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <span class="keywordflow">try</span>: </div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <span class="keywordflow">try</span>:</div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;        D,P = <a class="code" href="namespacedijkstra.html#abb1e685c821d7000ea0f6a867070443d" title="Find shortest paths from the start vertex to all vertices nearer than or equal to the end...">Dijkstra</a>(G,start,end)</div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <span class="keywordflow">except</span> KeyError:</div>
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;        <span class="keywordflow">return</span> []</div>
@@ -194,13 +194,14 @@ $(document).ready(function(){initNavTree('dijkstra_8py_source.html','');});
 <div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    Path.reverse()</div>
 <div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    <span class="keywordflow">return</span> Path</div>
 <div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_050edd66366d13764f98250ef6db77f6.html">code</a></li><li class="navelem"><a class="el" href="dijkstra_8py.html">dijkstra.py</a></li>
-    <li class="footer">Generated on Tue Aug 6 2013 12:25:04 for CRoPS (Combined Roadmap and Potentials for Swarms) by
+    <li class="footer">Generated on Mon Nov 4 2013 20:34:36 for CRoPS (Combined Roadmap and Potentials for Swarms) by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.4 </li>
   </ul>

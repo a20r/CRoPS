@@ -1,6 +1,7 @@
 var classboid_1_1Boid =
 [
     [ "__init__", "classboid_1_1Boid.html#adc09d58160fc982be36e29effa580536", null ],
+    [ "determineNewPath", "classboid_1_1Boid.html#a47bd5446027d224319a4c71fadc846f2", null ],
     [ "determineRandomWalk", "classboid_1_1Boid.html#ae658dd15bb05b6addce51fba0907709b", null ],
     [ "draw", "classboid_1_1Boid.html#a289cbbc12cc9c3e7445a5f37b2d88124", null ],
     [ "findMax", "classboid_1_1Boid.html#a3467de3698a644a484ff63a3e86f7adc", null ],
@@ -33,6 +34,7 @@ var classboid_1_1Boid =
     [ "color", "classboid_1_1Boid.html#a6a2ca3d501e4b2b0d531d4d968487907", null ],
     [ "compWeightList", "classboid_1_1Boid.html#a811abb81b81e3b3e8e08e77a908ddb58", null ],
     [ "dim", "classboid_1_1Boid.html#a88a68e23e37b82bfe9862d7cd79542ad", null ],
+    [ "endIndex", "classboid_1_1Boid.html#ae0e9562ea35dca5f6d88e132cb5dd73a", null ],
     [ "ePos", "classboid_1_1Boid.html#a15b3d73058c73aed19d2e9fb0266805d", null ],
     [ "gAlpha", "classboid_1_1Boid.html#a5090639a7e3a489c8dc83bd12b6d1653", null ],
     [ "gammaFunc", "classboid_1_1Boid.html#abce5218cbba7b3d9f12dc78bbb9dab5e", null ],
@@ -42,6 +44,7 @@ var classboid_1_1Boid =
     [ "goal", "classboid_1_1Boid.html#afe8350d9d4c1eeb15a5df7337328e1c7", null ],
     [ "goalCounter", "classboid_1_1Boid.html#a8a871af6fc4d19477ce4881eb9ddc629", null ],
     [ "goalList", "classboid_1_1Boid.html#a7a3492977220ee1f7623aa9643a2fea4", null ],
+    [ "goalNodes", "classboid_1_1Boid.html#a8d7aa6d57eb3589a0770af8fcbf1aa0b", null ],
     [ "heading", "classboid_1_1Boid.html#afc4b725b80313dc3604ac36015f84156", null ],
     [ "headWeightList", "classboid_1_1Boid.html#a4b192d2b077b52005a82df5d98748190", null ],
     [ "neighborSize", "classboid_1_1Boid.html#a4af115e678f7716a2eb87c573e71073c", null ],
@@ -57,6 +60,7 @@ var classboid_1_1Boid =
     [ "randomWalkX", "classboid_1_1Boid.html#a996d92e215eb56d98a811c86c7118637", null ],
     [ "randomWalkY", "classboid_1_1Boid.html#a1bf0149b7eadf9e6a0f08c93d95bac73", null ],
     [ "randWalkCount", "classboid_1_1Boid.html#af0bd96c51b17bc6c3f6fec2891b58a3d", null ],
+    [ "roadmap", "classboid_1_1Boid.html#aa30539a3bd11871eda471245cd6318e2", null ],
     [ "screen", "classboid_1_1Boid.html#aa230e5710394a620995a3943fc9faa8d", null ],
     [ "speed", "classboid_1_1Boid.html#a4cf2a59e0efad2d71d8fee93fdd6538b", null ],
     [ "sPos", "classboid_1_1Boid.html#a92bf79dcfff9e21d33611cfc89f8823c", null ],

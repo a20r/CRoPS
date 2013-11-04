@@ -90,112 +90,103 @@ $(document).ready(function(){initNavTree('gatherstats_8py_source.html','');});
 <div class="title">gatherstats.py</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="gatherstats_8py.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno"><a class="code" href="namespacegatherstats.html">    1</a></span>&#160;</div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="keyword">import</span> boidsimulation <span class="keyword">as</span> bs</div>
+<a href="gatherstats_8py.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno"><a class="code" href="namespacegatherstats.html">    1</a></span>&#160;<span class="keyword">import</span> boidsimulation <span class="keyword">as</span> bs</div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;</div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"># generates stats for the project</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">##</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment"># </span></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment">#   Generates the statistics and saves them in a well known</span></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment">#   location</span></div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment">#   @param mapFile The file that stores information about the environment</span></div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment">#   @param iterations the number of experiments to run per number of bots </span></div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment">#   @param startPoint, endPoint Defines the starting and ending points</span></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment">#   of the flock</span></div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment">#   </span></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">def </span><a class="code" href="namespacegatherstats.html#ad43ef3451dcba9a62629fcdd81fd12fd" title="Generates the statistics and saves them in a well known location. ">generateStats</a>(</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    mapFile, iterations, </div>
-<div class="line"><a name="l00016"></a><span class="lineno"><a class="code" href="namespacegatherstats.html#ad43ef3451dcba9a62629fcdd81fd12fd">   16</a></span>&#160;    startPoint, endPoint):</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    getFileFormat = <span class="keyword">lambda</span> nBots, it: str(</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;        <span class="stringliteral">&quot;simdata/&quot;</span> + </div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;        mapFile.split(<span class="stringliteral">&quot;/&quot;</span>)[-1].split(<span class="stringliteral">&quot;.&quot;</span>)[0] + </div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        <span class="stringliteral">&quot;_simulation_data_&quot;</span> + </div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        str(nBots) + </div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        <span class="stringliteral">&quot;_&quot;</span> + str(it)</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    )</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    getPRMFormat  = <span class="keyword">lambda</span> nBots, it: str(</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        <span class="stringliteral">&quot;simdata/&quot;</span> + </div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        mapFile.split(<span class="stringliteral">&quot;/&quot;</span>)[-1].split(<span class="stringliteral">&quot;.&quot;</span>)[0] + </div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        <span class="stringliteral">&quot;_prm_data_&quot;</span> + </div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        str(nBots) + </div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        <span class="stringliteral">&quot;_&quot;</span> + str(it)</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    )</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keywordflow">for</span> nBots <span class="keywordflow">in</span> [50]:</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        <span class="keywordflow">for</span> i <span class="keywordflow">in</span> range(iterations):</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;            reload(bs)</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;            <span class="keywordflow">print</span> mapFile, <span class="stringliteral">&quot; : &quot;</span>, nBots, <span class="stringliteral">&quot;:&quot;</span>, i</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;            with open(getFileFormat(nBots, i), <span class="stringliteral">&quot;w&quot;</span>) <span class="keyword">as</span> dFile:</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;                fSim = bs.FlockSim(</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;                    nBots, </div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;                    startPoint, </div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;                    endPoint, </div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;                    _mapFile = mapFile, </div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;                    _dataFile = dFile</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;                )</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;                fSim.render()</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;            with open(getPRMFormat(nBots, i), <span class="stringliteral">&quot;w&quot;</span>) <span class="keyword">as</span> pFile:</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;                pFile.write(</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;                    str(</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;                        map(</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;                            <span class="keyword">lambda</span> g: tuple(</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;                                map(int, g)</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;                            ), </div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;                            fSim.config.prmGen.subGoalPositionList</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;                        )</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;                    ) + <span class="stringliteral">&quot;\n&quot;</span></div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;                )</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;                pFile.write(</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;                    str(</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;                        map(</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;                            <span class="keyword">lambda</span> g: tuple(</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;                                map(int, g.position)</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;                            ), </div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;                            fSim.config.goalList</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;                        )</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;                    )</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;                )</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="comment">## A list of dictionaries used to store the map files, starting and ending points of the boids</span></div>
-<div class="line"><a name="l00069"></a><span class="lineno"><a class="code" href="namespacegatherstats.html#ab219c0341d8413916db5431206ab75d9">   69</a></span>&#160;mapList = [</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    {</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        <span class="stringliteral">&quot;filename&quot;</span>: <span class="stringliteral">&quot;maps/scene2.map&quot;</span>, </div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        <span class="stringliteral">&quot;startPoint&quot;</span>: (494, 213), </div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        <span class="stringliteral">&quot;endPoint&quot;</span>: (404, 20)</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    },</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    {</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        <span class="stringliteral">&quot;filename&quot;</span>: <span class="stringliteral">&quot;maps/scene3.map&quot;</span>, </div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        <span class="stringliteral">&quot;startPoint&quot;</span>: (356, 42), </div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        <span class="stringliteral">&quot;endPoint&quot;</span>: (852, 450)</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    },</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    {</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        <span class="stringliteral">&quot;filename&quot;</span>: <span class="stringliteral">&quot;maps/scene1.map&quot;</span>, </div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        <span class="stringliteral">&quot;startPoint&quot;</span>: (50, 600), </div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        <span class="stringliteral">&quot;endPoint&quot;</span>: (980, 30)</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    }</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;]</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="keywordflow">if</span> __name__ == <span class="stringliteral">&quot;__main__&quot;</span>:</div>
-<div class="line"><a name="l00088"></a><span class="lineno"><a class="code" href="namespacegatherstats.html#aa220f5cd7b67d3ee630725d3755c1a0c">   88</a></span>&#160;    testList = [mapList[1], mapList[2]]</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <span class="keywordflow">for</span> tData <span class="keywordflow">in</span> testList:</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;        <a class="code" href="namespacegatherstats.html#ad43ef3451dcba9a62629fcdd81fd12fd" title="Generates the statistics and saves them in a well known location. ">generateStats</a>(</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;            tData[<span class="stringliteral">&quot;filename&quot;</span>], </div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;            1, </div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;            tData[<span class="stringliteral">&quot;startPoint&quot;</span>], </div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;            tData[<span class="stringliteral">&quot;endPoint&quot;</span>]</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;        )</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment">#     Generates the statistics and saves them in a well known</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment">#     location</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment">#     @param mapFile The file that stores information about the environment</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment">#     @param iterations the number of experiments to run per number of bots</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment">#     @param startPoint, endPoint Defines the starting and ending points</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment">#     of the flock</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment">#     </span></div>
+<div class="line"><a name="l00014"></a><span class="lineno"><a class="code" href="namespacegatherstats.html#ad43ef3451dcba9a62629fcdd81fd12fd">   14</a></span>&#160;<span class="keyword">def </span><a class="code" href="namespacegatherstats.html#ad43ef3451dcba9a62629fcdd81fd12fd" title="Generates the statistics and saves them in a well known location. ">generateStats</a>(mapFile, iterations, startPoint, endPoint):</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    getFileFormat = <span class="keyword">lambda</span> nBots, nObs, it: str(</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;        <span class="stringliteral">&quot;stats/&quot;</span> +</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;        mapFile.split(<span class="stringliteral">&quot;/&quot;</span>)[-1].split(<span class="stringliteral">&quot;.&quot;</span>)[0] +</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;        <span class="stringliteral">&quot;_&quot;</span> + str(nBots) + <span class="stringliteral">&quot;_&quot;</span> + str(nObs) + <span class="stringliteral">&quot;_&quot;</span> + str(it)</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    )</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="keywordflow">for</span> nBots <span class="keywordflow">in</span> range(50, 55, 5):</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        <span class="keywordflow">for</span> nObs <span class="keywordflow">in</span> range(20, 40, 10):</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;            <span class="keywordflow">for</span> i <span class="keywordflow">in</span> range(iterations):</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;                <span class="comment">#reload(bs)</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;                <span class="keywordflow">print</span> mapFile, <span class="stringliteral">&quot; : &quot;</span>, nBots, <span class="stringliteral">&quot;:&quot;</span>, nObs, <span class="stringliteral">&quot;:&quot;</span>, i</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;                dFile = getFileFormat(nBots, nObs, i)</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;                <span class="keywordflow">while</span> <span class="keyword">True</span>:</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;                    <span class="keywordflow">try</span>:</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;                        fSim = bs.FlockSim(</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;                            nBots,</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;                            startPoint,</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;                            endPoint,</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;                            map_file=mapFile,</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;                            obstacle_file=<span class="keywordtype">None</span>,</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;                            auto_gen_obst=<span class="keyword">True</span>,</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;                            auto_gen_number=nObs,</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;                            data_file=dFile</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;                        )</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;                        fSim.render()</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;                        <span class="keywordflow">break</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;                    <span class="keywordflow">except</span> ZeroDivisionError:</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;                        print(<span class="stringliteral">&quot;Rerunning!&quot;</span>)</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="comment">## A list of dictionaries used to store the map files,</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="comment">#starting and ending points of the boids</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno"><a class="code" href="namespacegatherstats.html#ab219c0341d8413916db5431206ab75d9">   47</a></span>&#160;mapList = [</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="comment">#{</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="comment">#    &quot;filename&quot;: &quot;maps/scene2.map&quot;,</span></div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="comment">#    &quot;startPoint&quot;: (494, 213),</span></div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="comment">#    &quot;endPoint&quot;: (404, 20)</span></div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="comment">#},</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="comment"># {</span></div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="comment">#     &quot;filename&quot;: &quot;maps/scene3.map&quot;,</span></div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="comment">#     &quot;startPoint&quot;: (356, 42),</span></div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="comment">#     &quot;endPoint&quot;: (852, 450)</span></div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="comment"># },</span></div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="comment"># {</span></div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="comment">#     &quot;filename&quot;: &quot;maps/scene1.map&quot;,</span></div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="comment">#     &quot;startPoint&quot;: (50, 600),</span></div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="comment">#     &quot;endPoint&quot;: (980, 30)</span></div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="comment"># },</span></div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="comment"># {</span></div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="comment">#     &quot;filename&quot;: &quot;maps/s.map&quot;,</span></div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="comment">#     &quot;startPoint&quot;: (50, 50),  # (50, 600)</span></div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="comment">#     &quot;endPoint&quot;: (980, 30)</span></div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="comment"># },</span></div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    {</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        <span class="stringliteral">&quot;filename&quot;</span>: <span class="stringliteral">&quot;maps/maze.map&quot;</span>,</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        <span class="stringliteral">&quot;startPoint&quot;</span>: (50, 50),  <span class="comment"># (50, 600)</span></div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        <span class="stringliteral">&quot;endPoint&quot;</span>: (950, 30)</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    },</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="comment"># {</span></div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="comment">#     &quot;filename&quot;: &quot;maps/maze2.map&quot;,</span></div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="comment">#     &quot;startPoint&quot;: (50, 70),  # (50, 600)</span></div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="comment">#     &quot;endPoint&quot;: (950, 30)</span></div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="comment"># }</span></div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;]</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="keywordflow">if</span> __name__ == <span class="stringliteral">&quot;__main__&quot;</span>:</div>
+<div class="line"><a name="l00081"></a><span class="lineno"><a class="code" href="namespacegatherstats.html#abde74a0330bb766cc02eba7046e5f238">   81</a></span>&#160;    testList = mapList</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="keywordflow">for</span> tData <span class="keywordflow">in</span> testList:</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        <a class="code" href="namespacegatherstats.html#ad43ef3451dcba9a62629fcdd81fd12fd" title="Generates the statistics and saves them in a well known location. ">generateStats</a>(</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;            tData[<span class="stringliteral">&quot;filename&quot;</span>],</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;            10,</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;            tData[<span class="stringliteral">&quot;startPoint&quot;</span>],</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;            tData[<span class="stringliteral">&quot;endPoint&quot;</span>]</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        )</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_050edd66366d13764f98250ef6db77f6.html">code</a></li><li class="navelem"><a class="el" href="gatherstats_8py.html">gatherstats.py</a></li>
-    <li class="footer">Generated on Tue Aug 6 2013 12:25:04 for CRoPS (Combined Roadmap and Potentials for Swarms) by
+    <li class="footer">Generated on Mon Nov 4 2013 20:34:36 for CRoPS (Combined Roadmap and Potentials for Swarms) by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.4 </li>
   </ul>

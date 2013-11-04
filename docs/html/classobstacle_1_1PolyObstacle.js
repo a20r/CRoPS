@@ -1,7 +1,10 @@
 var classobstacle_1_1PolyObstacle =
 [
     [ "__init__", "classobstacle_1_1PolyObstacle.html#aa92e181aa910e2cd8c110047fe10dc83", null ],
+    [ "change_direction", "classobstacle_1_1PolyObstacle.html#a9b6945bd67258643ad471c965889d707", null ],
+    [ "checkCollisionWithOtherObstacles", "classobstacle_1_1PolyObstacle.html#af4f36a0612aa485298e12cd70a2677cb", null ],
     [ "detectCollision", "classobstacle_1_1PolyObstacle.html#a2a3283cffb3239c8777b85a83af5ee8c", null ],
+    [ "determine_last_direction", "classobstacle_1_1PolyObstacle.html#a64c90b17b8ca249e30e0b040930798de", null ],
     [ "draw", "classobstacle_1_1PolyObstacle.html#a9b5b53a6b8ee6233de2ee394871ebe6e", null ],
     [ "estimatePoly", "classobstacle_1_1PolyObstacle.html#ab2833da8e0c16a191ae373af40a75b46", null ],
     [ "getClosestPoint", "classobstacle_1_1PolyObstacle.html#a43adce887280997dfb49067e741f54db", null ],
@@ -11,9 +14,17 @@ var classobstacle_1_1PolyObstacle =
     [ "pointAllowed", "classobstacle_1_1PolyObstacle.html#af71f01fca50193a5e5372c2507661ada", null ],
     [ "pointInPoly", "classobstacle_1_1PolyObstacle.html#a4647d9efa8fb20d7b464ee5faa8fd7f4", null ],
     [ "rayintersectseg", "classobstacle_1_1PolyObstacle.html#a646f5fc4ba3e67c98c2313f4493b6a08", null ],
+    [ "removeSelfFromObstacleList", "classobstacle_1_1PolyObstacle.html#a55c9604219c6622ad4a633c62fdbb058", null ],
+    [ "translate", "classobstacle_1_1PolyObstacle.html#a8d4b0d3a614af138881a2f93d93f028a", null ],
     [ "avgPoint", "classobstacle_1_1PolyObstacle.html#ae426e9296754e1ba96abcee3b86b3591", null ],
+    [ "boundary", "classobstacle_1_1PolyObstacle.html#a999b6ef28126661fc8d54e1d86c094e0", null ],
     [ "colors", "classobstacle_1_1PolyObstacle.html#a73ce2986866adb38653645c5b84ec0ce", null ],
+    [ "displacement", "classobstacle_1_1PolyObstacle.html#af943155354bdf61ff754752819ff4013", null ],
+    [ "dynamic", "classobstacle_1_1PolyObstacle.html#a9667fa3bc98877420e2af4bb6d617576", null ],
+    [ "max_displacement", "classobstacle_1_1PolyObstacle.html#a01bca757590d23eeee5c864472a7fbe6", null ],
     [ "maxDist", "classobstacle_1_1PolyObstacle.html#a14e97b3f09f9ff21f36efc7a58759e5c", null ],
     [ "nodes", "classobstacle_1_1PolyObstacle.html#a125762f0b4a3c9ef8d75c81bc5bc608e", null ],
-    [ "screen", "classobstacle_1_1PolyObstacle.html#ad65d210c167b0638ef317ef24670501c", null ]
+    [ "obstacles", "classobstacle_1_1PolyObstacle.html#a7df678f9d9362489ba24e0dd9ed70efc", null ],
+    [ "screen", "classobstacle_1_1PolyObstacle.html#ad65d210c167b0638ef317ef24670501c", null ],
+    [ "velocity", "classobstacle_1_1PolyObstacle.html#adb043e45a95522cec92cd6ad35ca6595", null ]
 ];
