@@ -623,6 +623,10 @@ class Boid:
         )
 
     def determineNewPath(self):
+        """
+        When the boid is stuck, it reweights the roadmap and
+        finds a new suitable path.
+        """
         minIndex = 0
         currentMinDistance = 0
         for i, k in enumerate(self.prmGen.subGoalPositionList):
