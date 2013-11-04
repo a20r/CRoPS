@@ -17,8 +17,8 @@ def generateStats(mapFile, iterations, startPoint, endPoint):
         "_" + str(nBots) + "_" + str(nObs) + "_" + str(it)
     )
 
-    for nBots in range(10, 55, 5):
-        for nObs in range(10, 40, 10):
+    for nBots in range(50, 55, 5):
+        for nObs in range(20, 40, 10):
             for i in range(iterations):
                 #reload(bs)
                 print mapFile, " : ", nBots, ":", nObs, ":", i
@@ -68,7 +68,12 @@ mapList = [
         "filename": "maps/maze.map",
         "startPoint": (50, 50),  # (50, 600)
         "endPoint": (950, 30)
-    }
+    },
+    # {
+    #     "filename": "maps/maze2.map",
+    #     "startPoint": (50, 70),  # (50, 600)
+    #     "endPoint": (950, 30)
+    # }
 ]
 
 if __name__ == "__main__":

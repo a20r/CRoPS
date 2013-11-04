@@ -30,6 +30,10 @@ if __name__ == "__main__":
         "maps/maze.map": {
             "startPoint": (50, 50),  # (50, 600)
             "endPoint": (950, 30)
+        },
+        "maps/maze2.map": {
+            "startPoint": (50, 70),  # (50, 600)
+            "endPoint": (950, 30)
         }
     }
 
