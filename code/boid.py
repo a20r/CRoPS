@@ -2,6 +2,7 @@
 
 __author__ = "Alex Wallar <aw204@st-andrews.ac.uk>"
 
+import time
 import pygame
 import random
 import math as np
@@ -190,7 +191,7 @@ class Boid:
         @param o The obstacle that is being compared
         @return A value representing the potential between b and o
         """
-        return (
+        res = (
             b.radius * o.getRadius() * beta /
             np.sqrt(abs(
                 self.norm(
@@ -199,6 +200,7 @@ class Boid:
                 ) - o.getRadius() - b.radius
             ))
         )
+        return res
 
     def mag(self, vec):
         """

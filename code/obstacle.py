@@ -67,10 +67,7 @@ class PolyObstacle:
         @param p1, p2 Points in space
         @return The distance between p1 and p2
         """
-        return np.sqrt(
-            pow(p1[0] - p2[0], 2) +
-            pow(p1[1] - p2[1], 2)
-        )
+        return np.sqrt(pow(p1[0] - p2[0], 2) + pow(p1[1] - p2[1], 2))
 
     def estimatePoly(self):
         """
@@ -350,7 +347,7 @@ class PolyObstacle:
         for obstacle in self.obstacles:
             if obstacle.pointInPoly(node):
                 return obstacle
-            if self.norm(node, obstacle.getPoint(node)) <= 0:
+            if self.norm(node, obstacle.getPoint(node)) <= 20:
                 return obstacle
         return None
 
@@ -358,19 +355,34 @@ class PolyObstacle:
         """
         Translate obstacle
         """
-        if self.dynamic:
-            for node in self.nodes:
-                obst = self.checkCollisionWithOtherObstacles(node)
-                if obst:  # hit with another obstacle?
-                    obst.displacement = 0
-                    obst.velocity[0] *= -1
-                    obst.velocity[1] *= -1
+        # check collision
+        for node in self.nodes:
 
-                    self.displacement = 0
-                    self.velocity[0] *= -1
-                    self.velocity[1] *= -1
-                    break
+            # collided with another obstacle?
+            obst = self.checkCollisionWithOtherObstacles(node)
+            if obst:
+                obst.displacement = 0
+                obst.velocity[0] *= -1
+                obst.velocity[1] *= -1
 
+                self.displacement = 0
+                self.velocity[0] *= -1
+                self.velocity[1] *= -1
+                break
+
+            # hit boudnary?
+            if node[0] + 20 > self.boundary[0] or node[0] < 20:
+                self.velocity[0] *= -1
+                break
+            if node[1] + 20 > self.boundary[1] or node[1] < 20:
+                self.velocity[1] *= -1
+                break
+
+        # chage direction if max displacement reached
+        if self.displacement >= self.max_displacement:
+            self.change_direction()
+
+        # translate
         for i in range(len(self.nodes)):
             curr_node = self.nodes[i]
 
@@ -382,24 +394,11 @@ class PolyObstacle:
             coord[0] += self.velocity[0]
             coord[1] += self.velocity[1]
 
-            # chage direction if max displacement reached
-            if self.displacement >= self.max_displacement:
-                self.change_direction()
-
-            # reverse direction if hit boudnary
-            if coord[0] > self.boundary[0] or coord[0] < 0:
-                self.velocity[0] *= -1
-            if coord[1] > self.boundary[1] or coord[1] < 0:
-                self.velocity[1] *= -1
-
             # convert back to tuple and replace old node
             self.nodes[i] = tuple(coord)
 
-            # record displacement
-            self.displacement += self.norm(
-                orig_coord,
-                coord
-            )
+        # record displacement
+        self.displacement += self.norm(orig_coord, coord)
 
     def determine_last_direction(self):
         velocity = self.velocity
