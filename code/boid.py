@@ -740,6 +740,17 @@ class Boid:
         """
         Draws the boid as a pygame circle in the pygame screen
         """
+        try:
+            pygame.draw.lines(
+                self.screen,
+                (238, 130, 238),
+                False,
+                map(lambda g: g.position, self.goalList),
+                3
+            )
+        except ValueError:
+            pass
+
         pygame.draw.circle(
             self.screen,
             (0, 255, 100) if self.stuck else (0, 255, 255),
