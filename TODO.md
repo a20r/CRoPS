@@ -2,7 +2,7 @@
 
 ## Chris
 
-- 
+- Run experiments without PRM and without PF
 
 ## Alex
 
