@@ -1,7 +1,7 @@
 var searchData=
 [
   ['neighborsize',['neighborSize',['../classboid_1_1Boid.html#a4af115e678f7716a2eb87c573e71073c',1,'boid::Boid']]],
-  ['nodes',['nodes',['../classobstacle_1_1PolyObstacle.html#a125762f0b4a3c9ef8d75c81bc5bc608e',1,'obstacle::PolyObstacle']]],
+  ['nodes',['nodes',['../classconfiguration_1_1PolyFileConfiguration.html#a38883bf395763bf87ad3ca8279f0300f',1,'configuration.PolyFileConfiguration.nodes()'],['../classobstacle_1_1PolyObstacle.html#a125762f0b4a3c9ef8d75c81bc5bc608e',1,'obstacle.PolyObstacle.nodes()']]],
   ['norm',['norm',['../classboid_1_1Boid.html#a576c57d100aa5743d610de30bf1a2b2c',1,'boid.Boid.norm()'],['../classobstacle_1_1PolyObstacle.html#a3392ccb4d22e752b0f150af354b16862',1,'obstacle.PolyObstacle.norm()'],['../classprm_1_1PRMGenerator.html#a652b3c0fa11645f351c23635d7e62dda',1,'prm.PRMGenerator.norm()']]],
   ['nstuckdavg',['nStuckDAvg',['../classboid_1_1Boid.html#acdfca1dc9b177a512502c6af681bfa9e',1,'boid::Boid']]],
   ['nstuckdsigma',['nStuckDSigma',['../classboid_1_1Boid.html#add42a1be4f79d1ae8990065fa7e5d4de',1,'boid::Boid']]],

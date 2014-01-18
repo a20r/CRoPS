@@ -8,8 +8,7 @@ Extends the \hyperlink{classconfiguration_1_1Configuration}{Configuration} class
 
 
 
-Inheritance diagram for configuration.\-Poly\-File\-Configuration\-:
-\nopagebreak
+Inheritance diagram for configuration.\-Poly\-File\-Configuration\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -18,8 +17,7 @@ Inheritance diagram for configuration.\-Poly\-File\-Configuration\-:
 \end{figure}
 
 
-Collaboration diagram for configuration.\-Poly\-File\-Configuration\-:
-\nopagebreak
+Collaboration diagram for configuration.\-Poly\-File\-Configuration\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -29,13 +27,23 @@ Collaboration diagram for configuration.\-Poly\-File\-Configuration\-:
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
+def \hyperlink{classconfiguration_1_1PolyFileConfiguration_ac8bb24acf90ad65983d676e096843b94}{parse\-Dynamic\-Obstacles}
+\begin{DoxyCompactList}\small\item\em Parses the obstacle map file and creates polygon objects with random behaviour by default. \end{DoxyCompactList}\item 
+def \hyperlink{classconfiguration_1_1PolyFileConfiguration_a4da9ae8ba4a2123e905c9887c2616115}{auto\-Generate\-Dynamic\-Obstacles}
+\begin{DoxyCompactList}\small\item\em Auto generate dynamic obstacles. \end{DoxyCompactList}\item 
 def \hyperlink{classconfiguration_1_1PolyFileConfiguration_ad68553a7fd263204c69800782fdd03a8}{init\-Vars}
 \begin{DoxyCompactList}\small\item\em Parses the file to get the obstacle list. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
+\hyperlink{classconfiguration_1_1PolyFileConfiguration_a38883bf395763bf87ad3ca8279f0300f}{nodes}
+\item 
 \hyperlink{classconfiguration_1_1PolyFileConfiguration_a4ea5eea95680f3bfdad4adce0578a0f0}{obstacle\-List}
-\begin{DoxyCompactList}\small\item\em List of obstacles. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em List of obstacles parse static obstalces. \end{DoxyCompactList}\item 
+\hyperlink{classconfiguration_1_1PolyFileConfiguration_a23d5fb751d566d6705ffd1bec2e63db9}{auto\-\_\-gen\-\_\-obst}
+\item 
+\hyperlink{classconfiguration_1_1PolyFileConfiguration_aa3e815b8a45413bbb05095ef9dba3fe7}{auto\-\_\-gen\-\_\-number}
+\item 
 \hyperlink{classconfiguration_1_1PolyFileConfiguration_ae5c780baacd4b800d1646a29a8608cbf}{start\-Point}
 \begin{DoxyCompactList}\small\item\em Starting point. \end{DoxyCompactList}\item 
 \hyperlink{classconfiguration_1_1PolyFileConfiguration_acb9da93ddecef1bb34bbce601473f0f1}{end\-Point}
@@ -54,11 +62,26 @@ Extends the \hyperlink{classconfiguration_1_1Configuration}{Configuration} class
 
 This configuration gets the obstacles from .map files that have been created. 
 
-Definition at line 47 of file configuration.\-py.
+Definition at line 49 of file configuration.\-py.
 
 
 
 \subsection{Member Function Documentation}
+\hypertarget{classconfiguration_1_1PolyFileConfiguration_a4da9ae8ba4a2123e905c9887c2616115}{\index{configuration\-::\-Poly\-File\-Configuration@{configuration\-::\-Poly\-File\-Configuration}!auto\-Generate\-Dynamic\-Obstacles@{auto\-Generate\-Dynamic\-Obstacles}}
+\index{auto\-Generate\-Dynamic\-Obstacles@{auto\-Generate\-Dynamic\-Obstacles}!configuration::PolyFileConfiguration@{configuration\-::\-Poly\-File\-Configuration}}
+\subsubsection[{auto\-Generate\-Dynamic\-Obstacles}]{\setlength{\rightskip}{0pt plus 5cm}def configuration.\-Poly\-File\-Configuration.\-auto\-Generate\-Dynamic\-Obstacles (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}}\label{classconfiguration_1_1PolyFileConfiguration_a4da9ae8ba4a2123e905c9887c2616115}
+
+
+Auto generate dynamic obstacles. 
+
+
+
+Definition at line 105 of file configuration.\-py.
+
 \hypertarget{classconfiguration_1_1PolyFileConfiguration_ad68553a7fd263204c69800782fdd03a8}{\index{configuration\-::\-Poly\-File\-Configuration@{configuration\-::\-Poly\-File\-Configuration}!init\-Vars@{init\-Vars}}
 \index{init\-Vars@{init\-Vars}!configuration::PolyFileConfiguration@{configuration\-::\-Poly\-File\-Configuration}}
 \subsubsection[{init\-Vars}]{\setlength{\rightskip}{0pt plus 5cm}def configuration.\-Poly\-File\-Configuration.\-init\-Vars (
@@ -67,7 +90,7 @@ Definition at line 47 of file configuration.\-py.
 \item[{}]{start\-Point, }
 \item[{}]{end\-Point, }
 \item[{}]{flock\-Size, }
-\item[{}]{filename = {\ttfamily \char`\"{}maps/m1.map\char`\"{}}}
+\item[{}]{kwargs}
 \end{DoxyParamCaption}
 )}}\label{classconfiguration_1_1PolyFileConfiguration_ad68553a7fd263204c69800782fdd03a8}
 
@@ -87,11 +110,41 @@ Creates a P\-R\-M generator to create a global map of the environment. Gets the 
 \end{DoxyParams}
 
 
-Definition at line 60 of file configuration.\-py.
+Definition at line 171 of file configuration.\-py.
+
+\hypertarget{classconfiguration_1_1PolyFileConfiguration_ac8bb24acf90ad65983d676e096843b94}{\index{configuration\-::\-Poly\-File\-Configuration@{configuration\-::\-Poly\-File\-Configuration}!parse\-Dynamic\-Obstacles@{parse\-Dynamic\-Obstacles}}
+\index{parse\-Dynamic\-Obstacles@{parse\-Dynamic\-Obstacles}!configuration::PolyFileConfiguration@{configuration\-::\-Poly\-File\-Configuration}}
+\subsubsection[{parse\-Dynamic\-Obstacles}]{\setlength{\rightskip}{0pt plus 5cm}def configuration.\-Poly\-File\-Configuration.\-parse\-Dynamic\-Obstacles (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{dynamic\-\_\-obstacles\-\_\-fp}
+\end{DoxyParamCaption}
+)}}\label{classconfiguration_1_1PolyFileConfiguration_ac8bb24acf90ad65983d676e096843b94}
+
+
+Parses the obstacle map file and creates polygon objects with random behaviour by default. 
+
+All obstacles (static/dynamic) obtains a list each other in the form of a list. 
+
+Definition at line 57 of file configuration.\-py.
 
 
 
 \subsection{Member Data Documentation}
+\hypertarget{classconfiguration_1_1PolyFileConfiguration_aa3e815b8a45413bbb05095ef9dba3fe7}{\index{configuration\-::\-Poly\-File\-Configuration@{configuration\-::\-Poly\-File\-Configuration}!auto\-\_\-gen\-\_\-number@{auto\-\_\-gen\-\_\-number}}
+\index{auto\-\_\-gen\-\_\-number@{auto\-\_\-gen\-\_\-number}!configuration::PolyFileConfiguration@{configuration\-::\-Poly\-File\-Configuration}}
+\subsubsection[{auto\-\_\-gen\-\_\-number}]{\setlength{\rightskip}{0pt plus 5cm}configuration.\-Poly\-File\-Configuration.\-auto\-\_\-gen\-\_\-number}}\label{classconfiguration_1_1PolyFileConfiguration_aa3e815b8a45413bbb05095ef9dba3fe7}
+
+
+Definition at line 180 of file configuration.\-py.
+
+\hypertarget{classconfiguration_1_1PolyFileConfiguration_a23d5fb751d566d6705ffd1bec2e63db9}{\index{configuration\-::\-Poly\-File\-Configuration@{configuration\-::\-Poly\-File\-Configuration}!auto\-\_\-gen\-\_\-obst@{auto\-\_\-gen\-\_\-obst}}
+\index{auto\-\_\-gen\-\_\-obst@{auto\-\_\-gen\-\_\-obst}!configuration::PolyFileConfiguration@{configuration\-::\-Poly\-File\-Configuration}}
+\subsubsection[{auto\-\_\-gen\-\_\-obst}]{\setlength{\rightskip}{0pt plus 5cm}configuration.\-Poly\-File\-Configuration.\-auto\-\_\-gen\-\_\-obst}}\label{classconfiguration_1_1PolyFileConfiguration_a23d5fb751d566d6705ffd1bec2e63db9}
+
+
+Definition at line 179 of file configuration.\-py.
+
 \hypertarget{classconfiguration_1_1PolyFileConfiguration_a34104bbe3eb34147465a4d9e05d6c6b6}{\index{configuration\-::\-Poly\-File\-Configuration@{configuration\-::\-Poly\-File\-Configuration}!boid\-List@{boid\-List}}
 \index{boid\-List@{boid\-List}!configuration::PolyFileConfiguration@{configuration\-::\-Poly\-File\-Configuration}}
 \subsubsection[{boid\-List}]{\setlength{\rightskip}{0pt plus 5cm}configuration.\-Poly\-File\-Configuration.\-boid\-List}}\label{classconfiguration_1_1PolyFileConfiguration_a34104bbe3eb34147465a4d9e05d6c6b6}
@@ -101,7 +154,7 @@ List of boids in the flock.
 
 
 
-Definition at line 86 of file configuration.\-py.
+Definition at line 205 of file configuration.\-py.
 
 \hypertarget{classconfiguration_1_1PolyFileConfiguration_acb9da93ddecef1bb34bbce601473f0f1}{\index{configuration\-::\-Poly\-File\-Configuration@{configuration\-::\-Poly\-File\-Configuration}!end\-Point@{end\-Point}}
 \index{end\-Point@{end\-Point}!configuration::PolyFileConfiguration@{configuration\-::\-Poly\-File\-Configuration}}
@@ -112,7 +165,7 @@ Ending point.
 
 
 
-Definition at line 69 of file configuration.\-py.
+Definition at line 188 of file configuration.\-py.
 
 \hypertarget{classconfiguration_1_1PolyFileConfiguration_a2fd4dfe65bb97105e3ff146d125849df}{\index{configuration\-::\-Poly\-File\-Configuration@{configuration\-::\-Poly\-File\-Configuration}!goal\-List@{goal\-List}}
 \index{goal\-List@{goal\-List}!configuration::PolyFileConfiguration@{configuration\-::\-Poly\-File\-Configuration}}
@@ -123,18 +176,25 @@ List of intermediate goals derived by the global planner.
 
 
 
-Definition at line 83 of file configuration.\-py.
+Definition at line 202 of file configuration.\-py.
+
+\hypertarget{classconfiguration_1_1PolyFileConfiguration_a38883bf395763bf87ad3ca8279f0300f}{\index{configuration\-::\-Poly\-File\-Configuration@{configuration\-::\-Poly\-File\-Configuration}!nodes@{nodes}}
+\index{nodes@{nodes}!configuration::PolyFileConfiguration@{configuration\-::\-Poly\-File\-Configuration}}
+\subsubsection[{nodes}]{\setlength{\rightskip}{0pt plus 5cm}configuration.\-Poly\-File\-Configuration.\-nodes}}\label{classconfiguration_1_1PolyFileConfiguration_a38883bf395763bf87ad3ca8279f0300f}
+
+
+Definition at line 112 of file configuration.\-py.
 
 \hypertarget{classconfiguration_1_1PolyFileConfiguration_a4ea5eea95680f3bfdad4adce0578a0f0}{\index{configuration\-::\-Poly\-File\-Configuration@{configuration\-::\-Poly\-File\-Configuration}!obstacle\-List@{obstacle\-List}}
 \index{obstacle\-List@{obstacle\-List}!configuration::PolyFileConfiguration@{configuration\-::\-Poly\-File\-Configuration}}
 \subsubsection[{obstacle\-List}]{\setlength{\rightskip}{0pt plus 5cm}configuration.\-Poly\-File\-Configuration.\-obstacle\-List}}\label{classconfiguration_1_1PolyFileConfiguration_a4ea5eea95680f3bfdad4adce0578a0f0}
 
 
-List of obstacles. 
+List of obstacles parse static obstalces. 
 
 
 
-Definition at line 63 of file configuration.\-py.
+Definition at line 174 of file configuration.\-py.
 
 \hypertarget{classconfiguration_1_1PolyFileConfiguration_a075aa5177145a1041468f24e4829e8e8}{\index{configuration\-::\-Poly\-File\-Configuration@{configuration\-::\-Poly\-File\-Configuration}!prm\-Gen@{prm\-Gen}}
 \index{prm\-Gen@{prm\-Gen}!configuration::PolyFileConfiguration@{configuration\-::\-Poly\-File\-Configuration}}
@@ -145,7 +205,7 @@ Object containing variables and mehtods for the global planner.
 
 
 
-Definition at line 72 of file configuration.\-py.
+Definition at line 191 of file configuration.\-py.
 
 \hypertarget{classconfiguration_1_1PolyFileConfiguration_ae5c780baacd4b800d1646a29a8608cbf}{\index{configuration\-::\-Poly\-File\-Configuration@{configuration\-::\-Poly\-File\-Configuration}!start\-Point@{start\-Point}}
 \index{start\-Point@{start\-Point}!configuration::PolyFileConfiguration@{configuration\-::\-Poly\-File\-Configuration}}
@@ -156,7 +216,7 @@ Starting point.
 
 
 
-Definition at line 66 of file configuration.\-py.
+Definition at line 185 of file configuration.\-py.
 
 
 

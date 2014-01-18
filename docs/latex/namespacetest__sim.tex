@@ -6,25 +6,80 @@
 \item 
 dictionary \hyperlink{namespacetest__sim_a7550c4b395516fd2fa13ebfd927c9908}{map\-Dict}
 \begin{DoxyCompactList}\small\item\em Main module to run for testing purposes. \end{DoxyCompactList}\item 
+tuple \hyperlink{namespacetest__sim_ab2831c916fc9496cbc35d3dc973a3e9c}{flock\-Size} = int(sys.\-argv\mbox{[}2\mbox{]})
+\item 
+list \hyperlink{namespacetest__sim_a4b3a71baea25193edaa02f6e938da13c}{start\-Point} = \hyperlink{namespacetest__sim_a7550c4b395516fd2fa13ebfd927c9908}{map\-Dict}\mbox{[}sys.\-argv\mbox{[}1\mbox{]}\mbox{]}
+\item 
+list \hyperlink{namespacetest__sim_a74c9f896f25a6236b948f451aaab30bf}{end\-Point} = \hyperlink{namespacetest__sim_a7550c4b395516fd2fa13ebfd927c9908}{map\-Dict}\mbox{[}sys.\-argv\mbox{[}1\mbox{]}\mbox{]}
+\item 
+list \hyperlink{namespacetest__sim_a22fa561a6ceff64ebc9a613928ca6cb3}{map\-File\-Path} = sys.\-argv\mbox{[}1\mbox{]}
+\item 
+\hyperlink{namespacetest__sim_ae11191b484b7492bad167b40d991e12c}{obstacle\-File\-Path} = None
+\item 
+\hyperlink{namespacetest__sim_ac73cc5253c8afe364cddedc6a393f925}{dynamic\-Obstacle\-Auto\-Generate} = False
+\item 
+int \hyperlink{namespacetest__sim_a62047015d5d3114a87c78d8987e7a92e}{generate\-Target} = 0
+\item 
+list \hyperlink{namespacetest__sim_afad7233fcd251150d588589d48afa50e}{arg} = sys.\-argv\mbox{[}3\mbox{]}
+\item 
 tuple \hyperlink{namespacetest__sim_a2054957d15e42445f7dc826058f9799d}{fs}
 \end{DoxyCompactItemize}
 
 
 \subsection{Variable Documentation}
+\hypertarget{namespacetest__sim_afad7233fcd251150d588589d48afa50e}{\index{test\-\_\-sim@{test\-\_\-sim}!arg@{arg}}
+\index{arg@{arg}!test_sim@{test\-\_\-sim}}
+\subsubsection[{arg}]{\setlength{\rightskip}{0pt plus 5cm}list test\-\_\-sim.\-arg = sys.\-argv\mbox{[}3\mbox{]}}}\label{namespacetest__sim_afad7233fcd251150d588589d48afa50e}
+
+
+Definition at line 54 of file test\-\_\-sim.\-py.
+
+\hypertarget{namespacetest__sim_ac73cc5253c8afe364cddedc6a393f925}{\index{test\-\_\-sim@{test\-\_\-sim}!dynamic\-Obstacle\-Auto\-Generate@{dynamic\-Obstacle\-Auto\-Generate}}
+\index{dynamic\-Obstacle\-Auto\-Generate@{dynamic\-Obstacle\-Auto\-Generate}!test_sim@{test\-\_\-sim}}
+\subsubsection[{dynamic\-Obstacle\-Auto\-Generate}]{\setlength{\rightskip}{0pt plus 5cm}test\-\_\-sim.\-dynamic\-Obstacle\-Auto\-Generate = False}}\label{namespacetest__sim_ac73cc5253c8afe364cddedc6a393f925}
+
+
+Definition at line 50 of file test\-\_\-sim.\-py.
+
+\hypertarget{namespacetest__sim_a74c9f896f25a6236b948f451aaab30bf}{\index{test\-\_\-sim@{test\-\_\-sim}!end\-Point@{end\-Point}}
+\index{end\-Point@{end\-Point}!test_sim@{test\-\_\-sim}}
+\subsubsection[{end\-Point}]{\setlength{\rightskip}{0pt plus 5cm}list test\-\_\-sim.\-end\-Point = {\bf map\-Dict}\mbox{[}sys.\-argv\mbox{[}1\mbox{]}\mbox{]}}}\label{namespacetest__sim_a74c9f896f25a6236b948f451aaab30bf}
+
+
+Definition at line 47 of file test\-\_\-sim.\-py.
+
+\hypertarget{namespacetest__sim_ab2831c916fc9496cbc35d3dc973a3e9c}{\index{test\-\_\-sim@{test\-\_\-sim}!flock\-Size@{flock\-Size}}
+\index{flock\-Size@{flock\-Size}!test_sim@{test\-\_\-sim}}
+\subsubsection[{flock\-Size}]{\setlength{\rightskip}{0pt plus 5cm}tuple test\-\_\-sim.\-flock\-Size = int(sys.\-argv\mbox{[}2\mbox{]})}}\label{namespacetest__sim_ab2831c916fc9496cbc35d3dc973a3e9c}
+
+
+Definition at line 45 of file test\-\_\-sim.\-py.
+
 \hypertarget{namespacetest__sim_a2054957d15e42445f7dc826058f9799d}{\index{test\-\_\-sim@{test\-\_\-sim}!fs@{fs}}
 \index{fs@{fs}!test_sim@{test\-\_\-sim}}
 \subsubsection[{fs}]{\setlength{\rightskip}{0pt plus 5cm}tuple test\-\_\-sim.\-fs}}\label{namespacetest__sim_a2054957d15e42445f7dc826058f9799d}
 {\bfseries Initial value\-:}
 \begin{DoxyCode}
 1 = bs.FlockSim(
-2         30, 
-3         mapDict[sys.argv[1]][\textcolor{stringliteral}{"startPoint"}], 
-4         mapDict[sys.argv[1]][\textcolor{stringliteral}{"endPoint"}]
-5     )
+2             flockSize,
+3             startPoint,
+4             endPoint,
+5             map\_file=mapFilePath,
+6             obstacle\_file=obstacleFilePath,
+7             auto\_gen\_obst=dynamicObstacleAutoGenerate,
+8             auto\_gen\_number=generateTarget
+9         )
 \end{DoxyCode}
 
 
-Definition at line 24 of file test\-\_\-sim.\-py.
+Definition at line 61 of file test\-\_\-sim.\-py.
+
+\hypertarget{namespacetest__sim_a62047015d5d3114a87c78d8987e7a92e}{\index{test\-\_\-sim@{test\-\_\-sim}!generate\-Target@{generate\-Target}}
+\index{generate\-Target@{generate\-Target}!test_sim@{test\-\_\-sim}}
+\subsubsection[{generate\-Target}]{\setlength{\rightskip}{0pt plus 5cm}tuple test\-\_\-sim.\-generate\-Target = 0}}\label{namespacetest__sim_a62047015d5d3114a87c78d8987e7a92e}
+
+
+Definition at line 51 of file test\-\_\-sim.\-py.
 
 \hypertarget{namespacetest__sim_a7550c4b395516fd2fa13ebfd927c9908}{\index{test\-\_\-sim@{test\-\_\-sim}!map\-Dict@{map\-Dict}}
 \index{map\-Dict@{map\-Dict}!test_sim@{test\-\_\-sim}}
@@ -33,18 +88,34 @@ Definition at line 24 of file test\-\_\-sim.\-py.
 \begin{DoxyCode}
 1 = \{
 2         \textcolor{stringliteral}{"maps/scene2.map"}: \{
-3             \textcolor{stringliteral}{"startPoint"}: (494, 213), 
+3             \textcolor{stringliteral}{"startPoint"}: (494, 213),
 4             \textcolor{stringliteral}{"endPoint"}: (404, 20)
-5         \}, 
+5         \},
 6         \textcolor{stringliteral}{"maps/scene3.map"}: \{
-7             \textcolor{stringliteral}{"startPoint"}: (356, 42), 
+7             \textcolor{stringliteral}{"startPoint"}: (356, 42),
 8             \textcolor{stringliteral}{"endPoint"}: (852, 450)
-9         \}, 
+9         \},
 10         \textcolor{stringliteral}{"maps/scene1.map"}: \{
-11             \textcolor{stringliteral}{"startPoint"}: (50, 600), 
+11             \textcolor{stringliteral}{"startPoint"}: (50, 50),  \textcolor{comment}{# (50, 600)}
 12             \textcolor{stringliteral}{"endPoint"}: (980, 30)
-13         \}
-14     \}
+13         \},
+14         \textcolor{stringliteral}{"maps/empty.map"}: \{
+15             \textcolor{stringliteral}{"startPoint"}: (50, 50),  \textcolor{comment}{# (50, 600)}
+16             \textcolor{stringliteral}{"endPoint"}: (980, 590)
+17         \},
+18         \textcolor{stringliteral}{"maps/s.map"}: \{
+19             \textcolor{stringliteral}{"startPoint"}: (80, 80),  \textcolor{comment}{# (50, 600)}
+20             \textcolor{stringliteral}{"endPoint"}: (980, 30)
+21         \},
+22         \textcolor{stringliteral}{"maps/maze.map"}: \{
+23             \textcolor{stringliteral}{"startPoint"}: (50, 50),  \textcolor{comment}{# (50, 600)}
+24             \textcolor{stringliteral}{"endPoint"}: (950, 30)
+25         \},
+26         \textcolor{stringliteral}{"maps/maze2.map"}: \{
+27             \textcolor{stringliteral}{"startPoint"}: (50, 70),  \textcolor{comment}{# (50, 600)}
+28             \textcolor{stringliteral}{"endPoint"}: (950, 30)
+29         \}
+30     \}
 \end{DoxyCode}
 
 
@@ -53,4 +124,25 @@ Main module to run for testing purposes.
 
 
 Definition at line 10 of file test\-\_\-sim.\-py.
+
+\hypertarget{namespacetest__sim_a22fa561a6ceff64ebc9a613928ca6cb3}{\index{test\-\_\-sim@{test\-\_\-sim}!map\-File\-Path@{map\-File\-Path}}
+\index{map\-File\-Path@{map\-File\-Path}!test_sim@{test\-\_\-sim}}
+\subsubsection[{map\-File\-Path}]{\setlength{\rightskip}{0pt plus 5cm}list test\-\_\-sim.\-map\-File\-Path = sys.\-argv\mbox{[}1\mbox{]}}}\label{namespacetest__sim_a22fa561a6ceff64ebc9a613928ca6cb3}
+
+
+Definition at line 48 of file test\-\_\-sim.\-py.
+
+\hypertarget{namespacetest__sim_ae11191b484b7492bad167b40d991e12c}{\index{test\-\_\-sim@{test\-\_\-sim}!obstacle\-File\-Path@{obstacle\-File\-Path}}
+\index{obstacle\-File\-Path@{obstacle\-File\-Path}!test_sim@{test\-\_\-sim}}
+\subsubsection[{obstacle\-File\-Path}]{\setlength{\rightskip}{0pt plus 5cm}test\-\_\-sim.\-obstacle\-File\-Path = None}}\label{namespacetest__sim_ae11191b484b7492bad167b40d991e12c}
+
+
+Definition at line 49 of file test\-\_\-sim.\-py.
+
+\hypertarget{namespacetest__sim_a4b3a71baea25193edaa02f6e938da13c}{\index{test\-\_\-sim@{test\-\_\-sim}!start\-Point@{start\-Point}}
+\index{start\-Point@{start\-Point}!test_sim@{test\-\_\-sim}}
+\subsubsection[{start\-Point}]{\setlength{\rightskip}{0pt plus 5cm}list test\-\_\-sim.\-start\-Point = {\bf map\-Dict}\mbox{[}sys.\-argv\mbox{[}1\mbox{]}\mbox{]}}}\label{namespacetest__sim_a4b3a71baea25193edaa02f6e938da13c}
+
+
+Definition at line 46 of file test\-\_\-sim.\-py.
 

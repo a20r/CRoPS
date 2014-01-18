@@ -12,5 +12,6 @@ var searchData=
   ['boidlist',['boidList',['../classboid_1_1Boid.html#a6d3a16e56bd3cc7efabf9ac7cae4ae16',1,'boid.Boid.boidList()'],['../classconfiguration_1_1PolyFileConfiguration.html#a34104bbe3eb34147465a4d9e05d6c6b6',1,'configuration.PolyFileConfiguration.boidList()']]],
   ['boidsimulation',['boidsimulation',['../namespaceboidsimulation.html',1,'']]],
   ['boidsimulation_2epy',['boidsimulation.py',['../boidsimulation_8py.html',1,'']]],
-  ['boidspeed',['boidSpeed',['../classconfiguration_1_1Configuration.html#a5062047bc933b81cbbaa841e20cb2a67',1,'configuration::Configuration']]]
+  ['boidspeed',['boidSpeed',['../classconfiguration_1_1Configuration.html#a5062047bc933b81cbbaa841e20cb2a67',1,'configuration::Configuration']]],
+  ['boundary',['boundary',['../classobstacle_1_1PolyObstacle.html#a999b6ef28126661fc8d54e1d86c094e0',1,'obstacle::PolyObstacle']]]
 ];

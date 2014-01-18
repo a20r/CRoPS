@@ -1,7 +1,7 @@
 var searchData=
 [
   ['neighborsize',['neighborSize',['../classboid_1_1Boid.html#a4af115e678f7716a2eb87c573e71073c',1,'boid::Boid']]],
-  ['nodes',['nodes',['../classobstacle_1_1PolyObstacle.html#a125762f0b4a3c9ef8d75c81bc5bc608e',1,'obstacle::PolyObstacle']]],
+  ['nodes',['nodes',['../classconfiguration_1_1PolyFileConfiguration.html#a38883bf395763bf87ad3ca8279f0300f',1,'configuration.PolyFileConfiguration.nodes()'],['../classobstacle_1_1PolyObstacle.html#a125762f0b4a3c9ef8d75c81bc5bc608e',1,'obstacle.PolyObstacle.nodes()']]],
   ['nstuckdavg',['nStuckDAvg',['../classboid_1_1Boid.html#acdfca1dc9b177a512502c6af681bfa9e',1,'boid::Boid']]],
   ['nstuckdsigma',['nStuckDSigma',['../classboid_1_1Boid.html#add42a1be4f79d1ae8990065fa7e5d4de',1,'boid::Boid']]],
   ['numingoal',['numInGoal',['../classboidsimulation_1_1FlockSim.html#ae60982002b6c8c922b3822dbdec4bd41',1,'boidsimulation::FlockSim']]],

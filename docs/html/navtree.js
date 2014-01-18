@@ -27,7 +27,8 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"annotated.html"
+"annotated.html",
+"obstacle_8py.html#a1c1558f418cc7a0e89e687fea6f31edc"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

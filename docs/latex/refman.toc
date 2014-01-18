@@ -1,0 +1,283 @@
+\contentsline {chapter}{\numberline {1}Namespace Index}{1}{chapter.1}
+\contentsline {section}{\numberline {1.1}Namespace List}{1}{section.1.1}
+\contentsline {chapter}{\numberline {2}Hierarchical Index}{3}{chapter.2}
+\contentsline {section}{\numberline {2.1}Class Hierarchy}{3}{section.2.1}
+\contentsline {chapter}{\numberline {3}Class Index}{5}{chapter.3}
+\contentsline {section}{\numberline {3.1}Class List}{5}{section.3.1}
+\contentsline {chapter}{\numberline {4}File Index}{7}{chapter.4}
+\contentsline {section}{\numberline {4.1}File List}{7}{section.4.1}
+\contentsline {chapter}{\numberline {5}Namespace Documentation}{9}{chapter.5}
+\contentsline {section}{\numberline {5.1}boid Namespace Reference}{9}{section.5.1}
+\contentsline {subsection}{\numberline {5.1.1}Function Documentation}{9}{subsection.5.1.1}
+\contentsline {subsubsection}{\numberline {5.1.1.1}guassian\discretionary {-}{}{}Func}{9}{subsubsection.5.1.1.1}
+\contentsline {subsection}{\numberline {5.1.2}Variable Documentation}{10}{subsection.5.1.2}
+\contentsline {subsubsection}{\numberline {5.1.2.1}\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}\_\discretionary {-}{}{}author\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}\_\discretionary {-}{}{}}{10}{subsubsection.5.1.2.1}
+\contentsline {section}{\numberline {5.2}boidsimulation Namespace Reference}{10}{section.5.2}
+\contentsline {subsection}{\numberline {5.2.1}Variable Documentation}{10}{subsection.5.2.1}
+\contentsline {subsubsection}{\numberline {5.2.1.1}\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}\_\discretionary {-}{}{}author\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}\_\discretionary {-}{}{}}{10}{subsubsection.5.2.1.1}
+\contentsline {section}{\numberline {5.3}configuration Namespace Reference}{10}{section.5.3}
+\contentsline {section}{\numberline {5.4}dijkstra Namespace Reference}{10}{section.5.4}
+\contentsline {subsection}{\numberline {5.4.1}Function Documentation}{11}{subsection.5.4.1}
+\contentsline {subsubsection}{\numberline {5.4.1.1}Dijkstra}{11}{subsubsection.5.4.1.1}
+\contentsline {subsubsection}{\numberline {5.4.1.2}shortest\discretionary {-}{}{}Path}{12}{subsubsection.5.4.1.2}
+\contentsline {section}{\numberline {5.5}gatherstats Namespace Reference}{13}{section.5.5}
+\contentsline {subsection}{\numberline {5.5.1}Function Documentation}{13}{subsection.5.5.1}
+\contentsline {subsubsection}{\numberline {5.5.1.1}generate\discretionary {-}{}{}Stats}{13}{subsubsection.5.5.1.1}
+\contentsline {subsection}{\numberline {5.5.2}Variable Documentation}{13}{subsection.5.5.2}
+\contentsline {subsubsection}{\numberline {5.5.2.1}map\discretionary {-}{}{}List}{13}{subsubsection.5.5.2.1}
+\contentsline {subsubsection}{\numberline {5.5.2.2}test\discretionary {-}{}{}List}{13}{subsubsection.5.5.2.2}
+\contentsline {section}{\numberline {5.6}goal Namespace Reference}{13}{section.5.6}
+\contentsline {subsection}{\numberline {5.6.1}Variable Documentation}{14}{subsection.5.6.1}
+\contentsline {subsubsection}{\numberline {5.6.1.1}\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}\_\discretionary {-}{}{}author\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}\_\discretionary {-}{}{}}{14}{subsubsection.5.6.1.1}
+\contentsline {section}{\numberline {5.7}mapparser Namespace Reference}{14}{section.5.7}
+\contentsline {subsection}{\numberline {5.7.1}Function Documentation}{14}{subsection.5.7.1}
+\contentsline {subsubsection}{\numberline {5.7.1.1}map\discretionary {-}{}{}Val}{14}{subsubsection.5.7.1.1}
+\contentsline {subsubsection}{\numberline {5.7.1.2}mparse}{14}{subsubsection.5.7.1.2}
+\contentsline {section}{\numberline {5.8}obstacle Namespace Reference}{15}{section.5.8}
+\contentsline {subsection}{\numberline {5.8.1}Variable Documentation}{15}{subsection.5.8.1}
+\contentsline {subsubsection}{\numberline {5.8.1.1}\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}\_\discretionary {-}{}{}author\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}\_\discretionary {-}{}{}}{15}{subsubsection.5.8.1.1}
+\contentsline {section}{\numberline {5.9}priodict Namespace Reference}{15}{section.5.9}
+\contentsline {section}{\numberline {5.10}prm Namespace Reference}{15}{section.5.10}
+\contentsline {section}{\numberline {5.11}test\discretionary {-}{}{}\_\discretionary {-}{}{}sim Namespace Reference}{16}{section.5.11}
+\contentsline {subsection}{\numberline {5.11.1}Variable Documentation}{16}{subsection.5.11.1}
+\contentsline {subsubsection}{\numberline {5.11.1.1}arg}{16}{subsubsection.5.11.1.1}
+\contentsline {subsubsection}{\numberline {5.11.1.2}dynamic\discretionary {-}{}{}Obstacle\discretionary {-}{}{}Auto\discretionary {-}{}{}Generate}{16}{subsubsection.5.11.1.2}
+\contentsline {subsubsection}{\numberline {5.11.1.3}end\discretionary {-}{}{}Point}{16}{subsubsection.5.11.1.3}
+\contentsline {subsubsection}{\numberline {5.11.1.4}flock\discretionary {-}{}{}Size}{16}{subsubsection.5.11.1.4}
+\contentsline {subsubsection}{\numberline {5.11.1.5}fs}{16}{subsubsection.5.11.1.5}
+\contentsline {subsubsection}{\numberline {5.11.1.6}generate\discretionary {-}{}{}Target}{16}{subsubsection.5.11.1.6}
+\contentsline {subsubsection}{\numberline {5.11.1.7}map\discretionary {-}{}{}Dict}{17}{subsubsection.5.11.1.7}
+\contentsline {subsubsection}{\numberline {5.11.1.8}map\discretionary {-}{}{}File\discretionary {-}{}{}Path}{17}{subsubsection.5.11.1.8}
+\contentsline {subsubsection}{\numberline {5.11.1.9}obstacle\discretionary {-}{}{}File\discretionary {-}{}{}Path}{17}{subsubsection.5.11.1.9}
+\contentsline {subsubsection}{\numberline {5.11.1.10}start\discretionary {-}{}{}Point}{17}{subsubsection.5.11.1.10}
+\contentsline {chapter}{\numberline {6}Class Documentation}{19}{chapter.6}
+\contentsline {section}{\numberline {6.1}boid.\discretionary {-}{}{}Boid Class Reference}{19}{section.6.1}
+\contentsline {subsection}{\numberline {6.1.1}Detailed Description}{22}{subsection.6.1.1}
+\contentsline {subsection}{\numberline {6.1.2}Constructor \& Destructor Documentation}{22}{subsection.6.1.2}
+\contentsline {subsubsection}{\numberline {6.1.2.1}\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}\_\discretionary {-}{}{}init\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}\_\discretionary {-}{}{}}{22}{subsubsection.6.1.2.1}
+\contentsline {subsection}{\numberline {6.1.3}Member Function Documentation}{22}{subsection.6.1.3}
+\contentsline {subsubsection}{\numberline {6.1.3.1}determine\discretionary {-}{}{}New\discretionary {-}{}{}Path}{22}{subsubsection.6.1.3.1}
+\contentsline {subsubsection}{\numberline {6.1.3.2}determine\discretionary {-}{}{}Random\discretionary {-}{}{}Walk}{22}{subsubsection.6.1.3.2}
+\contentsline {subsubsection}{\numberline {6.1.3.3}draw}{23}{subsubsection.6.1.3.3}
+\contentsline {subsubsection}{\numberline {6.1.3.4}find\discretionary {-}{}{}Max}{23}{subsubsection.6.1.3.4}
+\contentsline {subsubsection}{\numberline {6.1.3.5}get\discretionary {-}{}{}Boid\discretionary {-}{}{}Vector\discretionary {-}{}{}List}{23}{subsubsection.6.1.3.5}
+\contentsline {subsubsection}{\numberline {6.1.3.6}get\discretionary {-}{}{}Direction\discretionary {-}{}{}Vector}{24}{subsubsection.6.1.3.6}
+\contentsline {subsubsection}{\numberline {6.1.3.7}get\discretionary {-}{}{}Goal\discretionary {-}{}{}Vector}{24}{subsubsection.6.1.3.7}
+\contentsline {subsubsection}{\numberline {6.1.3.8}get\discretionary {-}{}{}Neighbor\discretionary {-}{}{}Vector\discretionary {-}{}{}List}{25}{subsubsection.6.1.3.8}
+\contentsline {subsubsection}{\numberline {6.1.3.9}get\discretionary {-}{}{}Obstacle\discretionary {-}{}{}Vector\discretionary {-}{}{}List}{26}{subsubsection.6.1.3.9}
+\contentsline {subsubsection}{\numberline {6.1.3.10}get\discretionary {-}{}{}Var}{27}{subsubsection.6.1.3.10}
+\contentsline {subsubsection}{\numberline {6.1.3.11}in\discretionary {-}{}{}Goal}{27}{subsubsection.6.1.3.11}
+\contentsline {subsubsection}{\numberline {6.1.3.12}init\discretionary {-}{}{}Function\discretionary {-}{}{}Parameters}{28}{subsubsection.6.1.3.12}
+\contentsline {subsubsection}{\numberline {6.1.3.13}in\discretionary {-}{}{}World}{28}{subsubsection.6.1.3.13}
+\contentsline {subsubsection}{\numberline {6.1.3.14}mag}{28}{subsubsection.6.1.3.14}
+\contentsline {subsubsection}{\numberline {6.1.3.15}norm}{29}{subsubsection.6.1.3.15}
+\contentsline {subsubsection}{\numberline {6.1.3.16}obstacle\discretionary {-}{}{}Func}{29}{subsubsection.6.1.3.16}
+\contentsline {subsubsection}{\numberline {6.1.3.17}point\discretionary {-}{}{}Allowed}{30}{subsubsection.6.1.3.17}
+\contentsline {subsubsection}{\numberline {6.1.3.18}reduce\discretionary {-}{}{}Weight\discretionary {-}{}{}Values}{30}{subsubsection.6.1.3.18}
+\contentsline {subsubsection}{\numberline {6.1.3.19}set\discretionary {-}{}{}Boid\discretionary {-}{}{}List}{31}{subsubsection.6.1.3.19}
+\contentsline {subsubsection}{\numberline {6.1.3.20}set\discretionary {-}{}{}New\discretionary {-}{}{}Goal}{31}{subsubsection.6.1.3.20}
+\contentsline {subsubsection}{\numberline {6.1.3.21}sigmoid\discretionary {-}{}{}Func}{31}{subsubsection.6.1.3.21}
+\contentsline {subsubsection}{\numberline {6.1.3.22}sum\discretionary {-}{}{}Divide}{32}{subsubsection.6.1.3.22}
+\contentsline {subsubsection}{\numberline {6.1.3.23}update}{33}{subsubsection.6.1.3.23}
+\contentsline {subsubsection}{\numberline {6.1.3.24}update\discretionary {-}{}{}Position\discretionary {-}{}{}Buffer}{33}{subsubsection.6.1.3.24}
+\contentsline {subsection}{\numberline {6.1.4}Member Data Documentation}{33}{subsection.6.1.4}
+\contentsline {subsubsection}{\numberline {6.1.4.1}b\discretionary {-}{}{}Alpha}{33}{subsubsection.6.1.4.1}
+\contentsline {subsubsection}{\numberline {6.1.4.2}b\discretionary {-}{}{}Beta}{33}{subsubsection.6.1.4.2}
+\contentsline {subsubsection}{\numberline {6.1.4.3}b\discretionary {-}{}{}Const}{33}{subsubsection.6.1.4.3}
+\contentsline {subsubsection}{\numberline {6.1.4.4}b\discretionary {-}{}{}Delta}{34}{subsubsection.6.1.4.4}
+\contentsline {subsubsection}{\numberline {6.1.4.5}b\discretionary {-}{}{}Influence\discretionary {-}{}{}R}{34}{subsubsection.6.1.4.5}
+\contentsline {subsubsection}{\numberline {6.1.4.6}boid\discretionary {-}{}{}List}{34}{subsubsection.6.1.4.6}
+\contentsline {subsubsection}{\numberline {6.1.4.7}color}{34}{subsubsection.6.1.4.7}
+\contentsline {subsubsection}{\numberline {6.1.4.8}comp\discretionary {-}{}{}Weight\discretionary {-}{}{}List}{34}{subsubsection.6.1.4.8}
+\contentsline {subsubsection}{\numberline {6.1.4.9}dim}{34}{subsubsection.6.1.4.9}
+\contentsline {subsubsection}{\numberline {6.1.4.10}end\discretionary {-}{}{}Index}{34}{subsubsection.6.1.4.10}
+\contentsline {subsubsection}{\numberline {6.1.4.11}e\discretionary {-}{}{}Pos}{34}{subsubsection.6.1.4.11}
+\contentsline {subsubsection}{\numberline {6.1.4.12}g\discretionary {-}{}{}Alpha}{34}{subsubsection.6.1.4.12}
+\contentsline {subsubsection}{\numberline {6.1.4.13}gamma\discretionary {-}{}{}Func}{34}{subsubsection.6.1.4.13}
+\contentsline {subsubsection}{\numberline {6.1.4.14}g\discretionary {-}{}{}Beta}{35}{subsubsection.6.1.4.14}
+\contentsline {subsubsection}{\numberline {6.1.4.15}g\discretionary {-}{}{}Const}{35}{subsubsection.6.1.4.15}
+\contentsline {subsubsection}{\numberline {6.1.4.16}g\discretionary {-}{}{}Delta}{35}{subsubsection.6.1.4.16}
+\contentsline {subsubsection}{\numberline {6.1.4.17}goal}{35}{subsubsection.6.1.4.17}
+\contentsline {subsubsection}{\numberline {6.1.4.18}goal\discretionary {-}{}{}Counter}{35}{subsubsection.6.1.4.18}
+\contentsline {subsubsection}{\numberline {6.1.4.19}goal\discretionary {-}{}{}List}{35}{subsubsection.6.1.4.19}
+\contentsline {subsubsection}{\numberline {6.1.4.20}goal\discretionary {-}{}{}Nodes}{35}{subsubsection.6.1.4.20}
+\contentsline {subsubsection}{\numberline {6.1.4.21}heading}{35}{subsubsection.6.1.4.21}
+\contentsline {subsubsection}{\numberline {6.1.4.22}head\discretionary {-}{}{}Weight\discretionary {-}{}{}List}{35}{subsubsection.6.1.4.22}
+\contentsline {subsubsection}{\numberline {6.1.4.23}neighbor\discretionary {-}{}{}Size}{36}{subsubsection.6.1.4.23}
+\contentsline {subsubsection}{\numberline {6.1.4.24}n\discretionary {-}{}{}Stuck\discretionary {-}{}{}D\discretionary {-}{}{}Avg}{36}{subsubsection.6.1.4.24}
+\contentsline {subsubsection}{\numberline {6.1.4.25}n\discretionary {-}{}{}Stuck\discretionary {-}{}{}D\discretionary {-}{}{}Sigma}{36}{subsubsection.6.1.4.25}
+\contentsline {subsubsection}{\numberline {6.1.4.26}ob\discretionary {-}{}{}Beta}{36}{subsubsection.6.1.4.26}
+\contentsline {subsubsection}{\numberline {6.1.4.27}ob\discretionary {-}{}{}Influence\discretionary {-}{}{}R}{36}{subsubsection.6.1.4.27}
+\contentsline {subsubsection}{\numberline {6.1.4.28}obstacle\discretionary {-}{}{}List}{36}{subsubsection.6.1.4.28}
+\contentsline {subsubsection}{\numberline {6.1.4.29}position}{36}{subsubsection.6.1.4.29}
+\contentsline {subsubsection}{\numberline {6.1.4.30}position\discretionary {-}{}{}Buffer}{36}{subsubsection.6.1.4.30}
+\contentsline {subsubsection}{\numberline {6.1.4.31}prm\discretionary {-}{}{}Gen}{36}{subsubsection.6.1.4.31}
+\contentsline {subsubsection}{\numberline {6.1.4.32}radius}{37}{subsubsection.6.1.4.32}
+\contentsline {subsubsection}{\numberline {6.1.4.33}random\discretionary {-}{}{}Walk\discretionary {-}{}{}X}{37}{subsubsection.6.1.4.33}
+\contentsline {subsubsection}{\numberline {6.1.4.34}random\discretionary {-}{}{}Walk\discretionary {-}{}{}Y}{37}{subsubsection.6.1.4.34}
+\contentsline {subsubsection}{\numberline {6.1.4.35}rand\discretionary {-}{}{}Walk\discretionary {-}{}{}Count}{37}{subsubsection.6.1.4.35}
+\contentsline {subsubsection}{\numberline {6.1.4.36}roadmap}{37}{subsubsection.6.1.4.36}
+\contentsline {subsubsection}{\numberline {6.1.4.37}screen}{37}{subsubsection.6.1.4.37}
+\contentsline {subsubsection}{\numberline {6.1.4.38}speed}{37}{subsubsection.6.1.4.38}
+\contentsline {subsubsection}{\numberline {6.1.4.39}s\discretionary {-}{}{}Pos}{37}{subsubsection.6.1.4.39}
+\contentsline {subsubsection}{\numberline {6.1.4.40}stuck}{37}{subsubsection.6.1.4.40}
+\contentsline {subsubsection}{\numberline {6.1.4.41}stuck\discretionary {-}{}{}Const}{38}{subsubsection.6.1.4.41}
+\contentsline {subsubsection}{\numberline {6.1.4.42}stuck\discretionary {-}{}{}D\discretionary {-}{}{}Avg}{38}{subsubsection.6.1.4.42}
+\contentsline {subsubsection}{\numberline {6.1.4.43}stuck\discretionary {-}{}{}D\discretionary {-}{}{}Sigma}{38}{subsubsection.6.1.4.43}
+\contentsline {subsubsection}{\numberline {6.1.4.44}y\discretionary {-}{}{}Size}{38}{subsubsection.6.1.4.44}
+\contentsline {section}{\numberline {6.2}goal.\discretionary {-}{}{}Circle\discretionary {-}{}{}Goal Class Reference}{38}{section.6.2}
+\contentsline {subsection}{\numberline {6.2.1}Detailed Description}{39}{subsection.6.2.1}
+\contentsline {subsection}{\numberline {6.2.2}Constructor \& Destructor Documentation}{39}{subsection.6.2.2}
+\contentsline {subsubsection}{\numberline {6.2.2.1}\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}\_\discretionary {-}{}{}init\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}\_\discretionary {-}{}{}}{39}{subsubsection.6.2.2.1}
+\contentsline {subsection}{\numberline {6.2.3}Member Function Documentation}{39}{subsection.6.2.3}
+\contentsline {subsubsection}{\numberline {6.2.3.1}draw}{39}{subsubsection.6.2.3.1}
+\contentsline {subsection}{\numberline {6.2.4}Member Data Documentation}{39}{subsection.6.2.4}
+\contentsline {subsubsection}{\numberline {6.2.4.1}colors}{39}{subsubsection.6.2.4.1}
+\contentsline {subsubsection}{\numberline {6.2.4.2}position}{39}{subsubsection.6.2.4.2}
+\contentsline {subsubsection}{\numberline {6.2.4.3}radius}{39}{subsubsection.6.2.4.3}
+\contentsline {subsubsection}{\numberline {6.2.4.4}screen}{39}{subsubsection.6.2.4.4}
+\contentsline {section}{\numberline {6.3}configuration.\discretionary {-}{}{}Configuration Class Reference}{40}{section.6.3}
+\contentsline {subsection}{\numberline {6.3.1}Detailed Description}{41}{subsection.6.3.1}
+\contentsline {subsection}{\numberline {6.3.2}Member Data Documentation}{41}{subsection.6.3.2}
+\contentsline {subsubsection}{\numberline {6.3.2.1}boid\discretionary {-}{}{}Speed}{41}{subsubsection.6.3.2.1}
+\contentsline {subsubsection}{\numberline {6.3.2.2}color\discretionary {-}{}{}List}{41}{subsubsection.6.3.2.2}
+\contentsline {subsubsection}{\numberline {6.3.2.3}dim}{41}{subsubsection.6.3.2.3}
+\contentsline {subsubsection}{\numberline {6.3.2.4}goal\discretionary {-}{}{}Radius}{41}{subsubsection.6.3.2.4}
+\contentsline {subsubsection}{\numberline {6.3.2.5}num\discretionary {-}{}{}Neighbours}{41}{subsubsection.6.3.2.5}
+\contentsline {subsubsection}{\numberline {6.3.2.6}num\discretionary {-}{}{}Sample\discretionary {-}{}{}Points}{41}{subsubsection.6.3.2.6}
+\contentsline {subsubsection}{\numberline {6.3.2.7}screen}{42}{subsubsection.6.3.2.7}
+\contentsline {section}{\numberline {6.4}dict Class Reference}{42}{section.6.4}
+\contentsline {section}{\numberline {6.5}boidsimulation.\discretionary {-}{}{}Flock\discretionary {-}{}{}Sim Class Reference}{42}{section.6.5}
+\contentsline {subsection}{\numberline {6.5.1}Detailed Description}{43}{subsection.6.5.1}
+\contentsline {subsection}{\numberline {6.5.2}Constructor \& Destructor Documentation}{44}{subsection.6.5.2}
+\contentsline {subsubsection}{\numberline {6.5.2.1}\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}\_\discretionary {-}{}{}init\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}\_\discretionary {-}{}{}}{44}{subsubsection.6.5.2.1}
+\contentsline {subsection}{\numberline {6.5.3}Member Function Documentation}{44}{subsection.6.5.3}
+\contentsline {subsubsection}{\numberline {6.5.3.1}animate}{44}{subsubsection.6.5.3.1}
+\contentsline {subsubsection}{\numberline {6.5.3.2}avg}{44}{subsubsection.6.5.3.2}
+\contentsline {subsubsection}{\numberline {6.5.3.3}get\discretionary {-}{}{}Boid\discretionary {-}{}{}Data}{45}{subsubsection.6.5.3.3}
+\contentsline {subsubsection}{\numberline {6.5.3.4}get\discretionary {-}{}{}Stats}{45}{subsubsection.6.5.3.4}
+\contentsline {subsubsection}{\numberline {6.5.3.5}init\discretionary {-}{}{}\_\discretionary {-}{}{}prm}{45}{subsubsection.6.5.3.5}
+\contentsline {subsubsection}{\numberline {6.5.3.6}play}{46}{subsubsection.6.5.3.6}
+\contentsline {subsubsection}{\numberline {6.5.3.7}render}{46}{subsubsection.6.5.3.7}
+\contentsline {subsection}{\numberline {6.5.4}Member Data Documentation}{47}{subsection.6.5.4}
+\contentsline {subsubsection}{\numberline {6.5.4.1}auto\discretionary {-}{}{}\_\discretionary {-}{}{}gen\discretionary {-}{}{}\_\discretionary {-}{}{}number}{47}{subsubsection.6.5.4.1}
+\contentsline {subsubsection}{\numberline {6.5.4.2}auto\discretionary {-}{}{}\_\discretionary {-}{}{}gen\discretionary {-}{}{}\_\discretionary {-}{}{}obst}{47}{subsubsection.6.5.4.2}
+\contentsline {subsubsection}{\numberline {6.5.4.3}B\discretionary {-}{}{}L\discretionary {-}{}{}A\discretionary {-}{}{}C\discretionary {-}{}{}K}{47}{subsubsection.6.5.4.3}
+\contentsline {subsubsection}{\numberline {6.5.4.4}config}{47}{subsubsection.6.5.4.4}
+\contentsline {subsubsection}{\numberline {6.5.4.5}counter}{47}{subsubsection.6.5.4.5}
+\contentsline {subsubsection}{\numberline {6.5.4.6}data\discretionary {-}{}{}File}{47}{subsubsection.6.5.4.6}
+\contentsline {subsubsection}{\numberline {6.5.4.7}dim}{47}{subsubsection.6.5.4.7}
+\contentsline {subsubsection}{\numberline {6.5.4.8}done}{48}{subsubsection.6.5.4.8}
+\contentsline {subsubsection}{\numberline {6.5.4.9}e\discretionary {-}{}{}Pos}{48}{subsubsection.6.5.4.9}
+\contentsline {subsubsection}{\numberline {6.5.4.10}flock\discretionary {-}{}{}Size}{48}{subsubsection.6.5.4.10}
+\contentsline {subsubsection}{\numberline {6.5.4.11}font}{48}{subsubsection.6.5.4.11}
+\contentsline {subsubsection}{\numberline {6.5.4.12}frame\discretionary {-}{}{}Counter}{48}{subsubsection.6.5.4.12}
+\contentsline {subsubsection}{\numberline {6.5.4.13}iterations}{48}{subsubsection.6.5.4.13}
+\contentsline {subsubsection}{\numberline {6.5.4.14}map\discretionary {-}{}{}File}{48}{subsubsection.6.5.4.14}
+\contentsline {subsubsection}{\numberline {6.5.4.15}num\discretionary {-}{}{}In\discretionary {-}{}{}Goal}{48}{subsubsection.6.5.4.15}
+\contentsline {subsubsection}{\numberline {6.5.4.16}obstacle\discretionary {-}{}{}File}{48}{subsubsection.6.5.4.16}
+\contentsline {subsubsection}{\numberline {6.5.4.17}s\discretionary {-}{}{}Pos}{49}{subsubsection.6.5.4.17}
+\contentsline {subsubsection}{\numberline {6.5.4.18}start\discretionary {-}{}{}Time}{49}{subsubsection.6.5.4.18}
+\contentsline {subsubsection}{\numberline {6.5.4.19}surface\discretionary {-}{}{}List}{49}{subsubsection.6.5.4.19}
+\contentsline {subsubsection}{\numberline {6.5.4.20}W\discretionary {-}{}{}H\discretionary {-}{}{}I\discretionary {-}{}{}T\discretionary {-}{}{}E}{49}{subsubsection.6.5.4.20}
+\contentsline {section}{\numberline {6.6}configuration.\discretionary {-}{}{}Poly\discretionary {-}{}{}File\discretionary {-}{}{}Configuration Class Reference}{49}{section.6.6}
+\contentsline {subsection}{\numberline {6.6.1}Detailed Description}{51}{subsection.6.6.1}
+\contentsline {subsection}{\numberline {6.6.2}Member Function Documentation}{51}{subsection.6.6.2}
+\contentsline {subsubsection}{\numberline {6.6.2.1}auto\discretionary {-}{}{}Generate\discretionary {-}{}{}Dynamic\discretionary {-}{}{}Obstacles}{51}{subsubsection.6.6.2.1}
+\contentsline {subsubsection}{\numberline {6.6.2.2}init\discretionary {-}{}{}Vars}{51}{subsubsection.6.6.2.2}
+\contentsline {subsubsection}{\numberline {6.6.2.3}parse\discretionary {-}{}{}Dynamic\discretionary {-}{}{}Obstacles}{51}{subsubsection.6.6.2.3}
+\contentsline {subsection}{\numberline {6.6.3}Member Data Documentation}{51}{subsection.6.6.3}
+\contentsline {subsubsection}{\numberline {6.6.3.1}auto\discretionary {-}{}{}\_\discretionary {-}{}{}gen\discretionary {-}{}{}\_\discretionary {-}{}{}number}{51}{subsubsection.6.6.3.1}
+\contentsline {subsubsection}{\numberline {6.6.3.2}auto\discretionary {-}{}{}\_\discretionary {-}{}{}gen\discretionary {-}{}{}\_\discretionary {-}{}{}obst}{51}{subsubsection.6.6.3.2}
+\contentsline {subsubsection}{\numberline {6.6.3.3}boid\discretionary {-}{}{}List}{51}{subsubsection.6.6.3.3}
+\contentsline {subsubsection}{\numberline {6.6.3.4}end\discretionary {-}{}{}Point}{52}{subsubsection.6.6.3.4}
+\contentsline {subsubsection}{\numberline {6.6.3.5}goal\discretionary {-}{}{}List}{52}{subsubsection.6.6.3.5}
+\contentsline {subsubsection}{\numberline {6.6.3.6}nodes}{52}{subsubsection.6.6.3.6}
+\contentsline {subsubsection}{\numberline {6.6.3.7}obstacle\discretionary {-}{}{}List}{52}{subsubsection.6.6.3.7}
+\contentsline {subsubsection}{\numberline {6.6.3.8}prm\discretionary {-}{}{}Gen}{52}{subsubsection.6.6.3.8}
+\contentsline {subsubsection}{\numberline {6.6.3.9}start\discretionary {-}{}{}Point}{52}{subsubsection.6.6.3.9}
+\contentsline {section}{\numberline {6.7}obstacle.\discretionary {-}{}{}Poly\discretionary {-}{}{}Obstacle Class Reference}{52}{section.6.7}
+\contentsline {subsection}{\numberline {6.7.1}Detailed Description}{54}{subsection.6.7.1}
+\contentsline {subsection}{\numberline {6.7.2}Constructor \& Destructor Documentation}{54}{subsection.6.7.2}
+\contentsline {subsubsection}{\numberline {6.7.2.1}\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}\_\discretionary {-}{}{}init\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}\_\discretionary {-}{}{}}{54}{subsubsection.6.7.2.1}
+\contentsline {subsection}{\numberline {6.7.3}Member Function Documentation}{54}{subsection.6.7.3}
+\contentsline {subsubsection}{\numberline {6.7.3.1}change\discretionary {-}{}{}\_\discretionary {-}{}{}direction}{54}{subsubsection.6.7.3.1}
+\contentsline {subsubsection}{\numberline {6.7.3.2}check\discretionary {-}{}{}Collision\discretionary {-}{}{}With\discretionary {-}{}{}Other\discretionary {-}{}{}Obstacles}{54}{subsubsection.6.7.3.2}
+\contentsline {subsubsection}{\numberline {6.7.3.3}detect\discretionary {-}{}{}Collision}{54}{subsubsection.6.7.3.3}
+\contentsline {subsubsection}{\numberline {6.7.3.4}determine\discretionary {-}{}{}\_\discretionary {-}{}{}last\discretionary {-}{}{}\_\discretionary {-}{}{}direction}{55}{subsubsection.6.7.3.4}
+\contentsline {subsubsection}{\numberline {6.7.3.5}draw}{55}{subsubsection.6.7.3.5}
+\contentsline {subsubsection}{\numberline {6.7.3.6}estimate\discretionary {-}{}{}Poly}{55}{subsubsection.6.7.3.6}
+\contentsline {subsubsection}{\numberline {6.7.3.7}get\discretionary {-}{}{}Closest\discretionary {-}{}{}Point}{55}{subsubsection.6.7.3.7}
+\contentsline {subsubsection}{\numberline {6.7.3.8}get\discretionary {-}{}{}Point}{56}{subsubsection.6.7.3.8}
+\contentsline {subsubsection}{\numberline {6.7.3.9}get\discretionary {-}{}{}Radius}{56}{subsubsection.6.7.3.9}
+\contentsline {subsubsection}{\numberline {6.7.3.10}norm}{57}{subsubsection.6.7.3.10}
+\contentsline {subsubsection}{\numberline {6.7.3.11}point\discretionary {-}{}{}Allowed}{57}{subsubsection.6.7.3.11}
+\contentsline {subsubsection}{\numberline {6.7.3.12}point\discretionary {-}{}{}In\discretionary {-}{}{}Poly}{58}{subsubsection.6.7.3.12}
+\contentsline {subsubsection}{\numberline {6.7.3.13}rayintersectseg}{59}{subsubsection.6.7.3.13}
+\contentsline {subsubsection}{\numberline {6.7.3.14}remove\discretionary {-}{}{}Self\discretionary {-}{}{}From\discretionary {-}{}{}Obstacle\discretionary {-}{}{}List}{59}{subsubsection.6.7.3.14}
+\contentsline {subsubsection}{\numberline {6.7.3.15}translate}{59}{subsubsection.6.7.3.15}
+\contentsline {subsection}{\numberline {6.7.4}Member Data Documentation}{60}{subsection.6.7.4}
+\contentsline {subsubsection}{\numberline {6.7.4.1}avg\discretionary {-}{}{}Point}{60}{subsubsection.6.7.4.1}
+\contentsline {subsubsection}{\numberline {6.7.4.2}boundary}{60}{subsubsection.6.7.4.2}
+\contentsline {subsubsection}{\numberline {6.7.4.3}colors}{60}{subsubsection.6.7.4.3}
+\contentsline {subsubsection}{\numberline {6.7.4.4}displacement}{60}{subsubsection.6.7.4.4}
+\contentsline {subsubsection}{\numberline {6.7.4.5}dynamic}{60}{subsubsection.6.7.4.5}
+\contentsline {subsubsection}{\numberline {6.7.4.6}max\discretionary {-}{}{}\_\discretionary {-}{}{}displacement}{60}{subsubsection.6.7.4.6}
+\contentsline {subsubsection}{\numberline {6.7.4.7}max\discretionary {-}{}{}Dist}{60}{subsubsection.6.7.4.7}
+\contentsline {subsubsection}{\numberline {6.7.4.8}nodes}{60}{subsubsection.6.7.4.8}
+\contentsline {subsubsection}{\numberline {6.7.4.9}obstacles}{60}{subsubsection.6.7.4.9}
+\contentsline {subsubsection}{\numberline {6.7.4.10}screen}{61}{subsubsection.6.7.4.10}
+\contentsline {subsubsection}{\numberline {6.7.4.11}velocity}{61}{subsubsection.6.7.4.11}
+\contentsline {section}{\numberline {6.8}priodict.\discretionary {-}{}{}priority\discretionary {-}{}{}Dictionary Class Reference}{61}{section.6.8}
+\contentsline {subsection}{\numberline {6.8.1}Detailed Description}{62}{subsection.6.8.1}
+\contentsline {subsection}{\numberline {6.8.2}Constructor \& Destructor Documentation}{62}{subsection.6.8.2}
+\contentsline {subsubsection}{\numberline {6.8.2.1}\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}\_\discretionary {-}{}{}init\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}\_\discretionary {-}{}{}}{62}{subsubsection.6.8.2.1}
+\contentsline {subsection}{\numberline {6.8.3}Member Function Documentation}{62}{subsection.6.8.3}
+\contentsline {subsubsection}{\numberline {6.8.3.1}\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}\_\discretionary {-}{}{}iter\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}\_\discretionary {-}{}{}}{62}{subsubsection.6.8.3.1}
+\contentsline {subsubsection}{\numberline {6.8.3.2}\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}\_\discretionary {-}{}{}setitem\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}\_\discretionary {-}{}{}}{62}{subsubsection.6.8.3.2}
+\contentsline {subsubsection}{\numberline {6.8.3.3}setdefault}{63}{subsubsection.6.8.3.3}
+\contentsline {subsubsection}{\numberline {6.8.3.4}smallest}{63}{subsubsection.6.8.3.4}
+\contentsline {section}{\numberline {6.9}prm.\discretionary {-}{}{}P\discretionary {-}{}{}R\discretionary {-}{}{}M\discretionary {-}{}{}Generator Class Reference}{63}{section.6.9}
+\contentsline {subsection}{\numberline {6.9.1}Detailed Description}{64}{subsection.6.9.1}
+\contentsline {subsection}{\numberline {6.9.2}Constructor \& Destructor Documentation}{64}{subsection.6.9.2}
+\contentsline {subsubsection}{\numberline {6.9.2.1}\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}\_\discretionary {-}{}{}init\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}\_\discretionary {-}{}{}}{64}{subsubsection.6.9.2.1}
+\contentsline {subsection}{\numberline {6.9.3}Member Function Documentation}{65}{subsection.6.9.3}
+\contentsline {subsubsection}{\numberline {6.9.3.1}draw}{65}{subsubsection.6.9.3.1}
+\contentsline {subsubsection}{\numberline {6.9.3.2}draw\discretionary {-}{}{}Path}{65}{subsubsection.6.9.3.2}
+\contentsline {subsubsection}{\numberline {6.9.3.3}filter\discretionary {-}{}{}Sub\discretionary {-}{}{}Goal}{65}{subsubsection.6.9.3.3}
+\contentsline {subsubsection}{\numberline {6.9.3.4}find\discretionary {-}{}{}Neighbors}{65}{subsubsection.6.9.3.4}
+\contentsline {subsubsection}{\numberline {6.9.3.5}generate}{66}{subsubsection.6.9.3.5}
+\contentsline {subsubsection}{\numberline {6.9.3.6}generate\discretionary {-}{}{}Position\discretionary {-}{}{}List}{66}{subsubsection.6.9.3.6}
+\contentsline {subsubsection}{\numberline {6.9.3.7}get\discretionary {-}{}{}Random}{67}{subsubsection.6.9.3.7}
+\contentsline {subsubsection}{\numberline {6.9.3.8}get\discretionary {-}{}{}Shortest\discretionary {-}{}{}Path}{67}{subsubsection.6.9.3.8}
+\contentsline {subsubsection}{\numberline {6.9.3.9}init\discretionary {-}{}{}Omega}{67}{subsubsection.6.9.3.9}
+\contentsline {subsubsection}{\numberline {6.9.3.10}norm}{68}{subsubsection.6.9.3.10}
+\contentsline {subsection}{\numberline {6.9.4}Member Data Documentation}{68}{subsection.6.9.4}
+\contentsline {subsubsection}{\numberline {6.9.4.1}adjacent\discretionary {-}{}{}Thresh}{68}{subsubsection.6.9.4.1}
+\contentsline {subsubsection}{\numberline {6.9.4.2}dont\discretionary {-}{}{}Draw}{69}{subsubsection.6.9.4.2}
+\contentsline {subsubsection}{\numberline {6.9.4.3}end\discretionary {-}{}{}Pos}{69}{subsubsection.6.9.4.3}
+\contentsline {subsubsection}{\numberline {6.9.4.4}goal\discretionary {-}{}{}Nodes}{69}{subsubsection.6.9.4.4}
+\contentsline {subsubsection}{\numberline {6.9.4.5}g\discretionary {-}{}{}Pos\discretionary {-}{}{}List}{69}{subsubsection.6.9.4.5}
+\contentsline {subsubsection}{\numberline {6.9.4.6}num\discretionary {-}{}{}Next}{69}{subsubsection.6.9.4.6}
+\contentsline {subsubsection}{\numberline {6.9.4.7}obstacle\discretionary {-}{}{}List}{69}{subsubsection.6.9.4.7}
+\contentsline {subsubsection}{\numberline {6.9.4.8}omega\discretionary {-}{}{}Dict}{69}{subsubsection.6.9.4.8}
+\contentsline {subsubsection}{\numberline {6.9.4.9}roadmap}{69}{subsubsection.6.9.4.9}
+\contentsline {subsubsection}{\numberline {6.9.4.10}screen}{69}{subsubsection.6.9.4.10}
+\contentsline {subsubsection}{\numberline {6.9.4.11}start\discretionary {-}{}{}Pos}{70}{subsubsection.6.9.4.11}
+\contentsline {subsubsection}{\numberline {6.9.4.12}sub\discretionary {-}{}{}Goal\discretionary {-}{}{}Number}{70}{subsubsection.6.9.4.12}
+\contentsline {subsubsection}{\numberline {6.9.4.13}sub\discretionary {-}{}{}Goal\discretionary {-}{}{}Position\discretionary {-}{}{}List}{70}{subsubsection.6.9.4.13}
+\contentsline {subsubsection}{\numberline {6.9.4.14}x\discretionary {-}{}{}Size}{70}{subsubsection.6.9.4.14}
+\contentsline {subsubsection}{\numberline {6.9.4.15}y\discretionary {-}{}{}Size}{70}{subsubsection.6.9.4.15}
+\contentsline {chapter}{\numberline {7}File Documentation}{71}{chapter.7}
+\contentsline {section}{\numberline {7.1}code/boid.py File Reference}{71}{section.7.1}
+\contentsline {section}{\numberline {7.2}code/boidsimulation.py File Reference}{71}{section.7.2}
+\contentsline {section}{\numberline {7.3}code/configuration.py File Reference}{72}{section.7.3}
+\contentsline {section}{\numberline {7.4}code/dijkstra.py File Reference}{72}{section.7.4}
+\contentsline {section}{\numberline {7.5}code/gatherstats.py File Reference}{72}{section.7.5}
+\contentsline {section}{\numberline {7.6}code/goal.py File Reference}{73}{section.7.6}
+\contentsline {section}{\numberline {7.7}code/mapparser.py File Reference}{73}{section.7.7}
+\contentsline {section}{\numberline {7.8}code/obstacle.py File Reference}{74}{section.7.8}
+\contentsline {section}{\numberline {7.9}code/priodict.py File Reference}{74}{section.7.9}
+\contentsline {section}{\numberline {7.10}code/prm.py File Reference}{74}{section.7.10}
+\contentsline {section}{\numberline {7.11}code/test\discretionary {-}{}{}\_\discretionary {-}{}{}sim.py File Reference}{75}{section.7.11}
+\contentsline {part}{Index}{76}{section*.73}

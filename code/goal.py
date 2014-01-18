@@ -6,7 +6,7 @@ import pygame
 
 class CircleGoal:
     """
-    Object that holds data about a goal modelled as 
+    Object that holds data about a goal modelled as
     circular configuration space
     """
     def __init__(self, _radius, _position, _screen):
@@ -28,15 +28,15 @@ class CircleGoal:
 
         ## The position of the circle goal
         self.position = _position
-        
+
     def draw(self):
     	"""
     	Draws the circle onto the pygame screen
     	"""
         pygame.draw.circle(
-            self.screen, 
-            self.colors["green"], 
-            self.position, 
-            self.radius, 
+            self.screen,
+            self.colors["green"],
+            self.position,
+            self.radius,
             5
         )

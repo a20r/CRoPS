@@ -53,6 +53,8 @@ def \hyperlink{classboid_1_1Boid_af2f2931c5971a4447cfe179fdafe3ab5}{set\-New\-Go
 \begin{DoxyCompactList}\small\item\em Sets the new goal. \end{DoxyCompactList}\item 
 def \hyperlink{classboid_1_1Boid_ae658dd15bb05b6addce51fba0907709b}{determine\-Random\-Walk}
 \begin{DoxyCompactList}\small\item\em Increments the random walk counter, changes the current goal if necessary. \end{DoxyCompactList}\item 
+def \hyperlink{classboid_1_1Boid_a47bd5446027d224319a4c71fadc846f2}{determine\-New\-Path}
+\begin{DoxyCompactList}\small\item\em When the boid is stuck, it reweights the roadmap and finds a new suitable path. \end{DoxyCompactList}\item 
 def \hyperlink{classboid_1_1Boid_a8a354e4b7d58ced69771f3bb5f52d257}{update}
 \begin{DoxyCompactList}\small\item\em Updates the boid's heading and position due to the potential fields. \end{DoxyCompactList}\item 
 def \hyperlink{classboid_1_1Boid_a289cbbc12cc9c3e7445a5f37b2d88124}{draw}
@@ -98,6 +100,12 @@ def \hyperlink{classboid_1_1Boid_a289cbbc12cc9c3e7445a5f37b2d88124}{draw}
 \begin{DoxyCompactList}\small\item\em Sets the position of the boid. \end{DoxyCompactList}\item 
 \hyperlink{classboid_1_1Boid_ab6c778a50dd384fabc6aa48be04c0988}{position\-Buffer}
 \begin{DoxyCompactList}\small\item\em Used to tell if the boid is stuck or not. \end{DoxyCompactList}\item 
+\hyperlink{classboid_1_1Boid_a8d7aa6d57eb3589a0770af8fcbf1aa0b}{goal\-Nodes}
+\item 
+\hyperlink{classboid_1_1Boid_aa30539a3bd11871eda471245cd6318e2}{roadmap}
+\item 
+\hyperlink{classboid_1_1Boid_ae0e9562ea35dca5f6d88e132cb5dd73a}{end\-Index}
+\item 
 \hyperlink{classboid_1_1Boid_abc5327f9ad46170e5f57d89c2c6e18e9}{ob\-Influence\-R}
 \begin{DoxyCompactList}\small\item\em The radius of influence used when filtering the number of obstacles it needs to check. \end{DoxyCompactList}\item 
 \hyperlink{classboid_1_1Boid_ae1a1d62fdc0e9014df5fcb1a49d37342}{b\-Influence\-R}
@@ -147,7 +155,7 @@ def \hyperlink{classboid_1_1Boid_a289cbbc12cc9c3e7445a5f37b2d88124}{draw}
 \subsection{Detailed Description}
 Class which represents one boid. 
 
-Definition at line 29 of file boid.\-py.
+Definition at line 30 of file boid.\-py.
 
 
 
@@ -203,11 +211,36 @@ An instance of a boid
 \end{DoxyReturn}
 
 
-Definition at line 50 of file boid.\-py.
+Definition at line 55 of file boid.\-py.
 
 
 
 \subsection{Member Function Documentation}
+\hypertarget{classboid_1_1Boid_a47bd5446027d224319a4c71fadc846f2}{\index{boid\-::\-Boid@{boid\-::\-Boid}!determine\-New\-Path@{determine\-New\-Path}}
+\index{determine\-New\-Path@{determine\-New\-Path}!boid::Boid@{boid\-::\-Boid}}
+\subsubsection[{determine\-New\-Path}]{\setlength{\rightskip}{0pt plus 5cm}def boid.\-Boid.\-determine\-New\-Path (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}}\label{classboid_1_1Boid_a47bd5446027d224319a4c71fadc846f2}
+
+
+When the boid is stuck, it reweights the roadmap and finds a new suitable path. 
+
+
+
+Definition at line 653 of file boid.\-py.
+
+
+
+Here is the call graph for this function\-:
+
+
+
+
+Here is the caller graph for this function\-:
+
+
 \hypertarget{classboid_1_1Boid_ae658dd15bb05b6addce51fba0907709b}{\index{boid\-::\-Boid@{boid\-::\-Boid}!determine\-Random\-Walk@{determine\-Random\-Walk}}
 \index{determine\-Random\-Walk@{determine\-Random\-Walk}!boid::Boid@{boid\-::\-Boid}}
 \subsubsection[{determine\-Random\-Walk}]{\setlength{\rightskip}{0pt plus 5cm}def boid.\-Boid.\-determine\-Random\-Walk (
@@ -224,7 +257,7 @@ New random walk vectors where the maximum component value is determeined by the 
 \end{DoxyReturn}
 
 
-Definition at line 603 of file boid.\-py.
+Definition at line 626 of file boid.\-py.
 
 \hypertarget{classboid_1_1Boid_a289cbbc12cc9c3e7445a5f37b2d88124}{\index{boid\-::\-Boid@{boid\-::\-Boid}!draw@{draw}}
 \index{draw@{draw}!boid::Boid@{boid\-::\-Boid}}
@@ -239,18 +272,7 @@ Draws the boid as a pygame circle in the pygame screen.
 
 
 
-Definition at line 734 of file boid.\-py.
-
-
-
-Here is the caller graph for this function\-:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=340pt]{classboid_1_1Boid_a289cbbc12cc9c3e7445a5f37b2d88124_icgraph}
-\end{center}
-\end{figure}
-
+Definition at line 768 of file boid.\-py.
 
 \hypertarget{classboid_1_1Boid_a3467de3698a644a484ff63a3e86f7adc}{\index{boid\-::\-Boid@{boid\-::\-Boid}!find\-Max@{find\-Max}}
 \index{find\-Max@{find\-Max}!boid::Boid@{boid\-::\-Boid}}
@@ -277,12 +299,11 @@ A list of the counter maximum values from search\-Through
 \end{DoxyReturn}
 
 
-Definition at line 379 of file boid.\-py.
+Definition at line 392 of file boid.\-py.
 
 
 
-Here is the caller graph for this function\-:
-\nopagebreak
+Here is the caller graph for this function\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -307,12 +328,11 @@ A list of scaled vectors that will be used to determine the influence of the boi
 \end{DoxyReturn}
 
 
-Definition at line 498 of file boid.\-py.
+Definition at line 521 of file boid.\-py.
 
 
 
-Here is the call graph for this function\-:
-\nopagebreak
+Here is the call graph for this function\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -323,8 +343,7 @@ Here is the call graph for this function\-:
 
 
 
-Here is the caller graph for this function\-:
-\nopagebreak
+Here is the caller graph for this function\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -355,12 +374,11 @@ A vector whose maximum magnitude is less than the specified maximum speed
 \end{DoxyReturn}
 
 
-Definition at line 412 of file boid.\-py.
+Definition at line 425 of file boid.\-py.
 
 
 
-Here is the call graph for this function\-:
-\nopagebreak
+Here is the call graph for this function\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -371,8 +389,7 @@ Here is the call graph for this function\-:
 
 
 
-Here is the caller graph for this function\-:
-\nopagebreak
+Here is the caller graph for this function\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -397,12 +414,11 @@ A list of scaled vectors that will be used to determine the influence of the goa
 \end{DoxyReturn}
 
 
-Definition at line 467 of file boid.\-py.
+Definition at line 490 of file boid.\-py.
 
 
 
-Here is the call graph for this function\-:
-\nopagebreak
+Here is the call graph for this function\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -413,8 +429,7 @@ Here is the call graph for this function\-:
 
 
 
-Here is the caller graph for this function\-:
-\nopagebreak
+Here is the caller graph for this function\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -439,12 +454,11 @@ A list of scaled vectors that represent the neighbour headings. Also returns the
 \end{DoxyReturn}
 
 
-Definition at line 553 of file boid.\-py.
+Definition at line 576 of file boid.\-py.
 
 
 
-Here is the call graph for this function\-:
-\nopagebreak
+Here is the call graph for this function\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -455,8 +469,7 @@ Here is the call graph for this function\-:
 
 
 
-Here is the caller graph for this function\-:
-\nopagebreak
+Here is the caller graph for this function\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -477,16 +490,23 @@ Here is the caller graph for this function\-:
 Gets the potential vectors to a boid due to the repulsive obstacle field. 
 
 \begin{DoxyReturn}{Returns}
-A list of scaled vectors that will be used to determine the influence of obstacles on the heading. Also returns the sum of the potential values 
+A list of scaled vectors that will be used to determine the influence of obstacles on the heading. Also returns the sum of the potential values\begin{DoxyVerb}for ob in self.obstacleList:
+    pygame.draw.circle(
+self.screen,
+(255,0,255),
+map(int, ob.getPoint(self.position)),
+2
+    )
+\end{DoxyVerb}
+ 
 \end{DoxyReturn}
 
 
-Definition at line 425 of file boid.\-py.
+Definition at line 438 of file boid.\-py.
 
 
 
-Here is the call graph for this function\-:
-\nopagebreak
+Here is the call graph for this function\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -497,8 +517,7 @@ Here is the call graph for this function\-:
 
 
 
-Here is the caller graph for this function\-:
-\nopagebreak
+Here is the caller graph for this function\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -532,12 +551,11 @@ A list of values from search list
 \end{DoxyReturn}
 
 
-Definition at line 177 of file boid.\-py.
+Definition at line 189 of file boid.\-py.
 
 
 
-Here is the caller graph for this function\-:
-\nopagebreak
+Here is the caller graph for this function\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -568,12 +586,11 @@ A boolean value representing if the point is in the current goal
 \end{DoxyReturn}
 
 
-Definition at line 237 of file boid.\-py.
+Definition at line 250 of file boid.\-py.
 
 
 
-Here is the caller graph for this function\-:
-\nopagebreak
+Here is the caller graph for this function\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -591,7 +608,7 @@ Here is the caller graph for this function\-:
 )}}\label{classboid_1_1Boid_a0df699bd295042ed4b088d94bc158f17}
 
 
-Definition at line 273 of file boid.\-py.
+Definition at line 286 of file boid.\-py.
 
 \hypertarget{classboid_1_1Boid_a321e7b1d2c37c96503e11e00ee87b96f}{\index{boid\-::\-Boid@{boid\-::\-Boid}!in\-World@{in\-World}}
 \index{in\-World@{in\-World}!boid::Boid@{boid\-::\-Boid}}
@@ -615,7 +632,7 @@ A boolean value representing if the point is in the world
 \end{DoxyReturn}
 
 
-Definition at line 252 of file boid.\-py.
+Definition at line 265 of file boid.\-py.
 
 \hypertarget{classboid_1_1Boid_a5324650d399f5c850ec7b7bda10eeae7}{\index{boid\-::\-Boid@{boid\-::\-Boid}!mag@{mag}}
 \index{mag@{mag}!boid::Boid@{boid\-::\-Boid}}
@@ -639,7 +656,7 @@ The magnitude of the vector
 \end{DoxyReturn}
 
 
-Definition at line 205 of file boid.\-py.
+Definition at line 218 of file boid.\-py.
 
 
 
@@ -648,8 +665,7 @@ Here is the call graph for this function\-:
 
 
 
-Here is the caller graph for this function\-:
-\nopagebreak
+Here is the caller graph for this function\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -681,12 +697,11 @@ The Euclidean distance between p1 and p2
 \end{DoxyReturn}
 
 
-Definition at line 158 of file boid.\-py.
+Definition at line 170 of file boid.\-py.
 
 
 
-Here is the caller graph for this function\-:
-\nopagebreak
+Here is the caller graph for this function\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -723,12 +738,11 @@ A value representing the potential between b and o
 \end{DoxyReturn}
 
 
-Definition at line 188 of file boid.\-py.
+Definition at line 200 of file boid.\-py.
 
 
 
-Here is the call graph for this function\-:
-\nopagebreak
+Here is the call graph for this function\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -739,8 +753,7 @@ Here is the call graph for this function\-:
 
 
 
-Here is the caller graph for this function\-:
-\nopagebreak
+Here is the caller graph for this function\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -768,7 +781,7 @@ Checks if a point is inside or collides with any of the obstacles.
 \end{DoxyParams}
 
 
-Definition at line 265 of file boid.\-py.
+Definition at line 278 of file boid.\-py.
 
 \hypertarget{classboid_1_1Boid_a2d4f1cded412a333857bb1b8b17d3dd0}{\index{boid\-::\-Boid@{boid\-::\-Boid}!reduce\-Weight\-Values@{reduce\-Weight\-Values}}
 \index{reduce\-Weight\-Values@{reduce\-Weight\-Values}!boid::Boid@{boid\-::\-Boid}}
@@ -795,7 +808,7 @@ An average vector that represents the average heading due to the potential field
 \end{DoxyReturn}
 
 
-Definition at line 399 of file boid.\-py.
+Definition at line 412 of file boid.\-py.
 
 
 
@@ -827,7 +840,7 @@ Setter method used to set the list of boids.
 \end{DoxyParams}
 
 
-Definition at line 357 of file boid.\-py.
+Definition at line 370 of file boid.\-py.
 
 \hypertarget{classboid_1_1Boid_af2f2931c5971a4447cfe179fdafe3ab5}{\index{boid\-::\-Boid@{boid\-::\-Boid}!set\-New\-Goal@{set\-New\-Goal}}
 \index{set\-New\-Goal@{set\-New\-Goal}!boid::Boid@{boid\-::\-Boid}}
@@ -842,12 +855,11 @@ Sets the new goal.
 
 
 
-Definition at line 583 of file boid.\-py.
+Definition at line 606 of file boid.\-py.
 
 
 
-Here is the call graph for this function\-:
-\nopagebreak
+Here is the call graph for this function\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -886,12 +898,11 @@ Defines a sigmoidal curve used for goal attraction and for boid repulsion.
 \end{DoxyParams}
 
 
-Definition at line 218 of file boid.\-py.
+Definition at line 231 of file boid.\-py.
 
 
 
-Here is the call graph for this function\-:
-\nopagebreak
+Here is the call graph for this function\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -902,8 +913,7 @@ Here is the call graph for this function\-:
 
 
 
-Here is the caller graph for this function\-:
-\nopagebreak
+Here is the caller graph for this function\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -936,12 +946,11 @@ Special sort of reduce that sums components in a list of vectors and divides eac
 \end{DoxyParams}
 
 
-Definition at line 137 of file boid.\-py.
+Definition at line 149 of file boid.\-py.
 
 
 
-Here is the caller graph for this function\-:
-\nopagebreak
+Here is the caller graph for this function\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -963,12 +972,11 @@ Updates the boid's heading and position due to the potential fields.
 
 
 
-Definition at line 629 of file boid.\-py.
+Definition at line 690 of file boid.\-py.
 
 
 
-Here is the call graph for this function\-:
-\nopagebreak
+Here is the call graph for this function\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -993,7 +1001,7 @@ The displacement of a boid over a certain number of frames
 \end{DoxyReturn}
 
 
-Definition at line 365 of file boid.\-py.
+Definition at line 378 of file boid.\-py.
 
 
 
@@ -1007,7 +1015,7 @@ Scales the value returned by the sigmoid function for boid repulsion.
 
 
 
-Definition at line 306 of file boid.\-py.
+Definition at line 319 of file boid.\-py.
 
 \hypertarget{classboid_1_1Boid_a1a48be012c505eea2e1b9f110d9bd5f3}{\index{boid\-::\-Boid@{boid\-::\-Boid}!b\-Beta@{b\-Beta}}
 \index{b\-Beta@{b\-Beta}!boid::Boid@{boid\-::\-Boid}}
@@ -1018,7 +1026,7 @@ Helps scale the value returned by the sigmoid function for boid repulsion.
 
 
 
-Definition at line 310 of file boid.\-py.
+Definition at line 323 of file boid.\-py.
 
 \hypertarget{classboid_1_1Boid_a868b1d8e6fadd2b1beedc1a9f23edde5}{\index{boid\-::\-Boid@{boid\-::\-Boid}!b\-Const@{b\-Const}}
 \index{b\-Const@{b\-Const}!boid::Boid@{boid\-::\-Boid}}
@@ -1029,7 +1037,7 @@ Priroi constant for boid repulsion (increasing it gives more priority to the rep
 
 
 
-Definition at line 318 of file boid.\-py.
+Definition at line 331 of file boid.\-py.
 
 \hypertarget{classboid_1_1Boid_afebd87123c129406ee9e8c99f85f66a7}{\index{boid\-::\-Boid@{boid\-::\-Boid}!b\-Delta@{b\-Delta}}
 \index{b\-Delta@{b\-Delta}!boid::Boid@{boid\-::\-Boid}}
@@ -1040,7 +1048,7 @@ Constant that is used in the sigmoid curve for boid repulsion.
 
 
 
-Definition at line 314 of file boid.\-py.
+Definition at line 327 of file boid.\-py.
 
 \hypertarget{classboid_1_1Boid_ae1a1d62fdc0e9014df5fcb1a49d37342}{\index{boid\-::\-Boid@{boid\-::\-Boid}!b\-Influence\-R@{b\-Influence\-R}}
 \index{b\-Influence\-R@{b\-Influence\-R}!boid::Boid@{boid\-::\-Boid}}
@@ -1051,14 +1059,14 @@ The radius of influence used when filtering the number of boids it needs to chec
 
 
 
-Definition at line 282 of file boid.\-py.
+Definition at line 295 of file boid.\-py.
 
 \hypertarget{classboid_1_1Boid_a6d3a16e56bd3cc7efabf9ac7cae4ae16}{\index{boid\-::\-Boid@{boid\-::\-Boid}!boid\-List@{boid\-List}}
 \index{boid\-List@{boid\-List}!boid::Boid@{boid\-::\-Boid}}
 \subsubsection[{boid\-List}]{\setlength{\rightskip}{0pt plus 5cm}boid.\-Boid.\-boid\-List}}\label{classboid_1_1Boid_a6d3a16e56bd3cc7efabf9ac7cae4ae16}
 
 
-Definition at line 358 of file boid.\-py.
+Definition at line 371 of file boid.\-py.
 
 \hypertarget{classboid_1_1Boid_a6a2ca3d501e4b2b0d531d4d968487907}{\index{boid\-::\-Boid@{boid\-::\-Boid}!color@{color}}
 \index{color@{color}!boid::Boid@{boid\-::\-Boid}}
@@ -1069,14 +1077,14 @@ Unique color used to distinguish the boid (only used in debugging and visualizat
 
 
 
-Definition at line 82 of file boid.\-py.
+Definition at line 87 of file boid.\-py.
 
 \hypertarget{classboid_1_1Boid_a811abb81b81e3b3e8e08e77a908ddb58}{\index{boid\-::\-Boid@{boid\-::\-Boid}!comp\-Weight\-List@{comp\-Weight\-List}}
 \index{comp\-Weight\-List@{comp\-Weight\-List}!boid::Boid@{boid\-::\-Boid}}
 \subsubsection[{comp\-Weight\-List}]{\setlength{\rightskip}{0pt plus 5cm}boid.\-Boid.\-comp\-Weight\-List}}\label{classboid_1_1Boid_a811abb81b81e3b3e8e08e77a908ddb58}
 
 
-Definition at line 662 of file boid.\-py.
+Definition at line 731 of file boid.\-py.
 
 \hypertarget{classboid_1_1Boid_a88a68e23e37b82bfe9862d7cd79542ad}{\index{boid\-::\-Boid@{boid\-::\-Boid}!dim@{dim}}
 \index{dim@{dim}!boid::Boid@{boid\-::\-Boid}}
@@ -1087,7 +1095,14 @@ Dimensions of the screen.
 
 
 
-Definition at line 75 of file boid.\-py.
+Definition at line 80 of file boid.\-py.
+
+\hypertarget{classboid_1_1Boid_ae0e9562ea35dca5f6d88e132cb5dd73a}{\index{boid\-::\-Boid@{boid\-::\-Boid}!end\-Index@{end\-Index}}
+\index{end\-Index@{end\-Index}!boid::Boid@{boid\-::\-Boid}}
+\subsubsection[{end\-Index}]{\setlength{\rightskip}{0pt plus 5cm}boid.\-Boid.\-end\-Index}}\label{classboid_1_1Boid_ae0e9562ea35dca5f6d88e132cb5dd73a}
+
+
+Definition at line 136 of file boid.\-py.
 
 \hypertarget{classboid_1_1Boid_a15b3d73058c73aed19d2e9fb0266805d}{\index{boid\-::\-Boid@{boid\-::\-Boid}!e\-Pos@{e\-Pos}}
 \index{e\-Pos@{e\-Pos}!boid::Boid@{boid\-::\-Boid}}
@@ -1098,7 +1113,7 @@ Position of the boids.
 
 
 
-Definition at line 106 of file boid.\-py.
+Definition at line 111 of file boid.\-py.
 
 \hypertarget{classboid_1_1Boid_a5090639a7e3a489c8dc83bd12b6d1653}{\index{boid\-::\-Boid@{boid\-::\-Boid}!g\-Alpha@{g\-Alpha}}
 \index{g\-Alpha@{g\-Alpha}!boid::Boid@{boid\-::\-Boid}}
@@ -1109,7 +1124,7 @@ Scales the value returned by the sigmoid function for goal attraction.
 
 
 
-Definition at line 290 of file boid.\-py.
+Definition at line 303 of file boid.\-py.
 
 \hypertarget{classboid_1_1Boid_abce5218cbba7b3d9f12dc78bbb9dab5e}{\index{boid\-::\-Boid@{boid\-::\-Boid}!gamma\-Func@{gamma\-Func}}
 \index{gamma\-Func@{gamma\-Func}!boid::Boid@{boid\-::\-Boid}}
@@ -1120,7 +1135,7 @@ Function used to choose a neighbour.
 
 
 
-Definition at line 53 of file boid.\-py.
+Definition at line 58 of file boid.\-py.
 
 \hypertarget{classboid_1_1Boid_a2c33a265be5079b7b916be49933eccaf}{\index{boid\-::\-Boid@{boid\-::\-Boid}!g\-Beta@{g\-Beta}}
 \index{g\-Beta@{g\-Beta}!boid::Boid@{boid\-::\-Boid}}
@@ -1131,7 +1146,7 @@ Helps scale the value returned by the sigmoid function for goal attraction.
 
 
 
-Definition at line 294 of file boid.\-py.
+Definition at line 307 of file boid.\-py.
 
 \hypertarget{classboid_1_1Boid_a71d768a5bc70ecfcaec719cfd0c310ef}{\index{boid\-::\-Boid@{boid\-::\-Boid}!g\-Const@{g\-Const}}
 \index{g\-Const@{g\-Const}!boid::Boid@{boid\-::\-Boid}}
@@ -1142,7 +1157,7 @@ Priori constant for goal attraction (increasing it gives more priority to the at
 
 
 
-Definition at line 302 of file boid.\-py.
+Definition at line 315 of file boid.\-py.
 
 \hypertarget{classboid_1_1Boid_a17cd80cfac0fb27106c12e45929f9a9f}{\index{boid\-::\-Boid@{boid\-::\-Boid}!g\-Delta@{g\-Delta}}
 \index{g\-Delta@{g\-Delta}!boid::Boid@{boid\-::\-Boid}}
@@ -1153,7 +1168,7 @@ Constant that is used in the sigmoidal curve for goal attraction.
 
 
 
-Definition at line 298 of file boid.\-py.
+Definition at line 311 of file boid.\-py.
 
 \hypertarget{classboid_1_1Boid_afe8350d9d4c1eeb15a5df7337328e1c7}{\index{boid\-::\-Boid@{boid\-::\-Boid}!goal@{goal}}
 \index{goal@{goal}!boid::Boid@{boid\-::\-Boid}}
@@ -1164,7 +1179,7 @@ Initializes the current goal.
 
 
 
-Definition at line 97 of file boid.\-py.
+Definition at line 102 of file boid.\-py.
 
 \hypertarget{classboid_1_1Boid_a8a871af6fc4d19477ce4881eb9ddc629}{\index{boid\-::\-Boid@{boid\-::\-Boid}!goal\-Counter@{goal\-Counter}}
 \index{goal\-Counter@{goal\-Counter}!boid::Boid@{boid\-::\-Boid}}
@@ -1175,7 +1190,7 @@ Used to store what goal the boid is currently looking at.
 
 
 
-Definition at line 94 of file boid.\-py.
+Definition at line 99 of file boid.\-py.
 
 \hypertarget{classboid_1_1Boid_a7a3492977220ee1f7623aa9643a2fea4}{\index{boid\-::\-Boid@{boid\-::\-Boid}!goal\-List@{goal\-List}}
 \index{goal\-List@{goal\-List}!boid::Boid@{boid\-::\-Boid}}
@@ -1186,7 +1201,14 @@ Goals used by the boid.
 
 
 
-Definition at line 91 of file boid.\-py.
+Definition at line 96 of file boid.\-py.
+
+\hypertarget{classboid_1_1Boid_a8d7aa6d57eb3589a0770af8fcbf1aa0b}{\index{boid\-::\-Boid@{boid\-::\-Boid}!goal\-Nodes@{goal\-Nodes}}
+\index{goal\-Nodes@{goal\-Nodes}!boid::Boid@{boid\-::\-Boid}}
+\subsubsection[{goal\-Nodes}]{\setlength{\rightskip}{0pt plus 5cm}boid.\-Boid.\-goal\-Nodes}}\label{classboid_1_1Boid_a8d7aa6d57eb3589a0770af8fcbf1aa0b}
+
+
+Definition at line 132 of file boid.\-py.
 
 \hypertarget{classboid_1_1Boid_afc4b725b80313dc3604ac36015f84156}{\index{boid\-::\-Boid@{boid\-::\-Boid}!heading@{heading}}
 \index{heading@{heading}!boid::Boid@{boid\-::\-Boid}}
@@ -1197,7 +1219,7 @@ Initial random heading.
 
 
 
-Definition at line 65 of file boid.\-py.
+Definition at line 70 of file boid.\-py.
 
 \hypertarget{classboid_1_1Boid_a4b192d2b077b52005a82df5d98748190}{\index{boid\-::\-Boid@{boid\-::\-Boid}!head\-Weight\-List@{head\-Weight\-List}}
 \index{head\-Weight\-List@{head\-Weight\-List}!boid::Boid@{boid\-::\-Boid}}
@@ -1208,7 +1230,7 @@ Weights how much the previous heading affects the new heading.
 
 
 
-Definition at line 350 of file boid.\-py.
+Definition at line 363 of file boid.\-py.
 
 \hypertarget{classboid_1_1Boid_a4af115e678f7716a2eb87c573e71073c}{\index{boid\-::\-Boid@{boid\-::\-Boid}!neighbor\-Size@{neighbor\-Size}}
 \index{neighbor\-Size@{neighbor\-Size}!boid::Boid@{boid\-::\-Boid}}
@@ -1219,7 +1241,7 @@ Number of neighbours that will influence the boid.
 
 
 
-Definition at line 78 of file boid.\-py.
+Definition at line 83 of file boid.\-py.
 
 \hypertarget{classboid_1_1Boid_acdfca1dc9b177a512502c6af681bfa9e}{\index{boid\-::\-Boid@{boid\-::\-Boid}!n\-Stuck\-D\-Avg@{n\-Stuck\-D\-Avg}}
 \index{n\-Stuck\-D\-Avg@{n\-Stuck\-D\-Avg}!boid::Boid@{boid\-::\-Boid}}
@@ -1230,7 +1252,7 @@ The average distance from a neighbour when a boid is not stuck.
 
 
 
-Definition at line 334 of file boid.\-py.
+Definition at line 347 of file boid.\-py.
 
 \hypertarget{classboid_1_1Boid_add42a1be4f79d1ae8990065fa7e5d4de}{\index{boid\-::\-Boid@{boid\-::\-Boid}!n\-Stuck\-D\-Sigma@{n\-Stuck\-D\-Sigma}}
 \index{n\-Stuck\-D\-Sigma@{n\-Stuck\-D\-Sigma}!boid::Boid@{boid\-::\-Boid}}
@@ -1241,7 +1263,7 @@ The standard deviation in a neighbour distance distribution when the boid is not
 
 
 
-Definition at line 338 of file boid.\-py.
+Definition at line 351 of file boid.\-py.
 
 \hypertarget{classboid_1_1Boid_a222ad56335a1e1ea39dd6da9e21797c5}{\index{boid\-::\-Boid@{boid\-::\-Boid}!ob\-Beta@{ob\-Beta}}
 \index{ob\-Beta@{ob\-Beta}!boid::Boid@{boid\-::\-Boid}}
@@ -1252,7 +1274,7 @@ Priori constant for obstacle repulsion (increasing it gives more priority to the
 
 
 
-Definition at line 286 of file boid.\-py.
+Definition at line 299 of file boid.\-py.
 
 \hypertarget{classboid_1_1Boid_abc5327f9ad46170e5f57d89c2c6e18e9}{\index{boid\-::\-Boid@{boid\-::\-Boid}!ob\-Influence\-R@{ob\-Influence\-R}}
 \index{ob\-Influence\-R@{ob\-Influence\-R}!boid::Boid@{boid\-::\-Boid}}
@@ -1263,7 +1285,7 @@ The radius of influence used when filtering the number of obstacles it needs to 
 
 
 
-Definition at line 278 of file boid.\-py.
+Definition at line 291 of file boid.\-py.
 
 \hypertarget{classboid_1_1Boid_a9db9b88d02af40d3773b034560959694}{\index{boid\-::\-Boid@{boid\-::\-Boid}!obstacle\-List@{obstacle\-List}}
 \index{obstacle\-List@{obstacle\-List}!boid::Boid@{boid\-::\-Boid}}
@@ -1274,7 +1296,7 @@ List of obstacles that were parsed by mapparser.
 
 
 
-Definition at line 88 of file boid.\-py.
+Definition at line 93 of file boid.\-py.
 
 \hypertarget{classboid_1_1Boid_a483cb30093bc500a6123d5a801247ad5}{\index{boid\-::\-Boid@{boid\-::\-Boid}!position@{position}}
 \index{position@{position}!boid::Boid@{boid\-::\-Boid}}
@@ -1285,7 +1307,7 @@ Sets the position of the boid.
 
 
 
-Definition at line 109 of file boid.\-py.
+Definition at line 114 of file boid.\-py.
 
 \hypertarget{classboid_1_1Boid_ab6c778a50dd384fabc6aa48be04c0988}{\index{boid\-::\-Boid@{boid\-::\-Boid}!position\-Buffer@{position\-Buffer}}
 \index{position\-Buffer@{position\-Buffer}!boid::Boid@{boid\-::\-Boid}}
@@ -1296,7 +1318,7 @@ Used to tell if the boid is stuck or not.
 
 
 
-Definition at line 120 of file boid.\-py.
+Definition at line 125 of file boid.\-py.
 
 \hypertarget{classboid_1_1Boid_ac7d14690dde12ebc05f8f5ea80e29869}{\index{boid\-::\-Boid@{boid\-::\-Boid}!prm\-Gen@{prm\-Gen}}
 \index{prm\-Gen@{prm\-Gen}!boid::Boid@{boid\-::\-Boid}}
@@ -1307,7 +1329,7 @@ Class which holds the details about the global path planner.
 
 
 
-Definition at line 56 of file boid.\-py.
+Definition at line 61 of file boid.\-py.
 
 \hypertarget{classboid_1_1Boid_a1bff2843c74b712aba274831d0a715d4}{\index{boid\-::\-Boid@{boid\-::\-Boid}!radius@{radius}}
 \index{radius@{radius}!boid::Boid@{boid\-::\-Boid}}
@@ -1318,7 +1340,7 @@ Radius of the boid.
 
 
 
-Definition at line 62 of file boid.\-py.
+Definition at line 67 of file boid.\-py.
 
 \hypertarget{classboid_1_1Boid_a996d92e215eb56d98a811c86c7118637}{\index{boid\-::\-Boid@{boid\-::\-Boid}!random\-Walk\-X@{random\-Walk\-X}}
 \index{random\-Walk\-X@{random\-Walk\-X}!boid::Boid@{boid\-::\-Boid}}
@@ -1329,7 +1351,7 @@ Maximum x random walk.
 
 
 
-Definition at line 341 of file boid.\-py.
+Definition at line 354 of file boid.\-py.
 
 \hypertarget{classboid_1_1Boid_a1bf0149b7eadf9e6a0f08c93d95bac73}{\index{boid\-::\-Boid@{boid\-::\-Boid}!random\-Walk\-Y@{random\-Walk\-Y}}
 \index{random\-Walk\-Y@{random\-Walk\-Y}!boid::Boid@{boid\-::\-Boid}}
@@ -1340,7 +1362,7 @@ Maximum y random walk.
 
 
 
-Definition at line 344 of file boid.\-py.
+Definition at line 357 of file boid.\-py.
 
 \hypertarget{classboid_1_1Boid_af0bd96c51b17bc6c3f6fec2891b58a3d}{\index{boid\-::\-Boid@{boid\-::\-Boid}!rand\-Walk\-Count@{rand\-Walk\-Count}}
 \index{rand\-Walk\-Count@{rand\-Walk\-Count}!boid::Boid@{boid\-::\-Boid}}
@@ -1351,7 +1373,14 @@ Stores the number of times a random walk has occurred.
 
 
 
-Definition at line 347 of file boid.\-py.
+Definition at line 360 of file boid.\-py.
+
+\hypertarget{classboid_1_1Boid_aa30539a3bd11871eda471245cd6318e2}{\index{boid\-::\-Boid@{boid\-::\-Boid}!roadmap@{roadmap}}
+\index{roadmap@{roadmap}!boid::Boid@{boid\-::\-Boid}}
+\subsubsection[{roadmap}]{\setlength{\rightskip}{0pt plus 5cm}boid.\-Boid.\-roadmap}}\label{classboid_1_1Boid_aa30539a3bd11871eda471245cd6318e2}
+
+
+Definition at line 135 of file boid.\-py.
 
 \hypertarget{classboid_1_1Boid_aa230e5710394a620995a3943fc9faa8d}{\index{boid\-::\-Boid@{boid\-::\-Boid}!screen@{screen}}
 \index{screen@{screen}!boid::Boid@{boid\-::\-Boid}}
@@ -1362,7 +1391,7 @@ Py\-Game screen.
 
 
 
-Definition at line 59 of file boid.\-py.
+Definition at line 64 of file boid.\-py.
 
 \hypertarget{classboid_1_1Boid_a4cf2a59e0efad2d71d8fee93fdd6538b}{\index{boid\-::\-Boid@{boid\-::\-Boid}!speed@{speed}}
 \index{speed@{speed}!boid::Boid@{boid\-::\-Boid}}
@@ -1373,7 +1402,7 @@ Maximum speed of the boid.
 
 
 
-Definition at line 85 of file boid.\-py.
+Definition at line 90 of file boid.\-py.
 
 \hypertarget{classboid_1_1Boid_a92bf79dcfff9e21d33611cfc89f8823c}{\index{boid\-::\-Boid@{boid\-::\-Boid}!s\-Pos@{s\-Pos}}
 \index{s\-Pos@{s\-Pos}!boid::Boid@{boid\-::\-Boid}}
@@ -1384,7 +1413,7 @@ Starting position of the boid.
 
 
 
-Definition at line 103 of file boid.\-py.
+Definition at line 108 of file boid.\-py.
 
 \hypertarget{classboid_1_1Boid_a099882fd7d72bfd06c15ec20b0425905}{\index{boid\-::\-Boid@{boid\-::\-Boid}!stuck@{stuck}}
 \index{stuck@{stuck}!boid::Boid@{boid\-::\-Boid}}
@@ -1395,7 +1424,7 @@ Defines if the boid is stuck.
 
 
 
-Definition at line 100 of file boid.\-py.
+Definition at line 105 of file boid.\-py.
 
 \hypertarget{classboid_1_1Boid_abbcf546137204a45278b6caa95c4378b}{\index{boid\-::\-Boid@{boid\-::\-Boid}!stuck\-Const@{stuck\-Const}}
 \index{stuck\-Const@{stuck\-Const}!boid::Boid@{boid\-::\-Boid}}
@@ -1406,7 +1435,7 @@ Amount of movement in the position buffer needs to be less that this value for a
 
 
 
-Definition at line 322 of file boid.\-py.
+Definition at line 335 of file boid.\-py.
 
 \hypertarget{classboid_1_1Boid_a663164af1a20323f49e002d7576914f7}{\index{boid\-::\-Boid@{boid\-::\-Boid}!stuck\-D\-Avg@{stuck\-D\-Avg}}
 \index{stuck\-D\-Avg@{stuck\-D\-Avg}!boid::Boid@{boid\-::\-Boid}}
@@ -1417,7 +1446,7 @@ The average distance from a neighbour when a boid is stuck.
 
 Used to pick closer neighbours when stuck to help get out of the situation 
 
-Definition at line 327 of file boid.\-py.
+Definition at line 340 of file boid.\-py.
 
 \hypertarget{classboid_1_1Boid_a03960faefd59c4a651442eb373aa5c15}{\index{boid\-::\-Boid@{boid\-::\-Boid}!stuck\-D\-Sigma@{stuck\-D\-Sigma}}
 \index{stuck\-D\-Sigma@{stuck\-D\-Sigma}!boid::Boid@{boid\-::\-Boid}}
@@ -1428,14 +1457,14 @@ The standard deviation for a neighbour probability distribution Helps boid pick 
 
 
 
-Definition at line 331 of file boid.\-py.
+Definition at line 344 of file boid.\-py.
 
 \hypertarget{classboid_1_1Boid_a09f8fe6b2deb64fd65cfd64fc01470b9}{\index{boid\-::\-Boid@{boid\-::\-Boid}!y\-Size@{y\-Size}}
 \index{y\-Size@{y\-Size}!boid::Boid@{boid\-::\-Boid}}
 \subsubsection[{y\-Size}]{\setlength{\rightskip}{0pt plus 5cm}boid.\-Boid.\-y\-Size}}\label{classboid_1_1Boid_a09f8fe6b2deb64fd65cfd64fc01470b9}
 
 
-Definition at line 75 of file boid.\-py.
+Definition at line 80 of file boid.\-py.
 
 
 

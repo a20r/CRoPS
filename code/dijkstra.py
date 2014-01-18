@@ -33,11 +33,11 @@ def Dijkstra(G,start,end=None):
     they can be any other object that obeys dict protocol,
     for instance a wrapper in which vertices are URLs
     and a call to G[v] loads the web page and finds its links.
-    
+
     The output is a pair (D,P) where D[v] is the distance
     from start to v and P[v] is the predecessor of v along
     the shortest path from s to v.
-    
+
     Dijkstra's algorithm is only guaranteed to work correctly
     when all edge lengths are positive. This code does not
     verify this property for all edges (only the edges seen
@@ -55,11 +55,11 @@ def Dijkstra(G,start,end=None):
     P = {}  # dictionary of predecessors
     Q = priorityDictionary()   # est.dist. of non-final vert.
     Q[start] = 0
-    
+
     for v in Q:
         D[v] = Q[v]
         if v == end: break
-        
+
         for w in G[v]:
             vwLength = D[v] + G[v][w]
             if w in D:
@@ -69,9 +69,9 @@ def Dijkstra(G,start,end=None):
             elif w not in Q or vwLength < Q[w]:
                 Q[w] = vwLength
                 P[w] = v
-    
+
     return (D,P)
-            
+
 def shortestPath(G,start,end):
     """
     Find a single shortest path from the given start vertex
@@ -82,10 +82,10 @@ def shortestPath(G,start,end):
     @param G The graph dictionary to be searched
     @param start The starting node
     @param end The ending node
-    @return A list of the nodes that lie on the shortest path 
+    @return A list of the nodes that lie on the shortest path
     from start to end in G
     """
-    try: 
+    try:
         D,P = Dijkstra(G,start,end)
     except KeyError:
         return []

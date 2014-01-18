@@ -1,0 +1,934 @@
+\begin{theindex}
+
+  \item {\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}\_\discretionary {-}{}{}author\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}\_\discretionary {-}{}{}}
+    \subitem {boid}, \hyperpage{10}
+    \subitem {boidsimulation}, \hyperpage{10}
+    \subitem {goal}, \hyperpage{14}
+    \subitem {obstacle}, \hyperpage{15}
+  \item {\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}\_\discretionary {-}{}{}init\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}\_\discretionary {-}{}{}}
+    \subitem {boid\discretionary {-}{}{}::\discretionary {-}{}{}Boid}, 
+		\hyperpage{22}
+    \subitem {boidsimulation\discretionary {-}{}{}::\discretionary {-}{}{}Flock\discretionary {-}{}{}Sim}, 
+		\hyperpage{44}
+    \subitem {goal\discretionary {-}{}{}::\discretionary {-}{}{}Circle\discretionary {-}{}{}Goal}, 
+		\hyperpage{39}
+    \subitem {obstacle\discretionary {-}{}{}::\discretionary {-}{}{}Poly\discretionary {-}{}{}Obstacle}, 
+		\hyperpage{54}
+    \subitem {priodict\discretionary {-}{}{}::priority\discretionary {-}{}{}Dictionary}, 
+		\hyperpage{62}
+    \subitem {prm\discretionary {-}{}{}::\discretionary {-}{}{}P\discretionary {-}{}{}R\discretionary {-}{}{}M\discretionary {-}{}{}Generator}, 
+		\hyperpage{64}
+  \item {\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}\_\discretionary {-}{}{}iter\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}\_\discretionary {-}{}{}}
+    \subitem {priodict\discretionary {-}{}{}::priority\discretionary {-}{}{}Dictionary}, 
+		\hyperpage{62}
+  \item {\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}\_\discretionary {-}{}{}setitem\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}\_\discretionary {-}{}{}}
+    \subitem {priodict\discretionary {-}{}{}::priority\discretionary {-}{}{}Dictionary}, 
+		\hyperpage{62}
+
+  \indexspace
+
+  \item {adjacent\discretionary {-}{}{}Thresh}
+    \subitem {prm\discretionary {-}{}{}::\discretionary {-}{}{}P\discretionary {-}{}{}R\discretionary {-}{}{}M\discretionary {-}{}{}Generator}, 
+		\hyperpage{68}
+  \item {animate}
+    \subitem {boidsimulation\discretionary {-}{}{}::\discretionary {-}{}{}Flock\discretionary {-}{}{}Sim}, 
+		\hyperpage{44}
+  \item {arg}
+    \subitem {test\discretionary {-}{}{}\_\discretionary {-}{}{}sim}, 
+		\hyperpage{16}
+  \item {auto\discretionary {-}{}{}\_\discretionary {-}{}{}gen\discretionary {-}{}{}\_\discretionary {-}{}{}number}
+    \subitem {boidsimulation\discretionary {-}{}{}::\discretionary {-}{}{}Flock\discretionary {-}{}{}Sim}, 
+		\hyperpage{47}
+    \subitem {configuration\discretionary {-}{}{}::\discretionary {-}{}{}Poly\discretionary {-}{}{}File\discretionary {-}{}{}Configuration}, 
+		\hyperpage{51}
+  \item {auto\discretionary {-}{}{}\_\discretionary {-}{}{}gen\discretionary {-}{}{}\_\discretionary {-}{}{}obst}
+    \subitem {boidsimulation\discretionary {-}{}{}::\discretionary {-}{}{}Flock\discretionary {-}{}{}Sim}, 
+		\hyperpage{47}
+    \subitem {configuration\discretionary {-}{}{}::\discretionary {-}{}{}Poly\discretionary {-}{}{}File\discretionary {-}{}{}Configuration}, 
+		\hyperpage{51}
+  \item {auto\discretionary {-}{}{}Generate\discretionary {-}{}{}Dynamic\discretionary {-}{}{}Obstacles}
+    \subitem {configuration\discretionary {-}{}{}::\discretionary {-}{}{}Poly\discretionary {-}{}{}File\discretionary {-}{}{}Configuration}, 
+		\hyperpage{51}
+  \item {avg}
+    \subitem {boidsimulation\discretionary {-}{}{}::\discretionary {-}{}{}Flock\discretionary {-}{}{}Sim}, 
+		\hyperpage{44}
+  \item {avg\discretionary {-}{}{}Point}
+    \subitem {obstacle\discretionary {-}{}{}::\discretionary {-}{}{}Poly\discretionary {-}{}{}Obstacle}, 
+		\hyperpage{60}
+
+  \indexspace
+
+  \item {b\discretionary {-}{}{}Alpha}
+    \subitem {boid\discretionary {-}{}{}::\discretionary {-}{}{}Boid}, 
+		\hyperpage{33}
+  \item {b\discretionary {-}{}{}Beta}
+    \subitem {boid\discretionary {-}{}{}::\discretionary {-}{}{}Boid}, 
+		\hyperpage{33}
+  \item {b\discretionary {-}{}{}Const}
+    \subitem {boid\discretionary {-}{}{}::\discretionary {-}{}{}Boid}, 
+		\hyperpage{33}
+  \item {b\discretionary {-}{}{}Delta}
+    \subitem {boid\discretionary {-}{}{}::\discretionary {-}{}{}Boid}, 
+		\hyperpage{33}
+  \item {b\discretionary {-}{}{}Influence\discretionary {-}{}{}R}
+    \subitem {boid\discretionary {-}{}{}::\discretionary {-}{}{}Boid}, 
+		\hyperpage{34}
+  \item {B\discretionary {-}{}{}L\discretionary {-}{}{}A\discretionary {-}{}{}C\discretionary {-}{}{}K}
+    \subitem {boidsimulation\discretionary {-}{}{}::\discretionary {-}{}{}Flock\discretionary {-}{}{}Sim}, 
+		\hyperpage{47}
+  \item {boid}, \hyperpage{9}
+    \subitem {\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}\_\discretionary {-}{}{}author\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}\_\discretionary {-}{}{}}, 
+		\hyperpage{10}
+    \subitem {guassian\discretionary {-}{}{}Func}, \hyperpage{9}
+  \item {boid.\discretionary {-}{}{}Boid}, \hyperpage{19}
+  \item {boid\discretionary {-}{}{}::\discretionary {-}{}{}Boid}
+    \subitem {\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}\_\discretionary {-}{}{}init\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}\_\discretionary {-}{}{}}, 
+		\hyperpage{22}
+    \subitem {b\discretionary {-}{}{}Alpha}, \hyperpage{33}
+    \subitem {b\discretionary {-}{}{}Beta}, \hyperpage{33}
+    \subitem {b\discretionary {-}{}{}Const}, \hyperpage{33}
+    \subitem {b\discretionary {-}{}{}Delta}, \hyperpage{33}
+    \subitem {b\discretionary {-}{}{}Influence\discretionary {-}{}{}R}, 
+		\hyperpage{34}
+    \subitem {boid\discretionary {-}{}{}List}, \hyperpage{34}
+    \subitem {color}, \hyperpage{34}
+    \subitem {comp\discretionary {-}{}{}Weight\discretionary {-}{}{}List}, 
+		\hyperpage{34}
+    \subitem {determine\discretionary {-}{}{}New\discretionary {-}{}{}Path}, 
+		\hyperpage{22}
+    \subitem {determine\discretionary {-}{}{}Random\discretionary {-}{}{}Walk}, 
+		\hyperpage{22}
+    \subitem {dim}, \hyperpage{34}
+    \subitem {draw}, \hyperpage{22}
+    \subitem {e\discretionary {-}{}{}Pos}, \hyperpage{34}
+    \subitem {end\discretionary {-}{}{}Index}, \hyperpage{34}
+    \subitem {find\discretionary {-}{}{}Max}, \hyperpage{23}
+    \subitem {g\discretionary {-}{}{}Alpha}, \hyperpage{34}
+    \subitem {g\discretionary {-}{}{}Beta}, \hyperpage{34}
+    \subitem {g\discretionary {-}{}{}Const}, \hyperpage{35}
+    \subitem {g\discretionary {-}{}{}Delta}, \hyperpage{35}
+    \subitem {gamma\discretionary {-}{}{}Func}, \hyperpage{34}
+    \subitem {get\discretionary {-}{}{}Boid\discretionary {-}{}{}Vector\discretionary {-}{}{}List}, 
+		\hyperpage{23}
+    \subitem {get\discretionary {-}{}{}Direction\discretionary {-}{}{}Vector}, 
+		\hyperpage{24}
+    \subitem {get\discretionary {-}{}{}Goal\discretionary {-}{}{}Vector}, 
+		\hyperpage{24}
+    \subitem {get\discretionary {-}{}{}Neighbor\discretionary {-}{}{}Vector\discretionary {-}{}{}List}, 
+		\hyperpage{25}
+    \subitem {get\discretionary {-}{}{}Obstacle\discretionary {-}{}{}Vector\discretionary {-}{}{}List}, 
+		\hyperpage{26}
+    \subitem {get\discretionary {-}{}{}Var}, \hyperpage{27}
+    \subitem {goal}, \hyperpage{35}
+    \subitem {goal\discretionary {-}{}{}Counter}, \hyperpage{35}
+    \subitem {goal\discretionary {-}{}{}List}, \hyperpage{35}
+    \subitem {goal\discretionary {-}{}{}Nodes}, \hyperpage{35}
+    \subitem {head\discretionary {-}{}{}Weight\discretionary {-}{}{}List}, 
+		\hyperpage{35}
+    \subitem {heading}, \hyperpage{35}
+    \subitem {in\discretionary {-}{}{}Goal}, \hyperpage{27}
+    \subitem {in\discretionary {-}{}{}World}, \hyperpage{28}
+    \subitem {init\discretionary {-}{}{}Function\discretionary {-}{}{}Parameters}, 
+		\hyperpage{28}
+    \subitem {mag}, \hyperpage{28}
+    \subitem {n\discretionary {-}{}{}Stuck\discretionary {-}{}{}D\discretionary {-}{}{}Avg}, 
+		\hyperpage{36}
+    \subitem {n\discretionary {-}{}{}Stuck\discretionary {-}{}{}D\discretionary {-}{}{}Sigma}, 
+		\hyperpage{36}
+    \subitem {neighbor\discretionary {-}{}{}Size}, \hyperpage{35}
+    \subitem {norm}, \hyperpage{29}
+    \subitem {ob\discretionary {-}{}{}Beta}, \hyperpage{36}
+    \subitem {ob\discretionary {-}{}{}Influence\discretionary {-}{}{}R}, 
+		\hyperpage{36}
+    \subitem {obstacle\discretionary {-}{}{}Func}, \hyperpage{29}
+    \subitem {obstacle\discretionary {-}{}{}List}, \hyperpage{36}
+    \subitem {point\discretionary {-}{}{}Allowed}, \hyperpage{30}
+    \subitem {position}, \hyperpage{36}
+    \subitem {position\discretionary {-}{}{}Buffer}, \hyperpage{36}
+    \subitem {prm\discretionary {-}{}{}Gen}, \hyperpage{36}
+    \subitem {radius}, \hyperpage{36}
+    \subitem {rand\discretionary {-}{}{}Walk\discretionary {-}{}{}Count}, 
+		\hyperpage{37}
+    \subitem {random\discretionary {-}{}{}Walk\discretionary {-}{}{}X}, 
+		\hyperpage{37}
+    \subitem {random\discretionary {-}{}{}Walk\discretionary {-}{}{}Y}, 
+		\hyperpage{37}
+    \subitem {reduce\discretionary {-}{}{}Weight\discretionary {-}{}{}Values}, 
+		\hyperpage{30}
+    \subitem {roadmap}, \hyperpage{37}
+    \subitem {s\discretionary {-}{}{}Pos}, \hyperpage{37}
+    \subitem {screen}, \hyperpage{37}
+    \subitem {set\discretionary {-}{}{}Boid\discretionary {-}{}{}List}, 
+		\hyperpage{31}
+    \subitem {set\discretionary {-}{}{}New\discretionary {-}{}{}Goal}, 
+		\hyperpage{31}
+    \subitem {sigmoid\discretionary {-}{}{}Func}, \hyperpage{31}
+    \subitem {speed}, \hyperpage{37}
+    \subitem {stuck}, \hyperpage{37}
+    \subitem {stuck\discretionary {-}{}{}Const}, \hyperpage{37}
+    \subitem {stuck\discretionary {-}{}{}D\discretionary {-}{}{}Avg}, 
+		\hyperpage{38}
+    \subitem {stuck\discretionary {-}{}{}D\discretionary {-}{}{}Sigma}, 
+		\hyperpage{38}
+    \subitem {sum\discretionary {-}{}{}Divide}, \hyperpage{32}
+    \subitem {update}, \hyperpage{32}
+    \subitem {update\discretionary {-}{}{}Position\discretionary {-}{}{}Buffer}, 
+		\hyperpage{33}
+    \subitem {y\discretionary {-}{}{}Size}, \hyperpage{38}
+  \item {boid\discretionary {-}{}{}List}
+    \subitem {boid\discretionary {-}{}{}::\discretionary {-}{}{}Boid}, 
+		\hyperpage{34}
+    \subitem {configuration\discretionary {-}{}{}::\discretionary {-}{}{}Poly\discretionary {-}{}{}File\discretionary {-}{}{}Configuration}, 
+		\hyperpage{51}
+  \item {boid\discretionary {-}{}{}Speed}
+    \subitem {configuration\discretionary {-}{}{}::\discretionary {-}{}{}Configuration}, 
+		\hyperpage{41}
+  \item {boidsimulation}, \hyperpage{10}
+    \subitem {\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}\_\discretionary {-}{}{}author\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}\_\discretionary {-}{}{}}, 
+		\hyperpage{10}
+  \item {boidsimulation.\discretionary {-}{}{}Flock\discretionary {-}{}{}Sim}, 
+		\hyperpage{42}
+  \item {boidsimulation\discretionary {-}{}{}::\discretionary {-}{}{}Flock\discretionary {-}{}{}Sim}
+    \subitem {\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}\_\discretionary {-}{}{}init\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}\_\discretionary {-}{}{}}, 
+		\hyperpage{44}
+    \subitem {animate}, \hyperpage{44}
+    \subitem {auto\discretionary {-}{}{}\_\discretionary {-}{}{}gen\discretionary {-}{}{}\_\discretionary {-}{}{}number}, 
+		\hyperpage{47}
+    \subitem {auto\discretionary {-}{}{}\_\discretionary {-}{}{}gen\discretionary {-}{}{}\_\discretionary {-}{}{}obst}, 
+		\hyperpage{47}
+    \subitem {avg}, \hyperpage{44}
+    \subitem {B\discretionary {-}{}{}L\discretionary {-}{}{}A\discretionary {-}{}{}C\discretionary {-}{}{}K}, 
+		\hyperpage{47}
+    \subitem {config}, \hyperpage{47}
+    \subitem {counter}, \hyperpage{47}
+    \subitem {data\discretionary {-}{}{}File}, \hyperpage{47}
+    \subitem {dim}, \hyperpage{47}
+    \subitem {done}, \hyperpage{47}
+    \subitem {e\discretionary {-}{}{}Pos}, \hyperpage{48}
+    \subitem {flock\discretionary {-}{}{}Size}, \hyperpage{48}
+    \subitem {font}, \hyperpage{48}
+    \subitem {frame\discretionary {-}{}{}Counter}, \hyperpage{48}
+    \subitem {get\discretionary {-}{}{}Boid\discretionary {-}{}{}Data}, 
+		\hyperpage{45}
+    \subitem {get\discretionary {-}{}{}Stats}, \hyperpage{45}
+    \subitem {init\discretionary {-}{}{}\_\discretionary {-}{}{}prm}, 
+		\hyperpage{45}
+    \subitem {iterations}, \hyperpage{48}
+    \subitem {map\discretionary {-}{}{}File}, \hyperpage{48}
+    \subitem {num\discretionary {-}{}{}In\discretionary {-}{}{}Goal}, 
+		\hyperpage{48}
+    \subitem {obstacle\discretionary {-}{}{}File}, \hyperpage{48}
+    \subitem {play}, \hyperpage{46}
+    \subitem {render}, \hyperpage{46}
+    \subitem {s\discretionary {-}{}{}Pos}, \hyperpage{48}
+    \subitem {start\discretionary {-}{}{}Time}, \hyperpage{49}
+    \subitem {surface\discretionary {-}{}{}List}, \hyperpage{49}
+    \subitem {W\discretionary {-}{}{}H\discretionary {-}{}{}I\discretionary {-}{}{}T\discretionary {-}{}{}E}, 
+		\hyperpage{49}
+  \item {boundary}
+    \subitem {obstacle\discretionary {-}{}{}::\discretionary {-}{}{}Poly\discretionary {-}{}{}Obstacle}, 
+		\hyperpage{60}
+
+  \indexspace
+
+  \item {change\discretionary {-}{}{}\_\discretionary {-}{}{}direction}
+    \subitem {obstacle\discretionary {-}{}{}::\discretionary {-}{}{}Poly\discretionary {-}{}{}Obstacle}, 
+		\hyperpage{54}
+  \item {check\discretionary {-}{}{}Collision\discretionary {-}{}{}With\discretionary {-}{}{}Other\discretionary {-}{}{}Obstacles}
+    \subitem {obstacle\discretionary {-}{}{}::\discretionary {-}{}{}Poly\discretionary {-}{}{}Obstacle}, 
+		\hyperpage{54}
+  \item {code/boid.\discretionary {-}{}{}py}, \hyperpage{71}
+  \item {code/boidsimulation.\discretionary {-}{}{}py}, \hyperpage{71}
+  \item {code/configuration.\discretionary {-}{}{}py}, \hyperpage{72}
+  \item {code/dijkstra.\discretionary {-}{}{}py}, \hyperpage{72}
+  \item {code/gatherstats.\discretionary {-}{}{}py}, \hyperpage{72}
+  \item {code/goal.\discretionary {-}{}{}py}, \hyperpage{73}
+  \item {code/mapparser.\discretionary {-}{}{}py}, \hyperpage{73}
+  \item {code/obstacle.\discretionary {-}{}{}py}, \hyperpage{74}
+  \item {code/priodict.\discretionary {-}{}{}py}, \hyperpage{74}
+  \item {code/prm.\discretionary {-}{}{}py}, \hyperpage{74}
+  \item {code/test\discretionary {-}{}{}\_\discretionary {-}{}{}sim.\discretionary {-}{}{}py}, 
+		\hyperpage{75}
+  \item {color}
+    \subitem {boid\discretionary {-}{}{}::\discretionary {-}{}{}Boid}, 
+		\hyperpage{34}
+  \item {color\discretionary {-}{}{}List}
+    \subitem {configuration\discretionary {-}{}{}::\discretionary {-}{}{}Configuration}, 
+		\hyperpage{41}
+  \item {colors}
+    \subitem {goal\discretionary {-}{}{}::\discretionary {-}{}{}Circle\discretionary {-}{}{}Goal}, 
+		\hyperpage{39}
+    \subitem {obstacle\discretionary {-}{}{}::\discretionary {-}{}{}Poly\discretionary {-}{}{}Obstacle}, 
+		\hyperpage{60}
+  \item {comp\discretionary {-}{}{}Weight\discretionary {-}{}{}List}
+    \subitem {boid\discretionary {-}{}{}::\discretionary {-}{}{}Boid}, 
+		\hyperpage{34}
+  \item {config}
+    \subitem {boidsimulation\discretionary {-}{}{}::\discretionary {-}{}{}Flock\discretionary {-}{}{}Sim}, 
+		\hyperpage{47}
+  \item {configuration}, \hyperpage{10}
+  \item {configuration.\discretionary {-}{}{}Configuration}, 
+		\hyperpage{40}
+  \item {configuration.\discretionary {-}{}{}Poly\discretionary {-}{}{}File\discretionary {-}{}{}Configuration}, 
+		\hyperpage{49}
+  \item {configuration\discretionary {-}{}{}::\discretionary {-}{}{}Configuration}
+    \subitem {boid\discretionary {-}{}{}Speed}, \hyperpage{41}
+    \subitem {color\discretionary {-}{}{}List}, \hyperpage{41}
+    \subitem {dim}, \hyperpage{41}
+    \subitem {goal\discretionary {-}{}{}Radius}, \hyperpage{41}
+    \subitem {num\discretionary {-}{}{}Neighbours}, \hyperpage{41}
+    \subitem {num\discretionary {-}{}{}Sample\discretionary {-}{}{}Points}, 
+		\hyperpage{41}
+    \subitem {screen}, \hyperpage{41}
+  \item {configuration\discretionary {-}{}{}::\discretionary {-}{}{}Poly\discretionary {-}{}{}File\discretionary {-}{}{}Configuration}
+    \subitem {auto\discretionary {-}{}{}\_\discretionary {-}{}{}gen\discretionary {-}{}{}\_\discretionary {-}{}{}number}, 
+		\hyperpage{51}
+    \subitem {auto\discretionary {-}{}{}\_\discretionary {-}{}{}gen\discretionary {-}{}{}\_\discretionary {-}{}{}obst}, 
+		\hyperpage{51}
+    \subitem {auto\discretionary {-}{}{}Generate\discretionary {-}{}{}Dynamic\discretionary {-}{}{}Obstacles}, 
+		\hyperpage{51}
+    \subitem {boid\discretionary {-}{}{}List}, \hyperpage{51}
+    \subitem {end\discretionary {-}{}{}Point}, \hyperpage{51}
+    \subitem {goal\discretionary {-}{}{}List}, \hyperpage{52}
+    \subitem {init\discretionary {-}{}{}Vars}, \hyperpage{51}
+    \subitem {nodes}, \hyperpage{52}
+    \subitem {obstacle\discretionary {-}{}{}List}, \hyperpage{52}
+    \subitem {parse\discretionary {-}{}{}Dynamic\discretionary {-}{}{}Obstacles}, 
+		\hyperpage{51}
+    \subitem {prm\discretionary {-}{}{}Gen}, \hyperpage{52}
+    \subitem {start\discretionary {-}{}{}Point}, \hyperpage{52}
+  \item {counter}
+    \subitem {boidsimulation\discretionary {-}{}{}::\discretionary {-}{}{}Flock\discretionary {-}{}{}Sim}, 
+		\hyperpage{47}
+
+  \indexspace
+
+  \item {data\discretionary {-}{}{}File}
+    \subitem {boidsimulation\discretionary {-}{}{}::\discretionary {-}{}{}Flock\discretionary {-}{}{}Sim}, 
+		\hyperpage{47}
+  \item {detect\discretionary {-}{}{}Collision}
+    \subitem {obstacle\discretionary {-}{}{}::\discretionary {-}{}{}Poly\discretionary {-}{}{}Obstacle}, 
+		\hyperpage{54}
+  \item {determine\discretionary {-}{}{}\_\discretionary {-}{}{}last\discretionary {-}{}{}\_\discretionary {-}{}{}direction}
+    \subitem {obstacle\discretionary {-}{}{}::\discretionary {-}{}{}Poly\discretionary {-}{}{}Obstacle}, 
+		\hyperpage{54}
+  \item {determine\discretionary {-}{}{}New\discretionary {-}{}{}Path}
+    \subitem {boid\discretionary {-}{}{}::\discretionary {-}{}{}Boid}, 
+		\hyperpage{22}
+  \item {determine\discretionary {-}{}{}Random\discretionary {-}{}{}Walk}
+    \subitem {boid\discretionary {-}{}{}::\discretionary {-}{}{}Boid}, 
+		\hyperpage{22}
+  \item {dict}, \hyperpage{42}
+  \item {Dijkstra}
+    \subitem {dijkstra}, \hyperpage{11}
+  \item {dijkstra}, \hyperpage{10}
+    \subitem {Dijkstra}, \hyperpage{11}
+    \subitem {shortest\discretionary {-}{}{}Path}, \hyperpage{12}
+  \item {dim}
+    \subitem {boid\discretionary {-}{}{}::\discretionary {-}{}{}Boid}, 
+		\hyperpage{34}
+    \subitem {boidsimulation\discretionary {-}{}{}::\discretionary {-}{}{}Flock\discretionary {-}{}{}Sim}, 
+		\hyperpage{47}
+    \subitem {configuration\discretionary {-}{}{}::\discretionary {-}{}{}Configuration}, 
+		\hyperpage{41}
+  \item {displacement}
+    \subitem {obstacle\discretionary {-}{}{}::\discretionary {-}{}{}Poly\discretionary {-}{}{}Obstacle}, 
+		\hyperpage{60}
+  \item {done}
+    \subitem {boidsimulation\discretionary {-}{}{}::\discretionary {-}{}{}Flock\discretionary {-}{}{}Sim}, 
+		\hyperpage{47}
+  \item {dont\discretionary {-}{}{}Draw}
+    \subitem {prm\discretionary {-}{}{}::\discretionary {-}{}{}P\discretionary {-}{}{}R\discretionary {-}{}{}M\discretionary {-}{}{}Generator}, 
+		\hyperpage{69}
+  \item {draw}
+    \subitem {boid\discretionary {-}{}{}::\discretionary {-}{}{}Boid}, 
+		\hyperpage{22}
+    \subitem {goal\discretionary {-}{}{}::\discretionary {-}{}{}Circle\discretionary {-}{}{}Goal}, 
+		\hyperpage{39}
+    \subitem {obstacle\discretionary {-}{}{}::\discretionary {-}{}{}Poly\discretionary {-}{}{}Obstacle}, 
+		\hyperpage{55}
+    \subitem {prm\discretionary {-}{}{}::\discretionary {-}{}{}P\discretionary {-}{}{}R\discretionary {-}{}{}M\discretionary {-}{}{}Generator}, 
+		\hyperpage{65}
+  \item {draw\discretionary {-}{}{}Path}
+    \subitem {prm\discretionary {-}{}{}::\discretionary {-}{}{}P\discretionary {-}{}{}R\discretionary {-}{}{}M\discretionary {-}{}{}Generator}, 
+		\hyperpage{65}
+  \item {dynamic}
+    \subitem {obstacle\discretionary {-}{}{}::\discretionary {-}{}{}Poly\discretionary {-}{}{}Obstacle}, 
+		\hyperpage{60}
+  \item {dynamic\discretionary {-}{}{}Obstacle\discretionary {-}{}{}Auto\discretionary {-}{}{}Generate}
+    \subitem {test\discretionary {-}{}{}\_\discretionary {-}{}{}sim}, 
+		\hyperpage{16}
+
+  \indexspace
+
+  \item {e\discretionary {-}{}{}Pos}
+    \subitem {boid\discretionary {-}{}{}::\discretionary {-}{}{}Boid}, 
+		\hyperpage{34}
+    \subitem {boidsimulation\discretionary {-}{}{}::\discretionary {-}{}{}Flock\discretionary {-}{}{}Sim}, 
+		\hyperpage{48}
+  \item {end\discretionary {-}{}{}Index}
+    \subitem {boid\discretionary {-}{}{}::\discretionary {-}{}{}Boid}, 
+		\hyperpage{34}
+  \item {end\discretionary {-}{}{}Point}
+    \subitem {configuration\discretionary {-}{}{}::\discretionary {-}{}{}Poly\discretionary {-}{}{}File\discretionary {-}{}{}Configuration}, 
+		\hyperpage{51}
+    \subitem {test\discretionary {-}{}{}\_\discretionary {-}{}{}sim}, 
+		\hyperpage{16}
+  \item {end\discretionary {-}{}{}Pos}
+    \subitem {prm\discretionary {-}{}{}::\discretionary {-}{}{}P\discretionary {-}{}{}R\discretionary {-}{}{}M\discretionary {-}{}{}Generator}, 
+		\hyperpage{69}
+  \item {estimate\discretionary {-}{}{}Poly}
+    \subitem {obstacle\discretionary {-}{}{}::\discretionary {-}{}{}Poly\discretionary {-}{}{}Obstacle}, 
+		\hyperpage{55}
+
+  \indexspace
+
+  \item {filter\discretionary {-}{}{}Sub\discretionary {-}{}{}Goal}
+    \subitem {prm\discretionary {-}{}{}::\discretionary {-}{}{}P\discretionary {-}{}{}R\discretionary {-}{}{}M\discretionary {-}{}{}Generator}, 
+		\hyperpage{65}
+  \item {find\discretionary {-}{}{}Max}
+    \subitem {boid\discretionary {-}{}{}::\discretionary {-}{}{}Boid}, 
+		\hyperpage{23}
+  \item {find\discretionary {-}{}{}Neighbors}
+    \subitem {prm\discretionary {-}{}{}::\discretionary {-}{}{}P\discretionary {-}{}{}R\discretionary {-}{}{}M\discretionary {-}{}{}Generator}, 
+		\hyperpage{65}
+  \item {flock\discretionary {-}{}{}Size}
+    \subitem {boidsimulation\discretionary {-}{}{}::\discretionary {-}{}{}Flock\discretionary {-}{}{}Sim}, 
+		\hyperpage{48}
+    \subitem {test\discretionary {-}{}{}\_\discretionary {-}{}{}sim}, 
+		\hyperpage{16}
+  \item {font}
+    \subitem {boidsimulation\discretionary {-}{}{}::\discretionary {-}{}{}Flock\discretionary {-}{}{}Sim}, 
+		\hyperpage{48}
+  \item {frame\discretionary {-}{}{}Counter}
+    \subitem {boidsimulation\discretionary {-}{}{}::\discretionary {-}{}{}Flock\discretionary {-}{}{}Sim}, 
+		\hyperpage{48}
+  \item {fs}
+    \subitem {test\discretionary {-}{}{}\_\discretionary {-}{}{}sim}, 
+		\hyperpage{16}
+
+  \indexspace
+
+  \item {g\discretionary {-}{}{}Alpha}
+    \subitem {boid\discretionary {-}{}{}::\discretionary {-}{}{}Boid}, 
+		\hyperpage{34}
+  \item {g\discretionary {-}{}{}Beta}
+    \subitem {boid\discretionary {-}{}{}::\discretionary {-}{}{}Boid}, 
+		\hyperpage{34}
+  \item {g\discretionary {-}{}{}Const}
+    \subitem {boid\discretionary {-}{}{}::\discretionary {-}{}{}Boid}, 
+		\hyperpage{35}
+  \item {g\discretionary {-}{}{}Delta}
+    \subitem {boid\discretionary {-}{}{}::\discretionary {-}{}{}Boid}, 
+		\hyperpage{35}
+  \item {g\discretionary {-}{}{}Pos\discretionary {-}{}{}List}
+    \subitem {prm\discretionary {-}{}{}::\discretionary {-}{}{}P\discretionary {-}{}{}R\discretionary {-}{}{}M\discretionary {-}{}{}Generator}, 
+		\hyperpage{69}
+  \item {gamma\discretionary {-}{}{}Func}
+    \subitem {boid\discretionary {-}{}{}::\discretionary {-}{}{}Boid}, 
+		\hyperpage{34}
+  \item {gatherstats}, \hyperpage{13}
+    \subitem {generate\discretionary {-}{}{}Stats}, \hyperpage{13}
+    \subitem {map\discretionary {-}{}{}List}, \hyperpage{13}
+    \subitem {test\discretionary {-}{}{}List}, \hyperpage{13}
+  \item {generate}
+    \subitem {prm\discretionary {-}{}{}::\discretionary {-}{}{}P\discretionary {-}{}{}R\discretionary {-}{}{}M\discretionary {-}{}{}Generator}, 
+		\hyperpage{66}
+  \item {generate\discretionary {-}{}{}Position\discretionary {-}{}{}List}
+    \subitem {prm\discretionary {-}{}{}::\discretionary {-}{}{}P\discretionary {-}{}{}R\discretionary {-}{}{}M\discretionary {-}{}{}Generator}, 
+		\hyperpage{66}
+  \item {generate\discretionary {-}{}{}Stats}
+    \subitem {gatherstats}, \hyperpage{13}
+  \item {generate\discretionary {-}{}{}Target}
+    \subitem {test\discretionary {-}{}{}\_\discretionary {-}{}{}sim}, 
+		\hyperpage{16}
+  \item {get\discretionary {-}{}{}Boid\discretionary {-}{}{}Data}
+    \subitem {boidsimulation\discretionary {-}{}{}::\discretionary {-}{}{}Flock\discretionary {-}{}{}Sim}, 
+		\hyperpage{45}
+  \item {get\discretionary {-}{}{}Boid\discretionary {-}{}{}Vector\discretionary {-}{}{}List}
+    \subitem {boid\discretionary {-}{}{}::\discretionary {-}{}{}Boid}, 
+		\hyperpage{23}
+  \item {get\discretionary {-}{}{}Closest\discretionary {-}{}{}Point}
+    \subitem {obstacle\discretionary {-}{}{}::\discretionary {-}{}{}Poly\discretionary {-}{}{}Obstacle}, 
+		\hyperpage{55}
+  \item {get\discretionary {-}{}{}Direction\discretionary {-}{}{}Vector}
+    \subitem {boid\discretionary {-}{}{}::\discretionary {-}{}{}Boid}, 
+		\hyperpage{24}
+  \item {get\discretionary {-}{}{}Goal\discretionary {-}{}{}Vector}
+    \subitem {boid\discretionary {-}{}{}::\discretionary {-}{}{}Boid}, 
+		\hyperpage{24}
+  \item {get\discretionary {-}{}{}Neighbor\discretionary {-}{}{}Vector\discretionary {-}{}{}List}
+    \subitem {boid\discretionary {-}{}{}::\discretionary {-}{}{}Boid}, 
+		\hyperpage{25}
+  \item {get\discretionary {-}{}{}Obstacle\discretionary {-}{}{}Vector\discretionary {-}{}{}List}
+    \subitem {boid\discretionary {-}{}{}::\discretionary {-}{}{}Boid}, 
+		\hyperpage{26}
+  \item {get\discretionary {-}{}{}Point}
+    \subitem {obstacle\discretionary {-}{}{}::\discretionary {-}{}{}Poly\discretionary {-}{}{}Obstacle}, 
+		\hyperpage{56}
+  \item {get\discretionary {-}{}{}Radius}
+    \subitem {obstacle\discretionary {-}{}{}::\discretionary {-}{}{}Poly\discretionary {-}{}{}Obstacle}, 
+		\hyperpage{56}
+  \item {get\discretionary {-}{}{}Random}
+    \subitem {prm\discretionary {-}{}{}::\discretionary {-}{}{}P\discretionary {-}{}{}R\discretionary {-}{}{}M\discretionary {-}{}{}Generator}, 
+		\hyperpage{67}
+  \item {get\discretionary {-}{}{}Shortest\discretionary {-}{}{}Path}
+    \subitem {prm\discretionary {-}{}{}::\discretionary {-}{}{}P\discretionary {-}{}{}R\discretionary {-}{}{}M\discretionary {-}{}{}Generator}, 
+		\hyperpage{67}
+  \item {get\discretionary {-}{}{}Stats}
+    \subitem {boidsimulation\discretionary {-}{}{}::\discretionary {-}{}{}Flock\discretionary {-}{}{}Sim}, 
+		\hyperpage{45}
+  \item {get\discretionary {-}{}{}Var}
+    \subitem {boid\discretionary {-}{}{}::\discretionary {-}{}{}Boid}, 
+		\hyperpage{27}
+  \item {goal}, \hyperpage{13}
+    \subitem {\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}\_\discretionary {-}{}{}author\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}\_\discretionary {-}{}{}}, 
+		\hyperpage{14}
+    \subitem {boid\discretionary {-}{}{}::\discretionary {-}{}{}Boid}, 
+		\hyperpage{35}
+  \item {goal.\discretionary {-}{}{}Circle\discretionary {-}{}{}Goal}, 
+		\hyperpage{38}
+  \item {goal\discretionary {-}{}{}::\discretionary {-}{}{}Circle\discretionary {-}{}{}Goal}
+    \subitem {\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}\_\discretionary {-}{}{}init\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}\_\discretionary {-}{}{}}, 
+		\hyperpage{39}
+    \subitem {colors}, \hyperpage{39}
+    \subitem {draw}, \hyperpage{39}
+    \subitem {position}, \hyperpage{39}
+    \subitem {radius}, \hyperpage{39}
+    \subitem {screen}, \hyperpage{39}
+  \item {goal\discretionary {-}{}{}Counter}
+    \subitem {boid\discretionary {-}{}{}::\discretionary {-}{}{}Boid}, 
+		\hyperpage{35}
+  \item {goal\discretionary {-}{}{}List}
+    \subitem {boid\discretionary {-}{}{}::\discretionary {-}{}{}Boid}, 
+		\hyperpage{35}
+    \subitem {configuration\discretionary {-}{}{}::\discretionary {-}{}{}Poly\discretionary {-}{}{}File\discretionary {-}{}{}Configuration}, 
+		\hyperpage{52}
+  \item {goal\discretionary {-}{}{}Nodes}
+    \subitem {boid\discretionary {-}{}{}::\discretionary {-}{}{}Boid}, 
+		\hyperpage{35}
+    \subitem {prm\discretionary {-}{}{}::\discretionary {-}{}{}P\discretionary {-}{}{}R\discretionary {-}{}{}M\discretionary {-}{}{}Generator}, 
+		\hyperpage{69}
+  \item {goal\discretionary {-}{}{}Radius}
+    \subitem {configuration\discretionary {-}{}{}::\discretionary {-}{}{}Configuration}, 
+		\hyperpage{41}
+  \item {guassian\discretionary {-}{}{}Func}
+    \subitem {boid}, \hyperpage{9}
+
+  \indexspace
+
+  \item {head\discretionary {-}{}{}Weight\discretionary {-}{}{}List}
+    \subitem {boid\discretionary {-}{}{}::\discretionary {-}{}{}Boid}, 
+		\hyperpage{35}
+  \item {heading}
+    \subitem {boid\discretionary {-}{}{}::\discretionary {-}{}{}Boid}, 
+		\hyperpage{35}
+
+  \indexspace
+
+  \item {in\discretionary {-}{}{}Goal}
+    \subitem {boid\discretionary {-}{}{}::\discretionary {-}{}{}Boid}, 
+		\hyperpage{27}
+  \item {in\discretionary {-}{}{}World}
+    \subitem {boid\discretionary {-}{}{}::\discretionary {-}{}{}Boid}, 
+		\hyperpage{28}
+  \item {init\discretionary {-}{}{}\_\discretionary {-}{}{}prm}
+    \subitem {boidsimulation\discretionary {-}{}{}::\discretionary {-}{}{}Flock\discretionary {-}{}{}Sim}, 
+		\hyperpage{45}
+  \item {init\discretionary {-}{}{}Function\discretionary {-}{}{}Parameters}
+    \subitem {boid\discretionary {-}{}{}::\discretionary {-}{}{}Boid}, 
+		\hyperpage{28}
+  \item {init\discretionary {-}{}{}Omega}
+    \subitem {prm\discretionary {-}{}{}::\discretionary {-}{}{}P\discretionary {-}{}{}R\discretionary {-}{}{}M\discretionary {-}{}{}Generator}, 
+		\hyperpage{67}
+  \item {init\discretionary {-}{}{}Vars}
+    \subitem {configuration\discretionary {-}{}{}::\discretionary {-}{}{}Poly\discretionary {-}{}{}File\discretionary {-}{}{}Configuration}, 
+		\hyperpage{51}
+  \item {iterations}
+    \subitem {boidsimulation\discretionary {-}{}{}::\discretionary {-}{}{}Flock\discretionary {-}{}{}Sim}, 
+		\hyperpage{48}
+
+  \indexspace
+
+  \item {mag}
+    \subitem {boid\discretionary {-}{}{}::\discretionary {-}{}{}Boid}, 
+		\hyperpage{28}
+  \item {map\discretionary {-}{}{}Dict}
+    \subitem {test\discretionary {-}{}{}\_\discretionary {-}{}{}sim}, 
+		\hyperpage{16}
+  \item {map\discretionary {-}{}{}File}
+    \subitem {boidsimulation\discretionary {-}{}{}::\discretionary {-}{}{}Flock\discretionary {-}{}{}Sim}, 
+		\hyperpage{48}
+  \item {map\discretionary {-}{}{}File\discretionary {-}{}{}Path}
+    \subitem {test\discretionary {-}{}{}\_\discretionary {-}{}{}sim}, 
+		\hyperpage{17}
+  \item {map\discretionary {-}{}{}List}
+    \subitem {gatherstats}, \hyperpage{13}
+  \item {map\discretionary {-}{}{}Val}
+    \subitem {mapparser}, \hyperpage{14}
+  \item {mapparser}, \hyperpage{14}
+    \subitem {map\discretionary {-}{}{}Val}, \hyperpage{14}
+    \subitem {mparse}, \hyperpage{14}
+  \item {max\discretionary {-}{}{}\_\discretionary {-}{}{}displacement}
+    \subitem {obstacle\discretionary {-}{}{}::\discretionary {-}{}{}Poly\discretionary {-}{}{}Obstacle}, 
+		\hyperpage{60}
+  \item {max\discretionary {-}{}{}Dist}
+    \subitem {obstacle\discretionary {-}{}{}::\discretionary {-}{}{}Poly\discretionary {-}{}{}Obstacle}, 
+		\hyperpage{60}
+  \item {mparse}
+    \subitem {mapparser}, \hyperpage{14}
+
+  \indexspace
+
+  \item {n\discretionary {-}{}{}Stuck\discretionary {-}{}{}D\discretionary {-}{}{}Avg}
+    \subitem {boid\discretionary {-}{}{}::\discretionary {-}{}{}Boid}, 
+		\hyperpage{36}
+  \item {n\discretionary {-}{}{}Stuck\discretionary {-}{}{}D\discretionary {-}{}{}Sigma}
+    \subitem {boid\discretionary {-}{}{}::\discretionary {-}{}{}Boid}, 
+		\hyperpage{36}
+  \item {neighbor\discretionary {-}{}{}Size}
+    \subitem {boid\discretionary {-}{}{}::\discretionary {-}{}{}Boid}, 
+		\hyperpage{35}
+  \item {nodes}
+    \subitem {configuration\discretionary {-}{}{}::\discretionary {-}{}{}Poly\discretionary {-}{}{}File\discretionary {-}{}{}Configuration}, 
+		\hyperpage{52}
+    \subitem {obstacle\discretionary {-}{}{}::\discretionary {-}{}{}Poly\discretionary {-}{}{}Obstacle}, 
+		\hyperpage{60}
+  \item {norm}
+    \subitem {boid\discretionary {-}{}{}::\discretionary {-}{}{}Boid}, 
+		\hyperpage{29}
+    \subitem {obstacle\discretionary {-}{}{}::\discretionary {-}{}{}Poly\discretionary {-}{}{}Obstacle}, 
+		\hyperpage{57}
+    \subitem {prm\discretionary {-}{}{}::\discretionary {-}{}{}P\discretionary {-}{}{}R\discretionary {-}{}{}M\discretionary {-}{}{}Generator}, 
+		\hyperpage{68}
+  \item {num\discretionary {-}{}{}In\discretionary {-}{}{}Goal}
+    \subitem {boidsimulation\discretionary {-}{}{}::\discretionary {-}{}{}Flock\discretionary {-}{}{}Sim}, 
+		\hyperpage{48}
+  \item {num\discretionary {-}{}{}Neighbours}
+    \subitem {configuration\discretionary {-}{}{}::\discretionary {-}{}{}Configuration}, 
+		\hyperpage{41}
+  \item {num\discretionary {-}{}{}Next}
+    \subitem {prm\discretionary {-}{}{}::\discretionary {-}{}{}P\discretionary {-}{}{}R\discretionary {-}{}{}M\discretionary {-}{}{}Generator}, 
+		\hyperpage{69}
+  \item {num\discretionary {-}{}{}Sample\discretionary {-}{}{}Points}
+    \subitem {configuration\discretionary {-}{}{}::\discretionary {-}{}{}Configuration}, 
+		\hyperpage{41}
+
+  \indexspace
+
+  \item {ob\discretionary {-}{}{}Beta}
+    \subitem {boid\discretionary {-}{}{}::\discretionary {-}{}{}Boid}, 
+		\hyperpage{36}
+  \item {ob\discretionary {-}{}{}Influence\discretionary {-}{}{}R}
+    \subitem {boid\discretionary {-}{}{}::\discretionary {-}{}{}Boid}, 
+		\hyperpage{36}
+  \item {obstacle}, \hyperpage{15}
+    \subitem {\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}\_\discretionary {-}{}{}author\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}\_\discretionary {-}{}{}}, 
+		\hyperpage{15}
+  \item {obstacle.\discretionary {-}{}{}Poly\discretionary {-}{}{}Obstacle}, 
+		\hyperpage{52}
+  \item {obstacle\discretionary {-}{}{}::\discretionary {-}{}{}Poly\discretionary {-}{}{}Obstacle}
+    \subitem {\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}\_\discretionary {-}{}{}init\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}\_\discretionary {-}{}{}}, 
+		\hyperpage{54}
+    \subitem {avg\discretionary {-}{}{}Point}, \hyperpage{60}
+    \subitem {boundary}, \hyperpage{60}
+    \subitem {change\discretionary {-}{}{}\_\discretionary {-}{}{}direction}, 
+		\hyperpage{54}
+    \subitem {check\discretionary {-}{}{}Collision\discretionary {-}{}{}With\discretionary {-}{}{}Other\discretionary {-}{}{}Obstacles}, 
+		\hyperpage{54}
+    \subitem {colors}, \hyperpage{60}
+    \subitem {detect\discretionary {-}{}{}Collision}, \hyperpage{54}
+    \subitem {determine\discretionary {-}{}{}\_\discretionary {-}{}{}last\discretionary {-}{}{}\_\discretionary {-}{}{}direction}, 
+		\hyperpage{54}
+    \subitem {displacement}, \hyperpage{60}
+    \subitem {draw}, \hyperpage{55}
+    \subitem {dynamic}, \hyperpage{60}
+    \subitem {estimate\discretionary {-}{}{}Poly}, \hyperpage{55}
+    \subitem {get\discretionary {-}{}{}Closest\discretionary {-}{}{}Point}, 
+		\hyperpage{55}
+    \subitem {get\discretionary {-}{}{}Point}, \hyperpage{56}
+    \subitem {get\discretionary {-}{}{}Radius}, \hyperpage{56}
+    \subitem {max\discretionary {-}{}{}\_\discretionary {-}{}{}displacement}, 
+		\hyperpage{60}
+    \subitem {max\discretionary {-}{}{}Dist}, \hyperpage{60}
+    \subitem {nodes}, \hyperpage{60}
+    \subitem {norm}, \hyperpage{57}
+    \subitem {obstacles}, \hyperpage{60}
+    \subitem {point\discretionary {-}{}{}Allowed}, \hyperpage{57}
+    \subitem {point\discretionary {-}{}{}In\discretionary {-}{}{}Poly}, 
+		\hyperpage{58}
+    \subitem {rayintersectseg}, \hyperpage{59}
+    \subitem {remove\discretionary {-}{}{}Self\discretionary {-}{}{}From\discretionary {-}{}{}Obstacle\discretionary {-}{}{}List}, 
+		\hyperpage{59}
+    \subitem {screen}, \hyperpage{60}
+    \subitem {translate}, \hyperpage{59}
+    \subitem {velocity}, \hyperpage{61}
+  \item {obstacle\discretionary {-}{}{}File}
+    \subitem {boidsimulation\discretionary {-}{}{}::\discretionary {-}{}{}Flock\discretionary {-}{}{}Sim}, 
+		\hyperpage{48}
+  \item {obstacle\discretionary {-}{}{}File\discretionary {-}{}{}Path}
+    \subitem {test\discretionary {-}{}{}\_\discretionary {-}{}{}sim}, 
+		\hyperpage{17}
+  \item {obstacle\discretionary {-}{}{}Func}
+    \subitem {boid\discretionary {-}{}{}::\discretionary {-}{}{}Boid}, 
+		\hyperpage{29}
+  \item {obstacle\discretionary {-}{}{}List}
+    \subitem {boid\discretionary {-}{}{}::\discretionary {-}{}{}Boid}, 
+		\hyperpage{36}
+    \subitem {configuration\discretionary {-}{}{}::\discretionary {-}{}{}Poly\discretionary {-}{}{}File\discretionary {-}{}{}Configuration}, 
+		\hyperpage{52}
+    \subitem {prm\discretionary {-}{}{}::\discretionary {-}{}{}P\discretionary {-}{}{}R\discretionary {-}{}{}M\discretionary {-}{}{}Generator}, 
+		\hyperpage{69}
+  \item {obstacles}
+    \subitem {obstacle\discretionary {-}{}{}::\discretionary {-}{}{}Poly\discretionary {-}{}{}Obstacle}, 
+		\hyperpage{60}
+  \item {omega\discretionary {-}{}{}Dict}
+    \subitem {prm\discretionary {-}{}{}::\discretionary {-}{}{}P\discretionary {-}{}{}R\discretionary {-}{}{}M\discretionary {-}{}{}Generator}, 
+		\hyperpage{69}
+
+  \indexspace
+
+  \item {parse\discretionary {-}{}{}Dynamic\discretionary {-}{}{}Obstacles}
+    \subitem {configuration\discretionary {-}{}{}::\discretionary {-}{}{}Poly\discretionary {-}{}{}File\discretionary {-}{}{}Configuration}, 
+		\hyperpage{51}
+  \item {play}
+    \subitem {boidsimulation\discretionary {-}{}{}::\discretionary {-}{}{}Flock\discretionary {-}{}{}Sim}, 
+		\hyperpage{46}
+  \item {point\discretionary {-}{}{}Allowed}
+    \subitem {boid\discretionary {-}{}{}::\discretionary {-}{}{}Boid}, 
+		\hyperpage{30}
+    \subitem {obstacle\discretionary {-}{}{}::\discretionary {-}{}{}Poly\discretionary {-}{}{}Obstacle}, 
+		\hyperpage{57}
+  \item {point\discretionary {-}{}{}In\discretionary {-}{}{}Poly}
+    \subitem {obstacle\discretionary {-}{}{}::\discretionary {-}{}{}Poly\discretionary {-}{}{}Obstacle}, 
+		\hyperpage{58}
+  \item {position}
+    \subitem {boid\discretionary {-}{}{}::\discretionary {-}{}{}Boid}, 
+		\hyperpage{36}
+    \subitem {goal\discretionary {-}{}{}::\discretionary {-}{}{}Circle\discretionary {-}{}{}Goal}, 
+		\hyperpage{39}
+  \item {position\discretionary {-}{}{}Buffer}
+    \subitem {boid\discretionary {-}{}{}::\discretionary {-}{}{}Boid}, 
+		\hyperpage{36}
+  \item {priodict}, \hyperpage{15}
+  \item {priodict.\discretionary {-}{}{}priority\discretionary {-}{}{}Dictionary}, 
+		\hyperpage{61}
+  \item {priodict\discretionary {-}{}{}::priority\discretionary {-}{}{}Dictionary}
+    \subitem {\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}\_\discretionary {-}{}{}init\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}\_\discretionary {-}{}{}}, 
+		\hyperpage{62}
+    \subitem {\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}\_\discretionary {-}{}{}iter\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}\_\discretionary {-}{}{}}, 
+		\hyperpage{62}
+    \subitem {\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}\_\discretionary {-}{}{}setitem\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}\_\discretionary {-}{}{}}, 
+		\hyperpage{62}
+    \subitem {setdefault}, \hyperpage{62}
+    \subitem {smallest}, \hyperpage{63}
+  \item {prm}, \hyperpage{15}
+  \item {prm.\discretionary {-}{}{}P\discretionary {-}{}{}R\discretionary {-}{}{}M\discretionary {-}{}{}Generator}, 
+		\hyperpage{63}
+  \item {prm\discretionary {-}{}{}::\discretionary {-}{}{}P\discretionary {-}{}{}R\discretionary {-}{}{}M\discretionary {-}{}{}Generator}
+    \subitem {\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}\_\discretionary {-}{}{}init\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}\_\discretionary {-}{}{}}, 
+		\hyperpage{64}
+    \subitem {adjacent\discretionary {-}{}{}Thresh}, \hyperpage{68}
+    \subitem {dont\discretionary {-}{}{}Draw}, \hyperpage{69}
+    \subitem {draw}, \hyperpage{65}
+    \subitem {draw\discretionary {-}{}{}Path}, \hyperpage{65}
+    \subitem {end\discretionary {-}{}{}Pos}, \hyperpage{69}
+    \subitem {filter\discretionary {-}{}{}Sub\discretionary {-}{}{}Goal}, 
+		\hyperpage{65}
+    \subitem {find\discretionary {-}{}{}Neighbors}, \hyperpage{65}
+    \subitem {g\discretionary {-}{}{}Pos\discretionary {-}{}{}List}, 
+		\hyperpage{69}
+    \subitem {generate}, \hyperpage{66}
+    \subitem {generate\discretionary {-}{}{}Position\discretionary {-}{}{}List}, 
+		\hyperpage{66}
+    \subitem {get\discretionary {-}{}{}Random}, \hyperpage{67}
+    \subitem {get\discretionary {-}{}{}Shortest\discretionary {-}{}{}Path}, 
+		\hyperpage{67}
+    \subitem {goal\discretionary {-}{}{}Nodes}, \hyperpage{69}
+    \subitem {init\discretionary {-}{}{}Omega}, \hyperpage{67}
+    \subitem {norm}, \hyperpage{68}
+    \subitem {num\discretionary {-}{}{}Next}, \hyperpage{69}
+    \subitem {obstacle\discretionary {-}{}{}List}, \hyperpage{69}
+    \subitem {omega\discretionary {-}{}{}Dict}, \hyperpage{69}
+    \subitem {roadmap}, \hyperpage{69}
+    \subitem {screen}, \hyperpage{69}
+    \subitem {start\discretionary {-}{}{}Pos}, \hyperpage{69}
+    \subitem {sub\discretionary {-}{}{}Goal\discretionary {-}{}{}Number}, 
+		\hyperpage{70}
+    \subitem {sub\discretionary {-}{}{}Goal\discretionary {-}{}{}Position\discretionary {-}{}{}List}, 
+		\hyperpage{70}
+    \subitem {x\discretionary {-}{}{}Size}, \hyperpage{70}
+    \subitem {y\discretionary {-}{}{}Size}, \hyperpage{70}
+  \item {prm\discretionary {-}{}{}Gen}
+    \subitem {boid\discretionary {-}{}{}::\discretionary {-}{}{}Boid}, 
+		\hyperpage{36}
+    \subitem {configuration\discretionary {-}{}{}::\discretionary {-}{}{}Poly\discretionary {-}{}{}File\discretionary {-}{}{}Configuration}, 
+		\hyperpage{52}
+
+  \indexspace
+
+  \item {radius}
+    \subitem {boid\discretionary {-}{}{}::\discretionary {-}{}{}Boid}, 
+		\hyperpage{36}
+    \subitem {goal\discretionary {-}{}{}::\discretionary {-}{}{}Circle\discretionary {-}{}{}Goal}, 
+		\hyperpage{39}
+  \item {rand\discretionary {-}{}{}Walk\discretionary {-}{}{}Count}
+    \subitem {boid\discretionary {-}{}{}::\discretionary {-}{}{}Boid}, 
+		\hyperpage{37}
+  \item {random\discretionary {-}{}{}Walk\discretionary {-}{}{}X}
+    \subitem {boid\discretionary {-}{}{}::\discretionary {-}{}{}Boid}, 
+		\hyperpage{37}
+  \item {random\discretionary {-}{}{}Walk\discretionary {-}{}{}Y}
+    \subitem {boid\discretionary {-}{}{}::\discretionary {-}{}{}Boid}, 
+		\hyperpage{37}
+  \item {rayintersectseg}
+    \subitem {obstacle\discretionary {-}{}{}::\discretionary {-}{}{}Poly\discretionary {-}{}{}Obstacle}, 
+		\hyperpage{59}
+  \item {reduce\discretionary {-}{}{}Weight\discretionary {-}{}{}Values}
+    \subitem {boid\discretionary {-}{}{}::\discretionary {-}{}{}Boid}, 
+		\hyperpage{30}
+  \item {remove\discretionary {-}{}{}Self\discretionary {-}{}{}From\discretionary {-}{}{}Obstacle\discretionary {-}{}{}List}
+    \subitem {obstacle\discretionary {-}{}{}::\discretionary {-}{}{}Poly\discretionary {-}{}{}Obstacle}, 
+		\hyperpage{59}
+  \item {render}
+    \subitem {boidsimulation\discretionary {-}{}{}::\discretionary {-}{}{}Flock\discretionary {-}{}{}Sim}, 
+		\hyperpage{46}
+  \item {roadmap}
+    \subitem {boid\discretionary {-}{}{}::\discretionary {-}{}{}Boid}, 
+		\hyperpage{37}
+    \subitem {prm\discretionary {-}{}{}::\discretionary {-}{}{}P\discretionary {-}{}{}R\discretionary {-}{}{}M\discretionary {-}{}{}Generator}, 
+		\hyperpage{69}
+
+  \indexspace
+
+  \item {s\discretionary {-}{}{}Pos}
+    \subitem {boid\discretionary {-}{}{}::\discretionary {-}{}{}Boid}, 
+		\hyperpage{37}
+    \subitem {boidsimulation\discretionary {-}{}{}::\discretionary {-}{}{}Flock\discretionary {-}{}{}Sim}, 
+		\hyperpage{48}
+  \item {screen}
+    \subitem {boid\discretionary {-}{}{}::\discretionary {-}{}{}Boid}, 
+		\hyperpage{37}
+    \subitem {configuration\discretionary {-}{}{}::\discretionary {-}{}{}Configuration}, 
+		\hyperpage{41}
+    \subitem {goal\discretionary {-}{}{}::\discretionary {-}{}{}Circle\discretionary {-}{}{}Goal}, 
+		\hyperpage{39}
+    \subitem {obstacle\discretionary {-}{}{}::\discretionary {-}{}{}Poly\discretionary {-}{}{}Obstacle}, 
+		\hyperpage{60}
+    \subitem {prm\discretionary {-}{}{}::\discretionary {-}{}{}P\discretionary {-}{}{}R\discretionary {-}{}{}M\discretionary {-}{}{}Generator}, 
+		\hyperpage{69}
+  \item {set\discretionary {-}{}{}Boid\discretionary {-}{}{}List}
+    \subitem {boid\discretionary {-}{}{}::\discretionary {-}{}{}Boid}, 
+		\hyperpage{31}
+  \item {set\discretionary {-}{}{}New\discretionary {-}{}{}Goal}
+    \subitem {boid\discretionary {-}{}{}::\discretionary {-}{}{}Boid}, 
+		\hyperpage{31}
+  \item {setdefault}
+    \subitem {priodict\discretionary {-}{}{}::priority\discretionary {-}{}{}Dictionary}, 
+		\hyperpage{62}
+  \item {shortest\discretionary {-}{}{}Path}
+    \subitem {dijkstra}, \hyperpage{12}
+  \item {sigmoid\discretionary {-}{}{}Func}
+    \subitem {boid\discretionary {-}{}{}::\discretionary {-}{}{}Boid}, 
+		\hyperpage{31}
+  \item {smallest}
+    \subitem {priodict\discretionary {-}{}{}::priority\discretionary {-}{}{}Dictionary}, 
+		\hyperpage{63}
+  \item {speed}
+    \subitem {boid\discretionary {-}{}{}::\discretionary {-}{}{}Boid}, 
+		\hyperpage{37}
+  \item {start\discretionary {-}{}{}Point}
+    \subitem {configuration\discretionary {-}{}{}::\discretionary {-}{}{}Poly\discretionary {-}{}{}File\discretionary {-}{}{}Configuration}, 
+		\hyperpage{52}
+    \subitem {test\discretionary {-}{}{}\_\discretionary {-}{}{}sim}, 
+		\hyperpage{17}
+  \item {start\discretionary {-}{}{}Pos}
+    \subitem {prm\discretionary {-}{}{}::\discretionary {-}{}{}P\discretionary {-}{}{}R\discretionary {-}{}{}M\discretionary {-}{}{}Generator}, 
+		\hyperpage{69}
+  \item {start\discretionary {-}{}{}Time}
+    \subitem {boidsimulation\discretionary {-}{}{}::\discretionary {-}{}{}Flock\discretionary {-}{}{}Sim}, 
+		\hyperpage{49}
+  \item {stuck}
+    \subitem {boid\discretionary {-}{}{}::\discretionary {-}{}{}Boid}, 
+		\hyperpage{37}
+  \item {stuck\discretionary {-}{}{}Const}
+    \subitem {boid\discretionary {-}{}{}::\discretionary {-}{}{}Boid}, 
+		\hyperpage{37}
+  \item {stuck\discretionary {-}{}{}D\discretionary {-}{}{}Avg}
+    \subitem {boid\discretionary {-}{}{}::\discretionary {-}{}{}Boid}, 
+		\hyperpage{38}
+  \item {stuck\discretionary {-}{}{}D\discretionary {-}{}{}Sigma}
+    \subitem {boid\discretionary {-}{}{}::\discretionary {-}{}{}Boid}, 
+		\hyperpage{38}
+  \item {sub\discretionary {-}{}{}Goal\discretionary {-}{}{}Number}
+    \subitem {prm\discretionary {-}{}{}::\discretionary {-}{}{}P\discretionary {-}{}{}R\discretionary {-}{}{}M\discretionary {-}{}{}Generator}, 
+		\hyperpage{70}
+  \item {sub\discretionary {-}{}{}Goal\discretionary {-}{}{}Position\discretionary {-}{}{}List}
+    \subitem {prm\discretionary {-}{}{}::\discretionary {-}{}{}P\discretionary {-}{}{}R\discretionary {-}{}{}M\discretionary {-}{}{}Generator}, 
+		\hyperpage{70}
+  \item {sum\discretionary {-}{}{}Divide}
+    \subitem {boid\discretionary {-}{}{}::\discretionary {-}{}{}Boid}, 
+		\hyperpage{32}
+  \item {surface\discretionary {-}{}{}List}
+    \subitem {boidsimulation\discretionary {-}{}{}::\discretionary {-}{}{}Flock\discretionary {-}{}{}Sim}, 
+		\hyperpage{49}
+
+  \indexspace
+
+  \item {test\discretionary {-}{}{}\_\discretionary {-}{}{}sim}, 
+		\hyperpage{16}
+    \subitem {arg}, \hyperpage{16}
+    \subitem {dynamic\discretionary {-}{}{}Obstacle\discretionary {-}{}{}Auto\discretionary {-}{}{}Generate}, 
+		\hyperpage{16}
+    \subitem {end\discretionary {-}{}{}Point}, \hyperpage{16}
+    \subitem {flock\discretionary {-}{}{}Size}, \hyperpage{16}
+    \subitem {fs}, \hyperpage{16}
+    \subitem {generate\discretionary {-}{}{}Target}, \hyperpage{16}
+    \subitem {map\discretionary {-}{}{}Dict}, \hyperpage{16}
+    \subitem {map\discretionary {-}{}{}File\discretionary {-}{}{}Path}, 
+		\hyperpage{17}
+    \subitem {obstacle\discretionary {-}{}{}File\discretionary {-}{}{}Path}, 
+		\hyperpage{17}
+    \subitem {start\discretionary {-}{}{}Point}, \hyperpage{17}
+  \item {test\discretionary {-}{}{}List}
+    \subitem {gatherstats}, \hyperpage{13}
+  \item {translate}
+    \subitem {obstacle\discretionary {-}{}{}::\discretionary {-}{}{}Poly\discretionary {-}{}{}Obstacle}, 
+		\hyperpage{59}
+
+  \indexspace
+
+  \item {update}
+    \subitem {boid\discretionary {-}{}{}::\discretionary {-}{}{}Boid}, 
+		\hyperpage{32}
+  \item {update\discretionary {-}{}{}Position\discretionary {-}{}{}Buffer}
+    \subitem {boid\discretionary {-}{}{}::\discretionary {-}{}{}Boid}, 
+		\hyperpage{33}
+
+  \indexspace
+
+  \item {velocity}
+    \subitem {obstacle\discretionary {-}{}{}::\discretionary {-}{}{}Poly\discretionary {-}{}{}Obstacle}, 
+		\hyperpage{61}
+
+  \indexspace
+
+  \item {W\discretionary {-}{}{}H\discretionary {-}{}{}I\discretionary {-}{}{}T\discretionary {-}{}{}E}
+    \subitem {boidsimulation\discretionary {-}{}{}::\discretionary {-}{}{}Flock\discretionary {-}{}{}Sim}, 
+		\hyperpage{49}
+
+  \indexspace
+
+  \item {x\discretionary {-}{}{}Size}
+    \subitem {prm\discretionary {-}{}{}::\discretionary {-}{}{}P\discretionary {-}{}{}R\discretionary {-}{}{}M\discretionary {-}{}{}Generator}, 
+		\hyperpage{70}
+
+  \indexspace
+
+  \item {y\discretionary {-}{}{}Size}
+    \subitem {boid\discretionary {-}{}{}::\discretionary {-}{}{}Boid}, 
+		\hyperpage{38}
+    \subitem {prm\discretionary {-}{}{}::\discretionary {-}{}{}P\discretionary {-}{}{}R\discretionary {-}{}{}M\discretionary {-}{}{}Generator}, 
+		\hyperpage{70}
+
+\end{theindex}

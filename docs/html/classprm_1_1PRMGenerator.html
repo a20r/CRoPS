@@ -124,6 +124,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aabedd114ea5948bb92f477be30b41619"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classprm_1_1PRMGenerator.html#aabedd114ea5948bb92f477be30b41619">generate</a></td></tr>
 <tr class="memdesc:aabedd114ea5948bb92f477be30b41619"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generates a series of random points that will become the roadmap and connects them and weights them into a graph.  <a href="#aabedd114ea5948bb92f477be30b41619">More...</a><br/></td></tr>
 <tr class="separator:aabedd114ea5948bb92f477be30b41619"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68f56f84f2ce43001c1f80a8d5300812"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classprm_1_1PRMGenerator.html#a68f56f84f2ce43001c1f80a8d5300812">getShortestPath</a></td></tr>
+<tr class="separator:a68f56f84f2ce43001c1f80a8d5300812"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2673d3d75416b4376244a24bf2504435"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classprm_1_1PRMGenerator.html#a2673d3d75416b4376244a24bf2504435">draw</a></td></tr>
 <tr class="memdesc:a2673d3d75416b4376244a24bf2504435"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draws the graph.  <a href="#a2673d3d75416b4376244a24bf2504435">More...</a><br/></td></tr>
 <tr class="separator:a2673d3d75416b4376244a24bf2504435"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -169,6 +171,9 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:a164c6ae962a75ed31d58eff1db95f141"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classprm_1_1PRMGenerator.html#a164c6ae962a75ed31d58eff1db95f141">gPosList</a></td></tr>
 <tr class="memdesc:a164c6ae962a75ed31d58eff1db95f141"><td class="mdescLeft">&#160;</td><td class="mdescRight">Holds the positions of the intermediate goals that were selected by the global path planner.  <a href="#a164c6ae962a75ed31d58eff1db95f141">More...</a><br/></td></tr>
 <tr class="separator:a164c6ae962a75ed31d58eff1db95f141"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af39d8001704a7437e6255ef4ca69189c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classprm_1_1PRMGenerator.html#af39d8001704a7437e6255ef4ca69189c">goalNodes</a></td></tr>
+<tr class="memdesc:af39d8001704a7437e6255ef4ca69189c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indexes of the goal positions.  <a href="#af39d8001704a7437e6255ef4ca69189c">More...</a><br/></td></tr>
+<tr class="separator:af39d8001704a7437e6255ef4ca69189c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad56b6bb5da1e474ab8a8099863207de3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classprm_1_1PRMGenerator.html#ad56b6bb5da1e474ab8a8099863207de3">omegaDict</a></td></tr>
 <tr class="memdesc:ad56b6bb5da1e474ab8a8099863207de3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dictionary (for easy access) that holds the weights for the nodes.  <a href="#ad56b6bb5da1e474ab8a8099863207de3">More...</a><br/></td></tr>
 <tr class="separator:ad56b6bb5da1e474ab8a8099863207de3"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -179,7 +184,7 @@ Public Attributes</h2></td></tr>
 <div class="textblock"><p>Class used to hold methods and variables that are important for the global path planning problem. </p>
 <p>This class generates the roadmap and finds the shortest path to the the goals by determining intermediate goals for the boids to be attracted to </p>
 
-<p>Definition at line <a class="el" href="prm_8py_source.html#l00015">15</a> of file <a class="el" href="prm_8py_source.html">prm.py</a>.</p>
+<p>Definition at line <a class="el" href="prm_8py_source.html#l00016">16</a> of file <a class="el" href="prm_8py_source.html">prm.py</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="ac4b13e231e5e29be30e993100bfffdec"></a>
 <div class="memitem">
@@ -256,7 +261,7 @@ Public Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="prm_8py_source.html#l00031">31</a> of file <a class="el" href="prm_8py_source.html">prm.py</a>.</p>
+<p>Definition at line <a class="el" href="prm_8py_source.html#l00038">38</a> of file <a class="el" href="prm_8py_source.html">prm.py</a>.</p>
 
 </div>
 </div>
@@ -277,16 +282,7 @@ Public Attributes</h2></td></tr>
 
 <p>Draws the graph. </p>
 
-<p>Definition at line <a class="el" href="prm_8py_source.html#l00280">280</a> of file <a class="el" href="prm_8py_source.html">prm.py</a>.</p>
-
-<p><div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classprm_1_1PRMGenerator_a2673d3d75416b4376244a24bf2504435_icgraph.png" border="0" usemap="#classprm_1_1PRMGenerator_a2673d3d75416b4376244a24bf2504435_icgraph" alt=""/></div>
-<map name="classprm_1_1PRMGenerator_a2673d3d75416b4376244a24bf2504435_icgraph" id="classprm_1_1PRMGenerator_a2673d3d75416b4376244a24bf2504435_icgraph">
-<area shape="rect" id="node3" href="classprm_1_1PRMGenerator.html#aabedd114ea5948bb92f477be30b41619" title="Generates a series of random points that will become the roadmap and connects them and weights them i..." alt="" coords="221,5,411,35"/></map>
-</div>
-</p>
+<p>Definition at line <a class="el" href="prm_8py_source.html#l00306">306</a> of file <a class="el" href="prm_8py_source.html">prm.py</a>.</p>
 
 </div>
 </div>
@@ -306,7 +302,7 @@ Here is the caller graph for this function:</div>
 
 <p>Draws the selected shortest path. </p>
 
-<p>Definition at line <a class="el" href="prm_8py_source.html#l00304">304</a> of file <a class="el" href="prm_8py_source.html">prm.py</a>.</p>
+<p>Definition at line <a class="el" href="prm_8py_source.html#l00330">330</a> of file <a class="el" href="prm_8py_source.html">prm.py</a>.</p>
 
 </div>
 </div>
@@ -326,7 +322,7 @@ Here is the caller graph for this function:</div>
 
 <p>Filters out sample points that are inside of obstacles or otherwise inadequate. </p>
 
-<p>Definition at line <a class="el" href="prm_8py_source.html#l00129">129</a> of file <a class="el" href="prm_8py_source.html">prm.py</a>.</p>
+<p>Definition at line <a class="el" href="prm_8py_source.html#l00135">135</a> of file <a class="el" href="prm_8py_source.html">prm.py</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -334,15 +330,6 @@ Here is the call graph for this function:</div>
 <div class="center"><img src="classprm_1_1PRMGenerator_a95608c8cfd4364e3b2a9d20709161365_cgraph.png" border="0" usemap="#classprm_1_1PRMGenerator_a95608c8cfd4364e3b2a9d20709161365_cgraph" alt=""/></div>
 <map name="classprm_1_1PRMGenerator_a95608c8cfd4364e3b2a9d20709161365_cgraph" id="classprm_1_1PRMGenerator_a95608c8cfd4364e3b2a9d20709161365_cgraph">
 <area shape="rect" id="node3" href="classboid_1_1Boid.html#a576c57d100aa5743d610de30bf1a2b2c" title="Gets the distance between two points." alt="" coords="308,5,417,35"/><area shape="rect" id="node5" href="classobstacle_1_1PolyObstacle.html#a3392ccb4d22e752b0f150af354b16862" title="Gets the Eulidean distance between p1 and p2." alt="" coords="269,59,456,88"/><area shape="rect" id="node7" href="classprm_1_1PRMGenerator.html#a652b3c0fa11645f351c23635d7e62dda" title="Gets the distance between p1 and p2." alt="" coords="279,112,447,141"/></map>
-</div>
-</p>
-
-<p><div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classprm_1_1PRMGenerator_a95608c8cfd4364e3b2a9d20709161365_icgraph.png" border="0" usemap="#classprm_1_1PRMGenerator_a95608c8cfd4364e3b2a9d20709161365_icgraph" alt=""/></div>
-<map name="classprm_1_1PRMGenerator_a95608c8cfd4364e3b2a9d20709161365_icgraph" id="classprm_1_1PRMGenerator_a95608c8cfd4364e3b2a9d20709161365_icgraph">
-<area shape="rect" id="node3" href="classprm_1_1PRMGenerator.html#aabedd114ea5948bb92f477be30b41619" title="Generates a series of random points that will become the roadmap and connects them and weights them i..." alt="" coords="269,5,459,35"/></map>
 </div>
 </p>
 
@@ -374,7 +361,7 @@ Here is the caller graph for this function:</div>
 
 <p>Finds suitable neighbours for a sample point. </p>
 
-<p>Definition at line <a class="el" href="prm_8py_source.html#l00150">150</a> of file <a class="el" href="prm_8py_source.html">prm.py</a>.</p>
+<p>Definition at line <a class="el" href="prm_8py_source.html#l00158">158</a> of file <a class="el" href="prm_8py_source.html">prm.py</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -382,15 +369,6 @@ Here is the call graph for this function:</div>
 <div class="center"><img src="classprm_1_1PRMGenerator_a2acf210887cb331b20c5378da634b4eb_cgraph.png" border="0" usemap="#classprm_1_1PRMGenerator_a2acf210887cb331b20c5378da634b4eb_cgraph" alt=""/></div>
 <map name="classprm_1_1PRMGenerator_a2acf210887cb331b20c5378da634b4eb_cgraph" id="classprm_1_1PRMGenerator_a2acf210887cb331b20c5378da634b4eb_cgraph">
 <area shape="rect" id="node3" href="classboid_1_1Boid.html#a576c57d100aa5743d610de30bf1a2b2c" title="Gets the distance between two points." alt="" coords="311,5,420,35"/><area shape="rect" id="node5" href="classobstacle_1_1PolyObstacle.html#a3392ccb4d22e752b0f150af354b16862" title="Gets the Eulidean distance between p1 and p2." alt="" coords="272,59,459,88"/><area shape="rect" id="node7" href="classprm_1_1PRMGenerator.html#a652b3c0fa11645f351c23635d7e62dda" title="Gets the distance between p1 and p2." alt="" coords="281,112,449,141"/></map>
-</div>
-</p>
-
-<p><div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classprm_1_1PRMGenerator_a2acf210887cb331b20c5378da634b4eb_icgraph.png" border="0" usemap="#classprm_1_1PRMGenerator_a2acf210887cb331b20c5378da634b4eb_icgraph" alt=""/></div>
-<map name="classprm_1_1PRMGenerator_a2acf210887cb331b20c5378da634b4eb_icgraph" id="classprm_1_1PRMGenerator_a2acf210887cb331b20c5378da634b4eb_icgraph">
-<area shape="rect" id="node3" href="classprm_1_1PRMGenerator.html#aabedd114ea5948bb92f477be30b41619" title="Generates a series of random points that will become the roadmap and connects them and weights them i..." alt="" coords="272,5,461,35"/></map>
 </div>
 </p>
 
@@ -421,9 +399,9 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 
 <p>Generates a series of random points that will become the roadmap and connects them and weights them into a graph. </p>
-<pre class="fragment">    If the goal and the starting point are not connected, more
-    points are added. The roadmap is then searched for the shortest
-    weighted distance which become the intermediate goals.
+<pre class="fragment">     If the goal and the starting point are not connected, more
+     points are added. The roadmap is then searched for the shortest
+     weighted distance which become the intermediate goals.
 </pre> <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">subGoalRadius</td><td>The radius of the intermediate goals </td></tr>
@@ -432,16 +410,7 @@ Here is the caller graph for this function:</div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>A list of sub goals from the roadmap connecting the starting point and the end goal </dd></dl>
 
-<p>Definition at line <a class="el" href="prm_8py_source.html#l00215">215</a> of file <a class="el" href="prm_8py_source.html">prm.py</a>.</p>
-
-<p><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classprm_1_1PRMGenerator_aabedd114ea5948bb92f477be30b41619_cgraph.png" border="0" usemap="#classprm_1_1PRMGenerator_aabedd114ea5948bb92f477be30b41619_cgraph" alt=""/></div>
-<map name="classprm_1_1PRMGenerator_aabedd114ea5948bb92f477be30b41619_cgraph" id="classprm_1_1PRMGenerator_aabedd114ea5948bb92f477be30b41619_cgraph">
-<area shape="rect" id="node3" href="classprm_1_1PRMGenerator.html#a2acf210887cb331b20c5378da634b4eb" title="Finds suitable neighbours for a sample point." alt="" coords="243,48,461,77"/><area shape="rect" id="node5" href="classboid_1_1Boid.html#a576c57d100aa5743d610de30bf1a2b2c" title="Gets the distance between two points." alt="" coords="559,55,668,84"/><area shape="rect" id="node7" href="classobstacle_1_1PolyObstacle.html#a3392ccb4d22e752b0f150af354b16862" title="Gets the Eulidean distance between p1 and p2." alt="" coords="520,120,707,149"/><area shape="rect" id="node9" href="classprm_1_1PRMGenerator.html#a652b3c0fa11645f351c23635d7e62dda" title="Gets the distance between p1 and p2." alt="" coords="529,199,697,228"/><area shape="rect" id="node14" href="classboid_1_1Boid.html#a289cbbc12cc9c3e7445a5f37b2d88124" title="Draws the boid as a pygame circle in the pygame screen." alt="" coords="299,309,405,339"/><area shape="rect" id="node16" href="classgoal_1_1CircleGoal.html#a91dfa039728e5b68a97fbfa59f4d03e6" title="Draws the circle onto the pygame screen." alt="" coords="281,363,423,392"/><area shape="rect" id="node18" href="classobstacle_1_1PolyObstacle.html#a9b5b53a6b8ee6233de2ee394871ebe6e" title="Draws the polygon on the PyGame screen." alt="" coords="260,416,444,445"/><area shape="rect" id="node20" href="classprm_1_1PRMGenerator.html#a2673d3d75416b4376244a24bf2504435" title="Draws the graph." alt="" coords="269,469,435,499"/><area shape="rect" id="node22" href="namespacedijkstra.html#a20424eb142377bdf202ef03812875d83" title="Find a single shortest path from the given start vertex to the given end vertex." alt="" coords="281,523,423,552"/><area shape="rect" id="node26" href="classprm_1_1PRMGenerator.html#ad5ffd82c9245496759767b2791d3a2fa" title="Generates the random positions for the sample points." alt="" coords="257,575,447,622"/><area shape="rect" id="node30" href="classprm_1_1PRMGenerator.html#aaa44a7e209bb06af27c4120b78d70cfb" title="Initiates the omega function which holds the node weights." alt="" coords="253,101,451,131"/><area shape="rect" id="node35" href="classprm_1_1PRMGenerator.html#a95608c8cfd4364e3b2a9d20709161365" title="Filters out sample points that are inside of obstacles or otherwise inadequate." alt="" coords="245,205,459,235"/><area shape="rect" id="node24" href="namespacedijkstra.html#abb1e685c821d7000ea0f6a867070443d" title="Find shortest paths from the start vertex to all vertices nearer than or equal to the end..." alt="" coords="557,523,669,552"/><area shape="rect" id="node28" href="classprm_1_1PRMGenerator.html#acefd405f735018b6399df96c7025e7fe" title="Gets a random number and cathes the ValueError if the two numbers are the same." alt="" coords="511,584,716,613"/></map>
-</div>
-</p>
+<p>Definition at line <a class="el" href="prm_8py_source.html#l00223">223</a> of file <a class="el" href="prm_8py_source.html">prm.py</a>.</p>
 
 </div>
 </div>
@@ -478,7 +447,7 @@ Here is the call graph for this function:</div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>A list of random subgoals (sample points) </dd></dl>
 
-<p>Definition at line <a class="el" href="prm_8py_source.html#l00099">99</a> of file <a class="el" href="prm_8py_source.html">prm.py</a>.</p>
+<p>Definition at line <a class="el" href="prm_8py_source.html#l00105">105</a> of file <a class="el" href="prm_8py_source.html">prm.py</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -486,15 +455,6 @@ Here is the call graph for this function:</div>
 <div class="center"><img src="classprm_1_1PRMGenerator_ad5ffd82c9245496759767b2791d3a2fa_cgraph.png" border="0" usemap="#classprm_1_1PRMGenerator_ad5ffd82c9245496759767b2791d3a2fa_cgraph" alt=""/></div>
 <map name="classprm_1_1PRMGenerator_ad5ffd82c9245496759767b2791d3a2fa_cgraph" id="classprm_1_1PRMGenerator_ad5ffd82c9245496759767b2791d3a2fa_cgraph">
 <area shape="rect" id="node3" href="classprm_1_1PRMGenerator.html#acefd405f735018b6399df96c7025e7fe" title="Gets a random number and cathes the ValueError if the two numbers are the same." alt="" coords="244,13,449,43"/></map>
-</div>
-</p>
-
-<p><div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classprm_1_1PRMGenerator_ad5ffd82c9245496759767b2791d3a2fa_icgraph.png" border="0" usemap="#classprm_1_1PRMGenerator_ad5ffd82c9245496759767b2791d3a2fa_icgraph" alt=""/></div>
-<map name="classprm_1_1PRMGenerator_ad5ffd82c9245496759767b2791d3a2fa_icgraph" id="classprm_1_1PRMGenerator_ad5ffd82c9245496759767b2791d3a2fa_icgraph">
-<area shape="rect" id="node3" href="classprm_1_1PRMGenerator.html#aabedd114ea5948bb92f477be30b41619" title="Generates a series of random points that will become the roadmap and connects them and weights them i..." alt="" coords="243,13,432,43"/></map>
 </div>
 </p>
 
@@ -540,7 +500,7 @@ Here is the caller graph for this function:</div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>A random number </dd></dl>
 
-<p>Definition at line <a class="el" href="prm_8py_source.html#l00198">198</a> of file <a class="el" href="prm_8py_source.html">prm.py</a>.</p>
+<p>Definition at line <a class="el" href="prm_8py_source.html#l00206">206</a> of file <a class="el" href="prm_8py_source.html">prm.py</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -548,6 +508,55 @@ Here is the caller graph for this function:</div>
 <div class="center"><img src="classprm_1_1PRMGenerator_acefd405f735018b6399df96c7025e7fe_icgraph.png" border="0" usemap="#classprm_1_1PRMGenerator_acefd405f735018b6399df96c7025e7fe_icgraph" alt=""/></div>
 <map name="classprm_1_1PRMGenerator_acefd405f735018b6399df96c7025e7fe_icgraph" id="classprm_1_1PRMGenerator_acefd405f735018b6399df96c7025e7fe_icgraph">
 <area shape="rect" id="node3" href="classprm_1_1PRMGenerator.html#ad5ffd82c9245496759767b2791d3a2fa" title="Generates the random positions for the sample points." alt="" coords="261,5,451,51"/><area shape="rect" id="node5" href="classprm_1_1PRMGenerator.html#aabedd114ea5948bb92f477be30b41619" title="Generates a series of random points that will become the roadmap and connects them and weights them i..." alt="" coords="499,13,688,43"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a68f56f84f2ce43001c1f80a8d5300812"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def prm.PRMGenerator.getShortestPath </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>roadmap</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>fromNode</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>toNode</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="prm_8py_source.html#l00295">295</a> of file <a class="el" href="prm_8py_source.html">prm.py</a>.</p>
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classprm_1_1PRMGenerator_a68f56f84f2ce43001c1f80a8d5300812_cgraph.png" border="0" usemap="#classprm_1_1PRMGenerator_a68f56f84f2ce43001c1f80a8d5300812_cgraph" alt=""/></div>
+<map name="classprm_1_1PRMGenerator_a68f56f84f2ce43001c1f80a8d5300812_cgraph" id="classprm_1_1PRMGenerator_a68f56f84f2ce43001c1f80a8d5300812_cgraph">
+</map>
 </div>
 </p>
 
@@ -585,7 +594,7 @@ Here is the caller graph for this function:</div>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="prm_8py_source.html#l00112">112</a> of file <a class="el" href="prm_8py_source.html">prm.py</a>.</p>
+<p>Definition at line <a class="el" href="prm_8py_source.html#l00118">118</a> of file <a class="el" href="prm_8py_source.html">prm.py</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -593,15 +602,6 @@ Here is the call graph for this function:</div>
 <div class="center"><img src="classprm_1_1PRMGenerator_aaa44a7e209bb06af27c4120b78d70cfb_cgraph.png" border="0" usemap="#classprm_1_1PRMGenerator_aaa44a7e209bb06af27c4120b78d70cfb_cgraph" alt=""/></div>
 <map name="classprm_1_1PRMGenerator_aaa44a7e209bb06af27c4120b78d70cfb_cgraph" id="classprm_1_1PRMGenerator_aaa44a7e209bb06af27c4120b78d70cfb_cgraph">
 <area shape="rect" id="node3" href="classboid_1_1Boid.html#a576c57d100aa5743d610de30bf1a2b2c" title="Gets the distance between two points." alt="" coords="292,5,401,35"/><area shape="rect" id="node5" href="classobstacle_1_1PolyObstacle.html#a3392ccb4d22e752b0f150af354b16862" title="Gets the Eulidean distance between p1 and p2." alt="" coords="253,59,440,88"/><area shape="rect" id="node7" href="classprm_1_1PRMGenerator.html#a652b3c0fa11645f351c23635d7e62dda" title="Gets the distance between p1 and p2." alt="" coords="263,112,431,141"/></map>
-</div>
-</p>
-
-<p><div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classprm_1_1PRMGenerator_aaa44a7e209bb06af27c4120b78d70cfb_icgraph.png" border="0" usemap="#classprm_1_1PRMGenerator_aaa44a7e209bb06af27c4120b78d70cfb_icgraph" alt=""/></div>
-<map name="classprm_1_1PRMGenerator_aaa44a7e209bb06af27c4120b78d70cfb_icgraph" id="classprm_1_1PRMGenerator_aaa44a7e209bb06af27c4120b78d70cfb_icgraph">
-<area shape="rect" id="node3" href="classprm_1_1PRMGenerator.html#aabedd114ea5948bb92f477be30b41619" title="Generates a series of random points that will become the roadmap and connects them and weights them i..." alt="" coords="253,5,443,35"/></map>
 </div>
 </p>
 
@@ -647,7 +647,7 @@ Here is the caller graph for this function:</div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The Eulidean distance from p1 to p2 </dd></dl>
 
-<p>Definition at line <a class="el" href="prm_8py_source.html#l00087">87</a> of file <a class="el" href="prm_8py_source.html">prm.py</a>.</p>
+<p>Definition at line <a class="el" href="prm_8py_source.html#l00096">96</a> of file <a class="el" href="prm_8py_source.html">prm.py</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -673,7 +673,7 @@ Here is the caller graph for this function:</div>
 
 <p>Distance that the PRM is willing to check when connecting sample points. </p>
 
-<p>Definition at line <a class="el" href="prm_8py_source.html#l00053">53</a> of file <a class="el" href="prm_8py_source.html">prm.py</a>.</p>
+<p>Definition at line <a class="el" href="prm_8py_source.html#l00060">60</a> of file <a class="el" href="prm_8py_source.html">prm.py</a>.</p>
 
 </div>
 </div>
@@ -687,7 +687,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="prm_8py_source.html#l00078">78</a> of file <a class="el" href="prm_8py_source.html">prm.py</a>.</p>
+<p>Definition at line <a class="el" href="prm_8py_source.html#l00226">226</a> of file <a class="el" href="prm_8py_source.html">prm.py</a>.</p>
 
 </div>
 </div>
@@ -703,7 +703,23 @@ Here is the caller graph for this function:</div>
 
 <p>Position of the last goal. </p>
 
-<p>Definition at line <a class="el" href="prm_8py_source.html#l00040">40</a> of file <a class="el" href="prm_8py_source.html">prm.py</a>.</p>
+<p>Definition at line <a class="el" href="prm_8py_source.html#l00047">47</a> of file <a class="el" href="prm_8py_source.html">prm.py</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="af39d8001704a7437e6255ef4ca69189c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">prm.PRMGenerator.goalNodes</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Indexes of the goal positions. </p>
+
+<p>Definition at line <a class="el" href="prm_8py_source.html#l00082">82</a> of file <a class="el" href="prm_8py_source.html">prm.py</a>.</p>
 
 </div>
 </div>
@@ -719,7 +735,7 @@ Here is the caller graph for this function:</div>
 
 <p>Holds the positions of the intermediate goals that were selected by the global path planner. </p>
 
-<p>Definition at line <a class="el" href="prm_8py_source.html#l00072">72</a> of file <a class="el" href="prm_8py_source.html">prm.py</a>.</p>
+<p>Definition at line <a class="el" href="prm_8py_source.html#l00079">79</a> of file <a class="el" href="prm_8py_source.html">prm.py</a>.</p>
 
 </div>
 </div>
@@ -735,7 +751,7 @@ Here is the caller graph for this function:</div>
 
 <p>Maximum number of sample points that can be connected. </p>
 
-<p>Definition at line <a class="el" href="prm_8py_source.html#l00056">56</a> of file <a class="el" href="prm_8py_source.html">prm.py</a>.</p>
+<p>Definition at line <a class="el" href="prm_8py_source.html#l00063">63</a> of file <a class="el" href="prm_8py_source.html">prm.py</a>.</p>
 
 </div>
 </div>
@@ -751,7 +767,7 @@ Here is the caller graph for this function:</div>
 
 <p>List of obstacles. </p>
 
-<p>Definition at line <a class="el" href="prm_8py_source.html#l00034">34</a> of file <a class="el" href="prm_8py_source.html">prm.py</a>.</p>
+<p>Definition at line <a class="el" href="prm_8py_source.html#l00041">41</a> of file <a class="el" href="prm_8py_source.html">prm.py</a>.</p>
 
 </div>
 </div>
@@ -767,7 +783,7 @@ Here is the caller graph for this function:</div>
 
 <p>Dictionary (for easy access) that holds the weights for the nodes. </p>
 
-<p>Definition at line <a class="el" href="prm_8py_source.html#l00074">74</a> of file <a class="el" href="prm_8py_source.html">prm.py</a>.</p>
+<p>Definition at line <a class="el" href="prm_8py_source.html#l00084">84</a> of file <a class="el" href="prm_8py_source.html">prm.py</a>.</p>
 
 </div>
 </div>
@@ -784,7 +800,7 @@ Here is the caller graph for this function:</div>
 <p>The global roadmap. </p>
 <p>It will be a graph represented as a dictionary </p>
 
-<p>Definition at line <a class="el" href="prm_8py_source.html#l00068">68</a> of file <a class="el" href="prm_8py_source.html">prm.py</a>.</p>
+<p>Definition at line <a class="el" href="prm_8py_source.html#l00075">75</a> of file <a class="el" href="prm_8py_source.html">prm.py</a>.</p>
 
 </div>
 </div>
@@ -800,7 +816,7 @@ Here is the caller graph for this function:</div>
 
 <p>PyGame screen that is will be drawn on. </p>
 
-<p>Definition at line <a class="el" href="prm_8py_source.html#l00043">43</a> of file <a class="el" href="prm_8py_source.html">prm.py</a>.</p>
+<p>Definition at line <a class="el" href="prm_8py_source.html#l00050">50</a> of file <a class="el" href="prm_8py_source.html">prm.py</a>.</p>
 
 </div>
 </div>
@@ -816,7 +832,7 @@ Here is the caller graph for this function:</div>
 
 <p>Position of the first goal. </p>
 
-<p>Definition at line <a class="el" href="prm_8py_source.html#l00037">37</a> of file <a class="el" href="prm_8py_source.html">prm.py</a>.</p>
+<p>Definition at line <a class="el" href="prm_8py_source.html#l00044">44</a> of file <a class="el" href="prm_8py_source.html">prm.py</a>.</p>
 
 </div>
 </div>
@@ -832,7 +848,7 @@ Here is the caller graph for this function:</div>
 
 <p>Number of initial sample points. </p>
 
-<p>Definition at line <a class="el" href="prm_8py_source.html#l00059">59</a> of file <a class="el" href="prm_8py_source.html">prm.py</a>.</p>
+<p>Definition at line <a class="el" href="prm_8py_source.html#l00066">66</a> of file <a class="el" href="prm_8py_source.html">prm.py</a>.</p>
 
 </div>
 </div>
@@ -848,7 +864,7 @@ Here is the caller graph for this function:</div>
 
 <p>Initial positions of the sample points. </p>
 
-<p>Definition at line <a class="el" href="prm_8py_source.html#l00062">62</a> of file <a class="el" href="prm_8py_source.html">prm.py</a>.</p>
+<p>Definition at line <a class="el" href="prm_8py_source.html#l00069">69</a> of file <a class="el" href="prm_8py_source.html">prm.py</a>.</p>
 
 </div>
 </div>
@@ -864,7 +880,7 @@ Here is the caller graph for this function:</div>
 
 <p>Horizontal size of the PyGame screen. </p>
 
-<p>Definition at line <a class="el" href="prm_8py_source.html#l00046">46</a> of file <a class="el" href="prm_8py_source.html">prm.py</a>.</p>
+<p>Definition at line <a class="el" href="prm_8py_source.html#l00053">53</a> of file <a class="el" href="prm_8py_source.html">prm.py</a>.</p>
 
 </div>
 </div>
@@ -880,7 +896,7 @@ Here is the caller graph for this function:</div>
 
 <p>Vertical size of the PyGame screen. </p>
 
-<p>Definition at line <a class="el" href="prm_8py_source.html#l00049">49</a> of file <a class="el" href="prm_8py_source.html">prm.py</a>.</p>
+<p>Definition at line <a class="el" href="prm_8py_source.html#l00056">56</a> of file <a class="el" href="prm_8py_source.html">prm.py</a>.</p>
 
 </div>
 </div>
@@ -893,7 +909,7 @@ Here is the caller graph for this function:</div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespaceprm.html">prm</a></li><li class="navelem"><a class="el" href="classprm_1_1PRMGenerator.html">PRMGenerator</a></li>
-    <li class="footer">Generated on Tue Aug 6 2013 12:25:06 for CRoPS (Combined Roadmap and Potentials for Swarms) by
+    <li class="footer">Generated on Sun Dec 8 2013 00:48:05 for CRoPS (Combined Roadmap and Potentials for Swarms) by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.4 </li>
   </ul>

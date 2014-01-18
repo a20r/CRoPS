@@ -7,5 +7,6 @@ var searchData=
   ['binfluencer',['bInfluenceR',['../classboid_1_1Boid.html#ae1a1d62fdc0e9014df5fcb1a49d37342',1,'boid::Boid']]],
   ['black',['BLACK',['../classboidsimulation_1_1FlockSim.html#ac9c61aa93f3db94b9a340b8555d90adf',1,'boidsimulation::FlockSim']]],
   ['boidlist',['boidList',['../classboid_1_1Boid.html#a6d3a16e56bd3cc7efabf9ac7cae4ae16',1,'boid.Boid.boidList()'],['../classconfiguration_1_1PolyFileConfiguration.html#a34104bbe3eb34147465a4d9e05d6c6b6',1,'configuration.PolyFileConfiguration.boidList()']]],
-  ['boidspeed',['boidSpeed',['../classconfiguration_1_1Configuration.html#a5062047bc933b81cbbaa841e20cb2a67',1,'configuration::Configuration']]]
+  ['boidspeed',['boidSpeed',['../classconfiguration_1_1Configuration.html#a5062047bc933b81cbbaa841e20cb2a67',1,'configuration::Configuration']]],
+  ['boundary',['boundary',['../classobstacle_1_1PolyObstacle.html#a999b6ef28126661fc8d54e1d86c094e0',1,'obstacle::PolyObstacle']]]
 ];
