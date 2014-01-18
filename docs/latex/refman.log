@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  4 NOV 2013 20:36
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  8 DEC 2013 00:48
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1162,13 +1162,13 @@ ile (type pdf)
 
 <use namespacedijkstra_abb1e685c821d7000ea0f6a867070443d_icgraph.pdf>
 Package pdftex.def Info: namespacedijkstra_abb1e685c821d7000ea0f6a867070443d_ic
-graph.pdf used on input line 87.
+graph.pdf used on input line 86.
 (pdftex.def)             Requested size: 350.0pt x 73.15762pt.
 
 Underfull \vbox (badness 1107) has occurred while \output is active []
 
  [11]
-Underfull \hbox (badness 10000) detected at line 118
+Underfull \hbox (badness 10000) detected at line 117
 [][][]
  []
 
@@ -1180,7 +1180,7 @@ le (type pdf)
 
 <use namespacedijkstra_a20424eb142377bdf202ef03812875d83_cgraph.pdf>
 Package pdftex.def Info: namespacedijkstra_a20424eb142377bdf202ef03812875d83_cg
-raph.pdf used on input line 131.
+raph.pdf used on input line 130.
 (pdftex.def)             Requested size: 310.0pt x 102.00105pt.
 
 <namespacedijkstra_a20424eb142377bdf202ef03812875d83_icgraph.pdf, id=1651, 367.
@@ -1190,7 +1190,7 @@ ile (type pdf)
 
 <use namespacedijkstra_a20424eb142377bdf202ef03812875d83_icgraph.pdf>
 Package pdftex.def Info: namespacedijkstra_a20424eb142377bdf202ef03812875d83_ic
-graph.pdf used on input line 143.
+graph.pdf used on input line 141.
 (pdftex.def)             Requested size: 350.0pt x 97.54713pt.
 )
 (./namespacegatherstats.tex [12 <./namespacedijkstra_abb1e685c821d7000ea0f6a867
@@ -1501,7 +1501,7 @@ ile (type pdf)
 
 <use classboid_1_1Boid_a576c57d100aa5743d610de30bf1a2b2c_icgraph.pdf>
 Package pdftex.def Info: classboid_1_1Boid_a576c57d100aa5743d610de30bf1a2b2c_ic
-graph.pdf used on input line 709.
+graph.pdf used on input line 708.
 (pdftex.def)             Requested size: 350.0pt x 260.11324pt.
  [29 <./classboid_1_1Boid_a5324650d399f5c850ec7b7bda10eeae7_icgraph.pdf> <./cla
 ssboid_1_1Boid_a576c57d100aa5743d610de30bf1a2b2c_icgraph.pdf
@@ -1510,7 +1510,7 @@ pdfTeX warning: pdflatex (file ./classboid_1_1Boid_a576c57d100aa5743d610de30bf1
 a2b2c_icgraph.pdf): PDF inclusion: multiple pdfs with page group included in a 
 single page
 >]
-Underfull \hbox (badness 10000) detected at line 737
+Underfull \hbox (badness 10000) detected at line 736
 [][][]
  []
 
@@ -1522,7 +1522,7 @@ le (type pdf)
 
 <use classboid_1_1Boid_ab330aef12ad0a338a51a7661c736e971_cgraph.pdf>
 Package pdftex.def Info: classboid_1_1Boid_ab330aef12ad0a338a51a7661c736e971_cg
-raph.pdf used on input line 750.
+raph.pdf used on input line 749.
 (pdftex.def)             Requested size: 318.0pt x 102.00105pt.
 
 <classboid_1_1Boid_ab330aef12ad0a338a51a7661c736e971_icgraph.pdf, id=2049, 521.
@@ -1532,10 +1532,10 @@ ile (type pdf)
 
 <use classboid_1_1Boid_ab330aef12ad0a338a51a7661c736e971_icgraph.pdf>
 Package pdftex.def Info: classboid_1_1Boid_ab330aef12ad0a338a51a7661c736e971_ic
-graph.pdf used on input line 761.
+graph.pdf used on input line 760.
 (pdftex.def)             Requested size: 350.0pt x 68.65527pt.
 
-Underfull \hbox (badness 10000) detected at line 807
+Underfull \hbox (badness 10000) detected at line 806
 [][][]
  []
 
@@ -1547,7 +1547,7 @@ le (type pdf)
 
 <use classboid_1_1Boid_a2d4f1cded412a333857bb1b8b17d3dd0_cgraph.pdf>
 Package pdftex.def Info: classboid_1_1Boid_a2d4f1cded412a333857bb1b8b17d3dd0_cg
-raph.pdf used on input line 820.
+raph.pdf used on input line 819.
 (pdftex.def)             Requested size: 350.0pt x 95.46pt.
  [30 <./classboid_1_1Boid_ab330aef12ad0a338a51a7661c736e971_cgraph.pdf> <./clas
 sboid_1_1Boid_ab330aef12ad0a338a51a7661c736e971_icgraph.pdf
@@ -1563,10 +1563,10 @@ le (type pdf)
 
 <use classboid_1_1Boid_af2f2931c5971a4447cfe179fdafe3ab5_cgraph.pdf>
 Package pdftex.def Info: classboid_1_1Boid_af2f2931c5971a4447cfe179fdafe3ab5_cg
-raph.pdf used on input line 867.
+raph.pdf used on input line 866.
 (pdftex.def)             Requested size: 350.0pt x 76.9429pt.
 
-Overfull \hbox (12.76839pt too wide) in paragraph at lines 893--893
+Overfull \hbox (12.76839pt too wide) in paragraph at lines 892--892
  \T1/phv/m/sl/10 pha,beta,delta,const|
  []
 
@@ -1584,7 +1584,7 @@ le (type pdf)
 
 <use classboid_1_1Boid_a492a0ad33a962b15ed94789d59f3b08a_cgraph.pdf>
 Package pdftex.def Info: classboid_1_1Boid_a492a0ad33a962b15ed94789d59f3b08a_cg
-raph.pdf used on input line 910.
+raph.pdf used on input line 909.
 (pdftex.def)             Requested size: 314.0pt x 102.00574pt.
 
 <classboid_1_1Boid_a492a0ad33a962b15ed94789d59f3b08a_icgraph.pdf, id=2085, 497.
@@ -1594,7 +1594,7 @@ ile (type pdf)
 
 <use classboid_1_1Boid_a492a0ad33a962b15ed94789d59f3b08a_icgraph.pdf>
 Package pdftex.def Info: classboid_1_1Boid_a492a0ad33a962b15ed94789d59f3b08a_ic
-graph.pdf used on input line 921.
+graph.pdf used on input line 920.
 (pdftex.def)             Requested size: 350.0pt x 128.42879pt.
 
 <classboid_1_1Boid_a9223cd4c67780cbdbe60a4efb2ee441e_icgraph.pdf, id=2086, 375.
@@ -1604,7 +1604,7 @@ ile (type pdf)
 
 <use classboid_1_1Boid_a9223cd4c67780cbdbe60a4efb2ee441e_icgraph.pdf>
 Package pdftex.def Info: classboid_1_1Boid_a9223cd4c67780cbdbe60a4efb2ee441e_ic
-graph.pdf used on input line 958.
+graph.pdf used on input line 957.
 (pdftex.def)             Requested size: 350.0pt x 132.8953pt.
  [32 <./classboid_1_1Boid_a492a0ad33a962b15ed94789d59f3b08a_cgraph.pdf> <./clas
 sboid_1_1Boid_a492a0ad33a962b15ed94789d59f3b08a_icgraph.pdf
@@ -1625,10 +1625,10 @@ le (type pdf)
 
 <use classboid_1_1Boid_a8a354e4b7d58ced69771f3bb5f52d257_cgraph.pdf>
 Package pdftex.def Info: classboid_1_1Boid_a8a354e4b7d58ced69771f3bb5f52d257_cg
-raph.pdf used on input line 985.
+raph.pdf used on input line 983.
 (pdftex.def)             Requested size: 350.0pt x 222.19579pt.
 
-Underfull \hbox (badness 10000) detected at line 1001
+Underfull \hbox (badness 10000) detected at line 999
 [][][]
  []
 
@@ -1935,10 +1935,10 @@ df Graphic file (type pdf)
 <use classobstacle_1_1PolyObstacle_a3392ccb4d22e752b0f150af354b16862_icgraph.pd
 f>
 Package pdftex.def Info: classobstacle_1_1PolyObstacle_a3392ccb4d22e752b0f150af
-354b16862_icgraph.pdf used on input line 388.
+354b16862_icgraph.pdf used on input line 387.
 (pdftex.def)             Requested size: 350.0pt x 157.367pt.
 
-Underfull \hbox (badness 10000) detected at line 413
+Underfull \hbox (badness 10000) detected at line 412
 [][][]
  []
 
@@ -1951,11 +1951,11 @@ f Graphic file (type pdf)
 <use classobstacle_1_1PolyObstacle_af71f01fca50193a5e5372c2507661ada_cgraph.pdf
 >
 Package pdftex.def Info: classobstacle_1_1PolyObstacle_af71f01fca50193a5e5372c2
-507661ada_cgraph.pdf used on input line 426.
+507661ada_cgraph.pdf used on input line 425.
 (pdftex.def)             Requested size: 350.0pt x 137.5324pt.
  [57 <./classobstacle_1_1PolyObstacle_a3392ccb4d22e752b0f150af354b16862_icgraph
 .pdf>]
-Underfull \hbox (badness 10000) detected at line 448
+Underfull \hbox (badness 10000) detected at line 447
 [][][]
  []
 
@@ -1968,7 +1968,7 @@ f Graphic file (type pdf)
 <use classobstacle_1_1PolyObstacle_a4647d9efa8fb20d7b464ee5faa8fd7f4_cgraph.pdf
 >
 Package pdftex.def Info: classobstacle_1_1PolyObstacle_a4647d9efa8fb20d7b464ee5
-faa8fd7f4_cgraph.pdf used on input line 461.
+faa8fd7f4_cgraph.pdf used on input line 460.
 (pdftex.def)             Requested size: 350.0pt x 112.44283pt.
 
 <classobstacle_1_1PolyObstacle_a4647d9efa8fb20d7b464ee5faa8fd7f4_icgraph.pdf, i
@@ -1979,7 +1979,7 @@ df Graphic file (type pdf)
 <use classobstacle_1_1PolyObstacle_a4647d9efa8fb20d7b464ee5faa8fd7f4_icgraph.pd
 f>
 Package pdftex.def Info: classobstacle_1_1PolyObstacle_a4647d9efa8fb20d7b464ee5
-faa8fd7f4_icgraph.pdf used on input line 472.
+faa8fd7f4_icgraph.pdf used on input line 471.
 (pdftex.def)             Requested size: 350.0pt x 100.76111pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -1992,7 +1992,7 @@ pdfTeX warning: pdflatex (file ./classobstacle_1_1PolyObstacle_a4647d9efa8fb20d
 7b464ee5faa8fd7f4_cgraph.pdf): PDF inclusion: multiple pdfs with page group inc
 luded in a single page
 >]
-Underfull \hbox (badness 10000) detected at line 499
+Underfull \hbox (badness 10000) detected at line 498
 [][][]
  []
 
@@ -2005,7 +2005,7 @@ df Graphic file (type pdf)
 <use classobstacle_1_1PolyObstacle_a646f5fc4ba3e67c98c2313f4493b6a08_icgraph.pd
 f>
 Package pdftex.def Info: classobstacle_1_1PolyObstacle_a646f5fc4ba3e67c98c2313f
-4493b6a08_icgraph.pdf used on input line 512.
+4493b6a08_icgraph.pdf used on input line 511.
 (pdftex.def)             Requested size: 350.0pt x 64.5626pt.
  [59 <./classobstacle_1_1PolyObstacle_a4647d9efa8fb20d7b464ee5faa8fd7f4_icgraph
 .pdf> <./classobstacle_1_1PolyObstacle_a646f5fc4ba3e67c98c2313f4493b6a08_icgrap
@@ -2127,7 +2127,7 @@ aphic file (type pdf)
 
 <use classprm_1_1PRMGenerator_acefd405f735018b6399df96c7025e7fe_icgraph.pdf>
 Package pdftex.def Info: classprm_1_1PRMGenerator_acefd405f735018b6399df96c7025
-e7fe_icgraph.pdf used on input line 301.
+e7fe_icgraph.pdf used on input line 300.
 (pdftex.def)             Requested size: 350.0pt x 67.40163pt.
 
 [67 <./classprm_1_1PRMGenerator_ad5ffd82c9245496759767b2791d3a2fa_cgraph.pdf> <
@@ -2144,10 +2144,10 @@ phic file (type pdf)
 
 <use classprm_1_1PRMGenerator_aaa44a7e209bb06af27c4120b78d70cfb_cgraph.pdf>
 Package pdftex.def Info: classprm_1_1PRMGenerator_aaa44a7e209bb06af27c4120b78d7
-0cfb_cgraph.pdf used on input line 352.
+0cfb_cgraph.pdf used on input line 351.
 (pdftex.def)             Requested size: 350.0pt x 156.90317pt.
 
-Underfull \hbox (badness 10000) detected at line 377
+Underfull \hbox (badness 10000) detected at line 376
 [][][]
  []
 
@@ -2159,7 +2159,7 @@ aphic file (type pdf)
 
 <use classprm_1_1PRMGenerator_a652b3c0fa11645f351c23635d7e62dda_icgraph.pdf>
 Package pdftex.def Info: classprm_1_1PRMGenerator_a652b3c0fa11645f351c23635d7e6
-2dda_icgraph.pdf used on input line 391.
+2dda_icgraph.pdf used on input line 389.
 (pdftex.def)             Requested size: 350.0pt x 131.84906pt.
 
 [68 <./classprm_1_1PRMGenerator_aaa44a7e209bb06af27c4120b78d70cfb_cgraph.pdf> <
@@ -2212,7 +2212,7 @@ fonts/type1/urw/helvetic/uhvbo8a.pfb></usr/local/texlive/2013/texmf-dist/fonts/
 type1/urw/helvetic/uhvbo8ac.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1
 /urw/helvetic/uhvr8a.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/urw/he
 lvetic/uhvro8a.pfb>
-Output written on refman.pdf (91 pages, 414880 bytes).
+Output written on refman.pdf (91 pages, 414800 bytes).
 PDF statistics:
  3515 PDF objects out of 3580 (max. 8388607)
  3256 compressed objects within 33 object streams

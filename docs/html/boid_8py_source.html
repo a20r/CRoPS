@@ -216,8 +216,8 @@ $(document).ready(function(){initNavTree('boid_8py_source.html','');});
 <div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;        <span class="comment">## Used to tell if the boid is stuck or not</span></div>
 <div class="line"><a name="l00125"></a><span class="lineno"><a class="code" href="classboid_1_1Boid.html#ab6c778a50dd384fabc6aa48be04c0988">  125</a></span>&#160;        self.<a class="code" href="classboid_1_1Boid.html#ab6c778a50dd384fabc6aa48be04c0988" title="Used to tell if the boid is stuck or not. ">positionBuffer</a> = [</div>
 <div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;            (</div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;                self.<a class="code" href="classboid_1_1Boid.html#a483cb30093bc500a6123d5a801247ad5" title="Sets the position of the boid. ">position</a>[0] + 5 * i,</div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;                self.<a class="code" href="classboid_1_1Boid.html#a483cb30093bc500a6123d5a801247ad5" title="Sets the position of the boid. ">position</a>[1] + 5 * i</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;                5 * i,</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;                5 * i</div>
 <div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;            ) <span class="keywordflow">for</span> i <span class="keywordflow">in</span> range(20)</div>
 <div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;        ]</div>
 <div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;</div>
@@ -396,7 +396,7 @@ $(document).ready(function(){initNavTree('boid_8py_source.html','');});
 <div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;</div>
 <div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;        <span class="comment">## Helps scale the value returned by the sigmoid function</span></div>
 <div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;        <span class="comment">## for goal attraction</span></div>
-<div class="line"><a name="l00307"></a><span class="lineno"><a class="code" href="classboid_1_1Boid.html#a2c33a265be5079b7b916be49933eccaf">  307</a></span>&#160;        self.<a class="code" href="classboid_1_1Boid.html#a2c33a265be5079b7b916be49933eccaf" title="Helps scale the value returned by the sigmoid function for goal attraction. ">gBeta</a>          = 50</div>
+<div class="line"><a name="l00307"></a><span class="lineno"><a class="code" href="classboid_1_1Boid.html#a2c33a265be5079b7b916be49933eccaf">  307</a></span>&#160;        self.<a class="code" href="classboid_1_1Boid.html#a2c33a265be5079b7b916be49933eccaf" title="Helps scale the value returned by the sigmoid function for goal attraction. ">gBeta</a>          = 40</div>
 <div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;</div>
 <div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;        <span class="comment">## Constant that is used in the sigmoidal curve for goal</span></div>
 <div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;        <span class="comment">## attraction</span></div>
@@ -858,26 +858,37 @@ $(document).ready(function(){initNavTree('boid_8py_source.html','');});
 <div class="line"><a name="l00766"></a><span class="lineno">  766</span>&#160;    <span class="comment">#         Draws the boid as a pygame circle in the pygame screen</span></div>
 <div class="line"><a name="l00767"></a><span class="lineno">  767</span>&#160;    <span class="comment">#         </span></div>
 <div class="line"><a name="l00768"></a><span class="lineno"><a class="code" href="classboid_1_1Boid.html#a289cbbc12cc9c3e7445a5f37b2d88124">  768</a></span>&#160;    <span class="keyword">def </span><a class="code" href="classboid_1_1Boid.html#a289cbbc12cc9c3e7445a5f37b2d88124" title="Draws the boid as a pygame circle in the pygame screen. ">draw</a>(self):</div>
-<div class="line"><a name="l00769"></a><span class="lineno">  769</span>&#160;        pygame.draw.circle(</div>
-<div class="line"><a name="l00770"></a><span class="lineno">  770</span>&#160;            self.<a class="code" href="classboid_1_1Boid.html#aa230e5710394a620995a3943fc9faa8d" title="PyGame screen. ">screen</a>,</div>
-<div class="line"><a name="l00771"></a><span class="lineno">  771</span>&#160;            (0, 255, 100) <span class="keywordflow">if</span> self.<a class="code" href="classboid_1_1Boid.html#a099882fd7d72bfd06c15ec20b0425905" title="Defines if the boid is stuck. ">stuck</a> <span class="keywordflow">else</span> (0, 255, 255),</div>
-<div class="line"><a name="l00772"></a><span class="lineno">  772</span>&#160;            map(</div>
-<div class="line"><a name="l00773"></a><span class="lineno">  773</span>&#160;                int,</div>
-<div class="line"><a name="l00774"></a><span class="lineno">  774</span>&#160;                self.<a class="code" href="classboid_1_1Boid.html#a483cb30093bc500a6123d5a801247ad5" title="Sets the position of the boid. ">position</a></div>
-<div class="line"><a name="l00775"></a><span class="lineno">  775</span>&#160;            ),</div>
-<div class="line"><a name="l00776"></a><span class="lineno">  776</span>&#160;            self.<a class="code" href="classboid_1_1Boid.html#a1bff2843c74b712aba274831d0a715d4" title="Radius of the boid. ">radius</a></div>
-<div class="line"><a name="l00777"></a><span class="lineno">  777</span>&#160;        )</div>
-<div class="line"><a name="l00778"></a><span class="lineno">  778</span>&#160;</div>
+<div class="line"><a name="l00769"></a><span class="lineno">  769</span>&#160;        <span class="keywordflow">try</span>:</div>
+<div class="line"><a name="l00770"></a><span class="lineno">  770</span>&#160;            pygame.draw.lines(</div>
+<div class="line"><a name="l00771"></a><span class="lineno">  771</span>&#160;                self.<a class="code" href="classboid_1_1Boid.html#aa230e5710394a620995a3943fc9faa8d" title="PyGame screen. ">screen</a>,</div>
+<div class="line"><a name="l00772"></a><span class="lineno">  772</span>&#160;                (238, 130, 238),</div>
+<div class="line"><a name="l00773"></a><span class="lineno">  773</span>&#160;                <span class="keyword">False</span>,</div>
+<div class="line"><a name="l00774"></a><span class="lineno">  774</span>&#160;                map(<span class="keyword">lambda</span> g: g.position, self.<a class="code" href="classboid_1_1Boid.html#a7a3492977220ee1f7623aa9643a2fea4" title="Goals used by the boid. ">goalList</a>),</div>
+<div class="line"><a name="l00775"></a><span class="lineno">  775</span>&#160;                3</div>
+<div class="line"><a name="l00776"></a><span class="lineno">  776</span>&#160;            )</div>
+<div class="line"><a name="l00777"></a><span class="lineno">  777</span>&#160;        <span class="keywordflow">except</span> ValueError:</div>
+<div class="line"><a name="l00778"></a><span class="lineno">  778</span>&#160;            <span class="keywordflow">pass</span></div>
 <div class="line"><a name="l00779"></a><span class="lineno">  779</span>&#160;</div>
-<div class="line"><a name="l00780"></a><span class="lineno">  780</span>&#160;</div>
-<div class="line"><a name="l00781"></a><span class="lineno">  781</span>&#160;</div>
+<div class="line"><a name="l00780"></a><span class="lineno">  780</span>&#160;        pygame.draw.circle(</div>
+<div class="line"><a name="l00781"></a><span class="lineno">  781</span>&#160;            self.<a class="code" href="classboid_1_1Boid.html#aa230e5710394a620995a3943fc9faa8d" title="PyGame screen. ">screen</a>,</div>
+<div class="line"><a name="l00782"></a><span class="lineno">  782</span>&#160;            (0, 255, 100) <span class="keywordflow">if</span> self.<a class="code" href="classboid_1_1Boid.html#a099882fd7d72bfd06c15ec20b0425905" title="Defines if the boid is stuck. ">stuck</a> <span class="keywordflow">else</span> (0, 255, 255),</div>
+<div class="line"><a name="l00783"></a><span class="lineno">  783</span>&#160;            map(</div>
+<div class="line"><a name="l00784"></a><span class="lineno">  784</span>&#160;                int,</div>
+<div class="line"><a name="l00785"></a><span class="lineno">  785</span>&#160;                self.<a class="code" href="classboid_1_1Boid.html#a483cb30093bc500a6123d5a801247ad5" title="Sets the position of the boid. ">position</a></div>
+<div class="line"><a name="l00786"></a><span class="lineno">  786</span>&#160;            ),</div>
+<div class="line"><a name="l00787"></a><span class="lineno">  787</span>&#160;            self.<a class="code" href="classboid_1_1Boid.html#a1bff2843c74b712aba274831d0a715d4" title="Radius of the boid. ">radius</a></div>
+<div class="line"><a name="l00788"></a><span class="lineno">  788</span>&#160;        )</div>
+<div class="line"><a name="l00789"></a><span class="lineno">  789</span>&#160;</div>
+<div class="line"><a name="l00790"></a><span class="lineno">  790</span>&#160;</div>
+<div class="line"><a name="l00791"></a><span class="lineno">  791</span>&#160;</div>
+<div class="line"><a name="l00792"></a><span class="lineno">  792</span>&#160;</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_050edd66366d13764f98250ef6db77f6.html">code</a></li><li class="navelem"><a class="el" href="boid_8py.html">boid.py</a></li>
-    <li class="footer">Generated on Mon Nov 4 2013 20:34:36 for CRoPS (Combined Roadmap and Potentials for Swarms) by
+    <li class="footer">Generated on Sun Dec 8 2013 00:48:02 for CRoPS (Combined Roadmap and Potentials for Swarms) by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.4 </li>
   </ul>
