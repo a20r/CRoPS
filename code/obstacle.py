@@ -46,7 +46,7 @@ class PolyObstacle:
         self.displacement = 0
 
         ## Max displacement allowed
-        self.max_displacement = 100
+        self.max_displacement = 10
 
         ## List of static obstacles
         self.obstacles = list()
