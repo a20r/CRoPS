@@ -274,7 +274,7 @@ class PRMGenerator:
                 self.subGoalPositionList[1: -1] += newPosList
                 self.filterSubGoal()
         #print self.roadmap
-        return map(
+        retList = map(
             lambda p: goal.CircleGoal(
                 subGoalRadius,
                 p,
@@ -282,6 +282,9 @@ class PRMGenerator:
             ),
             self.gPosList
         )
+
+        retList[-1].radius = 1 * subGoalRadius
+        return retList
 
     def getShortestPath(self, roadmap, fromNode, toNode):
         return dijkstra.shortestPath(

@@ -24,8 +24,8 @@ if __name__ == "__main__":
             "endPoint": (980, 590)
         },
         "maps/s.map": {
-            "startPoint": (80, 80),  # (50, 600)
-            "endPoint": (980, 30)
+            "startPoint": (0, 80),  # (50, 600)
+            "endPoint": (980, 90)
         },
         "maps/maze.map": {
             "startPoint": (50, 50),  # (50, 600)
@@ -34,6 +34,10 @@ if __name__ == "__main__":
         "maps/maze2.map": {
             "startPoint": (50, 70),  # (50, 600)
             "endPoint": (950, 30)
+        },
+        "maps/random.map": {
+            "startPoint": (60, 60),
+            "endPoint": (950, 360)
         }
     }
 
