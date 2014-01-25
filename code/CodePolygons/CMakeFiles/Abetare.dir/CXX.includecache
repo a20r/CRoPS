@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/wallarelvo-mac/Documents/Projects/CRoPS/code/CodePolygons/src/Utils/GTexture.cpp
+Utils/GTexture.hpp
+/Users/wallarelvo-mac/Documents/Projects/CRoPS/code/CodePolygons/src/Utils/Utils/GTexture.hpp
+cstdlib
+-
+cstring
+-
+OpenGL/glu.h
+-
+png.h
+-
+
+src/Utils/GTexture.hpp
+cstdio
+-
+

@@ -67,11 +67,6 @@ class Boid:
         ## Maximum speed of the boid
         self.speed = _speed
 
-        ## Initial random heading
-        self.heading = self.getDirectionVector(
-            (_ePos[0] - _sPos[0], _ePos[1] - _sPos[1])
-        )
-
         ## Dimensions of the screen
         self.dim = self.xSize, self.ySize = _xSize, _ySize
 
@@ -93,6 +88,12 @@ class Boid:
 
         ## Initializes the current goal
         self.goal = self.goalList[0]
+
+        ## Initial random heading
+        self.heading = self.getDirectionVector((
+            self.goalList[1].position[0] - _position[0],
+            self.goalList[1].position[1] - _position[1]
+        ))
 
         ## Defines if the boid is stuck
         self.stuck = False
@@ -152,14 +153,8 @@ class Boid:
         @return The Euclidean distance between p1 and p2
         """
         return np.sqrt(
-            pow(
-                p1[0] - p2[0],
-                2
-            ) +
-            pow(
-                p1[1] - p2[1],
-                2
-            )
+            pow(p1[0] - p2[0], 2) +
+            pow(p1[1] - p2[1], 2)
         )
 
     def getVar(self, searchList, ind):
@@ -337,6 +332,8 @@ class Boid:
 
         ## Weights how much the previous heading affects the new heading
         self.headWeightList = [3, 1]
+
+        self.DONE = False
 
     def setBoidList(self, _boidList):
         """
@@ -625,7 +622,7 @@ class Boid:
         """
         Updates the boid's heading and position due to the potential fields
         """
-        if self.stuck:
+        if self.stuck and not self.DONE:
             self.determineNewPath()
             self.stuck = False
             self.positionBuffer = [
@@ -636,7 +633,7 @@ class Boid:
             ]
 
         neighborVectorList, nIndexes = [[0, 0]], 1
-        gVector, gMagSum = [[0, 0]], 1
+        gVector, gMagSum = [0, 0], 1
 
         # if the boid is not at the last goal
         if self.goalCounter < len(self.goalList) - 1:
@@ -646,6 +643,7 @@ class Boid:
             neighborVectorList, nIndexes = self.getNeighborVectorList()
             gVector, gMagSum = self.getGoalVector()
         else:
+            self.DONE = True
             self.bConst = 100
 
         bVectorList, bMagSum = self.getBoidVectorList()
@@ -666,13 +664,11 @@ class Boid:
             gMagSum
         )
 
-        #self.stuck = False
-        self.randWalkCount = 0
-        self.gammaFunc = lambda dX: guassianFunc(
-            dX,
-            dAvg = self.nStuckDAvg,
-            dSigma = self.nStuckDSigma
-        )
+        # self.gammaFunc = lambda dX: guassianFunc(
+        #     dX,
+        #     dAvg = self.nStuckDAvg,
+        #     dSigma = self.nStuckDSigma
+        # )
         neVecSum = self.sumDivide(
             neighborVectorList,
             self.neighborSize
