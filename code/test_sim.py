@@ -42,6 +42,10 @@ if __name__ == "__main__":
         "maps/random.map": {
             "startPoint": (60, 60),
             "endPoint": (950, 360)
+        },
+        "maps/hurdles.map": {
+            "startPoint": (60, 270),
+            "endPoint": (950, 270)
         }
     }
 
