@@ -34,6 +34,10 @@ if __name__ == "__main__":
         "maps/maze2.map": {
             "startPoint": (50, 70),  # (50, 600)
             "endPoint": (950, 30)
+        },
+        "maps/great_divide.map": {
+            "startPoint": (50, 70),  # (50, 600)
+            "endPoint": (950, 500)
         }
     }
 
