@@ -1,7 +1,6 @@
 #include "Utils/GTexture.hpp"
 #include <cstdlib>
 #include <cstring>
-<<<<<<< HEAD:tools/CodePolygons/src/Utils/GTexture.cpp
 
 #ifdef __APPLE__
     #include <OpenGL/glu.h>
@@ -9,9 +8,6 @@
     #include <GL/glu.h>
 #endif
 
-=======
-#include <OpenGL/glu.h>
->>>>>>> master:code/CodePolygons/src/Utils/GTexture.cpp
 #include <png.h>
 
 namespace Abetare
