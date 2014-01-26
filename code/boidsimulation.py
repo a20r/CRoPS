@@ -216,6 +216,8 @@ class FlockSim:
             ]
 
             # updates the boids and gathers the statistics
+            map(lambda o: o.draw(), self.config.obstacleList)
+            map(lambda b: b.draw(), self.config.boidList)
             map(lambda b: b.update(), self.config.boidList)
             self.numInGoal = len(
                 filter(
@@ -227,8 +229,6 @@ class FlockSim:
                 #self.getBoidData()
                 self.getStats()
 
-            map(lambda o: o.draw(), self.config.obstacleList)
-            map(lambda b: b.draw(), self.config.boidList)
             #map(lambda g: g.draw(), self.config.goalList)
             self.config.prmGen.drawPath()
 
@@ -246,6 +246,7 @@ class FlockSim:
 
             if self.numInGoal == self.flockSize:
                 self.done = True
+
 
     def play(self):
         """

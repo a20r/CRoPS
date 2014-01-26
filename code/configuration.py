@@ -39,6 +39,8 @@ class Configuration:
         color.THECOLORS.keys()
     )
 
+    boid_radius = 4
+
 
 class PolyFileConfiguration(Configuration):
     """
@@ -147,6 +149,17 @@ class PolyFileConfiguration(Configuration):
             if obst.dynamic:
                 obst.removeSelfFromObstacleList()
 
+    def determinePositionInConfig(self, i, flockSize, startPoint):
+        boid_radius = Configuration.boid_radius
+        init_length = math.ceil(math.sqrt(flockSize))
+        down = int(i // init_length)
+        accross = int(i % init_length)
+
+        return (
+            startPoint[0] + 3 * boid_radius * accross,
+            startPoint[1] + 3 * boid_radius * down
+        )
+
     def initVars(
         self,
         startPoint,
@@ -166,9 +179,11 @@ class PolyFileConfiguration(Configuration):
         ## List of obstacles
         # parse static obstalces
         self.obstacleList = mp.mparse(kwargs.get("map_file", "maps/m1.map"))
+
         # parse dynamic obstalces
         dynamic_obstacles_fp = kwargs.get("dynamic_obstacles", None)
         self.parseDynamicObstacles(dynamic_obstacles_fp)
+
         # auto geneate dynamic obstacles
         self.auto_gen_obst = kwargs.get("auto_gen_obst", False)
         self.auto_gen_number = kwargs.get("auto_gen_number", 0)
@@ -209,6 +224,8 @@ class PolyFileConfiguration(Configuration):
                 self.goalList,
                 self.prmGen,
                 Configuration.screen,
-                Configuration.colorList[i]
+                Configuration.colorList[i],
+                Configuration.boid_radius,
+                self.determinePositionInConfig(i, flockSize, startPoint)
             ) for i in range(flockSize)
         ]

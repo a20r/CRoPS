@@ -4,6 +4,11 @@
 #include "Utils/GMaterial.hpp"
 
 #define GL_GLEXT_PROTOTYPES
+<<<<<<< HEAD:tools/CodePolygons/src/Utils/GDraw.hpp
+=======
+#include <OpenGL/gl.h>
+#include <OpenGL/glu.h>
+>>>>>>> master:code/CodePolygons/src/Utils/GDraw.hpp
 
 #ifdef __APPLE__
     #include <OpenGL/glu.h>

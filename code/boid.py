@@ -31,7 +31,8 @@ class Boid:
         _speed, _xSize, _ySize,
         _neighborSize, _gammaFunc,
         _obstacleList, _goalList,
-        _prmGen, _screen, _color):
+        _prmGen, _screen, _color,
+        _radius, _position):
         """
         Initializes all of the variables given as input to the constructor used
         by the boid
@@ -61,17 +62,10 @@ class Boid:
         self.screen = _screen
 
         ## Radius of the boid
-        self.radius = 4
+        self.radius = _radius
 
-        ## Initial random heading
-        self.heading = (
-            random.randint(
-                int(-_speed), int(_speed)
-            ),
-            random.randint(
-                int(-_speed), int(_speed)
-            )
-        )
+        ## Maximum speed of the boid
+        self.speed = _speed
 
         ## Dimensions of the screen
         self.dim = self.xSize, self.ySize = _xSize, _ySize
@@ -82,9 +76,6 @@ class Boid:
         ## Unique color used to distinguish the boid
         ## (only used in debugging and visualization)
         self.color = _color
-
-        ## Maximum speed of the boid
-        self.speed = _speed
 
         ## List of obstacles that were parsed by mapparser
         self.obstacleList = _obstacleList
@@ -98,6 +89,12 @@ class Boid:
         ## Initializes the current goal
         self.goal = self.goalList[0]
 
+        ## Initial random heading
+        self.heading = self.getDirectionVector((
+            self.goalList[1].position[0] - _position[0],
+            self.goalList[1].position[1] - _position[1]
+        ))
+
         ## Defines if the boid is stuck
         self.stuck = False
 
@@ -108,21 +105,13 @@ class Boid:
         self.ePos = _ePos
 
         ## Sets the position of the boid
-        self.position = [
-            random.randint(
-                _sPos[0] - 10, _sPos[0] + 10
-            ),
-            random.randint(
-                _sPos[1] - 10,
-                _sPos[1] + 10
-            )
-        ]
+        self.position = _position
 
         ## Used to tell if the boid is stuck or not
         self.positionBuffer = [
             (
-                self.position[0] + 5 * i,
-                self.position[1] + 5 * i
+                5 * i,
+                5 * i
             ) for i in range(20)
         ]
 
@@ -164,14 +153,8 @@ class Boid:
         @return The Euclidean distance between p1 and p2
         """
         return np.sqrt(
-            pow(
-                p1[0] - p2[0],
-                2
-            ) +
-            pow(
-                p1[1] - p2[1],
-                2
-            )
+            pow(p1[0] - p2[0], 2) +
+            pow(p1[1] - p2[1], 2)
         )
 
     def getVar(self, searchList, ind):
@@ -292,7 +275,7 @@ class Boid:
 
         ## Helps scale the value returned by the sigmoid function
         ## for goal attraction
-        self.gBeta          = 50
+        self.gBeta          = 40
 
         ## Constant that is used in the sigmoidal curve for goal
         ## attraction
@@ -350,6 +333,8 @@ class Boid:
         ## Weights how much the previous heading affects the new heading
         self.headWeightList = [3, 1]
 
+        self.DONE = False
+
     def setBoidList(self, _boidList):
         """
         Setter method used to set the list of boids
@@ -394,6 +379,7 @@ class Boid:
         @param *vList Values that will be weighted
         @return An average vector that represents the average heading due to the potential fields
         """
+
         return self.sumDivide(
             [
                 (w * v1, w * v2) for (v1, v2), w in zip(vList, wList)
@@ -595,33 +581,6 @@ class Boid:
             self.goal.position
         )
 
-    def determineRandomWalk(self):
-        """
-        Increments the random walk counter, changes the current goal if necessary.
-        @return New random walk vectors where the maximum component value is determeined
-        by the randomWalk fields
-        """
-        self.randWalkCount  += 1
-        if self.randWalkCount == 3:
-            if self.goalCounter > 0:
-                self.goalCounter -= 1
-        #if self.randWalkCount == 6:
-            #if self.goalCounter < len(self.goalList) - 2:
-                #self.goalCounter += 2
-
-        self.goal = self.goalList[self.goalCounter]
-
-        return (
-            random.randint(
-                -self.randomWalkX,
-                self.randomWalkX
-            ),
-            random.randint(
-                -self.randomWalkY,
-                self.randomWalkY
-            )
-        )
-
     def determineNewPath(self):
         """
         When the boid is stuck, it reweights the roadmap and
@@ -663,77 +622,85 @@ class Boid:
         """
         Updates the boid's heading and position due to the potential fields
         """
-        if not self.inGoal(self.position):
-            if self.stuck:
-                self.determineNewPath()
-                self.stuck = False
-                self.positionBuffer = [
-                    (
-                        5 * i,
-                        5 * i
-                    ) for i in range(20)
-                ]
-
-            neighborVectorList, nIndexes = self.getNeighborVectorList()
-            bVectorList, bMagSum = self.getBoidVectorList()
-            obstacleVectorList, obMagSum = self.getObstacleVectorList()
-            gVector, gMagSum = self.getGoalVector()
-
-            obVecSum = self.sumDivide(
-                obstacleVectorList,
-                obMagSum
-            )
-            boVecSum = self.sumDivide(
-                bVectorList,
-                bMagSum
-            )
-            goVecSum = self.sumDivide(
-                [gVector],
-                gMagSum
-            )
-
-            #self.stuck = False
-            self.randWalkCount = 0
-            self.gammaFunc = lambda dX: guassianFunc(
-                dX,
-                dAvg = self.nStuckDAvg,
-                dSigma = self.nStuckDSigma
-            )
-            neVecSum = self.sumDivide(
-                neighborVectorList,
-                self.neighborSize
-            )
-            self.compWeightList = [
-                10 * self.neighborSize,
-                bMagSum,
-                gMagSum,
-                obMagSum
+        if self.stuck and not self.DONE:
+            self.determineNewPath()
+            self.stuck = False
+            self.positionBuffer = [
+                (
+                    5 * i,
+                    5 * i
+                ) for i in range(20)
             ]
 
-            #print self.compWeightList
-
-            nHeading = self.reduceWeightValues(
-                self.compWeightList,
-                neVecSum,
-                boVecSum,
-                goVecSum,
-                obVecSum
-            )
-            self.heading = self.reduceWeightValues(
-                self.headWeightList,
-                self.heading,
-                nHeading
-            )
-            newPos = (
-                self.position[0] + self.heading[0],
-                self.position[1] + self.heading[1]
-            )
-            if self.inWorld(newPos) and self.pointAllowed(newPos):
-                self.position = newPos
+        neighborVectorList, nIndexes = [[0, 0]], 1
+        gVector, gMagSum = [0, 0], 1
 
         # if the boid is not at the last goal
-        elif self.goalCounter < len(self.goalList) - 1:
-            self.setNewGoal()
+        if self.goalCounter < len(self.goalList) - 1:
+            if self.inGoal(self.position):
+                self.setNewGoal()
+
+            neighborVectorList, nIndexes = self.getNeighborVectorList()
+            gVector, gMagSum = self.getGoalVector()
+        else:
+            self.DONE = True
+            self.bConst = 100
+
+        bVectorList, bMagSum = self.getBoidVectorList()
+        obstacleVectorList, obMagSum = self.getObstacleVectorList()
+
+        obVecSum = self.sumDivide(
+            obstacleVectorList,
+            obMagSum
+        )
+
+        boVecSum = self.sumDivide(
+            bVectorList,
+            bMagSum
+        )
+
+        goVecSum = self.sumDivide(
+            [gVector],
+            gMagSum
+        )
+
+        # self.gammaFunc = lambda dX: guassianFunc(
+        #     dX,
+        #     dAvg = self.nStuckDAvg,
+        #     dSigma = self.nStuckDSigma
+        # )
+        neVecSum = self.sumDivide(
+            neighborVectorList,
+            self.neighborSize
+        )
+        self.compWeightList = [
+            10 * self.neighborSize,
+            bMagSum,
+            gMagSum,
+            obMagSum
+        ]
+
+        #print self.compWeightList
+
+        nHeading = self.reduceWeightValues(
+            self.compWeightList,
+            neVecSum,
+            boVecSum,
+            goVecSum,
+            obVecSum
+        )
+        self.heading = self.reduceWeightValues(
+            self.headWeightList,
+            self.heading,
+            nHeading
+        )
+        newPos = (
+            self.position[0] + self.heading[0],
+            self.position[1] + self.heading[1]
+        )
+        if self.inWorld(newPos) and self.pointAllowed(newPos):
+            self.position = newPos
+
         self.stuck = self.updatePositionBuffer() < self.stuckConst
 
     def draw(self):
