@@ -40,16 +40,22 @@ class PolyObstacle:
         self.dynamic = kwargs.get("dynamic", False)
 
         ## Velocity of the obstacle
-        self.velocity = [20, 0]
+        self.velocity = [7, 0]
 
         ## The displacement of the obstacle
         self.displacement = 0
 
         ## Max displacement allowed
-        self.max_displacement = 10
+        self.max_displacement = 60
 
         ## List of static obstacles
         self.obstacles = list()
+
+        ## Start point
+        self.start_point = kwargs.get("start_point", None)
+
+        ## End point
+        self.end_point = kwargs.get("end_point", None)
 
         self.estimatePoly()
 
@@ -347,9 +353,25 @@ class PolyObstacle:
         for obstacle in self.obstacles:
             if obstacle.pointInPoly(node):
                 return obstacle
-            if self.norm(node, obstacle.getPoint(node)) <= 20:
+            if self.norm(node, obstacle.getPoint(node)) <= 10:
                 return obstacle
         return None
+
+    def checkNoGoZones(self, node):
+        distance_start = np.sqrt(
+            (self.start_point[0] - node[0]) ** 2
+            + (self.start_point[1] - node[1]) ** 2
+        )
+
+        distance_end = np.sqrt(
+            (self.end_point[0] - node[0]) ** 2
+            + (self.end_point[1] - node[1]) ** 2
+        )
+
+        if distance_start < 100 or distance_end < 100:
+            return True
+        else:
+            return False
 
     def translate(self):
         """
@@ -360,21 +382,19 @@ class PolyObstacle:
 
             # collided with another obstacle?
             obst = self.checkCollisionWithOtherObstacles(node)
-            if obst:
-                obst.displacement = 0
-                obst.velocity[0] *= -1
-                obst.velocity[1] *= -1
-
+            in_nogo_zones = self.checkNoGoZones(node)
+            if obst or in_nogo_zones:
                 self.displacement = 0
                 self.velocity[0] *= -1
                 self.velocity[1] *= -1
                 break
 
             # hit boudnary?
-            if node[0] + 20 > self.boundary[0] or node[0] < 20:
+            x_collision = node[0] + 10 > self.boundary[0] or node[0] < 10
+            y_collision = node[1] + 10 > self.boundary[1] or node[1] < 10
+            if x_collision or y_collision:
+                self.displacement = -20
                 self.velocity[0] *= -1
-                break
-            if node[1] + 20 > self.boundary[1] or node[1] < 20:
                 self.velocity[1] *= -1
                 break
 
@@ -401,16 +421,19 @@ class PolyObstacle:
         self.displacement += self.norm(orig_coord, coord)
 
     def determine_last_direction(self):
-        velocity = self.velocity
+        x = self.velocity[0]
+        y = self.velocity[1]
 
-        if velocity == [0, 1]:
-            return "UP"
-        elif velocity == [0, -1]:
-            return "DOWN"
-        elif velocity == [-1, 0]:
-            return "LEFT"
-        elif velocity == [1, 0]:
-            return "RIGHT"
+        if x != 0:
+            if x > 0:
+                return "RIGHT"
+            elif x < 0:
+                return "LEFT"
+        elif y != 0:
+            if y > 0:
+                return "UP"
+            elif y < 0:
+                return "DOWN"
 
     def change_direction(self, force_change=False, direction=None):
         """
@@ -430,18 +453,23 @@ class PolyObstacle:
                 direction = random.random()
 
             # up, down, left, right
-            if direction <= 0.25:
-                self.velocity = [0, 1]  # up
+            orig_velocity = filter(lambda i: i != 0, self.velocity)[0]
+            if direction <= 0.25:  # up
                 curr_direction = "UP"
-            elif direction <= 0.5:
-                self.velocity = [0, -1]  # down
+                self.velocity[0] = 0
+                self.velocity[1] = orig_velocity
+            elif direction <= 0.5:  # down
                 curr_direction = "DOWN"
+                self.velocity[0] = 0
+                self.velocity[1] = orig_velocity * -1
             elif direction <= 0.75:
-                self.velocity = [-1, 0]  # left
                 curr_direction = "LEFT"
+                self.velocity[0] = orig_velocity * -1
+                self.velocity[1] = 0
             else:
-                self.velocity = [1, 0]  # right
                 curr_direction = "RIGHT"
+                self.velocity[0] = orig_velocity
+                self.velocity[1] = 0
 
         if last_direction == curr_direction:
             if last_direction == "UP":

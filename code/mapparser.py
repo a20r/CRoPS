@@ -83,7 +83,9 @@ def mparse(filename, staticObstacleList=list(), **kwargs):
                 obst = obstacle.PolyObstacle(
                     pList,
                     con.Configuration.screen,
-                    dynamic=True
+                    dynamic=True,
+                    start_point=kwargs.get("start_point", None),
+                    end_point=kwargs.get("end_point", None)
                 )
                 obstacleList.append(obst)
 
