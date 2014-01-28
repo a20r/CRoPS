@@ -393,9 +393,10 @@ class PolyObstacle:
             x_collision = node[0] + 10 > self.boundary[0] or node[0] < 10
             y_collision = node[1] + 10 > self.boundary[1] or node[1] < 10
             if x_collision or y_collision:
-                self.displacement = -20
+                self.displacement = -40
                 self.velocity[0] *= -1
                 self.velocity[1] *= -1
+
                 break
 
         # chage direction if max displacement reached

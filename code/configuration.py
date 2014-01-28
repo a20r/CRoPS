@@ -70,23 +70,22 @@ class PolyFileConfiguration(Configuration):
         """
         Checks to see if the vertices are inside an obstacle already
         """
-
+        # check against obstacles
         for obst in self.obstacleList:
-            # check against current obstacles
             res = obst.pointInPoly(node)
             if res:
                 return False  # node is invalid, it is inside an obstacle
             if obst.norm(node, obst.getPoint(node)) <= 20:
                 return False
 
-            # check if node is near nogo_zones
-            for zone in nogo_zones:
-                distance_between = math.sqrt(
-                    (zone[0] - node[0]) ** 2 + (zone[1] - node[1]) ** 2
-                )
+        # check if node is near nogo_zones
+        for zone in nogo_zones:
+            distance_between = math.sqrt(
+                (zone[0] - node[0]) ** 2 + (zone[1] - node[1]) ** 2
+            )
 
-                if distance_between < 110:
-                    return False
+            if distance_between < 150:
+                return False
 
         # check against other about-to-be obstacles (i.e. other nodes)
         # make sure they are no where near each other!
