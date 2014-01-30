@@ -653,7 +653,7 @@ class Boid:
                 if self.norm(c_point, self.position) < min_obstacle_dist:
                     obstacles_too_close = True
 
-            if not obstacles_too_close or self.stuck:
+            if self.stuck or not obstacles_too_close:
                 gVector, gMagSum = self.getGoalVector()
 
             neighborVectorList, nIndexes = self.getNeighborVectorList()
