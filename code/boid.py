@@ -259,7 +259,7 @@ class Boid:
 
         ## The radius of influence used when filtering
         ## the number of obstacles it needs to check
-        self.obInfluenceR   = 20
+        self.obInfluenceR   = 10
 
         ## The radius of influence used when filtering
         ## the number of boids it needs to check
@@ -267,7 +267,7 @@ class Boid:
 
         ## Priori constant for obstacle repulsion (increasing it
         ## gives more priority to the repulsive obstacle field)
-        self.obBeta         = 800
+        self.obBeta         = 1800
 
         ## Scales the value returned by the sigmoid function
         ## for goal attraction

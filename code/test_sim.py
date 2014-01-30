@@ -35,9 +35,17 @@ if __name__ == "__main__":
             "startPoint": (50, 70),  # (50, 600)
             "endPoint": (950, 30)
         },
+        "maps/great_divide.map": {
+            "startPoint": (50, 70),
+            "endPoint": (950, 500)
+        },
         "maps/random.map": {
             "startPoint": (60, 60),
             "endPoint": (950, 360)
+        },
+        "maps/hurdles.map": {
+            "startPoint": (60, 270),
+            "endPoint": (950, 270)
         }
     }
 
