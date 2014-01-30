@@ -1,4 +1,10 @@
+#!/usr/bin/env python
+import sys
+
 import boidsimulation as bs
+
+# GLOBAL VARS
+iterations = 10
 
 
 # generates stats for the project
@@ -11,29 +17,29 @@ def generateStats(mapFile, iterations, startPoint, endPoint):
     @param startPoint, endPoint Defines the starting and ending points
     of the flock
     """
-    getFileFormat = lambda nBots, nObs, it: str(
+    getFileFormat = lambda boids, obstacles, it: str(
         "stats/" +
         mapFile.split("/")[-1].split(".")[0] +
-        "_" + str(nBots) + "_" + str(nObs) + "_" + str(it)
+        "_" + str(boids) + "_" + str(obstacles) + "_" + str(it)
     )
 
-    for nBots in range(50, 55, 5):
-        for nObs in range(20, 40, 10):
+    for boids in range(10, 60, 10):
+        for obstacles in range(10, 20, 10):
             for i in range(iterations):
                 #reload(bs)
-                print mapFile, " : ", nBots, ":", nObs, ":", i
-                dFile = getFileFormat(nBots, nObs, i)
+                print mapFile, " : ", boids, ":", obstacles, ":", i
+                dFile = getFileFormat(boids, obstacles, i)
 
                 while True:
                     try:
                         fSim = bs.FlockSim(
-                            nBots,
+                            boids,
                             startPoint,
                             endPoint,
                             map_file=mapFile,
                             obstacle_file=None,
                             auto_gen_obst=True,
-                            auto_gen_number=nObs,
+                            auto_gen_number=obstacles,
                             data_file=dFile
                         )
                         fSim.render()
@@ -43,7 +49,7 @@ def generateStats(mapFile, iterations, startPoint, endPoint):
 
 ## A list of dictionaries used to store the map files,
 #starting and ending points of the boids
-mapList = [
+test_list = [
     #{
     #    "filename": "maps/scene2.map",
     #    "startPoint": (494, 213),
@@ -64,24 +70,33 @@ mapList = [
     #     "startPoint": (50, 50),  # (50, 600)
     #     "endPoint": (980, 30)
     # },
-    {
-        "filename": "maps/maze.map",
-        "startPoint": (50, 50),  # (50, 600)
-        "endPoint": (950, 30)
-    },
     # {
-    #     "filename": "maps/maze2.map",
-    #     "startPoint": (50, 70),  # (50, 600)
+    #     "filename": "maps/maze.map",
+    #     "startPoint": (50, 50),  # (50, 600)
     #     "endPoint": (950, 30)
-    # }
+    # },
+    {
+        "filename": "maps/maze2.map",
+        "start_point": (50, 70),  # (50, 600)
+        "end_point": (950, 30)
+    },
+    {
+        "filename": "maps/great_divide.map",
+        "start_point": (50, 70),
+        "end_point": (950, 500)
+    },
+    {
+        "filename": "maps/hurdles.map",
+        "start_point": (60, 270),
+        "end_point": (950, 270)
+    }
 ]
 
 if __name__ == "__main__":
-    testList = mapList
-    for tData in testList:
-        generateStats(
-            tData["filename"],
-            10,
-            tData["startPoint"],
-            tData["endPoint"]
-        )
+    test = test_list[int(sys.argv[1])]
+
+    filename = test["filename"]
+    start_point = test["start_point"]
+    end_point = test["end_point"]
+
+    generateStats(filename, iterations, start_point, end_point)

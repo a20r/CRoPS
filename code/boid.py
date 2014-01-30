@@ -259,7 +259,7 @@ class Boid:
 
         ## The radius of influence used when filtering
         ## the number of obstacles it needs to check
-        self.obInfluenceR   = 10
+        self.obInfluenceR   = 40
 
         ## The radius of influence used when filtering
         ## the number of boids it needs to check
@@ -291,7 +291,7 @@ class Boid:
 
         ## Helps scale the value returned by the sigmoid function
         # for boid repulsion
-        self.bBeta          = 60
+        self.bBeta          = 30
 
         ## Constant that is used in the sigmoid curve for boid
         ## repulsion
