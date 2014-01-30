@@ -2,25 +2,27 @@
 
 __author__ = "Alex Wallar <aw204@st-andrews.ac.uk>"
 
-import time
+# import time
 import pygame
-import random
+# import random
 import math as np
-import prm
-import dijkstra
+# import prm
+# import dijkstra
 import goal
 
-def guassianFunc(dX, dAvg = 10, dSigma = 1):
+
+def guassianFunc(dX, dAvg=10, dSigma=1):
     """
     Gamma function used to give a probability distribution of the flock
     in order to choose an appropriate neighbour.
     @param dX Distance from the boid to the prospective neighbour
-    @param dAvg Dynamic variable used to define the average prospective Distance
+    @param dAvg Dynamic var used to define the average prospective Distance
     @param dSigma Standard deviation of the average distances
     """
     return np.exp(
         -0.5 * ((dX - dAvg) / dSigma) ** 2
-    ) / (2.5066282746310002*dSigma)
+    ) / (2.5066282746310002 * dSigma)
+
 
 class Boid:
     """
@@ -32,7 +34,8 @@ class Boid:
         _neighborSize, _gammaFunc,
         _obstacleList, _goalList,
         _prmGen, _screen, _color,
-        _radius, _position):
+        _radius, _position
+    ):
         """
         Initializes all of the variables given as input to the constructor used
         by the boid
@@ -259,7 +262,7 @@ class Boid:
 
         ## The radius of influence used when filtering
         ## the number of obstacles it needs to check
-        self.obInfluenceR   = 40
+        self.obInfluenceR   = 30
 
         ## The radius of influence used when filtering
         ## the number of boids it needs to check
@@ -334,6 +337,8 @@ class Boid:
         self.headWeightList = [3, 1]
 
         self.DONE = False
+
+        self.super_stuck = False
 
     def setBoidList(self, _boidList):
         """
@@ -622,9 +627,11 @@ class Boid:
         """
         Updates the boid's heading and position due to the potential fields
         """
+
+        min_obstacle_dist = 20
         if self.stuck and not self.DONE:
             self.determineNewPath()
-            self.stuck = False
+            # self.stuck = False
             self.positionBuffer = [
                 (
                     5 * i,
@@ -634,20 +641,32 @@ class Boid:
 
         neighborVectorList, nIndexes = [[0, 0]], 1
         gVector, gMagSum = [0, 0], 1
+        obstacleVectorList, obMagSum = [[0, 0]], 1
+        bVectorList, bMagSum = [[0, 0]], 1
 
+
+        obstacles_too_close = False
         # if the boid is not at the last goal
         if self.goalCounter < len(self.goalList) - 1:
             if self.inGoal(self.position):
                 self.setNewGoal()
 
+            for obstacle in self.obstacleList:
+                c_point = obstacle.getPoint(self.position)
+                if self.norm(c_point, self.position) < min_obstacle_dist:
+                    obstacles_too_close = True
+
+            if self.stuck or not obstacles_too_close:
+                gVector, gMagSum = self.getGoalVector()
+
             neighborVectorList, nIndexes = self.getNeighborVectorList()
-            gVector, gMagSum = self.getGoalVector()
+            obstacleVectorList, obMagSum = self.getObstacleVectorList()
         else:
             self.DONE = True
             self.bConst = 100
 
+        # if not obstacles_too_close:
         bVectorList, bMagSum = self.getBoidVectorList()
-        obstacleVectorList, obMagSum = self.getObstacleVectorList()
 
         obVecSum = self.sumDivide(
             obstacleVectorList,
@@ -701,7 +720,9 @@ class Boid:
         if self.inWorld(newPos) and self.pointAllowed(newPos):
             self.position = newPos
 
-        self.stuck = self.updatePositionBuffer() < self.stuckConst
+        movement_val = self.updatePositionBuffer()
+        self.stuck = movement_val < self.stuckConst
+        self.super_stuck = movement_val < self.stuckConst * 5
 
     def draw(self):
         """
@@ -727,5 +748,3 @@ class Boid:
             ),
             self.radius
         )
-
-
