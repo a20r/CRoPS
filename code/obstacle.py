@@ -40,7 +40,7 @@ class PolyObstacle:
         self.dynamic = kwargs.get("dynamic", False)
 
         ## Velocity of the obstacle
-        self.velocity = [7, 0]
+        self.velocity = [3, 0]
 
         ## The displacement of the obstacle
         self.displacement = 0
