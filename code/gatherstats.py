@@ -24,7 +24,7 @@ def generateStats(mapFile, iterations, startPoint, endPoint):
     )
 
     for boids in range(10, 60, 10):
-        for obstacles in range(20, 30, 10):
+        for obstacles in range(30, 40, 10):
             for i in range(iterations):
                 #reload(bs)
                 print mapFile, " : ", boids, ":", obstacles, ":", i
