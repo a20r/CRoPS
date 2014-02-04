@@ -2,25 +2,27 @@
 
 __author__ = "Alex Wallar <aw204@st-andrews.ac.uk>"
 
-import time
+# import time
 import pygame
-import random
+# import random
 import math as np
-import prm
-import dijkstra
+# import prm
+# import dijkstra
 import goal
 
-def guassianFunc(dX, dAvg = 10, dSigma = 1):
+
+def guassianFunc(dX, dAvg=10, dSigma=1):
     """
     Gamma function used to give a probability distribution of the flock
     in order to choose an appropriate neighbour.
     @param dX Distance from the boid to the prospective neighbour
-    @param dAvg Dynamic variable used to define the average prospective Distance
+    @param dAvg Dynamic var used to define the average prospective Distance
     @param dSigma Standard deviation of the average distances
     """
     return np.exp(
         -0.5 * ((dX - dAvg) / dSigma) ** 2
-    ) / (2.5066282746310002*dSigma)
+    ) / (2.5066282746310002 * dSigma)
+
 
 class Boid:
     """
@@ -32,7 +34,8 @@ class Boid:
         _neighborSize, _gammaFunc,
         _obstacleList, _goalList,
         _prmGen, _screen, _color,
-        _radius, _position):
+        _radius, _position
+    ):
         """
         Initializes all of the variables given as input to the constructor used
         by the boid
@@ -98,6 +101,9 @@ class Boid:
         ## Defines if the boid is stuck
         self.stuck = False
 
+        ## Stuck counter
+        self.stuck_counter = 0
+
         ## Starting position of the boid
         self.sPos = _sPos
 
@@ -110,8 +116,8 @@ class Boid:
         ## Used to tell if the boid is stuck or not
         self.positionBuffer = [
             (
-                5 * i,
-                5 * i
+                20 * i,
+                20 * i
             ) for i in range(20)
         ]
 
@@ -291,7 +297,7 @@ class Boid:
 
         ## Helps scale the value returned by the sigmoid function
         # for boid repulsion
-        self.bBeta          = 60
+        self.bBeta          = 30
 
         ## Constant that is used in the sigmoid curve for boid
         ## repulsion
@@ -624,23 +630,21 @@ class Boid:
         """
         Updates the boid's heading and position due to the potential fields
         """
-
         min_obstacle_dist = 20
-        if self.stuck and not self.DONE:
-            self.determineNewPath()
-            # self.stuck = False
-            self.positionBuffer = [
-                (
-                    5 * i,
-                    5 * i
-                ) for i in range(20)
-            ]
+        # if self.stuck and not self.DONE:
+        #     self.determineNewPath()
+        #     # self.stuck = False
+        #     self.positionBuffer = [
+        #         (
+        #             5 * i,
+        #             5 * i
+        #         ) for i in range(20)
+        #     ]
 
         neighborVectorList, nIndexes = [[0, 0]], 1
         gVector, gMagSum = [0, 0], 1
         obstacleVectorList, obMagSum = [[0, 0]], 1
         bVectorList, bMagSum = [[0, 0]], 1
-
 
         obstacles_too_close = False
         # if the boid is not at the last goal
@@ -719,6 +723,10 @@ class Boid:
 
         movement_val = self.updatePositionBuffer()
         self.stuck = movement_val < self.stuckConst
+
+        if self.stuck and not self.DONE:
+            self.stuck_counter += 1
+
         self.super_stuck = movement_val < self.stuckConst * 5
 
     def draw(self):
@@ -728,7 +736,9 @@ class Boid:
         try:
             pygame.draw.lines(
                 self.screen,
-                (238, 130, 238),
+                # (238, 130, 238),
+                # (227, 159, 181),
+                (181, 53, 93),
                 False,
                 map(lambda g: g.position, self.goalList),
                 3
@@ -738,12 +748,12 @@ class Boid:
 
         pygame.draw.circle(
             self.screen,
-            (0, 255, 100) if self.stuck else (0, 255, 255),
+            # (0, 255, 100) if self.stuck else (0, 255, 255),
+            # (255, 0, 0) if self.stuck else (255, 0, 0),
+            (255, 0, 0) if self.stuck else (0, 0, 181),
             map(
                 int,
                 self.position
             ),
             self.radius
         )
-
-

@@ -123,13 +123,19 @@ class FlockSim:
         avgMinVal = self.avg(minAvgList)
         avgDistVal = self.avg(avgList)
 
+        stuck_counter = 0
+        for boid in self.config.boidList:
+            stuck_counter += boid.stuck_counter
+
         # writes data to the file
         self.dataFile.write(
             "current_step: " + str(self.counter) +
             ", current_time: " + str(endTime - self.startTime) +
             ", average_distance: " + str(avgDistVal) +
             ", average_min_distance: " + str(avgMinVal) +
-            ", number_finished: " + str(self.numInGoal) + "\n"
+            ", number_finished: " + str(self.numInGoal) +
+            ", stuck: " + str(stuck_counter) +
+            "\n"
         )
 
     def getBoidData(self):
@@ -207,7 +213,7 @@ class FlockSim:
                     self.config.ySize
                 )
             )
-            self.config.screen.fill(self.BLACK)
+            self.config.screen.fill(self.WHITE)
             boidPosList = [
                 b.position for b in self.config.boidList
             ]
@@ -254,7 +260,7 @@ class FlockSim:
         surfaces that have been stored in surfaceList and blits
         the new surface on the screen
         """
-        self.config.screen.fill(self.BLACK)
+        self.config.screen.fill(self.WHITE)
         pygame.display.set_caption('Playing...')
         self.counter = 0
         self.done = False
@@ -281,7 +287,7 @@ class FlockSim:
             text = self.font.render(
                 'Frame: ' + str(self.counter),
                 0,
-                self.WHITE
+                self.BLACK
             )
             self.config.screen.blit(text, (0, 0))
             pygame.display.flip()

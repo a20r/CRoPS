@@ -490,9 +490,15 @@ class PolyObstacle:
         """
         if self.dynamic:
             self.translate()
+            pygame.draw.polygon(
+                self.screen,
+                (60, 60, 60),
+                self.nodes
+            )
 
-        pygame.draw.polygon(
-            self.screen,
-            self.colors["red"],
-            self.nodes
-        )
+        else:
+            pygame.draw.polygon(
+                self.screen,
+                self.colors["grey"],
+                self.nodes
+            )

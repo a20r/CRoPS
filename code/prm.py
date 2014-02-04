@@ -236,7 +236,7 @@ class PRMGenerator:
                             pass
 
                     self.screen.fill(
-                        (0, 0, 0)
+                        (255, 255, 255)
                     )
 
                     self.draw()
@@ -300,7 +300,7 @@ class PRMGenerator:
         map(
             lambda circ: pygame.draw.circle(
                 self.screen,
-                (255, 255, 0),
+                (100, 100, 100),
                 circ,
                 5
             ),
@@ -311,7 +311,7 @@ class PRMGenerator:
                 if not k in self.dontDraw and not p in self.dontDraw:
                     pygame.draw.line(
                         self.screen,
-                        (255, 0, 255),
+                        (0, 0, 0),
                         self.subGoalPositionList[k],
                         self.subGoalPositionList[p]
                     )
@@ -322,7 +322,8 @@ class PRMGenerator:
         """
         pygame.draw.lines(
             self.screen,
-            (255, 255, 255),
+            # (255, 255, 255),
+            (0, 255, 0),
             False,
             self.gPosList,
             2
