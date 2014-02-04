@@ -1,0 +1,151 @@
+\begin{thebibliography}{10}
+\providecommand{\url}[1]{#1}
+\csname url@rmstyle\endcsname
+\providecommand{\newblock}{\relax}
+\providecommand{\bibinfo}[2]{#2}
+\providecommand\BIBentrySTDinterwordspacing{\spaceskip=0pt\relax}
+\providecommand\BIBentryALTinterwordstretchfactor{4}
+\providecommand\BIBentryALTinterwordspacing{\spaceskip=\fontdimen2\font plus
+\BIBentryALTinterwordstretchfactor\fontdimen3\font minus
+  \fontdimen4\font\relax}
+\providecommand\BIBforeignlanguage[2]{{%
+\expandafter\ifx\csname l@#1\endcsname\relax
+\typeout{** WARNING: IEEEtran.bst: No hyphenation pattern has been}%
+\typeout{** loaded for the language `#1'. Using the pattern for}%
+\typeout{** the default language instead.}%
+\else
+\language=\csname l@#1\endcsname
+\fi
+#2}}
+
+\bibitem{reynolds1987flocks}
+C.~W. Reynolds, ``Flocks, herds and schools: A distributed behavioral model,''
+  in \emph{ACM SIGGRAPH Computer Graphics}, vol.~21, no.~4, 1987, pp. 25--34.
+
+\bibitem{swarm}
+E.~\c{S}ahin, ``Swarm robotics: from sources of inspiration to domains of
+  application,'' in \emph{International Conference on Swarm Robotics}, 2004,
+  pp. 10--20.
+
+\bibitem{swarmReview12}
+M.~Brambilla, E.~Ferrante, M.~Birattari, and M.~Dorigo, ``Swarm robotics: a
+  review from the swarm engineering perspective,'' \emph{Swarm Intelligence},
+  pp. 1--41, 2012.
+
+\bibitem{Rei79}
+J.~Reif, ``Complexity of the mover's problem and generalizations,'' in
+  \emph{IEEE Symposium on Foundations of Computer Science}, 1979, pp. 421--427.
+
+\bibitem{Can88}
+J.~Canny, \emph{The Complexity of Robot Motion Planning}.\hskip 1em plus 0.5em
+  minus 0.4em\relax Cambridge, MA: MIT Press, 1988.
+
+\bibitem{SchSha88}
+J.~T. Schwartz and M.~Sharir, ``A survey of motion planning and related
+  geometric algorithms,'' \emph{Artificial Intelligence}, vol.~37, pp. 157 --
+  169, 1988.
+
+\bibitem{Khatib86}
+O.~Khatib, ``Real time obstacle avoidance for manipulators and mobile robots,''
+  \emph{International Journal of Robotics Research}, vol.~5, no.~1, pp. 90--99,
+  1986.
+
+\bibitem{reif1999social}
+J.~H. Reif and H.~Wang, ``Social potential fields: A distributed behavioral
+  control for autonomous robots,'' \emph{Robotics and Autonomous Systems},
+  vol.~27, no.~3, pp. 171--194, 1999.
+
+\bibitem{book:SwarmsAPFs}
+W.~M. Spears and D.~F. Spears, \emph{Physicomimetics: Physics-based swarm
+  intelligence}.\hskip 1em plus 0.5em minus 0.4em\relax Springer, 2012.
+
+\bibitem{tanner2005formation}
+H.~G. Tanner and A.~Kumar, ``Formation stabilization of multiple agents using
+  decentralized navigation functions,'' in \emph{Robotics: Science and
+  Systems}, 2005, pp. 49--56.
+
+\bibitem{RK92}
+E.~Rimon and D.~Koditschek, ``Exact robot navigation using artificial potential
+  functions,'' \emph{IEEE Tr. on Rob. and Autom.}, vol.~8, pp. 501--518, 1992.
+
+\bibitem{PRM}
+L.~E. Kavraki, P.~\v{S}vestka, J.~C. Latombe, and M.~H. Overmars,
+  ``Probabilistic roadmaps for path planning in high-dimensional configuration
+  spaces,'' \emph{IEEE Transactions on Robotics and Automation}, vol.~12,
+  no.~4, pp. 566--580, 1996.
+
+\bibitem{TogglePRM}
+J.~Denny and N.~M. Amato, ``Toggle {PRM}: A coordinated mapping of {C}-free and
+  {C}-obstacle in arbitrary dimension,'' ser. Springer Tracts in Advanced
+  Robotics, vol.~86, 2013, pp. 297--312.
+
+\bibitem{UOBPRM}
+H.-Y. Yeh, S.~Thomas, D.~Eppstein, and N.~M. Amato, ``{UOBPRM}: A uniformly
+  distributed obstacle-based {PRM},'' in \emph{IEEE/RSJ International
+  Conference on Intelligent Robots and Systems}, 2012, pp. 2655--2662.
+
+\bibitem{PlakuTRO05}
+E.~Plaku, K.~E. Bekris, B.~Y. Chen, A.~M. Ladd, and L.~E. Kavraki,
+  ``Sampling-based roadmap of trees for parallel motion planning,'' \emph{IEEE
+  Transactions on Robotics}, vol.~21, no.~4, pp. 587--608, 2005.
+
+\bibitem{HSUBridge}
+Z.~Sun, D.~Hsu, T.~Jiang, H.~Kurniawati, and J.~Reif, ``Narrow passage sampling
+  for probabilistic roadmap planners,'' \emph{IEEE Transactions on Robotics},
+  vol.~21, no.~6, pp. 1105--1115, 2005.
+
+\bibitem{GaussianPRM}
+V.~Boor, M.~H. Overmars, and A.~F. van~der Stappen, ``The {G}aussian sampling
+  strategy for probabilistic roadmap planners,'' in \emph{IEEE International
+  Conference on Robotics and Automation}, 1999, pp. 1018--1023.
+
+\bibitem{manocha12}
+J.~Pan, S.~Chitta, and D.~Manocha, ``Faster sample-based motion planning using
+  instance-based learning,'' ser. Springer Tracts in Advanced Robotics,
+  vol.~68, 2013, pp. 381--396.
+
+\bibitem{PRMapf1}
+D.~Aarno, D.~Kragic, and H.~I. Christensen, ``Artificial potential biased
+  probabilistic roadmap method,'' in \emph{IEEE International Conference on
+  Robotics and Automation}, 2004, pp. 461--466.
+
+\bibitem{PRMapf2}
+R.~Katz and S.~Hutchinson, ``Efficiently biasing prms with passage
+  potentials,'' in \emph{IEEE International Conference on Robotics and
+  Automation}, 2006, pp. 889--894.
+
+\bibitem{LienSwarming}
+O.~B. Bayaz{\i}t, J.-M. Lien, and N.~M. Amato, ``Swarming behavior using
+  probabilistic roadmap techniques,'' in \emph{Swarm Robotics}.\hskip 1em plus
+  0.5em minus 0.4em\relax Springer, 2005, pp. 112--125.
+
+\bibitem{LienSwarmingRules}
+------, ``Better group behaviors using rule-based roadmaps,'' in
+  \emph{International Workshop on Algorithmic Foundations of Robotics}, 2004,
+  pp. 95--112.
+
+\bibitem{LienShepherding}
+J.~F. Harrison, C.~Vo, and J.-M. Lien, ``Scalable and robust shepherding via
+  deformable shapes,'' in \emph{Motion in Games}.\hskip 1em plus 0.5em minus
+  0.4em\relax Springer, 2010, pp. 218--229.
+
+\bibitem{KostasSwarm}
+A.~Krontiris, S.~Louis, and K.~E. Bekris, ``Multi-level formation roadmaps for
+  collision-free dynamic shape changes with non-holonomic teams,'' in
+  \emph{IEEE International Conference on Robotics and Automation}, 2012.
+
+\bibitem{book:MP}
+H.~Choset, K.~M. Lynch, S.~Hutchinson, G.~Kantor, W.~Burgard, L.~E. Kavraki,
+  and S.~Thrun, \emph{Principles of Robot Motion: Theory, Algorithms, and
+  Implementations}.\hskip 1em plus 0.5em minus 0.4em\relax {MIT} Press, 2005.
+
+\bibitem{book:LaValle}
+S.~M. LaValle, \emph{Planning Algorithms}.\hskip 1em plus 0.5em minus
+  0.4em\relax Cambridge, MA: Cambridge University Press, 2006.
+
+\bibitem{CodeBoids}
+A.~Wallar and E.~Plaku, ``Source code for {CRoPS}: Combined roadmaps and
+  potentials for swarm path planning,'' 2013,
+  http://faculty.cua.edu/plaku/CRoPS.zip.
+
+\end{thebibliography}

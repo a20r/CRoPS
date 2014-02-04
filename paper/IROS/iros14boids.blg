@@ -1,0 +1,60 @@
+This is BibTeX, Version 0.99d (TeX Live 2013)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: iros14boids.aux
+The style file: IEEEtran.bst
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Database file #1: mp.bib
+Database file #2: plaku.bib
+-- IEEEtran.bst version 1.11 (2003/04/02) by Michael Shell.
+-- http://www.ctan.org/tex-archive/macros/latex/contrib/supported/IEEEtran/
+-- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
+Warning--empty booktitle in TogglePRM
+Warning--empty booktitle in manocha12
+
+Done.
+You've used 27 entries,
+            3975 wiz_defined-function locations,
+            1140 strings with 14599 characters,
+and the built_in function-call counts, 21249 in all, are:
+= -- 1663
+> -- 471
+< -- 199
++ -- 264
+- -- 72
+* -- 991
+:= -- 3065
+add.period$ -- 56
+call.type$ -- 27
+change.case$ -- 24
+chr.to.int$ -- 486
+cite$ -- 29
+duplicate$ -- 1492
+empty$ -- 1831
+format.name$ -- 93
+if$ -- 4961
+int.to.chr$ -- 0
+int.to.str$ -- 27
+missing$ -- 245
+newline$ -- 101
+num.names$ -- 27
+pop$ -- 600
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 2
+skip$ -- 1695
+stack$ -- 0
+substring$ -- 1157
+swap$ -- 1220
+text.length$ -- 37
+text.prefix$ -- 0
+top$ -- 5
+type$ -- 0
+warning$ -- 2
+while$ -- 109
+width$ -- 29
+write$ -- 268
+(There were 2 warnings)
