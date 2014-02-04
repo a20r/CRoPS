@@ -731,7 +731,9 @@ class Boid:
         try:
             pygame.draw.lines(
                 self.screen,
-                (238, 130, 238),
+                # (238, 130, 238),
+                # (227, 159, 181),
+                (181, 53, 93),
                 False,
                 map(lambda g: g.position, self.goalList),
                 3
@@ -741,7 +743,9 @@ class Boid:
 
         pygame.draw.circle(
             self.screen,
-            (0, 255, 100) if self.stuck else (0, 255, 255),
+            # (0, 255, 100) if self.stuck else (0, 255, 255),
+            # (255, 0, 0) if self.stuck else (255, 0, 0),
+            (255, 0, 0) if self.stuck else (0, 0, 181),
             map(
                 int,
                 self.position

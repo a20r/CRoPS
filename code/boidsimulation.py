@@ -207,7 +207,7 @@ class FlockSim:
                     self.config.ySize
                 )
             )
-            self.config.screen.fill(self.BLACK)
+            self.config.screen.fill(self.WHITE)
             boidPosList = [
                 b.position for b in self.config.boidList
             ]
@@ -254,7 +254,7 @@ class FlockSim:
         surfaces that have been stored in surfaceList and blits
         the new surface on the screen
         """
-        self.config.screen.fill(self.BLACK)
+        self.config.screen.fill(self.WHITE)
         pygame.display.set_caption('Playing...')
         self.counter = 0
         self.done = False
@@ -281,7 +281,7 @@ class FlockSim:
             text = self.font.render(
                 'Frame: ' + str(self.counter),
                 0,
-                self.WHITE
+                self.BLACK
             )
             self.config.screen.blit(text, (0, 0))
             pygame.display.flip()
