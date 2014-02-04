@@ -101,6 +101,9 @@ class Boid:
         ## Defines if the boid is stuck
         self.stuck = False
 
+        ## Stuck counter
+        self.stuck_counter = 0
+
         ## Starting position of the boid
         self.sPos = _sPos
 
@@ -113,8 +116,8 @@ class Boid:
         ## Used to tell if the boid is stuck or not
         self.positionBuffer = [
             (
-                5 * i,
-                5 * i
+                20 * i,
+                20 * i
             ) for i in range(20)
         ]
 
@@ -627,23 +630,21 @@ class Boid:
         """
         Updates the boid's heading and position due to the potential fields
         """
-
         min_obstacle_dist = 20
-        if self.stuck and not self.DONE:
-            self.determineNewPath()
-            # self.stuck = False
-            self.positionBuffer = [
-                (
-                    5 * i,
-                    5 * i
-                ) for i in range(20)
-            ]
+        # if self.stuck and not self.DONE:
+        #     self.determineNewPath()
+        #     # self.stuck = False
+        #     self.positionBuffer = [
+        #         (
+        #             5 * i,
+        #             5 * i
+        #         ) for i in range(20)
+        #     ]
 
         neighborVectorList, nIndexes = [[0, 0]], 1
         gVector, gMagSum = [0, 0], 1
         obstacleVectorList, obMagSum = [[0, 0]], 1
         bVectorList, bMagSum = [[0, 0]], 1
-
 
         obstacles_too_close = False
         # if the boid is not at the last goal
@@ -722,6 +723,10 @@ class Boid:
 
         movement_val = self.updatePositionBuffer()
         self.stuck = movement_val < self.stuckConst
+
+        if self.stuck and not self.DONE:
+            self.stuck_counter += 1
+
         self.super_stuck = movement_val < self.stuckConst * 5
 
     def draw(self):

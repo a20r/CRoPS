@@ -123,13 +123,19 @@ class FlockSim:
         avgMinVal = self.avg(minAvgList)
         avgDistVal = self.avg(avgList)
 
+        stuck_counter = 0
+        for boid in self.config.boidList:
+            stuck_counter += boid.stuck_counter
+
         # writes data to the file
         self.dataFile.write(
             "current_step: " + str(self.counter) +
             ", current_time: " + str(endTime - self.startTime) +
             ", average_distance: " + str(avgDistVal) +
             ", average_min_distance: " + str(avgMinVal) +
-            ", number_finished: " + str(self.numInGoal) + "\n"
+            ", number_finished: " + str(self.numInGoal) +
+            ", stuck: " + str(stuck_counter) +
+            "\n"
         )
 
     def getBoidData(self):

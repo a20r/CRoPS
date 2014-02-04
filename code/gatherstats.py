@@ -4,7 +4,7 @@ import sys
 import boidsimulation as bs
 
 # GLOBAL VARS
-iterations = 10
+iterations = 1
 
 
 # generates stats for the project
@@ -23,8 +23,8 @@ def generateStats(mapFile, iterations, startPoint, endPoint):
         "_" + str(boids) + "_" + str(obstacles) + "_" + str(it)
     )
 
-    for boids in [10, 20, 30, 40, 50, 60, 70, 80, 90, 100]:
-        for obstacles in [5, 15]:
+    for boids in [30]:
+        for obstacles in [0]:
             for i in range(iterations):
                 #reload(bs)
                 print mapFile, " : ", boids, ":", obstacles, ":", i
