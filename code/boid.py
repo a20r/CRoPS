@@ -116,8 +116,8 @@ class Boid:
         ## Used to tell if the boid is stuck or not
         self.positionBuffer = [
             (
-                20 * i,
-                20 * i
+                5 * i,
+                5 * i
             ) for i in range(20)
         ]
 
