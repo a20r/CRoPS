@@ -307,22 +307,22 @@ areas with high clearance. It is worth noting that while we have chosen through
 experimentation a particular weight function for this paper, alternative weight
 functions can also be used.
 
-% I FINISHED HERE %
-
 
 \subsubsection{Roadmap Edges}
-After generating roadmap vertices, $\Name$ connects each
-roadmap vertex to its $k$ nearest neighbors. Edges that are in
-collision are discarded. The weight of an edge connecting $q_i$ to
-$q_j$ is defined as
-$$
-w(q_i, q_j) = ||q_i, q_j||_2 / \min(w(q_i), w(q_j)),
-$$
-where $||q_i, q_j||_2$ is the Euclidean distance from $q_i$ to $q_j$. Note
-that $w(q_i, q_j)$ is small when $q_i$ and $q_j$ are close to each
-other and away from obstacles.
 
-%$s_\Var{edge}$ is a scaling constant to account for the workspace dimensions and
+Once the roadmap vertices are generated, the roadmap vertices are connected to
+its $k$ nearest neighbors by $\Name$. If any edges are in collision with an
+obstacle they are discarded. The weight of an edge connecting $q_i$ to $q_j$ is
+defined as
+
+$$ w(q_i, q_j) = ||q_i, q_j||_2 / \min(w(q_i), w(q_j)), $$ 
+
+where $||q_i, q_j||_2$ is the Euclidean distance from $q_i$ to $q_j$. Note that
+$w(q_i, q_j)$ is small when $q_i$ and $q_j$ are close to each other and away
+from obstacles.
+
+% I FINISHED HERE %
+
 
 \subsubsection{Intermediate Goals along Shortest Roadmap Path}
 
