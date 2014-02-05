@@ -61,7 +61,7 @@ class FlockSim:
         self.surfaceList = list()
 
         ## Maximum number of iterations
-        self.iterations = 800
+        self.iterations = 1000
 
         ## Counts which frame the user is on for the playback (don't know why
         ## it is set to -2, it just works)
@@ -296,13 +296,13 @@ class FlockSim:
             )
             self.config.screen.blit(text, (0, 0))
 
-            if self.random_seed:
-                random_seed = self.font.render(
-                    'Random Seed: ' + str(self.random_seed),
-                    0,
-                    self.BLACK
-                )
-                self.config.screen.blit(random_seed, (0, 30))
+            # if self.random_seed:
+            #     random_seed = self.font.render(
+            #         'Random Seed: ' + str(self.random_seed),
+            #         0,
+            #         self.BLACK
+            #     )
+            #     self.config.screen.blit(random_seed, (0, 30))
 
             pygame.display.flip()
             for e in pygame.event.get():
