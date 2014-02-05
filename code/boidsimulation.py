@@ -225,6 +225,9 @@ class FlockSim:
             map(lambda o: o.draw(), self.config.obstacleList)
             map(lambda b: b.draw(), self.config.boidList)
             map(lambda b: b.update(), self.config.boidList)
+
+            # self.config.boidList[0].goalList[-1].draw()
+
             self.numInGoal = len(
                 filter(
                     lambda b: b.goalCounter == len(b.goalList) - 1,

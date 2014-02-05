@@ -385,7 +385,8 @@ class Boid:
         by the sum of those weights
         @param wList List of Weights
         @param *vList Values that will be weighted
-        @return An average vector that represents the average heading due to the potential fields
+        @return An average vector that represents the average heading due to
+        the potential fields
         """
 
         return self.sumDivide(
@@ -630,16 +631,26 @@ class Boid:
         """
         Updates the boid's heading and position due to the potential fields
         """
+
+        inLastGoal = all(
+            map(
+                lambda q, r: abs(q - r) < self.goalList[-1].radius * 3,
+                self.position,
+                self.goalList[-1].position
+            )
+        )
+
+
         min_obstacle_dist = 20
-        # if self.stuck and not self.DONE:
-        #     self.determineNewPath()
-        #     # self.stuck = False
-        #     self.positionBuffer = [
-        #         (
-        #             5 * i,
-        #             5 * i
-        #         ) for i in range(20)
-        #     ]
+        if self.stuck and not self.DONE:
+            self.determineNewPath()
+            # self.stuck = False
+            self.positionBuffer = [
+                (
+                    5 * i,
+                    5 * i
+                ) for i in range(20)
+            ]
 
         neighborVectorList, nIndexes = [[0, 0]], 1
         gVector, gMagSum = [0, 0], 1
@@ -663,7 +674,8 @@ class Boid:
             neighborVectorList, nIndexes = self.getNeighborVectorList()
             obstacleVectorList, obMagSum = self.getObstacleVectorList()
         else:
-            self.DONE = True
+            if inLastGoal:
+                self.DONE = True
             self.bConst = 100
 
         # if not obstacles_too_close:

@@ -37,6 +37,6 @@ class CircleGoal:
             self.screen,
             self.colors["green"],
             self.position,
-            self.radius,
+            self.radius * 4,
             5
         )

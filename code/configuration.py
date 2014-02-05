@@ -39,7 +39,7 @@ class Configuration:
         color.THECOLORS.keys()
     )
 
-    boid_radius = 4
+    boid_radius = 6
 
 
 class PolyFileConfiguration(Configuration):
