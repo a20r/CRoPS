@@ -264,62 +264,65 @@ passageways. {\color{red} Details of the main steps follow. Source code and
 detailed documentation including all parameter values are publicly available
 \cite{CodeBoids}.  Parameter values are generally determined empirically.}
 
-% I FINISHED HERE %
 
 \subsection{Roadmap Construction}
 \label{sec:RM}
 
- $\Name$ constructs a roadmap in order to effectively guide the swarm
-toward the goal. Since the swarm could have many robots, the roadmap
-is not constructed over the high-dimensional configuration
-space, as it is often the case in PRM approaches, but is instead
-constructed over the low-dimensional workspace where the swarm
-moves. As explained in this section, $\Name$ uses the roadmap to find
-intermediate areas in which the swarm can move to effectively reach
-the goal.
+Since the swarm could have many robots, roadmaps are used to find intermediate
+areas in order to effectively guide the swarm towards the goal. Therefore in
+our approach $\Name$ constructs a low-dimensional configuration workspace
+roadmap instead of a high-dimensional one, as is often the case in PRM
+approaches.
+
 
 \subsubsection{Roadmap Vertices}
-The roadmap is constructed by first sampling a large number of points
-uniformly at random inside the workspace boundaries and then
-discarding all the points that are in collision or too close to an
-obstacle. A parameter, $d_\Var{clear}$, determines the minimum
-acceptable distance from a sampled point to the nearest obstacle. The
-remaining points, which are all at least $d_\Var{clear}$ units away
-from the obstacles, are added as vertices to the roadmap graph $RM =
-(V, E)$. A roadmap vertex $q_i$ and the clearance $d_\Var{clear}$
-conceptually define a clearance area as a disk centered at $q_i$ with
-radius $d_\Var{clear}$, denoted as $\Var{area}(q_i)$. In order to bias
-the swarm movements toward less cluttered areas, each roadmap vertex
-$q_i$ is associated with a weight $w(q_i)$ which estimates how
-feasible it is for the swarm to travel through $\Var{area}(q_i)$. More
-specifically, the weight is defined as
-$$
-w(q_i) = (\sum_{o \in \Var{Obstacles}} \Var{dist}(q_i, o))^3,
-$$ 
-where $\Var{dist}(q_i, o)$ denotes the minimum distance from $q_i$
-to the obstacle $o$. In this way, small weights indicate the presence
-of obstacles nearby, which may make it more difficult for the swarm to
-pass through.  As explained later in the section, $\Name$ gives
-preferences to roadmap vertices associated with high weights which are
-indicative of areas with high clearance. Note that other definitions
-for the weight function are possible. The particular function used in
-this paper worked well for the experiments as it captures the desired
-properties of biasing the swarm movements towards less cluttered
-areas.
+
+To construct a roadmap $RM$ first a large number of points are sampled
+uniformly at random inside the workspace boundaries, then all points that are
+in collision or too close to an obstacle are discarded. A Parameter
+$d_\Var{clear}$ was used to determine the minimum acceptable distance between
+the sampled point to the nearest obstacle. The remaining points, which are
+$d_\Var{clear}$ units away from the obstacles are added as vertices to the
+roadmap graph $RM = (V, E)$.
+
+The roadmap is constructed by first sampling a large number of points uniformly
+at random inside the workspace boundaries and then discarding all the points
+that are in collision or too close to an obstacle. A parameter, $d_\Var{clear}$
+was used to determine the minimum acceptable distance from a sampled point to
+the nearest obstacle. The remaining points, which are all at least
+$d_\Var{clear}$ units away from the obstacles, are added as vertices to the
+roadmap graph $RM = (V, E)$. We conceptually define a clearance area
+$\Var{area}(q_i)$ as a disk centred at roadmap vertex $q_i$ with radius
+$d_\Var{clear}$. Each roadmap vertex $q_i$ is associated with a weight $w(q_i)$
+to estimate how feasible it is for the swarm to travel through
+$\Var{area}(q_i)$, more formally it is defined as
+
+$$ w(q_i) = (\sum_{o \in\Var{Obstacles}} \Var{dist}(q_i, o))^3, $$
+
+Where $\Var{dist}(q_i, o)$ denotes the minimum distance from $q_i$ to the
+obstacle $o$. With this definition a small weight indicates the presence of
+obstacles nearly. As will be explained in later sections $\Name$ gives
+preferences to roadmap vertices associated with high weights, indicative of
+areas with high clearance. It is worth noting that while we have chosen through
+experimentation a particular weight function for this paper, alternative weight
+functions can also be used.
+
 
 \subsubsection{Roadmap Edges}
-After generating roadmap vertices, $\Name$ connects each
-roadmap vertex to its $k$ nearest neighbors. Edges that are in
-collision are discarded. The weight of an edge connecting $q_i$ to
-$q_j$ is defined as
-$$
-w(q_i, q_j) = ||q_i, q_j||_2 / \min(w(q_i), w(q_j)),
-$$
-where $||q_i, q_j||_2$ is the Euclidean distance from $q_i$ to $q_j$. Note
-that $w(q_i, q_j)$ is small when $q_i$ and $q_j$ are close to each
-other and away from obstacles.
 
-%$s_\Var{edge}$ is a scaling constant to account for the workspace dimensions and
+Once the roadmap vertices are generated, the roadmap vertices are connected to
+its $k$ nearest neighbors by $\Name$. If any edges are in collision with an
+obstacle they are discarded. The weight of an edge connecting $q_i$ to $q_j$ is
+defined as
+
+$$ w(q_i, q_j) = ||q_i, q_j||_2 / \min(w(q_i), w(q_j)), $$ 
+
+where $||q_i, q_j||_2$ is the Euclidean distance from $q_i$ to $q_j$. Note that
+$w(q_i, q_j)$ is small when $q_i$ and $q_j$ are close to each other and away
+from obstacles.
+
+% I FINISHED HERE %
+
 
 \subsubsection{Intermediate Goals along Shortest Roadmap Path}
 

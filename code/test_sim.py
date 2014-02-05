@@ -1,5 +1,6 @@
 import boidsimulation as bs
 import sys
+import random
 
 """
 Main module to run for testing purposes
@@ -69,6 +70,11 @@ if __name__ == "__main__":
             else:
                 obstacleFilePath = arg
 
+            randomSeed = sys.argv[4]
+            if randomSeed:
+                print "SEED RANDOM: ", randomSeed
+                random.seed(randomSeed)
+
         fs = bs.FlockSim(
             flockSize,
             startPoint,
@@ -76,6 +82,7 @@ if __name__ == "__main__":
             map_file=mapFilePath,
             obstacle_file=obstacleFilePath,
             auto_gen_obst=dynamicObstacleAutoGenerate,
-            auto_gen_number=generateTarget
+            auto_gen_number=generateTarget,
+            random_seed=randomSeed
         )
         fs.animate()

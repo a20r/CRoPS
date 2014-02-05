@@ -88,6 +88,8 @@ class FlockSim:
         ## Number of random dynamic obstacles to generate
         self.auto_gen_number = kwargs.get("auto_gen_number", 0)
 
+        self.random_seed = kwargs.get("random_seed", None)
+
     def avg(self, l):
         """
         Gets the average of a list
@@ -293,6 +295,15 @@ class FlockSim:
                 self.BLACK
             )
             self.config.screen.blit(text, (0, 0))
+
+            if self.random_seed:
+                random_seed = self.font.render(
+                    'Random Seed: ' + str(self.random_seed),
+                    0,
+                    self.BLACK
+                )
+                self.config.screen.blit(random_seed, (0, 30))
+
             pygame.display.flip()
             for e in pygame.event.get():
                 if e.type is pygame.QUIT:
