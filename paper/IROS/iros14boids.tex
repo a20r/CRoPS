@@ -345,12 +345,16 @@ the swarm is to always avoid collisions with obstacles. For this
 reason, a repulsive potential is defined that pushes the robots away
 from the obstacles. More specifically, the repulsive potential between
 a robot $b$ and an obstacle $o$ is defined as
-$$ P_\Var{obst}(b, o) = \frac{1}{(\Var{dist}(\Var{pos}(b), o) - \Var{radius}(b))^2},
-$$ where $\Var{pos}(b)$ and
-$\Var{radius}(b)$ denote the position and radius of the robot $b$, respectively. Note that the
-important aspect of this repulsive function is that its value
-increases rapidly as the robot approaches an obstacle. This ensures
-that the robot would be pushed away and never collide with an obstacle.
+
+$$
+    P_\Var{obst}(b, o) = \frac{1}{\sqrt{|\Var{dist}(\Var{pos}(b), o) - \Var{radius}(b)|}},
+$$
+
+where $\Var{pos}(b)$ and $\Var{radius}(b)$ denote the position and radius of
+the robot $b$, respectively. Note that the important aspect of this repulsive
+function is that its value increases rapidly as the robot approaches an
+obstacle. This ensures that the robot would be pushed away and never collide
+with an obstacle.
 
 %$$ P_\Var{obst}(b, o) = \frac{s_\Var{obst}\,
 %  \Var{radius}(b)}{(\Var{dist}(\Var{pos}(b), o) - \Var{radius}(b))^2},

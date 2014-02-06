@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  4 FEB 2014 21:29
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  6 FEB 2014 00:34
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -399,10 +399,7 @@ LaTeX Font Warning: Command \small invalid in math mode on input line 242.
 
 [2]
 
-LaTeX Font Warning: Command \small invalid in math mode on input line 270.
-
-
-LaTeX Font Warning: Command \small invalid in math mode on input line 275.
+LaTeX Font Warning: Command \small invalid in math mode on input line 273.
 
 
 LaTeX Font Warning: Command \small invalid in math mode on input line 283.
@@ -411,85 +408,88 @@ LaTeX Font Warning: Command \small invalid in math mode on input line 283.
 LaTeX Font Warning: Command \small invalid in math mode on input line 285.
 
 
-LaTeX Font Warning: Command \small invalid in math mode on input line 287.
+LaTeX Font Warning: Command \small invalid in math mode on input line 290.
 
 
-LaTeX Font Warning: Command \small invalid in math mode on input line 289.
-
-
-LaTeX Font Warning: Command \small invalid in math mode on input line 289.
-
-
-LaTeX Font Warning: Command \small invalid in math mode on input line 292.
+LaTeX Font Warning: Command \small invalid in math mode on input line 293.
 
 
 LaTeX Font Warning: Command \small invalid in math mode on input line 295.
 
 
-LaTeX Font Warning: Command \small invalid in math mode on input line 295.
+LaTeX Font Warning: Command \small invalid in math mode on input line 296.
 
 
-LaTeX Font Warning: Command \small invalid in math mode on input line 297.
+LaTeX Font Warning: Command \small invalid in math mode on input line 298.
 
 
 LaTeX Font Warning: Command \small invalid in math mode on input line 300.
 
 
-LaTeX Font Warning: Command \small invalid in math mode on input line 309.
+LaTeX Font Warning: Command \small invalid in math mode on input line 300.
 
 
-LaTeX Font Warning: Command \small invalid in math mode on input line 328.
+LaTeX Font Warning: Command \small invalid in math mode on input line 302.
 
 
-LaTeX Font Warning: Command \small invalid in math mode on input line 329.
+LaTeX Font Warning: Command \small invalid in math mode on input line 304.
 
 
-LaTeX Font Warning: Command \small invalid in math mode on input line 343.
+LaTeX Font Warning: Command \small invalid in math mode on input line 314.
 
 
-LaTeX Font Warning: Command \small invalid in math mode on input line 343.
+LaTeX Font Warning: Command \small invalid in math mode on input line 333.
 
 
-LaTeX Font Warning: Command \small invalid in math mode on input line 343.
+LaTeX Font Warning: Command \small invalid in math mode on input line 334.
 
 
-LaTeX Font Warning: Command \small invalid in math mode on input line 343.
+LaTeX Font Warning: Command \small invalid in math mode on input line 350.
 
 
-LaTeX Font Warning: Command \small invalid in math mode on input line 344.
+LaTeX Font Warning: Command \small invalid in math mode on input line 350.
 
 
-LaTeX Font Warning: Command \small invalid in math mode on input line 345.
+LaTeX Font Warning: Command \small invalid in math mode on input line 350.
 
 
-LaTeX Font Warning: Command \small invalid in math mode on input line 360.
+LaTeX Font Warning: Command \small invalid in math mode on input line 350.
 
 
-LaTeX Font Warning: Command \small invalid in math mode on input line 363.
+LaTeX Font Warning: Command \small invalid in math mode on input line 353.
 
 
-LaTeX Font Warning: Command \small invalid in math mode on input line 364.
+LaTeX Font Warning: Command \small invalid in math mode on input line 353.
 
 
-LaTeX Font Warning: Command \small invalid in math mode on input line 364.
+LaTeX Font Warning: Command \small invalid in math mode on input line 369.
 
 
-LaTeX Font Warning: Command \small invalid in math mode on input line 364.
+LaTeX Font Warning: Command \small invalid in math mode on input line 372.
 
 
-LaTeX Font Warning: Command \small invalid in math mode on input line 364.
+LaTeX Font Warning: Command \small invalid in math mode on input line 373.
 
 
-LaTeX Font Warning: Command \small invalid in math mode on input line 365.
+LaTeX Font Warning: Command \small invalid in math mode on input line 373.
 
 
-LaTeX Font Warning: Command \small invalid in math mode on input line 365.
+LaTeX Font Warning: Command \small invalid in math mode on input line 373.
 
 
-LaTeX Font Warning: Command \small invalid in math mode on input line 365.
+LaTeX Font Warning: Command \small invalid in math mode on input line 373.
 
 
-Overfull \hbox (23.95695pt too wide) detected at line 366
+LaTeX Font Warning: Command \small invalid in math mode on input line 374.
+
+
+LaTeX Font Warning: Command \small invalid in math mode on input line 374.
+
+
+LaTeX Font Warning: Command \small invalid in math mode on input line 374.
+
+
+Overfull \hbox (23.95695pt too wide) detected at line 375
 \OML/cmm/m/it/10 PF[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 b\OT1/cmr/m/n/10 ) = [](
 [](\OML/cmm/m/it/10 b\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 ^^@ []\OT1/cmr/m/n/10 (
 \OML/cmm/m/it/10 o; []\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 b\OT1/cmr/m/n/10 )))\OM
@@ -498,55 +498,34 @@ m/m/it/10 ;
  []
 
 
-LaTeX Font Warning: Command \small invalid in math mode on input line 367.
+LaTeX Font Warning: Command \small invalid in math mode on input line 376.
 
 
-LaTeX Font Warning: Command \small invalid in math mode on input line 367.
-
-
-LaTeX Font Warning: Command \small invalid in math mode on input line 368.
-
-
-LaTeX Font Warning: Command \small invalid in math mode on input line 375.
+LaTeX Font Warning: Command \small invalid in math mode on input line 376.
 
 
 LaTeX Font Warning: Command \small invalid in math mode on input line 377.
 
 
-LaTeX Font Warning: Command \small invalid in math mode on input line 378.
-
-
-LaTeX Font Warning: Command \small invalid in math mode on input line 378.
-
-
-LaTeX Font Warning: Command \small invalid in math mode on input line 378.
-
-
-LaTeX Font Warning: Command \small invalid in math mode on input line 380.
-
-
 LaTeX Font Warning: Command \small invalid in math mode on input line 384.
+
+
+LaTeX Font Warning: Command \small invalid in math mode on input line 386.
 
 
 LaTeX Font Warning: Command \small invalid in math mode on input line 387.
 
 
-LaTeX Font Warning: Command \small invalid in math mode on input line 388.
+LaTeX Font Warning: Command \small invalid in math mode on input line 387.
 
 
-LaTeX Font Warning: Command \small invalid in math mode on input line 388.
-
-
-LaTeX Font Warning: Command \small invalid in math mode on input line 388.
-
-
-LaTeX Font Warning: Command \small invalid in math mode on input line 388.
+LaTeX Font Warning: Command \small invalid in math mode on input line 387.
 
 
 LaTeX Font Warning: Command \small invalid in math mode on input line 389.
 
 
-LaTeX Font Warning: Command \small invalid in math mode on input line 389.
+LaTeX Font Warning: Command \small invalid in math mode on input line 393.
 
 
 LaTeX Font Warning: Command \small invalid in math mode on input line 396.
@@ -555,47 +534,56 @@ LaTeX Font Warning: Command \small invalid in math mode on input line 396.
 LaTeX Font Warning: Command \small invalid in math mode on input line 397.
 
 
-LaTeX Font Warning: Command \small invalid in math mode on input line 399.
+LaTeX Font Warning: Command \small invalid in math mode on input line 397.
 
 
-LaTeX Font Warning: Command \small invalid in math mode on input line 401.
+LaTeX Font Warning: Command \small invalid in math mode on input line 397.
 
 
-LaTeX Font Warning: Command \small invalid in math mode on input line 403.
+LaTeX Font Warning: Command \small invalid in math mode on input line 397.
 
 
-LaTeX Font Warning: Command \small invalid in math mode on input line 404.
+LaTeX Font Warning: Command \small invalid in math mode on input line 398.
 
 
-LaTeX Font Warning: Command \small invalid in math mode on input line 404.
-
-
-LaTeX Font Warning: Command \small invalid in math mode on input line 404.
-
-
-LaTeX Font Warning: Command \small invalid in math mode on input line 404.
-
-
-LaTeX Font Warning: Command \small invalid in math mode on input line 404.
+LaTeX Font Warning: Command \small invalid in math mode on input line 398.
 
 [3]
 
 LaTeX Font Warning: Command \small invalid in math mode on input line 405.
 
 
+LaTeX Font Warning: Command \small invalid in math mode on input line 406.
+
+
 LaTeX Font Warning: Command \small invalid in math mode on input line 408.
 
 
-LaTeX Font Warning: Command \small invalid in math mode on input line 424.
+LaTeX Font Warning: Command \small invalid in math mode on input line 410.
 
 
-LaTeX Font Warning: Command \small invalid in math mode on input line 424.
+LaTeX Font Warning: Command \small invalid in math mode on input line 412.
 
 
-LaTeX Font Warning: Command \small invalid in math mode on input line 426.
+LaTeX Font Warning: Command \small invalid in math mode on input line 413.
 
 
-LaTeX Font Warning: Command \small invalid in math mode on input line 432.
+LaTeX Font Warning: Command \small invalid in math mode on input line 413.
+
+
+LaTeX Font Warning: Command \small invalid in math mode on input line 413.
+
+
+LaTeX Font Warning: Command \small invalid in math mode on input line 413.
+
+
+LaTeX Font Warning: Command \small invalid in math mode on input line 413.
+
+
+LaTeX Font Warning: Command \small invalid in math mode on input line 414.
+
+
+LaTeX Font Warning: Command \small invalid in math mode on input line 417.
 
 
 LaTeX Font Warning: Command \small invalid in math mode on input line 433.
@@ -604,37 +592,16 @@ LaTeX Font Warning: Command \small invalid in math mode on input line 433.
 LaTeX Font Warning: Command \small invalid in math mode on input line 433.
 
 
-LaTeX Font Warning: Command \small invalid in math mode on input line 446.
+LaTeX Font Warning: Command \small invalid in math mode on input line 435.
 
 
-LaTeX Font Warning: Command \small invalid in math mode on input line 448.
+LaTeX Font Warning: Command \small invalid in math mode on input line 441.
 
 
-LaTeX Font Warning: Command \small invalid in math mode on input line 448.
+LaTeX Font Warning: Command \small invalid in math mode on input line 442.
 
 
-LaTeX Font Warning: Command \small invalid in math mode on input line 449.
-
-
-LaTeX Font Warning: Command \small invalid in math mode on input line 453.
-
-
-LaTeX Font Warning: Command \small invalid in math mode on input line 454.
-
-
-LaTeX Font Warning: Command \small invalid in math mode on input line 460.
-
-
-LaTeX Font Warning: Command \small invalid in math mode on input line 460.
-
-
-LaTeX Font Warning: Command \small invalid in math mode on input line 463.
-
-
-Underfull \hbox (badness 1715) in paragraph at lines 461--466
-\OT1/ptm/m/n/10 where $\OML/cmm/m/it/10 r[]; r[]$ \OT1/ptm/m/n/10 con-sti-tute 
-a ran-dom di-rec-tion. Note that
- []
+LaTeX Font Warning: Command \small invalid in math mode on input line 442.
 
 
 LaTeX Font Warning: Command \small invalid in math mode on input line 467.
@@ -643,7 +610,13 @@ LaTeX Font Warning: Command \small invalid in math mode on input line 467.
 LaTeX Font Warning: Command \small invalid in math mode on input line 467.
 
 
-LaTeX Font Warning: Command \small invalid in math mode on input line 468.
+LaTeX Font Warning: Command \small invalid in math mode on input line 469.
+
+
+LaTeX Font Warning: Command \small invalid in math mode on input line 469.
+
+
+LaTeX Font Warning: Command \small invalid in math mode on input line 469.
 
 
 LaTeX Font Warning: Command \small invalid in math mode on input line 469.
@@ -655,129 +628,43 @@ LaTeX Font Warning: Command \small invalid in math mode on input line 470.
 LaTeX Font Warning: Command \small invalid in math mode on input line 470.
 
 
+LaTeX Font Warning: Command \small invalid in math mode on input line 476.
+
+
+LaTeX Font Warning: Command \small invalid in math mode on input line 476.
+
+
 LaTeX Font Warning: Command \small invalid in math mode on input line 477.
 
 
-LaTeX Font Warning: Command \small invalid in math mode on input line 479.
+LaTeX Font Warning: Command \small invalid in math mode on input line 477.
 
 
-LaTeX Font Warning: Command \small invalid in math mode on input line 502.
-
-
-LaTeX Font Warning: Command \small invalid in math mode on input line 502.
-
-
-LaTeX Font Warning: Command \small invalid in math mode on input line 504.
-
-
-LaTeX Font Warning: Command \small invalid in math mode on input line 504.
-
-
-LaTeX Font Warning: Command \small invalid in math mode on input line 504.
-
-
-LaTeX Font Warning: Command \small invalid in math mode on input line 504.
-
-
-LaTeX Font Warning: Command \small invalid in math mode on input line 505.
-
-
-LaTeX Font Warning: Command \small invalid in math mode on input line 505.
-
-
-LaTeX Font Warning: Command \small invalid in math mode on input line 511.
-
-
-LaTeX Font Warning: Command \small invalid in math mode on input line 511.
-
-
-LaTeX Font Warning: Command \small invalid in math mode on input line 512.
-
-
-LaTeX Font Warning: Command \small invalid in math mode on input line 512.
-
-
-LaTeX Font Warning: Command \small invalid in math mode on input line 512.
+LaTeX Font Warning: Command \small invalid in math mode on input line 477.
 
 <figs/m7.pdf, id=27, 1246.6575pt x 722.7pt>
 File: figs/m7.pdf Graphic file (type pdf)
  <use figs/m7.pdf>
-Package pdftex.def Info: figs/m7.pdf used on input line 543.
+Package pdftex.def Info: figs/m7.pdf used on input line 508.
 (pdftex.def)             Requested size: 278.24104pt x 161.29922pt.
 
 <figs/scene1.pdf, id=28, 1284.8pt x 722.7pt>
 File: figs/scene1.pdf Graphic file (type pdf)
  <use figs/scene1.pdf>
-Package pdftex.def Info: figs/scene1.pdf used on input line 544.
+Package pdftex.def Info: figs/scene1.pdf used on input line 509.
 (pdftex.def)             Requested size: 278.24104pt x 156.50227pt.
 
 <figs/scene2.pdf, id=29, 1246.6575pt x 722.7pt>
 File: figs/scene2.pdf Graphic file (type pdf)
  <use figs/scene2.pdf>
-Package pdftex.def Info: figs/scene2.pdf used on input line 546.
+Package pdftex.def Info: figs/scene2.pdf used on input line 511.
 (pdftex.def)             Requested size: 278.24104pt x 161.29922pt.
 
-Overfull \hbox (334.76398pt too wide) in paragraph at lines 542--551
+Overfull \hbox (334.76398pt too wide) in paragraph at lines 507--516
 [][] 
  []
 
-
-LaTeX Font Warning: Command \small invalid in math mode on input line 587.
-
-
-LaTeX Font Warning: Command \small invalid in math mode on input line 593.
-
-[4] <figs/figResT.pdf, id=33, 903.375pt x 505.89pt>
-File: figs/figResT.pdf Graphic file (type pdf)
- <use figs/figResT.pdf>
-Package pdftex.def Info: figs/figResT.pdf used on input line 597.
-(pdftex.def)             Requested size: 247.88887pt x 138.81526pt.
-
-<figs/figResST.pdf, id=34, 903.375pt x 505.89pt>
-File: figs/figResST.pdf Graphic file (type pdf)
- <use figs/figResST.pdf>
-Package pdftex.def Info: figs/figResST.pdf used on input line 598.
-(pdftex.def)             Requested size: 247.88887pt x 138.81526pt.
-
-Overfull \hbox (2.17076pt too wide) in paragraph at lines 597--602
- [][] 
- []
-
-
-Overfull \hbox (2.17076pt too wide) in paragraph at lines 597--602
- [] 
- []
-
-
-LaTeX Font Warning: Command \small invalid in math mode on input line 607.
-
-
-LaTeX Font Warning: Command \small invalid in math mode on input line 609.
-
-<figs/figResFL.pdf, id=35, 903.375pt x 505.89pt>
-File: figs/figResFL.pdf Graphic file (type pdf)
- <use figs/figResFL.pdf>
-Package pdftex.def Info: figs/figResFL.pdf used on input line 629.
-(pdftex.def)             Requested size: 328.82541pt x 184.1427pt.
-
-Overfull \hbox (83.1073pt too wide) in paragraph at lines 629--633
- [][] 
- []
-
-<figs/figResD.pdf, id=36, 903.375pt x 505.89pt>
-File: figs/figResD.pdf Graphic file (type pdf)
- <use figs/figResD.pdf>
-Package pdftex.def Info: figs/figResD.pdf used on input line 649.
-(pdftex.def)             Requested size: 328.82541pt x 184.1427pt.
-
-Overfull \hbox (83.1073pt too wide) in paragraph at lines 649--653
- [][] 
- []
-
-
-LaTeX Font Warning: Command \small invalid in math mode on input line 660.
-
-[5 <./figs/m7.pdf> <./figs/scene1.pdf
+[4 <./figs/m7.pdf> <./figs/scene1.pdf
 
 pdfTeX warning: pdflatex (file ./figs/scene1.pdf): PDF inclusion: multiple pdfs
  with page group included in a single page
@@ -785,8 +672,69 @@ pdfTeX warning: pdflatex (file ./figs/scene1.pdf): PDF inclusion: multiple pdfs
 
 pdfTeX warning: pdflatex (file ./figs/scene2.pdf): PDF inclusion: multiple pdfs
  with page group included in a single page
-> <./figs/figResT.pdf, page is rotated 90 degrees> <./figs/figResST.pdf, page i
-s rotated 90 degrees>] (./iros14boids.bbl
+>]
+
+LaTeX Font Warning: Command \small invalid in math mode on input line 552.
+
+
+LaTeX Font Warning: Command \small invalid in math mode on input line 558.
+
+<figs/figResT.pdf, id=52, 903.375pt x 505.89pt>
+File: figs/figResT.pdf Graphic file (type pdf)
+ <use figs/figResT.pdf>
+Package pdftex.def Info: figs/figResT.pdf used on input line 562.
+(pdftex.def)             Requested size: 247.88887pt x 138.81526pt.
+
+<figs/figResST.pdf, id=53, 903.375pt x 505.89pt>
+File: figs/figResST.pdf Graphic file (type pdf)
+ <use figs/figResST.pdf>
+Package pdftex.def Info: figs/figResST.pdf used on input line 563.
+(pdftex.def)             Requested size: 247.88887pt x 138.81526pt.
+
+Overfull \hbox (2.17076pt too wide) in paragraph at lines 562--567
+ [][] 
+ []
+
+
+Overfull \hbox (2.17076pt too wide) in paragraph at lines 562--567
+ [] 
+ []
+
+
+LaTeX Font Warning: Command \small invalid in math mode on input line 572.
+
+
+LaTeX Font Warning: Command \small invalid in math mode on input line 574.
+
+<figs/figResFL.pdf, id=54, 903.375pt x 505.89pt>
+File: figs/figResFL.pdf Graphic file (type pdf)
+ <use figs/figResFL.pdf>
+Package pdftex.def Info: figs/figResFL.pdf used on input line 594.
+(pdftex.def)             Requested size: 328.82541pt x 184.1427pt.
+
+Overfull \hbox (83.1073pt too wide) in paragraph at lines 594--598
+ [][] 
+ []
+
+<figs/figResD.pdf, id=55, 903.375pt x 505.89pt>
+File: figs/figResD.pdf Graphic file (type pdf)
+ <use figs/figResD.pdf>
+Package pdftex.def Info: figs/figResD.pdf used on input line 614.
+(pdftex.def)             Requested size: 328.82541pt x 184.1427pt.
+
+Overfull \hbox (83.1073pt too wide) in paragraph at lines 614--618
+ [][] 
+ []
+
+
+LaTeX Font Warning: Command \small invalid in math mode on input line 625.
+
+
+Underfull \vbox (badness 3746) has occurred while \output is active []
+
+ [5 <./figs/figResT.pdf, page is rotated 90 degrees> <./figs/figResST.pdf, page
+ is rotated 90 degrees> <./figs/figResFL.pdf, page is rotated 90 degrees> <./fi
+gs/figResD.pdf, page is rotated 90 degrees>] (./iros14boids.bbl
 Underfull \hbox (badness 1515) in paragraph at lines 133--136
 []\OT1/ptm/m/n/8 A. Kro-n-tiris, S. Louis, and K. E. Bekris, ``Multi-level for-
 ma-
@@ -809,45 +757,42 @@ Before submitting the final camera ready copy, remember to:
  uses only Type 1 fonts and that every step in the generation
  process uses the US letter (8.5in X 11in) paper size.
 
-Extra height:24.73193pt when 652.66652pt
-Extra height:24.73193pt when 653.66652pt
-Extra height:0.0pt when 654.66652pt
-(2)Left:654.66652pt Right:657.82387pt Output:654.66652pt
-(2)Left:657.82387pt Right:657.82387pt Output:657.82387pt
+Extra height:33.73193pt when 490.60689pt
+Extra height:0.0pt when 491.60689pt
+(2)Left:491.60689pt Right:488.46387pt Output:491.60689pt
 - LAST -
 Extra skip:0.0pt
-Left:657.82387pt
-Right:657.82387pt
-Output:657.82387pt
-[6 <./figs/figResFL.pdf, page is rotated 90 degrees> <./figs/figResD.pdf, page 
-is rotated 90 degrees>] (./iros14boids.aux) ) 
+Left:491.60689pt
+Right:488.46387pt
+Output:491.60689pt
+[6] (./iros14boids.aux) ) 
 Here is how much of TeX's memory you used:
  3575 strings out of 493315
  50610 string characters out of 6137904
- 136236 words of memory out of 5000000
+ 136604 words of memory out of 5000000
  6936 multiletter control sequences out of 15000+600000
  47382 words of font info for 102 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
  38i,12n,26p,378b,324s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2013/texmf-dis
-t/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2013/texmf-dist/fonts/type1/p
-ublic/amsfonts/cm/cmex10.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/pu
-blic/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/pub
-lic/amsfonts/cm/cmmi5.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/publi
-c/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/
-amsfonts/cm/cmmi7.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/am
-sfonts/cm/cmmi8.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsf
-onts/cm/cmr10.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfon
-ts/cm/cmr7.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/
-cm/cmsy10.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/c
-m/cmsy5.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/
-cmsy7.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/urw/courier/ucrr8a.pf
-b></usr/local/texlive/2013/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/lo
-cal/texlive/2013/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/local/texli
-ve/2013/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2013/te
-xmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2013/texmf-dist/f
-onts/type1/urw/times/utmri8a.pfb>
-Output written on iros14boids.pdf (6 pages, 3507614 bytes).
+{/usr/local/texlive/2013/texmf-dist/fonts/enc/dvips/ba
+se/8r.enc}</usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cm
+ex10.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmm
+i10.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi
+5.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.
+pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pf
+b></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb>
+</usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></
+usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr
+/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/
+local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/lo
+cal/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/loca
+l/texlive/2013/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texliv
+e/2013/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2013/tex
+mf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/local/texlive/2013/texmf-dist/f
+onts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1
+/urw/times/utmr8a.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/urw/times
+/utmri8a.pfb>
+Output written on iros14boids.pdf (6 pages, 3502926 bytes).
 PDF statistics:
  138 PDF objects out of 1000 (max. 8388607)
  95 compressed objects within 1 object stream
