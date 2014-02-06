@@ -82,7 +82,7 @@ if __name__ == "__main__":
             map_file=mapFilePath,
             obstacle_file=obstacleFilePath,
             auto_gen_obst=dynamicObstacleAutoGenerate,
-            auto_gen_number=generateTarget,
-            random_seed=randomSeed
+            auto_gen_number=generateTarget
+            # random_seed=randomSeed
         )
         fs.animate()

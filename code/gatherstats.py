@@ -4,7 +4,7 @@ import sys
 import boidsimulation as bs
 
 # GLOBAL VARS
-iterations = 1
+iterations = 3
 
 
 # generates stats for the project
@@ -18,13 +18,13 @@ def generateStats(mapFile, iterations, startPoint, endPoint):
     of the flock
     """
     getFileFormat = lambda boids, obstacles, it: str(
-        "stats/" +
+        "stats/b_vs_nb/" +
         mapFile.split("/")[-1].split(".")[0] +
-        "_" + str(boids) + "_" + str(obstacles) + "_" + str(it)
+        "_" + str(boids) + "_" + str(obstacles) + "_" + str(it) + "_b"
     )
 
-    for boids in [30]:
-        for obstacles in [0]:
+    for boids in range(40, 120, 20):
+        for obstacles in [10]:
             for i in range(iterations):
                 #reload(bs)
                 print mapFile, " : ", boids, ":", obstacles, ":", i
@@ -40,7 +40,8 @@ def generateStats(mapFile, iterations, startPoint, endPoint):
                             obstacle_file=None,
                             auto_gen_obst=True,
                             auto_gen_number=obstacles,
-                            data_file=dFile
+                            data_file=dFile,
+                            random_seed=i+1
                         )
                         fSim.render()
                         break

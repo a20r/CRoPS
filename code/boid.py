@@ -128,6 +128,8 @@ class Boid:
         self.endIndex = self.goalNodes[-1]
         #print self.roadmap
 
+        self.newRouteCounter = 0
+
         self.initFunctionParameters()
 
     def sumDivide(self, lt, s):
@@ -643,14 +645,16 @@ class Boid:
 
         min_obstacle_dist = 20
         if self.stuck and not self.DONE:
-            self.determineNewPath()
+            self.newRouteCounter += 1
+            if self.newRouteCounter % 4 == 0:
+                self.determineNewPath()
             # self.stuck = False
-            self.positionBuffer = [
-                (
-                    5 * i,
-                    5 * i
-                ) for i in range(20)
-            ]
+            # self.positionBuffer = [
+            #     (
+            #         5 * i,
+            #         5 * i
+            #     ) for i in range(20)
+            # ]
 
         neighborVectorList, nIndexes = [[0, 0]], 1
         gVector, gMagSum = [0, 0], 1
